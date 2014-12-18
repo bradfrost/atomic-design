@@ -1,0 +1,151 @@
+//Header
+header {
+	text-align: center;
+	padding: 2em 1em;
+	max-width: 26em;
+	margin: 0 auto;
+
+	@media all and (min-height: 30em) {
+		padding: 6em 1em;
+	}
+}
+
+//Main content
+main {
+	max-width: $max-width;
+	padding: 0 1em;
+	margin: 0 auto 2em;
+}
+
+//Footer
+footer {
+	text-align: center;
+	color: $tan-dark;
+	padding: 1em;
+	margin-bottom: 6em;
+}
+
+// Banner area
+.banner {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: $brown;
+	color: $tan;
+	z-index: 2;
+
+
+}
+
+.banner-content {
+	max-width: $max-width;
+	background: $brown;
+	margin: 0 auto;
+	padding: 0.6em 1em;
+	position: relative;
+	z-index: 2;
+	display: flex;
+	justify-content: space-between;
+	align-items: middle;
+	text-transform: lowercase;
+
+	a {
+		color: $tan;
+		text-decoration: none;
+		transition: color $speed-fast ease-out;
+
+		&:hover, &:focus {
+			color: $orange;
+		}
+	}
+
+	h3 {
+		font-size: 1em;
+		font-weight: normal;
+		margin: 0;
+		display: inline;
+		align-self: flex-start;
+		order: 1;
+	}
+
+	p {
+		margin: 0;
+		display: inline;
+		order: 3;
+	}
+
+	.btn {
+		background: $orange;
+		border: 0;
+		border-radius: 8px 8px 0 0;
+		display: block;
+		line-height: 1;
+		padding: 1.2em;
+		font-weight: bold;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-left: -4em;
+		z-index: 1;
+		transition: all $speed-fast ease-out;
+
+		&:hover, &:focus {
+			color: $white;
+			padding-bottom: 1.5em;
+		}
+	}
+}
+
+
+// Title Screen
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.title-content {
+	align-self: center;
+	text-align: center;
+	max-width: 45em;
+
+	h1 {
+		margin-bottom: 0;
+		line-height: 1;
+	}
+
+	p {
+		color: $tan-dark;
+		margin-bottom: 2em;
+
+		a {
+			color: $tan-dark;
+		}
+	}
+}
+
+//Button
+.btn {
+	border: 1px solid $brown;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 0.55em;
+	text-decoration: none;
+
+	&:hover, &:focus {
+		border-color: $orange;
+		background: $orange;
+		color: $tan;
+	}
+}
+
+.btn-alt {
+	border-color: $tan;
+	color: $tan;
+}
+
+//Table of Contents

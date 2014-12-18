@@ -1,0 +1,12 @@
+# Site settings
+title: Atomic Design by Brad Frost
+email: brad@bradfrost.com
+description: > # this means to ignore newlines until "baseurl:"
+  Atomic design is a methodology for crafting effective design systems
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: brad_frost
+github_username:  bradfrost
+
+# Build settings
+markdown: kramdown

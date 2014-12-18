@@ -1,0 +1,38 @@
+*{
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background: $tan;
+	font-family: Helvetica, sans-serif;
+	line-height: 1.5;
+	color: $brown;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+a {
+	color: #100;
+}
+
+h1 {
+	font-size: 2.5em;
+	line-height: 1.2;
+	margin-top: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
