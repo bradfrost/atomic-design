@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>Chapter 2 | Atomic Design by Brad Frost</title>
+  <meta name="description" content="Atomic design is a methodology for crafting effective design systems
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+  <body>
+    <header role="banner">
+    <a href="/" rel="home"><img src="/images/atomic-design.svg" alt="" /></a>
+</header>
+
+    <main role="main">
+        <div class="text">
+    <h1>Chapter 2</h1>
+    <h2 id="atoms">Atoms</h2>
+
+<p>In chemistry, atoms are the basic building blocks of matter. They have distinct properties and can’t be broken down further without losing their meaning.</p>
+
+<p>Translated to interfaces, atoms are basic tags, such as form labels, inputs or buttons. They also include more abstract elements like color palettes, fonts, and animations.</p>
+
+<p>Atoms are abstract and aren’t often terribly useful on their own, but they provide a useful reference and allow you to see all your global styles laid out at a glance.</p>
+
+<h2 id="molecules">Molecules</h2>
+
+<p>In chemistry, molecules are groups of atoms bonded together, which take on new properties as a result.</p>
+
+<p>In interfaces, molecules are groups of elements that function together as a unit. For example, a form label, search input, and button atom can combine them together to form a search form molecule.</p>
+
+<p>Building up from atoms to molecules encourages a “do one thing and do it well” mentality, and encourages creating reusable interface patterns.</p>
+
+<h2 id="organisms">Organisms</h2>
+
+<p>Organisms are groups of molecules (and possibly atoms) joined together to form distinct section of an interface.</p>
+
+<p>Organisms can consist of similar and/or disparate molecule types. For example, a masthead organism might consist of a logo, navigation, and search form, while a “product grid” organism might consist of the same product info molecule repeated over and over.</p>
+
+<p>Building up from molecules to organisms encourages creating standalone, portable, reusable components.</p>
+
+<h2 id="templates">Templates</h2>
+
+<p>With templates, we break our biochemistry analogy to get into language that makes more sense to clients and final output. Templates are comprised mostly of organisms combined together to form page-level objects.</p>
+
+<p>Templates provide context for these relatively abstract molecules and organisms, which is helpful for designers and clients alike.</p>
+
+<p>Templates mostly focus on content structure (such as character length, image size, etc) rather than the actual content.</p>
+
+<h2 id="pages">Pages</h2>
+
+<p>Pages are specific instances of templates and swap out placeholder content with real representative content to give an accurate depiction of what a user will ultimately see.</p>
+
+<p>Pages are essential for testing the effectiveness of the design system. This final form allows us to loop back to modify our molecules, organisms, and templates to better address the real context of the design.</p>
+
+<p>Pages also provide a place to test variations in templates, such as testing an article containing a 40-character-length headline and other article with a 340-character-length headline. What does it look like when a user has one item in their shopping cart versus 10 items with a discount code applied? These specific page instances test the resiliency of the system, influencing how the underlying molecules, organisms, and templates are constructed.</p>
+
+</div>
+
+        <nav role="navigaiton" class="pagination">
+    <a href="#">Next Chapter</a>
+    <a href="#">Previous Chapter</a>
+    <a href="/table-of-contents/">Table of Contents</a>
+</nav>
+
+        <div class="banner">
+	<div class="banner-content">
+		<h3><a href="/" rel="home">Atomic Design</a></h3>
+		<p>by <a href="http://bradfrost.com" rel="me">Brad Frost</a></p>
+		<a href="/buy" class="btn btn-alt">Buy the book</a>
+	</div>
+</div>
+
+
+    </main>
+    <footer role="contentinfo">
+    &copy; 2015 Brad Frost
+</footer>
+
+  </body>
+</html>
