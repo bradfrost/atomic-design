@@ -10,7 +10,7 @@ html {
 
 body {
 	background: $tan;
-	font-family: Helvetica, sans-serif;
+	font-family: $font-primary;
 	line-height: 1.5;
 	color: $brown;
 	padding: 0;
@@ -30,6 +30,10 @@ h1 {
 	font-size: 2.5em;
 	line-height: 1.2;
 	margin-top: 0;
+
+	cite {
+		font-style: normal;
+	}
 }
 
 img {

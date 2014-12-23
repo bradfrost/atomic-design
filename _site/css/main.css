@@ -8,7 +8,7 @@ html {
 
 body {
   background: #f6f5de;
-  font-family: Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.5;
   color: #110000;
   padding: 0;
@@ -25,6 +25,8 @@ h1 {
   font-size: 2.5em;
   line-height: 1.2;
   margin-top: 0; }
+  h1 cite {
+    font-style: normal; }
 
 img {
   max-width: 100%;
@@ -117,8 +119,9 @@ footer {
   align-self: center;
   text-align: center;
   max-width: 65em; }
+  .title-content img {
+    margin-bottom: 2em; }
   .title-content h1 {
-    margin-bottom: 0;
     line-height: 1; }
   .title-content p {
     color: #a29e5e;
@@ -145,4 +148,5 @@ footer {
   font-family: Georgia, serif;
   font-size: 120%; }
   .text h1 {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
     text-align: center; }
