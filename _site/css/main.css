@@ -13,7 +13,8 @@ body {
   color: #110000;
   padding: 0;
   margin: 0;
-  height: 100%; }
+  min-height: 100%;
+  border: 20px solid #110000; }
 
 p {
   margin: 0 0 1em; }
@@ -49,6 +50,7 @@ main {
 footer {
   text-align: center;
   color: #a29e5e;
+  font-size: 80%;
   padding: 1em;
   margin-bottom: 6em; }
 
@@ -59,7 +61,8 @@ footer {
   width: 100%;
   background: #110000;
   color: #f6f5de;
-  z-index: 2; }
+  z-index: 2;
+  font-weight: bold; }
 
 .banner-content {
   max-width: 37em;
@@ -80,7 +83,6 @@ footer {
       color: #be6700; }
   .banner-content h3 {
     font-size: 1em;
-    font-weight: normal;
     margin: 0;
     display: inline;
     align-self: flex-start;
@@ -95,7 +97,7 @@ footer {
     border-radius: 8px 8px 0 0;
     display: block;
     line-height: 1;
-    padding: 1.2em;
+    padding: 1.05em;
     font-weight: bold;
     position: absolute;
     bottom: 0;
@@ -106,6 +108,9 @@ footer {
     .banner-content .btn:hover, .banner-content .btn:focus {
       color: white;
       padding-bottom: 1.5em; }
+
+.title-page {
+  height: 100%; }
 
 .title {
   display: flex;
@@ -130,15 +135,15 @@ footer {
       color: #a29e5e; }
 
 .btn {
-  border: 1px solid #110000;
+  font-weight: bold;
+  background: #be6700;
+  color: #f6f5de;
   border-radius: 5px;
   display: inline-block;
-  padding: 0.55em;
+  padding: 0.65em 1.2em;
   text-decoration: none; }
   .btn:hover, .btn:focus {
-    border-color: #be6700;
-    background: #be6700;
-    color: #f6f5de; }
+    color: white; }
 
 .btn-alt {
   border-color: #f6f5de;

@@ -21,6 +21,7 @@ main {
 footer {
 	text-align: center;
 	color: $tan-dark;
+	font-size: 80%;
 	padding: 1em;
 	margin-bottom: 6em;
 }
@@ -34,8 +35,7 @@ footer {
 	background: $brown;
 	color: $tan;
 	z-index: 2;
-
-
+	font-weight: bold;
 }
 
 .banner-content {
@@ -62,7 +62,6 @@ footer {
 
 	h3 {
 		font-size: 1em;
-		font-weight: normal;
 		margin: 0;
 		display: inline;
 		align-self: flex-start;
@@ -81,7 +80,7 @@ footer {
 		border-radius: 8px 8px 0 0;
 		display: block;
 		line-height: 1;
-		padding: 1.2em;
+		padding: 1.05em;
 		font-weight: bold;
 		position: absolute;
 		bottom: 0;
@@ -99,6 +98,10 @@ footer {
 
 
 // Title Screen
+.title-page {
+	height: 100%;
+}
+
 .title {
 	display: flex;
 	flex-direction: column;
@@ -133,16 +136,16 @@ footer {
 
 //Button
 .btn {
-	border: 1px solid $brown;
+	font-weight: bold;
+	background: $orange;
+	color: $tan;
 	border-radius: 5px;
 	display: inline-block;
-	padding: 0.55em;
+	padding: 0.65em 1.2em;
 	text-decoration: none;
 
 	&:hover, &:focus {
-		border-color: $orange;
-		background: $orange;
-		color: $tan;
+		color: $white;
 	}
 }
 

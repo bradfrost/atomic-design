@@ -15,7 +15,8 @@ body {
 	color: $brown;
 	padding: 0;
 	margin: 0;
-	height: 100%;
+	min-height: 100%;
+	border: 20px solid $brown;
 }
 
 p {
