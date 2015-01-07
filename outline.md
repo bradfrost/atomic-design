@@ -6,7 +6,7 @@ permalink: /plan/
 
 Atomic Design discusses the importance of crafting robust design systems, and introduces a methodology for which to create smart, deliberate, interface systems.
 
-The book will begin by addressing the "why": why designers should care about thinking about Web interfaces in a more systematic way. I'll discuss the history of modular design systems (after all, this type of thinking been around for a long while now), but discuss how the ever-shifting Web landscape is making systematic thinking a necessity.
+The book will begin by addressing the "why": why designers should care about thinking about interfaces in a more systematic way. I'll discuss the history of modular design systems (after all, this type of thinking been around for a long while now), but discuss how the ever-shifting Web landscape is making systematic thinking a necessity.
 
 The first section will also discuss the emerging trends and techniques that encourage more systematic thinking: style tiles, element collages, pattern libraries, UI frameworks, and more. And while I'll certainly extol the virtues of these techniques, I'll also bring to light a lot of the shortcomings and frustrations of UI frameworks and pattern libraries. This sets the stage to introduce a more sound, deliberate way of constructing an interface system.
 
@@ -39,10 +39,11 @@ Everyone's design process is different, so I'll also discuss how to introduce an
 The book will conclude by recapping why thinking in a more systematic way is becoming increasingly necessary. I'll talk about the merits of atomic design, and remind people how they can get started. I will leave on a note of "What's next?" for design systems. Right now, for me the most obvious challenge is to make systematic design the default mode of thinking for designers, agencies, and organizations. I think there's a tremendous opportunity for design systems to help people craft more consistency,
 
 ## 1. Design systems
+- Our paginated past
 - The ever-shifting Web landscape and the need for modularity
 - History of modular design
-- Trends: style tiles, element collages, pattern libraries, UI frameworks
-- Advantages: promote consistency, establish a consistent vocabulary, create more robust deliverables, establish a system that can be modified and extended, future-friendly
+- Trends: style tiles, element collages, UI frameworks, pattern libraries, CSS architecture
+- Advantages of design systems: promote consistency, establish a consistent vocabulary, create more robust deliverables, establish a system that can be modified and extended, future-friendly
 - Issues with UI frameworks and pattern libraries
 - Setting the stage for the need of a better methodology
 
@@ -77,6 +78,14 @@ The book will conclude by recapping why thinking in a more systematic way is bec
 - Page considerations: Clients/colleagues can get distracted by representative content ("I don't like how I look in that photo") vs commenting on effectiveness of the design.
 Atomic design summary: recap atoms, molecules, organisms, templates, and pages
 Discuss the advantages of atomic design, especially the ability to traverse between abstract and concrete
+
+### Advantages
+- Traverse between abstract and concrete. Can simultaneously
+- Built in hierarchy
+
+### Atomic Design in Practice
+- Not a linear process
+- Not a CSS or JS methodology
 
 ## 3. Tools of the Trade
 - Pattern Lab, what and how
