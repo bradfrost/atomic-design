@@ -102,7 +102,7 @@ footer {
     position: absolute;
     bottom: 0;
     left: 50%;
-    margin-left: -4em;
+    margin-left: -5.375em;
     z-index: 1;
     transition: all 0.12s ease-out; }
     .banner-content .btn:hover, .banner-content .btn:focus {
