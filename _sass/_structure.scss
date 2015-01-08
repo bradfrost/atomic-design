@@ -45,10 +45,7 @@ footer {
 	padding: 0.6em 1em;
 	position: relative;
 	z-index: 2;
-	display: flex;
-	justify-content: space-between;
-	align-items: middle;
-	text-transform: lowercase;
+	text-align: center;
 
 	a {
 		color: $tan;
@@ -75,24 +72,37 @@ footer {
 
 	.btn {
 		background: $orange;
-		border: 0;
-		border-radius: 8px 8px 0 0;
 		display: block;
 		line-height: 1;
 		padding: 1.05em;
-		font-weight: bold;
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		margin-left: -5.375em;
-		margin-bottom: 0;
-		z-index: 1;
-		transition: all $speed-fast ease-out;
+		margin-top: 0.5em;
 
 		&:hover, &:focus {
 			color: $white;
-			padding-bottom: 1.5em;
 		}
+
+		@media all and (min-width: 30em) {
+			border: 0;
+			border-radius: 8px 8px 0 0;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -5.375em;
+			margin-bottom: 0;
+			z-index: 1;
+			transition: all $speed-fast ease-out;
+
+			&:hover, &:focus {
+				padding-bottom: 1.5em;
+			}
+		}
+	}
+
+	@media all and (min-width: 30em) {
+		display: flex;
+		justify-content: space-between;
+		align-items: middle;
+		text-transform: lowercase;
 	}
 }
 
@@ -108,7 +118,7 @@ footer {
 		max-height: 100%;
 		margin-bottom: 2em;
 
-		@media all and (min-width: 35em) {
+		@media all and (min-width: 44em) {
 			max-width: 50%;
 		}
 	}
@@ -117,7 +127,7 @@ footer {
 		text-align: left;
 	}
 
-	@media all and (min-width: 35em) {
+	@media all and (min-width: 44em) {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -129,7 +139,7 @@ footer {
 .title-col-2 {
 	flex: 1;
 
-	@media all and (min-width: 35em) {
+	@media all and (min-width: 44em) {
 		padding-left: 2em;
 	}
 }
@@ -167,6 +177,7 @@ footer {
 	padding: 0.65em 1.2em;
 	margin-bottom: 0.5em;
 	text-decoration: none;
+	text-transform: lowercase;
 
 	&:hover, &:focus {
 		color: $white;
@@ -185,3 +196,26 @@ footer {
 }
 
 //Table of Contents
+.toc-list {
+	text-align: center;
+	list-style: none;
+
+	li {
+		border-bottom: 1px solid $tan-dark;
+		padding: 1em 0;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	h3 {
+		font-size: 1.4em;
+		margin: 0;
+	}
+
+	p {
+		color: $tan-dark;
+		margin: 0;
+	}
+}
