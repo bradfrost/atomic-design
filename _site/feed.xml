@@ -4,10 +4,10 @@
     <title>Atomic Design by Brad Frost</title>
     <description>Atomic design is a methodology for crafting effective design systems
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Jan 2015 21:02:42 -0500</pubDate>
-    <lastBuildDate>Tue, 06 Jan 2015 21:02:42 -0500</lastBuildDate>
+    <link>http://bradfrost.com/</link>
+    <atom:link href="http://bradfrost.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 08 Jan 2015 00:55:54 -0500</pubDate>
+    <lastBuildDate>Thu, 08 Jan 2015 00:55:54 -0500</lastBuildDate>
     <generator>Jekyll v2.5.2</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Sun, 14 Dec 2014 06:31:51 -0500</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2014/12/14/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2014/12/14/welcome-to-jekyll.html</guid>
+        <link>http://bradfrost.com/jekyll/update/2014/12/14/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://bradfrost.com/jekyll/update/2014/12/14/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
