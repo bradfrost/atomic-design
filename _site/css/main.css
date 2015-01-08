@@ -33,6 +33,32 @@ img {
   max-width: 100%;
   height: auto; }
 
+label {
+  display: block;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, sans-serif; }
+
+input, select, textarea {
+  border: 6px solid #dedcb9;
+  background: rgba(205, 202, 162, 0.16);
+  color: #110000;
+  font: 1em/1 "Helvetica Neue", Helvetica, sans-serif;
+  padding: 0.5em;
+  width: 100%;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  margin-bottom: 0.5em; }
+
+input:focus, select:focus, textarea:focus {
+  background-color: #fbfaee;
+  outline: 0; }
+
+input[type=submit] {
+  border: 0;
+  display: inline-block;
+  width: auto; }
+
 header {
   text-align: center;
   padding: 2em 1em;
@@ -82,11 +108,19 @@ footer {
     font-size: 1em;
     margin: 0;
     display: inline;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
     align-self: flex-start; }
   .banner-content p {
     margin: 0;
     display: inline;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
     order: 3; }
+    @media all and (min-width: 30em) {
+      .banner-content p {
+        position: absolute;
+        right: 1em; } }
   .banner-content .btn {
     background: #be6700;
     display: block;
@@ -110,6 +144,10 @@ footer {
           padding-bottom: 1.5em; } }
   @media all and (min-width: 30em) {
     .banner-content {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       justify-content: space-between;
       align-items: middle;
@@ -130,13 +168,25 @@ footer {
     text-align: left; }
   @media all and (min-width: 44em) {
     .title {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
+      -webkit-flex-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
       align-items: center;
+      -webkit-box-align: center;
       justify-content: center;
       width: 100%;
       height: 100%; } }
 
 .title-col-2 {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1; }
   @media all and (min-width: 44em) {
     .title-col-2 {
@@ -191,7 +241,8 @@ footer {
     margin: 0; }
   .toc-list p {
     color: #a29e5e;
-    margin: 0; }
+    margin: 0;
+    font-size: 85%; }
 
 .text {
   font-family: Georgia, serif;
