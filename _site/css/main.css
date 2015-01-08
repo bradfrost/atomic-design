@@ -78,7 +78,7 @@ footer {
   color: #a29e5e;
   font-size: 80%;
   padding: 1em;
-  margin-bottom: 6em; }
+  margin-bottom: 8em; }
 
 .banner {
   position: fixed;
@@ -229,11 +229,13 @@ footer {
 .toc-list {
   text-align: center;
   list-style: none;
-  margin: 0;
+  margin: 0 0 2em;
   padding: 0; }
   .toc-list li {
     border-bottom: 1px solid #a29e5e;
     padding: 1em 0; }
+    .toc-list li:last-child {
+      border: 0; }
   .toc-list a {
     text-decoration: none; }
   .toc-list h3 {

@@ -230,6 +230,10 @@ footer {
 	li {
 		border-bottom: 1px solid $tan-dark;
 		padding: 1em 0;
+
+		&:last-child {
+			border: 0;
+		}
 	}
 
 	a {
