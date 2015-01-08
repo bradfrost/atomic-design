@@ -16,7 +16,6 @@ body {
 	padding: 0;
 	margin: 0;
 	min-height: 100%;
-	border: 20px solid $brown;
 }
 
 p {
@@ -31,6 +30,7 @@ h1 {
 	font-size: 2.5em;
 	line-height: 1.2;
 	margin-top: 0;
+	text-align: center;
 
 	cite {
 		font-style: normal;
