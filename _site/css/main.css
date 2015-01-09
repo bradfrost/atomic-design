@@ -246,6 +246,48 @@ footer {
     margin: 0;
     font-size: 85%; }
 
+.timeline ol {
+  border-left: 5px solid #110000;
+  padding: 0 0 3em;
+  position: relative;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column-reverse; }
+  .timeline ol:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -1.75em;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: #110000;
+    border: 5px solid #110000; }
+.timeline li {
+  padding-left: 1em;
+  margin: 0 0 3em;
+  position: relative; }
+  .timeline li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -0.95em;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background: #be6700; }
+.timeline h3 {
+  margin: 0; }
+.timeline a {
+  border-bottom: 1px solid #be6700;
+  text-decoration: none; }
+.timeline em {
+  font-size: 80%;
+  color: #a29e5e;
+  display: block;
+  font-style: normal; }
+
 .text {
   font-family: Georgia, serif;
   font-size: 120%; }

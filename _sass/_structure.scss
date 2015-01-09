@@ -251,3 +251,61 @@ footer {
 		font-size: 85%;
 	}
 }
+
+//Timeline
+.timeline {
+	ol {
+		border-left: 5px solid $brown;
+		padding: 0 0 3em;
+		position: relative;
+		margin: 0;
+		list-style: none;
+		display: flex;
+		flex-direction: column-reverse;
+
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: -1.75em;
+			width: 40px;
+			height: 40px;
+			border-radius: 40px;
+			background: $brown;
+			border: 5px solid $brown;
+		}
+	}
+
+	li {
+		padding-left: 1em;
+		margin: 0 0 3em;
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -0.95em;
+			width: 25px;
+			height: 25px;
+			border-radius: 25px;
+			background: $orange;
+		}
+	}
+	
+	h3 {
+		margin: 0;
+	}
+
+	a {
+		border-bottom: 1px solid $orange;
+		text-decoration: none;
+	}
+
+	em {
+		font-size: 80%;
+		color: $tan-dark;
+		display: block;
+		font-style: normal;
+	}
+}
