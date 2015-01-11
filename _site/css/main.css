@@ -256,7 +256,13 @@ footer {
     position: relative;
     margin: 0;
     list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse; }
     .timeline ol:before {
       content: "";

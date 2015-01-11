@@ -15,4 +15,6 @@ permalink: /timeline/
 5. ### *01/08/15* Set up Mailchimp newsletter 
    [View signup form](http://atomicdesign.bradfrost.com/signup/)
 6. ### *01/08/15* Announce book project
-   [View signup form](http://atomicdesign.bradfrost.com/signup/)
+   [View signup form](http://bradfrost.com/blog/post/atomic-design-book/)
+7. ### *01/08/15* Begin adding to-dos
+   [View issues on Github](https://github.com/bradfrost/atomic-design/issues)
