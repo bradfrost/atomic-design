@@ -16,5 +16,5 @@ permalink: /timeline/
    [View signup form](http://atomicdesign.bradfrost.com/signup/)
 6. ### *01/08/15* Announce book project
    [View signup form](http://bradfrost.com/blog/post/atomic-design-book/)
-7. ### *01/08/15* Begin adding to-dos
+7. ### *01/10/15* Begin adding to-dos
    [View issues on Github](https://github.com/bradfrost/atomic-design/issues)
