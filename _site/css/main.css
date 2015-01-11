@@ -246,54 +246,60 @@ footer {
     margin: 0;
     font-size: 85%; }
 
-.timeline ol {
-  border-left: 3px solid #110000;
-  padding: 0 0 3em;
-  position: relative;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column-reverse; }
-  .timeline ol:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -1.78em;
-    width: 50px;
-    height: 50px;
-    background: url(../images/icon-atom.svg) no-repeat;
-    background-size: 100% 100%;
-    -webkit-animation: spin 10s linear infinite;
-    -moz-animation: spin 10s linear infinite;
-    -o-animation: spin 10s linear infinite;
-    animation: spin 10s linear infinite; }
-.timeline li {
-  padding-left: 1.2em;
-  margin: 0 0 3em;
-  position: relative; }
-  .timeline li:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -0.95em;
-    width: 25px;
-    height: 25px;
-    background: url(../images/icon-atom.svg) no-repeat;
-    background-size: 100% 100%;
-    -webkit-animation: spin 10s linear infinite;
-    -moz-animation: spin 10s linear infinite;
-    -o-animation: spin 10s linear infinite;
-    animation: spin 10s linear infinite; }
-.timeline h3 {
-  margin: 0; }
-.timeline a {
-  border-bottom: 1px solid #be6700;
-  text-decoration: none; }
-.timeline em {
-  font-size: 80%;
-  color: #a29e5e;
-  display: block;
-  font-style: normal; }
+.timeline {
+  padding-left: 2em;
+  max-width: 32em;
+  margin: 0 auto; }
+  .timeline ol {
+    border-left: 3px solid #110000;
+    padding: 0 0 3em;
+    position: relative;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse; }
+    .timeline ol:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -1.78em;
+      width: 50px;
+      height: 50px;
+      background: url(../images/icon-atom.svg) no-repeat;
+      background-size: 100% 100%;
+      -webkit-animation: spin 10s linear infinite;
+      -moz-animation: spin 10s linear infinite;
+      -o-animation: spin 10s linear infinite;
+      animation: spin 10s linear infinite; }
+  .timeline li {
+    padding-left: 1.2em;
+    margin: 0 0 3em;
+    position: relative; }
+    .timeline li:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -0.95em;
+      width: 25px;
+      height: 25px;
+      background: url(../images/icon-atom.svg) no-repeat;
+      background-size: 100% 100%;
+      -webkit-animation: spin 10s linear infinite;
+      -moz-animation: spin 10s linear infinite;
+      -o-animation: spin 10s linear infinite;
+      animation: spin 10s linear infinite; }
+  .timeline h3 {
+    margin: 0; }
+  .timeline a {
+    border-bottom: 1px solid #be6700;
+    text-decoration: none; }
+    .timeline a:hover, .timeline a:focus {
+      color: #be6700; }
+  .timeline em {
+    font-size: 80%;
+    color: #a29e5e;
+    display: block;
+    font-style: normal; }
 
 @-moz-keyframes spin {
   from {

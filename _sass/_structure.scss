@@ -254,6 +254,10 @@ footer {
 
 //Timeline
 .timeline {
+	padding-left: 2em;
+	max-width: 32em;
+	margin: 0 auto;
+	
 	ol {
 		border-left: 3px solid $brown;
 		padding: 0 0 3em;
@@ -307,6 +311,10 @@ footer {
 	a {
 		border-bottom: 1px solid $orange;
 		text-decoration: none;
+		
+		&:hover, &:focus {
+			color: $orange;
+		}
 	}
 
 	em {
