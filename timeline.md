@@ -12,9 +12,11 @@ permalink: /timeline/
    [View store](http://shop.bradfrost.com/products/atomic-design-ebook)
 4. ### *12/18/14* Set up Github repository 
    [View repository](https://github.com/bradfrost/atomic-design/)
-5. ### *01/08/15* Set up Mailchimp newsletter 
+5. ### *12/23/14* Set up automatic deployments with Dploy.io
+   [Visit Dploy.io](http://dploy.io/)
+6. ### *01/08/15* Set up Mailchimp newsletter 
    [View signup form](http://atomicdesign.bradfrost.com/signup/)
-6. ### *01/08/15* Announce book project
+7. ### *01/08/15* Announce book project
    [View signup form](http://bradfrost.com/blog/post/atomic-design-book/)
-7. ### *01/10/15* Begin adding to-dos
+8. ### *01/10/15* Begin adding to-dos
    [View issues on Github](https://github.com/bradfrost/atomic-design/issues)
