@@ -4,7 +4,7 @@ title: Atomic Design Progress
 permalink: /timeline/
 ---
 
-1. ### *12/23/13* Original atomic design post
+1. ### *06/10/13* Original atomic design post
    [View blog post](http://bradfrost.com/blog/post/atomic-web-design/) 
 2. ### *12/23/13* First outline for the book 
    [View outline](https://gist.github.com/bradfrost/c90ef0c63fdc38ad4512)
