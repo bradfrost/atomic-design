@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Plan of Attack
-permalink: /plan/
+title: Outline
+permalink: /outline/
 ---
 
 Atomic Design discusses the importance of crafting robust design systems, and introduces a methodology for which to create smart, deliberate, interface systems.
