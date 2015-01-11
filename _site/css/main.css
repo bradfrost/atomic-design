@@ -247,7 +247,7 @@ footer {
     font-size: 85%; }
 
 .timeline ol {
-  border-left: 5px solid #110000;
+  border-left: 3px solid #110000;
   padding: 0 0 3em;
   position: relative;
   margin: 0;
@@ -258,14 +258,17 @@ footer {
     content: "";
     position: absolute;
     bottom: 0;
-    left: -1.75em;
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
-    background: #110000;
-    border: 5px solid #110000; }
+    left: -1.78em;
+    width: 50px;
+    height: 50px;
+    background: url(../images/icon-atom.svg) no-repeat;
+    background-size: 100% 100%;
+    -webkit-animation: spin 10s linear infinite;
+    -moz-animation: spin 10s linear infinite;
+    -o-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite; }
 .timeline li {
-  padding-left: 1em;
+  padding-left: 1.2em;
   margin: 0 0 3em;
   position: relative; }
   .timeline li:before {
@@ -275,8 +278,12 @@ footer {
     left: -0.95em;
     width: 25px;
     height: 25px;
-    border-radius: 25px;
-    background: #be6700; }
+    background: url(../images/icon-atom.svg) no-repeat;
+    background-size: 100% 100%;
+    -webkit-animation: spin 10s linear infinite;
+    -moz-animation: spin 10s linear infinite;
+    -o-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite; }
 .timeline h3 {
   margin: 0; }
 .timeline a {
@@ -288,6 +295,24 @@ footer {
   display: block;
   font-style: normal; }
 
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+
+  to {
+    -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+
+  to {
+    transform: rotate(360deg); } }
 .text {
   font-family: Georgia, serif;
   font-size: 120%; }

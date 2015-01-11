@@ -255,7 +255,7 @@ footer {
 //Timeline
 .timeline {
 	ol {
-		border-left: 5px solid $brown;
+		border-left: 3px solid $brown;
 		padding: 0 0 3em;
 		position: relative;
 		margin: 0;
@@ -267,17 +267,20 @@ footer {
 			content: "";
 			position: absolute;
 			bottom: 0;
-			left: -1.75em;
-			width: 40px;
-			height: 40px;
-			border-radius: 40px;
-			background: $brown;
-			border: 5px solid $brown;
+			left: -1.78em;
+			width: 50px;
+			height: 50px;
+			background: url(../images/icon-atom.svg) no-repeat;
+			background-size: 100% 100%;
+			-webkit-animation: spin 10s linear infinite; 
+			-moz-animation: spin 10s linear infinite;
+			-o-animation: spin 10s linear infinite;
+			animation: spin 10s linear infinite;
 		}
 	}
 
 	li {
-		padding-left: 1em;
+		padding-left: 1.2em;
 		margin: 0 0 3em;
 		position: relative;
 
@@ -288,8 +291,12 @@ footer {
 			left: -0.95em;
 			width: 25px;
 			height: 25px;
-			border-radius: 25px;
-			background: $orange;
+			background: url(../images/icon-atom.svg) no-repeat;
+			background-size: 100% 100%;
+			-webkit-animation: spin 10s linear infinite; 
+			-moz-animation: spin 10s linear infinite;
+			-o-animation: spin 10s linear infinite;
+			animation: spin 10s linear infinite;
 		}
 	}
 	
@@ -308,4 +315,17 @@ footer {
 		display: block;
 		font-style: normal;
 	}
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
 }
