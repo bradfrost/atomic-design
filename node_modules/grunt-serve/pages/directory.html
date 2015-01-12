@@ -1,0 +1,15 @@
+<html style="font-family: monospace;">
+	<head>
+		<title>Grunt-Serve | Directory</title>
+	</head>
+	<body>
+		<h2>Grunt-Serve [<a href="/">index</a>, <a href="https://github.com/lud2k/grunt-serve">docs</a>]</h2>
+		<p>
+    		<b style="font-size: 14px;">Files</b><br />
+    		<i>The following files are in the directory {{=it.path}}:</i><br />
+			{{~it.files :val:index}}
+				- <a href="/{{=val.path}}">{{=val.name}}</a><br />
+			{{~}}
+		</p>
+	</body>
+</html>
