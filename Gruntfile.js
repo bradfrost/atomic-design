@@ -4,13 +4,22 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         
+        connect: {
+	      server: {
+		      options: {
+			      hostname: 'localhost',
+			      port: 4000,
+			      base: '_site',
+			      livereload: true
+		      }
+	      }
+        },
 		jekyll: {
-		    serve: {
-			    options: {
-			      serve: true,
-			      port: 4000
-			    }
-			}
+		    dist: {
+		      options: {
+		        config: '_config.yml'
+		      }
+		    }
 		},
 		sass: {
 			dist: {
@@ -50,12 +59,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-shell');
 	grunt.loadNpmTasks('grunt-serve');
 	grunt.loadNpmTasks('grunt-jekyll');
+	grunt.loadNpmTasks('grunt-contrib-connect');
 
+	grunt.registerTask('serve', ['jekyll','connect:server','watch']);
 
 	// Tasks
-	grunt.registerTask('serve', ['watch', 'jekyll']);
-	grunt.registerTask('default', ['sass', 'watch', 'autoprefixer', 'jekyll:serve']);
+	grunt.registerTask('default', ['sass', 'watch', 'autoprefixer', 'connect:server', 'jekyll']);
 };
