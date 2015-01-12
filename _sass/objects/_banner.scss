@@ -21,6 +21,7 @@
 	position: relative;
 	z-index: 2;
 	text-align: center;
+	text-transform: lowercase;
 
 	a {
 		color: $tan;
@@ -90,6 +91,5 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: middle;
-		text-transform: lowercase;
 	}
 }
