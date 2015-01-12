@@ -1,0 +1,95 @@
+/*------------------------------------*\
+    $BANNER STYLES
+\*------------------------------------*/
+
+.banner {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: $brown;
+	color: $tan;
+	z-index: 2;
+	font-weight: bold;
+}
+
+.banner-content {
+	max-width: $max-width;
+	background: $brown;
+	margin: 0 auto;
+	padding: 0.6em 1em;
+	position: relative;
+	z-index: 2;
+	text-align: center;
+
+	a {
+		color: $tan;
+		text-decoration: none;
+		transition: color $speed-fast ease-out;
+
+		&:hover, &:focus {
+			color: $orange;
+		}
+	}
+
+	h3 {
+		font-size: 1em;
+		margin: 0;
+		display: inline;
+		-webkit-align-self: flex-start;
+		-ms-flex-item-align: start;
+		align-self: flex-start;
+	}
+
+	p {
+		margin: 0;
+		display: inline;
+		-webkit-order: 3;
+		-ms-flex-order: 3;
+		order: 3;
+
+		@media all and (min-width: 30em) {
+			position: absolute;
+			right: 1em;
+		}
+	}
+
+	.btn {
+		background: $orange;
+		display: block;
+		line-height: 1;
+		padding: 1.05em;
+		margin-top: 0.5em;
+
+		&:hover, &:focus {
+			color: $white;
+		}
+
+		@media all and (min-width: 30em) {
+			border: 0;
+			border-radius: 8px 8px 0 0;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -5.375em;
+			margin-bottom: 0;
+			z-index: 1;
+			transition: all $speed-fast ease-out;
+
+			&:hover, &:focus {
+				padding-bottom: 1.5em;
+			}
+		}
+	}
+
+	@media all and (min-width: 30em) {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		justify-content: space-between;
+		align-items: middle;
+		text-transform: lowercase;
+	}
+}

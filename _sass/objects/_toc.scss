@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    $TABLE OF CONTENTS=
+\*------------------------------------*/
+
+.toc-list {
+	text-align: center;
+	list-style: none;
+	margin: 0 0 2em;
+	padding: 0;
+
+	li {
+		border-bottom: 1px solid $tan-dark;
+		padding: 1em 0;
+
+		&:last-child {
+			border: 0;
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	h3 {
+		font-size: 1.4em;
+		margin: 0;
+	}
+
+	p {
+		color: $tan-dark;
+		margin: 0;
+		font-size: 85%;
+	}
+}
