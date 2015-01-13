@@ -4,7 +4,7 @@ title: Outline
 permalink: /outline/
 ---
 
-Atomic Design discusses the importance of crafting robust design systems, and introduces a methodology for which to create smart, deliberate, interface systems.
+Atomic Design discusses the importance of crafting robust design systems, and introduces a methodology for which to create smart, deliberate interface systems.
 
 Chapter one explains why. Chapter two focuses on the what. Chapter three and four show you how.
 
@@ -101,5 +101,3 @@ The book will conclude by recapping why thinking in a more systematic way is bec
 - Thanks & Acknowledgements
 - Resources
 - About the Author
-
-74900977
