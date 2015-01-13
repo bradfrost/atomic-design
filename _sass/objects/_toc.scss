@@ -3,14 +3,14 @@
 \*------------------------------------*/
 
 .toc-list {
-	border-top: 1px solid $tan-dark;
+	border-top: 1px solid $tan-dim;
 	text-align: center;
 	list-style: none;
 	margin: 0 0 2em;
 	padding: 0;
 
 	li {
-		border-bottom: 1px solid $tan-dark;
+		border-bottom: 1px solid $tan-dim;
 	}
 
 	a {
@@ -20,7 +20,7 @@
 		transition: all $speed-fast ease-out;
 		
 		&:hover, &:focus {
-			background: $tan-dim;
+			background: $tan-dim-min;
 			color: $orange;
 		}
 	}
