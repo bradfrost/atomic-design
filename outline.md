@@ -9,14 +9,14 @@ Atomic Design discusses the importance of crafting robust design systems, and in
 Chapter one explains why. Chapter two focuses on the what. Chapter three and four show you how.
 
 
-## 1. Design systems
+## 1. [Design systems](/chapter-1)
 The book will begin by addressing the "why": why designers should care about thinking about interfaces in a more systematic way. I'll discuss the history of modular design systems (after all, this type of thinking been around for a long while now), but discuss how the ever-shifting Web landscape is making systematic thinking a necessity.
 
 The first section will also discuss the emerging trends and techniques that encourage more systematic thinking: style tiles, element collages, pattern libraries, UI frameworks, and more. And while I'll certainly extol the virtues of these techniques, I'll also bring to light a lot of the shortcomings and frustrations of UI frameworks and pattern libraries. This sets the stage to introduce a more sound, deliberate way of constructing an interface system.
 
 - Our paginated past
-- The ever-shifting Web landscape and the need for modularity
-- History of modular design
+- Tearing up the page - The ever-shifting Web landscape and the need for modularity
+- What’s old is new again - a history of modular design
 - Trends: style tiles, element collages, UI frameworks, pattern libraries, CSS architecture
 - Not another redesign
 - Advantages of design systems: promote consistency, establish a consistent vocabulary, create more robust deliverables, establish a system that can be modified and extended, future-friendly
@@ -24,7 +24,7 @@ The first section will also discuss the emerging trends and techniques that enco
 - Issues with UI frameworks and pattern libraries
 - Setting the stage for the need of a better methodology
 
-## 2. Atomic Design Methodology
+## 2. [Atomic Design Methodology](/chapter-2)
 The second chapter will define atomic design. Atomic design is an interface design methodology consisting of five distinct stages working together to create deliberate design systems.
 
 - Set up the chemistry analogy (atoms are the building blocks of matter, those atoms combine to form molecules, etc)
@@ -68,7 +68,7 @@ Discuss the advantages of atomic design, especially the ability to traverse betw
 - What atomic design isn't - CSS or JS methodology
 - Recap of the the atomic design methodology
 
-## 3. Tools of the Trade
+## 3. [Tools of the Trade](/chapter-3)
 This chapter will discuss tools and techniques to create atomic design systems. I'll introduce Pattern Lab, a tool Dave Olsen and I created in order to execute atomic design systems. I'll explain the gist of using Pattern Lab and its various features, but I want to be cognizant of not focusing too much on this specific tool. While I know it's an effective tool for me and others, I understand that it might not be a perfect fit for all readers. The book is more about promoting the idea of atomic design rather than any specific tool.
 
 - Style guides, what are they, and the many flavors of 
@@ -78,7 +78,7 @@ This chapter will discuss tools and techniques to create atomic design systems. 
 - Interface inventories
 - Pattern library boilerplates, and front-end style guides
 
-## 4. Process & Workflow
+## 4. [Process & Workflow](/chapter-4)
 I'll introduce techniques for design teams to get started with systematic design. One particularly useful technique is conducting an interface inventory. I'll define what an interface inventory is and how to conduct one. I'll also reference other tools (like Stlyify.me and Nicole Sullivan's Typo-O-Matic) that help deconstruct an existing interface into its component parts. I'll also discuss pattern library tools and resources to help designers kickstart their own design systems.
 
 Everyone's design process is different, so I'll also discuss how to introduce and integrate atomic design into cross-disciplinary Web design teams. I'll also provide practical advice for getting buy-in from colleagues and clients.
@@ -89,7 +89,7 @@ Everyone's design process is different, so I'll also discuss how to introduce an
 - Stylify.me and Type-o-matic
 
 
-## Conclusion
+## [Conclusion](/conclusion)
 The book will conclude by recapping why thinking in a more systematic way is becoming increasingly necessary. I'll talk about the merits of atomic design, and remind people how they can get started. I will leave on a note of "What's next?" for design systems. Right now, for me the most obvious challenge is to make systematic design the default mode of thinking for designers, agencies, and organizations. I think there's a tremendous opportunity for design systems to help people build for the future.
 
 - Recap why systematic design is so important
@@ -98,6 +98,6 @@ The book will conclude by recapping why thinking in a more systematic way is bec
 
 ---------
 
-- Thanks & Acknowledgements
-- Resources
-- About the Author
+- [Thanks & Acknowledgements](/thanks)
+- [Resources](/resources)
+- [About the Author](/author)
