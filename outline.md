@@ -96,6 +96,10 @@ The book will conclude by recapping why thinking in a more systematic way is bec
 - Recap the advantages of atomic design
 - Recap how to incorporate this thinking into your workflow
 
-- Thanks & Acknowledgements 
+---------
+
+- Thanks & Acknowledgements
 - Resources
 - About the Author
+
+74900977
