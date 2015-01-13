@@ -34,9 +34,6 @@
 @import "generic/reset";
 
 
-
-
-
 /*------------------------------------*\
     $GLOBAL ELEMENTS
 \*------------------------------------*/
@@ -49,9 +46,6 @@
 @import "base/media";
 @import "base/forms";
 @import "base/tables";
-
-
-
 
 
 /*------------------------------------*\
@@ -69,17 +63,13 @@
 @import "objects/banner";
 
 
-
-/*------------------------------------*\
-    $TEXT Styles
-\*------------------------------------*/
-@import "objects/text";
-
-
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
 @import "objects/buttons";
+@import "objects/note";
+@import "objects/text";
+
 
 /*------------------------------------*\
     $PAGES
