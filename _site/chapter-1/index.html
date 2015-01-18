@@ -23,7 +23,7 @@
     <div class="note">
 	<p>Greetings, reader! The following text is a <a href="http://bradfrost.com/blog/post/atomic-design-book/">work in progress</a> so be warned you will encounter incomplete thoughts, grammar errors, and more. If you see something worth fixing, please <a href="https://github.com/bradfrost/atomic-design">submit an issue on Github</a>. Thanks and happy reading!</p>
 </div>
-    <p>A long, long time ago, there were these things called <em>books</em>. Remember them? These contraptions were heavy and bulky and made of dead trees. Inside these books were things called <em>pages</em>. You turned them, and they cut your fingers.</p>
+    <p>A long, long time ago, there were these things called <em>books</em>. Remember them? These contraptions were heavy and bulky and made from the pulp of dead trees. Inside these books were things called <em>pages</em>. You turned them, and they cut your fingers.</p>
 
 <p>Awful things. I’m so glad these book things and their razor-sharp pages aren’t around anymore.</p>
 
@@ -32,23 +32,37 @@
 <h2 id="our-paginated-past">Our Paginated Past</h2>
 <p>The <em>page</em> has been with us for a long time now. A few millennia, actually. The first books were thick slabs of clay created about 2,000 years ago, which quickly replaced scrolls as the preferred way to consume the written word. <em>(note: footnote referring back to The Shallows)</em>. And while reading technology has come a long way – from parchment to paperback to pixels – the concept of the page holds strong to this day. </p>
 
-<p>The page metaphor has been baked into the lexicon of the Web since the very beginning. Tim Berners-Lee invented the World Wide Web so that he, his colleagues at CERN, and other academics could easily share and link together their web of <em>documents</em>. This document-based, academic genesis of the Web is why the concept of the <em>page</em> is so deeply ingrained in the vocabulary of the internet.</p>
+<p>The page metaphor has been baked into the lexicon of the Web since the very beginning. Tim Berners-Lee invented the World Wide Web so that he, his colleagues at CERN, and other academics could easily share and link together their world of <em>documents</em>. This document-based, academic genesis of the Web is why the concept of the <em>page</em> is so deeply ingrained in the vocabulary of the internet.</p>
 
 <p>So what? </p>
 
 <p>As we’ll discuss throughout this book, the way things are named very much impact how they’re perceived and utilized. Thinking of the Web as <em>pages</em> has real ramifications on how people interact with web experiences, and influences how we as an industry go about creating Web interfaces.</p>
 
-<p>From the beginning, the page metaphor provided users with a familiar language for which to navigate this brave new World Wide Web. Concepts like bookmarking, pagination etc.</p>
+<p>From the beginning, the page metaphor provided users with a familiar language for which to navigate this brave new World Wide Web. Concepts like bookmarking, pagination, etc. helped new Web users explore and eventually master an entirely new medium using conventions they were already comfortable with.</p>
 
 <p><em>[note: image of Chrome “This Webpage is not available” ]</em></p>
 
-<p>The page metaphor has had a profound influence on how web experiences are created.</p>
+<p>The page was–and continues to be–a very visible and helpful metaphor for the end users of the Web. It also has a profound influence on how Web experiences are created.</p>
 
-<p>In the early days of the Web, companies looking to get online simply translated their printed materials onto their websites. Viewing a website as simply a digital representation of the printed page was easy for people to wrap their hands around. Of course these brochure websites reflected a very one-dimensional perspective of what the Web could offer, but hey, it was a start.</p>
+<p>In the early days of the Web, companies looking to get online simply translated their printed materials onto their websites. But even though these brochure websites offered a very one-dimensional perspective of what the Web could offer, viewing websites as digital representations of the printed page was easy for creators to wrap their heads around. </p>
 
-<p>“Brad, how long will the home <em>page</em> take to build?” Well, that sort of depends on what’s on it, right? Maybe the homepage consists of a tagline and a background image, which means it’ll be done by lunch. Or maybe it’s chock full of carousels, sophisticated forms, third-party integrations.</p>
+<p>But we’re now 25 years into this new medium, and this once-necessary figure of speech has overstayed its welcome. Unfortunately, the page metaphor continues to run deep with respects to have we scope and execute our Web projects. Here are just a few examples I hear on a regular basis:</p>
 
-<p>The page metaphor served its purpose helping users familiarize themselves with this new medium, and provided . But in order to create thoughtful Web experiences  the time to move away from the page metaphor.</p>
+<p>“We’re a startup looking to launch a 5-<em>page</em> website this October…”</p>
+
+<p>“Brad, how long will the home <em>page</em> take to build?”</p>
+
+<p>“How are we ever going to redesign this university website that contains over 30,000 <em>pages</em>?!”</p>
+
+<p>All of the above statements make the fundamental mistake of assuming a <em>page</em> is a uniform, isolated, quantifiable thing. The reality is that the Web is a fluid, bi-directional, interdependent medium, and as soon as we come to terms with that fact the notion of the <em>page</em> quickly erodes as a useful means to scope and create Web experiences.</p>
+
+<p>How long will a homepage take to build? Well, that sort of depends on what’s on it, right? Maybe the homepage simply consists of a  tagline and a background image, which means it could be done by lunch. Or maybe it’s chock full of carousels, dynamic forms, and third-party integrations. In that case, maybe the homepage will take several months to complete. </p>
+
+<p>As for the 30,000-page university website, it might be tempting to declare “Thousands of pages!? Wow, that sounds challenging!” But in reality, those 30,000 pages may consist of three content types and two over-arching layouts.</p>
+
+<p>Ultimately, a project’s level of effort is much better determined by the functionality and <a href="http://bradfrost.com/blog/post/scope-components-not-pages/">components</a> contained within those pages, rather than on the quantity of pages themselves.</p>
+
+<p>The page metaphor served its purpose helping users familiarize themselves with the Web, and provided creators with a necessary transitional language for which to create for a brand new medium. But in order to create thoughtful interfaces meant to be served to a multitude of connected devices, the time has come for us to evolve beyond the page.</p>
 
 <h2 id="tearing-up-the-page">Tearing Up the Page</h2>
 
@@ -57,14 +71,19 @@
 </blockquote>
 
 <ul>
+  <li>
+    <p>Folks like Andy Clarke, Stephen Hay, and Jina Bolton have been </p>
+  </li>
   <li>The ever-shifting Web landscape and the need for modularity</li>
-  <li>What’s old is new again</li>
+  <li>What’s old is new again. Brand identity systems</li>
   <li>a history of modular design</li>
 </ul>
 
 <h2 id="trends-note-need-title">Trends (note: need title)</h2>
 
 <p>Trends: style tiles, element collages, UI frameworks, pattern libraries, CSS architecture, not another redesign</p>
+
+<p><a href="http://daverupert.com/2013/04/responsive-deliverables/">Responsive deliverables</a> by Dave Rupert.</p>
 
 <h2 id="design-systems-save-the-day">Design Systems Save the Day</h2>
 <p>Advantages of design systems: promote consistency, establish a consistent vocabulary, create more robust deliverables, establish a system that can be modified and extended, future-friendly
@@ -75,6 +94,8 @@
   <li>The rise of UI frameworks</li>
   <li>Issues with UI frameworks and pattern libraries</li>
 </ul>
+
+<h2 id="in-search-of-a-methodology">In search of a methodology</h2>
 
 <p>Lorem ipsum dolar yadda yadda yadda to be continued…</p>
 
