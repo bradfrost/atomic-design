@@ -26,3 +26,8 @@ And this is a list of helpful resources people have brought to my attention duri
 - [Bitbooks](http://bitbooks.cc/)
 - [LeanPub](https://leanpub.com/)
 - [Sitepoint Liveupdate](https://learnable.com/liveupdate)
+
+
+## Chapter 1
+### Our Paginated Past
+- [Language and Metaphors](http://breakthepage.com/from-edition/one/language-and-metaphors/) by Dan Donald
