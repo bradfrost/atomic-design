@@ -10,8 +10,8 @@
   
 <!-- Schema.org markup for Google+ -->
 <meta itemprop="name" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-<meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 <meta itemprop="image" content="http://atomicdesign.bradfrost.com/images/book-cover-thumb.png">
+<meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary_large_image">
@@ -23,7 +23,7 @@
 
 <!-- Open Graph data -->
 <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
-<meta property="og:url" content="http://atomicdesign.bradfrost.com/{{ page.url }}" />
+<meta property="og:url" content="http://atomicdesign.bradfrost.com{{ page.url }}" />
 <meta property="og:image" content="http://atomicdesign.bradfrost.com/images/book-cover-thumb.png/images/book-cover-thumb.png" />
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 </head>
