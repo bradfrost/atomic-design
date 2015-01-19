@@ -27,7 +27,7 @@ The page was–and continues to be–a very visible and helpful metaphor for the
 
 In the early days of the Web, companies looking to get online simply translated their printed materials onto their websites. But even though these brochure websites offered a very one-dimensional perspective of what the Web could offer, viewing websites as digital representations of the printed page was easy for creators to wrap their heads around. 
 
-But we’re now 25 years into this new medium, and this once-necessary figure of speech has overstayed its welcome. Unfortunately, the page metaphor continues to run deep with respects to have we scope and execute our Web projects. Here are just a few examples I hear on a regular basis:
+But we’re now 25 years into this new medium, and this once-necessary figure of speech has overstayed its welcome. Unfortunately, the page metaphor continues to run deep with respects to how we scope and execute our Web projects. Here are just a few examples I hear on a regular basis:
 
 “We’re a startup looking to launch a 5-*page* website this October…”
 
@@ -47,20 +47,31 @@ The page metaphor served its purpose helping users familiarize themselves with t
 
 ## Tearing up the page
 
-> Design systems, not pages. - [Andy Clarke](stuffandnonsense.co.uk/blog/about/walls_come_tumbling_down_presentation_slides_and_transcript/)
+> We’re not designing pages, we’re designing systems of components. - [Stephen Hay](http://bradfrost.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/)
 
-Folks like Andy Clarke, Stephen Hay, and Jina Bolton have been 
+
+Folks like Andy Clarke, Stephen Hay, and Jina Bolton have long been talking about 
+
+Tim Berners-Lee [modularity](http://www.w3.org/DesignIssues/Principles.html#Modular) has been a design principle of the Web since the 90’s.
+
+http://www.w3.org/DesignIssues/Modularity.html
+
+> Design systems, not pages. - [Andy Clarke](stuffandnonsense.co.uk/blog/about/walls_come_tumbling_down_presentation_slides_and_transcript/)
  
 - The ever-shifting Web landscape and the need for modularity
 - What’s old is new again. Brand identity systems
 - a history of modular design
 
-## Death to yet-another-redesign
+## Not another redesign
 
 Not another redesign
 
 ## Evolving deliverables
-Trends: style tiles, element collages, UI frameworks, pattern libraries, CSS architecture
+Visual design: Samantha Warren - style tiles, Dan Mall - element collages, Andy Clarke “design atmosphere”: color, typography, texture.
+
+Code: CSS architecture, JS patterns, web components, 
+
+UI frameworks, pattern libraries, 
 
 [Responsive deliverables](http://daverupert.com/2013/04/responsive-deliverables/) by Dave Rupert.
 
