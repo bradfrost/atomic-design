@@ -10,7 +10,7 @@ Awful things. I’m so glad these book things and their razor-sharp pages aren�
 
 Oh wait.
 
-## Our Paginated Past
+## Our paginated past
 The _page_ has been with us for a long time now. A few millennia, actually. The first books were thick slabs of clay created about 2,000 years ago, which quickly replaced scrolls as the preferred way to consume the written word. *(note: footnote referring back to The Shallows)*. And while reading technology has come a long way – from parchment to paperback to pixels – the concept of the page holds strong to this day. 
 
 The page metaphor has been baked into the lexicon of the Web since the very beginning. Tim Berners-Lee invented the World Wide Web so that he, his colleagues at CERN, and other academics could easily share and link together their world of *documents*. This document-based, academic genesis of the Web is why the concept of the *page* is so deeply ingrained in the vocabulary of the internet.
@@ -45,27 +45,30 @@ Ultimately, a project’s level of effort is much better determined by the funct
 
 The page metaphor served its purpose helping users familiarize themselves with the Web, and provided creators with a necessary transitional language for which to create for a brand new medium. But in order to create thoughtful interfaces meant to be served to a multitude of connected devices, the time has come for us to evolve beyond the page.
 
-## Tearing Up the Page
+## Tearing up the page
 
 > Design systems, not pages. - [Andy Clarke](stuffandnonsense.co.uk/blog/about/walls_come_tumbling_down_presentation_slides_and_transcript/)
 
-- Folks like Andy Clarke, Stephen Hay, and Jina Bolton have been 
+Folks like Andy Clarke, Stephen Hay, and Jina Bolton have been 
  
 - The ever-shifting Web landscape and the need for modularity
 - What’s old is new again. Brand identity systems
 - a history of modular design
 
-## Trends (note: need title)
+## Death to yet-another-redesign
 
-Trends: style tiles, element collages, UI frameworks, pattern libraries, CSS architecture, not another redesign
+Not another redesign
+
+## Evolving deliverables
+Trends: style tiles, element collages, UI frameworks, pattern libraries, CSS architecture
 
 [Responsive deliverables](http://daverupert.com/2013/04/responsive-deliverables/) by Dave Rupert.
 
-## Design Systems Save the Day
+## Design systems save the day
 Advantages of design systems: promote consistency, establish a consistent vocabulary, create more robust deliverables, establish a system that can be modified and extended, future-friendly
 - [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/) by Anna Debenham
 
-## UI Frameworks in Theory and in Practice
+## UI frameworks, in theory and in practice
 - The rise of UI frameworks
 - Issues with UI frameworks and pattern libraries
 
