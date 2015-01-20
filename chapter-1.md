@@ -49,11 +49,9 @@ The page metaphor served its purpose helping users familiarize themselves with t
 Thankfully, the Web community is hard at work establishing principles and practices to help us effectively talk about and create for the Web. And there’s one concept the keeps popping up in every conversation about how to create successful Web experiences: modularity. 
 
 The concept of modularity predates the Web by a long shot. The Industrial Revolution brought about interchangeable parts
-and Henry Ford’s assembly line, which forever transformed the automobile-manufacturing process. Early cars and components were hand-crafted, which led to many safety and maintainability nightmare. The assembly line broke the automobile into its component parts, and modularized the assembly process. The results spoke for themselves as more uniform, reliable, safer cars rolled out of the factory in record time.   
+and Henry Ford’s assembly line, which forever transformed the automobile-manufacturing process. Early cars and components were hand-crafted, which led to many safety and maintainability nightmares. Ford broke the automobile into its component parts, and modularized the assembly process. The results spoke for themselves as more uniform, reliable, safer cars rolled out of the factory, and in record time to boot.   
 
-A bit closer to home, the field of computer science has been practicing object-oriented programming and talking about important concepts like the single responsibility principle since the ‘60s. 
-
-As it turns out, [modular design](http://www.w3.org/DesignIssues/Principles.html#Modular) has long been a design principle for the architecture of the Web. 
+As the machine age transitioned into the computer age, the computer science field began practicing object-oriented programming and establishing important modular concepts like *separation of concerns* and the *single responsibility principle*. It is from this world that the World Wide Web was born, so it’s no surprise that [modular design](http://www.w3.org/DesignIssues/Principles.html#Modular) has long been a design principle for the architecture of the Web. 
 
 Libraries like YUI, jQuery UI
 
