@@ -46,41 +46,73 @@ Ultimately, a project’s level of effort is much better determined by the funct
 The page metaphor served its purpose helping users familiarize themselves with the Web, and provided creators with a necessary transitional language for which to create for a brand new medium. But in order to create thoughtful interfaces meant to be served to a multitude of connected devices, the time has come for us to evolve beyond the page.
 
 ## Tearing up the page
+Thankfully, the Web community is hard at work establishing principles and practices to help us effectively talk about and create for the Web. And there’s one concept the keeps popping up in every conversation about how to create successful Web experiences: modularity. 
 
-> We’re not designing pages, we’re designing systems of components. - [Stephen Hay](http://bradfrost.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/)
+The concept of modularity predates the Web by a long shot. The Industrial Revolution brought about interchangeable parts
+and Henry Ford’s assembly line, which forever transformed the automobile-manufacturing process. Early cars and components were hand-crafted, which led to many safety and maintainability nightmare. The assembly line broke the automobile into its component parts, and modularized the assembly process. The results spoke for themselves as more uniform, reliable, safer cars rolled out of the factory in record time.   
 
+A bit closer to home, the field of computer science has been practicing object-oriented programming and talking about important concepts like the single responsibility principle since the ‘60s. 
 
-Folks like Andy Clarke, Stephen Hay, and Jina Bolton have long been talking about 
+As it turns out, [modular design](http://www.w3.org/DesignIssues/Principles.html#Modular) has long been a design principle for the architecture of the Web. 
 
-Tim Berners-Lee [modularity](http://www.w3.org/DesignIssues/Principles.html#Modular) has been a design principle of the Web since the 90’s.
+Libraries like YUI, jQuery UI
 
-http://www.w3.org/DesignIssues/Modularity.html
+While modular thinking has been around for a long time, it now matters more than ever. Right now, our entire industry is drowning in a sea of devices, viewport sizes, environments, user preferences. And things aren’t slowing down anytime soon.
 
-> Design systems, not pages. - [Andy Clarke](stuffandnonsense.co.uk/blog/about/walls_come_tumbling_down_presentation_slides_and_transcript/)
- 
-- The ever-shifting Web landscape and the need for modularity
-- What’s old is new again. Brand identity systems
-- a history of modular design
+> 		Disruption will only accelerate. The quantity and diversity of connected devices—many of which we haven't imagined yet—will explode, as will the quantity and diversity of the people around the world who use them. Our existing standards, workflows, and infrastructure won't hold up. Today's onslaught of devices is already pushing them to the breaking point. They can't withstand what's ahead. – [The Future-Friendly Manifesto](http://futurefriendlyweb.com/)
 
-## Not another redesign
+In an effort to maintain sanity, 
 
-Not another redesign
+Modularity is rearing its head across all aspects of the Web creation process, affecting strategy, process, content, design, and development.
 
-## Evolving deliverables
+### Strategy
+- Not another redesign. Moving away from monolithic redesigns that bulldozes everything
+- Jared Spool’s escalator of acquired knowledge 
+- Minimum viable prodcuts
+
+### Process 
+- The rise of “agile” as an effective [](http://cognition.happycog.com/article/diy-process)
+- Talk about stories rather than pages
+- Chapter 4 will discuss what an effective pattern-based process and workflow looks like.
+
+### Visual Design
+Visual designers are summoning their knowledge of effective brand identity, where  systems. 
 Visual design: Samantha Warren - style tiles, Dan Mall - element collages, Andy Clarke “design atmosphere”: color, typography, texture.
 
-Code: CSS architecture, JS patterns, web components, 
+### Code
+Code: Object oriented programming influencing CSS architecture, [JavaScript patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/), web components, 
 
-UI frameworks, pattern libraries, 
+### Evolving deliverables
+
+### UI Design
+> We’re not designing pages, we’re designing systems of components. - [Stephen Hay](http://bradfrost.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/)
+
+What is an interface made of? What are our Lego® bricks? What are our Subway sandwich pieces that we combine into millions of delicious combinations?
+
+It’s these questions that we’ve been asking frequently ourselves  ever since the 
+
+
+and UI frameworks like Bootstrap and Foundation by Zurb
 
 [Responsive deliverables](http://daverupert.com/2013/04/responsive-deliverables/) by Dave Rupert.
 
 ## Design systems save the day
 Advantages of design systems: promote consistency, establish a consistent vocabulary, create more robust deliverables, establish a system that can be modified and extended, future-friendly
-- [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/) by Anna Debenham
+In her phenomenal book [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/), Anna Debenham explains the myriad benefits of establishing a front-end style guide:
+- Establish a consistent, shared vocabulary between everyone involved
+
+### Design system pitfalls
+- Time consuming to create
+- Treated as a auxiliary project
+- Often too abstract
+- Seen only as a designer/developer tool
+- Often created after a project launches
+- Often incomplete/only serving present cases
+- Lacking a clear methodology
 
 ## UI frameworks, in theory and in practice
 - The rise of UI frameworks
+
 - Issues with UI frameworks and pattern libraries
 
 ## In search of a methodology
