@@ -60,11 +60,13 @@ If modularity has been around for such a long time, why are we talking about it 
 
 The short answer is that modularity matters now more than ever. Right now, our entire industry is drowning in a sea of devices, viewport sizes, and online environments. And things aren’t slowing down anytime soon.
 
-{% include figure.html src="../images/content/devices.jpg" caption="These are just some of the connected devices that access our Web experiences." %}
-
 > Disruption will only accelerate. The quantity and diversity of connected devices—many of which we haven't imagined yet—will explode, as will the quantity and diversity of the people around the world who use them. Our existing standards, workflows, and infrastructure won't hold up. Today's onslaught of devices is already pushing them to the breaking point. They can't withstand what's ahead. <cite>[The Future-Friendly manifesto](http://futurefriendlyweb.com/)</cite>
 
-In an effort to maintain our sanity, we need to . How can we create effective Web experiences? 
+{% include figure.html src="../images/content/devices.jpg" caption="These are just some of the connected devices we need to worry about.” %}
+
+Like it or not, this multi-device universe is now our reality. It was hard enough to get our Web pages to display consistently in a handful of desktop browsers, but we’re now responsible for ensuring our web experiences look and function beautifully on a host of smartphones, tablets, phablets, netbooks, notebooks, desktops, TVs, game consoles, and more. 
+
+In order to maintain our sanity, we need to take a step back and  break this giant responsibility into smaller, more manageable  chunks.
 
 Modularity is rearing its head across all aspects of the Web creation process, affecting strategy, process, content, design, and development.
 
