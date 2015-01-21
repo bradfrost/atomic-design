@@ -11,4 +11,13 @@ h1 {
 	cite {
 		font-style: normal;
 	}
+	
+	em {
+		font-family: $font-secondary;
+		display: block;
+		color: $tan-dark;
+		font-size: 40%;
+		font-weight: normal;
+		text-transform: lowercase;
+	}
 }
