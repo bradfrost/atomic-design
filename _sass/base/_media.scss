@@ -6,3 +6,21 @@ img, video, object {
 	max-width: 100%;
 	height: auto;
 }
+
+figure {
+	margin-bottom: 1em;
+	
+	img {
+		display: block;
+		margin-bottom: 0.3em;
+		padding: 0.2em;
+		background: $white;
+		border: 1px solid $tan-dark;
+	}
+}
+
+figcaption {
+	font-size: $font-size-sm;
+	font-style: italic;
+	color: $tan-dark;
+}
