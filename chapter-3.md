@@ -1,5 +1,6 @@
 ---
 layout: page
-title: Chapter 3
+title: Tools of the Trade
+chapterTitle: Chapter 3
 permalink: /chapter-3/
 ---

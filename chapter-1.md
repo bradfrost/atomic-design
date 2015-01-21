@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Chapter 1
+title: Designing Systems
+chapterTitle: Chapter 1
 permalink: /chapter-1/
 ---
 
@@ -46,18 +47,20 @@ Ultimately, a project’s level of effort is much better determined by the funct
 The page metaphor served its purpose helping users familiarize themselves with the Web, and provided creators with a necessary transitional language for which to create for a brand new medium. But in order to create thoughtful interfaces meant to be served to a multitude of connected devices, the time has come for us to evolve beyond the page.
 
 ## Tearing up the page
-Thankfully, the Web community is hard at work establishing principles and practices to help us effectively talk about and create for the Web. And there’s one concept the keeps popping up in every conversation about how to create successful Web experiences: modularity. 
+Thankfully, the Web community is hard at work establishing principles and practices to help us effectively talk about and create for the Web. And there’s one concept the keeps popping up in every conversation about how to create successful Web experiences: **modularity**. 
 
 The concept of modularity predates the Web by a long shot. The Industrial Revolution brought about interchangeable parts
 and Henry Ford’s assembly line, which forever transformed the automobile-manufacturing process. Early cars and components were individually crafted, which led to many safety and maintainability nightmares. Ford broke the automobile down into its component parts, and modularized the assembly process. The results spoke for themselves: more uniform, reliable, safer cars rolled out of the factory, and in record time to boot.   
 
 As the machine age transitioned into the computer age, the computer science field began practicing object-oriented programming and establishing important modular concepts like *separation of concerns* and the *single responsibility principle*. It is from this world that the World Wide Web was born, so it’s no surprise that [modular design](http://www.w3.org/DesignIssues/Principles.html#Modular) quickly became a design principle for the architecture of the Web. 
 
-Slowly but surely these concepts found their way Libraries like YUI, jQuery UI
+Slowly but surely these concepts found their way into how we construct our Web interfaces. In the early 2000’s we saw the rise of libraries like YUI and jQuery UI
 
-While modular thinking has been around for a long time, it now matters more than ever. Right now, our entire industry is drowning in a sea of devices, viewport sizes, environments, user preferences. And things aren’t slowing down anytime soon.
+If modularity has been around for such a long time, why are we talking about it now?
 
-> 		Disruption will only accelerate. The quantity and diversity of connected devices—many of which we haven't imagined yet—will explode, as will the quantity and diversity of the people around the world who use them. Our existing standards, workflows, and infrastructure won't hold up. Today's onslaught of devices is already pushing them to the breaking point. They can't withstand what's ahead. – [The Future-Friendly Manifesto](http://futurefriendlyweb.com/)
+, it now matters more than ever. Right now, our entire industry is drowning in a sea of devices, viewport sizes, environments, user preferences. And things aren’t slowing down anytime soon.
+
+> Disruption will only accelerate. The quantity and diversity of connected devices—many of which we haven't imagined yet—will explode, as will the quantity and diversity of the people around the world who use them. Our existing standards, workflows, and infrastructure won't hold up. Today's onslaught of devices is already pushing them to the breaking point. They can't withstand what's ahead. – [The Future-Friendly manifesto](http://futurefriendlyweb.com/)
 
 In an effort to maintain sanity, 
 

@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Chapter 2
+title: Atomic Design Methodology
+chapterTitle: Chapter 2
 permalink: /chapter-2/
 ---
 

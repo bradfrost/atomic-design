@@ -1,5 +1,6 @@
 ---
 layout: page
-title: Chapter 4
+title: The Atomic Workflow
+chapterTitle: Chapter 4
 permalink: /chapter-4/
 ---
