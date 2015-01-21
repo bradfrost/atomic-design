@@ -7,7 +7,7 @@ permalink: /chapter-1/
 
 A long, long time ago, there were these things called _books_. Remember them? These contraptions were heavy and bulky and made from the pulp of dead trees. Inside these books were things called _pages_. You turned them, and they cut your fingers.
 
-Awful things. I’m so glad these book things and their razor-sharp pages aren’t around anymore.
+Awful things. I’m so glad these book things with their razor-sharp pages aren’t around anymore.
 
 Oh wait.
 
@@ -22,7 +22,7 @@ As we’ll discuss throughout this book, the way things are named very much impa
 
 From the beginning, the page metaphor provided users with a familiar language for which to navigate this brave new World Wide Web. Concepts like bookmarking, pagination, etc. helped new Web users explore and eventually master an entirely new medium using conventions they were already comfortable with.
 
-*[note: image of Chrome “This Webpage is not available” ]*
+{% include figure.html src="../images/content/chrome-webpage.png" caption="Chrome browser displaying ‘This webpage is not available’ message" %}
 
 The page was–and continues to be–a very visible and helpful metaphor for the end users of the Web. It also has a profound influence on how Web experiences are created.
 
@@ -54,15 +54,17 @@ and Henry Ford’s assembly line, which forever transformed the automobile-manuf
 
 As the machine age transitioned into the computer age, the computer science field began practicing object-oriented programming and establishing important modular concepts like *separation of concerns* and the *single responsibility principle*. It is from this world that the World Wide Web was born, so it’s no surprise that [modular design](http://www.w3.org/DesignIssues/Principles.html#Modular) quickly became a design principle for the architecture of the Web. 
 
-Slowly but surely these concepts found their way into how we construct our Web interfaces. In the early 2000’s we saw the rise of libraries like YUI and jQuery UI
+Slowly but surely these concepts found their way into web designers’ workflows. In the early 2000’s we saw the introduction of libraries like [YUI](http://yuilibrary.com/) and [jQuery UI](http://jqueryui.com/), which provided developers with a toolkit of widgets and patterns to better create interactive interfaces.
 
 If modularity has been around for such a long time, why are we talking about it now?
 
-, it now matters more than ever. Right now, our entire industry is drowning in a sea of devices, viewport sizes, environments, user preferences. And things aren’t slowing down anytime soon.
+The short answer is that modularity matters now more than ever. Right now, our entire industry is drowning in a sea of devices, viewport sizes, and online environments. And things aren’t slowing down anytime soon.
 
-> Disruption will only accelerate. The quantity and diversity of connected devices—many of which we haven't imagined yet—will explode, as will the quantity and diversity of the people around the world who use them. Our existing standards, workflows, and infrastructure won't hold up. Today's onslaught of devices is already pushing them to the breaking point. They can't withstand what's ahead. – [The Future-Friendly manifesto](http://futurefriendlyweb.com/)
+{% include figure.html src="../images/content/devices.jpg" caption="These are just some of the connected devices that access our Web experiences." %}
 
-In an effort to maintain sanity, 
+> Disruption will only accelerate. The quantity and diversity of connected devices—many of which we haven't imagined yet—will explode, as will the quantity and diversity of the people around the world who use them. Our existing standards, workflows, and infrastructure won't hold up. Today's onslaught of devices is already pushing them to the breaking point. They can't withstand what's ahead. <cite>[The Future-Friendly manifesto](http://futurefriendlyweb.com/)</cite>
+
+In an effort to maintain our sanity, we need to . How can we create effective Web experiences? 
 
 Modularity is rearing its head across all aspects of the Web creation process, affecting strategy, process, content, design, and development.
 
@@ -86,14 +88,14 @@ Code: Object oriented programming influencing CSS architecture, [JavaScript patt
 ### Evolving deliverables
 
 ### UI Design
-> We’re not designing pages, we’re designing systems of components. - [Stephen Hay](http://bradfrost.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/)
+> We’re not designing pages, we’re designing systems of components. <cite>[Stephen Hay](http://bradfrost.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/)</cite>
 
-What is an interface made of? What are our Lego® bricks? What are our Subway sandwich pieces that we combine into millions of delicious combinations?
+What is an interface made of? What are our Lego<sup>®</sup> bricks? What are our Subway sandwich pieces that we combine into millions of delicious combinations?
 
 It’s these questions that we’ve been asking frequently ourselves  ever since the 
 
 
-and UI frameworks like Bootstrap and Foundation by Zurb
+and UI frameworks like [Bootstrap](http://getbootstrap.com/) and Foundation by Zurb
 
 [Responsive deliverables](http://daverupert.com/2013/04/responsive-deliverables/) by Dave Rupert.
 
