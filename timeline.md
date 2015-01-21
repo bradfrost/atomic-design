@@ -20,3 +20,5 @@ permalink: /timeline/
    [View signup form](http://bradfrost.com/blog/post/atomic-design-book/)
 8. ### *01/10/15* Begin adding to-dos
    [View issues on Github](https://github.com/bradfrost/atomic-design/issues)
+9. ### *01/13/15* Begin writing chapter 1
+   [Read Chapter 1](http://atomicdesign.bradfrost.com/chapter-1/)
