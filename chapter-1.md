@@ -64,30 +64,40 @@ The short answer is that modularity matters now more than ever. Right now, our e
 
 {% include figure.html src="../images/content/devices.jpg" caption="These are just some of the connected devices we need to worry about.” %}
 
-Like it or not, this multi-device universe is now our reality. It was hard enough to get our Web pages to display consistently in a handful of desktop browsers, but we’re now responsible for ensuring our web experiences look and function beautifully on a host of smartphones, tablets, phablets, netbooks, notebooks, desktops, TVs, game consoles, and more. 
+Like it or not, this multi-device universe is now our reality. It was hard enough to get our Web pages to display consistently in a handful of desktop browsers, but we’re now tasked with ensuring our web experiences look and function beautifully on a plethora of smartphones, tablets, phablets, netbooks, notebooks, desktops, TVs, game consoles, and more. 
 
-In order to maintain our sanity, we need to take a step back and  break this giant responsibility into smaller, more manageable  chunks.
+In order to address this reality while maintaining our sanity, it’s absolutely necessary for us to take a step back and break these giant responsibilities into smaller, more manageable  chunks.
 
-Modularity is rearing its head across all aspects of the Web creation process, affecting strategy, process, content, design, and development.
+And that’s exactly what folks are doing. The spirit of modularity is weaving its way into every aspect of the Web creation process, and is having profound effects on organizations’ strategy, process, content, design, and development.
 
-### Strategy
-- Not another redesign. Moving away from monolithic redesigns that bulldozes everything
-- Jared Spool’s escalator of acquired knowledge 
-- Minimum viable prodcuts
+### A manageable strategy
+Every organization is finally realizing that bulldozing their entire website and replacing it with the a New and Shiny™ website every three-to-six years isn’t (and never was) a sustainable solution.
 
-### Process 
-- The rise of “agile” as an effective [](http://cognition.happycog.com/article/diy-process)
-- Talk about stories rather than pages
+Out with the old! In with the new! But even before the launch-party confetti is swept up, organizations are. What’s more, monolight Jared Spool calls this the “escalator of acquired knowledge”, and these 
+
+Eventually, these monolithic redesigns leave organizations paralyzed, unable to make changes to respond to user feedback. All the while their users get angrier and angrier as they’re forced to endure an increasingly-creaky, broken experience.
+
+Taking cues from the smaller, leaner startup world, even massive organizations are inimum viable products
+
+### An iterative process 
+If I had a quarter for every time I heard some stakeholder say “We’re trying to be more Agile,” I’d be on a beach in Maui instead of writing this book.
+
+While 
+
+The rise of “agile” as an effective Brett Harned explains brilliantly [](http://cognition.happycog.com/article/diy-process)
+- Talk about stories rather than templates, 
+
 - Chapter 4 will discuss what an effective pattern-based process and workflow looks like.
 
-### Visual Design
+### Team Chunk: 
+Karen McGrane 
+
+### Visually repaired
 Visual designers are summoning their knowledge of effective brand identity, where  systems. 
 Visual design: Samantha Warren - style tiles, Dan Mall - element collages, Andy Clarke “design atmosphere”: color, typography, texture.
 
 ### Code
 Code: Object oriented programming influencing CSS architecture, [JavaScript patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/), web components, 
-
-### Evolving deliverables
 
 ### UI Design
 > We’re not designing pages, we’re designing systems of components. <cite>[Stephen Hay](http://bradfrost.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/)</cite>
