@@ -62,7 +62,7 @@ The short answer is that modularity matters now more than ever. Right now, our e
 
 > Disruption will only accelerate. The quantity and diversity of connected devices—many of which we haven't imagined yet—will explode, as will the quantity and diversity of the people around the world who use them. Our existing standards, workflows, and infrastructure won't hold up. Today's onslaught of devices is already pushing them to the breaking point. They can't withstand what's ahead. <cite>[The Future-Friendly manifesto](http://futurefriendlyweb.com/)</cite>
 
-{% include figure.html src="../images/content/devices.jpg" caption="These are just some of the connected devices we need to worry about.” %}
+{% include figure.html src="../images/content/devices.jpg" caption="These are just some of the connected devices we need to worry about." %}
 
 Like it or not, this multi-device universe is now our reality. It was hard enough to get our Web pages to display consistently in a handful of desktop browsers, but we’re now tasked with ensuring our web experiences look and function beautifully on a plethora of smartphones, tablets, phablets, netbooks, notebooks, desktops, TVs, game consoles, and more. 
 
@@ -71,13 +71,15 @@ In order to address this reality while maintaining our sanity, it’s absolutely
 And that’s exactly what folks are doing. The spirit of modularity is weaving its way into every aspect of the Web creation process, and is having profound effects on organizations’ strategy, process, content, design, and development.
 
 ### A manageable strategy
-Every organization is finally realizing that bulldozing their entire website and replacing it with the a New and Shiny™ website every three-to-six years isn’t (and never was) a sustainable solution.
+Every organization is finally realizing that bulldozing their entire website and replacing it with the a New-and-Shiny™ website every three-to-six years isn’t (and never was) a sustainable solution.
 
-Out with the old! In with the new! But even before the launch-party confetti is swept up, organizations are. What’s more, monolight Jared Spool calls this the “escalator of acquired knowledge”, and these 
+Out with the old! In with the new! It’s certainly an attractive and exciting prospect. But even before the launch-party confetti is swept up, the calls start coming in. 
 
-Eventually, these monolithic redesigns leave organizations paralyzed, unable to make changes to respond to user feedback. All the while their users get angrier and angrier as they’re forced to endure an increasingly-creaky, broken experience.
+“You moved my cheese!” cry the users, who have spent years learning the previous interface and functionality. When massive redesigns get launched with significant changes to the experience, users get knocked down the [“Magic Escalator of Acquired Knowledge”](http://www.uie.com/articles/magic_escalator/), as Jared Spool calls it. Huge redesigns are a jolt to the system, and initially-frustrated users have to spend a great deal of time and energy relearning the experience to slowly climb back up that escalator of acquired knowledge.  
 
-Taking cues from the smaller, leaner startup world, even massive organizations are inimum viable products
+In addition to frustrating users, …  Without a fundamental change in process, these monolithic redesigns eventually paralyze organizations, leaving them unable to quickly make changes and respond to user feedback. All the while users get angrier and angrier as they endure an increasingly-creaky, broken experience.
+
+Taking cues from the smaller, leaner startup world, even massive organizations are minimum viable products
 
 ### An iterative process 
 If I had a quarter for every time I heard some stakeholder say “We’re trying to be more Agile,” I’d be on a beach in Maui instead of writing this book.
