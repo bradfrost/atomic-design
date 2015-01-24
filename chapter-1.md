@@ -86,14 +86,19 @@ Moving away from Ron-Popeil-esque, set-it-and-forget-it redesigns requires delib
 ### An iterative process 
 If I had a quarter for every time I heard some stakeholder declare “we’re trying to be more agile,” I’d be orbiting the earth in my private spacecraft instead of writing this book.
 
-This desire to be more agile is commendable. But “agile” is a loaded term. There’s a difference between capital-“A” Agile and lowercase-“a” agile. [Brett Harned explains](http://cognition.happycog.com/article/diy-process)
+This desire to be more agile is commendable. But “agile” is a loaded term, and there are big differences between capital-“A” Agile and lowercase-“a” agile. Capital-“A” Agile is a specific methodology for software development, equipped with a [manifesto](http://www.agilemanifesto.org/) and accompanying frameworks like [Scrum](http://en.wikipedia.org/wiki/Scrum_%28software_development%29) and [Lean](http://en.wikipedia.org/wiki/Lean_software_development). 
 
-- Talk about stories rather than templates
-- Cross-disciplinary teams
+Lowercase-“a” agile is more of an informal desire to create an efficient process. That desire may certainly involve adopting general [principles](http://www.agilemanifesto.org/principles.html) from capital-“A” Agile, but it may not mean adopting the exact process in its entirety. Brett Harned explains why it can be challenging to :
+
+> We want to be more agile; we’re embracing change, continuing improvement, being as flexible as possible, and adapting as we see fit. The thing is, we won’t ever truly be Agile, as the Manifesto states. That’s okay, as long as we say what we will be. <cite>[Brett Harned](http://cognition.happycog.com/article/diy-process)</cite>
+
+In this multi-device age, it’s essential to move away from the rigid Waterfall workflows of the past.  And, yes, modularizing work so that 
+- 
+- 
 - Iteration “sprints”
 - Getting into the final environment faster
 
-- Chapter 4 will detail an effective pattern-based process and workflow.
+In Chapter 4, we’ll discuss important process considerations in order to establish an effective pattern-based workflow.
 
 ### Team Chunk: 
 Karen McGrane [Content Strategy for Mobile](http://www.abookapart.com/products/content-strategy-for-mobile)
