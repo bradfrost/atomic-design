@@ -71,28 +71,32 @@ In order to address this reality while maintaining our sanity, it’s absolutely
 And that’s exactly what folks are doing. The spirit of modularity is weaving its way into every aspect of the Web creation process, and is having profound effects on organizations’ strategy, process, content, design, and development.
 
 ### A manageable strategy
-Every organization is finally realizing that bulldozing their entire website and replacing it with the a New-and-Shiny™ website every three-to-six years isn’t (and never was) a sustainable solution.
+Every organization is finally realizing that bulldozing their entire website and replacing it with a New-And-Shiny™ website every three-to-eight years isn’t (and never was) an optimal solution.
 
-Out with the old! In with the new! It’s certainly an attractive and exciting prospect. But even before the launch-party confetti is swept up, the calls start coming in. 
+Out with the old! In with the new! It’s certainly an attractive prospect. But even before the launch-party confetti is swept up, the calls start coming in. “You moved my cheese!” cry the users, who spent years learning the previous interface and functionality. 
 
-“You moved my cheese!” cry the users, who have spent years learning the previous interface and functionality. When massive redesigns get launched with significant changes to the experience, users get knocked down the [“Magic Escalator of Acquired Knowledge”](http://www.uie.com/articles/magic_escalator/), as Jared Spool calls it. Huge redesigns are a jolt to the system, and initially-frustrated users have to spend a great deal of time and energy relearning the experience to slowly climb back up that escalator of acquired knowledge.  
+When massive redesigns launch with significant changes to the experience, users get knocked down what Jared Spool calls [“Magic Escalator of Acquired Knowledge”](http://www.uie.com/articles/magic_escalator/). Huge redesigns are a jolt to the system, and newly-frustrated users have to spend a great deal of time and energy relearning the experience in order to slowly climb back up that escalator of acquired knowledge. 
 
-In addition to frustrating users, …  Without a fundamental change in process, these monolithic redesigns eventually paralyze organizations, leaving them unable to quickly make changes and respond to user feedback. All the while users get angrier and angrier as they endure an increasingly-creaky, broken experience.
+In addition to disorienting users, these monolithic redesigns don’t get to the the organizational root of the problem. Without a fundamental change in process, history is bound to repeat itself, and what’s New-And-Shiny™ today becomes Old-And-Crusty™ tomorrow. The cycle repeats itself as companies push off minor updates until the next Big Redesign, ultimately paralyzing themselves and frustrating users in the process.
 
-Taking cues from the smaller, leaner startup world, even massive organizations are minimum viable products
+Thankfully, even massive organizations are taking cues from the smaller, leaner startup world, and are striving to get things out the door quicker. By creating *minimum viable products* and shipping often to iteratively improve the experience, organizations are able to better address user feedback and keep up with the ever-shifting Web landscape.
+
+Moving away from Ron-Popeil-esque, set-it-and-forget-it redesigns requires deliberate changes in organizational structure and workflow. Which is a heck of a lot easier said than done.
 
 ### An iterative process 
-If I had a quarter for every time I heard some stakeholder say “We’re trying to be more Agile,” I’d be on a beach in Maui instead of writing this book.
+If I had a quarter for every time I heard some stakeholder declare “we’re trying to be more agile,” I’d be orbiting the earth in my private spacecraft instead of writing this book.
 
-While 
+This desire to be more agile is commendable. But “agile” is a loaded term. There’s a difference between capital-“A” Agile and lowercase-“a” agile. [Brett Harned explains](http://cognition.happycog.com/article/diy-process)
 
-The rise of “agile” as an effective Brett Harned explains brilliantly [](http://cognition.happycog.com/article/diy-process)
-- Talk about stories rather than templates, 
+- Talk about stories rather than templates
+- Cross-disciplinary teams
+- Iteration “sprints”
+- Getting into the final environment faster
 
-- Chapter 4 will discuss what an effective pattern-based process and workflow looks like.
+- Chapter 4 will detail an effective pattern-based process and workflow.
 
 ### Team Chunk: 
-Karen McGrane 
+Karen McGrane [Content Strategy for Mobile](http://www.abookapart.com/products/content-strategy-for-mobile)
 
 ### Visually repaired
 Visual designers are summoning their knowledge of effective brand identity, where  systems. 
@@ -133,6 +137,7 @@ In her phenomenal book [Front-end Style Guides](http://maban.co.uk/projects/fron
 - Issues with UI frameworks and pattern libraries
 
 ## In search of a methodology
+- Recap modularity as a trend. 
 
 Lorem ipsum dolar yadda yadda yadda to be continued…
 
