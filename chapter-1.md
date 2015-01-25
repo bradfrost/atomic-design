@@ -86,29 +86,29 @@ Moving away from Ron-Popeil-esque, set-it-and-forget-it redesigns requires delib
 ### An iterative process 
 If I had a quarter for every time I heard some stakeholder declare “we’re trying to be more agile,” I’d be orbiting the earth in my private spacecraft instead of writing this book.
 
-This desire to be more agile is commendable. But “agile” is a loaded term, and there are big differences between capital-“A” Agile and lowercase-“a” agile. Capital-“A” Agile is a specific methodology for software development, equipped with a [manifesto](http://www.agilemanifesto.org/) and accompanying frameworks like [Scrum](http://en.wikipedia.org/wiki/Scrum_%28software_development%29) and [Lean](http://en.wikipedia.org/wiki/Lean_software_development). 
+Wanting to be more agile is commendable. But “agile” is a loaded term, with big differences between capital-“A” Agile and lowercase-“a” agile. Capital-“A” Agile is a specific methodology for software development, equipped with a [manifesto](http://www.agilemanifesto.org/) and accompanying frameworks like [Scrum](http://en.wikipedia.org/wiki/Scrum_%28software_development%29) and [Lean](http://en.wikipedia.org/wiki/Lean_software_development). 
 
-Lowercase-“a” agile is more of an informal desire to create an efficient process. That desire may certainly involve adopting general [principles](http://www.agilemanifesto.org/principles.html) from capital-“A” Agile, but it may not mean adopting the exact process in its entirety. Brett Harned explains why it can be challenging to :
+Lowercase-“a” agile is more of an informal desire to create an efficient process. This desire may certainly involve adopting general [principles](http://www.agilemanifesto.org/principles.html) from capital-“A” Agile, but it may not involve adopting the Agile process in its entirety. Project manager Brett Harned explains:
 
 > We want to be more agile; we’re embracing change, continuing improvement, being as flexible as possible, and adapting as we see fit. The thing is, we won’t ever truly be Agile, as the Manifesto states. That’s okay, as long as we say what we will be. <cite>[Brett Harned](http://cognition.happycog.com/article/diy-process)</cite>
 
-In this multi-device age, it’s essential to move away from the rigid Waterfall workflows of the past.  And, yes, modularizing work so that 
-- 
-- 
-- Iteration “sprints”
-- Getting into the final environment faster
+Organizational structure, client relations, personalities, etc all play major roles in determining a project’s process. The trick is to find the process that works best for you, your organizational constraints and opportunities.
 
-In Chapter 4, we’ll discuss important process considerations in order to establish an effective pattern-based workflow.
+Even though it may be impossible to adopt a truly Agile process, it’s still a sound idea to work in cross-disciplinary teams, gett into the final environment faster, ship early and often, and break bigger tasks into smaller components. In Chapter 4, we’ll detail how to establish an effective pattern-based workflow.
 
-### Team Chunk: 
-Karen McGrane [Content Strategy for Mobile](http://www.abookapart.com/products/content-strategy-for-mobile)
+### I’m on Team Chunk: modularizing content 
+> Get your content ready to go anywhere, because it’s going to go everywhere. <cite><a href=“http://bradfrost.com/blog/web/for-a-future-friendly-web/“>For A Future-Friendly Web</a></cite>
+
+Historically Web publishing platforms. 
+
+Karen McGrane [Content Strategy for Mobile](http://www.abookapart.com/products/content-strategy-for-mobile) Chunks vs. blobs
+
+### Code
+Code: Object oriented programming influencing CSS architecture, [JavaScript patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/), 
 
 ### Visually repaired
 Visual designers are summoning their knowledge of effective brand identity, where  systems. 
 Visual design: Samantha Warren - style tiles, Dan Mall - element collages, Andy Clarke “design atmosphere”: color, typography, texture.
-
-### Code
-Code: Object oriented programming influencing CSS architecture, [JavaScript patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/), web components, 
 
 ### UI Design
 > We’re not designing pages, we’re designing systems of components. <cite>[Stephen Hay](http://bradfrost.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/)</cite>
@@ -116,6 +116,8 @@ Code: Object oriented programming influencing CSS architecture, [JavaScript patt
 What is an interface made of? What are our Lego<sup>®</sup> bricks? What are our Subway sandwich pieces that we combine into millions of delicious combinations?
 
 It’s these questions that we’ve been asking frequently ourselves  ever since the 
+
+web components, 
 
 
 and UI frameworks like [Bootstrap](http://getbootstrap.com/) and Foundation by Zurb
