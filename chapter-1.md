@@ -94,30 +94,38 @@ Lowercase-“a” agile is more of an informal desire to create an efficient pro
 
 Organizational structure, client relations, personalities, etc all play major roles in determining a project’s process. The trick is to find the process that works best for you, your organizational constraints and opportunities.
 
-Even though it may be impossible to adopt a truly Agile process, it’s still a sound idea to work in cross-disciplinary teams, gett into the final environment faster, ship early and often, and break bigger tasks into smaller components. In Chapter 4, we’ll detail how to establish an effective pattern-based workflow.
+Even though it may be impossible to adopt a truly Agile process, it’s still a sound idea to work in cross-disciplinary teams, get into the final environment faster, ship early and often, and break bigger tasks into smaller components. In Chapter 4, we’ll detail how to establish an effective pattern-based workflow.
 
-### I’m on Team Chunk: modularizing content 
-> Get your content ready to go anywhere, because it’s going to go everywhere. <cite><a href=“http://bradfrost.com/blog/web/for-a-future-friendly-web/“>For A Future-Friendly Web</a></cite>
+### Modularizing content: I’m on Team Chunk 
+> Get your content ready to go anywhere, because it’s going to go everywhere. <cite>[For A Future-Friendly Web](http://bradfrost.com/blog/web/for-a-future-friendly-web/)</cite>
 
-Historically Web publishing platforms. 
+Publishing content for the Web used to be a fairly straightforward endeavor, as the desktop Web was the only game in town. Oh, how things have changed. Today, our content is being consumed by a whole slew of  smartphones, dumb phones, netbooks, notebooks, tablets, e-readers, smart watches, TVs, game consoles, digital signage, car dashboards, and more.
 
-Karen McGrane [Content Strategy for Mobile](http://www.abookapart.com/products/content-strategy-for-mobile) Chunks vs. blobs
+In order to properly address this increasingly diverse and eclectic digital landscape, we need to dramatically overhaul our perception of content and the tools we use to manage it.
 
-### Code
-Code: Object oriented programming influencing CSS architecture, [JavaScript patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/), 
+> In the future, what I believe is that we are going to have better content management and content publishing tools. We are going to have ways to take well-structured content, well-designed chunks of content that we can then figure out how we want to restructure and publish and display in a way that’s going to be right for the appropriate platform. <cite>[Karen McGrane](http://karenmcgrane.com/2012/09/04/adapting-ourselves-to-adaptive-content-video-slides-and-transcript-oh-my/)</cite>
+
+Thankfully, this future is starting to take shape. Organizations are recognizing the need to create modularized content to better reach their audience wherever they may be. And content management systems are evolving beyond their Web publishing platform roots into tools that can elegantly create and maintain modular content. While sophisticated content management systems have existed for years now in the form of custom solutions like [NPR’s COPE (Create Once, Publish Everywhere) platform](http://www.programmableweb.com/news/cope-create-once-publish-everywhere/2009/10/13) , smart modular thinking is making its way into mainstream content management systems.
+
+### Classy code
+Modularity has long been a staple principle in the world of computer science, as we discussed earlier in the chapter. While this principle existed long before the Web was invented, it’s taken some time for modularity to become engrained in the minds and hearts of Web developers.
+
+Despite it been around since 1995, JavaScript, the programming language of the Web, first had to endure some growing pains and mature into the capable, respected language it is today. Now that JavaScript has grown up and dust has settled, developers can now apply those tried-and-true computer science principles to their Web development workflows. As a result, we’re seeing folks develop sophisticated JavaScript [patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/) and architectures.
+
+Applying modular programming principles to JavaScript is a bit of a no brainer, since JavaScript is itself a programming language. But  object-oriented thinking is weaving its way into other aspects of the Web as well, including CSS, the styling language of the Web. Methodologies like [OOCSS](http://oocss.org/), [SMACSS](https://smacss.com/), and [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax) have cropped up to help Web designers create and maintain modular CSS architectures.
 
 ### Visually repaired
 Visual designers are summoning their knowledge of effective brand identity, where  systems. 
-Visual design: Samantha Warren - style tiles, Dan Mall - element collages, Andy Clarke “design atmosphere”: color, typography, texture.
+Samantha Warren - style tiles, Dan Mall - element collages, Andy Clarke “design atmosphere”: color, typography, texture.
 
-### UI Design
+### Systematic UI design
 > We’re not designing pages, we’re designing systems of components. <cite>[Stephen Hay](http://bradfrost.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/)</cite>
 
 What is an interface made of? What are our Lego<sup>®</sup> bricks? What are our Subway sandwich pieces that we combine into millions of delicious combinations?
 
-It’s these questions that we’ve been asking frequently ourselves  ever since the 
+It’s these questions that we’ve been asking ourselves 
 
-web components, 
+- web components
 
 
 and UI frameworks like [Bootstrap](http://getbootstrap.com/) and Foundation by Zurb
