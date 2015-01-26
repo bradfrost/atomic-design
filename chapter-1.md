@@ -110,27 +110,43 @@ Thankfully, this future is starting to take shape. Organizations are recognizing
 ### Classy code
 Modularity has long been a staple principle in the world of computer science, as we discussed earlier in the chapter. While this principle existed long before the Web was invented, it’s taken some time for modularity to become engrained in the minds and hearts of Web developers.
 
-Despite it been around since 1995, JavaScript, the programming language of the Web, first had to endure some growing pains and mature into the capable, respected language it is today. Now that JavaScript has grown up and dust has settled, developers can now apply those tried-and-true computer science principles to their Web development workflows. As a result, we’re seeing folks develop sophisticated JavaScript [patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/) and architectures.
+Despite it been around since 1995, JavaScript, the programming language of the Web, first had to endure some growing pains in order to mature into the capable, respected language it is today. Now that JavaScript has grown up and dust has settled, developers can now apply those tried-and-true computer science principles to their Web development workflows. As a result, we’re seeing folks develop sophisticated JavaScript [patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/) and architectures.
 
 Applying modular programming principles to JavaScript is a bit of a no brainer, since JavaScript is itself a programming language. But  object-oriented thinking is weaving its way into other aspects of the Web as well, including CSS, the styling language of the Web. Methodologies like [OOCSS](http://oocss.org/), [SMACSS](https://smacss.com/), and [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax) have cropped up to help Web designers create and maintain modular CSS architectures.
 
 ### Visually repaired
-Visual designers are summoning their knowledge of effective brand identity, where  systems. 
-Samantha Warren - style tiles, Dan Mall - element collages, Andy Clarke “design atmosphere”: color, typography, texture.
+Not only is modularity infiltrating the code side of style on the Web, it’s totally revolutionizing how visual designers approach modern Web design. 
+
+As the number of viewports and environments proliferate, it’s not feasible to produce static mockups of every page on a Web experience. As Stephen Hay quipped, presenting fully baked Photoshop comps “is the most effective way to show your clients what their website will never look like.” 
+
+That’s not to say static design tools like Photoshop and Sketch aren’t important. Far from it! But it’s in the way we use these tools that has changed dramatically. While creating hundreds of full-on comps isn’t realistic, these static tools excel at providing a playground to establish what Andrew Clarke calls “design atmosphere”:
+
+> Atmosphere describes the feelings we get that are evoked by colour, texture and typography. You might already think of atmosphere in different terms. You might call it “feel”, “mood” or even “visual identity.” Whatever words you choose, the atmosphere of a design doesn’t depend on layout. It’s independent of arrangement and visual placement. It will be seen, or felt, at every screen size and on every device. <cite>[Andrew Clarke](http://stuffandnonsense.co.uk/blog/about/an-extract-from-designing-atoms-and-elements)</cite>
+
+Establishing design atmosphere is critical to a project’s success, which is why designers have found ways to have these important conversations without having to generate full mockups. Designer Samantha Warren developed a technique [style tiles](http://styletil.es/), which allows . Dan Mall - element collages
+
+We’ll dive into  Chapter 4 to explore these concepts in more detail, but suffice it to say the visual design workflow is changing at a quickening pace! 
+
+![Image of brand identity system]()
+
+Visual designers are also summoning their knowledge of brand identity design–where systems reign supreme–and applying that to visual design. Brand and logo designers know how critical it is for their work to be flexible; logos need to work equally well as a favicon, as a billboard, and as everything in between. 
 
 ### Systematic UI design
 > We’re not designing pages, we’re designing systems of components. <cite>[Stephen Hay](http://bradfrost.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/)</cite>
 
-What is an interface made of? What are our Lego<sup>®</sup> bricks? What are our Subway sandwich pieces that we combine into millions of delicious combinations?
+What is an interface made of? What are our Lego bricks? What are our Subway sandwich pieces that we combine into millions of delicious combinations?
 
 It’s these questions that we’ve been asking ourselves 
 
 - web components
 
-
 and UI frameworks like [Bootstrap](http://getbootstrap.com/) and Foundation by Zurb
 
-[Responsive deliverables](http://daverupert.com/2013/04/responsive-deliverables/) by Dave Rupert.
+## UI frameworks, in theory and in practice
+- The rise of UI frameworks
+- Issues with UI frameworks and pattern libraries
+
+> Responsive deliverables should look a lot like fully-functioning Twitter Bootstrap-style systems custom tailored for your clients’ needs. These living code samples are self-documenting style guides that extend to accommodate a client’s needs as well as the needs of the ever-evolving multi-device web. <cite>[Dave Rupert](http://daverupert.com/2013/04/responsive-deliverables/)<cite>
 
 ## Design systems save the day
 Advantages of design systems: promote consistency, establish a consistent vocabulary, create more robust deliverables, establish a system that can be modified and extended, future-friendly
@@ -145,11 +161,6 @@ In her phenomenal book [Front-end Style Guides](http://maban.co.uk/projects/fron
 - Often created after a project launches
 - Often incomplete/only serving present cases
 - Lacking a clear methodology
-
-## UI frameworks, in theory and in practice
-- The rise of UI frameworks
-
-- Issues with UI frameworks and pattern libraries
 
 ## In search of a methodology
 - Recap modularity as a trend. 
