@@ -123,22 +123,22 @@ That’s not to say static design tools like Photoshop and Sketch aren’t impor
 
 > Atmosphere describes the feelings we get that are evoked by colour, texture and typography. You might already think of atmosphere in different terms. You might call it “feel”, “mood” or even “visual identity.” Whatever words you choose, the atmosphere of a design doesn’t depend on layout. It’s independent of arrangement and visual placement. It will be seen, or felt, at every screen size and on every device. <cite>[Andrew Clarke](http://stuffandnonsense.co.uk/blog/about/an-extract-from-designing-atoms-and-elements)</cite>
 
-Establishing design atmosphere is critical to a project’s success, which is why designers have found ways to have these important conversations without having to generate full mockups. Designer Samantha Warren developed a technique [style tiles](http://styletil.es/), which allows . Dan Mall - element collages
+Establishing design atmosphere early is critical to a project’s success, which is why designers have found ways to facilitate these important conversations without having to generate full mockups. Designer Samantha Warren developed design artifacts called [style tiles](http://styletil.es/), which demonstrate color, type, and texture explorations in a nice encapsulated one-pager. Designer Dan Mall built upon Samantha’s idea with a concept called [element collages](http://danielmall.com/articles/rif-element-collages/), which demonstrate design atmosphere explorations in an exploded collage of interface elements.
 
-We’ll dive into  Chapter 4 to explore these concepts in more detail, but suffice it to say the visual design workflow is changing at a quickening pace! 
+![Style Tiles and Element Collages]()
 
-![Image of brand identity system]()
-
-Visual designers are also summoning their knowledge of brand identity design–where systems reign supreme–and applying that to visual design. Brand and logo designers know how critical it is for their work to be flexible; logos need to work equally well as a favicon, as a billboard, and as everything in between. 
+By breaking visual explorations into smaller chunks, designers save time and effort while saving themselves from presenting unrealistic, premature layouts to clients. More importantly, these approaches shift stakeholders away from simply reacting to a pretty picture, and instead facilitate crucial conversations about the project’s values, goals, and desires. We’ll discuss these concepts in more detail in Chapter 4, but suffice it to say the visual design workflow is changing!
 
 ### Systematic UI design
 > We’re not designing pages, we’re designing systems of components. <cite>[Stephen Hay](http://bradfrost.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/)</cite>
 
+Visual designers are also summoning their knowledge of brand identity design–where systems reign supreme–and applying that to the world of Web design. Brand and logo designers know how critical it is for their work to be versatile; logos need to work equally well as a favicon, as a billboard, and as everything in between. 
+
+![Image of brand identity system]()
+
 What is an interface made of? What are our Lego bricks? What are our Subway sandwich pieces that we combine into millions of delicious combinations?
 
-It’s these questions that we’ve been asking ourselves 
-
-- web components
+It’s these questions that we’ve been asking ourselves more and more
 
 and UI frameworks like [Bootstrap](http://getbootstrap.com/) and Foundation by Zurb
 
