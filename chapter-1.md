@@ -75,7 +75,7 @@ Every organization is finally realizing that bulldozing their entire website and
 
 Out with the old! In with the new! It’s certainly an attractive prospect. But even before the launch-party confetti is swept up, the calls start coming in. “You moved my cheese!” cry the users, who spent years learning the previous interface and functionality. 
 
-When massive redesigns launch with significant changes to the experience, users get knocked down what Jared Spool calls [“Magic Escalator of Acquired Knowledge”](http://www.uie.com/articles/magic_escalator/). Huge redesigns are a jolt to the system, and newly-frustrated users have to spend a great deal of time and energy relearning the experience in order to slowly climb back up that escalator of acquired knowledge. 
+When massive redesigns launch with significant changes to the experience, users get knocked down what Jared Spool calls the [“Magic Escalator of Acquired Knowledge”](http://www.uie.com/articles/magic_escalator/). Huge redesigns are a jolt to the system, and newly-frustrated users have to spend a great deal of time and energy relearning the experience in order to slowly climb back up that escalator of acquired knowledge. 
 
 In addition to disorienting users, these monolithic redesigns don’t get to the the organizational root of the problem. Without a fundamental change in process, history is bound to repeat itself, and what’s New-And-Shiny™ today becomes Old-And-Crusty™ tomorrow. The cycle repeats itself as companies push off minor updates until the next Big Redesign, ultimately paralyzing themselves and frustrating users in the process.
 
@@ -134,22 +134,21 @@ By breaking visual explorations into smaller chunks, designers save time and eff
 
 What is an interface made of? What are our Lego bricks? What are our Subway sandwich pieces that we combine into millions of delicious combinations? It’s these questions that we’ve been asking ourselves more and more now that we’re sending our interfaces to more and more places. 
 
-A few years ago Ethan Marcotte introduced us to the idea of [responsive web design](http://alistapart.com/article/responsive-web-design) and its three core tenets: fluid grids, flexible media, and CSS media queries. These three ingredients provided a much-needed foundation for designers to create flexible layouts that smartly adapt to any screen size. Perhaps more importantly, responsive design helped get designers excited about creating thoughtful
+A few years ago Ethan Marcotte introduced us to the idea of [responsive web design](http://alistapart.com/article/responsive-web-design) and its three core tenets: fluid grids, flexible media, and CSS media queries. These three ingredients provided a much-needed foundation for designers to create flexible layouts that smartly adapt to any screen size. Perhaps more importantly, responsive design helped get designers excited about creating thoughtful, adaptable, multi-device Web experiences.
 
-Individual pieces of the interface contain unique challenges and opportunities. How can we present primary navigation 
+As designers quickly discovered, creating multi-device Web experiences involves a lot more than creating squishy pages.  Each individual piece of an interface contains its own unique challenges and opportunities in order for it to look and function beautifully across many screen sizes and environments. 
 
-http://us5.campaign-archive1.com/?u=7e093c5cf4&id=ead8a72012&e=ecb25a3f93
+How can we present primary navigation-typically displayed as a horizontal list on large screens–in a thoughtful way on smaller screens? How do lightboxes, breadcrumbs, and carousels translate to smaller viewports and alternate input types? It’s these questions that led me to create [This Is Responsive](http://bradfrost.github.io/this-is-responsive/index.html), a showcase of responsive patterns that demonstrate the various ways a particular component could be executed in a responsive environment.
 
-[This Is Responsive](http://bradfrost.github.io/this-is-responsive/index.html), a collection of responsive design patterns and resources. 
-
-As it turns out, this whole multi-device Web design thing is pretty tough. UI frameworks Foundation by Zurb like [Bootstrap](http://getbootstrap.com/) and 
+While This Is Responsive is successful at articulating how these interface patterns can scale across screen sizes and environments, it’s still up to designers and developers to put these patterns into action. And as it turns out, that’s a lot of work. 
 
 ## UI frameworks, in theory and in practice
+UI frameworks Foundation by Zurb like [Bootstrap](http://getbootstrap.com/) and 
 - The rise of UI frameworks
 
 ### Benefits of UI frameworks
-- Speed, quickly get ideas off the ground
-- Tested modules
+- Speed, get ideas off the ground quickly, rapid prototyping
+- Tested, tried-and-true modules
 - Solid systematic thinking
 - Have communities around them
 
@@ -167,6 +166,8 @@ As it turns out, this whole multi-device Web design thing is pretty tough. UI fr
 Advantages of design systems: promote consistency, establish a consistent vocabulary, create more robust deliverables, establish a system that can be modified and extended, future-friendly
 In her phenomenal book [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/), Anna Debenham explains the myriad benefits of establishing a front-end style guide:
 - Establish a consistent, shared vocabulary between everyone involved
+
+http://us5.campaign-archive1.com/?u=7e093c5cf4&id=ead8a72012&e=ecb25a3f93
 
 ### Design system pitfalls
 - Time consuming to create
