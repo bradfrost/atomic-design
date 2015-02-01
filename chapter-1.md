@@ -140,21 +140,28 @@ As designers quickly discovered, creating multi-device Web experiences involves 
 
 How can we present primary navigation-typically displayed as a horizontal list on large screens–in a thoughtful way on smaller screens? How do lightboxes, breadcrumbs, and carousels translate to smaller viewports and alternate input types? It’s these questions that led me to create [This Is Responsive](http://bradfrost.github.io/this-is-responsive/index.html), a showcase of responsive patterns that demonstrate the various ways a particular component could be executed in a responsive environment.
 
-While This Is Responsive is successful at articulating how these interface patterns can scale across screen sizes and environments, it’s still up to designers and developers to put these patterns into action. And as it turns out, that’s a lot of work. 
+While This Is Responsive is successful at articulating how these interface patterns can scale across screen sizes and environments, it’s still up to designers and developers to put these patterns into action. And as it turns out, that’s a lot of work.
 
-## UI frameworks, in theory and in practice
-UI frameworks Foundation by Zurb like [Bootstrap](http://getbootstrap.com/) and 
-- The rise of UI frameworks
+## Front-end frameworks, in theory and in practice
+Designers and developers are already strapped for time and resources, and they’re now being tasked with making interfaces that look and function beautifully in any environment. It’s a tall order indeed.
 
-### Benefits of UI frameworks
-- Speed, get ideas off the ground quickly, rapid prototyping
-- Tested, tried-and-true modules
-- Solid systematic thinking
-- Have communities around them
+This need to address growing device diversity while still sanely getting projects out the door has given rise to front-end frameworks like [Foundation by Zurb](http://foundation.zurb.com/) and [Bootstrap](http://getbootstrap.com/). 
+
+These frameworks provide designers with a collection of pre-assembled HTML patterns, CSS styles, and JavaScript to add functionality to interactive components like dropdowns and carousels. In essence, these frameworks are a handy toolkit for quickly assembling interfaces.
+
+![Twitter Bootstrap]()
+
+And boy are these things popular. As I’m writing this, Bootstrap is the most popular repository on the code-sharing site [Github](https://github.com/), with over 77,000 stars and 30,000 forks. These frameworks’ popularity is a testament to the fact that designers and developers are seeking solid ground to stand on in this ever-complex Web landscape.
+
+One of the most attractive aspects of these frameworks is *speed*. Frameworks like Bootstrap allow designers to get ideas off the ground quickly, rapidly create prototypes, and launch sites sooner. The patterns contained in these toolkits are cross-browser tested, and have solid communities around them for providing support. 
+- Solid systematic thinking. Reliable
+- Can be modified and assembled
 
 ### Issues with UI frameworks
+The rise of these frameworks underscore a very real need, and it
+
 - One-size-fits-all
-- Lookalike issues
+- Lookalike issues. If Nike, Adidas, Puma, and Reebok were to all redesign their sites using Bootstrap, they would naturally look substantially similar. 
 - Potential for bloat/unneeded stuff
 - Might not do everything you need
 - Compatibility with existing sites
@@ -163,9 +170,15 @@ UI frameworks Foundation by Zurb like [Bootstrap](http://getbootstrap.com/) and
 > Responsive deliverables should look a lot like fully-functioning Twitter Bootstrap-style systems custom tailored for your clients’ needs. These living code samples are self-documenting style guides that extend to accommodate a client’s needs as well as the needs of the ever-evolving multi-device web. <cite>[Dave Rupert](http://daverupert.com/2013/04/responsive-deliverables/)<cite>
 
 ## Design systems save the day
-Advantages of design systems: promote consistency, establish a consistent vocabulary, create more robust deliverables, establish a system that can be modified and extended, future-friendly
+Advantages of design systems: promote consistency, establish a consistent vocabulary, create more robust deliverables, establish a system that can be modified and extended, future-friendly.
+
 In her phenomenal book [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/), Anna Debenham explains the myriad benefits of establishing a front-end style guide:
-- Establish a consistent, shared vocabulary between everyone involved
+- Promotes consistency and cohesion
+- Easier to test
+- Better workflow
+- Creates a shared vocabulary
+- Useful reference
+- Establish a consistent, shared vocabulary between everyone involved in a project.
 
 http://us5.campaign-archive1.com/?u=7e093c5cf4&id=ead8a72012&e=ecb25a3f93
 
