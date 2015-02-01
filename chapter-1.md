@@ -117,7 +117,7 @@ Applying modular programming principles to JavaScript is a bit of a no brainer, 
 ### Visually repaired
 Not only is modularity infiltrating the code side of style on the Web, it’s totally revolutionizing how visual designers approach modern Web design. 
 
-As the number of viewports and environments proliferate, it’s not feasible to produce static mockups of every page on a Web experience. As Stephen Hay quipped, presenting fully baked Photoshop comps “is the most effective way to show your clients what their website will never look like.” 
+As the number of viewports and environments proliferate, it’s quickly becoming untenable to produce static mockups of every page on a Web experience. As Stephen Hay quipped, presenting fully baked Photoshop comps “is the most effective way to show your clients what their website will never look like.” 
 
 That’s not to say static design tools like Photoshop and Sketch aren’t important. Far from it! But it’s in the way we use these tools that has changed dramatically. While creating hundreds of full-on comps isn’t realistic, these static tools excel at providing a playground to establish what Andrew Clarke calls “design atmosphere”:
 
@@ -127,24 +127,39 @@ Establishing design atmosphere early is critical to a project’s success, which
 
 ![Style Tiles and Element Collages]()
 
-By breaking visual explorations into smaller chunks, designers save time and effort while saving themselves from presenting unrealistic, premature layouts to clients. More importantly, these approaches shift stakeholders away from simply reacting to a pretty picture, and instead facilitate crucial conversations about the project’s values, goals, and desires. We’ll discuss these concepts in more detail in Chapter 4, but suffice it to say the visual design workflow is changing!
+By breaking visual explorations into smaller chunks, designers save time and effort while saving themselves from presenting unrealistic, premature layouts to clients. More importantly, these approaches shift stakeholders away from simply reacting to a pretty picture, and instead facilitate crucial conversations about the overall design direction and how they relate to the project’s goals. We’ll discuss these concepts in more detail in Chapter 4, but suffice it to say the visual design workflow is changing in a big way!
 
 ### Systematic UI design
 > We’re not designing pages, we’re designing systems of components. <cite>[Stephen Hay](http://bradfrost.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/)</cite>
 
-Visual designers are also summoning their knowledge of brand identity design–where systems reign supreme–and applying that to the world of Web design. Brand and logo designers know how critical it is for their work to be versatile; logos need to work equally well as a favicon, as a billboard, and as everything in between. 
+What is an interface made of? What are our Lego bricks? What are our Subway sandwich pieces that we combine into millions of delicious combinations? It’s these questions that we’ve been asking ourselves more and more now that we’re sending our interfaces to more and more places. 
 
-![Image of brand identity system]()
+A few years ago Ethan Marcotte introduced us to the idea of [responsive web design](http://alistapart.com/article/responsive-web-design) and its three core tenets: fluid grids, flexible media, and CSS media queries. These three ingredients provided a much-needed foundation for designers to create flexible layouts that smartly adapt to any screen size. Perhaps more importantly, responsive design helped get designers excited about creating thoughtful
 
-What is an interface made of? What are our Lego bricks? What are our Subway sandwich pieces that we combine into millions of delicious combinations?
+Individual pieces of the interface contain unique challenges and opportunities. How can we present primary navigation 
 
-It’s these questions that we’ve been asking ourselves more and more
+http://us5.campaign-archive1.com/?u=7e093c5cf4&id=ead8a72012&e=ecb25a3f93
 
-and UI frameworks like [Bootstrap](http://getbootstrap.com/) and Foundation by Zurb
+[This Is Responsive](http://bradfrost.github.io/this-is-responsive/index.html), a collection of responsive design patterns and resources. 
+
+As it turns out, this whole multi-device Web design thing is pretty tough. UI frameworks Foundation by Zurb like [Bootstrap](http://getbootstrap.com/) and 
 
 ## UI frameworks, in theory and in practice
 - The rise of UI frameworks
-- Issues with UI frameworks and pattern libraries
+
+### Benefits of UI frameworks
+- Speed, quickly get ideas off the ground
+- Tested modules
+- Solid systematic thinking
+- Have communities around them
+
+### Issues with UI frameworks
+- One-size-fits-all
+- Lookalike issues
+- Potential for bloat/unneeded stuff
+- Might not do everything you need
+- Compatibility with existing sites
+- Subscribe to someone else’s structure, naming, style. Spend time modifying, extending, fixing framework
 
 > Responsive deliverables should look a lot like fully-functioning Twitter Bootstrap-style systems custom tailored for your clients’ needs. These living code samples are self-documenting style guides that extend to accommodate a client’s needs as well as the needs of the ever-evolving multi-device web. <cite>[Dave Rupert](http://daverupert.com/2013/04/responsive-deliverables/)<cite>
 
