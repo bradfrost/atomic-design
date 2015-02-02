@@ -153,11 +153,11 @@ These frameworks provide designers with a collection of pre-assembled HTML patte
 
 And boy are these things popular. As I’m writing this, Bootstrap is the most popular repository on the code-sharing site [Github](https://github.com/), with over 77,000 stars and 30,000 forks. These frameworks’ popularity is a testament to the fact that designers and developers are seeking solid ground to stand on in this ever-complex Web landscape.
 
-One of the most attractive aspects of these frameworks is *speed*. Frameworks like Bootstrap allow designers to get ideas off the ground quickly, rapidly create prototypes, and launch sites sooner. Because the toolkit’s provided patterns are already cross-browser tested, a developer can spend her time on more important tasks instead of beating her head against a table after testing in some archaic version of Internet Explorer. And in case designers do get stuck, these frameworks’ communities can provide helpful support to help people get unstuck.
+One of the most attractive aspects of these frameworks is *speed*. Frameworks like Bootstrap allow designers to get ideas off the ground quickly, rapidly create prototypes, and launch sites sooner. Because the toolkit’s provided patterns are already cross-browser tested, a developer can spend her time on more important tasks rather than beating her head against a table testing some archaic version of Internet Explorer. And in case designers do get stuck, these frameworks’ communities can provide helpful support to help people get unstuck.
 
 For a freelancer, this increase in speed might mean they can take on an extra project or three, yielding more financial stability for the year. And in the startup world–a place where Bootstrap is omnipresent–minimum viable products can launch sooner, leading to faster answers regarding the products’ viability.
 
-So frameworks like Bootstrap are insanely popular design systems that provide well-tested components and thus speed up development. What’s not to love? Well, like most everything in life, there are cons right there alongside the pros. 
+So frameworks like Bootstrap are insanely popular design systems that provide well-tested components, resulting in consistent designs and faster launches. What’s not to love? Well, like most everything in life, there are cons right there alongside the pros. 
 
 ### Trouble in framework paradise
 When I was a kid, I’d watch sci-fi movies and TV shows with a strange fascination. There was one question I could never quite shake: why are they all dressed the same? 
@@ -170,18 +170,21 @@ Of course that’s not how human beings work. We all have different tastes, goal
 
 Yet we on the Web tend to fall into the trap of wanting everyone to do things the same way. “Why don’t all browsers just standardize on Webkit?” “Why can’t device manufacturers just use the same screen sizes?” “Always use jQuery!” “Never use jQuery!” “Just use frameworks!” “Never use frameworks!” 
 
-One of the biggest issues with experiences using front-end frameworks like Bootstrap is that they resemble those sci-fi jumpsuits. When everyone uses the same buttons, grids, dropdowns, and components, things naturally start to look the same. 
+Just like the real world, the diverse needs, goals, and desires of Web projects lead to a myriad of different solutions. Of course there’s a time and place for everything, and designers and developers have to find a balance between standardization and flexibility.
 
-If Nike, Adidas, Puma, and Reebok were to all redesign their sites using Bootstrap, they would look substantially similar. And that’s certainly not what these brands . Of course  One-size-fits-all
+One of the biggest issues with using front-end frameworks like Bootstrap is that the resulting experiences resemble those sci-fi jumpsuits. When everyone uses the same buttons, grids, dropdowns, and components, things naturally start to look the same. If Nike, Adidas, Puma, and Reebok were to redesign their respective sites using Bootstrap, they would look substantially similar. That’s certainly not what these brands are going for. Sure, each brand can modify and extend the look and feel, but after a while  fighting the default styles and functionality 
 
-- Potential for bloat/unneeded stuff
+Also, while it’s fantastic that frameworks provide plenty of pre-built components and functionality, it’s common for designers and developers not to utilize every aspect of the framework. Unfortunately, that means end users still have to download unused CSS and JavaScript.
+
 - Might not do everything you need
 - Compatibility with existing sites
 - Subscribe to someone else’s structure, naming, style. Spend time modifying, extending, fixing framework
 
-Of course there’s a time and place for everything, and designers and developers have . There’s a balance between standardization and flexibility. 
+Again, conceptually these frameworks are on point.
 
 > Responsive deliverables should look a lot like fully-functioning Twitter Bootstrap-style systems custom tailored for your clients’ needs. These living code samples are self-documenting style guides that extend to accommodate a client’s needs as well as the needs of the ever-evolving multi-device web. <cite>[Dave Rupert](http://daverupert.com/2013/04/responsive-deliverables/)<cite>
+
+It’s not just about using any system, it’s about creating *your* system.
 
 ## Design systems save the day
 Advantages of design systems: promote consistency, establish a consistent vocabulary, create more robust deliverables, establish a system that can be modified and extended, future-friendly.
