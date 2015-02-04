@@ -153,14 +153,14 @@ These frameworks provide designers with a collection of pre-assembled HTML patte
 
 And boy are these things popular. As I’m writing this, Bootstrap is the most popular repository on the code-sharing site [Github](https://github.com/), with over 77,000 stars and 30,000 forks. These frameworks’ popularity is a testament to the fact that designers and developers are seeking solid ground to stand on in this ever-complex Web landscape.
 
-One of the most attractive aspects of these frameworks is *speed*. Frameworks like Bootstrap allow designers to get ideas off the ground quickly, rapidly create prototypes, and launch sites sooner. Because the toolkit’s provided patterns are already cross-browser tested, a developer can spend her time on more important tasks rather than beating her head against a table testing some archaic version of Internet Explorer. And in case designers do get stuck, these frameworks’ communities can provide helpful support to help people get unstuck.
+One of the most attractive aspects of these frameworks is *speed*. Frameworks like Bootstrap allow designers to get ideas off the ground quickly, rapidly create prototypes, and launch sites sooner. Because the toolkit’s provided patterns are already cross-browser tested, a developer can spend her time on more important tasks rather than beating her head against a table testing some archaic version of Internet Explorer. And in case designers do get stuck, these frameworks’ communities can provide helpful support and advice.
 
 For a freelancer, this increase in speed might mean they can take on an extra project or three, yielding more financial stability for the year. And in the startup world–a place where Bootstrap is omnipresent–minimum viable products can launch sooner, leading to faster answers regarding the products’ viability.
 
 So frameworks like Bootstrap are insanely popular design systems that provide well-tested components, resulting in consistent designs and faster launches. What’s not to love? Well, like most everything in life, there are cons right there alongside the pros. 
 
 ### Trouble in framework paradise
-When I was a kid, I’d watch sci-fi movies and TV shows with a strange fascination. There was one question I could never quite shake: why are they all dressed the same? 
+When I was a kid, I’d watch sci-fi movies and TV shows with a strange fascination. There was one question I could never quite shake: *why are they all dressed the same*? 
 
 {% include figure.html src="../images/content/sci-fi.jpg" caption="In the future, everyone dresses the same." %}
 
@@ -170,21 +170,21 @@ Of course that’s not how human beings work. We all have different tastes, goal
 
 Yet we on the Web tend to fall into the trap of wanting everyone to do things the same way. “Why don’t all browsers just standardize on Webkit?” “Why can’t device manufacturers just use the same screen sizes?” “Always use jQuery!” “Never use jQuery!” “Just use frameworks!” “Never use frameworks!” 
 
-Just like the real world, the diverse needs, goals, and desires of Web projects lead to a myriad of different solutions. Of course there’s a time and place for everything, and designers and developers have to find a balance between standardization and flexibility.
+Just like the real world, the diverse needs, goals, and desires of Web projects lead to a myriad of different solutions. Of course there’s a time and place for everything, and designers and developers need the discernment to know which tools to use and when.
 
-One of the biggest issues with using front-end frameworks like Bootstrap is that the resulting experiences resemble those sci-fi jumpsuits. When everyone uses the same buttons, grids, dropdowns, and components, things naturally start to look the same. If Nike, Adidas, Puma, and Reebok were to redesign their respective sites using Bootstrap, they would look substantially similar. That’s certainly not what these brands are going for. Sure, each brand can modify and extend the look and feel, but after a while  fighting the default styles and functionality 
+Front-end frameworks are tools that provide a specific solution and a particular look and feel. While those solutions help speed up development, the resulting experiences end up resembling those sci-fi jumpsuits. When everyone uses the same buttons, grids, dropdowns, and components, things naturally start to look the same. If Nike, Adidas, Puma, and Reebok were to redesign their respective sites using Bootstrap, they would look substantially similar. That’s certainly not what these brands are going for. Sure, each brand can modify and extend the default look and feel, but after a while customization means fighting the framework’s provided structure, style, and functionality.
 
-Also, while it’s fantastic that frameworks provide plenty of pre-built components and functionality, it’s common for designers and developers not to utilize every aspect of the framework. Unfortunately, that means end users still have to download unused CSS and JavaScript.
+In addition to lookalike issues, these frameworks can add unnecessary bloat to an experience. It’s fantastic that frameworks provide plenty of pre-built components and functionality, but a large percentage of designers and developers won’t utilize every aspect of the framework. Unfortunately end users still have to download the framework’s unused CSS and JavaScript, resulting in slower page loads and frustration.
 
-- Might not do everything you need
-- Compatibility with existing sites
-- Subscribe to someone else’s structure, naming, style. Spend time modifying, extending, fixing framework
+On the flip side of that coin, frameworks might not go far enough, leading to developers needing to create a substantial amount of custom code in order to achieve their projects’ goals. At some point a threshold is crossed where the initial benefits of using a framework–namely development *speed*– are outweighed by the time spent modifying, extending, and fixing the framework.
 
-Again, conceptually these frameworks are on point.
+And then there’s the issue with naming. Using a framework means subscribing to someone else’s structure, naming, and style conventions. Of course it’s important to establish a useful front-end lexicon, but what makes sense for an organization might not be what comes out of a framework’s box.  I, for one, would balk at the idea of using Bootstrap’s default featured-content area component they call a “jumbotron”. How a framework’s naming conventions jive with an existing codebase and workflow should be discussed before jumping on board the framework train.
+
+Now that we’ve put frameworks through the wringer, it’s important to take a step back and recognize that conceptually these frameworks are very much on point. It’s an excellent idea to work with a design toolkit that promotes consistency and speeds up development time. While discussing the redesign of Microsoft’s homepage by Austin-based Web shop Paravel, developer Dave Rupert discussed the importance of creating and delivering a design system to their client. Dave wonderfully articulated that it’s not necessarily about using Bootstrap for every client, but rather creating “tiny Bootstraps for every client.”
 
 > Responsive deliverables should look a lot like fully-functioning Twitter Bootstrap-style systems custom tailored for your clients’ needs. These living code samples are self-documenting style guides that extend to accommodate a client’s needs as well as the needs of the ever-evolving multi-device web. <cite>[Dave Rupert](http://daverupert.com/2013/04/responsive-deliverables/)<cite>
 
-It’s not just about using any system, it’s about creating *your* system.
+It’s not just about using a system, it’s about creating *your* system.
 
 ## Design systems save the day
 Advantages of design systems: promote consistency, establish a consistent vocabulary, create more robust deliverables, establish a system that can be modified and extended, future-friendly.
@@ -197,7 +197,7 @@ In her phenomenal book [Front-end Style Guides](http://maban.co.uk/projects/fron
 - Useful reference
 - Establish a consistent, shared vocabulary between everyone involved in a project.
 
-http://us5.campaign-archive1.com/?u=7e093c5cf4&id=ead8a72012&e=ecb25a3f93
+[a](http://us5.campaign-archive1.com/?u=7e093c5cf4&id=ead8a72012&e=ecb25a3f93)
 
 ### Design system pitfalls
 - Time consuming to create
