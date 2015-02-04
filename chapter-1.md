@@ -149,7 +149,7 @@ This need to address growing device diversity while still sanely getting project
 
 These frameworks provide designers with a collection of pre-assembled HTML patterns, CSS styles, and JavaScript to add functionality to interactive components like dropdowns and carousels. In essence, these frameworks are handy toolkits for quickly assembling interfaces.
 
-![Twitter Bootstrap]()
+{% include figure.html src="../images/content/bootstrap-components.png" caption="Bootstrap provides a collection of UI components”  %}
 
 And boy are these things popular. As I’m writing this, Bootstrap is the most popular repository on the code-sharing site [Github](https://github.com/), with over 77,000 stars and 30,000 forks. These frameworks’ popularity is a testament to the fact that designers and developers are seeking solid ground to stand on in this ever-complex Web landscape.
 
