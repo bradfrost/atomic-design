@@ -184,27 +184,34 @@ Now that we’ve put frameworks through the wringer, it’s important to take a 
 
 > Responsive deliverables should look a lot like fully-functioning Twitter Bootstrap-style systems custom tailored for your clients’ needs. These living code samples are self-documenting style guides that extend to accommodate a client’s needs as well as the needs of the ever-evolving multi-device web. <cite>[Dave Rupert](http://daverupert.com/2013/04/responsive-deliverables/)<cite>
 
-It’s not just about using a system, it’s about creating *your* system.
+It’s not just about using a design system, it’s about creating *your* system.
 
 ## Design systems save the day
-Advantages of design systems: promote consistency, establish a consistent vocabulary, create more robust deliverables, establish a system that can be modified and extended, future-friendly.
+So what does a sound design system look like? What form does it take?
 
-In her phenomenal book [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/), Anna Debenham explains the myriad benefits of establishing a front-end style guide:
+[Many types of style guides](http://bradfrost.com/blog/post/style-guides/) exist, including ones for brand identity, writing, voice and tone, code, and design language. 
+
+This laps In her phenomenal book [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/), Anna Debenham explains the myriad benefits of establishing a front-end style guide:
+
 - Promotes consistency and cohesion
 - Easier to test
 - Better workflow
 - Creates a shared vocabulary
-- Useful reference
+- Useful reference to keep coming back to.
+- Maintainability
+establish a system that can be modified and extended, future-friendly.
 - Establish a consistent, shared vocabulary between everyone involved in a project.
 
 [a](http://us5.campaign-archive1.com/?u=7e093c5cf4&id=ead8a72012&e=ecb25a3f93)
 
-### Design system pitfalls
+### Style guide challenges
+By now the benefits of creating a design system should be abundantly clear, and hopefully thoughts of making beautiful style guides are running through your head.
+
 - Time consuming to create
 - Treated as a auxiliary project
+- Often created after a project launches
 - Often too abstract
 - Seen only as a designer/developer tool
-- Often created after a project launches
 - Often incomplete/only serving present cases
 - Lacking a clear methodology
 

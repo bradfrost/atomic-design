@@ -31,3 +31,7 @@ And this is a list of helpful resources people have brought to my attention duri
 ## Chapter 1
 ### Our Paginated Past
 - [Language and Metaphors](http://breakthepage.com/from-edition/one/language-and-metaphors/) by Dan Donald
+
+
+### Frameworks
+- [What Is A CSS Framework Anyway?](https://speakerdeck.com/csswizardry/what-is-a-css-framework-anyway) by Harry Roberts
