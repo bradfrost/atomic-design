@@ -142,12 +142,12 @@ How can we present primary navigation-typically displayed as a horizontal list o
 
 While This Is Responsive is successful at articulating how these interface patterns can scale across screen sizes and environments, it’s still up to designers and developers to put these patterns into action. And as it turns out, that’s a lot of work.
 
-## Front-end frameworks, in theory and in practice
+## UI frameworks, in theory and in practice
 Designers and developers are already strapped for time and resources, and they’re now being tasked with making interfaces that look and function beautifully in any environment. It’s a tall order indeed.
 
 This need to address growing device diversity while still sanely getting projects out the door has given rise to front-end frameworks like [Foundation by Zurb](http://foundation.zurb.com/) and [Bootstrap](http://getbootstrap.com/). 
 
-These frameworks provide designers with a collection of pre-assembled HTML patterns, CSS styles, and JavaScript to add functionality to interactive components like dropdowns and carousels. In essence, these frameworks are handy toolkits for quickly assembling interfaces.
+These user interface frameworks provide designers with a collection of pre-assembled HTML patterns, CSS styles, and JavaScript to add functionality to interactive components like dropdowns and carousels. In essence, these frameworks are handy toolkits for quickly assembling interfaces.
 
 {% include figure.html src="../images/content/bootstrap-components.png" caption="Bootstrap provides a collection of UI components to speed up development"  %}
 
@@ -187,11 +187,40 @@ Now that we’ve put frameworks through the wringer, it’s important to take a 
 It’s not just about using a design system, it’s about creating *your* system.
 
 ## Design systems save the day
-So what does a sound design system look like? What form does it take?
+So what does a sound design system look like? What form does it take? How do you create, maintain, and enforce it? 
 
-[Many types of style guides](http://bradfrost.com/blog/post/style-guides/) exist, including ones for brand identity, writing, voice and tone, code, and design language. 
+Design systems are represented by style guides, which document and organize design materials while providing guidelines, usage, and guardrails.
 
-This laps In her phenomenal book [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/), Anna Debenham explains the myriad benefits of establishing a front-end style guide:
+As it happens, there are [many flavors of style guide](http://bradfrost.com/blog/post/style-guides/), including ones for brand identity, writing, voice and tone, code, design language, and UI pattern libraries. While this book won’t go into detail about all of these style guide categories, it’s important to take a look at them to better understand how style guides for the Web fit into. part of a larger ecosystem and very much influence each other.
+
+### Brand identity guidelines
+Brand identity guidelines define the assets and materials that make a company unique. Logos, typography, color palettes, messaging (such as mission statements and taglines), collateral (such as business card and PowerPoint templates), and more are described in brand identity guidelines.
+Historically, brand identity guidelines were contained in physical brand books, but as with everything else brand guidelines are making their way online.
+
+### Design language
+While brand identity guidelines are fairly straightforward, design language guidelines are a bit murkier. Design language guidelines articulate a general design direction,philosophy, and approach to specific projects or products.
+These guidelines are not quite as bedrock as branding guidelines (surely some day down the road Google’sMaterial Design guidelines will be retired), but they are a bit more high-level and aspirational than UI pattern libraries.
+
+### Voice and Tone
+Voice and tone are elemental aspects of a brand, so naturally describing brand personality sits well alongside brand identity guidelines. However, voice and tone guidelines can go further by articulating how the company’s voice and tone should shift across a variety of touchpoints. For a great example of voice and tone, look no further than MailChimp’s seminal Voice and Tone website.
+
+### Writing
+Creating a consistent writing style for an organization with many voices can be challenging. Now that the Web makes it easy for everyone in an organization to publish, it’s especially important to provide every author some guidelines and guardrails for contributing.
+
+Writing style guides can be extremely granular, but they don’t always have to be. This writing style guide from the Web team at Dalhousie University is one of my favorite documents on the Web. Short, direct, and practices what it preaches.
+
+### Code style guides
+It’s absolutely essential for teams to write legible, scalable, maintainable code. But that all falls apart when Summer Intern #2 swoops in and writes things all sorts of terrible.
+Code style guides provide conventions, patterns, and examples for how teams should approach their code. These guidelines and guardrails help reign in the madness so that teams can focus on producing great work rather than refactoring a bunch of sloppy, inconsistent code.
+
+## Pattern Libraries
+Pattern libraries, or front-end style guides, UI libraries, component libraries, or whatever you want to call them, are increasingly important. As Web designers, we’re now tasked with creating interfaces that look and function beautifully across a myriad of screen sizes, devices, browsers, and environments. That’s why it’s so essential to break our interfaces down into their atomic elements.
+
+
+## Benefits of style guides
+In her book [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/), Anna Debenham deftly explains the myriad benefits of establishing front-end style guides:
+
+provide documentation 
 
 - Promotes consistency and cohesion
 - Easier to test
@@ -205,7 +234,11 @@ establish a system that can be modified and extended, future-friendly.
 [a](http://us5.campaign-archive1.com/?u=7e093c5cf4&id=ead8a72012&e=ecb25a3f93)
 
 ### Style guide challenges
-By now the benefits of creating a design system should be abundantly clear, and hopefully thoughts of making beautiful style guides are running through your head.
+By now the benefits of creating a design system should be abundantly clear, and hopefully exciting thoughts of making beautiful style guides are running through your head.
+
+For all the benefits these benefits.
+
+- Can be difficult to sell
 
 - Time consuming to create
 - Treated as a auxiliary project
@@ -213,7 +246,9 @@ By now the benefits of creating a design system should be abundantly clear, and 
 - Often too abstract
 - Seen only as a designer/developer tool
 - Often incomplete/only serving present cases
-- Lacking a clear methodology
+- Maintenance
+- Governance
+- Lacking a clear methodology. Spray of modules
 
 ## In search of a methodology
 - Recap modularity as a trend. 
