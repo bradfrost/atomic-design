@@ -178,42 +178,57 @@ In addition to lookalike issues, these frameworks can add unnecessary bloat to a
 
 On the flip side of that coin, frameworks might not go far enough, leading to developers needing to create a substantial amount of custom code in order to achieve their projects’ goals. At some point a threshold is crossed where the initial benefits of using a framework–namely development *speed*– are outweighed by the time spent modifying, extending, and fixing the framework.
 
-And then there’s the issue with naming. Using a framework means subscribing to someone else’s structure, naming, and style conventions. Of course it’s important to establish a useful front-end lexicon, but what makes sense for an organization might not be what comes out of a framework’s box.  I, for one, would balk at the idea of using Bootstrap’s default featured-content area component they call a “jumbotron”. How a framework’s naming conventions jive with an existing codebase and workflow should be discussed before jumping on board the framework train.
+And then there’s the issue with naming. Using a framework means subscribing to someone else’s structure, naming, and style conventions. Of course it’s important to establish a useful front-end lexicon, but what makes sense for an organization might not be what comes out of a framework’s box.  I, for one, would balk at the idea of using Bootstrap’s default featured-content area component they call a “jumbotron”. How a framework’s naming conventions jive with an existing codebase and workflow should be properly discussed before jumping on board the framework train.
 
-Now that we’ve put frameworks through the wringer, it’s important to take a step back and recognize that conceptually these frameworks are very much on point. It’s an excellent idea to work with a design toolkit that promotes consistency and speeds up development time. While discussing the redesign of Microsoft’s homepage by Austin-based Web shop Paravel, developer Dave Rupert discussed the importance of creating and delivering a design system to their client. Dave wonderfully articulated that it’s not necessarily about using Bootstrap for every client, but rather creating “tiny Bootstraps for every client.”
+Now that we’ve put frameworks through the wringer, it’s important to take a step back and recognize that conceptually these frameworks are very much on point. It’s an excellent idea to work with a design toolkit that promotes consistency and speeds up development time. While discussing the redesign of Microsoft’s homepage by Austin-based Web shop Paravel, developer Dave Rupert stressed the importance of creating and delivering a design system to their client. Dave wonderfully articulated that it’s not necessarily about using Bootstrap for every client, but rather creating “tiny Bootstraps for every client.”
 
 > Responsive deliverables should look a lot like fully-functioning Twitter Bootstrap-style systems custom tailored for your clients’ needs. These living code samples are self-documenting style guides that extend to accommodate a client’s needs as well as the needs of the ever-evolving multi-device web. <cite>[Dave Rupert](http://daverupert.com/2013/04/responsive-deliverables/)<cite>
 
 It’s not just about using a design system, it’s about creating *your* system.
 
 ## Design systems save the day
-So what does a sound design system look like? What form does it take? How do you create, maintain, and enforce it? 
+So what do a sound design systems look like? What form do they take? How do you create, maintain, and enforce them? 
 
-Design systems are represented by style guides, which document and organize design materials while providing guidelines, usage, and guardrails.
+The cornerstone of good design systems are *style guides*, which document and organize design materials while providing guidelines, usage, and guardrails.
 
-As it happens, there are [many flavors of style guide](http://bradfrost.com/blog/post/style-guides/), including ones for brand identity, writing, voice and tone, code, design language, and UI pattern libraries. While this book won’t go into detail about all of these style guide categories, it’s important to take a look at them to better understand how style guides for the Web fit into. part of a larger ecosystem and very much influence each other.
+As it happens, there are [many flavors of style guides](http://bradfrost.com/blog/post/style-guides/), including documentation for brand identity, writing, voice and tone, code, design language, and UI pattern libraries. This book won’t detail every category of style guide, but it’s important to take a look at each to better understand how each style guide influences the others, and how style guides for the Web fit into a larger ecosystem.
 
 ### Brand identity guidelines
-Brand identity guidelines define the assets and materials that make a company unique. Logos, typography, color palettes, messaging (such as mission statements and taglines), collateral (such as business card and PowerPoint templates), and more are described in brand identity guidelines.
-Historically, brand identity guidelines were contained in physical brand books, but as with everything else brand guidelines are making their way online.
+{% include figure.html src="" caption="Caption" %}
+
+Brand identity guidelines define the assets and materials that make a company unique. Logos, typography, color palettes, messaging (such as mission statements and taglines), collateral (such as business card and PowerPoint templates), and more are aggregated and described in brand identity guidelines.
+
+Brand identity guidelines provide an extremely important foundation for a brand. How a brand presents itself in a cohesive manner across an increasing number of media, channels, and touchpoints. How can everyone within an organization speak with the same voice, and feel part of a singular entity?
+
+Historically, brand identity guidelines were contained in hard-cover physical books, but as with everything else brand guidelines are making their way online.
 
 ### Design language
+{% include figure.html src="" caption="Caption" %}
+
 While brand identity guidelines are fairly straightforward, design language guidelines are a bit murkier. Design language guidelines articulate a general design direction,philosophy, and approach to specific projects or products.
 These guidelines are not quite as bedrock as branding guidelines (surely some day down the road Google’sMaterial Design guidelines will be retired), but they are a bit more high-level and aspirational than UI pattern libraries.
 
 ### Voice and Tone
+{% include figure.html src="" caption="Caption" %}
+
 Voice and tone are elemental aspects of a brand, so naturally describing brand personality sits well alongside brand identity guidelines. However, voice and tone guidelines can go further by articulating how the company’s voice and tone should shift across a variety of touchpoints. For a great example of voice and tone, look no further than MailChimp’s seminal Voice and Tone website.
 
 ### Writing
+{% include figure.html src="" caption="Caption" %}
+
 Creating a consistent writing style for an organization with many voices can be challenging. Now that the Web makes it easy for everyone in an organization to publish, it’s especially important to provide every author some guidelines and guardrails for contributing.
 
 Writing style guides can be extremely granular, but they don’t always have to be. This writing style guide from the Web team at Dalhousie University is one of my favorite documents on the Web. Short, direct, and practices what it preaches.
 
 ### Code style guides
+{% include figure.html src="" caption="Caption" %}
+
 It’s absolutely essential for teams to write legible, scalable, maintainable code. But that all falls apart when Summer Intern #2 swoops in and writes things all sorts of terrible.
 Code style guides provide conventions, patterns, and examples for how teams should approach their code. These guidelines and guardrails help reign in the madness so that teams can focus on producing great work rather than refactoring a bunch of sloppy, inconsistent code.
 
 ## Pattern Libraries
+{% include figure.html src="" caption="Caption" %}
+
 Pattern libraries, or front-end style guides, UI libraries, component libraries, or whatever you want to call them, are increasingly important. As Web designers, we’re now tasked with creating interfaces that look and function beautifully across a myriad of screen sizes, devices, browsers, and environments. That’s why it’s so essential to break our interfaces down into their atomic elements.
 
 
@@ -251,7 +266,11 @@ For all the benefits these benefits.
 - Lacking a clear methodology. Spray of modules
 
 ## In search of a methodology
+- Evolving beyond the page metaphor
 - Recap modularity as a trend. 
+- Framework pros and cons
+- Design systems benefits and challenges
+- The need for a methodology
 
 Lorem ipsum dolar yadda yadda yadda to be continued…
 
