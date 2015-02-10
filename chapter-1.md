@@ -198,15 +198,16 @@ As it happens, there are [many flavors of style guides](http://bradfrost.com/blo
 
 Brand identity guidelines define the assets and materials that make a company unique. Logos, typography, color palettes, messaging (such as mission statements and taglines), collateral (such as business card and PowerPoint templates), and more are aggregated and described in brand identity guidelines.
 
-Brand identity guidelines provide an extremely important foundation for a brand. How a brand presents itself in a cohesive manner across an increasing number of media, channels, and touchpoints. How can everyone within an organization speak with the same voice, and feel part of a singular entity?
+Brand style guides provide an foundational center for a company. It’s essential for a brand to present itself in a cohesive manner across an increasing number of media, channels, and touchpoints. How can everyone within an organization speak with the same voice and feel part of a singular entity? How do third parties know which Pantone colors to use and how to correctly use the brand’s logo? Brand identity guidelines provide answers to these extremely fundamental questions.
 
-Historically, brand identity guidelines were contained in hard-cover physical books, but as with everything else brand guidelines are making their way online.
+Historically, brand identity guidelines were contained in hard-cover physical books (remember, those things with the pages?), but as with everything else brand style guides are making their way online.
 
 ### Design language
 {% include figure.html src="" caption="Caption" %}
 
-While brand identity guidelines are fairly straightforward, design language guidelines are a bit murkier. Design language guidelines articulate a general design direction,philosophy, and approach to specific projects or products.
-These guidelines are not quite as bedrock as branding guidelines (surely some day down the road Google’sMaterial Design guidelines will be retired), but they are a bit more high-level and aspirational than UI pattern libraries.
+While brand identity guidelines are fairly straightforward, design language guidelines are a bit murkier. Design language style guides articulate a general design direction, philosophy, and approach to specific projects or products.
+
+These guidelines are not quite as bedrock as branding guidelines (surely some day down the road Google’s Material Design guidelines will be retired), but they are a bit more high-level and aspirational than UI pattern libraries.
 
 ### Voice and Tone
 {% include figure.html src="" caption="Caption" %}
