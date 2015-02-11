@@ -203,11 +203,13 @@ Brand style guides provide an foundational center for a company. It’s essentia
 Historically, brand identity guidelines were contained in hard-cover physical books (remember, those things with the pages?), but as with everything else brand style guides are making their way online.
 
 ### Design language
+While brand identity guidelines are fairly tactile, design language guidelines are a bit harder to pin down. Design language style guides articulate a general design direction, philosophy, and approach to specific projects or products.
+
+In order to present itself in a cohesive way across a growing range of products and mediums, Google developed a design language called *material design*. The [material design style guide](http://www.google.com/design/spec/material-design/introduction.html) defines overarching design philosophy, goals, and general principles, while also providing specific applications of the material design language.
+
 {% include figure.html src="" caption="Caption" %}
 
-While brand identity guidelines are fairly straightforward, design language guidelines are a bit murkier. Design language style guides articulate a general design direction, philosophy, and approach to specific projects or products.
-
-These guidelines are not quite as bedrock as branding guidelines (surely some day down the road Google’s Material Design guidelines will be retired), but they are a bit more high-level and aspirational than UI pattern libraries.
+Design language style guides can (and usually do) incorporate aspects of other style guide categories in order to make high-level concepts a bit more tangible. And design language guidelines aren’t set in stone the same way brand guidelines are. One day, Google will most likely develop a new design language to replace material design, so while Google’s overall brand will remain intact, the design vocabulary around it will change.
 
 ### Voice and Tone
 {% include figure.html src="" caption="Caption" %}
