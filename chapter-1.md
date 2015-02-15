@@ -191,7 +191,7 @@ So what do a sound design systems look like? What form do they take? How do you 
 
 The cornerstone of good design systems are *style guides*, which document and organize design materials while providing guidelines, usage, and guardrails.
 
-As it happens, there are [many flavors of style guides](http://bradfrost.com/blog/post/style-guides/), including documentation for brand identity, writing, voice and tone, code, design language, and UI pattern libraries. This book won’t detail every category of style guide, but it’s important to take a look at each to better understand how each style guide influences the others, and how style guides for the Web fit into a larger ecosystem.
+As it happens, there are [many flavors of style guides](http://bradfrost.com/blog/post/style-guides/), including documentation for brand identity, writing, voice and tone, code, design language, and user interface patterns. This book won’t detail every category of style guide, but it’s important to take a look at each to better understand how each style guide influences the others, and how style guides for the Web fit into a larger ecosystem.
 
 ### Brand identity guidelines
 {% include figure.html src="" caption="Caption" %}
@@ -205,16 +205,24 @@ Historically, brand identity guidelines were contained in hard-cover physical bo
 ### Design language
 While brand identity guidelines are fairly tactile, design language guidelines are a bit harder to pin down. Design language style guides articulate a general design direction, philosophy, and approach to specific projects or products.
 
-In order to present itself in a cohesive way across a growing range of products and mediums, Google developed a design language called *material design*. The [material design style guide](http://www.google.com/design/spec/material-design/introduction.html) defines overarching design philosophy, goals, and general principles, while also providing specific applications of the material design language.
+In order to present itself in a cohesive way across a growing range of products and mediums, Google developed a design language they call *material design*. The [material design style guide](http://www.google.com/design/spec/material-design/introduction.html) defines its overarching design philosophy, goals, and general principles, while also providing specific applications of the material design language.
 
-{% include figure.html src="" caption="Caption" %}
+{% include figure.html src="" caption="Google Material Design" %}
 
-Design language style guides can (and usually do) incorporate aspects of other style guide categories in order to make high-level concepts a bit more tangible. And design language guidelines aren’t set in stone the same way brand guidelines are. One day, Google will most likely develop a new design language to replace material design, so while Google’s overall brand will remain intact, the design vocabulary around it will change.
+Design language style guides can (and usually do) incorporate aspects of other style guide categories in order to make high-level concepts a bit more tangible. 
+
+Design language guidelines aren’t set in stone the same way brand guidelines are. For example, one day Google will likely develop a new design language to replace material design, so while Google’s overall brand will remain intact, the design vocabulary around its products will change.
 
 ### Voice and Tone
 {% include figure.html src="" caption="Caption" %}
 
-Voice and tone are elemental aspects of a brand, so naturally describing brand personality sits well alongside brand identity guidelines. However, voice and tone guidelines can go further by articulating how the company’s voice and tone should shift across a variety of touchpoints. For a great example of voice and tone, look no further than MailChimp’s seminal Voice and Tone website.
+People are interacting with brands across a dizzying array of channels and mediums: Web, mobile, print, retail, outdoor, radio, TV, email, and much much more. Speaking in a cohesive, consistent manner across all of these touchpoints is critical to a brand’s success.  
+
+Voice is an elemental aspect of brands’ identities, so typically brand identity guidelines include some reference to tone of voice. However, these overarching guidelines usually aren’t very nuanced, which is why voice and tone guidelines are so important. 
+
+Voice and tone guidelines get into the weeds by articulating how the company’s voice and tone should shift across a variety of scenarios. [MailChimp’s brilliant voice and tone guidelines](http://voiceandtone.com/) define how the brand’s tone changes across content types, so that when a user’s credit card is declined, writers know to shift away from their generally-cheeky-and-playful tone of voice and instead adopt a more serious tone.
+
+Voice and tone style guides provide much-needed guidelines for how to … establish deliberate 
 
 ### Writing
 {% include figure.html src="" caption="Caption" %}
@@ -256,8 +264,7 @@ By now the benefits of creating a design system should be abundantly clear, and 
 
 For all the benefits these benefits.
 
-- Can be difficult to sell
-
+- Difficult to sell
 - Time consuming to create
 - Treated as a auxiliary project
 - Often created after a project launches

@@ -24,6 +24,7 @@ And this is a list of helpful resources people have brought to my attention duri
 
 ## Book-Making Resources
 - [Bitbooks](http://bitbooks.cc/)
+- [Gitbook](https://www.gitbook.com/)
 - [LeanPub](https://leanpub.com/)
 - [Sitepoint Liveupdate](https://learnable.com/liveupdate)
 
