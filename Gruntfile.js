@@ -27,7 +27,7 @@ module.exports = function(grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'css/style.css': '_sass/style.scss'
+					'_patternlab/source/css/style.css': '_patternlab/source/css/style.scss'
 				}
 			}
 		},
@@ -37,10 +37,39 @@ module.exports = function(grunt) {
 				dest: 'css/style.css'
 			}
         },
+        shell: {
+			patternlab: {
+				command: "php _patternlab/core/console --generate"
+			}
+        },
+        pattern_lab_component_builder: {
+		    colors: {
+		      options: {
+		        regex: "^\\$color--.*",
+		        allow_var_values: false
+		      },
+		      src: 'scss/global/variables/_colors.scss',
+		      dest: 'source/_patterns/00-atoms/01-global/00-colors.json'
+		    },
+		    fonts: {
+		      options: {
+		        'regex': "^\\$type.*"
+		      },
+		      src: "scss/global/variables/_type-sizes.scss",
+		      dest: "source/_patterns/00-atoms/02-text/02-type-sizes.json"
+		    },
+		  },
 		watch: {
 			options: {
 				livereload: true	
 			},
+			html: {
+  				files: ['_patternlab/source/_patterns/**/*.mustache', '_patternlab/source/_patterns/**/*.json', '_patternlab/source/_data/*.json'],
+  				tasks: ['shell:patternlab'],
+  				options: {
+  					spawn: false
+  				}
+  			},
 			site: {
 				files: ['index.html', '_layouts/*.html', '_includes/*.html', '*.md'],
 				tasks: ['jekyll'],
@@ -49,8 +78,8 @@ module.exports = function(grunt) {
 				}
 			},
 			css: {
-				files: ['_sass/*.scss', '_sass/**/*.scss'],
-				tasks: ['sass', 'autoprefixer', 'jekyll'],
+				files: ['_patternlab/source/css/*.scss', '_patternlab/source/css/**/*.scss'],
+				tasks: ['sass', 'autoprefixer', 'jekyll', 'shell:patternlab'],
 				options: {
 					livereload: true	
 				}
@@ -65,9 +94,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-serve');
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-shell');
+	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('pattern-lab-component-builder');
 
-	grunt.registerTask('serve', ['jekyll','connect:server','watch']);
+	grunt.registerTask('serve', ['jekyll','connect:server','watch', 'shell:patternlab', 'copy']);
 
 	// Tasks
-	grunt.registerTask('default', ['sass', 'watch', 'autoprefixer', 'connect:server', 'jekyll']);
+	grunt.registerTask('default', ['sass', 'watch', 'autoprefixer', 'connect:server', 'jekyll', 'shell:patternlab']);
 };

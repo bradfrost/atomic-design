@@ -22,11 +22,12 @@ http://yourls.org/
 
 And this is a list of helpful resources people have brought to my attention during the creation of this book:
 
-## Book-Making Resources
+## Book Making and Marketing Resources
 - [Bitbooks](http://bitbooks.cc/)
 - [Gitbook](https://www.gitbook.com/)
 - [LeanPub](https://leanpub.com/)
 - [Sitepoint Liveupdate](https://learnable.com/liveupdate)
+- [ConvertKit](http://convertkit.com/)
 
 
 ## Chapter 1
