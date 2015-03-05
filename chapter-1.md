@@ -194,7 +194,7 @@ The cornerstone of good design systems are *style guides*, which document and or
 As it happens, there are [many flavors of style guides](http://bradfrost.com/blog/post/style-guides/), including documentation for brand identity, writing, voice and tone, code, design language, and user interface patterns. This book won’t detail every category of style guide, but it’s important to take a look at each to better understand how each style guide influences the others, and how style guides for the Web fit into a larger ecosystem.
 
 ### Brand identity guidelines
-{% include figure.html src="" caption="Caption" %}
+{% include figure.html src="../images/content/styleguide-wvu.png" caption="West Virginia University’s Brand Style Guide" %}
 
 Brand identity guidelines define the assets and materials that make a company unique. Logos, typography, color palettes, messaging (such as mission statements and taglines), collateral (such as business card and PowerPoint templates), and more are aggregated and described in brand identity guidelines.
 
@@ -207,43 +207,44 @@ While brand identity guidelines are fairly tactile, design language guidelines a
 
 In order to present itself in a cohesive way across a growing range of products and mediums, Google developed a design language they call *material design*. The [material design style guide](http://www.google.com/design/spec/material-design/introduction.html) defines its overarching design philosophy, goals, and general principles, while also providing specific applications of the material design language.
 
-{% include figure.html src="" caption="Google Material Design" %}
+{% include figure.html src="../images/content/styleguide-material.png" caption="Google’s Material Design Language" %}
 
 Design language style guides can (and usually do) incorporate aspects of other style guide categories in order to make high-level concepts a bit more tangible. 
 
 Design language guidelines aren’t set in stone the same way brand guidelines are. For example, one day Google will likely develop a new design language to replace material design, so while Google’s overall brand will remain intact, the design vocabulary around its products will change.
 
 ### Voice and Tone
-{% include figure.html src="" caption="Caption" %}
+{% include figure.html src="../images/content/styleguide-voiceandtone.png" caption="Mailchimp’s Voice and Tone guidelines" %}
 
-People are interacting with brands across a dizzying array of channels and mediums: Web, mobile, print, retail, outdoor, radio, TV, email, and much much more. Speaking in a cohesive, consistent manner across all of these touchpoints is critical to a brand’s success.  
+People are interacting with brands across a dizzying array of channels and mediums: Web, mobile, print, retail, outdoor, radio, TV, email, and much more. Speaking in a cohesive, consistent manner across all of these touchpoints is critical to a brand’s success.  
 
-Voice is an elemental aspect of brands’ identities, so typically brand identity guidelines include some reference to tone of voice. However, these overarching guidelines usually aren’t very nuanced, which is why voice and tone guidelines are so important. 
+Voice is an elemental aspect of a brand’s identity, so typically brand identity guidelines include some reference to tone of voice. However, these overarching guidelines usually aren’t very nuanced, which is why voice and tone guidelines are so important. 
 
-Voice and tone guidelines get into the weeds by articulating how the company’s voice and tone should shift across a variety of scenarios. [MailChimp’s brilliant voice and tone guidelines](http://voiceandtone.com/) define how the brand’s tone changes across content types, so that when a user’s credit card is declined, writers know to shift away from their generally-cheeky-and-playful tone of voice and instead adopt a more serious tone.
-
-Voice and tone style guides provide much-needed guidelines for how to … establish deliberate 
+Voice and tone guidelines get into the weeds by articulating how the company’s voice and tone should shift across a variety of scenarios. [MailChimp’s brilliant voice and tone guidelines](http://voiceandtone.com/) define how the brand’s tone changes across content types, so that when a user’s credit card is declined, writers know to shift away from their generally-cheeky-and-playful tone of voice and adopt a more serious tone instead.
 
 ### Writing
-{% include figure.html src="" caption="Caption" %}
+{% include figure.html src="../images/content/styleguide-economist.png" caption="The Economist’s writing style guide" %}
 
-Creating a consistent writing style for an organization with many voices can be challenging. Now that the Web makes it easy for everyone in an organization to publish, it’s especially important to provide every author some guidelines and guardrails for contributing.
+The rise of the Web and content managed websites makes it easier than ever for many people within an organization to publish content. This of course can be a double-edged sword, as maintaining a consistent writing style for an organization with many voices can be challenging. Writing style guides provide every author some guidelines and guardrails for contributing content.
 
-Writing style guides can be extremely granular, but they don’t always have to be. This writing style guide from the Web team at Dalhousie University is one of my favorite documents on the Web. Short, direct, and practices what it preaches.
+Writing style guides can be extremely granular, defining particulars around punctuation and grammar, but they don’t always have to be so detailed. [Dalhousie University’s writing style guide](http://www.dal.ca/webteam/web_style_guide/writing_for_the_web.html) provides a concise list of principles and best practices for content contributors to follow.
 
 ### Code style guides
-{% include figure.html src="" caption="Caption" %}
+{% include figure.html src="../images/content/styleguide-github.png" caption="Github’s code style guide" %}
 
-It’s absolutely essential for teams to write legible, scalable, maintainable code. But that all falls apart when Summer Intern #2 swoops in and writes things all sorts of terrible.
-Code style guides provide conventions, patterns, and examples for how teams should approach their code. These guidelines and guardrails help reign in the madness so that teams can focus on producing great work rather than refactoring a bunch of sloppy, inconsistent code.
+It’s absolutely essential for teams to write legible, scalable, maintainable code. But without a way to promote and enforce code consistency, it’s easy for things to fall apart and leave every developer to fend for themselves. 
+
+Code style guides provide conventions, patterns, and examples for how teams should approach their code. These guidelines and guardrails help reign in the madness so that teams can focus on producing great work together rather than refactoring a bunch of sloppy, inconsistent code.
 
 ## Pattern Libraries
-{% include figure.html src="" caption="Caption" %}
+{% include figure.html src="../images/content/styleguide-codeforamerica.png" caption="Code for America’s pattern library" %}
 
-Pattern libraries, or front-end style guides, UI libraries, component libraries, or whatever you want to call them, are increasingly important. As Web designers, we’re now tasked with creating interfaces that look and function beautifully across a myriad of screen sizes, devices, browsers, and environments. That’s why it’s so essential to break our interfaces down into their atomic elements.
+And now for the main event. Pattern libraries, also known as front-end style guides, UI libraries, or component libraries, are quickly becoming a cornerstone of modern interface design. The rest of this book will concentrate on how to approach interface design in a systematic manner, and detail how to establish and maintain pattern libraries.
 
 
 ## Benefits of style guides
+As Web designers, we’re now tasked with creating interfaces that look and function beautifully across a myriad of screen sizes, devices, browsers, and environments. It’s a tall order. 
+
 In her book [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/), Anna Debenham deftly explains the myriad benefits of establishing front-end style guides:
 
 provide documentation 
