@@ -57,8 +57,8 @@ module.exports = function(grunt) {
 		      },
 		      src: "scss/global/variables/_type-sizes.scss",
 		      dest: "source/_patterns/00-atoms/02-text/02-type-sizes.json"
-		    },
-		  },
+		    }
+		},
 		watch: {
 			options: {
 				livereload: true	
@@ -96,10 +96,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-shell');
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('pattern-lab-component-builder');
+	grunt.loadNpmTasks('grunt-pattern-lab-component-builder');
 
-	grunt.registerTask('serve', ['jekyll','connect:server','watch', 'shell:patternlab', 'copy']);
+	grunt.registerTask('serve', ['jekyll','connect:server','watch', 'shell:patternlab', 'copy', 'pattern_lab_component_builder']);
 
 	// Tasks
-	grunt.registerTask('default', ['sass', 'watch', 'autoprefixer', 'connect:server', 'jekyll', 'shell:patternlab']);
+	grunt.registerTask('default', ['sass', 'watch', 'autoprefixer', 'connect:server', 'jekyll', 'shell:patternlab', 'pattern_lab_component_builder']);
 };
