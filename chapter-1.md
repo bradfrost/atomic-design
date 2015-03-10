@@ -189,7 +189,7 @@ It’s not just about using a design system, it’s about creating *your* system
 ## Design systems save the day
 So what do a sound design systems look like? What form do they take? How do you create, maintain, and enforce them? 
 
-The cornerstone of good design systems are *style guides*, which document and organize design materials while providing guidelines, usage, and guardrails.
+The cornerstones of good design systems are *style guides*, which document and organize design materials while providing guidelines, usage, and guardrails.
 
 As it happens, there are [many flavors of style guides](http://bradfrost.com/blog/post/style-guides/), including documentation for brand identity, writing, voice and tone, code, design language, and user interface patterns. This book won’t detail every category of style guide, but it’s important to take a look at each to better understand how each style guide influences the others, and how style guides for the Web fit into a larger ecosystem.
 
@@ -242,25 +242,47 @@ Code style guides provide conventions, patterns, and examples for how teams shou
 And now for the main event. Pattern libraries, also known as front-end style guides, UI libraries, or component libraries, are quickly becoming a cornerstone of modern interface design. The rest of this book will concentrate on how to approach interface design in a systematic manner, and detail how to establish and maintain pattern libraries.
 
 
-## Benefits of style guides
-As Web designers, we’re now tasked with creating interfaces that look and function beautifully across a myriad of screen sizes, devices, browsers, and environments. It’s a tall order. 
+## Style guide benefits
+As Web designers, we’re now tasked with creating interfaces that look and function beautifully across a myriad of screen sizes, devices, browsers, and environments. That’s a tall order in and of itself. But once you factor in other team members, clients, stakeholders, and organizational quirks, things start looking downright _intimidating_. 
 
-In her book [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/), Anna Debenham deftly explains the myriad benefits of establishing front-end style guides:
+Style guides are important tools that help prevent chaos, both from a design/development standpoint and also from an organizational perspective. Here’s why style guides are quickly becoming essential tools for modern Web design and development.
 
-provide documentation 
+### Consistently awesome
+**Web Style guides promote consistency and cohesion** across a user interface. This consistency benefits both the people who create these interfaces but also the users of these interfaces. 
 
-- Promotes consistency and cohesion
-- Easier to test
-- Better workflow
-- Creates a shared vocabulary
-- Useful reference to keep coming back to.
-- Maintainability
-establish a system that can be modified and extended, future-friendly.
-- Establish a consistent, shared vocabulary between everyone involved in a project.
+I recently visited my health insurance provider’s website to pay my bill. In the course of 5 clicks, I was hit with 4 distinct interface designs, some of which looked like they were last touched in 1999. This inconsistent experience put the burden on me, the user, to figure out what goes where and how to interpret disparate interface elements. By the time I got to the payment form, I felt like I couldn’t trust the company to successfully and securely process my payment.
 
-[a](http://us5.campaign-archive1.com/?u=7e093c5cf4&id=ead8a72012&e=ecb25a3f93)
+Style guides help reign in these inconsistencies by encouraging  reuse of interface elements. Designers and developers can refer back to existing patterns to ensure the work they’re producing is consistent with what’s already been established. 
 
-### Style guide challenges
+The resulting user interfaces feel more cohesive and trustworthy, which helps users accomplish their tasks faster and empowers them to master the interface. 
+
+### Shared vocabulary
+What does “utility toolbar” mean? Does everyone understand what “touch slider hero” is?
+
+As the number of people working on a project increase, it becomes all-too-easy for communication breakdowns to occur. It's not uncommon for different disciplines have different names for the same thing, and for individuals on a team to  In order for true collaboration to occur, it's essential to speak a common vocabulary, and style guides are there to help establish that share language.
+
+{% include figure.html src="../images/content/starbucks-blocks-3up.png" caption="Giving names to patterns like 'Blocks 3-Up' in Starbucks' style guide helps team members speak the same language" %}
+
+**Style guides establish a consistent, shared vocabulary between everyone involved in a project**.
+
+### Education
+> Education is as important as documentation. A style guide can show clients that websites are systems rather than collections of pages. <cite>[Anna Debenham](http://maban.co.uk/projects/front-end-style-guides/)</cite>
+
+In her book [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/), Anna Debenham deftly explains the myriad benefits of establishing front-end style guides. One crucial benefit is 
+
+### An empathetic workflow
+Helps designers and developers think of the greater good. How their work affects the rest of the system. Collaboration. 
+
+### Easier testing
+Easier to test. The ability to hone in on a specific component to figure out what’s causing problems. AB tests.
+
+### Speed it 
+
+### Future-friendly
+In addition to being a useful reference to keep coming back to. Maintainable . establish a system that can be modified and extended, future-friendly. Even if you were to totally redesign . No need to throw the baby out with the bath water. 
+
+
+## Style guide challenges
 By now the benefits of creating a design system should be abundantly clear, and hopefully exciting thoughts of making beautiful style guides are running through your head.
 
 For all the benefits these benefits.
