@@ -259,16 +259,20 @@ The resulting user interfaces feel more cohesive and trustworthy, which helps us
 ### Shared vocabulary
 What does “utility toolbar” mean? Does everyone understand what “touch slider hero” is?
 
-As the number of people working on a project increase, it becomes all-too-easy for communication breakdowns to occur. It's not uncommon for different disciplines have different names for the same thing, and for individuals on a team to  In order for true collaboration to occur, it's essential to speak a common vocabulary, and style guides are there to help establish that share language.
+As the number of people working on a project increase, it becomes all-too-easy for communication breakdowns to occur. It's not uncommon for different disciplines have different names for the same module, and for individuals to go rogue and invent their own naming conventions. In order for true collaboration to occur, it's essential to speak a common language, and style guides are there to help establish that shared vocabulary.
 
 {% include figure.html src="../images/content/starbucks-blocks-3up.png" caption="Giving names to patterns like 'Blocks 3-Up' in Starbucks' style guide helps team members speak the same language" %}
 
-**Style guides establish a consistent, shared vocabulary between everyone involved in a project**.
+**Style guides establish a consistent, shared vocabulary between everyone involved in a project**, encouraging collaboration between disciplines and reducing communication breakdowns.
 
 ### Education
+In her book [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/), Anna Debenham deftly explains the myriad advantages of creating style guides, including one of the most crucial benefits: education.
+
 > Education is as important as documentation. A style guide can show clients that websites are systems rather than collections of pages. <cite>[Anna Debenham](http://maban.co.uk/projects/front-end-style-guides/)</cite>
 
-In her book [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/), Anna Debenham deftly explains the myriad benefits of establishing front-end style guides. One crucial benefit is 
+Style guides demonstrate to clients, stakeholders, and other disciplines that there's a lot of really thoughtful work going into a website's design and development beyond just "hey, let's make a new website". A pattern library communicates the underlying design language in a very tangible way, which helps stakeholders understand that an underlying system is determining the final interface. 
+
+Style guides can help alleviate "Special Snowflake Syndrome", where certain departments in an organization think that they have unique problems and therefore demand unique solutions. By exposing the design system in the form of a style guide, these Special Snowflakes can better appreciate consistency and understand why their requests for custom designs receive pushback. 
 
 ### An empathetic workflow
 Helps designers and developers think of the greater good. How their work affects the rest of the system. Collaboration. 
@@ -276,7 +280,7 @@ Helps designers and developers think of the greater good. How their work affects
 ### Easier testing
 Easier to test. The ability to hone in on a specific component to figure out what’s causing problems. AB tests.
 
-### Speed it 
+### Speed 
 
 ### Future-friendly
 In addition to being a useful reference to keep coming back to. Maintainable . establish a system that can be modified and extended, future-friendly. Even if you were to totally redesign . No need to throw the baby out with the bath water. 
