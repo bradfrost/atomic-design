@@ -252,14 +252,16 @@ Style guides are important tools that help prevent chaos, both from a design/dev
 
 I recently visited my health insurance provider’s website to pay my bill. In the course of 5 clicks, I was hit with 4 distinct interface designs, some of which looked like they were last touched in 1999. This inconsistent experience put the burden on me, the user, to figure out what goes where and how to interpret disparate interface elements. By the time I got to the payment form, I felt like I couldn’t trust the company to successfully and securely process my payment.
 
-Style guides help reign in these inconsistencies by encouraging  reuse of interface elements. Designers and developers can refer back to existing patterns to ensure the work they’re producing is consistent with what’s already been established. 
+Style guides help reign in these inconsistencies by encouraging  reuse of interface elements. Designers and developers can refer back to existing patterns to ensure the work they’re producing is consistent with what’s already been established.
 
-The resulting user interfaces feel more cohesive and trustworthy, which helps users accomplish their tasks faster and empowers them to master the interface. 
+Even third parties responsible for matching their experiences with the branding/look & feel of a primary experience can make great use of a style guide. Outside experiences, such as payment portals or localized sites, can better match the look and feel of the primary experience by applying the patterns in the style guide.
+
+Making style guides central to your process results in user interfaces that feel more cohesive and trustworthy, which helps users accomplish their tasks faster and empowers them to master the interface. 
 
 ### Shared vocabulary
 What does “utility toolbar” mean? Does everyone understand what “touch slider hero” is?
 
-As the number of people working on a project increase, it becomes all-too-easy for communication breakdowns to occur. It's not uncommon for different disciplines have different names for the same module, and for individuals to go rogue and invent their own naming conventions. In order for true collaboration to occur, it's essential to speak a common language, and style guides are there to help establish that shared vocabulary.
+As the number of people working on a project increase, it becomes all-too-easy for communication breakdowns to occur. It's not uncommon for different disciplines have different names for the same module, and for individuals to go rogue and invent their own naming conventions. In order for true collaboration to occur, it's essential for teams to speak a common language. Style guides are there to help establish that shared vocabulary.
 
 {% include figure.html src="../images/content/starbucks-blocks-3up.png" caption="Giving names to patterns like 'Blocks 3-Up' in Starbucks' style guide helps team members speak the same language" %}
 
@@ -270,12 +272,12 @@ In her book [Front-end Style Guides](http://maban.co.uk/projects/front-end-style
 
 > Education is as important as documentation. A style guide can show clients that websites are systems rather than collections of pages. <cite>[Anna Debenham](http://maban.co.uk/projects/front-end-style-guides/)</cite>
 
-Style guides demonstrate to clients, stakeholders, and other disciplines that there's a lot of really thoughtful work going into a website's design and development beyond just "hey, let's make a new website". A pattern library communicates the underlying design language in a very tangible way, which helps stakeholders understand that an underlying system is determining the final interface. 
+Style guides demonstrate to clients, stakeholders, and other disciplines that there's a lot of really thoughtful work going into a website's design and development beyond just "hey, let's make a new website". **A pattern library communicates the underlying design language in a very tangible way**, which helps stakeholders understand that an underlying system is determining the final interface. 
 
 Style guides can help alleviate "Special Snowflake Syndrome", where certain departments in an organization think that they have unique problems and therefore demand unique solutions. By exposing the design system in the form of a style guide, these Special Snowflakes can better appreciate consistency and understand why their requests for custom designs receive pushback. 
 
 ### An empathetic workflow
-Helps designers and developers think of the greater good. How their work affects the rest of the system. Collaboration. 
+Education isn't just for clients and stakeholders. Helps designers and developers think of the greater good. How their work affects the rest of the system. Collaboration. 
 
 ### Easier testing
 Easier to test. The ability to hone in on a specific component to figure out what’s causing problems. AB tests.
