@@ -258,7 +258,7 @@ Even third parties responsible for matching their experiences with the branding/
 
 Making style guides central to your process results in user interfaces that feel more cohesive and trustworthy, which helps users accomplish their tasks faster and empowers them to master the interface. 
 
-### Shared vocabulary
+### A shared vocabulary
 What does “utility toolbar” mean? Does everyone understand what “touch slider hero” is?
 
 As the number of people working on a project increase, it becomes all-too-easy for communication breakdowns to occur. It's not uncommon for different disciplines have different names for the same module, and for individuals to go rogue and invent their own naming conventions. In order for true collaboration to occur, it's essential for teams to speak a common language. Style guides are there to help establish that shared vocabulary.
@@ -288,7 +288,16 @@ The homepage is broken, you say? Well, what exactly is breaking it?
 
 The ability to pull an interface apart into its component pieces makes testing a lot easier. A style guide allows you to view interface patterns in isolation, which lets developers hone in on what's causing errors, browser inconsistencies, or performance issues.
 
-### Speed 
+### Speed
+Earlier in the chapter we discussed how *design and development speed* is one of the main advantages of using UI frameworks like Bootstrap. By developing your own design system, you can reap those same speed rewards.
+
+> The hard part is building the machine that builds the product.” <cite>[Dennis Crowley](http://techcrunch.com/2011/03/03/founder-stories-foursquare-crowley-machine/) *(source needs confirmation)*</cite>
+
+It's true that devising an interface design system and creating a custom pattern library initially takes a lot of time, thought, and effort. But once the pattern library is established subsequent design and development becomes much faster, which tends to make everyone happy.
+
+Federico Holgado, Lead UX developer at MailChimp, [explained](http://styleguides.io/podcast/federico-holgado/) how MailChimp's pattern library initially consisted of patterns created from the four primary screens of their app. But once they moved onto other areas of the site, they realized they were able to utilize existing patterns rather than having to generate brand new patterns from scratch every time.
+
+> …Once we did that, as we were implementing things in other pages we started to realize: man, this system will actually work here and this system will actually work here and here. <cite>[Federico Holgado](http://styleguides.io/podcast/federico-holgado/)</cite>
 
 ### Future-friendly
 In addition to being a useful reference to keep coming back to. Maintainable . establish a system that can be modified and extended, future-friendly. Even if you were to totally redesign . No need to throw the baby out with the bath water. 
