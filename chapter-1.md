@@ -277,10 +277,14 @@ Style guides demonstrate to clients, stakeholders, and other disciplines that th
 Style guides can help alleviate "Special Snowflake Syndrome", where certain departments in an organization think that they have unique problems and therefore demand unique solutions. By exposing the design system in the form of a style guide, these Special Snowflakes can better appreciate consistency and understand why their requests for custom designs receive pushback. 
 
 ### An empathetic workflow
-Education isn't just for clients and stakeholders. Helps designers and developers think of the greater good. How their work affects the rest of the system. Collaboration. 
+Education isn't just important for clients and stakeholders. A good style guide helps inform designers and developers of the tools they have in their toolbox, and provides guidelines and guardrails for how to use them properly. 
+
+By making a style guide a cornerstone of your workflow (which we'll detail in Chapter 4), **designers and developers are forced to think about how their decisions affect the broader design system**. It becomes harder to go rogue and becomes easier to think of the greater good. And this is exactly where you want team members to be.
+
+A style guide provides a home for each discipline to contribute their respective considerations and concerns for patterns. By collecting all these considerations under one roof, the style guide becomes a watering hole for everyone involved in the project, which helps each discipline better understand the design system from many perspectives.
 
 ### Easier testing
-Easier to test. The ability to hone in on a specific component to figure out what’s causing problems. AB tests.
+The ability to pull an interface apart into its component pieces makes an interface easier to test. The homepage is broken, you say? Well, what exactly is broken   Easier to test. The ability to hone in on a specific component to figure out what’s causing problems. AB tests.
 
 ### Speed 
 
