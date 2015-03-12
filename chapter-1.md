@@ -283,8 +283,10 @@ By making a style guide a cornerstone of your workflow (which we'll detail in Ch
 
 A style guide provides a home for each discipline to contribute their respective considerations and concerns for patterns. By collecting all these considerations under one roof, the style guide becomes a watering hole for everyone involved in the project, which helps each discipline better understand the design system from many perspectives.
 
-### Easier testing
-The ability to pull an interface apart into its component pieces makes an interface easier to test. The homepage is broken, you say? Well, what exactly is broken   Easier to test. The ability to hone in on a specific component to figure out what’s causing problems. AB tests.
+### Testing, testing, 1-2-3
+The homepage is broken, you say? Well, what exactly is breaking it?  
+
+The ability to pull an interface apart into its component pieces makes testing a lot easier. A style guide allows you to view interface patterns in isolation, which lets developers hone in on what's causing errors, browser inconsistencies, or performance issues.
 
 ### Speed 
 
