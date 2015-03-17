@@ -315,17 +315,19 @@ But in order to reach style guide nirvana, you must first overcome the many trea
 Perhaps the biggest, most unavoidable challenge is that **style guides are time-consuming to create**. I don't know about you, but I don't go into work every day twiddling my thumbs wondering what to do with my time. I've never met a person that isn't feeling pressure to get work out the door, and because pattern libraries are often treated as auxiliary projects, they can be first on the chopping block when the going gets tough.
 
 ### The hard sell
-In order to reap the many benefits style guides provide, organizations must carve out the necessary time and budget to make them happen. That requires people to overcome the short-term mentality that all-to-often creeps its way into organizations. 
+In order to benefit from style guides, organizations must first appropriate the necessary time and budget to make them happen. That **requires organizations to overcome the short-term mentality** that all-to-often creeps its way into company culture. 
 
-### Second-class 
-- Treated as a auxiliary project
+The long-term benefits that style guides provide are obvious to those who are already thinking about the long game. The challenge therefore becomes convincing those stuck in a short-term, quarter-by-quarter mindset that establishing a sound design system is a smart investment. 
+
+### Second-class tools
+Allocating money and time Treated as a auxiliary project
 - Often created after a project launches
-
 - Seen only as a designer/developer tool
-- Maintenance
-- Governance
+
 
 ### Organizational
+- Maintenance
+- Governance
 
 ### Hands on
 - Often too abstract
