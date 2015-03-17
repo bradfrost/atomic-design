@@ -286,12 +286,10 @@ A style guide provides a home for each discipline to contribute their respective
 ### Testing, testing, 1-2-3
 The homepage is broken, you say? Well, what exactly is breaking it?  
 
-The ability to pull an interface apart into its component pieces makes testing a lot easier. A style guide allows you to view interface patterns in isolation, which lets developers hone in on what's causing errors, browser inconsistencies, or performance issues.
+The ability to pull an interface apart into its component pieces makes testing a lot easier. A style guide allows you to view interface patterns in isolation, which lets developers hone in on what's causing errors, browser inconsistencies, or performance issues. 
 
 ### Speed
-Earlier in the chapter we discussed how *design and development speed* is one of the main advantages of using UI frameworks like Bootstrap. By developing your own design system, you can reap those same speed rewards.
-
-> The hard part is building the machine that builds the product.” <cite>[Dennis Crowley](http://techcrunch.com/2011/03/03/founder-stories-foursquare-crowley-machine/) *(source needs confirmation)*</cite>
+Earlier in the chapter we discussed how *design and development speed* is one of the main reasons why UI frameworks like Bootstrap are so popular. We're under pressure to get By developing your own design system, you can reap those same speed rewards.
 
 It's true that devising an interface design system and creating a custom pattern library initially takes a lot of time, thought, and effort. But once the pattern library is established subsequent design and development becomes much faster, which tends to make everyone happy.
 
@@ -299,27 +297,43 @@ Federico Holgado, Lead UX developer at MailChimp, [explained](http://styleguides
 
 > …Once we did that, as we were implementing things in other pages we started to realize: man, this system will actually work here and this system will actually work here and here. <cite>[Federico Holgado](http://styleguides.io/podcast/federico-holgado/)</cite>
 
-### Future-friendly
-In addition to being a useful reference to keep coming back to. Maintainable . establish a system that can be modified and extended, future-friendly. Even if you were to totally redesign . No need to throw the baby out with the bath water. 
+### In it for the long haul
+There's no doubt style guides help teams effectively get things done in the here and now. But much like a fine wine, style guides increase in value over time. The beautiful thing about interface design systems is that they can and should be modified, extended, and refined for years to come.
 
+As previously mentioned, creating a custom pattern library requires a lot of hard work up front, but that hard work should  provide a structural foundation for future iteration and refinement. Learnings gathered from analytics, user testing, AB testing, and experience should be incorporated into the style guide, making a
+
+Even if you were to undertake a major redesign, you'll find that many of the structural interface building blocks will remain the same. You'll still have forms, buttons, headings, other common interface patterns, so there's no need to throw the baby out with the bath water. A style guide provides a rock-solid foundation for all future work, even if that future work may look totally different.
 
 ## Style guide challenges
-By now the benefits of creating a design system should be abundantly clear, and hopefully exciting thoughts of making beautiful style guides are running through your head.
+By now the benefits of creating design systems should be abundantly clear, and hopefully visions of sugar plums and beautiful style guides are dancing through your head.
 
-For all the benefits these benefits.
+But in order to reach style guide nirvana, you must first overcome the many treacherous challenges that come with the territory.
 
-- Difficult to sell
-- Time consuming to create
+### A matter of time
+> The hard part is building the machine that builds the product.” <cite>[Dennis Crowley](http://techcrunch.com/2011/03/03/founder-stories-foursquare-crowley-machine/) </cite>
+
+Perhaps the biggest, most unavoidable challenge is that **style guides are time-consuming to create**. I don't know about you, but I don't go into work every day twiddling my thumbs wondering what to do with my time. I've never met a person that isn't feeling pressure to get work out the door, and because pattern libraries are often treated as auxiliary projects, they can be first on the chopping block when the going gets tough.
+
+### The hard sell
+In order to reap the many benefits style guides provide, organizations must carve out the necessary time and budget to make them happen. That requires people to overcome the short-term mentality that all-to-often creeps its way into organizations. 
+
+### Second-class 
 - Treated as a auxiliary project
 - Often created after a project launches
-- Often too abstract
+
 - Seen only as a designer/developer tool
-- Often incomplete/only serving present cases
 - Maintenance
 - Governance
+
+### Organizational
+
+### Hands on
+- Often too abstract
+- Often incomplete/only serving present cases
 - Lacking a clear methodology. Spray of modules
 
 ## In search of a methodology
+Device diversity is 
 - Evolving beyond the page metaphor
 - Recap modularity as a trend. 
 - Framework pros and cons
@@ -327,5 +341,4 @@ For all the benefits these benefits.
 - The need for a methodology
 
 Lorem ipsum dolar yadda yadda yadda to be continued…
-
 
