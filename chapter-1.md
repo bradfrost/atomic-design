@@ -319,28 +319,33 @@ In order to benefit from style guides, organizations must first appropriate the 
 
 The long-term benefits that style guides provide are obvious to those who are already thinking about the long game. The challenge therefore becomes convincing those stuck in a short-term, quarter-by-quarter mindset that establishing a sound design system is a smart investment. 
 
-### Second-class tools
-Allocating money and time Treated as a auxiliary project
-- Often created after a project launches
-- Seen only as a designer/developer tool
+### Second-class style guides
+Even if time and money are allocated to establish style guides, these valuable tools are often not given the focus they need in order to reach their true potential. It's important to be aware of the host of reasons why style guides end up underutilized, neglected, or outright abandoned.
+
+**Style guides can be misunderstood as tools useful only to designers or developers**, which leads to a lack of visibility that immediately limits their effectiveness. Instead of serving as a watering hole for everyone involved on the project, a style guide can become a best-kept secret guarded by one discipline. Color me naive, but I don't think this helps foster a culture of collaboration.
+
+**Style guides are often treated as auxiliary projects**, which makes it all too easy for them to fall into disrepair. Without adjusting your workflow to incorporate the style guide into your process, all of those patterns and documentation will quickly be rendered out of date and eventually obsolete.
+
+**Maintenance and governance strategy are critical to a style guide's success**. Speaking from my own experience, style guides will be thrown in the trash and abandoned without a proper strategy in place for who will manage, maintain, and enforce them. 
+
+### Style guide structure
+In addition the myriad organizational challenges that come with the territory, the actual design and structure of a style guide affects its usefulness.
+
+In case you haven't heard, design matters. And designing delightful style guides are no exception. In order to be useful to everyone, the style guide should clearly convey what it is and why it matters. Some style guides may come across as too technical or vague, which can intimidate other disciplines and lead them to believe the resource isn’t for them.
 
 
-### Organizational
-- Maintenance
-- Governance
+- Often times pattern library too abstract. devoid of context.
+- Often incomplete/only serving present cases. 
 
-### Hands on
-- Often too abstract
-- Often incomplete/only serving present cases
-- Lacking a clear methodology. Spray of modules
+### Lacking a methodology
+As much as I adore the many style guides out there [in the wild](http://styleguides.io/examples.html), I'm frustrated by a lack of structure to many of them. While it's fantastic teams are thinking  Spray of modules
+
+ It is in this  Lacking a clear methodology.
 
 ## In search of a methodology
-Device diversity is 
-- Evolving beyond the page metaphor
-- Recap modularity as a trend. 
+Device diversity is here to stay, so it's time for us to evolve beyond the page metaphor. Thankfully the web community and organizations are embracing modularity across every aspect of 
+
 - Framework pros and cons
 - Design systems benefits and challenges
 - The need for a methodology
-
-Lorem ipsum dolar yadda yadda yadda to be continued…
 
