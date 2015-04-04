@@ -300,14 +300,12 @@ Federico Holgado, Lead UX developer at MailChimp, [explained](http://styleguides
 ### In it for the long haul
 There's no doubt style guides help teams effectively get things done in the here and now. But much like a fine wine, style guides increase in value over time. The beautiful thing about interface design systems is that they can and should be modified, extended, and refined for years to come.
 
-As previously mentioned, creating a custom pattern library requires a lot of hard work up front, but that hard work should  provide a structural foundation for future iteration and refinement. Learnings gathered from analytics, user testing, AB testing, and experience should be incorporated into the style guide, making a
+As previously mentioned, creating a custom pattern library requires a lot of hard work up front, but that hard work should  provide a structural foundation for future iteration and refinement. Learnings gathered from analytics, user testing, AB testing, and experience should be incorporated into the style guide, making it a powerful hub for truth, knowledge, and best practices. 
 
-Even if you were to undertake a major redesign, you'll find that many of the structural interface building blocks will remain the same. You'll still have forms, buttons, headings, other common interface patterns, so there's no need to throw the baby out with the bath water. A style guide provides a rock-solid foundation for all future work, even if that future work may look totally different.
+Better yet, even if you were to undertake a major redesign you'll find that many of the structural interface building blocks will remain the same. You'll still have forms, buttons, headings, other common interface patterns, so there's no need to throw the baby out with the bath water. A style guide provides a rock-solid foundation for all future work, even if that future work may look totally different.
 
 ## Style guide challenges
-By now the benefits of creating design systems should be abundantly clear, and hopefully visions of sugar plums and beautiful style guides are dancing through your head.
-
-But in order to reach style guide nirvana, you must first overcome the many treacherous challenges that come with the territory.
+By now the benefits of creating design systems should be abundantly clear, and hopefully visions of sugar plums and beautiful style guides are dancing through your head. But in order to reach style guide nirvana, you must first overcome the many treacherous challenges that come with the territory.
 
 ### A matter of time
 > The hard part is building the machine that builds the product.” <cite>[Dennis Crowley](http://techcrunch.com/2011/03/03/founder-stories-foursquare-crowley-machine/) </cite>
@@ -317,25 +315,27 @@ Perhaps the biggest, most unavoidable challenge is that **style guides are time-
 ### The hard sell
 In order to benefit from style guides, organizations must first appropriate the necessary time and budget to make them happen. That **requires organizations to overcome the short-term mentality** that all-to-often creeps its way into company culture. 
 
-The long-term benefits that style guides provide are obvious to those who are already thinking about the long game. The challenge therefore becomes convincing those stuck in a short-term, quarter-by-quarter mindset that establishing a sound design system is a smart investment. 
+The long-term benefits that style guides provide are obvious to those who are already thinking about the long game. The challenge therefore becomes convincing those stuck in a short-term, quarter-by-quarter mindset that establishing a sound design system is a smart investment in the future. 
 
-### Second-class style guides
-Even if time and money are allocated to establish style guides, these valuable tools are often not given the focus they need in order to reach their true potential. It's important to be aware of the host of reasons why style guides end up underutilized, neglected, or outright abandoned.
+Even if time and money are allocated to establish style guides, these valuable tools are often not given the focus they need in order to reach their true potential. Very often this is because **style guides are often treated as auxiliary projects**. 
 
-**Style guides can be misunderstood as tools useful only to designers or developers**, which leads to a lack of visibility that immediately limits their effectiveness. Instead of serving as a watering hole for everyone involved on the project, a style guide can become a best-kept secret guarded by one discipline. Color me naive, but I don't think this helps foster a culture of collaboration.
+### Audience confusion
+**Style guides can be misunderstood as tools useful only to designers or developers**, which leads to a lack of visibility that immediately limits their effectiveness. Instead of serving as a watering hole for everyone involved on a project, a style guide can become a best-kept secret guarded by one discipline. Color me naive, but I don't think this helps foster a culture of collaboration.
 
-**Style guides are often treated as auxiliary projects**, which makes it all too easy for them to fall into disrepair. Without adjusting your workflow to incorporate the style guide into your process, all of those patterns and documentation will quickly be rendered out of date and eventually obsolete.
+Without thinking of broader audiences, a style guide may come across as too vague or too technical, which can intimidate other disciplines and lead them to believe the resource isn’t for them.
 
-**Maintenance and governance strategy are critical to a style guide's success**. Speaking from my own experience, style guides will be thrown in the trash and abandoned without a proper strategy in place for who will manage, maintain, and enforce them. 
+### Maintenance and Governance
+**Maintenance and governance strategy is critical to style guides' success**. Style guides will be thrown in the trash (right beside all those PSDs and wireframes) and abandoned without a proper strategy in place for who will manage, maintain, and enforce them. 
+
+We'll dive into how to create maintainable style guides in Chapter 4.
 
 ### Style guide structure
-In addition the myriad organizational challenges that come with the territory, the actual design and structure of a style guide affects its usefulness.
+A style guide's design and structure very much affects its usefulness.
 
-In case you haven't heard, design matters. And designing delightful style guides are no exception. In order to be useful to everyone, the style guide should clearly convey what it is and why it matters. Some style guides may come across as too technical or vague, which can intimidate other disciplines and lead them to believe the resource isn’t for them.
+In case you haven't heard, design matters. In order for a style guide to be a useful resource to everyone in an organization, it should clearly convey what it is and why it matters. A style guide should be attractive, inviting, visible, clear, and easy to use. 
 
-
-- Often times pattern library too abstract. devoid of context.
-- Often incomplete/only serving present cases. 
+### Lack of context
+Context is key to an understanding of  Often times pattern library too abstract. devoid of context.
 
 ### Lacking a methodology
 As much as I adore the many style guides out there [in the wild](http://styleguides.io/examples.html), I'm frustrated by a lack of structure to many of them. While it's fantastic teams are thinking  Spray of modules
