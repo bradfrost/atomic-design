@@ -307,35 +307,43 @@ Better yet, even if you were to undertake a major redesign you'll find that many
 ## Style guide challenges
 By now the benefits of creating design systems should be abundantly clear, and hopefully visions of sugar plums and beautiful style guides are dancing through your head. But in order to reach style guide nirvana, you must first overcome the many treacherous challenges that come with the territory.
 
-### A matter of time
-> The hard part is building the machine that builds the product.” <cite>[Dennis Crowley](http://techcrunch.com/2011/03/03/founder-stories-foursquare-crowley-machine/) </cite>
-
-Perhaps the biggest, most unavoidable challenge is that **style guides are time-consuming to create**. I don't know about you, but I don't go into work every day twiddling my thumbs wondering what to do with my time. I've never met a person that isn't feeling pressure to get work out the door, and because pattern libraries are often treated as auxiliary projects, they can be first on the chopping block when the going gets tough.
-
 ### The hard sell
-In order to benefit from style guides, organizations must first appropriate the necessary time and budget to make them happen. That **requires organizations to overcome the short-term mentality** that all-to-often creeps its way into company culture. 
+In order to benefit from style guides, organizations must first appropriate the necessary time and budget to make them happen. **That requires organizations to overcome the short-term mentality** that all-to-often creeps its way into company culture.
 
 The long-term benefits that style guides provide are obvious to those who are already thinking about the long game. The challenge therefore becomes convincing those stuck in a short-term, quarter-by-quarter mindset that establishing a sound design system is a smart investment in the future. 
 
-Even if time and money are allocated to establish style guides, these valuable tools are often not given the focus they need in order to reach their true potential. Very often this is because **style guides are often treated as auxiliary projects**. 
+### A matter of time
+> The hard part is building the machine that builds the product.” <cite>[Dennis Crowley](http://techcrunch.com/2011/03/03/founder-stories-foursquare-crowley-machine/) </cite>
 
-### Audience confusion
-**Style guides can be misunderstood as tools useful only to designers or developers**, which leads to a lack of visibility that immediately limits their effectiveness. Instead of serving as a watering hole for everyone involved on a project, a style guide can become a best-kept secret guarded by one discipline. Color me naive, but I don't think this helps foster a culture of collaboration.
+Perhaps the biggest, most unavoidable challenge is the fact that **style guides are time-consuming to create**. I don't know about you, but I don't go into work every day twiddling my thumbs wondering what to do with my time. I've never met a person that isn't feeling pressure to get work out the door, and this pressure naturally leads to focusing on the primary Web project. Unfortunately, aggressive timelines and finite budgets detract from the effort required to make style guides happen, even when teams are committed to the cause. 
 
-Without thinking of broader audiences, a style guide may come across as too vague or too technical, which can intimidate other disciplines and lead them to believe the resource isn’t for them.
+### Auxiliary Projects
+**Style guides are often treated as auxiliary projects**, rather than critical components of the final product. By treating style guides as something separate from the core project, they tend to fall into the "nice to have" category. they can be first on the chopping block when the going gets tough.
+
+It reminds me of the sentiment around "we wish we had time and budget for accessibility" . Instead of just building it into your process.
 
 ### Maintenance and Governance
+Even if time and money are allocated to establish style guides, these valuable tools are often not given the focus they need in order to reach their true potential. 
+
 **Maintenance and governance strategy is critical to style guides' success**. Style guides will be thrown in the trash (right beside all those PSDs and wireframes) and abandoned without a proper strategy in place for who will manage, maintain, and enforce them. 
 
 We'll dive into how to create maintainable style guides in Chapter 4.
 
-### Style guide structure
-A style guide's design and structure very much affects its usefulness.
+### Audience confusion
+**Style guides can be misunderstood as tools useful only to designers or developers**, which leads to a lack of visibility that immediately limits their effectiveness. Instead of serving as a watering hole for everyone involved in a project, a style guide can become a best-kept secret guarded by one discipline. Color me naive, but I don't think this helps foster a culture of collaboration.
 
-In case you haven't heard, design matters. In order for a style guide to be a useful resource to everyone in an organization, it should clearly convey what it is and why it matters. A style guide should be attractive, inviting, visible, clear, and easy to use. 
+Without thinking of broader audiences, style guides may come across as too vague or too technical, which can intimidate other disciplines and lead them to believe these resources aren't for them.
+
+### Style guide structure
+In order for style guides to be useful resources for everyone in an organization, they should clearly convey what they are and why they matter. Style guides should be attractive, inviting, visible, clear, and easy to use. As mentioned above, they should be aware that other folks 
+
+Also, a style guide's home very much affects its usefulness.
+
 
 ### Lack of context
-Context is key to an understanding of  Often times pattern library too abstract. devoid of context.
+Context is key to an understanding of a design system. However most pattern libraries out there in the wild don't provide any hints as to when, how, and where these components get used. Often times pattern library too abstract. 
+
+Devoid of context. if you were to make a change to your "accordion" pattern, what pages of the app would be affected? 
 
 ### Lacking a methodology
 As much as I adore the many style guides out there [in the wild](http://styleguides.io/examples.html), I'm frustrated by a lack of structure to many of them. While it's fantastic teams are thinking  Spray of modules
