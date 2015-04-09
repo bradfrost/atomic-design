@@ -318,9 +318,9 @@ The long-term benefits that style guides provide are obvious to those who are al
 Perhaps the biggest, most unavoidable challenge is the fact that **style guides are time-consuming to create**. I don't know about you, but I don't go into work every day twiddling my thumbs wondering what to do with my time. I've never met a person that isn't feeling pressure to get work out the door, and this pressure naturally leads to focusing on the primary Web project. Unfortunately, aggressive timelines and finite budgets detract from the effort required to make style guides happen, even when teams are committed to the cause. 
 
 ### Auxiliary Projects
-**Style guides are often treated as auxiliary projects**, rather than critical components of the final product. By treating style guides as something separate from the core project, they tend to fall into the "nice to have" category. they can be first on the chopping block when the going gets tough.
+**Pattern libraries are often treated as auxiliary projects**, rather than as the component parts of the final product. By treating pattern libraries as something separate from the core project, they tend to fall into the "nice to have" category and become first on the chopping block when the going gets tough.
 
-It reminds me of the sentiment around "we wish we had time and budget for accessibility" . Instead of just building it into your process.
+This auxiliary project conundrum reminds me of sentiments I often hear around factoring accessibility into projects. They say, "Oh, we wish we had time and budget for accessibility, but…" The notion that accessibility (and other principles like performance, responsiveness, etc) is a costly "extra" line item is a fallacy. Pattern libraries, like accessibility, are good ideas to bake into your workflow whether or not the project plan explicitly calls for them.
 
 ### Maintenance and Governance
 Even if time and money are allocated to establish style guides, these valuable tools are often not given the focus they need in order to reach their true potential. 
@@ -330,12 +330,12 @@ Even if time and money are allocated to establish style guides, these valuable t
 We'll dive into how to create maintainable style guides in Chapter 4.
 
 ### Audience confusion
-**Style guides can be misunderstood as tools useful only to designers or developers**, which leads to a lack of visibility that immediately limits their effectiveness. Instead of serving as a watering hole for everyone involved in a project, a style guide can become a best-kept secret guarded by one discipline. Color me naive, but I don't think this helps foster a culture of collaboration.
+**Style guides can be misunderstood as tools useful only to designers or developers**, which leads to a lack of visibility that immediately limits their effectiveness. Instead of serving as a watering hole for everyone in the organization, a style guide can become a best-kept secret guarded by one discipline. Color me naive, but I don't think this helps foster a culture of collaboration.
 
 Without thinking of broader audiences, style guides may come across as too vague or too technical, which can intimidate other disciplines and lead them to believe these resources aren't for them.
 
 ### Style guide structure
-In order for style guides to be useful resources for everyone in an organization, they should clearly convey what they are and why they matter. Style guides should be attractive, inviting, visible, clear, and easy to use. As mentioned above, they should be aware that other folks 
+In order for style guides to be useful resources for everyone in an organization, they should clearly convey what they are and why they matter. Style guides should be attractive, inviting, visible, clear, and easy to use. As mentioned above, they should be aware that a whole host of audiences will be viewing 
 
 Also, a style guide's home very much affects its usefulness.
 
