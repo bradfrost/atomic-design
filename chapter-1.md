@@ -12,7 +12,7 @@ Awful things. I’m so glad these book things with their razor-sharp pages aren�
 Oh wait.
 
 ## Our paginated past
-The _page_ has been with us for a long time now. A few millennia, actually. The first books were thick slabs of clay created about 2,000 years ago, which quickly replaced scrolls as the preferred way to consume the written word. *(note: footnote referring back to The Shallows)*. And while reading technology has come a long way – from parchment to paperback to pixels – the concept of the page holds strong to this day. 
+The _page_ has been with us for a long time now. A few millennia, actually. The first books were thick slabs of clay created about 2,000 years ago, which quickly replaced scrolls as the preferred way to consume the written word. And while reading technology has come a long way – from parchment to paperback to pixels – the concept of the page holds strong to this day. 
 
 The page metaphor has been baked into the lexicon of the Web since the very beginning. Tim Berners-Lee invented the World Wide Web so that he, his colleagues at CERN, and other academics could easily share and link together their world of *documents*. This document-based, academic genesis of the Web is why the concept of the *page* is so deeply ingrained in the vocabulary of the internet.
 
@@ -50,7 +50,7 @@ The page metaphor served its purpose helping users familiarize themselves with t
 Thankfully, the Web community is hard at work establishing principles and practices to help us effectively talk about and create for the Web. And there’s one concept the keeps popping up in every conversation about how to create successful Web experiences: **modularity**. 
 
 The concept of modularity predates the Web by a long shot. The Industrial Revolution brought about interchangeable parts
-and Henry Ford’s assembly line, which forever transformed the automobile-manufacturing process. Early cars and components were individually crafted, which led to many safety and maintainability nightmares. Ford broke the automobile down into its component parts, and modularized the assembly process. The results spoke for themselves: more uniform, reliable, safer cars rolled out of the factory, and in record time to boot.   
+and Henry Ford’s assembly line, which forever transformed the automobile-manufacturing process. Early cars and components were individually crafted, which led to many safety and maintainability nightmares. Ford broke the automobile down into its component parts and modularized the assembly process. The results spoke for themselves: more uniform, more reliable, safer cars rolled out of the factory, and in record time to boot.   
 
 As the machine age transitioned into the computer age, the computer science field began practicing object-oriented programming and establishing important modular concepts like *separation of concerns* and the *single responsibility principle*. It is from this world that the World Wide Web was born, so it’s no surprise that [modular design](http://www.w3.org/DesignIssues/Principles.html#Modular) quickly became a design principle for the architecture of the Web. 
 
@@ -335,24 +335,24 @@ Style guide maintenance is a hugely important topic and deserves to be covered i
 Without thinking of broader audiences, style guides may come across as too vague or too technical, which can intimidate other disciplines and lead them to believe these resources aren't for them.
 
 ### Style guide structure
-In order for style guides to be useful resources for everyone in an organization, they should clearly convey what they are and why they matter. Style guides should be attractive, inviting, visible, clear, and easy to use. As mentioned above, they should be aware that a whole host of audiences will be viewing the style guide, and therefore aim to make the style guide welcoming  and useful for as many people as possible.
+In order for style guides to be useful resources for everyone in an organization, they should clearly convey what they are and why they matter. Style guides should be attractive, inviting, visible, clear, and easy to use. As mentioned above, they should be aware that a whole host of audiences will be viewing the guide, so should therefore aim to make it welcoming and useful for as many people as possible.
 
 {% include figure.html src="../images/content/styleguide-yelp.png" caption="Yelp's style guide home page sports a handsome design and important intro text explaining the purpose and audience for the guide." %}
 
 ### Lack of context
 Context is key to understanding a design system. Unfortunately, most pattern libraries out in the wild don't provide any hints as to when, how, and where their components get used.
 
-Without knowing where patterns are utilized, designers and developers don't know which pages of their app would need revisited, QA'd, and tested if changes were made to a pattern. For example, let's say   
+Without providing context, designers and developers don't know how global a particular pattern is, and as a result wouldn't know which pages of their app would need revisited, QA'd, and tested if changes were made. 
 
-### Lacking a methodology
-As much as I adore the many style guides out there [in the wild](http://styleguides.io/examples.html), I'm frustrated by a lack of structure to many of them. While it's fantastic teams are thinking systematically and are documenting they, I feel like many are loosely-organized spray of modules. 
+{% include figure.html src="../images/content/pattern-highlight-block.png" caption="'Highlight Block' looks like a useful and reusable pattern, but where is it being utilized?" %}
 
-It is in this  Lacking a clear methodology.
+### Lacking a clear methodology
+As much as I adore the pattern libraries out there [in the wild](http://styleguides.io/examples.html), I can't help but notice a lack of structure in many of them. Don't get me wrong, I think it's absolutely fantastic teams are thinking systematically and are documenting their UI patterns. But I often feel like many pattern libraries are little more than loosely-arranged spray of modules. I think there's room for improvement.
 
-## In search of a methodology
-Device diversity is here to stay, so it's time for us to evolve beyond the page metaphor. Thankfully the web community and organizations are embracing modularity across every aspect of 
+## In search of an interface design methodology
+In order for us to create experiences for this eclectic Web landscape, we must evolve beyond the page metaphor that's been with us since the birth of the Web. Thankfully, organizations are embracing modularity across every aspect of the Web creation process, which is leading to smarter work and more sustainable systems.
 
-- Framework pros and cons
-- Design systems benefits and challenges
-- The need for a methodology
+As the number of devices, browsers, and environments we must account for increases at a staggering rate, the need to create thoughtful, deliberate interface design systems is becoming more apparent than ever.
+
+Enter atomic design.
 
