@@ -335,20 +335,19 @@ Style guide maintenance is a hugely important topic and deserves to be covered i
 Without thinking of broader audiences, style guides may come across as too vague or too technical, which can intimidate other disciplines and lead them to believe these resources aren't for them.
 
 ### Style guide structure
-In order for style guides to be useful resources for everyone in an organization, they should clearly convey what they are and why they matter. Style guides should be attractive, inviting, visible, clear, and easy to use. As mentioned above, they should be aware that a whole host of audiences will be viewing 
+In order for style guides to be useful resources for everyone in an organization, they should clearly convey what they are and why they matter. Style guides should be attractive, inviting, visible, clear, and easy to use. As mentioned above, they should be aware that a whole host of audiences will be viewing the style guide, and therefore aim to make the style guide welcoming  and useful for as many people as possible.
 
-Also, a style guide's home very much affects its usefulness.
-
+{% include figure.html src="../images/content/styleguide-yelp.png" caption="Yelp's style guide home page sports a handsome design and important intro text explaining the purpose and audience for the guide." %}
 
 ### Lack of context
-Context is key to an understanding of a design system. However most pattern libraries out there in the wild don't provide any hints as to when, how, and where these components get used. Often times pattern library too abstract. 
+Context is key to understanding a design system. Unfortunately, most pattern libraries out in the wild don't provide any hints as to when, how, and where their components get used.
 
-Devoid of context. if you were to make a change to your "accordion" pattern, what pages of the app would be affected? 
+Without knowing where patterns are utilized, designers and developers don't know which pages of their app would need revisited, QA'd, and tested if changes were made to a pattern. For example, let's say   
 
 ### Lacking a methodology
-As much as I adore the many style guides out there [in the wild](http://styleguides.io/examples.html), I'm frustrated by a lack of structure to many of them. While it's fantastic teams are thinking  Spray of modules
+As much as I adore the many style guides out there [in the wild](http://styleguides.io/examples.html), I'm frustrated by a lack of structure to many of them. While it's fantastic teams are thinking systematically and are documenting they, I feel like many are loosely-organized spray of modules. 
 
- It is in this  Lacking a clear methodology.
+It is in this  Lacking a clear methodology.
 
 ## In search of a methodology
 Device diversity is here to stay, so it's time for us to evolve beyond the page metaphor. Thankfully the web community and organizations are embracing modularity across every aspect of 
