@@ -289,9 +289,9 @@ The homepage is broken, you say? Well, what exactly is breaking it?
 The ability to pull an interface apart into its component pieces makes testing a lot easier. A style guide allows you to view interface patterns in isolation, which lets developers hone in on what's causing errors, browser inconsistencies, or performance issues. 
 
 ### Speed
-Earlier in the chapter we discussed how *design and development speed* is one of the main reasons why UI frameworks like Bootstrap are so popular. We're under pressure to get By developing your own design system, you can reap those same speed rewards.
+Earlier in the chapter we discussed how *design and development speed* is one of the main reasons why UI frameworks like Bootstrap are so popular. We're under pressure to get projects out the door as soon as humanly possible. By developing your own design system, you can reap those same speed rewards as the out-of-the-box UI toolkits.
 
-It's true that devising an interface design system and creating a custom pattern library initially takes a lot of time, thought, and effort. But once the pattern library is established subsequent design and development becomes much faster, which tends to make everyone happy.
+It's true that devising an interface design system and creating a custom pattern library initially takes a lot of time, thought, and effort. But once the pattern library is established subsequent design and development becomes much faster, which tends to make everybody happy.
 
 Federico Holgado, Lead UX developer at MailChimp, [explained](http://styleguides.io/podcast/federico-holgado/) how MailChimp's pattern library initially consisted of patterns created from the four primary screens of their app. But once they moved onto other areas of the site, they realized they were able to utilize existing patterns rather than having to generate brand new patterns from scratch every time.
 
