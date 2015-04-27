@@ -45,7 +45,27 @@
     <div class="note">
 	<p>Greetings, reader! The following text is a <a href="http://bradfrost.com/blog/post/atomic-design-book/">work in progress</a> so be warned you will encounter incomplete thoughts, grammar errors, and more. If you see something worth fixing, please <a href="https://github.com/bradfrost/atomic-design">submit an issue on Github</a>. Thanks and happy reading!</p>
 </div>
-    <h2 id="atoms">Atoms</h2>
+    <p>The second chapter will define atomic design. Atomic design is an interface design methodology consisting of five distinct stages working together to create deliberate design systems.</p>
+
+<ul>
+  <li>Set up the chemistry analogy (atoms are the building blocks of matter, those atoms combine to form molecules, etc)</li>
+  <li>Definition of atomic design: atoms, molecules, organisms, templates, and pages</li>
+</ul>
+
+<figure>
+    <img src="../images/content/atomic-design-process.png" alt="Atomic design is atoms, molecules, organisms, and pages" />
+	<figcaption>
+	    Atomic design is atoms, molecules, organisms, and pages
+	</figcaption>
+</figure>
+
+<h2 id="atoms">Atoms</h2>
+<figure>
+    <img src="../images/content/atomic-design-atoms.png" alt="atoms" />
+	<figcaption>
+	    atoms
+	</figcaption>
+</figure>
 
 <p>In chemistry, atoms are the basic building blocks of matter. They have distinct properties and can’t be broken down further without losing their meaning.</p>
 
@@ -53,7 +73,19 @@
 
 <p>Atoms are abstract and aren’t often terribly useful on their own, but they provide a useful reference and allow you to see all your global styles laid out at a glance.</p>
 
+<ul>
+  <li>Atoms definition: basic tags and other design elements that can’t be broken down any further.</li>
+  <li>Why atoms: see all interface styles abstracted at a glance, etc</li>
+  <li>too abstract to be useful, etc</li>
+</ul>
+
 <h2 id="molecules">Molecules</h2>
+<figure>
+    <img src="../images/content/atomic-design-molecules.png" alt="molecules" />
+	<figcaption>
+	    molecules
+	</figcaption>
+</figure>
 
 <p>In chemistry, molecules are groups of atoms bonded together, which take on new properties as a result.</p>
 
@@ -61,7 +93,18 @@
 
 <p>Building up from atoms to molecules encourages a “do one thing and do it well” mentality, and encourages creating reusable interface patterns.</p>
 
+<ul>
+  <li>Molecules definition: a group of atoms joined together to form a relatively simple module. For example, a label, input, and button atom joining together to form a search form molecule.</li>
+  <li>Why Molecules: single responsibility principle, assemble rather than deconstruct, testing, etc</li>
+</ul>
+
 <h2 id="organisms">Organisms</h2>
+<figure>
+    <img src="../images/content/atomic-design-organisms.png" alt="organisms" />
+	<figcaption>
+	    organisms
+	</figcaption>
+</figure>
 
 <p>Organisms are groups of molecules (and possibly atoms) joined together to form distinct section of an interface.</p>
 
@@ -69,7 +112,18 @@
 
 <p>Building up from molecules to organisms encourages creating standalone, portable, reusable components.</p>
 
+<ul>
+  <li>Organisms definition: groups of molecules (and possibly atoms) joined together to form distinct section of an interface.</li>
+  <li>Why Organisms: reusable interface components, more concrete than atoms and molecules, encourages portability, etc</li>
+</ul>
+
 <h2 id="templates">Templates</h2>
+<figure>
+    <img src="../images/content/atomic-design-templates.png" alt="templates" />
+	<figcaption>
+	    templates
+	</figcaption>
+</figure>
 
 <p>With templates, we break our biochemistry analogy to get into language that makes more sense to clients and final output. Templates are comprised mostly of organisms combined together to form page-level objects.</p>
 
@@ -77,13 +131,46 @@
 
 <p>Templates mostly focus on content structure (such as character length, image size, etc) rather than the actual content.</p>
 
+<ul>
+  <li>Breaking the chemistry analogy to get into the deliverables language</li>
+  <li>Templates definition: page-level documents that provide context for these relatively abstract molecules and organisms, and  focus on content structure</li>
+  <li>Why Templates: focus on content structure, can begin as wireframes and evolve over time, etc</li>
+</ul>
+
 <h2 id="pages">Pages</h2>
+<figure>
+    <img src="../images/content/atomic-design-pages.png" alt="pages" />
+	<figcaption>
+	    pages
+	</figcaption>
+</figure>
 
 <p>Pages are specific instances of templates and swap out placeholder content with real representative content to give an accurate depiction of what a user will ultimately see.</p>
 
 <p>Pages are essential for testing the effectiveness of the design system. This final form allows us to loop back to modify our molecules, organisms, and templates to better address the real context of the design.</p>
 
 <p>Pages also provide a place to test variations in templates, such as testing an article containing a 40-character-length headline and other article with a 340-character-length headline. What does it look like when a user has one item in their shopping cart versus 10 items with a discount code applied? These specific page instances test the resiliency of the system, influencing how the underlying molecules, organisms, and templates are constructed.</p>
+
+<ul>
+  <li>Page definition: specific instances of a template. Replaces content structure with real representative content</li>
+  <li>Why pages: Tests the resiliency of the system, test variations in content structure, extremely concrete, it’s what the client naturally ends up focusing on since it’s what</li>
+  <li>Page considerations: Clients/colleagues can get distracted by representative content (“I don’t like how I look in that photo”) vs commenting on effectiveness of the design.
+Atomic design summary: recap atoms, molecules, organisms, templates, and pages
+Discuss the advantages of atomic design, especially the ability to traverse between abstract and concrete</li>
+</ul>
+
+<h3 id="advantages">Advantages</h3>
+<ul>
+  <li>Traverse between abstract and concrete. Can simultaneously see things abstracted and step through to see things in context</li>
+  <li>Built in hierarchy</li>
+  <li>Shared vocabulary - stakeholders can get on board with the concept</li>
+  <li>The Part and the Whole - Not a linear process</li>
+  <li>What’s in a name? Discussing the importance of naming, and the</li>
+  <li>Atomic Design in Practice </li>
+  <li>What atomic design isn’t - CSS or JS methodology</li>
+  <li>Nothing new: why atomic design is different than other things that have been around for a long time.</li>
+  <li>Recap of the the atomic design methodology</li>
+</ul>
 
 <p><a href="http://us5.campaign-archive1.com/?u=7e093c5cf4&amp;id=ead8a72012&amp;e=ecb25a3f93">a</a></p>
 
