@@ -5,19 +5,32 @@ chapterTitle: Chapter 2
 permalink: /chapter-2/
 ---
 
-The second chapter will define atomic design. Atomic design is an interface design methodology consisting of five distinct stages working together to create deliberate design systems.
+My search for a methodology to craft interface design systems led me to look for inspiration in other fields and industries. Given this amazingly complex world we've created, it seems only natural that other disciplines would have tackled similar problems we could learn from and appropriate. As it turns out, loads of other fields [such as industrial design and architecture](http://us5.campaign-archive1.com/?u=7e093c5cf4&id=ead8a72012&e=ecb25a3f93) have developed smart modular systems for manufacturing immensely complex objects like airplanes, ships, and skyscrapers. 
 
-- Set up the chemistry analogy (atoms are the building blocks of matter, those atoms combine to form molecules, etc)
-- Definition of atomic design: atoms, molecules, organisms, templates, and pages
+But my original explorations kept creeping back to the natural world, which ultimately triggered memories of sitting in a rickety desk in my high school's chemistry lab. 
+
+My high school chemistry class was taught by a no-nonsense Vietnam vet with an extraordinarily impressive mustache. Mr. Rae's class had a reputation for being one of the hardest classes in school, largely in part of an assignment that required students to balance hundreds and hundreds of chemical equations. If you're like me, you'll need a bit of a refresher to recall what a chemical equation 
+
+> 2H₂+O₂→2H₂0
+
+In the natural world, atoms combine together to form molecules, which combine further to create more complex molecules. Eventually these 
+
+As it turns out, Andy Clarke wrote a chapter of a book called [Designing Atoms and Elements](http://stuffandnonsense.co.uk/blog/about/an-extract-from-designing-atoms-and-elements), which discusses modular design 
+
+In the natural world atoms are the building blocks of matter, those atoms combine to form molecules, etc
+
+Atoms: basic building blocks of matter. They have distinct properties and can't be broken down further without losing their meaning.
+
+[periodic table of atomic elements]
+
+Atomic design is a methodology composed of five distinct stages working together to create deliberate interface design systems. **The five stages of atomic design are are atoms, molecules, organisms, templates, and pages**.
 
 {% include figure.html src="../images/content/atomic-design-process.png" caption="Atomic design is atoms, molecules, organisms, and pages" %}
 
 ## Atoms
 {% include figure.html src="../images/content/atomic-design-atoms.png" caption="atoms" %}
 
-In chemistry, atoms are the basic building blocks of matter. They have distinct properties and can't be broken down further without losing their meaning.
-
-Translated to interfaces, atoms are basic tags, such as form labels, inputs or buttons. They also include more abstract elements like color palettes, fonts, and animations.
+If atoms are the basic building blocks of matter, then what are the atoms of our interfaces? Translated to interfaces, atoms are basic tags, such as form labels, inputs or buttons. They also include more abstract elements like color palettes, fonts, and animations.
 
 Atoms are abstract and aren't often terribly useful on their own, but they provide a useful reference and allow you to see all your global styles laid out at a glance.
 
@@ -53,7 +66,7 @@ Building up from molecules to organisms encourages creating standalone, portable
 ## Templates
 {% include figure.html src="../images/content/atomic-design-templates.png" caption="templates" %}
 
-With templates, we break our biochemistry analogy to get into language that makes more sense to clients and final output. Templates are comprised mostly of organisms combined together to form page-level objects.
+With templates, we break our biochemistry analogy to get into language that makes more sense to clients and final output. Templates are composed mostly of organisms combined together to form page-level objects.
 
 Templates provide context for these relatively abstract molecules and organisms, which is helpful for designers and clients alike.
 
@@ -88,7 +101,5 @@ Discuss the advantages of atomic design, especially the ability to traverse betw
 - What atomic design isn't - CSS or JS methodology
 - Nothing new: why atomic design is different than other things that have been around for a long time.
 - Recap of the the atomic design methodology
-
-[a](http://us5.campaign-archive1.com/?u=7e093c5cf4&id=ead8a72012&e=ecb25a3f93)
 
 http://china.org.cn/china/2015-03/17/content_35077927.htm
