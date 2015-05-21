@@ -29,7 +29,7 @@ As it turns out, we have
 
 Atomic design is a methodology composed of five distinct stages working together to create deliberate interface design systems. **The five stages of atomic design are are atoms, molecules, organisms, templates, and pages**.
 
-{% include figure.html src="../images/content/atomic-design-process.png" caption="Atomic design is atoms, molecules, organisms, and pages" %}
+{% include figure.html src="../images/content/atomic-design-process.png" caption="Atomic design is atoms, molecules, organisms, templates, and pages working together to create an effective interface design system." %}
 
 ## Atoms
 {% include figure.html src="../images/content/atomic-design-atoms.png" caption="atoms" %}
