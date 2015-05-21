@@ -9,19 +9,23 @@ My search for a methodology to craft interface design systems led me to look for
 
 But my original explorations kept creeping back to the natural world, which ultimately triggered memories of sitting in a rickety desk in my high school's chemistry lab. 
 
-My high school chemistry class was taught by a no-nonsense Vietnam vet with an extraordinarily impressive mustache. Mr. Rae's class had a reputation for being one of the hardest classes in school, largely in part of an assignment that required students to balance hundreds and hundreds of chemical equations. If you're like me, you'll need a bit of a refresher to recall what a chemical equation 
+My high school chemistry class was taught by a no-nonsense Vietnam vet with an extraordinarily impressive mustache. Mr. Rae's class had a reputation for being one of the hardest classes in school, largely in part of an assignment that required students to balance hundreds and hundreds of chemical equations in a massive worksheet. 
 
-> 2H₂+O₂→2H₂0
+If you're anything like me, you'll need a bit of a refresher to recall what a chemical equation looks like, so here you go:
 
-In the natural world, atoms combine together to form molecules, which combine further to create more complex molecules. Eventually these 
+{% include figure.html src="../images/content/chemical-equation.png" caption="An example of a chemical equation showing hydrogen and oxygen atoms combining together to to form a water molecule" %}
 
-As it turns out, Andy Clarke wrote a chapter of a book called [Designing Atoms and Elements](http://stuffandnonsense.co.uk/blog/about/an-extract-from-designing-atoms-and-elements), which discusses modular design 
+Chemical equations describe how atomic elements, the basic building blocks of all matter, combine together to form molecules. In the above example, we see how hydrogen and oxygen combine together to form water molecules. 
 
-In the natural world atoms are the building blocks of matter, those atoms combine to form molecules, etc
+Apparently Mr. Rae's strategy of having students balance page after page of chemical equations worked, because I kept coming back to it for inspiration for how to approach interface design all these years later.
+
+In the natural world, atoms combine together to form molecules, which combine further to create more complex molecules. These molecules continue to combine together to form relatively complex organisms 
 
 Atoms: basic building blocks of matter. They have distinct properties and can't be broken down further without losing their meaning.
 
-[periodic table of atomic elements]
+{% include figure.html src="../images/content/periodic-table.png" caption="The periodic table of atomic elements" %}
+
+As it turns out, we have 
 
 Atomic design is a methodology composed of five distinct stages working together to create deliberate interface design systems. **The five stages of atomic design are are atoms, molecules, organisms, templates, and pages**.
 
@@ -103,3 +107,5 @@ Discuss the advantages of atomic design, especially the ability to traverse betw
 - Recap of the the atomic design methodology
 
 http://china.org.cn/china/2015-03/17/content_35077927.htm
+
+*As it turns out, Andy Clarke had already touched on wrote a chapter of a book called [Designing Atoms and Elements](http://stuffandnonsense.co.uk/blog/about/an-extract-from-designing-atoms-and-elements), which discusses modular design and breaking a visual design into its "design atmosphere": the color, typography, and texture of a design sans layout.
