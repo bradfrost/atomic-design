@@ -5,35 +5,37 @@ chapterTitle: Chapter 2
 permalink: /chapter-2/
 ---
 
-My search for a methodology to craft interface design systems led me to look for inspiration in other fields and industries. Given this amazingly complex world we've created, it seems only natural that other disciplines would have tackled similar problems we could learn from and appropriate. As it turns out, loads of other fields [such as industrial design and architecture](http://us5.campaign-archive1.com/?u=7e093c5cf4&id=ead8a72012&e=ecb25a3f93) have developed smart modular systems for manufacturing immensely complex objects like airplanes, ships, and skyscrapers. 
+My search for a methodology to craft interface design systems led me to look for inspiration in other fields and industries. Given this amazingly complex world we've created, it seemed only natural that other fields would have tackled similar problems we could learn from and appropriate. As it turns out, loads of other fields [such as industrial design and architecture](http://us5.campaign-archive1.com/?u=7e093c5cf4&id=ead8a72012&e=ecb25a3f93) have developed smart modular systems for manufacturing immensely complex objects like airplanes, ships, and skyscrapers. 
 
 But my original explorations kept creeping back to the natural world, which ultimately triggered memories of sitting at a rickety desk in my high school's chemistry lab. 
 
 ## Taking Cues from Chemistry
 My high school chemistry class was taught by a no-nonsense Vietnam vet with an extraordinarily impressive mustache. Mr. Rae's class had a reputation for being one of the hardest classes in school, largely in part of an assignment that required students to balance hundreds upon hundreds of chemical equations contained in a massive worksheet. 
 
-If you're anything like me, you'll need a bit of a refresher to recall what a chemical equation looks like, so here you go:
+If you're like me, you may need a bit of a refresher to recall what a chemical equation looks like, so here you go:
 
 {% include figure.html src="../images/content/chemical-equation.png" caption="An example of a chemical equation showing hydrogen and oxygen atoms combining together to to form a water molecule" %}
 
 Chemical reactions are represented by chemical equations, which often show how atomic elements combine together to form molecules. In the above example, we see how hydrogen and oxygen combine together to form water molecules. 
 
-Apparently Mr. Rae's strategy of having students balance page after page of chemical equations worked, because I'm coming back to it all these years later for inspiration on how to approach interface design.
+In the natural world, **atomic elements combine together to form molecules. These molecules can combine further to form relatively complex organisms**. To expound a bit further:
 
-In the natural world, atomic elements combine together to form molecules, which in turn can combine further to create more complex molecules. These molecules continue combining to eventually form simple organisms, which in turn continue combining to form everything in our cosmos. To expound on this further:
+- **Atoms** are the basic building blocks of all matter. Each chemical element has distinct properties, and they can't be broken down further without losing their meaning (yes, it's true atoms are composed of even smaller bits like protons, electrons, and neutrons, but that's outside the realm of this discussion). 
+- **Molecules** are groups of two or more atoms held together by chemical bonds. These combinations of atoms take on their own unique properties, and become more tangible and operational than atoms.
+- **Organisms** are assemblies of molecules functioning together as a unit. These relatively complex structures can range from single-celled organisms all the way up to incredibly complex organisms like human beings.
 
-- **Atoms** are the basic building blocks of all matter. These chemical elements can't be broken down further without losing their meaning (yes, it's true atoms are composed of even smaller bits like protons, electrons, and quarks, but that's outside the realm of this discussion). Each atomic element has distinct properties, and while they're the fundamental building blocks of matter, they aren't terribly useful on their own and they're a bit of an abstract concept.
-- **Molecules** are groups of two or more atoms held together by chemical bonds. They can be relatively simple combinations of atoms (like H2O), or can combine further into relatively complex macromolecules like proteins that form the scaffolding for organic life. These molecules have their own unique properties, and are relatively more tangible and operational than atoms.
-- **Organisms** are relatively complex combinations of molecules.
-
-It's amazing when you think about it. The rich, complex, diverse tapestry of life on earth and beyond can be broken down into this finite set of atomic elements.
+Of course I'm simplifying the incredibly rich, complex composition of the universe, but the basic gist remains: atoms combine together to form molecules, which continue combining to form relatively complex organisms. This atomic theory means that all matter in the known universe can be broken down into this finite set of atomic elements:
 
 {% include figure.html src="../images/content/periodic-table.png" caption="The periodic table of chemical elements" %}
 
+Apparently Mr. Rae's strategy of having students mind-numbingly balance tons of chemical equations worked, because I'm coming back to it all these years later for inspiration on how to approach interface design.
+
 ## The Atomic Design Methodology
-By now you might be wondering why we're talking about atoms, molecules, and organisms. Maybe you're even angry at me for forcing you  
+By now you may be wondering why we're talking about chemistry, and maybe you're even a bit angry at me for forcing you to relive memories of high school. But this is going somewhere, I promise.
 
 As it turns out, we have this same finite set of atomic elements we can apply that same process that happens in the natural world to our user interfaces. 
+
+[Josh Duck's Periodic Table of HTML Elements](http://smm.zoomquiet.io/data/20110511083224/index.html)
 
 Atomic design is a methodology composed of five distinct stages working together to create deliberate interface design systems. **The five stages of atomic design are are:**
 
@@ -124,3 +126,8 @@ Discuss the advantages of atomic design, especially the ability to traverse betw
 http://china.org.cn/china/2015-03/17/content_35077927.htm
 
 *As it turns out, Andy Clarke had already touched on wrote a chapter of a book called [Designing Atoms and Elements](http://stuffandnonsense.co.uk/blog/about/an-extract-from-designing-atoms-and-elements), which discusses modular design and breaking a visual design into its "design atmosphere": the color, typography, and texture of a design sans layout.
+
+
+———
+
+You just sneak it in. It's what I'm going to do to make the quality of the work better. And I don't have to say it. It starts in the sales process. You just build enough budget so that you can do it. You don't have a conversation about it, it's just par for the course. You don't have to ask permission.
