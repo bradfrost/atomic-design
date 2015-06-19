@@ -33,34 +33,40 @@ Apparently Mr. Rae's strategy of having students mind-numbingly balance tons of 
 ## The Atomic Design Methodology
 By now you may be wondering why we're talking about chemistry, and maybe you're even a bit angry at me for forcing you to relive memories of high school. But this is going somewhere, I promise.
 
-As it turns out, we have this same finite set of atomic elements we can apply that same process that happens in the natural world to our user interfaces. 
+We discussed earlier how all matter in the universe can be broken down into a finite set of atomic elements. As it happens, our interfaces can be broken down into a similar finite set of elements. [Josh Duck's Periodic Table of HTML Elements](http://smm.zoomquiet.io/data/20110511083224/index.html) beautifully articulates how all of our websites, apps, intranets, hoobadyboops, whatever are all composed of the same HTML elements.
 
-[Josh Duck's Periodic Table of HTML Elements](http://smm.zoomquiet.io/data/20110511083224/index.html)
+{% include figure.html src="../images/content/html-periodic-table.png" caption="The periodic table of HTML elements by Josh Duck" %}
 
-Atomic design is a methodology composed of five distinct stages working together to create deliberate interface design systems. **The five stages of atomic design are are:**
+Because we're starting with a similar finite set of building blocks, we can apply that same process that happens in the natural world to our user interfaces. 
 
-- Atoms
-- Molecules
-- Organisms
-- Templates
-- Pages
+Enter atomic design.
+
+**Atomic design is a methodology composed of five distinct stages working together to create deliberate interface design systems**. The five stages of atomic design are are:
+
+1. Atoms
+2. Molecules
+3. Organisms
+4. Templates
+5. Pages
 
 
-{% include figure.html src="../images/content/atomic-design-process.png" caption="Atomic design is atoms, molecules, organisms, templates, and pages working together to create an effective interface design system." %}
+{% include figure.html src="../images/content/atomic-design-process.png" caption="Atomic design is atoms, molecules, organisms, templates, and pages working together to create effective interface design systems." %}
 
 ## Atoms
-{% include figure.html src="../images/content/atomic-design-atoms.png" caption="atoms" %}
+{% include figure.html src="../images/content/atomic-design-atoms.png" caption="" %}
 
-If atoms are the basic building blocks of matter, then what are the atoms of our interfaces? Translated to interfaces, atoms are basic tags, such as form labels, inputs or buttons. They also include more abstract elements like color palettes, fonts, and animations.
+If atoms are the basic building blocks of matter, then what are the atoms of our interfaces? Atoms include [basic HTML tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), such as form labels, inputs, and buttons. 
 
-Atoms are abstract and aren't often terribly useful on their own, but they provide a useful reference and allow you to see all your global styles laid out at a glance.
+{% include figure.html src="../images/content/atoms-form-elements.png" caption="Atoms include basic HTML tags like inputs, labels, and buttons." %}
 
-- Atoms definition: basic tags and other design elements that can't be broken down any further.
-- Why atoms: see all interface styles abstracted at a glance, etc
-- too abstract to be useful, etc
+Like atoms in the natural world, these basic interface atoms can't be broken down any further without losing their meaning. They serve as the foundational Lego™ blocks that comprise all our user interfaces. 
+
+In addition to UI They also include more abstract elements like color palettes, fonts, and animations.
+
+When it comes to design systems, it's helpful to Atoms are abstract and aren't often terribly useful on their own, but they provide a useful reference and allow you to see all your global styles laid out at a glance.
 
 ## Molecules
-{% include figure.html src="../images/content/atomic-design-molecules.png" caption="molecules" %}
+{% include figure.html src="../images/content/atomic-design-molecules.png" caption="" %}
 
 In chemistry, molecules are groups of atoms bonded together, which take on new properties as a result.
 
@@ -72,7 +78,7 @@ Building up from atoms to molecules encourages a “do one thing and do it well�
 - Why Molecules: single responsibility principle, assemble rather than deconstruct, testing, etc
 
 ## Organisms
-{% include figure.html src="../images/content/atomic-design-organisms.png" caption="organisms" %}
+{% include figure.html src="../images/content/atomic-design-organisms.png" caption="" %}
 
 Organisms are groups of molecules (and possibly atoms) joined together to form distinct section of an interface.
 
@@ -85,7 +91,7 @@ Building up from molecules to organisms encourages creating standalone, portable
 
 
 ## Templates
-{% include figure.html src="../images/content/atomic-design-templates.png" caption="templates" %}
+{% include figure.html src="../images/content/atomic-design-templates.png" caption="" %}
 
 With templates, we break our biochemistry analogy to get into language that makes more sense to clients and final output. Templates are composed mostly of organisms combined together to form page-level objects.
 
@@ -98,7 +104,7 @@ Templates mostly focus on content structure (such as character length, image siz
 - Why Templates: focus on content structure, can begin as wireframes and evolve over time, etc
 
 ## Pages
-{% include figure.html src="../images/content/atomic-design-pages.png" caption="pages" %}
+{% include figure.html src="../images/content/atomic-design-pages.png" caption="" %}
 
 Pages are specific instances of templates and swap out placeholder content with real representative content to give an accurate depiction of what a user will ultimately see.
 
