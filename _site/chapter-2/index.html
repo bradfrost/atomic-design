@@ -83,9 +83,9 @@
 <p>Apparently Mr. Rae’s strategy of having students mind-numbingly balance tons of chemical equations worked, because I’m coming back to it all these years later for inspiration on how to approach interface design.</p>
 
 <h2 id="the-atomic-design-methodology">The Atomic Design Methodology</h2>
-<p>By now you may be wondering why we’re talking about chemistry, and maybe you’re even a bit angry at me for forcing you to relive memories of high school. But this is going somewhere, I promise.</p>
+<p>By now you may be wondering why we’re talking about atomic theory, and maybe you’re even a bit angry at me for forcing you to relive memories of high school chemistry class. But this is going somewhere, I promise.</p>
 
-<p>We discussed earlier how all matter in the universe can be broken down into a finite set of atomic elements. As it happens, our interfaces can be broken down into a similar finite set of elements. <a href="http://smm.zoomquiet.io/data/20110511083224/index.html">Josh Duck’s Periodic Table of HTML Elements</a> beautifully articulates how all of our websites, apps, intranets, hoobadyboops, whatever are all composed of the same HTML elements.</p>
+<p>We discussed earlier how all matter in the universe can be broken down into a finite set of atomic elements. As it happens, our interfaces can be broken down into a similar finite set of elements. <a href="http://smm.zoomquiet.io/data/20110511083224/index.html">Josh Duck’s Periodic Table of HTML Elements</a> beautifully articulates how all of our websites, apps, intranets, hoobadyboops, and whatevers are all composed of the same HTML elements.</p>
 
 <figure>
     <img src="../images/content/html-periodic-table.png" alt="The periodic table of HTML elements by Josh Duck" />
@@ -94,7 +94,7 @@
 	</figcaption>
 </figure>
 
-<p>Because we’re starting with a similar finite set of building blocks, we can apply that same process that happens in the natural world to our user interfaces. </p>
+<p>Because we’re starting with a similar finite set of building blocks, we can apply that same process that happens in the natural world to design and develop user interfaces. </p>
 
 <p>Enter atomic design.</p>
 
@@ -115,6 +115,8 @@
 	</figcaption>
 </figure>
 
+<p>Let’s dive into each stage and discuss its role in crafting an interface design system.</p>
+
 <h2 id="atoms">Atoms</h2>
 <figure>
     <img src="../images/content/atomic-design-atoms.png" alt="" />
@@ -123,7 +125,7 @@
 	</figcaption>
 </figure>
 
-<p>If atoms are the basic building blocks of matter, then what are the atoms of our interfaces? Atoms include <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">basic HTML tags</a>, such as form labels, inputs, and buttons. </p>
+<p>If atoms are the basic building blocks of matter, then the atoms of our interfaces would include <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">basic HTML tags</a> like form labels, inputs, and buttons. </p>
 
 <figure>
     <img src="../images/content/atoms-form-elements.png" alt="Atoms include basic HTML tags like inputs, labels, and buttons." />
@@ -132,9 +134,18 @@
 	</figcaption>
 </figure>
 
-<p>Like atoms in the natural world, these basic interface atoms can’t be broken down any further without losing their meaning. They serve as the foundational Lego™ blocks that comprise all our user interfaces. </p>
+<p>These basic interface atoms can’t be broken down any further without losing their meaning, just like atoms in the natural world. They serve as the foundational building blocks that comprise all our user interfaces. </p>
 
-<p>In addition to UI They also include more abstract elements like color palettes, fonts, and animations.</p>
+<p>Each atom in the natural world has its own unique properties. A hydrogen atom contains one electron, while a helium atom contains two. These inherent chemical properties have a profound effects on their application (for example, the Hindenburg). Similarly, each interface atom has its own unique properties, such as the dimensions of a hero image, or the font-size of a primary heading. These properties directly influence when they’re applied to the user interface.</p>
+
+<p>In addition to the tags that make up our user interfaces, atoms can also include more abstract items like color palettes, font stacks, and even invisible UI elements like animations. Defining these elemental  promote consistency and cohesion throughout the entire experience.</p>
+
+<figure>
+    <img src="../images/content/styleguide-salesforce-colors.png" alt="The style guide for Salesforce1 defines the color palette used throughout the user interface of the application." />
+	<figcaption>
+	    The style guide for Salesforce1 defines the color palette used throughout the user interface of the application.
+	</figcaption>
+</figure>
 
 <p>When it comes to design systems, it’s helpful to Atoms are abstract and aren’t often terribly useful on their own, but they provide a useful reference and allow you to see all your global styles laid out at a glance.</p>
 
@@ -221,23 +232,21 @@ Discuss the advantages of atomic design, especially the ability to traverse betw
 <h3 id="advantages">Advantages</h3>
 <ul>
   <li>Traverse between abstract and concrete. Can simultaneously see things abstracted and step through to see things in context</li>
+  <li>The Part and the Whole - <strong>Not a linear process</strong> but rather a mental model</li>
   <li>Built in hierarchy</li>
   <li>Shared vocabulary - stakeholders can get on board with the concept</li>
-  <li>The Part and the Whole - <strong>Not a linear process</strong> but rather a mental model</li>
   <li>What’s in a name? Discussing the importance of naming (“Modules” “components” “elements” etc)</li>
   <li>Atomic Design in Practice </li>
   <li>What atomic design isn’t - CSS or JS methodology</li>
   <li>Nothing new: why atomic design is different than other things that have been around for a long time.</li>
-  <li>Recap of the the atomic design methodology</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+<ul>
+  <li>Recap of the the atomic design methodology and its advantages</li>
 </ul>
 
 <p>http://china.org.cn/china/2015-03/17/content_35077927.htm</p>
-
-<p>*As it turns out, Andy Clarke had already touched on wrote a chapter of a book called <a href="http://stuffandnonsense.co.uk/blog/about/an-extract-from-designing-atoms-and-elements">Designing Atoms and Elements</a>, which discusses modular design and breaking a visual design into its “design atmosphere”: the color, typography, and texture of a design sans layout.</p>
-
-<p>———</p>
-
-<p>You just sneak it in. It’s what I’m going to do to make the quality of the work better. And I don’t have to say it. It starts in the sales process. You just build enough budget so that you can do it. You don’t have a conversation about it, it’s just par for the course. You don’t have to ask permission.</p>
 
     <nav role="navigaiton" class="pagination">
     <!-- <a href="#">Next Chapter</a>

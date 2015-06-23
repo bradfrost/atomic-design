@@ -31,13 +31,13 @@ Of course I'm simplifying the incredibly rich, complex composition of the univer
 Apparently Mr. Rae's strategy of having students mind-numbingly balance tons of chemical equations worked, because I'm coming back to it all these years later for inspiration on how to approach interface design.
 
 ## The Atomic Design Methodology
-By now you may be wondering why we're talking about chemistry, and maybe you're even a bit angry at me for forcing you to relive memories of high school. But this is going somewhere, I promise.
+By now you may be wondering why we're talking about atomic theory, and maybe you're even a bit angry at me for forcing you to relive memories of high school chemistry class. But this is going somewhere, I promise.
 
-We discussed earlier how all matter in the universe can be broken down into a finite set of atomic elements. As it happens, our interfaces can be broken down into a similar finite set of elements. [Josh Duck's Periodic Table of HTML Elements](http://smm.zoomquiet.io/data/20110511083224/index.html) beautifully articulates how all of our websites, apps, intranets, hoobadyboops, whatever are all composed of the same HTML elements.
+We discussed earlier how all matter in the universe can be broken down into a finite set of atomic elements. As it happens, our interfaces can be broken down into a similar finite set of elements. [Josh Duck's Periodic Table of HTML Elements](http://smm.zoomquiet.io/data/20110511083224/index.html) beautifully articulates how all of our websites, apps, intranets, hoobadyboops, and whatevers are all composed of the same HTML elements.
 
 {% include figure.html src="../images/content/html-periodic-table.png" caption="The periodic table of HTML elements by Josh Duck" %}
 
-Because we're starting with a similar finite set of building blocks, we can apply that same process that happens in the natural world to our user interfaces. 
+Because we're starting with a similar finite set of building blocks, we can apply that same process that happens in the natural world to design and develop user interfaces. 
 
 Enter atomic design.
 
@@ -52,16 +52,22 @@ Enter atomic design.
 
 {% include figure.html src="../images/content/atomic-design-process.png" caption="Atomic design is atoms, molecules, organisms, templates, and pages working together to create effective interface design systems." %}
 
+Let's dive into each stage and discuss its role in crafting an interface design system.
+
 ## Atoms
 {% include figure.html src="../images/content/atomic-design-atoms.png" caption="" %}
 
-If atoms are the basic building blocks of matter, then what are the atoms of our interfaces? Atoms include [basic HTML tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), such as form labels, inputs, and buttons. 
+If atoms are the basic building blocks of matter, then the atoms of our interfaces would include [basic HTML tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) like form labels, inputs, and buttons. 
 
 {% include figure.html src="../images/content/atoms-form-elements.png" caption="Atoms include basic HTML tags like inputs, labels, and buttons." %}
 
-Like atoms in the natural world, these basic interface atoms can't be broken down any further without losing their meaning. They serve as the foundational Lego™ blocks that comprise all our user interfaces. 
+These basic interface atoms can't be broken down any further without losing their meaning, just like atoms in the natural world. They serve as the foundational building blocks that comprise all our user interfaces. 
 
-In addition to UI They also include more abstract elements like color palettes, fonts, and animations.
+Each atom in the natural world has its own unique properties. A hydrogen atom contains one electron, while a helium atom contains two. These inherent chemical properties have a profound effects on their application (for example, the Hindenburg). Similarly, each interface atom has its own unique properties, such as the dimensions of a hero image, or the font-size of a primary heading. These properties directly influence when they're applied to the user interface.
+
+In addition to the tags that make up our user interfaces, atoms can also include more abstract items like color palettes, font stacks, and even invisible UI elements like animations. Defining these elemental  promote consistency and cohesion throughout the entire experience.
+
+{% include figure.html src="../images/content/styleguide-salesforce-colors.png" caption="The style guide for Salesforce1 defines the color palette used throughout the user interface of the application." %}
 
 When it comes to design systems, it's helpful to Atoms are abstract and aren't often terribly useful on their own, but they provide a useful reference and allow you to see all your global styles laid out at a glance.
 
@@ -120,20 +126,17 @@ Discuss the advantages of atomic design, especially the ability to traverse betw
 
 ### Advantages
 - Traverse between abstract and concrete. Can simultaneously see things abstracted and step through to see things in context
+- The Part and the Whole - **Not a linear process** but rather a mental model
 - Built in hierarchy
 - Shared vocabulary - stakeholders can get on board with the concept
-- The Part and the Whole - **Not a linear process** but rather a mental model
 - What's in a name? Discussing the importance of naming ("Modules" "components" "elements" etc)
 - Atomic Design in Practice 
 - What atomic design isn't - CSS or JS methodology
 - Nothing new: why atomic design is different than other things that have been around for a long time.
-- Recap of the the atomic design methodology
+
+## Conclusion
+- Recap of the the atomic design methodology and its advantages
+
+
 
 http://china.org.cn/china/2015-03/17/content_35077927.htm
-
-*As it turns out, Andy Clarke had already touched on wrote a chapter of a book called [Designing Atoms and Elements](http://stuffandnonsense.co.uk/blog/about/an-extract-from-designing-atoms-and-elements), which discusses modular design and breaking a visual design into its "design atmosphere": the color, typography, and texture of a design sans layout.
-
-
-———
-
-You just sneak it in. It's what I'm going to do to make the quality of the work better. And I don't have to say it. It starts in the sales process. You just build enough budget so that you can do it. You don't have a conversation about it, it's just par for the course. You don't have to ask permission.
