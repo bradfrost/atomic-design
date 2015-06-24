@@ -67,7 +67,7 @@ In addition to the tags that make up our user interfaces, atoms can also include
 
 {% include figure.html src="../images/content/styleguide-salesforce-colors.png" caption="The style guide for Salesforce1 defines the color palette used throughout the user interface of the application." %}
 
-In the context of a style guide, atoms demonstrate all your global styles at a glance, which serves as a helpful reference to keep coming back to. But like atoms in the natural world, interface atoms aren't found floating around all on their lonesome. How these atoms get applied is where things start getting interesting.
+In the context of a style guide, atoms demonstrate all your global styles at a glance, which serves as a helpful reference to keep coming back to. But like atoms in the natural world, interface atoms aren't found floating around all on their lonesome. The application of these atoms is where things get interesting.
 
 ## Molecules
 {% include figure.html src="../images/content/atomic-design-molecules.png" caption="" %}
