@@ -67,24 +67,27 @@ In addition to the tags that make up our user interfaces, atoms can also include
 
 {% include figure.html src="../images/content/styleguide-salesforce-colors.png" caption="The style guide for Salesforce1 defines the color palette used throughout the user interface of the application." %}
 
-In the context of a style guide, atoms demonstrate all your global styles at a glance, which serves as a helpful reference to keep coming back to. But like atoms in the natural world, interface atoms aren't found floating around all on their lonesome. The application of these atoms is where things get interesting.
+In the context of a design system, atoms demonstrate all your global styles at a glance, which serves as a helpful reference to keep coming back to. But like atoms in the natural world, interface atoms aren't found floating around all on their lonesome. The application of these atoms is where things get interesting.
 
 ## Molecules
 {% include figure.html src="../images/content/atomic-design-molecules.png" caption="" %}
 
-In chemistry, molecules are groups of atoms bonded together, which take on new properties as a result.
+In chemistry, molecules are groups of atoms bonded together that resultantly take on new properties. In interfaces, molecules are relatively simple groups of UI elements functioning together as a unit. For example, a form label, search input, and button can combine them together to form a search form molecule.
 
-In interfaces, molecules are groups of elements that function together as a unit. For example, a form label, search input, and button atom can combine them together to form a search form molecule.
+{% include figure.html src="../images/content/molecule-search-form.png" caption="A search form molecule is composed of a label atom, input atom, and button atom." %}
 
-Building up from atoms to molecules encourages a “do one thing and do it well” mentality, and encourages creating reusable interface patterns.
+When combined, these abstract atoms suddenly have purpose. The label atom now defines the input atom. Clicking the button atom now submits the form. The result is a simple, portable, reusable component that can be dropped in anywhere site search functionality is needed.
 
-- Molecules definition: a group of atoms joined together to form a relatively simple module. For example, a label, input, and button atom joining together to form a search form molecule.
-- Why Molecules: single responsibility principle, assemble rather than deconstruct, testing, etc
+Now, assembling elements into simple functioning groups is something we've always done to construct user interfaces. But dedicating a stage in the atomic design methodology to these relatively simple components provides us a few key insights.
+
+Creating simple components helps UI designers and developers adhere to the [single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), an age-old computer science principle that encourages a “do one thing and do it well” mentality. Burdening a single pattern with too much complexity makes software unwieldy. Therefore, creating simple UI molecules makes testing easier, encourages reusability, and promotes consistency throughout the interface.
+
+Now we have simple, functional, reusable components that we can put into a broader context. Enter organisms!
 
 ## Organisms
 {% include figure.html src="../images/content/atomic-design-organisms.png" caption="" %}
 
-Organisms are groups of molecules (and possibly atoms) joined together to form distinct section of an interface.
+Organisms are relatively complex components. groups of molecules (and possibly atoms) joined together to form distinct section of an interface.
 
 Organisms can consist of similar and/or disparate molecule types. For example, a masthead organism might consist of a logo, navigation, and search form, while a “product grid” organism might consist of the same product info molecule repeated over and over.
 
