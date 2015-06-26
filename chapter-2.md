@@ -87,15 +87,25 @@ Now we have simple, functional, reusable components that we can put into a broad
 ## Organisms
 {% include figure.html src="../images/content/atomic-design-organisms.png" caption="" %}
 
-Organisms are relatively complex components. groups of molecules (and possibly atoms) joined together to form distinct section of an interface.
+Organisms are relatively complex UI components composed of groups of molecules and maybe even atoms. These organisms form distinct sections of an interface.
 
-Organisms can consist of similar and/or disparate molecule types. For example, a masthead organism might consist of a logo, navigation, and search form, while a “product grid” organism might consist of the same product info molecule repeated over and over.
+Let's revisit our search form molecule. A search form can often be found in the header of many Web experiences, so let's put that search form molecule into context of a header organism.
 
-Building up from molecules to organisms encourages creating standalone, portable, reusable components.
+{% include figure.html src="../images/content/organism-header.png" caption="The search form molecule placed in the context of the header organism, which also contains the logo atom and the primary navigation molecule." %}
 
-- Organisms definition: groups of molecules (and possibly atoms) joined together to form distinct section of an interface.
-- Why Organisms: reusable interface components, more concrete than atoms and molecules, encourages portability, etc
+The header forms a standalone section of an interface, even though it contains several smaller pieces of interface with their own unique properties and functionality.
 
+Organisms can consist of similar or different molecule types. A header organism might consist of disparate elements such as a logo image, primary navigation list, and search form. We see these types of organisms on almost every website we visit.
+
+{% include figure.html src="../images/content/organisms-headers.png" caption="Organisms like website headers consist of smaller molecules like primary navigation, search forms, utility navigation, and logos." %}
+
+While some organisms might consist of different types of molecules, other organisms might consist of the same molecule repeated over and over again. For instance, visit a category page of almost any e-commerce website and you'll see a listing of products displayed in some form of grid.
+
+{% include figure.html src="../images/content/organisms-product-grid.png" caption="A product grid organism on Gap's e-commerce website consist of the same product item molecule repeated again and again." %}
+
+Building up from molecules to relatively complex organisms provides designers and developers with an important sense of context. Organisms demonstrate those smaller, simpler components in action and serve as distinct patterns that can be used again and again. The product grid organism can be employed anywhere a group of products needs to be displayed, from the category page to search results to related products. 
+
+Now that we have organisms defined in our design system, we can now break our chemistry analogy and apply all these components to something that resembles a Web page!
 
 ## Templates
 {% include figure.html src="../images/content/atomic-design-templates.png" caption="" %}
@@ -141,3 +151,14 @@ Discuss the advantages of atomic design, especially the ability to traverse betw
 
 
 http://china.org.cn/china/2015-03/17/content_35077927.htm
+
+
+Uh oh Ian. Mobile phones are an essential part of modern life. The same way that you can walk into any house or apartment and find a TV, regardless of socio-economic status. They're what are known as "necessary luxuries". 
+
+Low-income Americans rely on mobile phones more than wealthier Americans. 33% of Americans use their phones as their primary way of getting online, but that number increases to 39% for people without a college degree, and 43% of people living below the poverty line. These people have to make a choice: do I pay for food, or do I pay for broadband internet at home? The choice will be food every time. But these mobile phones provide them a way to access the Web and the very services they need in order to operate in society.
+
+And what these people are doing with their phones is absolutely critical to bringing themselves out of poverty. 62% of people look up information about a health condition on their phone. 43%  look up information about jobs. 40% to look up government services. (http://www.pewinternet.org/2015/04/01/us-smartphone-use-in-2015/)
+
+I know it seems unusual to see a down-and-out person with a seemingly luxury item, but in fact that mobile phone in their hands is possibly the best tool they have to help them get out of their current situation. Do not belittle them or think they don't deserve to have a phone because they are poor. They're trying to survive, and that phone is a life preserver.
+
+
