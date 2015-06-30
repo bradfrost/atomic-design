@@ -57,7 +57,7 @@ Let's dive into each stage and discuss its role in crafting an interface design 
 ## Atoms
 {% include figure.html src="../images/content/atomic-design-atoms.png" caption="" %}
 
-If atoms are the basic building blocks of matter, then the atoms of our interfaces serve as the foundational building blocks that comprise all our user interfaces. Therefore these atoms would include [basic HTML tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) like form labels, inputs, buttons, and other elements that can't be broken down any further without ceasing to be functional.
+If atoms are the basic building blocks of matter, then the **atoms of our interfaces serve as the foundational building blocks that comprise all our user interfaces**. Therefore these atoms would include [basic HTML tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) like form labels, inputs, buttons, and other elements that can't be broken down any further without ceasing to be functional.
 
 {% include figure.html src="../images/content/atoms-form-elements.png" caption="Atoms include basic HTML tags like inputs, labels, and buttons." %}
 
@@ -72,7 +72,7 @@ In the context of a design system, atoms demonstrate all your global styles at a
 ## Molecules
 {% include figure.html src="../images/content/atomic-design-molecules.png" caption="" %}
 
-In chemistry, molecules are groups of atoms bonded together that resultantly take on new properties. In interfaces, molecules are relatively simple groups of UI elements functioning together as a unit. For example, a form label, search input, and button can combine them together to form a search form molecule.
+In chemistry, molecules are groups of atoms bonded together that resultantly take on new properties. In interfaces, **molecules are relatively simple groups of UI elements functioning together as a unit**. For example, a form label, search input, and button can combine them together to form a search form molecule.
 
 {% include figure.html src="../images/content/molecule-search-form.png" caption="A search form molecule is composed of a label atom, input atom, and button atom." %}
 
@@ -87,7 +87,7 @@ Now we have simple, functional, reusable components that we can put into a broad
 ## Organisms
 {% include figure.html src="../images/content/atomic-design-organisms.png" caption="" %}
 
-Organisms are relatively complex UI components composed of groups of molecules and maybe even atoms. These organisms form distinct sections of an interface.
+**Organisms are relatively complex UI components composed of groups of molecules and maybe even atoms**. These organisms form distinct sections of an interface.
 
 Let's revisit our search form molecule. A search form can often be found in the header of many Web experiences, so let's put that search form molecule into context of a header organism.
 
@@ -95,7 +95,7 @@ Let's revisit our search form molecule. A search form can often be found in the 
 
 The header forms a standalone section of an interface, even though it contains several smaller pieces of interface with their own unique properties and functionality.
 
-Organisms can consist of similar or different molecule types. A header organism might consist of disparate elements such as a logo image, primary navigation list, and search form. We see these types of organisms on almost every website we visit.
+Organisms can consist of similar or different molecule types. A header organism might consist of dissimilar elements such as a logo image, primary navigation list, and search form. We see these types of organisms on almost every website we visit.
 
 {% include figure.html src="../images/content/organisms-headers.png" caption="Organisms like website headers consist of smaller molecules like primary navigation, search forms, utility navigation, and logos." %}
 
@@ -110,34 +110,48 @@ Now that we have organisms defined in our design system, we can now break our ch
 ## Templates
 {% include figure.html src="../images/content/atomic-design-templates.png" caption="" %}
 
-With templates, we break our biochemistry analogy to get into language that makes more sense to clients and final output. Templates are composed mostly of organisms combined together to form page-level objects.
+And now, friends, it's time to say goodbye to our chemistry analogy. The language of atoms, molecules, and organisms carries with it a helpful hierarchy for us to deliberately construct the components of our design systems. But ultimately we must step into language that is more appropriate for our final output and makes more sense to our clients, bosses, and colleagues. Trying to carry the chemistry analogy too far might confuse your stakeholders and cause them to think you're a bit crazy. Trust me.
 
-Templates provide context for these relatively abstract molecules and organisms, which is helpful for designers and clients alike.
+**Templates are page-level objects that place components into a layout and articulate the design's underlying content structure**. To build upon our previous example, we can take the header organism and apply it to a homepage template.
 
-Templates mostly focus on content structure (such as character length, image size, etc) rather than the actual content.
+{% include figure.html src="../images/content/template.png" caption="The homepage template consists of organisms and molecules applied to a layout." %}
 
-- Breaking the chemistry analogy to get into the deliverables language
-- Templates definition: page-level documents that provide context for these relatively abstract molecules and organisms, and  focus on content structure
-- Why Templates: focus on content structure, can begin as wireframes and evolve over time, etc
+This homepage template displays all the necessary page components functioning together, which **provides context for these relatively abstract molecules and organisms**. When crafting an effective design system, it's critical to demonstrate how components look and function together in the context of a layout to prove the parts add up to a well-functioning whole. We'll discuss this more in a bit.
+
+Another important characteristic of templates is that they **focus on the page's underlying content structure** rather than the page's final content. Design systems must account for the dynamic nature of content, so it's very helpful to articulate important properties of components like image sizes and character lengths for headings and text passages. 
+
+Mark Boulton discusses the importance of defining the underlying content structure of a page:
+
+> You can create good experiences without knowing the content. What you can’t do is create good experiences without knowing your content structure. What is your content *made* from, not what your content *is*. <cite>[Mark Boulton](http://www.markboulton.co.uk/journal/structure-first-content-always)</cite>
+
+By defining a page's skeleton we're able to create a system that can account for a variety of dynamic content, all while providing needed guardrails for the types of content that can populate certain design patterns. For example, the homepage template for Time Inc. shows a few key components in action while also demonstrating content structure regarding image sizes and character lengths:
+
+{% include figure.html src="../images/content/template-timeinc-homepage.png" caption="Time Inc.'s homepage template demonstrates the content's underlying content structure." %}
+
+Now that we've established our page's skeletal system, let's put some meat on them bones!
 
 ## Pages
 {% include figure.html src="../images/content/atomic-design-pages.png" caption="" %}
 
-Pages are specific instances of templates and swap out placeholder content with real representative content to give an accurate depiction of what a user will ultimately see.
+**Pages are specific instances of templates that replace placeholder content with real representative content** to give an accurate depiction of what a user will ultimately see.
 
 Pages are essential for testing the effectiveness of the design system. This final form allows us to loop back to modify our molecules, organisms, and templates to better address the real context of the design.
 
 Pages also provide a place to test variations in templates, such as testing an article containing a 40-character-length headline and other article with a 340-character-length headline. What does it look like when a user has one item in their shopping cart versus 10 items with a discount code applied? These specific page instances test the resiliency of the system, influencing how the underlying molecules, organisms, and templates are constructed.
 
-- Page definition: specific instances of a template. Replaces content structure with real representative content
+> Content needs to be structured and structuring alters your content, designing alters content. It’s not ‘content then design’, or ‘content or design’. It’s ‘content and design’.
+
 - Why pages: Tests the resiliency of the system, test variations in content structure, extremely concrete, it's what the client naturally ends up focusing on since it's what
 - Page considerations: Clients/colleagues can get distracted by representative content ("I don't like how I look in that photo") vs commenting on effectiveness of the design.
 Atomic design summary: recap atoms, molecules, organisms, templates, and pages
 Discuss the advantages of atomic design, especially the ability to traverse between abstract and concrete
 
-### Advantages
+### Advantages of atomic design
 - Traverse between abstract and concrete. Can simultaneously see things abstracted and step through to see things in context
-- The Part and the Whole - **Not a linear process** but rather a mental model
+- [The Part and the Whole](http://bradfrost.com/blog/post/the-part-and-the-whole/) - **Not a linear process** but rather a mental model
+
+> The painter, when at a distance from the easel, can assess and analyze the whole of the work from this vantage. He scrutinizes and listens, chooses the next stroke to make, then approaches the canvas to do it. Then, he steps back again to see what he’s done in relation to the whole. It is a dance of switching contexts, a pitter-patter pacing across the studio floor that produces a tight feedback loop between mark-making and mark-assessing. <cite>[Frank Chimero](http://read.shapeofdesignbook.com/chapter01.html)</cite>
+
 - Built in hierarchy
 - Shared vocabulary - stakeholders can get on board with the concept
 - What's in a name? Discussing the importance of naming ("Modules" "components" "elements" etc)
