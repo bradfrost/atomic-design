@@ -157,6 +157,7 @@ We must create systems that establish reusable design patterns and also accurate
 In all of these examples, the underlying templates are the same, but the user interfaces change to reflect the nature of the content. These variations directly influence how the underlying molecules, organisms, and templates are constructed. Therefore, creating pages that account for these variables helps us create more resilient design systems.
 
 So that's atomic design! These five distinct stages work together to produce effective user interface design systems. To sum up atomic design in a nutshell: 
+
 - **Atoms** can't be broken down any further and serve as the elemental building blocks of an interface. 
 - **Molecules** are collections of atoms that form relatively simple UI components.
 - **Organisms** are relatively complex components that form discrete sections of an interface.
