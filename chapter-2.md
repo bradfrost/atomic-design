@@ -41,7 +41,7 @@ Because we're starting with a similar finite set of building blocks, we can appl
 
 Enter atomic design.
 
-**Atomic design is a methodology composed of five distinct stages working together to create deliberate interface design systems**. The five stages of atomic design are are:
+**Atomic design is a methodology composed of five distinct stages working together to create deliberate interface design systems**. The five stages of atomic design are:
 
 1. Atoms
 2. Molecules
@@ -63,16 +63,16 @@ If atoms are the basic building blocks of matter, then the **atoms of our interf
 
 Each atom in the natural world has its own unique properties. A hydrogen atom contains one electron, while a helium atom contains two. These intrinsic chemical properties have profound effects on their application (for example, the Hindenburg explosion was so catastrophic because the airship was filled with extremely flammable hydrogen gas versus inert helium gas). In the same manner, each interface atom has its own unique properties, such as the dimensions of a hero image, or the font-size of a primary heading. These properties directly influence when they're applied to the user interface.
 
-In addition to the tags that make up our user interfaces, atoms can also include more abstract elemental items like color palettes, font stacks, and even invisible things like animations. Defining these elemental properties of our UIs help promote consistency and cohesion throughout the entire experience.
+In addition to the tags that make up our user interfaces, **atoms can also include more abstract elemental items like color palettes, font stacks, and even invisible things like animations**. Defining these elemental properties of our UIs help promote consistency and cohesion throughout the entire experience.
 
 {% include figure.html src="../images/content/styleguide-salesforce-colors.png" caption="The style guide for Salesforce1 defines the color palette used throughout the user interface of the application." %}
 
-In the context of a design system, atoms demonstrate all your global styles at a glance, which serves as a helpful reference to keep coming back to. But like atoms in the natural world, interface atoms aren't found floating around all on their lonesome. The application of these atoms is where things get interesting.
+In the context of a design system, atoms demonstrate all your global styles at a glance, which can serve as a helpful reference to keep coming back to. But like atoms in the natural world, interface atoms aren't found floating around all on their lonesome. The application of these atoms is where things get interesting.
 
 ## Molecules
 {% include figure.html src="../images/content/atomic-design-molecules.png" caption="" %}
 
-In chemistry, molecules are groups of atoms bonded together that resultantly take on new properties. In interfaces, **molecules are relatively simple groups of UI elements functioning together as a unit**. For example, a form label, search input, and button can combine them together to form a search form molecule.
+In chemistry, molecules are groups of atoms bonded together that resultantly take on new properties. In interfaces, **molecules are relatively simple groups of UI elements functioning together as a unit**. For example, a form label, search input, and button can combine them together to create a search form molecule.
 
 {% include figure.html src="../images/content/molecule-search-form.png" caption="A search form molecule is composed of a label atom, input atom, and button atom." %}
 
@@ -87,7 +87,7 @@ Now we have simple, functional, reusable components that we can put into a broad
 ## Organisms
 {% include figure.html src="../images/content/atomic-design-organisms.png" caption="" %}
 
-**Organisms are relatively complex UI components composed of groups of molecules and maybe even atoms**. These organisms form distinct sections of an interface.
+**Organisms are relatively complex UI components composed of groups of molecules and possibly even atoms**. These organisms form distinct sections of an interface.
 
 Let's revisit our search form molecule. A search form can often be found in the header of many Web experiences, so let's put that search form molecule into context of a header organism.
 
@@ -103,7 +103,7 @@ While some organisms might consist of different types of molecules, other organi
 
 {% include figure.html src="../images/content/organisms-product-grid.png" caption="A product grid organism on Gap's e-commerce website consist of the same product item molecule repeated again and again." %}
 
-Building up from molecules to relatively complex organisms provides designers and developers with an important sense of context. Organisms demonstrate those smaller, simpler components in action and serve as distinct patterns that can be used again and again. The product grid organism can be employed anywhere a group of products needs to be displayed, from the category page to search results to related products. 
+Building up from molecules to relatively complex organisms provides designers and developers with an important sense of context. Organisms demonstrate those smaller, simpler components in action and serve as distinct patterns that can be used again and again. The product grid organism can be employed anywhere a group of products needs to be displayed, from category listings to search results to related products. 
 
 Now that we have organisms defined in our design system, we can now break our chemistry analogy and apply all these components to something that resembles a Web page!
 
@@ -124,27 +124,46 @@ Mark Boulton discusses the importance of defining the underlying content structu
 
 > You can create good experiences without knowing the content. What you can’t do is create good experiences without knowing your content structure. What is your content *made* from, not what your content *is*. <cite>[Mark Boulton](http://www.markboulton.co.uk/journal/structure-first-content-always)</cite>
 
-By defining a page's skeleton we're able to create a system that can account for a variety of dynamic content, all while providing needed guardrails for the types of content that can populate certain design patterns. For example, the homepage template for Time Inc. shows a few key components in action while also demonstrating content structure regarding image sizes and character lengths:
+By defining a page's skeleton we're able to create a system that can account for a variety of dynamic content, all while providing needed guardrails for the types of content that populates certain design patterns. For example, the homepage template for Time Inc. shows a few key components in action while also demonstrating content structure regarding image sizes and character lengths:
 
 {% include figure.html src="../images/content/template-timeinc-homepage.png" caption="Time Inc.'s homepage template demonstrates the content's underlying content structure." %}
 
-Now that we've established our page's skeletal system, let's put some meat on them bones!
+Now that we've established our pages' skeletal system, let's put some meat on them bones!
 
 ## Pages
 {% include figure.html src="../images/content/atomic-design-pages.png" caption="" %}
 
-**Pages are specific instances of templates that replace placeholder content with real representative content** to give an accurate depiction of what a user will ultimately see.
+**Pages are specific instances of templates that replace placeholder content with real representative content**.  Building upon our previous example, we can take the homepage template and pour representative content into that container to show real content in action.
 
-Pages are essential for testing the effectiveness of the design system. This final form allows us to loop back to modify our molecules, organisms, and templates to better address the real context of the design.
+{% include figure.html src="../images/content/page.png" caption="The page stage replaces placeholder content with real representative content to bring the design system to life." %}
 
-Pages also provide a place to test variations in templates, such as testing an article containing a 40-character-length headline and other article with a 340-character-length headline. What does it look like when a user has one item in their shopping cart versus 10 items with a discount code applied? These specific page instances test the resiliency of the system, influencing how the underlying molecules, organisms, and templates are constructed.
+The page stage is most concrete stage of atomic design, and it's important for some rather obvious reasons. After all, this is what users will see when they visit your experience. This is what your stakeholders will sign off on. And this is where you see all those components coming together to form a beautiful and functional user interface. Exciting!
 
-> Content needs to be structured and structuring alters your content, designing alters content. It’s not ‘content then design’, or ‘content or design’. It’s ‘content and design’.
+In addition to demonstrating the final interface as your users will see it, **pages are essential for testing the effectiveness of the underlying design system**. It is at the page stage that we're able to take a look at how all those patterns hold up when real content is applied to the design system. Does everything look great and function as it should? If the answer is no, then we can loop back and modify our molecules, organisms, and templates to better address our content's needs.
 
-- Why pages: Tests the resiliency of the system, test variations in content structure, extremely concrete, it's what the client naturally ends up focusing on since it's what
-- Page considerations: Clients/colleagues can get distracted by representative content ("I don't like how I look in that photo") vs commenting on effectiveness of the design.
-Atomic design summary: recap atoms, molecules, organisms, templates, and pages
-Discuss the advantages of atomic design, especially the ability to traverse between abstract and concrete
+When we pour real representative content into Time Inc.'s homepage template, we're able to see how all those underlying design patterns hold up.
+
+{% include figure.html src="../images/content/page-timeinc-homepage.png" caption="" %}
+
+We must create systems that establish reusable design patterns and also accurately reflect the reality of the content we're putting inside of those patterns.
+
+**Pages also provide a place to articulate variations in templates**, which is crucial for establishing robust and reliant design systems. Here are just a few examples of template variations:
+
+- A user has one item in their shopping cart and other user has 10 items in their cart.
+- A web app's dashboard typically shows recent activity, but that section is suppressed for first-time users. 
+- An article contains a 40-character-long headline while other article with a 340-character-long headline.  
+- Users with administrative privileges see additional buttons and options on their dashboard compared to users who aren't admins.
+
+In all of these examples, the underlying templates are the same, but the user interfaces change to reflect the nature of the content. These variations directly influence how the underlying molecules, organisms, and templates are constructed. Therefore, creating pages that account for these variables helps us create more resilient design systems.
+
+So that's atomic design! These five distinct stages work together to produce effective user interface design systems. To sum up atomic design in a nutshell: 
+- **Atoms** can't be broken down any further and serve as the elemental building blocks of an interface. 
+- **Molecules** are collections of atoms that form relatively simple UI components.
+- **Organisms** are relatively complex components that form discrete sections of an interface.
+- **Templates** place components into a page layout and demonstrate the design's underlying content structure.
+- **Pages** apply real content to templates and articulate variations to demonstrate the final UI and test the resiliency of the design system.
+
+[This is as far as I've gotten so far. Thanks for reading!]
 
 ### Advantages of atomic design
 - Traverse between abstract and concrete. Can simultaneously see things abstracted and step through to see things in context
@@ -152,27 +171,21 @@ Discuss the advantages of atomic design, especially the ability to traverse betw
 
 > The painter, when at a distance from the easel, can assess and analyze the whole of the work from this vantage. He scrutinizes and listens, chooses the next stroke to make, then approaches the canvas to do it. Then, he steps back again to see what he’s done in relation to the whole. It is a dance of switching contexts, a pitter-patter pacing across the studio floor that produces a tight feedback loop between mark-making and mark-assessing. <cite>[Frank Chimero](http://read.shapeofdesignbook.com/chapter01.html)</cite>
 
+Design and content is a bit of a chicken-or-egg situation, as Mark Boulton explains:
+
+> Content needs to be structured and structuring alters your content, designing alters content. It’s not ‘content then design’, or ‘content or design’. It’s ‘content and design’. <cite>[Mark Boulton](http://www.markboulton.co.uk/journal/structure-first-content-always)</cite>
+
 - Built in hierarchy
 - Shared vocabulary - stakeholders can get on board with the concept
 - What's in a name? Discussing the importance of naming ("Modules" "components" "elements" etc)
 - Atomic Design in Practice 
+- What is atomic design for? It's for interfaces.
 - What atomic design isn't - CSS or JS methodology
 - Nothing new: why atomic design is different than other things that have been around for a long time.
 
 ## Conclusion
 - Recap of the the atomic design methodology and its advantages
 
-
-
 http://china.org.cn/china/2015-03/17/content_35077927.htm
-
-
-Uh oh Ian. Mobile phones are an essential part of modern life. The same way that you can walk into any house or apartment and find a TV, regardless of socio-economic status. They're what are known as "necessary luxuries". 
-
-Low-income Americans rely on mobile phones more than wealthier Americans. 33% of Americans use their phones as their primary way of getting online, but that number increases to 39% for people without a college degree, and 43% of people living below the poverty line. These people have to make a choice: do I pay for food, or do I pay for broadband internet at home? The choice will be food every time. But these mobile phones provide them a way to access the Web and the very services they need in order to operate in society.
-
-And what these people are doing with their phones is absolutely critical to bringing themselves out of poverty. 62% of people look up information about a health condition on their phone. 43%  look up information about jobs. 40% to look up government services. (http://www.pewinternet.org/2015/04/01/us-smartphone-use-in-2015/)
-
-I know it seems unusual to see a down-and-out person with a seemingly luxury item, but in fact that mobile phone in their hands is possibly the best tool they have to help them get out of their current situation. Do not belittle them or think they don't deserve to have a phone because they are poor. They're trying to survive, and that phone is a life preserver.
 
 
