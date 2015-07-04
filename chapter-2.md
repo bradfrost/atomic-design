@@ -164,9 +164,10 @@ So that's atomic design! These five distinct stages work together to produce eff
 - **Templates** place components into a page layout and demonstrate the design's underlying content structure.
 - **Pages** apply real content to templates and articulate variations to demonstrate the final UI and test the resiliency of the design system.
 
-[This is as far as I've gotten so far. Thanks for reading!]
+## Advantages of atomic design
+So why do all of this? What's atomic design good for? These are valid questions. After all, we've been building user interfaces for a long time now without
 
-### Advantages of atomic design
+### The Part and the Whole
 - Traverse between abstract and concrete. Can simultaneously see things abstracted and step through to see things in context
 - [The Part and the Whole](http://bradfrost.com/blog/post/the-part-and-the-whole/) - **Not a linear process** but rather a mental model
 
@@ -176,13 +177,17 @@ Design and content is a bit of a chicken-or-egg situation, as Mark Boulton expla
 
 > Content needs to be structured and structuring alters your content, designing alters content. It’s not ‘content then design’, or ‘content or design’. It’s ‘content and design’. <cite>[Mark Boulton](http://www.markboulton.co.uk/journal/structure-first-content-always)</cite>
 
+
+### Naming with Meaning
+What's in a name? Again, modular design and development is nothing new, so naturally. In the two years I've been talking about atomic design, I've had a number of Discussing the importance of naming ("Modules" "components" "elements" etc)
 - Built in hierarchy
-- Shared vocabulary - stakeholders can get on board with the concept
-- What's in a name? Discussing the importance of naming ("Modules" "components" "elements" etc)
-- Atomic Design in Practice 
-- What is atomic design for? It's for interfaces.
+
+### Clean separation between 
+
+### Atomic design is for interfaces
+[Instagram example]
 - What atomic design isn't - CSS or JS methodology
-- Nothing new: why atomic design is different than other things that have been around for a long time.
+- Nothing new: why atomic design is different than simply modular design. Makes a distinction between simple components (molecules) and complex components (organisms)
 
 ## Conclusion
 - Recap of the the atomic design methodology and its advantages
