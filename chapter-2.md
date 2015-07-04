@@ -173,16 +173,18 @@ So why do all of this? What's atomic design good for? These are valid questions.
 
 > The painter, when at a distance from the easel, can assess and analyze the whole of the work from this vantage. He scrutinizes and listens, chooses the next stroke to make, then approaches the canvas to do it. Then, he steps back again to see what he’s done in relation to the whole. It is a dance of switching contexts, a pitter-patter pacing across the studio floor that produces a tight feedback loop between mark-making and mark-assessing. <cite>[Frank Chimero](http://read.shapeofdesignbook.com/chapter01.html)</cite>
 
-Design and content is a bit of a chicken-or-egg situation, as Mark Boulton explains:
-
-> Content needs to be structured and structuring alters your content, designing alters content. It’s not ‘content then design’, or ‘content or design’. It’s ‘content and design’. <cite>[Mark Boulton](http://www.markboulton.co.uk/journal/structure-first-content-always)</cite>
-
 
 ### Naming with Meaning
 What's in a name? Again, modular design and development is nothing new, so naturally. In the two years I've been talking about atomic design, I've had a number of Discussing the importance of naming ("Modules" "components" "elements" etc)
 - Built in hierarchy
 
-### Clean separation between 
+### Clean separation between structure and data
+- Clear separation between pattern structure and the content that goes inside them.
+- templates and pages provide a language to discuss variations
+
+Design and content is a bit of a chicken-or-egg situation, as Mark Boulton explains:
+
+> Content needs to be structured and structuring alters your content, designing alters content. It’s not ‘content then design’, or ‘content or design’. It’s ‘content and design’. <cite>[Mark Boulton](http://www.markboulton.co.uk/journal/structure-first-content-always)</cite>
 
 ### Atomic design is for interfaces
 [Instagram example]
