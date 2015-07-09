@@ -71,7 +71,7 @@
   <li><strong>Organisms</strong> are assemblies of molecules functioning together as a unit. These relatively complex structures can range from single-celled organisms all the way up to incredibly complex organisms like human beings.</li>
 </ul>
 
-<p>Of course I’m simplifying the incredibly rich, complex composition of the universe, but the basic gist remains: atoms combine together to form molecules, which continue combining to form relatively complex organisms. This atomic theory means that all matter in the known universe can be broken down into this finite set of atomic elements:</p>
+<p>Of course I’m simplifying the incredibly rich, complex composition of the universe, but the basic gist remains: atoms combine together to form molecules, which continue combining to form relatively complex organisms. This atomic theory means that all matter in the known universe can be broken down into a finite set of atomic elements:</p>
 
 <figure>
     <img src="../images/content/periodic-table.png" alt="The periodic table of chemical elements" />
@@ -301,7 +301,7 @@
 <p>So that’s atomic design! These five distinct stages work together to produce effective user interface design systems. To sum up atomic design in a nutshell: </p>
 
 <ul>
-  <li><strong>Atoms</strong> can’t be broken down any further and serve as the elemental building blocks of an interface. </li>
+  <li><strong>Atoms</strong> are UI elements that can’t be broken down any further and serve as the elemental building blocks of an interface. </li>
   <li><strong>Molecules</strong> are collections of atoms that form relatively simple UI components.</li>
   <li><strong>Organisms</strong> are relatively complex components that form discrete sections of an interface.</li>
   <li><strong>Templates</strong> place components into a page layout and demonstrate the design’s underlying content structure.</li>
@@ -309,33 +309,27 @@
 </ul>
 
 <h2 id="advantages-of-atomic-design">Advantages of atomic design</h2>
-<p>So why do all of this? What’s atomic design good for? These are valid questions. After all, we’ve been building user interfaces for a long time now without having an explicit five-stage methodology in place. But utilizing atomic design provides us a few key insights that help us create more effective UI systems.</p>
+<p>So why go through all this rigamarole? What’s atomic design good for? These are valid questions. After all, we’ve been building user interfaces for a long time now without having an explicit five-stage methodology in place. But utilizing atomic design provides us a few key insights that help us create more effective UI design systems.</p>
 
 <h3 id="the-part-and-the-whole">The Part and the Whole</h3>
-<p><strong>One of the biggest advantages atomic design provides is the ability to traverse between abstract and concrete</strong>. We can simultaneously see our interfaces broken down to their atomic elements and also see how those atomic elements combine together to form our final user interfaces. </p>
+<p><strong>One of the biggest advantages atomic design provides is the ability to traverse between abstract and concrete</strong>. We can simultaneously see our interfaces broken down to their atomic elements and also see how those atomic elements combine together to form our final experiences. </p>
 
-<p>In his book <em>The Shape of Design</em>, Frank Chimero beautifully articulates the power this traversal provides.</p>
+<p>In his book <em>The Shape of Design</em>, Frank Chimero beautifully articulates the power this traversal provides:</p>
 
 <blockquote>
   <p>The painter, when at a distance from the easel, can assess and analyze the whole of the work from this vantage. He scrutinizes and listens, chooses the next stroke to make, then approaches the canvas to do it. Then, he steps back again to see what he’s done in relation to the whole. It is a dance of switching contexts, a pitter-patter pacing across the studio floor that produces a tight feedback loop between mark-making and mark-assessing. <cite><a href="http://read.shapeofdesignbook.com/chapter01.html">Frank Chimero</a></cite></p>
 </blockquote>
 
-<p>Atomic design lets us dance between contexts like the painter.  The atoms, molecules, and organisms that comprise our user interfaces do not live in a vacuum. And our user interfaces’ templates and pages are composed of smaller parts. The parts of our design systems influence the whole, and the whole influences the parts. The two are </p>
+<p>Atomic design lets us dance between contexts like the painter Frank so eloquently describes. The atoms, molecules, and organisms that comprise our interfaces do not live in a vacuum. And our interfaces’ templates and pages are indeed composed of smaller parts. The parts of our designs influence the whole, and the whole influences the parts. The two are intertwined, and atomic design embraces this fact.</p>
 
-<p><strong>Atomic design is not a linear process</strong>. The five stages of atomic design: atoms, molecules, organisms, templates, and pages, are not meant to be taken in sequence but rather concurrently.</p>
+<p>When designers and developers are crafting a particular component, they are like the painter at the canvas creating detailed strokes. When they are viewing those components in the context of a layout with real representative content in place, they are like the painter several feet back from the canvas assessing how their detailed strokes affect the whole composition. It’s necessary to hone in on one particular component to ensure it is functional, usable, and beautiful. But it’s also necessary to ensure that component is functional, usable, and beautiful <em>in the context of the final UI</em>.</p>
 
-<p>It would be foolish to tell designers and developers to create the . Mental model. Bakes creating a design system into the design and development process
-<a href="http://bradfrost.com/blog/post/the-part-and-the-whole/">The Part and the Whole</a> - </p>
-
-<h3 id="naming-with-meaning">Naming with Meaning</h3>
-<p>What’s in a name? Again, modular design and development is nothing new, so naturally. In the two years I’ve been talking about atomic design, I’ve had a number of Discussing the importance of naming (“Modules” “components” “elements” etc)
-- Built in hierarchy
-- Makes a distinction between simple components (molecules) and complex components (organisms)</p>
+<p>Atomic design provides us a structure to traverse between the parts and the whole of UIs, which is why it’s crucial to reiterate that <strong>atomic design is not a linear process</strong>. It would be foolish to design buttons and other elements in isolation then cross our fingers and hope everything comes together to form a cohesive whole. So don’t interpret the five stages of atomic design as “step 1: atoms, step 2: molecules, step 3: organisms, step 4: templates, step 5: pages”. Instead, think of the stages of atomic design as a mental model that allows us to concurrently create final UIs and their underlying design systems.</p>
 
 <h3 id="clean-separation-between-structure-and-data">Clean separation between structure and data</h3>
 <ul>
   <li>Clear separation between pattern structure and the content that goes inside them.</li>
-  <li>templates and pages provide a language to discuss variations</li>
+  <li>Templates and pages provide a language to discuss variations</li>
 </ul>
 
 <p>Design and content is a bit of a chicken-or-egg situation, as Mark Boulton explains:</p>
@@ -343,6 +337,11 @@
 <blockquote>
   <p>Content needs to be structured and structuring alters your content, designing alters content. It’s not ‘content then design’, or ‘content or design’. It’s ‘content and design’. <cite><a href="http://www.markboulton.co.uk/journal/structure-first-content-always">Mark Boulton</a></cite></p>
 </blockquote>
+
+<h3 id="naming-with-meaning">Naming with Meaning</h3>
+<p>What’s in a name? As mentioned earlier, modular design and development is nothing new, so why not just stick with the language we’ve been using to In the two years I’ve been talking about atomic design, I’ve had a number of Discussing the importance of naming (“Modules” “components” “elements” etc)
+- Built in hierarchy
+- Makes a distinction between simple components (molecules) and complex components (organisms)</p>
 
 <h2 id="atomic-design-is-for-interfaces">Atomic design is for interfaces</h2>
 <p>Atomic design is a concept that was born of the Web. But let’s be clear about something: atomic design applies to all user interface design and not to </p>
