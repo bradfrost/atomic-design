@@ -195,7 +195,7 @@ What's in a name? As mentioned earlier, modular design and development is nothin
 ## Atomic design is for user interfaces
 Atomic design is a concept born of the Web. After all, your lowly author is a web designer, which is mainly the reason this book primarily focuses on Web-based interfaces. But it's important to understand that **atomic design applies to all user interfaces, not just Web-based ones.**. 
 
-You can apply the atomic design methodology to the user interface of any software–Microsoft Word, Keynote, Photoshop, whatever. As an example, let's take the native mobile app Instagram and apply atomic design.
+You can apply the atomic design methodology to the user interface of any software–Microsoft Word, Keynote, Photoshop, whatever. As an example, let's apply atomic design to the native mobile app Instagram.
 
 {% include figure.html src="../images/content/instagram-atomic.png" caption="Atomic design applied to the native mobile app Instagram" %}
 
