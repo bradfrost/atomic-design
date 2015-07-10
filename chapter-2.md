@@ -165,7 +165,7 @@ So that's atomic design! These five distinct stages work together to produce eff
 - **Pages** apply real content to templates and articulate variations to demonstrate the final UI and test the resiliency of the design system.
 
 ## Advantages of atomic design
-So why go through all this rigamarole? What's atomic design good for? These are valid questions. After all, we've been building user interfaces for a long time now without having an explicit five-stage methodology in place. But utilizing atomic design provides us a few key insights that help us create more effective UI design systems.
+So why go through all this rigamarole? What's atomic design good for? These are valid questions. After all, we've been building user interfaces for a long time now without having an explicit five-stage methodology in place. But utilizing atomic design provides us a few key insights that help us create more effective, deliberate UI design systems.
 
 ### The Part and the Whole
 **One of the biggest advantages atomic design provides is the ability to traverse between abstract and concrete**. We can simultaneously see our interfaces broken down to their atomic elements and also see how those atomic elements combine together to form our final experiences. 
@@ -183,8 +183,7 @@ Atomic design provides us a structure to traverse between the parts and the whol
 ### Clean separation between structure and data
 - Clear separation between pattern structure and the content that goes inside them.
 - Templates and pages provide a language to discuss variations
-
-Design and content is a bit of a chicken-or-egg situation, as Mark Boulton explains:
+- Design and content is a bit of a chicken-or-egg situation, as Mark Boulton explains:
 
 > Content needs to be structured and structuring alters your content, designing alters content. It’s not ‘content then design’, or ‘content or design’. It’s ‘content and design’. <cite>[Mark Boulton](http://www.markboulton.co.uk/journal/structure-first-content-always)</cite>
 
@@ -193,12 +192,17 @@ What's in a name? As mentioned earlier, modular design and development is nothin
 - Built in hierarchy
 - Makes a distinction between simple components (molecules) and complex components (organisms)
 
-## Atomic design is for interfaces
-Atomic design is a concept that was born of the Web. But let's be clear about something: atomic design applies to all user interface design and not to 
+## Atomic design is for user interfaces
+Atomic design is a concept born of the Web. After all, your lowly author is a web designer, which is mainly the reason this book primarily focuses on Web-based interfaces. But let's be clear about something: **atomic design applies to all user interface design and not just to the Web**. 
 
-For example, Instagram is a native 
+And to take this a step further, **Atomic design has nothing to do with CSS or JavaScript architecture**. In Chapter 1 I discussed the general trend toward modularity,  Methodologies like [OOCSS](http://oocss.org/), [SMACSS](https://smacss.com/), and [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax)  I understand how it's easy to conflate these things. http://www.smashingmagazine.com/2013/08/02/other-interface-atomic-design-sass/
+
+
+For example, Instagram is a native mobile application 
 [Instagram example http://www.theverge.com/2015/7/6/8899807/instagram-1080p-pictures-photo-upload]
-- What atomic design isn't - CSS or JS methodology
+In fact, you can take the user interface of any software–Microsoft Word, Keynote, Photoshop, whatever–and apply the atomic design methodology to it. For instance, we can take the native mobile app Instagram and apply atomic design.
+
+{% include figure.html src="../images/content/instagram-atomic.png" caption="" %}
 
 ## Conclusion
 - Recap of the the atomic design methodology and its advantages
