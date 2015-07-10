@@ -193,21 +193,25 @@ What's in a name? As mentioned earlier, modular design and development is nothin
 - Makes a distinction between simple components (molecules) and complex components (organisms)
 
 ## Atomic design is for user interfaces
-Atomic design is a concept born of the Web. After all, your lowly author is a web designer, which is mainly the reason this book primarily focuses on Web-based interfaces. But let's be clear about something: **atomic design applies to all user interface design and not just to the Web**. 
+Atomic design is a concept born of the Web. After all, your lowly author is a web designer, which is mainly the reason this book primarily focuses on Web-based interfaces. But it's important to understand that **atomic design applies to all user interfaces, not just Web-based ones.**. 
 
-And to take this a step further, **Atomic design has nothing to do with CSS or JavaScript architecture**. In Chapter 1 I discussed the general trend toward modularity,  Methodologies like [OOCSS](http://oocss.org/), [SMACSS](https://smacss.com/), and [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax)  I understand how it's easy to conflate these things. http://www.smashingmagazine.com/2013/08/02/other-interface-atomic-design-sass/
+You can apply the atomic design methodology to the user interface of any software–Microsoft Word, Keynote, Photoshop, whatever. As an example, let's take the native mobile app Instagram and apply atomic design.
 
+{% include figure.html src="../images/content/instagram-atomic.png" caption="Atomic design applied to the native mobile app Instagram" %}
 
-For example, Instagram is a native mobile application 
-[Instagram example http://www.theverge.com/2015/7/6/8899807/instagram-1080p-pictures-photo-upload]
-In fact, you can take the user interface of any software–Microsoft Word, Keynote, Photoshop, whatever–and apply the atomic design methodology to it. For instance, we can take the native mobile app Instagram and apply atomic design.
+Let's walk through this atomized Instagram interface:
 
-{% include figure.html src="../images/content/instagram-atomic.png" caption="" %}
+- **Atoms**: This screen of Instagram's UI consists of a handful of icons, some text-level elements, and two image types: the primary image and the user's avatar image.
+- **Molecules**: Several of the icons come together to form simple utilitarian components like the bottom navigation bar and the photo actions bar where users can like or comment on a photo. Also, simple combinations of text and/or images form relatively simple components.
+- **Organisms**: Here we can see the photo organism take shape, which serves as the cornerstone of the entire Instagram experience. The photo organism consists of the user's information, timestamp, the photo itself, actions around that photo, and information about the photo including like count and caption. This organism is stacked repeatedly in a never-ending stream of user-generated photos.
+- **Templates**: We get to see our components come together in the context of a layout. Also, it's here where we see the exposed content skeleton of the Instagram experience, highlighting dynamic content such as the user's handle, avatar, photo, like count, and caption.
+- **Pages**: And finally we see the final product, complete with real content poured into it, which helps ensure the underlying design system comes together to form a beautiful and functional UI.
+
+I show this non-Web example because atomic design tends to get misinterpreted as an approach to Web-specific technologies like CSS and JavaScript. Let me be clear about this: **atomic design has nothing to do with CSS or JavaScript architecture**. In Chapter 1 we discussed the trend toward modularity in all aspects of the design and development process, which includes CSS and JavaScript. For instance, CSS methodologies like [OOCSS](http://oocss.org/), [SMACSS](https://smacss.com/), and [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax) are helping web developers architect thoughtful, modular CSS. But that's not at all what atomic design is trying to accomplish. I understand how it can be easy to [conflate these things](http://www.smashingmagazine.com/2013/08/02/other-interface-atomic-design-sass/), as CSS and JavaScript are critical ingredients when creating Web-based user interfaces. But it's important to understand that atomic design deals with architecting user interfaces, not CSS or JavaScript.
 
 ## Conclusion
 - Recap of the the atomic design methodology and its advantages
-
-http://china.org.cn/china/2015-03/17/content_35077927.htm
+- Segue into atomic design
 
 
 
