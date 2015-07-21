@@ -198,7 +198,7 @@ On the left we see the UI's content skeleton, which consists of the same *person
 The content we pour into our UIs at the page stage will influence the characteristics and parameters of the underlying design patterns. 
 
 ### Naming with Meaning
-What's in a name? As mentioned earlier, modular design and development is nothing new, so why not just stick with the language we've been using to In the two years I've been talking about atomic design, I've had a number of Discussing the importance of naming ("Modules" "components" "elements" etc)
+What's in a name? As mentioned earlier, modular design and development is nothing new, so why not just stick with the language we've been using to? In the two years I've been talking about atomic design, I've had a number of Discussing the importance of naming ("Modules" "components" "elements" etc)
 - Built in hierarchy
 - Makes a distinction between simple components (molecules) and complex components (organisms)
 
@@ -221,8 +221,7 @@ I show this non-Web example because atomic design tends to get misinterpreted as
 
 ## Conclusion
 - Recap of the the atomic design methodology and its advantages
-- Segue into atomic design
-
+- Segue into chapter 3
 
 
 
