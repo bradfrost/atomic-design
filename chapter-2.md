@@ -197,10 +197,18 @@ On the left we see the UI's content skeleton, which consists of the same *person
 
 The content we pour into our UIs at the page stage will influence the characteristics and parameters of the underlying design patterns. 
 
-### Naming with Meaning
-What's in a name? As mentioned earlier, modular design and development is nothing new, so why not just stick with the language we've been using to? In the two years I've been talking about atomic design, I've had a number of Discussing the importance of naming ("Modules" "components" "elements" etc)
-- Built in hierarchy
-- Makes a distinction between simple components (molecules) and complex components (organisms)
+### What's in a name?
+Throughout this book I've mentioned that modular design and development is nothing new. So why are we introducing terms like "atoms", "molecules", and "organisms" when we can just stick with established terms like "modules", "components", "elements" "sections", and "regions"?
+
+For as long as I've been talking about atomic design, I've had people proffer alternate names for the stages of the methodology. Person One would suggest "Why not just name them 'elements', 'modules', and 'components'?" while Person Two would suggest "Why not just name them 'base', 'components', and 'modules'?" The issue with terms like "components" and "modules" is that a sense of hierarchy can't be deduced from the names alone. **"Atoms", "molecules", and "organisms" imply a hierarchy** that anyone with a basic knowledge of chemistry can hopefully wrap their heads around.
+
+That being said, naming things is hard and imperfect. The names I've chosen for the stages of atomic design have worked really well for me and the teams I've worked with. But maybe they don't work for you. That's more than OK. Here's one perspective from a designer at a digital agency:
+
+> Even though they couldn’t pick up on all the terminology [of atomic design], they didn’t throw the concept out the door. Instead we rallied together to transform it to work for us.  The way we made it work for us is by changing the 5 parts that make it up while still maintaining the overall concept. Our goal was to come up with terms that made sense to us and anyone we would on board in the future. <cite><a href="http://createstopbecreative.com/2015/03/04/how-we-adapted-atomic-design/">Jono Herrington</a></cite>
+
+The terms the team came up with were "foundations", "materials", "rooms", "templates", and "pages". Does this make sense to you? It doesn't matter. By taking the time to establish an agreed-upon vocabulary, their team was get on board with the concept of atomic design and work together effectively by speaking the same language.
+
+"Atomic design" as a term encapsulates the concepts of modular design and development, which becomes a useful shorthand for convincing stakeholders and talking with colleagues. But ultimately whatever names you choose to work with should help you and your organization craft an effective UI design system.
 
 ## Atomic design is for user interfaces
 Atomic design is a concept born of the Web. After all, your lowly author is a web designer, which is mainly the reason this book primarily focuses on Web-based interfaces. But it's important to understand that **atomic design applies to all user interfaces, not just Web-based ones.** 
