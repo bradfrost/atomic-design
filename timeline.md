@@ -22,3 +22,13 @@ permalink: /timeline/
    [View issues on Github](https://github.com/bradfrost/atomic-design/issues)
 9. ### *01/13/15* Begin writing chapter 1
    [Read Chapter 1](http://atomicdesign.bradfrost.com/chapter-1/)
+10. ### *01/15/15* Send Email Newsletter #1
+   [View newsletter](http://us5.campaign-archive1.com/?u=6c0c3f4dcd40d88bc1cedb3fa&id=25eb2d93e6)
+11. ### *01/15/15* Send Email Newsletter #2
+   [View newsletter](http://us5.campaign-archive1.com/?u=6c0c3f4dcd40d88bc1cedb3fa&id=a80218ef20)
+12. ### *04/09/15* Chapter 1 draft complete
+   [Read Chapter 1](http://atomicdesign.bradfrost.com/chapter-1/)
+13. ### *04/27/15* Begin writing chapter 2 
+   [Read Chapter 2](http://atomicdesign.bradfrost.com/chapter-2/)
+14. ### *07/23/15* Chapter 2 draft complete
+   [Read Chapter 2](http://atomicdesign.bradfrost.com/chapter-2/)
