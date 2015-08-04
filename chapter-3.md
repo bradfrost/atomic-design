@@ -11,5 +11,4 @@ This chapter will discuss tools and techniques to create atomic design systems. 
 - Front-end style guides
 - Pattern Lab, what and how
 - Getting started
-- Interface inventories
 - Pattern library boilerplates, and front-end style guides
