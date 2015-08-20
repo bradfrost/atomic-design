@@ -12,3 +12,4 @@ product_link: http://shop.bradfrost.com/products/atomic-design-ebook
 # Build settings
 markdown: kramdown
 exclude: ["node_modules", "Gruntfile.js", "package.json", "_sass", ".sass-cache", ".DS_Store"]
+port: 4200
