@@ -19,7 +19,7 @@ The cornerstone of pattern-based design and development is the pattern library, 
 
 That all sounds wonderful, right? I can almost hear you saying, "I need this whole pattern library thing in my life." But how do we make pattern libraries happen? Well, you've come to the right place, friend, because this chapter will introduce helpful tools for creating pattern libraries. 
 
-I'll be talking about the qualities of effective pattern libraries through the lens of a tool called [Pattern Lab](http://patternlab.io), an open-source project created by [Dave Olsen](http://dmolsen.com) and myself in order to execute atomic design systems. While I'll excitedly discuss Pattern Lab and its various features, I want to stress that the point of this chapter is to cover the characteristics of well-constructed pattern libraries, not promote any one specific tool. No single tool will be a perfect fit for all readers, but be sure to keep the the following concepts in mind when deciding what tools to use to create your pattern libraries.
+I'll be talking about the qualities of effective pattern libraries through the lens of a tool called [Pattern Lab](http://patternlab.io), an open-source project created by [Dave Olsen](http://dmolsen.com) and myself in order to execute atomic design systems. While I'll excitedly discuss Pattern Lab and its various features, I want to stress that the point of this chapter is to cover the characteristics of well-constructed pattern libraries, not promote any one specific tool. No single tool will be a perfect fit for all readers, so be sure to keep the the following principles and features in mind when deciding what tools to use to create your pattern libraries.
 
 ## What is Pattern Lab?
 [Pattern Lab](http://patternlab.io)
