@@ -308,7 +308,7 @@ Better yet, even if you were to undertake a major redesign you'll find that many
 By now the benefits of creating design systems should be abundantly clear, and hopefully visions of sugar plums and beautiful style guides are dancing through your head. But in order to reach style guide nirvana, you must first overcome the many treacherous challenges that come with the territory.
 
 ### The hard sell
-In order to benefit from style guides, organizations must first appropriate the necessary time and budget to make them happen. **That requires organizations to overcome the short-term mentality** that all-to-often creeps its way into company culture.
+In order to benefit from style guides, organizations must first appropriate the necessary time and budget to make them happen. **That requires organizations to overcome the short-term mentality that all too often creeps its way into company culture.
 
 The long-term benefits that style guides provide are obvious to those who are already thinking about the long game. The challenge, therefore, becomes convincing those stuck in a short-term, quarter-by-quarter mindset that establishing a sound design system is a smart investment in the future.
 
