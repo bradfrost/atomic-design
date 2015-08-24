@@ -310,7 +310,7 @@ By now the benefits of creating design systems should be abundantly clear, and h
 ### The hard sell
 In order to benefit from style guides, organizations must first appropriate the necessary time and budget to make them happen. **That requires organizations to overcome the short-term mentality** that all-to-often creeps its way into company culture.
 
-The long-term benefits that style guides provide are obvious to those who are already thinking about the long game. The challenge therefore becomes convincing those stuck in a short-term, quarter-by-quarter mindset that establishing a sound design system is a smart investment in the future. 
+The long-term benefits that style guides provide are obvious to those who are already thinking about the long game. The challenge, therefore, becomes convincing those stuck in a short-term, quarter-by-quarter mindset that establishing a sound design system is a smart investment in the future.
 
 ### A matter of time
 > The hard part is building the machine that builds the product.” <cite>[Dennis Crowley](http://techcrunch.com/2011/03/03/founder-stories-foursquare-crowley-machine/) </cite>
