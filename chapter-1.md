@@ -54,7 +54,7 @@ and Henry Ford’s assembly line, which forever transformed the automobile-manuf
 
 As the machine age transitioned into the computer age, the computer science field began practicing object-oriented programming and establishing important modular concepts like *separation of concerns* and the *single responsibility principle*. It is from this world that the World Wide Web was born, so it’s no surprise that [modular design](http://www.w3.org/DesignIssues/Principles.html#Modular) quickly became a design principle for the architecture of the Web. 
 
-Slowly but surely these concepts found their way into web designers’ workflows. In the early 2000’s we saw the introduction of libraries like [YUI](http://yuilibrary.com/) and [jQuery UI](http://jqueryui.com/), which provided developers with a toolkit of widgets and patterns to better create interactive interfaces.
+Slowly, but surely, these concepts found their way into web designers’ workflows. In the early 2000s we saw the introduction of libraries like [YUI](http://yuilibrary.com/) and [jQuery UI](http://jqueryui.com/), which provided developers with a toolkit of widgets and patterns to better create interactive interfaces.
 
 If modularity has been around for such a long time, why are we talking about it now?
 
