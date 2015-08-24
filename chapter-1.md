@@ -79,7 +79,7 @@ When massive redesigns launch with significant changes to the experience, users 
 
 In addition to disorienting users, these monolithic redesigns don’t get to the the organizational root of the problem. Without a fundamental change in process, history is bound to repeat itself, and what’s New-And-Shiny™ today becomes Old-And-Crusty™ tomorrow. The cycle repeats itself as companies push off minor updates until the next Big Redesign, ultimately paralyzing themselves and frustrating users in the process.
 
-Thankfully, even massive organizations are taking cues from the smaller, leaner startup world, and are striving to get things out the door quicker. By creating *minimum viable products* and shipping often to iteratively improve the experience, organizations are able to better address user feedback and keep up with the ever-shifting Web landscape.
+Thankfully, even massive organizations are taking cues from the smaller, leaner startup world and striving to get things out the door quicker. By creating *minimum viable products* and shipping often to iteratively improve the experience, organizations are able to better address user feedback and keep up with the ever-shifting Web landscape.
 
 Moving away from Ron-Popeil-esque, set-it-and-forget-it redesigns requires deliberate changes in organizational structure and workflow. Which is a heck of a lot easier said than done.
 
