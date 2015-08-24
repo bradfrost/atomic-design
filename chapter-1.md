@@ -320,7 +320,7 @@ Perhaps the biggest, most unavoidable challenge is the fact that **style guides 
 ### Auxiliary Projects
 **Pattern libraries are often treated as auxiliary projects**, rather than as the component parts of the final product. By treating pattern libraries as something separate from the core project, they tend to fall into the "nice to have" category and become first on the chopping block when the going gets tough.
 
-This auxiliary project conundrum reminds me of sentiments I often hear around factoring accessibility into projects. They say, "Oh, we wish we had time and budget for accessibility, but…" The notion that accessibility (and other principles like performance, responsiveness, etc) is a costly "extra" line item is a fallacy. Pattern libraries, like accessibility, are good ideas to bake into your workflow whether or not the project plan explicitly calls for them.
+This auxiliary project conundrum reminds me of sentiments I often hear around factoring accessibility into projects. They say, "Oh, we wish we had time and budget for accessibility, but…" The notion that accessibility (and other principles like performance, responsiveness, etc.) is a costly "extra" line item is a fallacy. Pattern libraries, like accessibility, are good ideas to bake into your workflow whether or not the project plan explicitly calls for them.
 
 ### Maintenance and Governance
 Even if time and money are allocated to establish style guides, these valuable tools often can die on the vine when if they're not given the focus they need in order to reach their true potential. 
