@@ -68,7 +68,7 @@ Like it or not, this multi-device universe is now our reality. It was hard enoug
 
 In order to address this reality while maintaining our sanity, it’s absolutely necessary for us to take a step back and break these giant responsibilities into smaller, more manageable  chunks.
 
-And that’s exactly what folks are doing. The spirit of modularity is weaving its way into every aspect of the Web creation process, and is having profound effects on organizations’ strategy, process, content, design, and development.
+And that’s exactly what folks are doing. The spirit of modularity is weaving its way into every aspect of the Web creation process and having profound effects on organizations’ strategy, process, content, design, and development.
 
 ### A manageable strategy
 Every organization is finally realizing that bulldozing their entire website and replacing it with a New-And-Shiny™ website every three-to-eight years isn’t (and never was) an optimal solution.
