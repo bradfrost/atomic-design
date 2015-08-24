@@ -187,7 +187,7 @@ Now that we’ve put frameworks through the wringer, it’s important to take a 
 It’s not just about using a design system, it’s about creating *your* system.
 
 ## Design systems save the day
-So what do a sound design systems look like? What form do they take? How do you create, maintain, and enforce them? 
+So what do sound design systems look like? What form do they take? How do you create, maintain, and enforce them? 
 
 The cornerstones of good design systems are *style guides*, which document and organize design materials while providing guidelines, usage, and guardrails.
 
