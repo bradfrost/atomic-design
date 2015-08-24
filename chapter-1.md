@@ -254,7 +254,7 @@ I recently visited my health insurance provider’s website to pay my bill. In t
 
 Style guides help reign in these inconsistencies by encouraging  reuse of interface elements. Designers and developers can refer back to existing patterns to ensure the work they’re producing is consistent with what’s already been established.
 
-Even third parties responsible for matching their experiences with the branding/look & feel of a primary experience can make great use of a style guide. Outside experiences, such as payment portals or localized sites, can better match the look and feel of the primary experience by applying the patterns in the style guide.
+Even third parties responsible for matching their experiences with the branding/look and feel of a primary experience can make great use of a style guide. Outside experiences, such as payment portals or localized sites, can better match the look and feel of the primary experience by applying the patterns in the style guide.
 
 Making style guides central to your process results in user interfaces that feel more cohesive and trustworthy, which helps users accomplish their tasks faster and empowers them to master the interface. 
 
