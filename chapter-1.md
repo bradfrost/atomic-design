@@ -36,7 +36,7 @@ But we’re now 25 years into this new medium, and this once-necessary figure of
 
 “How are we ever going to redesign this university website that contains over 30,000 *pages*?!”
 
-All of the above statements make the fundamental mistake of assuming a *page* is a uniform, isolated, quantifiable thing. The reality is that the Web is a fluid, bi-directional, interdependent medium, and as soon as we come to terms with that fact the notion of the *page* quickly erodes as a useful means to scope and create Web experiences.
+All of the above statements make the fundamental mistake of assuming a *page* is a uniform, isolated, quantifiable thing. The reality is that the Web is a fluid, bi-directional, interdependent medium. As soon as we come to terms with this fact, the notion of the page quickly erodes as a useful means to scope and create Web experiences.
 
 How long will a homepage take to build? Well, that sort of depends on what’s on it, right? Maybe the homepage simply consists of a  tagline and a background image, which means it could be done by lunch. Or maybe it’s chock full of carousels, dynamic forms, and third-party integrations. In that case, maybe the homepage will take several months to complete. 
 
