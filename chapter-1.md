@@ -18,7 +18,7 @@ The page metaphor has been baked into the lexicon of the Web since the very begi
 
 So what? 
 
-As we’ll discuss throughout this book, the way things are named very much impact how they’re perceived and utilized. Thinking of the Web as *pages* has real ramifications on how people interact with web experiences, and influences how we as an industry go about creating Web interfaces.
+As we’ll discuss throughout this book, the way things are named very much impacts how they’re perceived and utilized. Thinking of the Web as *pages* has real ramifications on how people interact with web experiences, and influences how we as an industry go about creating Web interfaces.
 
 From the beginning, the page metaphor provided users with a familiar language for which to navigate this brave new World Wide Web. Concepts like bookmarking, pagination, etc. helped new Web users explore and eventually master an entirely new medium using conventions they were already comfortable with.
 
@@ -36,11 +36,11 @@ But we’re now 25 years into this new medium, and this once-necessary figure of
 
 “How are we ever going to redesign this university website that contains over 30,000 *pages*?!”
 
-All of the above statements make the fundamental mistake of assuming a *page* is a uniform, isolated, quantifiable thing. The reality is that the Web is a fluid, bi-directional, interdependent medium, and as soon as we come to terms with that fact the notion of the *page* quickly erodes as a useful means to scope and create Web experiences.
+All of the above statements make the fundamental mistake of assuming a *page* is a uniform, isolated, quantifiable thing. The reality is that the Web is a fluid, bi-directional, interdependent medium. As soon as we come to terms with this fact, the notion of the page quickly erodes as a useful means to scope and create Web experiences.
 
 How long will a homepage take to build? Well, that sort of depends on what’s on it, right? Maybe the homepage simply consists of a  tagline and a background image, which means it could be done by lunch. Or maybe it’s chock full of carousels, dynamic forms, and third-party integrations. In that case, maybe the homepage will take several months to complete. 
 
-As for the 30,000-page university website, it might be tempting to declare “Thousands of pages!? Wow, that sounds challenging!” But in reality, those 30,000 pages may consist of three content types and two over-arching layouts.
+As for the 30,000-page university website, it might be tempting to declare, “Thousands of pages!? Wow, that sounds challenging!” But in reality, those 30,000 pages may consist of three content types and two over-arching layouts.
 
 Ultimately, a project’s level of effort is much better determined by the functionality and [components](http://bradfrost.com/blog/post/scope-components-not-pages/) contained within those pages, rather than on the quantity of pages themselves.
 
@@ -54,7 +54,7 @@ and Henry Ford’s assembly line, which forever transformed the automobile-manuf
 
 As the machine age transitioned into the computer age, the computer science field began practicing object-oriented programming and establishing important modular concepts like *separation of concerns* and the *single responsibility principle*. It is from this world that the World Wide Web was born, so it’s no surprise that [modular design](http://www.w3.org/DesignIssues/Principles.html#Modular) quickly became a design principle for the architecture of the Web. 
 
-Slowly but surely these concepts found their way into web designers’ workflows. In the early 2000’s we saw the introduction of libraries like [YUI](http://yuilibrary.com/) and [jQuery UI](http://jqueryui.com/), which provided developers with a toolkit of widgets and patterns to better create interactive interfaces.
+Slowly, but surely, these concepts found their way into web designers’ workflows. In the early 2000s we saw the introduction of libraries like [YUI](http://yuilibrary.com/) and [jQuery UI](http://jqueryui.com/), which provided developers with a toolkit of widgets and patterns to better create interactive interfaces.
 
 If modularity has been around for such a long time, why are we talking about it now?
 
@@ -68,7 +68,7 @@ Like it or not, this multi-device universe is now our reality. It was hard enoug
 
 In order to address this reality while maintaining our sanity, it’s absolutely necessary for us to take a step back and break these giant responsibilities into smaller, more manageable  chunks.
 
-And that’s exactly what folks are doing. The spirit of modularity is weaving its way into every aspect of the Web creation process, and is having profound effects on organizations’ strategy, process, content, design, and development.
+And that’s exactly what folks are doing. The spirit of modularity is weaving its way into every aspect of the Web creation process and having profound effects on organizations’ strategy, process, content, design, and development.
 
 ### A manageable strategy
 Every organization is finally realizing that bulldozing their entire website and replacing it with a New-And-Shiny™ website every three-to-eight years isn’t (and never was) an optimal solution.
@@ -79,7 +79,7 @@ When massive redesigns launch with significant changes to the experience, users 
 
 In addition to disorienting users, these monolithic redesigns don’t get to the the organizational root of the problem. Without a fundamental change in process, history is bound to repeat itself, and what’s New-And-Shiny™ today becomes Old-And-Crusty™ tomorrow. The cycle repeats itself as companies push off minor updates until the next Big Redesign, ultimately paralyzing themselves and frustrating users in the process.
 
-Thankfully, even massive organizations are taking cues from the smaller, leaner startup world, and are striving to get things out the door quicker. By creating *minimum viable products* and shipping often to iteratively improve the experience, organizations are able to better address user feedback and keep up with the ever-shifting Web landscape.
+Thankfully, even massive organizations are taking cues from the smaller, leaner startup world and striving to get things out the door quicker. By creating *minimum viable products* and shipping often to iteratively improve the experience, organizations are able to better address user feedback and keep up with the ever-shifting Web landscape.
 
 Moving away from Ron-Popeil-esque, set-it-and-forget-it redesigns requires deliberate changes in organizational structure and workflow. Which is a heck of a lot easier said than done.
 
@@ -108,9 +108,9 @@ In order to properly address this increasingly diverse and eclectic digital land
 Thankfully, this future is starting to take shape. Organizations are recognizing the need to create modularized content to better reach their audience wherever they may be. And content management systems are evolving beyond their Web publishing platform roots into tools that can elegantly create and maintain modular content. While sophisticated content management systems have existed for years now in the form of custom solutions like [NPR’s COPE (Create Once, Publish Everywhere) platform](http://www.programmableweb.com/news/cope-create-once-publish-everywhere/2009/10/13) , smart modular thinking is making its way into mainstream content management systems.
 
 ### Classy code
-Modularity has long been a staple principle in the world of computer science, as we discussed earlier in the chapter. While this principle existed long before the Web was invented, it’s taken some time for modularity to become engrained in the minds and hearts of Web developers.
+Modularity has long been a staple principle in the world of computer science, as we discussed earlier in the chapter. While this principle existed long before the Web was invented, it has taken some time for modularity to become engrained in the minds and hearts of Web developers.
 
-Despite it been around since 1995, JavaScript, the programming language of the Web, first had to endure some growing pains in order to mature into the capable, respected language it is today. Now that JavaScript has grown up and dust has settled, developers can now apply those tried-and-true computer science principles to their Web development workflows. As a result, we’re seeing folks develop sophisticated JavaScript [patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/) and architectures.
+Despite it being around since 1995, JavaScript, the programming language of the Web, first had to endure some growing pains in order to mature into the capable, respected language it is today. Now that JavaScript has grown up and the dust has settled, developers can now apply those tried-and-true computer science principles to their Web development workflows. As a result, we’re seeing folks develop sophisticated JavaScript [patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/) and architectures.
 
 Applying modular programming principles to JavaScript is a bit of a no brainer, since JavaScript is itself a programming language. But  object-oriented thinking is weaving its way into other aspects of the Web as well, including CSS, the styling language of the Web. Methodologies like [OOCSS](http://oocss.org/), [SMACSS](https://smacss.com/), and [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax) have cropped up to help Web designers create and maintain modular CSS architectures.
 
@@ -170,13 +170,13 @@ Of course that’s not how human beings work. We all have different tastes, goal
 
 Yet we on the Web tend to fall into the trap of wanting everyone to do things the same way. “Why don’t all browsers just standardize on Webkit?” “Why can’t device manufacturers just use the same screen sizes?” “Always use jQuery!” “Never use jQuery!” “Just use frameworks!” “Never use frameworks!” 
 
-Just like the real world, the diverse needs, goals, and desires of Web projects lead to a myriad of different solutions. Of course there’s a time and place for everything, and designers and developers need the discernment to know which tools to use and when.
+Just like the real world, the diverse needs, goals, and desires of Web projects lead to a myriad of different solutions. Of course, there’s a time and place for everything, and designers and developers need the discernment to know which tools to use and when.
 
 Front-end frameworks are tools that provide a specific solution and a particular look and feel. While those solutions help speed up development, the resulting experiences end up resembling those sci-fi jumpsuits. When everyone uses the same buttons, grids, dropdowns, and components, things naturally start to look the same. If Nike, Adidas, Puma, and Reebok were to redesign their respective sites using Bootstrap, they would look substantially similar. That’s certainly not what these brands are going for. Sure, each brand can modify and extend the default look and feel, but after a while customization means fighting the framework’s provided structure, style, and functionality.
 
-In addition to lookalike issues, these frameworks can add unnecessary bloat to an experience. It’s fantastic that frameworks provide plenty of pre-built components and functionality, but a large percentage of designers and developers won’t utilize every aspect of the framework. Unfortunately end users still have to download the framework’s unused CSS and JavaScript, resulting in slower page loads and frustration.
+In addition to lookalike issues, these frameworks can add unnecessary bloat to an experience. It’s fantastic that frameworks provide plenty of pre-built components and functionality, but a large percentage of designers and developers won’t utilize every aspect of the framework. Unfortunately, end users still have to download the framework’s unused CSS and JavaScript, resulting in slower page loads and frustration.
 
-On the flip side of that coin, frameworks might not go far enough, leading to developers needing to create a substantial amount of custom code in order to achieve their projects’ goals. At some point a threshold is crossed where the initial benefits of using a framework–namely development *speed*– are outweighed by the time spent modifying, extending, and fixing the framework.
+On the flip side of that coin, frameworks might not go far enough, leading to developers needing to create a substantial amount of custom code in order to achieve their projects’ goals. At some point, a threshold is crossed where the initial benefits of using a framework–namely development *speed*– are outweighed by the time spent modifying, extending, and fixing the framework.
 
 And then there’s the issue with naming. Using a framework means subscribing to someone else’s structure, naming, and style conventions. Of course it’s important to establish a useful front-end lexicon, but what makes sense for an organization might not be what comes out of a framework’s box.  I, for one, would balk at the idea of using Bootstrap’s default featured-content area component they call a “jumbotron”. How a framework’s naming conventions jive with an existing codebase and workflow should be properly discussed before jumping on board the framework train.
 
@@ -187,7 +187,7 @@ Now that we’ve put frameworks through the wringer, it’s important to take a 
 It’s not just about using a design system, it’s about creating *your* system.
 
 ## Design systems save the day
-So what do a sound design systems look like? What form do they take? How do you create, maintain, and enforce them? 
+So what do sound design systems look like? What form do they take? How do you create, maintain, and enforce them? 
 
 The cornerstones of good design systems are *style guides*, which document and organize design materials while providing guidelines, usage, and guardrails.
 
@@ -254,7 +254,7 @@ I recently visited my health insurance provider’s website to pay my bill. In t
 
 Style guides help reign in these inconsistencies by encouraging  reuse of interface elements. Designers and developers can refer back to existing patterns to ensure the work they’re producing is consistent with what’s already been established.
 
-Even third parties responsible for matching their experiences with the branding/look & feel of a primary experience can make great use of a style guide. Outside experiences, such as payment portals or localized sites, can better match the look and feel of the primary experience by applying the patterns in the style guide.
+Even third parties responsible for matching their experiences with the branding/look and feel of a primary experience can make great use of a style guide. Outside experiences, such as payment portals or localized sites, can better match the look and feel of the primary experience by applying the patterns in the style guide.
 
 Making style guides central to your process results in user interfaces that feel more cohesive and trustworthy, which helps users accomplish their tasks faster and empowers them to master the interface. 
 
@@ -308,9 +308,9 @@ Better yet, even if you were to undertake a major redesign you'll find that many
 By now the benefits of creating design systems should be abundantly clear, and hopefully visions of sugar plums and beautiful style guides are dancing through your head. But in order to reach style guide nirvana, you must first overcome the many treacherous challenges that come with the territory.
 
 ### The hard sell
-In order to benefit from style guides, organizations must first appropriate the necessary time and budget to make them happen. **That requires organizations to overcome the short-term mentality** that all-to-often creeps its way into company culture.
+In order to benefit from style guides, organizations must first appropriate the necessary time and budget to make them happen. **That requires organizations to overcome the short-term mentality that all too often creeps its way into company culture.
 
-The long-term benefits that style guides provide are obvious to those who are already thinking about the long game. The challenge therefore becomes convincing those stuck in a short-term, quarter-by-quarter mindset that establishing a sound design system is a smart investment in the future. 
+The long-term benefits that style guides provide are obvious to those who are already thinking about the long game. The challenge, therefore, becomes convincing those stuck in a short-term, quarter-by-quarter mindset that establishing a sound design system is a smart investment in the future.
 
 ### A matter of time
 > The hard part is building the machine that builds the product.” <cite>[Dennis Crowley](http://techcrunch.com/2011/03/03/founder-stories-foursquare-crowley-machine/) </cite>
@@ -320,7 +320,7 @@ Perhaps the biggest, most unavoidable challenge is the fact that **style guides 
 ### Auxiliary Projects
 **Pattern libraries are often treated as auxiliary projects**, rather than as the component parts of the final product. By treating pattern libraries as something separate from the core project, they tend to fall into the "nice to have" category and become first on the chopping block when the going gets tough.
 
-This auxiliary project conundrum reminds me of sentiments I often hear around factoring accessibility into projects. They say, "Oh, we wish we had time and budget for accessibility, but…" The notion that accessibility (and other principles like performance, responsiveness, etc) is a costly "extra" line item is a fallacy. Pattern libraries, like accessibility, are good ideas to bake into your workflow whether or not the project plan explicitly calls for them.
+This auxiliary project conundrum reminds me of sentiments I often hear around factoring accessibility into projects. They say, "Oh, we wish we had time and budget for accessibility, but…" The notion that accessibility (and other principles like performance, responsiveness, etc.) is a costly "extra" line item is a fallacy. Pattern libraries, like accessibility, are good ideas to bake into your workflow whether or not the project plan explicitly calls for them.
 
 ### Maintenance and Governance
 Even if time and money are allocated to establish style guides, these valuable tools often can die on the vine when if they're not given the focus they need in order to reach their true potential. 
