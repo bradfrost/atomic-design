@@ -36,7 +36,7 @@ I'll be talking about the qualities of effective pattern libraries through the l
 - A UI framework like Bootstrap or Foundation (in fact, these frameworks can be used inside Pattern Lab)
 - Language, library, or style dependent
 - Incredibly rigid - you can bulldoze the entire atomic design labels, etc
-- “Just” a pattern library, but also not a production-ready static site generator that's going to replace your CMS
+- “Just” a pattern library, but also not a production-ready static site generator that's going to replace your CMS.
 
 ### Atomic design system builder
 - Demonstrate how patterns get included inside other patterns
