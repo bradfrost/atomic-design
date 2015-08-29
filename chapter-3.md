@@ -19,27 +19,26 @@ The cornerstone of pattern-based design and development is the pattern library, 
 
 That all sounds wonderful, right? I can almost hear you saying, "I need this whole pattern library thing in my life." But how do we make pattern libraries happen? Well, you've come to the right place, friend, because this chapter will introduce helpful tools for creating pattern libraries. 
 
-I'll be talking about the qualities of effective pattern libraries through the lens of a tool called [Pattern Lab](http://patternlab.io), an open-source project created by [Dave Olsen](http://dmolsen.com) and myself in order to execute atomic design systems. While I'll excitedly discuss Pattern Lab and its various features, I want to stress that the point of this chapter is to cover the characteristics of well-constructed pattern libraries, not promote any one specific tool. No single tool will be a perfect fit for all readers, so be sure to keep the the following principles and features in mind when deciding what tools to use to create your pattern libraries.
+I'll be talking about the qualities of effective pattern libraries through the lens of a tool called [Pattern Lab](http://patternlab.io), an open-source project created by [Dave Olsen](http://dmolsen.com) and myself in order to execute atomic design systems. While I'll excitedly discuss Pattern Lab and its various features, I want to stress that the point of this chapter is to cover the characteristics of well-constructed pattern libraries, not promote any one specific tool. No single tool will be a perfect fit for all readers, but be sure to keep the following principles in mind when deciding what tools to use to create your pattern libraries.
 
-## What is Pattern Lab?
-[Pattern Lab](http://patternlab.io)
+## Just what exactly is Pattern Lab?
+Before diving into the nuts and bolts of [Pattern Lab](http://patternlab.io), it's important to take time to explain what Pattern Lab is and isn't.
 
-### What Pattern Lab is
-- Design builder builder - static site generator, integrated tool for creating production-ready front-end UIs
-- End goal being the comprehensive component library 
-- Pattern documentation tool
-- Annotation tool
-- Pattern starter kit
-- Viewport resizer
+### Pattern Lab is…
+- A static site generator for building atomic design systems
+- A pattern documentation and annotation tool
+- A pattern starter kit
 
-### What Pattern Lab isn't
-- A UI framework like Bootstrap or Foundation (in fact, these frameworks can be used inside Pattern Lab)
-- Language, library, or style dependent
-- Incredibly rigid - you can bulldoze the entire atomic design labels, etc
-- “Just” a pattern library, but also not a production-ready static site generator that's going to replace your CMS.
+### Pattern Lab isn't…
+- A UI framework like Bootstrap or Foundation
+- Language, library, style, or buzzword dependent
+- A replacement for content management systems
 
-### Atomic design system builder
+If you're sitting there scratching your head, fear not! I'll elaborate on these points in the following section.
+
+## Building atomic design systems with Pattern Lab
 - Demonstrate how patterns get included inside other patterns
+- Russian nesting dolls
 - Discuss replacing default data with real representative content (mention how the new version of Pattern Lab supports YAML, Markdown, etc in addition to JSON)
 
 ### Viewport tools for flexible patterns
@@ -58,9 +57,14 @@ I'll be talking about the qualities of effective pattern libraries through the l
 - Documentation tools
 
 ### Pattern Lineage
+- 
 
 ### More tools
+- Plugins
 
 
 ## To each their own
 [Styleguides.io/tools.html]()
+
+## Making it all work
+This chapter we 
