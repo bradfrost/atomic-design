@@ -64,30 +64,60 @@
 <p>I’ll be talking about the qualities of effective pattern libraries through the lens of a tool called <a href="http://patternlab.io">Pattern Lab</a>, an open-source project created by <a href="http://dmolsen.com">Dave Olsen</a> and myself in order to execute atomic design systems. While I’ll excitedly discuss Pattern Lab and its various features, I want to stress that the point of this chapter is to cover the characteristics of well-constructed pattern libraries, not promote any one specific tool. No single tool will be a perfect fit for all readers, but be sure to keep the following principles in mind when deciding what tools to use to create your pattern libraries.</p>
 
 <h2 id="just-what-exactly-is-pattern-lab">Just what exactly is Pattern Lab?</h2>
-<p>Before diving into the nuts and bolts of <a href="http://patternlab.io">Pattern Lab</a>, it’s important to take time to explain what Pattern Lab is and isn’t.</p>
+<p>Before we dive into the nuts and bolts of how Pattern Lab works, it’s important to take time to explain what the tool is and isn’t.</p>
 
 <h3 id="pattern-lab-is">Pattern Lab is…</h3>
 <ul>
-  <li>A static site generator for building atomic design systems</li>
-  <li>A pattern documentation and annotation tool</li>
-  <li>A pattern starter kit</li>
+  <li>A static site generator for building atomic design systems.</li>
+  <li>A pattern documentation and annotation tool.</li>
+  <li>A pattern starter kit.</li>
 </ul>
 
 <h3 id="pattern-lab-isnt">Pattern Lab isn’t…</h3>
 <ul>
-  <li>A UI framework like Bootstrap or Foundation</li>
-  <li>Language, library, style, or buzzword dependent</li>
-  <li>A replacement for content management systems</li>
+  <li>A UI framework like Bootstrap or Foundation.</li>
+  <li>Language, library, style, or buzzword dependent.</li>
+  <li>A replacement for content management systems.</li>
 </ul>
 
-<p>If you’re sitting there scratching your head, fear not! I’ll elaborate on these points in the following section.</p>
+<p>[To do: elaborate on what PL is and isn’t]</p>
+
+<p>So what does Pattern Lab look like? Drumroll, please. </p>
+
+<figure>
+    <img src="../images/content/pattern-lab-default.png" alt="The default Pattern Lab dashboard. What it lacks in good looks, it makes up for in utility." />
+	<figcaption>
+	    The default Pattern Lab dashboard. What it lacks in good looks, it makes up for in utility.
+	</figcaption>
+</figure>
+
+<p>Not a terribly inspiring design, eh? Believe it or not, this minimal (one may even say “lack of”) design is deliberate. To avoid incorrect classification as a UI framework like Bootstrap, the design is deliberately stripped down so no one would mistakenly use Pattern Lab’s demo UI as a framework. Pattern Lab doesn’t give you any answers as to how to design or architect your front-end code; <em>you have to do all that work yourself.</em> The look &amp; feel, naming conventions, syntax, structure, libraries, and scripts you choose to use to create your UI is entirely up to you. Pattern Lab is just there to help stitch it all together.</p>
 
 <h2 id="building-atomic-design-systems-with-pattern-lab">Building atomic design systems with Pattern Lab</h2>
+<p>In order to understand how the core of Pattern Lab works, all you need to know is how Russian nesting dolls work. </p>
+
+<figure>
+    <img src="../images/content/russian-nesting-dolls.jpg" alt="Russian nesting dolls. &lt;a href='https://www.flickr.com/photos/tromal/6901848291/'&gt;via Flickr user Tromal&lt;/a&gt;" />
+	<figcaption>
+	    Russian nesting dolls. <a href="https://www.flickr.com/photos/tromal/6901848291/">via Flickr user Tromal</a>
+	</figcaption>
+</figure>
+
+<p>Matryoshka dolls, or Russian nesting dolls, are beautiful-carved, hollow, wooden dolls of increasing size that are placed one inside the other. Patterns in Pattern Lab operate in a similar manner: the smallest patterns (atoms) are included inside bigger patterns (molecules), which are included in even bigger patterns (organisms), which are in turn included in even bigger patterns (templates). </p>
+
+<p>Constructing UIs in this manner helps keeps things DRY, which stands for “Don’t Repeat Yourself.” Make a change to one of the patterns, and anywhere that pattern gets included will magically update with those changes. </p>
+
 <ul>
-  <li>Demonstrate how patterns get included inside other patterns</li>
-  <li>Russian nesting dolls</li>
-  <li>Discuss replacing default data with real representative content (mention how the new version of Pattern Lab supports YAML, Markdown, etc in addition to JSON)</li>
+  <li>Building the final UI and building its underlying design system is one in the same. </li>
 </ul>
+
+<h2 id="a-separation-between-structure-and-data">A separation between structure and data</h2>
+<ul>
+  <li>Discuss replacing default data with real representative content (mention how the new version of Pattern Lab supports YAML, Markdown, etc in addition to JSON)</li>
+  <li></li>
+</ul>
+
+<p><code>{{&gt; organisms-header }}</code></p>
 
 <h3 id="viewport-tools-for-flexible-patterns">Viewport tools for flexible patterns</h3>
 <ul>
@@ -111,13 +141,11 @@
 </ul>
 
 <h3 id="pattern-lineage">Pattern Lineage</h3>
-<ul>
-  <li></li>
-</ul>
 
 <h3 id="more-tools">More tools</h3>
 <ul>
   <li>Plugins</li>
+  <li>Next version</li>
 </ul>
 
 <h2 id="to-each-their-own">To each their own</h2>
