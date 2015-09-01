@@ -17,7 +17,7 @@ The cornerstone of pattern-based design and development is the pattern library, 
 - They **make cross-browser/device, performance, and accessibility testing easier**.
 - They **serve as a future-friendly foundation** for teams to modify, extend, and improve upon over time.
 
-That all sounds wonderful, right? I can almost hear you saying, "I need this whole pattern library thing in my life." But how do we make pattern libraries happen? Well, you've come to the right place, friend, because this chapter will introduce helpful tools for creating pattern libraries. 
+That all sounds wonderful, right? I can almost hear you saying, "I need this whole pattern library thing in my life." But how do we make pattern libraries happen? Well, you've come to the right place, friend, because the rest of this book is dedicated to exactly that. This chapter will introduce helpful tools for creating pattern libraries, and the following chapter will discuss how to make pattern-based design and development a key aspect of your workflow. 
 
 I'll be talking about the qualities of effective pattern libraries through the lens of a tool called [Pattern Lab](http://patternlab.io), an open-source project created by [Dave Olsen](http://dmolsen.com) and myself in order to execute atomic design systems. While I'll excitedly discuss Pattern Lab and its various features, I want to stress that the point of this chapter is to cover the characteristics of well-constructed pattern libraries, not sell any one specific tool to you. Hell, Pattern Lab isn't even for sale! No single tool will be a perfect fit for all readers, but be sure to keep the following principles in mind when deciding what tools to use to create your pattern libraries.
 
@@ -25,16 +25,16 @@ I'll be talking about the qualities of effective pattern libraries through the l
 Before we dive into the nuts and bolts of how Pattern Lab works, it's important to take time to explain what the tool is and isn't.
 
 ### Pattern Lab is…
-- A static site generator for building atomic design systems.
-- A pattern documentation and annotation tool.
-- A pattern starter kit.
+- a static site generator for building atomic design systems.
+- a pattern documentation and annotation tool.
+- a pattern starter kit.
 
 ### Pattern Lab isn't…
-- A UI framework like Bootstrap or Foundation.
-- Language, library, style, or buzzword dependent.
-- A replacement for content management systems.
+- a UI framework like Bootstrap or Foundation.
+- language, library, style, or buzzword dependent.
+- a replacement for content management systems.
 
-Let's walk through what these points mean, starting with the term *static site generator*. Static site generator tools live on a computer, take in some source code & assets, compile them, and spit plain-ol' HTML, CSS, and JavaScript out the other end. **Pattern Lab takes source code – namely patterns – and compiles those patterns into a functional front-end interface inside a pattern library shell**.
+Let's walk through what these points mean, starting with the term *static site generator*. Static site generator tools take in some source code & assets, compile them, and spit plain-ol' HTML, CSS, and JavaScript out the other end. **Pattern Lab takes source code – namely patterns – and compiles those patterns into a functional front-end UI inside a pattern library shell**. 
 
 So what does Pattern Lab look like? Drumroll, please. 
 
