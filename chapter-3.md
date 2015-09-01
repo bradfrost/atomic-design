@@ -19,7 +19,7 @@ The cornerstone of pattern-based design and development is the pattern library, 
 
 That all sounds wonderful, right? I can almost hear you saying, "I need this whole pattern library thing in my life." But how do we make pattern libraries happen? Well, you've come to the right place, friend, because this chapter will introduce helpful tools for creating pattern libraries. 
 
-I'll be talking about the qualities of effective pattern libraries through the lens of a tool called [Pattern Lab](http://patternlab.io), an open-source project created by [Dave Olsen](http://dmolsen.com) and myself in order to execute atomic design systems. While I'll excitedly discuss Pattern Lab and its various features, I want to stress that the point of this chapter is to cover the characteristics of well-constructed pattern libraries, not promote any one specific tool. No single tool will be a perfect fit for all readers, but be sure to keep the following principles in mind when deciding what tools to use to create your pattern libraries.
+I'll be talking about the qualities of effective pattern libraries through the lens of a tool called [Pattern Lab](http://patternlab.io), an open-source project created by [Dave Olsen](http://dmolsen.com) and myself in order to execute atomic design systems. While I'll excitedly discuss Pattern Lab and its various features, I want to stress that the point of this chapter is to cover the characteristics of well-constructed pattern libraries, not sell any one specific tool to you. Hell, Pattern Lab isn't even for sale! No single tool will be a perfect fit for all readers, but be sure to keep the following principles in mind when deciding what tools to use to create your pattern libraries.
 
 ## Just what exactly is Pattern Lab?
 Before we dive into the nuts and bolts of how Pattern Lab works, it's important to take time to explain what the tool is and isn't.
@@ -34,7 +34,7 @@ Before we dive into the nuts and bolts of how Pattern Lab works, it's important 
 - Language, library, style, or buzzword dependent.
 - A replacement for content management systems.
 
-[To do: elaborate on what PL is and isn't]
+Let's walk through what these points mean, starting with the term *static site generator*. Static site generator tools live on a computer, take in some source code & assets, compile them, and spit plain-ol' HTML, CSS, and JavaScript out the other end. **Pattern Lab takes source code – namely patterns – and compiles those patterns into a functional front-end interface inside a pattern library shell**.
 
 So what does Pattern Lab look like? Drumroll, please. 
 
