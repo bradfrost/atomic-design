@@ -65,7 +65,7 @@ To make this happen Pattern Lab uses the include feature of [Mustache](https://m
 
 This is Mustache code, in case the double curly braces ({% raw %}`{{}}`{% endraw %}) that look like little mustaches didn't give it away. The greater than symbol (`>`) is Mustache's way of telling Pattern Lab "hey, I want you to include an atom pattern called "thumbnail". Pattern Lab will go searching through its folders of patterns to find an atom named "thumbnail".
 
-{% include figure.html src="../images/content/pattern-lab-file-structure.png" caption="This is what Pattern Lab's default patterns folder structure looks like. You can name and categorize these folders however you'd like, even removing the names 'atoms', 'molecules', 'organisms', and so on. The most important thing is to establish naming & categorization that is most clear for your team." %}
+{% include figure.html src="../images/content/pattern-lab-file-structure.png" caption="This is what Pattern Lab's default patterns folder structure looks like. You can name and categorize these folders however you'd like, even removing the labels 'atoms', 'molecules', and 'organisms'. The most important consideration is to establish naming & categorization that is most clear for your team." %}
 
 Now that we know what an include looks like, let's put it into practice and take a look at a few patterns from a website I helped make for Time Inc. Here was one reusable pattern we designed:
 
@@ -89,13 +89,45 @@ When we take a peek behind the curtain to see how this pattern is constructed, w
 </code>
 </pre>
 
-You can see we have HTML markup consisting of a wrapper `div` with a class name of `block-post`, a link, a Mustache include for the thumbnail image, a `<h3>` tag for the headline, and a `<p>` tag for the excerpt. `url`, `headline`, and `excerpt`
+You can see we have HTML markup consisting of a wrapper `div` with a class name of `block-post`, a link, a Mustache include for the thumbnail image, a `<h3>` tag for the headline, and a `<p>` tag for the excerpt. You'll notice there's more Mustache code for `url`, `headline`, and `excerpt`, which we'll use later to swap in actual content. More on that in a bit.
+
+Now that we have our pattern markup established, we can now include that chunk of code in even bigger patterns using the same include pattern:
+
+<pre>
+<code>
+{% raw %}{{> molecules-block-post }}{% endraw %}
+</code>
+</pre> 
+
+a
+
+<pre>
+<code>
+{% raw %}
+\<header role="banner"\>
+    {{> atoms-logo }}
+    {{> molecules-primary-nav }}
+    {{> molecules-search }}
+\</header\>
+{% endraw %}
+</code>
+</pre>
+
+And now we can include that relatively complex pattern anywhere we need it.
+
+<pre>
+<code>
+{% raw %}{{> organisms-header }}{% endraw %}
+</code>
+</pre> 
 
 This structure encourages designers and developers to build reusable UI patterns while at the same time constructing the final put-together UI. The final interface and its underlying design system is one in the same. 
 
 ## A separation between structure and data
 - Templates and pages - replacing default data with real representative content (mention how the new version of Pattern Lab supports YAML, Markdown, etc in addition to JSON)
-- 
+
+## Pattern variations with pseudo-patterns
+- Different permissions. Homepage differences 
 
 ### Viewport tools for flexible patterns
 - The importance of flexible patterns

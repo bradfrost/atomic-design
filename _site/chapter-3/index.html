@@ -122,9 +122,9 @@
 <p>This is Mustache code, in case the double curly braces (<code>{{}}</code>) that look like little mustaches didn’t give it away. The greater than symbol (<code>&gt;</code>) is Mustache’s way of telling Pattern Lab “hey, I want you to include an atom pattern called “thumbnail”. Pattern Lab will go searching through its folders of patterns to find an atom named “thumbnail”.</p>
 
 <figure>
-    <img src="../images/content/pattern-lab-file-structure.png" alt="This is what Pattern Lab's default patterns folder structure looks like. You can name and categorize these folders however you'd like, even removing the names 'atoms', 'molecules', 'organisms', and so on. The most important thing is to establish naming &amp; categorization that is most clear for your team." />
+    <img src="../images/content/pattern-lab-file-structure.png" alt="This is what Pattern Lab's default patterns folder structure looks like. You can name and categorize these folders however you'd like, even removing the labels 'atoms', 'molecules', and 'organisms'. The most important consideration is to establish naming &amp; categorization that is most clear for your team." />
 	<figcaption>
-	    This is what Pattern Lab's default patterns folder structure looks like. You can name and categorize these folders however you'd like, even removing the names 'atoms', 'molecules', 'organisms', and so on. The most important thing is to establish naming &amp; categorization that is most clear for your team.
+	    This is what Pattern Lab's default patterns folder structure looks like. You can name and categorize these folders however you'd like, even removing the labels 'atoms', 'molecules', and 'organisms'. The most important consideration is to establish naming &amp; categorization that is most clear for your team.
 	</figcaption>
 </figure>
 
@@ -155,14 +155,48 @@
 </code>
 </pre>
 
-<p>You can see we have HTML markup consisting of a wrapper <code>div</code> with a class name of <code>block-post</code>, a link, a Mustache include for the thumbnail image, a <code>&lt;h3&gt;</code> tag for the headline, and a <code>&lt;p&gt;</code> tag for the excerpt. <code>url</code>, <code>headline</code>, and <code>excerpt</code></p>
+<p>You can see we have HTML markup consisting of a wrapper <code>div</code> with a class name of <code>block-post</code>, a link, a Mustache include for the thumbnail image, a <code>&lt;h3&gt;</code> tag for the headline, and a <code>&lt;p&gt;</code> tag for the excerpt. You’ll notice there’s more Mustache code for <code>url</code>, <code>headline</code>, and <code>excerpt</code>, which we’ll use later to swap in actual content. More on that in a bit.</p>
+
+<p>Now that we have our pattern markup established, we can now include that chunk of code in even bigger patterns using the same include pattern:</p>
+
+<pre>
+<code>
+{{&gt; molecules-block-post }}
+</code>
+</pre>
+
+<p>a</p>
+
+<pre>
+<code>
+
+\&lt;header role="banner"\&gt;
+    {{&gt; atoms-logo }}
+    {{&gt; molecules-primary-nav }}
+    {{&gt; molecules-search }}
+\&lt;/header\&gt;
+
+</code>
+</pre>
+
+<p>And now we can include that relatively complex pattern anywhere we need it.</p>
+
+<pre>
+<code>
+{{&gt; organisms-header }}
+</code>
+</pre>
 
 <p>This structure encourages designers and developers to build reusable UI patterns while at the same time constructing the final put-together UI. The final interface and its underlying design system is one in the same. </p>
 
 <h2 id="a-separation-between-structure-and-data">A separation between structure and data</h2>
 <ul>
   <li>Templates and pages - replacing default data with real representative content (mention how the new version of Pattern Lab supports YAML, Markdown, etc in addition to JSON)</li>
-  <li></li>
+</ul>
+
+<h2 id="pattern-variations-with-pseudo-patterns">Pattern variations with pseudo-patterns</h2>
+<ul>
+  <li>Different permissions. Homepage differences </li>
 </ul>
 
 <h3 id="viewport-tools-for-flexible-patterns">Viewport tools for flexible patterns</h3>
