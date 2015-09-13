@@ -32,7 +32,7 @@ Before we dive into the nuts and bolts of how Pattern Lab works, it's important 
 ### Pattern Lab isn't…
 - a UI framework like Bootstrap or Foundation.
 - language, library, or style dependent.
-- a replacement for content management systems.
+- a replacement for a content management system.
 
 Let's walk through these points, starting with the term *static site generator*. Static site generator tools take in some source code & assets, compile them, and spit plain-ol' HTML, CSS, and JavaScript out the other end. **Pattern Lab takes source code – namely patterns – and compiles those patterns into a functional front-end UI inside a pattern library shell**.
 
@@ -40,32 +40,62 @@ So what does Pattern Lab look like out of the box? Drumroll, please.
 
 {% include figure.html src="../images/content/pattern-lab-default.png" caption="The default Pattern Lab dashboard. What it lacks in good looks, it makes up for in utility." %}
 
-Not a terribly inspiring design, eh? Believe it or not, this minimal (one may even say "lack of") design is deliberate. To avoid incorrect classification as a UI framework like Bootstrap, the design is deliberately stripped down so no one would mistakenly use Pattern Lab's demo UI as a framework. Pattern Lab doesn't give you any answers as to how to design or architect your front-end code; *you have to do all that work yourself.* The look & feel, naming conventions, syntax, structure, libraries, and scripts you choose to use to create your UI is entirely up to you. Heck, you can even use UI frameworks like Bootstrap inside of Pattern Lab. Pattern Lab is just there to help stitch everything together.
+Not a terribly inspiring design, eh? Believe it or not, this minimal (one may even say "lack of") design is deliberate. To avoid incorrect classification as a UI framework like Bootstrap, the design is deliberately stripped down so no one would mistakenly use Pattern Lab's demo UI as suggested styles. Pattern Lab doesn't give you any answers as to how to design or architect your front-end code; *you have to do all that work yourself.* The look & feel, naming conventions, syntax, structure, libraries, and scripts you choose to use to create your UI is entirely up to you. Heck, you can even use UI frameworks like Bootstrap within Pattern Lab. Pattern Lab is just there to help stitch everything together.
 
-As a technical aside, Pattern Lab uses PHP as the engine that stitches patterns together and generates the pattern library. However, you don't need to be a PHP wizard to use Pattern Lab any more than you have to know how to build an internal combustion engine in order to drive a car. Moreover, your final website doesn't have to be built with PHP in order to use the tool, as Pattern Lab's output is backend-agnostic HTML, CSS, and JavaScript. But if you're one of those cool kids who thinks using a PHP-based tool will somehow ruin your reputation, there's also a [Node.js version](https://github.com/pattern-lab/patternlab-node) of Pattern Lab thanks to web developer Brian Muenzenmeyer. 
+As a technical aside, Pattern Lab uses PHP as the engine that stitches patterns together and generates the pattern library. However, you don't need to be a PHP wizard to use Pattern Lab any more than you have to know how to build an internal combustion engine in order to drive a car. Moreover, your final website doesn't have to be built with PHP in order to use the tool, as Pattern Lab's output is backend-agnostic HTML, CSS, and JavaScript. But if you're one of those cool kids who thinks using a PHP-based tool will somehow ruin your reputation, there's also a [Node.js version](https://github.com/pattern-lab/patternlab-node) thanks to web developer [Brian Muenzenmeyer](http://www.brianmuenzenmeyer.com/). 
 
-If that all sounded like gibberish to you, don't worry. Much like the fact that you can drive a car without knowing how an internal combustion engine works, you can operate Pattern Lab without needing to know
+If that all sounded like gibberish to you, don't worry. This chapter focuses on the over-arching features and principles behind Pattern Lab rather than going too far down the technical rabbit hole. Check out [Pattern Lab's documentation](http://patternlab.io/docs/index.html) to dive into the nitty gritty.
 
 ## Building atomic design systems with Pattern Lab
-In order to understand how the core of Pattern Lab works, all you need to know is how Russian nesting dolls work. 
+In order to understand the core concept behind Pattern Lab, you need to understand Russian nesting dolls. 
 
 {% include figure.html src="../images/content/russian-nesting-dolls.jpg" caption="Russian nesting dolls. <a href='https://www.flickr.com/photos/tromal/6901848291/'>via Flickr user Tromal</a>" %}
 
-Matryoshka dolls, or Russian nesting dolls, are beautiful-carved, hollow, wooden dolls of increasing size that are placed one inside the other. Patterns in Pattern Lab operate in a similar manner: the smallest patterns (atoms) are included inside bigger patterns (molecules), which are included in even bigger patterns (organisms), which are in turn included in even bigger patterns (templates). 
+Matryoshka dolls, also known as Russian nesting dolls, are beautifully-carved hollow wooden dolls of increasing size that are placed one inside the other. Patterns in Pattern Lab operate in a similar manner: the smallest patterns (atoms) are included inside bigger patterns (molecules), which are included in even bigger patterns (organisms), which are in turn included in even bigger patterns (templates). 
 
-Constructing UIs in this manner helps keeps things DRY, which is a long-standing computer science principle that stands for "Don't Repeat Yourself." Make a change to one of the patterns, and anywhere that pattern gets included will magically update with those changes. 
+Constructing UIs in this manner helps keeps things [DRY](https://en.wikipedia.org/wiki/Don't_repeat_yourself), which is a long-standing computer science principle that stands for "Don't Repeat Yourself." Make a change to a pattern, and anywhere that pattern is employed will magically update with those changes. This saves an extraordinary amount of time and grief, and certainly beats the pants off sifting through hundreds of Photoshop documents for every instance of a pattern just to make a simple change.
 
-- Building the final UI and building its underlying design system is one in the same. 
-
-## A separation between structure and data
-- Discuss replacing default data with real representative content (mention how the new version of Pattern Lab supports YAML, Markdown, etc in addition to JSON)
-- 
+To make this happen Pattern Lab uses the include feature of [Mustache](https://mustache.github.io/), a logic-less templating language. Here's what a Mustache include looks like:
 
 <pre>
 <code>
-{% raw %}{{> organisms-header }}{% endraw %}
+{% raw %}{{> atom-thumbnail }}{% endraw %}
 </code>
 </pre>
+
+This is Mustache code, in case the double curly braces ({% raw %}`{{}}`{% endraw %}) that look like little mustaches didn't give it away. The greater than symbol (`>`) is Mustache's way of telling Pattern Lab "hey, I want you to include an atom pattern called "thumbnail". Pattern Lab will go searching through its folders of patterns to find an atom named "thumbnail".
+
+{% include figure.html src="../images/content/pattern-lab-file-structure.png" caption="This is what Pattern Lab's default patterns folder structure looks like. You can name and categorize these folders however you'd like, even removing the names 'atoms', 'molecules', 'organisms', and so on. The most important thing is to establish naming & categorization that is most clear for your team." %}
+
+Now that we know what an include looks like, let's put it into practice and take a look at a few patterns from a website I helped make for Time Inc. Here was one reusable pattern we designed:
+
+{% include figure.html src="../images/content/pattern-lab-molecule.png" caption="Here we have a basic block pattern consisting of a thumbnail image, headline, and excerpt.</a>" %}
+
+When we take a peek behind the curtain to see how this pattern is constructed, we see something 
+
+<em>[<small>Note from Brad: Forgive the mess with the markup formatting. I need to look into how to properly escape characters and highlight syntax in a way that works for the site but also for the eventual ebook.</small>]</em>
+
+<pre>
+<code>
+{% raw %}
+\<div class="block-post"\>
+    \<a href="{{ url }}"\>
+        {{> atoms-thumb }}
+        \<h3\>{{ headline }}\</h3\>
+       \<p\>{{ excerpt }}\</p\>
+    \</a\>
+\</div\>
+{% endraw %}
+</code>
+</pre>
+
+You can see we have HTML markup consisting of a wrapper `div` with a class name of `block-post`, a link, a Mustache include for the thumbnail image, a `<h3>` tag for the headline, and a `<p>` tag for the excerpt. `url`, `headline`, and `excerpt`
+
+This structure encourages designers and developers to build reusable UI patterns while at the same time constructing the final put-together UI. The final interface and its underlying design system is one in the same. 
+
+## A separation between structure and data
+- Templates and pages - replacing default data with real representative content (mention how the new version of Pattern Lab supports YAML, Markdown, etc in addition to JSON)
+- 
 
 ### Viewport tools for flexible patterns
 - The importance of flexible patterns
