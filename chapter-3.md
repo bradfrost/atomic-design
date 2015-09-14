@@ -99,7 +99,11 @@ Now that we have our pattern markup established, we can now include that chunk o
 </code>
 </pre> 
 
-a
+Now let's move up to more complex organisms like the website's header, which looks a little something like this:
+
+{% include figure.html src="../images/content/organism-timeinc-header.png" caption="The website header consists of a logo atom, primary navigation molecule, and a search form molecule.</a>" %}
+
+When we crack open the hood to look at the header's markup in Pattern Lab, we see the following:
 
 <pre>
 <code>
@@ -112,6 +116,8 @@ a
 {% endraw %}
 </code>
 </pre>
+
+What's going on here? Well, we have a basic `<header>` tag, and inside that tag we're including the logo image atom, the primary navigation molecule, and the search form molecule.
 
 And now we can include that relatively complex pattern anywhere we need it.
 
