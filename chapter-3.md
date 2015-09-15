@@ -131,7 +131,7 @@ Hopefully by now you can see the Russian nesting dolls taking their respective p
 
 {% include figure.html src="../images/content/template-timeinc-homepage-long.png" caption="The Time Inc. homepage template consists of a few repeatable patterns: a global header, a hero area, a few sections (containing an image, headline, excerpt, and call to action), an area featuring four items, a 'factoid' area, and a global footer." %}
 
-Take a quick stroll through the homepage template and you'll see some pretty standard patterns: a site header, a site footer, and a full-screen hero area. You'll also see a few other patterns repeating themselves throughout the layout. 
+Take a quick stroll through the homepage template and you'll see some pretty standard patterns: a site header at the top, a site footer at the bottom, and a full-screen hero area. You'll also see a few other patterns repeating themselves throughout the template. 
 
 So how does this look in code? As you might expect, it involves more includes!
 
@@ -169,9 +169,9 @@ So how does this look in code? As you might expect, it involves more includes!
 </code>
 </pre>
 
-At this stage in the game, all the smaller patterns are already constructed, so all the template needs to do is pull them into the context of a page layout, and give them unique names.
+At this stage in the game the smaller patterns are already constructed, so all the template needs to do is pull them into the context of a page layout and give them unique names.
 
-Taking a closer look at the code, you'll see certain patterns like `{% raw %}{{> organisms-header }}{% endraw %}` and `{% raw %}{{> organisms-footer }}{% endraw %} included the same way we've done with the prior examples. But then there a few other includes patterns that are supplemented by some additional information.
+Taking a closer look at the code, notice certain patterns like `{% raw %}{{> organisms-header }}{% endraw %}` and `{% raw %}{{> organisms-footer }}{% endraw %} are included the same way we've done with the prior examples. But there are also a few other includes patterns that are supplemented by some additional information, like the following:
 
 <pre>
 <code>
@@ -183,12 +183,13 @@ Taking a closer look at the code, you'll see certain patterns like `{% raw %}{{>
 </code>
 </pre>
   
-\# and / `factoid-advertising` wrap give this pattern a name, which we can latch onto to dynamically replace the content of the pattern. More on that in the next section.
+We're including `organisms-factoid` the same way as all the other patterns, but we're also naming it `factoid-advertising` by wrapping the include in a mustache section, indicated by the mustache code containing the `#` and `/` symbols.  By giving the pattern instance a unique name, we can latch onto it and dynamically replace the content of the pattern. More on that in the next section!
 
-This structure encourages designers and developers to build reusable UI patterns at the same time constructing the final put-together UI. The final interface and its underlying design system is one in the same. 
+This Russian nesting doll approach to building UIs is simple but enormously powerful. This structure allows designers and developers to keep patterns DRY saving time and money.  build reusable UI patterns at the same time constructing the final put-together UI. The final interface and its underlying design system is one in the same. 
 
 ## A separation between structure and data
-- Templates and pages - replacing default data with real representative content (mention how the new version of Pattern Lab supports YAML, Markdown, etc in addition to JSON)
+- Templates and pages - replacing default data with real representative content 
+- (mention how the new version of Pattern Lab supports YAML, Markdown, etc in addition to JSON)
 
 ## Pattern variations with pseudo-patterns
 - Different permissions. Homepage differences 

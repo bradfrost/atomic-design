@@ -207,7 +207,7 @@
 	</figcaption>
 </figure>
 
-<p>Take a quick stroll through the homepage template and you’ll see some pretty standard patterns: a site header, a site footer, and a full-screen hero area. You’ll also see a few other patterns repeating themselves throughout the layout. </p>
+<p>Take a quick stroll through the homepage template and you’ll see some pretty standard patterns: a site header at the top, a site footer at the bottom, and a full-screen hero area. You’ll also see a few other patterns repeating themselves throughout the template. </p>
 
 <p>So how does this look in code? As you might expect, it involves more includes!</p>
 
@@ -245,9 +245,9 @@
 </code>
 </pre>
 
-<p>At this stage in the game, all the smaller patterns are already constructed, so all the template needs to do is pull them into the context of a page layout, and give them unique names.</p>
+<p>At this stage in the game the smaller patterns are already constructed, so all the template needs to do is pull them into the context of a page layout and give them unique names.</p>
 
-<p>Taking a closer look at the code, you’ll see certain patterns like <code>{{&gt; organisms-header }}</code> and `{{&gt; organisms-footer }} included the same way we’ve done with the prior examples. But then there a few other includes patterns that are supplemented by some additional information.</p>
+<p>Taking a closer look at the code, notice certain patterns like <code>{{&gt; organisms-header }}</code> and `{{&gt; organisms-footer }} are included the same way we’ve done with the prior examples. But there are also a few other includes patterns that are supplemented by some additional information, like the following:</p>
 
 <pre>
 <code>
@@ -259,13 +259,14 @@
 </code>
 </pre>
 
-<p># and / <code>factoid-advertising</code> wrap give this pattern a name, which we can latch onto to dynamically replace the content of the pattern. More on that in the next section.</p>
+<p>We’re including <code>organisms-factoid</code> the same way as all the other patterns, but we’re also naming it <code>factoid-advertising</code> by wrapping the include in a mustache section, indicated by the mustache code containing the <code>#</code> and <code>/</code> symbols.  By giving the pattern instance a unique name, we can latch onto it and dynamically replace the content of the pattern. More on that in the next section!</p>
 
-<p>This structure encourages designers and developers to build reusable UI patterns at the same time constructing the final put-together UI. The final interface and its underlying design system is one in the same. </p>
+<p>This Russian nesting doll approach to building UIs is simple but enormously powerful. This structure allows designers and developers to keep patterns DRY saving time and money.  build reusable UI patterns at the same time constructing the final put-together UI. The final interface and its underlying design system is one in the same. </p>
 
 <h2 id="a-separation-between-structure-and-data">A separation between structure and data</h2>
 <ul>
-  <li>Templates and pages - replacing default data with real representative content (mention how the new version of Pattern Lab supports YAML, Markdown, etc in addition to JSON)</li>
+  <li>Templates and pages - replacing default data with real representative content </li>
+  <li>(mention how the new version of Pattern Lab supports YAML, Markdown, etc in addition to JSON)</li>
 </ul>
 
 <h2 id="pattern-variations-with-pseudo-patterns">Pattern variations with pseudo-patterns</h2>
