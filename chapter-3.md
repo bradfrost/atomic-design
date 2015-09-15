@@ -69,9 +69,9 @@ This is Mustache code, in case the double curly braces ({% raw %}`{{}}`{% endraw
 
 Now that we know what an include looks like, let's put it into practice and take a look at a few patterns from a website I helped make for Time Inc. Here was one reusable pattern we designed:
 
-{% include figure.html src="../images/content/pattern-lab-molecule.png" caption="Here we have a basic block pattern consisting of a thumbnail image, headline, and excerpt.</a>" %}
+{% include figure.html src="../images/content/pattern-lab-molecule.png" caption="Here we have a basic block pattern consisting of a thumbnail image, headline, and excerpt." %}
 
-When we take a peek behind the curtain to see how this pattern is constructed, we see something 
+When we take a peek behind the curtain to see how this pattern is constructed, we see the following:
 
 <em>[<small>Note from Brad: Forgive the mess with the markup formatting. I need to look into how to properly escape characters and highlight syntax in a way that works for the site but also for the eventual ebook.</small>]</em>
 
@@ -91,7 +91,7 @@ When we take a peek behind the curtain to see how this pattern is constructed, w
 
 You can see we have HTML markup consisting of a wrapper `div` with a class name of `block-post`, a link, a Mustache include for the thumbnail image, a `<h3>` tag for the headline, and a `<p>` tag for the excerpt. You'll notice there's more Mustache code for `url`, `headline`, and `excerpt`, which we'll use later to swap in actual content. More on that in a bit.
 
-Now that we have our pattern markup established, we can now include that chunk of code in even bigger patterns using the same include pattern:
+Now that we have our pattern markup established, we can now include that chunk of code in even bigger patterns using the same include method:
 
 <pre>
 <code>
@@ -101,7 +101,7 @@ Now that we have our pattern markup established, we can now include that chunk o
 
 Now let's move up to more complex organisms like the website's header, which looks a little something like this:
 
-{% include figure.html src="../images/content/organism-timeinc-header.png" caption="The website header consists of a logo atom, primary navigation molecule, and a search form molecule.</a>" %}
+{% include figure.html src="../images/content/organism-timeinc-header.png" caption="The website header consists of a logo atom, primary navigation molecule, and a search form molecule." %}
 
 When we crack open the hood to look at the header's markup in Pattern Lab, we see the following:
 
@@ -127,7 +127,65 @@ And now we can include that relatively complex pattern anywhere we need it.
 </code>
 </pre> 
 
-This structure encourages designers and developers to build reusable UI patterns while at the same time constructing the final put-together UI. The final interface and its underlying design system is one in the same. 
+Hopefully by now you can see the Russian nesting dolls taking their respective places. The smallest atoms are included in bigger molecules, and those molecules get included in even bigger organisms. Now let's take these components and plug them into a layout. Take the homepage template, for instance:
+
+{% include figure.html src="../images/content/template-timeinc-homepage-long.png" caption="The Time Inc. homepage template consists of a few repeatable patterns: a global header, a hero area, a few sections (containing an image, headline, excerpt, and call to action), an area featuring four items, a 'factoid' area, and a global footer." %}
+
+Take a quick stroll through the homepage template and you'll see some pretty standard patterns: a site header, a site footer, and a full-screen hero area. You'll also see a few other patterns repeating themselves throughout the layout. 
+
+So how does this look in code? As you might expect, it involves more includes!
+
+<pre>
+<code>
+{% raw %}
+{{> organisms-header }}
+\<main role="main"\>
+    {{# hero }}
+    {{> molecules-hero }}
+    {{/ hero }}
+    \<section\>
+        {{# experience-hero }}
+        {{> molecules-hero-main }}
+        {{/ experience-hero }}
+        {{# experience-feature }}
+        {{> organisms-story-feature }}
+        {{/ experience-feature }}
+    \</section\>
+    \<section\>
+        {{# factoid-advertising }}
+        {{> organisms-factoid }}
+        {{/ factoid-advertising }}
+    \</section\>
+    \<section\>
+        {{# advertising }}
+        {{> molecules-hero-main }}
+        {{/ advertising }}
+    \</section\>
+    …   
+  \</main\>
+  {{> organisms-footer }}
+\</div\>
+{% endraw %}
+</code>
+</pre>
+
+At this stage in the game, all the smaller patterns are already constructed, so all the template needs to do is pull them into the context of a page layout, and give them unique names.
+
+Taking a closer look at the code, you'll see certain patterns like `{% raw %}{{> organisms-header }}{% endraw %}` and `{% raw %}{{> organisms-footer }}{% endraw %} included the same way we've done with the prior examples. But then there a few other includes patterns that are supplemented by some additional information.
+
+<pre>
+<code>
+{% raw %}
+{{# factoid-advertising }}
+{{> organisms-factoid }}
+{{/ factoid-advertising }}
+{% endraw %}
+</code>
+</pre>
+  
+\# and / `factoid-advertising` wrap give this pattern a name, which we can latch onto to dynamically replace the content of the pattern. More on that in the next section.
+
+This structure encourages designers and developers to build reusable UI patterns at the same time constructing the final put-together UI. The final interface and its underlying design system is one in the same. 
 
 ## A separation between structure and data
 - Templates and pages - replacing default data with real representative content (mention how the new version of Pattern Lab supports YAML, Markdown, etc in addition to JSON)
