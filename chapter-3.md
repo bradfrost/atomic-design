@@ -44,7 +44,7 @@ Not a terribly inspiring design, eh? Believe it or not, this minimal (one may ev
 
 As a technical aside, Pattern Lab uses PHP as the engine that stitches patterns together and generates the pattern library. However, you don't need to be a PHP wizard to use Pattern Lab any more than you have to know how to build an internal combustion engine in order to drive a car. Moreover, your final website doesn't have to be built with PHP in order to use the tool, as Pattern Lab's output is backend-agnostic HTML, CSS, and JavaScript. But if you're one of those cool kids who thinks using a PHP-based tool will somehow ruin your reputation, there's also a [Node.js version](https://github.com/pattern-lab/patternlab-node) thanks to web developer [Brian Muenzenmeyer](http://www.brianmuenzenmeyer.com/). 
 
-If that all sounded like gibberish to you, don't worry. This chapter focuses on the over-arching features and principles behind Pattern Lab rather than going too far down the technical rabbit hole. Check out [Pattern Lab's documentation](http://patternlab.io/docs/index.html) to dive into the nitty gritty.
+If that all sounded like gibberish to you, don't worry. This chapter focuses on the over-arching features and principles behind Pattern Lab rather than going too far down the technical rabbit hole. You can check out [Pattern Lab's documentation](http://patternlab.io/docs/index.html) to dive into the nitty gritty.
 
 ## Building atomic design systems with Pattern Lab
 In order to understand the core concept behind Pattern Lab, you need to understand Russian nesting dolls. 
@@ -55,7 +55,7 @@ Matryoshka dolls, also known as Russian nesting dolls, are beautifully-carved ho
 
 Constructing UIs in this manner helps keeps things [DRY](https://en.wikipedia.org/wiki/Don't_repeat_yourself), which is a long-standing computer science principle that stands for "Don't Repeat Yourself." Make a change to a pattern, and anywhere that pattern is employed will magically update with those changes. This saves an extraordinary amount of time and grief, and certainly beats the pants off sifting through hundreds of Photoshop documents for every instance of a pattern just to make a simple change.
 
-To make this happen Pattern Lab uses the include feature of [Mustache](https://mustache.github.io/), a logic-less templating language. Here's what a Mustache include looks like:
+To make this happen Pattern Lab uses the *include* feature of [Mustache](https://mustache.github.io/), a logic-less templating language. Here's what a Mustache include looks like:
 
 <pre>
 <code>
@@ -67,11 +67,11 @@ This is Mustache code, in case the double curly braces ({% raw %}`{{}}`{% endraw
 
 {% include figure.html src="../images/content/pattern-lab-file-structure.png" caption="This is what Pattern Lab's default patterns folder structure looks like. You can name and categorize these folders however you'd like, even removing the labels 'atoms', 'molecules', and 'organisms'. The most important consideration is to establish naming & categorization that is most clear for your team." %}
 
-Now that we know what an include looks like, let's put it into practice and take a look at a few patterns from a website I helped make for Time Inc. Here was one reusable pattern we designed:
+Now that we know what an include looks like, let's put it into practice and take a look at a few patterns from a website I helped make for Time Inc. Here's one reusable pattern we designed:
 
-{% include figure.html src="../images/content/pattern-lab-molecule.png" caption="Here we have a basic block pattern consisting of a thumbnail image, headline, and excerpt." %}
+{% include figure.html src="../images/content/pattern-lab-molecule.png" caption="For Time Inc.'s website, we created a basic block pattern consisting of a thumbnail image, headline, and excerpt." %}
 
-When we take a peek behind the curtain to see how this pattern is constructed, we see the following:
+This pattern should look fairly familiar. A thumbnail image, headline, and excerpt working together as a single unit is a common pattern found on countless websites. Let's take a peek behind the curtain to see how this pattern is constructed:
 
 <em>[<small>Note from Brad: Forgive the mess with the markup formatting. I need to look into how to properly escape characters and highlight syntax in a way that works for the site but also for the eventual ebook.</small>]</em>
 
@@ -89,7 +89,7 @@ When we take a peek behind the curtain to see how this pattern is constructed, w
 </code>
 </pre>
 
-You can see we have HTML markup consisting of a wrapper `div` with a class name of `block-post`, a link, a Mustache include for the thumbnail image, a `<h3>` tag for the headline, and a `<p>` tag for the excerpt. You'll notice there's more Mustache code for `url`, `headline`, and `excerpt`, which we'll use later to swap in actual content. More on that in a bit.
+You can see we have HTML markup consisting of a wrapper `div` with a class name of `block-post`, a link, a Mustache include for the thumbnail image, a `<h3>` tag for the headline, and a `<p>` tag for the excerpt. You'll notice there's more Mustache code for `url`, `headline`, and `excerpt`, which we'll use later to dynamically swap in actual content. More on that in a bit.
 
 Now that we have our pattern markup established, we can now include that chunk of code in even bigger patterns using the same include method:
 
@@ -101,7 +101,7 @@ Now that we have our pattern markup established, we can now include that chunk o
 
 Now let's move up to more complex organisms like the website's header, which looks a little something like this:
 
-{% include figure.html src="../images/content/organism-timeinc-header.png" caption="The website header consists of a logo atom, primary navigation molecule, and a search form molecule." %}
+{% include figure.html src="../images/content/organism-timeinc-header.png" caption="The website header consists of fairly common conventions like a logo atom, primary navigation molecule, and a search form molecule." %}
 
 When we crack open the hood to look at the header's markup in Pattern Lab, we see the following:
 
@@ -127,7 +127,7 @@ And now we can include that relatively complex pattern anywhere we need it.
 </code>
 </pre> 
 
-Hopefully by now you can see the Russian nesting dolls taking their respective places. The smallest atoms are included in bigger molecules, and those molecules get included in even bigger organisms. Now let's take these components and plug them into a layout. Take the homepage template, for instance:
+Hopefully by now you can see the Russian nesting dolls taking shape. The smallest atoms are included in bigger molecules, and those molecules get included in even bigger organisms. Now let's take these components and plug them into a layout. Take the homepage template, for instance:
 
 {% include figure.html src="../images/content/template-timeinc-homepage-long.png" caption="The Time Inc. homepage template consists of a few repeatable patterns: a global header, a hero area, a few sections (containing an image, headline, excerpt, and call to action), an area featuring four items, a 'factoid' area, and a global footer." %}
 
@@ -171,7 +171,7 @@ So how does this look in code? As you might expect, it involves more includes!
 
 At this stage in the game the smaller patterns are already constructed, so all the template needs to do is pull them into the context of a page layout and give them unique names.
 
-Taking a closer look at the code, notice certain patterns like `{% raw %}{{> organisms-header }}{% endraw %}` and `{% raw %}{{> organisms-footer }}{% endraw %} are included the same way we've done with the prior examples. But there are also a few other includes patterns that are supplemented by some additional information, like the following:
+Taking a closer look at the code, notice certain patterns like `{% raw %}{{> organisms-header }}{% endraw %}` and `{% raw %}{{> organisms-footer }}{% endraw %}` are included the same way we've done with the prior examples. But there are also a few other includes patterns that are supplemented by some additional information, like the following:
 
 <pre>
 <code>
@@ -183,9 +183,9 @@ Taking a closer look at the code, notice certain patterns like `{% raw %}{{> org
 </code>
 </pre>
   
-We're including `organisms-factoid` the same way as all the other patterns, but we're also naming it `factoid-advertising` by wrapping the include in a mustache section, indicated by the mustache code containing the `#` and `/` symbols.  By giving the pattern instance a unique name, we can latch onto it and dynamically replace the content of the pattern. More on that in the next section!
+We're including `organisms-factoid` the same way as all the other patterns, but we're also naming it `factoid-advertising` by wrapping the include in a mustache *section*, indicated by the mustache code containing the `#` and `/` symbols.  By giving the pattern instance a unique name, we can latch onto it and dynamically replace the content of the pattern. More on that in the next section!
 
-This Russian nesting doll approach to building UIs is simple but enormously powerful. This structure allows designers and developers to keep patterns DRY saving time and money.  build reusable UI patterns at the same time constructing the final put-together UI. The final interface and its underlying design system is one in the same. 
+This Russian nesting doll approach to building UIs is simple but tremendously powerful. This structure allows designers and developers to keep patterns DRY saving time, effort, and money.  This approach also allows teams to build a final UI while simultaneously creating the underlying UI design system.  After all, the final interface is one instantiation of its underlying design system. Teams can also traverse between abstract and concrete, zeroing in on a particular pattern to fix bugs ("The header's broken!"), while also seeing how changes to small patterns affect the overall page layout.
 
 ## A separation between structure and data
 - Templates and pages - replacing default data with real representative content 
