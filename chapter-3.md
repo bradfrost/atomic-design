@@ -188,10 +188,19 @@ We're including `organisms-factoid` the same way as all the other patterns, but 
 This Russian nesting doll approach to building UIs is simple but tremendously powerful. This structure allows designers and developers to keep patterns DRY saving time, effort, and money.  This approach also allows teams to build a final UI while simultaneously creating the underlying UI design system.  After all, the final interface is one instantiation of its underlying design system. Teams can also traverse between abstract and concrete, zeroing in on a particular pattern to fix bugs ("The header's broken!"), while also seeing how changes to small patterns affect the overall page layout.
 
 ## A separation between structure and data
+It's important to articulate the underlying content structure of UI patterns within the context of a pattern library. That's why we've been looking at dimension-displaying grayscale images and placeholder text containing character limits. But while this information is helpful for creative teams, grayscale images and lorem ipsum text are not what end users interact with on your actual site. We need a way to replace our default dummy content with real representative content in order to ensure our UI patterns match the reality of the content that lives inside them.
+
+To demonstrate how Pattern Lab dynamically swaps in real content into templates, let's take a look at a side-by-side comparison of Time Inc.'s homepage template and page levels:
+
+{% include figure.html src="../images/content/timeinc-template-page.png" caption="A side-by-side comparison of Time Inc.'s homepage template and page levels. The template articulates the content structure of the design system, while the page demonstrates what the system looks like with real content poured into it." %}
+
+`data.json` 
+
 - Templates and pages - replacing default data with real representative content 
 - (mention how the new version of Pattern Lab supports YAML, Markdown, etc in addition to JSON)
 
 ## Pattern variations with pseudo-patterns
+In addition to swapping out 
 - Different permissions. Homepage differences 
 
 ### Viewport tools for flexible patterns
@@ -219,6 +228,12 @@ This Russian nesting doll approach to building UIs is simple but tremendously po
 
 ## To each their own
 [Styleguides.io/tools.html]()
+
+When considering the tool to choose to create your pattern library, you should consider the following:
+
+- Make sure the 
+- Ensure patterns work across viewport sizes
+- Demonstrate lineage
 
 ## Making it all work
 This chapter we 

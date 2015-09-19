@@ -264,15 +264,27 @@
 <p>This Russian nesting doll approach to building UIs is simple but tremendously powerful. This structure allows designers and developers to keep patterns DRY saving time, effort, and money.  This approach also allows teams to build a final UI while simultaneously creating the underlying UI design system.  After all, the final interface is one instantiation of its underlying design system. Teams can also traverse between abstract and concrete, zeroing in on a particular pattern to fix bugs (“The header’s broken!”), while also seeing how changes to small patterns affect the overall page layout.</p>
 
 <h2 id="a-separation-between-structure-and-data">A separation between structure and data</h2>
+<p>It’s important to articulate the underlying content structure of UI patterns within the context of a pattern library. That’s why we’ve been looking at dimension-displaying grayscale images and placeholder text containing character limits. But while this information is helpful for creative teams, grayscale images and lorem ipsum text are not what end users interact with on your actual site. We need a way to replace our default dummy content with real representative content in order to ensure our UI patterns match the reality of the content that lives inside them.</p>
+
+<p>To demonstrate how Pattern Lab dynamically swaps in real content into templates, let’s take a look at a side-by-side comparison of Time Inc.’s homepage template and page levels:</p>
+
+<figure>
+    <img src="../images/content/timeinc-template-page.png" alt="A side-by-side comparison of Time Inc.'s homepage template and page levels. The template articulates the content structure of the design system, while the page demonstrates what the system looks like with real content poured into it." />
+	<figcaption>
+	    A side-by-side comparison of Time Inc.'s homepage template and page levels. The template articulates the content structure of the design system, while the page demonstrates what the system looks like with real content poured into it.
+	</figcaption>
+</figure>
+
+<p><code>data.json</code> </p>
+
 <ul>
   <li>Templates and pages - replacing default data with real representative content </li>
   <li>(mention how the new version of Pattern Lab supports YAML, Markdown, etc in addition to JSON)</li>
 </ul>
 
 <h2 id="pattern-variations-with-pseudo-patterns">Pattern variations with pseudo-patterns</h2>
-<ul>
-  <li>Different permissions. Homepage differences </li>
-</ul>
+<p>In addition to swapping out 
+- Different permissions. Homepage differences </p>
 
 <h3 id="viewport-tools-for-flexible-patterns">Viewport tools for flexible patterns</h3>
 <ul>
@@ -305,6 +317,14 @@
 
 <h2 id="to-each-their-own">To each their own</h2>
 <p><a href="">Styleguides.io/tools.html</a></p>
+
+<p>When considering the tool to choose to create your pattern library, you should consider the following:</p>
+
+<ul>
+  <li>Make sure the </li>
+  <li>Ensure patterns work across viewport sizes</li>
+  <li>Demonstrate lineage</li>
+</ul>
 
 <h2 id="making-it-all-work">Making it all work</h2>
 <p>This chapter we </p>
