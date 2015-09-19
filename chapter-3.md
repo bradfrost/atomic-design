@@ -192,12 +192,48 @@ It's important to articulate the underlying content structure of UI patterns wit
 
 To demonstrate how Pattern Lab dynamically swaps in real content into templates, let's take a look at a side-by-side comparison of Time Inc.'s homepage template and page levels:
 
-{% include figure.html src="../images/content/timeinc-template-page.png" caption="A side-by-side comparison of Time Inc.'s homepage template and page levels. The template articulates the content structure of the design system, while the page demonstrates what the system looks like with real content poured into it." %}
+{% include figure.html src="../images/content/timeinc-template-page.png" caption="A side-by-side comparison of Time Inc.'s homepage template and page levels. The template articulates the content structure of the design system, while the page shows what the system looks like with real content poured into it." %}
 
-`data.json` 
+On the left we have the template level, which articulates the content structure of the patterns making up the webpage. And at the page level, we're pouring in real representative content to demonstrate what the final UI might look like and test the effectiveness of the design system. 
 
-- Templates and pages - replacing default data with real representative content 
-- (mention how the new version of Pattern Lab supports YAML, Markdown, etc in addition to JSON)
+So how do we swap dummy content for real content in Pattern Lab? Pattern Lab uses JSON (as well as YAML, Markdown, and other data formats) to define the dynamic bits of content in our designs.
+
+The default placeholder data is defined in a file called `data.json` that lives in Pattern Lab's `source` directory. Inside this file we define all the dynamic text, image paths, and other data that will be poured into our UI. Here's a sample from Time Inc.'s `data.json`:
+
+<pre>
+<code>
+{% raw %}
+"hero" : {
+  "headline": "Lorem Ipsum",
+  "img": {
+    "src": "/images/sample/fpo_hero.png",
+    "alt": "Hero Image"
+  }
+}
+{% endraw %}
+</code>
+</pre>
+
+If you're a developer, this type of format most likely looks familiar to you. If you're not a developer, don't freak out! Once you look beyond the curly braces and quotes, you
+
+Then, at the page level within Pattern Lab's `homepage.json`
+
+<pre>
+<code>
+{% raw %}
+"hero" : {
+  "headline": "Moving People",
+  "img": {
+    "src": "/images/hero_beyonce.jpg",
+    "alt": "Beyonce"
+  }
+}
+{% endraw %}
+</code>
+</pre>
+
+- Allows designers, content people, and other non-developers to contribute to the living, breathing, prototype.
+- Serve as a blueprint for backend developers responsible for integrating the frontend into a CMS.
 
 ## Pattern variations with pseudo-patterns
 In addition to swapping out 
