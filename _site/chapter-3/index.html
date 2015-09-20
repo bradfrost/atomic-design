@@ -326,26 +326,67 @@
 
 <p>This process of establishing defaults for dynamic data then replacing it with page-specific content continues for each section of the website. In addition to replacing simple strings like headings, we can also dynamically set variables to <code>true</code> or <code>false</code>, loop through an array of items, and more. We can even dramatically alter the UI with just a few changes to a JSON file, which we’ll talk about next!</p>
 
-<h2 id="pattern-variations-with-pseudo-patterns">Pattern variations with pseudo-patterns</h2>
+<h2 id="articulating-pattern-variations-with-pseudo-patterns">Articulating pattern variations with pseudo-patterns</h2>
 <p>Historically designers working in static tools have had a tendancy to only design best-case scenarios. You know what I’m talking about. The user’s name is “Sara Smith” and always fits neatly on one line. Her profile picture looks like it was clipped out of a magazine. Her profile is completely filled out. The two columns of her profile content magically are exactly the same height.</p>
 
 <p>Of course these best-case scenarios rarely, if ever, occur in the real world.</p>
 
-<p>In order to create more robust and resilient designs, we need to concurrently account for the best situations, the worst, and everything in between.</p>
+<p><strong>In order to create more robust and resilient designs, we need to concurrently account for the best situations, the worst, and everything in between</strong>.</p>
 
 <p>What if the user doesn’t upload a profile picture? What if the user has 87 items in their shopping cart? What if the product has 14 options? What if the blog post title contains 400 characters? Return user? First-time user? What if the article doesn’t have any comments? What if it has seven layers of nested comments? What if we need to display an urgent message on the homepage?</p>
 
-<p>Articulating these UI variations in a static design tool is an exercise in tediousness and redundancy, which may explain why they’re rarely designed. But if we want to establish resilient design systems that address all the variables and realities of our designs, we must take those “what if” questions into account.</p>
+<p>Articulating these UI variations in a static design tool is an exercise in tediousness and redundancy, which may explain why they’re rarely designed. But if we want to create systems that address all the variables and realities of our content, we must take those “what if” questions into account.</p>
 
-<p>How do we account for all manner of UI variation without exhausting ourselves in the process? Pattern Lab’s <em><a href="http://patternlab.io/docs/pattern-pseudo-patterns.html">pseudo-pattern</a></em> feature allows us to articulate different scenarios and use cases with just a few changes to our data.</p>
+<p>How do we account for all manner of UI variation without exhausting ourselves in the process? Pattern Lab’s <em><a href="http://patternlab.io/docs/pattern-pseudo-patterns.html">pseudo-pattern</a></em> feature allows us to articulate (sometimes wildly) different scenarios with just a few changes to our data.</p>
+
+<p>Let’s say we’re making an app whose dashboard displays a list of project collaborators. The UI might look something like this:</p>
+
+<figure>
+    <img src="../images/content/pseudo-pattern-normal.jpg" alt="A list of project collaboratos in our hypothetical app" />
+	<figcaption>
+	    A list of project collaboratos in our hypothetical app
+	</figcaption>
+</figure>
+
+<p>In order to create this dynamic content, we’ll define our list of collaborators as an array inside <code>dashboard.json</code>:</p>
 
 <pre>
 <code>
 
-dashboard.json
+"collaborators" : [
+  {
+    "img": "/images/sample/avatar1.jpg",
+    "name" : "Steve Boomshakalaka",
+    "title" : "CIA"
+  },
+  {
+    "img": "/images/sample/avatar2.jpg",
+    "name" : "Gingersnap Jujubees-Daniels",
+    "title" : "President of the Longest Company Name in the World Corporation, Global Division"
+  },
+  {
+    "img": "/images/sample/avatar3.jpg",
+    "name" : "Sarunus Marciulionis",
+    "title" : "Golden State Warriors"
+  },
+  {
+    "img": "/images/sample/avatar4.jpg",
+    "name" : "Sara Smith",
+    "title" : "Short Title"
+  }
+]
 
 </code>
 </pre>
+
+<p>Our default design assumes the user is a regular user and not an administrator. </p>
+
+<figure>
+    <img src="../images/content/pseudo-pattern-admin.jpg" alt="How an administrator would view the list of collaborators of our hypothetical app." />
+	<figcaption>
+	    How an administrator would view the list of collaborators of our hypothetical app.
+	</figcaption>
+</figure>
 
 <pre>
 <code>
@@ -355,7 +396,7 @@ dashboard~admin.json
 </code>
 </pre>
 
-<p><code>dashboard~admin.json</code> will inherit all the data contained in <code>dashboard.json</code>, but also gives us the opportunity to append or override additional data.</p>
+<p><code>dashboard~admin.json</code> will inherit all the data contained in <code>dashboard.json</code>, but also gives us the opportunity to append or override additional data. </p>
 
 <pre>
 <code>

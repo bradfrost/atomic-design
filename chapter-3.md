@@ -240,26 +240,57 @@ By overriding the default data, the *hero* headline now reads "Moving People" in
 
 This process of establishing defaults for dynamic data then replacing it with page-specific content continues for each section of the website. In addition to replacing simple strings like headings, we can also dynamically set variables to `true` or `false`, loop through an array of items, and more. We can even dramatically alter the UI with just a few changes to a JSON file, which we'll talk about next!
 
-## Pattern variations with pseudo-patterns
+## Articulating pattern variations with pseudo-patterns
 Historically designers working in static tools have had a tendancy to only design best-case scenarios. You know what I’m talking about. The user’s name is "Sara Smith" and always fits neatly on one line. Her profile picture looks like it was clipped out of a magazine. Her profile is completely filled out. The two columns of her profile content magically are exactly the same height.
 
 Of course these best-case scenarios rarely, if ever, occur in the real world.
 
-In order to create more robust and resilient designs, we need to concurrently account for the best situations, the worst, and everything in between.
+**In order to create more robust and resilient designs, we need to concurrently account for the best situations, the worst, and everything in between**.
 
 What if the user doesn’t upload a profile picture? What if the user has 87 items in their shopping cart? What if the product has 14 options? What if the blog post title contains 400 characters? Return user? First-time user? What if the article doesn’t have any comments? What if it has seven layers of nested comments? What if we need to display an urgent message on the homepage?
 
-Articulating these UI variations in a static design tool is an exercise in tediousness and redundancy, which may explain why they're rarely designed. But if we want to establish resilient design systems that address all the variables and realities of our designs, we must take those "what if" questions into account.
+Articulating these UI variations in a static design tool is an exercise in tediousness and redundancy, which may explain why they're rarely designed. But if we want to create systems that address all the variables and realities of our content, we must take those "what if" questions into account.
 
-How do we account for all manner of UI variation without exhausting ourselves in the process? Pattern Lab's *[pseudo-pattern](http://patternlab.io/docs/pattern-pseudo-patterns.html)* feature allows us to articulate different scenarios and use cases with just a few changes to our data.
+How do we account for all manner of UI variation without exhausting ourselves in the process? Pattern Lab's *[pseudo-pattern](http://patternlab.io/docs/pattern-pseudo-patterns.html)* feature allows us to articulate (sometimes wildly) different scenarios with just a few changes to our data.
+
+Let's say we're making an app whose dashboard displays a list of project collaborators. The UI might look something like this:
+
+{% include figure.html src="../images/content/pseudo-pattern-normal.jpg" caption="A list of project collaboratos in our hypothetical app" %}
+
+In order to create this dynamic content, we'll define our list of collaborators as an array inside `dashboard.json`:
 
 <pre>
 <code>
 {% raw %}
-dashboard.json
+"collaborators" : [
+  {
+    "img": "/images/sample/avatar1.jpg",
+    "name" : "Steve Boomshakalaka",
+    "title" : "CIA"
+  },
+  {
+    "img": "/images/sample/avatar2.jpg",
+    "name" : "Gingersnap Jujubees-Daniels",
+    "title" : "President of the Longest Company Name in the World Corporation, Global Division"
+  },
+  {
+    "img": "/images/sample/avatar3.jpg",
+    "name" : "Sarunus Marciulionis",
+    "title" : "Golden State Warriors"
+  },
+  {
+    "img": "/images/sample/avatar4.jpg",
+    "name" : "Sara Smith",
+    "title" : "Short Title"
+  }
+]
 {% endraw %}
 </code>
 </pre>
+
+Our default design assumes the user is a regular user and not an administrator. 
+
+{% include figure.html src="../images/content/pseudo-pattern-admin.jpg" caption="How an administrator would view the list of collaborators of our hypothetical app." %}
 
 <pre>
 <code>
@@ -269,7 +300,7 @@ dashboard~admin.json
 </code>
 </pre>
 
-`dashboard~admin.json` will inherit all the data contained in `dashboard.json`, but also gives us the opportunity to append or override additional data.
+`dashboard~admin.json` will inherit all the data contained in `dashboard.json`, but also gives us the opportunity to append or override additional data. 
 
 <pre>
 <code>
