@@ -238,18 +238,35 @@ When we open up `homepage.json` we can override the placeholder data we establis
 
 By overriding the default data, the *hero* headline now reads "Moving People" instead of "Lorem Ipsum". And instead of pointing to a grayscale FPO (for placement only) hero image, we're now pointing to a picture of Beyoncè located at `"/images/hero_beyonce.jpg"`.
 
-This process of establishing defaults for dynamic data then replacing it with page-specific content continues for each section of the website. In addition to simply replacing strings, we can also dynamically set variables to `true` or `false`, loop through an array of items, and more. 
+This process of establishing defaults for dynamic data then replacing it with page-specific content continues for each section of the website. In addition to replacing simple strings like headings, we can also dynamically set variables to `true` or `false`, loop through an array of items, and more. We can even dramatically alter the UI with just a few changes to a JSON file, which we'll talk about next!
+
+## Pattern variations with pseudo-patterns
+Historically designers working in static tools have had a tendancy to only design best-case scenarios. You know what I’m talking about. The user’s name is "Sara Smith" and always fits neatly on one line. Her profile picture looks like it was clipped out of a magazine. Her profile is completely filled out. The two columns of her profile content magically are exactly the same height.
+
+Of course these best-case scenarios rarely, if ever, occur in the real world.
+
+In order to create more robust and resilient designs, we need to concurrently account for the best situations, the worst, and everything in between.
+
+What if the user doesn’t upload a profile picture? What if the user has 87 items in their shopping cart? What if the product has 14 options? What if the blog post title contains 400 characters? Return user? First-time user? What if the article doesn’t have any comments? What if we need to display an urgent message on the homepage?
+
+Articulating these UI variations in a static design tool is an exercise in tediousness and redundancy, which may explain why they're rarely created. But if we want to establish a solid pattern library that accounts for all the variables and realities of our designs, we must take those "what if" questions into account.
+
+How do we account for all manner of variation without exhausting ourselves in the process?  
+
+<pre>
+<code>
+{% raw %}
+"isAdmin" : true
+{% endraw %}
+</code>
+</pre>
 
 Approaching content in this dynamic way provides some very crucial benefits:
 
-- **We create a clear separation between structure and content**. A pattern's structure and its content very much influence each other, however resilient design systems strive to establish agnostic, flexible patterns that can contain a variety of content. Decoupling pattern structure and data allows us to keep things DRY (which again stands for Don't Repeat Yourself) and make changes to content without affecting the pattern structure. Likewise, we're able to make changes to a pattern without having to update every instance of that pattern simply because each instance contains different data. This separation results in huge savings in both time and effort. 
-- **This approach creates an ad-hoc CMS**. Establishing `data.json` and page-specific content overrides serves as a sort of an ad-hoc content management system. Rather than 
+- **Creates a clear separation between structure and content**. A pattern's structure and its content very much influence each other, however resilient design systems strive to establish agnostic, flexible patterns that can contain a variety of content. Decoupling pattern structure and data allows us to keep things DRY (which again stands for Don't Repeat Yourself) and make changes to content without affecting the pattern structure. Likewise, we're able to make changes to a pattern without having to update every instance of that pattern simply because each instance contains different data. This separation results in huge savings in both time and effort. 
+- **Establishes an ad-hoc CMS**. Establishing `data.json` and page-specific content overrides serves as a sort of an ad-hoc content management system. Rather than having to install Wordpres, Drup
+- **Serves as a blueprint for backend developers** responsible for integrating the frontend into a CMS.
 - Allows designers, content people, and other non-developers to contribute to the living, breathing, prototype. As a front-end developer, I can't begin to count the amount of times I've been forced to fix typos, swap in a new image, and make other content-related 
-- Serve as a blueprint for backend developers responsible for integrating the frontend into a CMS.
-
-## Pattern variations with pseudo-patterns
-Replacing . Historically the visual designers have had a tendancy to 
-- Different permissions. Homepage differences 
 
 ### Viewport tools for flexible patterns
 - The importance of flexible patterns
@@ -279,9 +296,12 @@ Replacing . Historically the visual designers have had a tendancy to
 
 When considering the tool to choose to create your pattern library, you should consider the following:
 
-- Make sure the 
-- Ensure patterns work across viewport sizes
+- Demonstrate what patterns look like with real content inside  
+- Demonstrate pattern variations
+- 
+- Ensure patterns work across all viewport sizes
 - Demonstrate lineage
+- Provide a clear bridge between the production 
 
 ## Making it all work
 This chapter we 
