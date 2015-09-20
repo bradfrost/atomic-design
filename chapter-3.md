@@ -247,11 +247,29 @@ Of course these best-case scenarios rarely, if ever, occur in the real world.
 
 In order to create more robust and resilient designs, we need to concurrently account for the best situations, the worst, and everything in between.
 
-What if the user doesn’t upload a profile picture? What if the user has 87 items in their shopping cart? What if the product has 14 options? What if the blog post title contains 400 characters? Return user? First-time user? What if the article doesn’t have any comments? What if we need to display an urgent message on the homepage?
+What if the user doesn’t upload a profile picture? What if the user has 87 items in their shopping cart? What if the product has 14 options? What if the blog post title contains 400 characters? Return user? First-time user? What if the article doesn’t have any comments? What if it has seven layers of nested comments? What if we need to display an urgent message on the homepage?
 
-Articulating these UI variations in a static design tool is an exercise in tediousness and redundancy, which may explain why they're rarely created. But if we want to establish a solid pattern library that accounts for all the variables and realities of our designs, we must take those "what if" questions into account.
+Articulating these UI variations in a static design tool is an exercise in tediousness and redundancy, which may explain why they're rarely designed. But if we want to establish resilient design systems that address all the variables and realities of our designs, we must take those "what if" questions into account.
 
-How do we account for all manner of variation without exhausting ourselves in the process?  
+How do we account for all manner of UI variation without exhausting ourselves in the process? Pattern Lab's *[pseudo-pattern](http://patternlab.io/docs/pattern-pseudo-patterns.html)* feature allows us to articulate different scenarios and use cases with just a few changes to our data.
+
+<pre>
+<code>
+{% raw %}
+dashboard.json
+{% endraw %}
+</code>
+</pre>
+
+<pre>
+<code>
+{% raw %}
+dashboard~admin.json
+{% endraw %}
+</code>
+</pre>
+
+`dashboard~admin.json` will inherit all the data contained in `dashboard.json`, but also gives us the opportunity to append or override additional data.
 
 <pre>
 <code>
@@ -261,7 +279,7 @@ How do we account for all manner of variation without exhausting ourselves in th
 </code>
 </pre>
 
-Approaching content in this dynamic way provides some very crucial benefits:
+Using Pattern Lab to design dynamic UI systems provides some very crucial benefits:
 
 - **Creates a clear separation between structure and content**. A pattern's structure and its content very much influence each other, however resilient design systems strive to establish agnostic, flexible patterns that can contain a variety of content. Decoupling pattern structure and data allows us to keep things DRY (which again stands for Don't Repeat Yourself) and make changes to content without affecting the pattern structure. Likewise, we're able to make changes to a pattern without having to update every instance of that pattern simply because each instance contains different data. This separation results in huge savings in both time and effort. 
 - **Establishes an ad-hoc CMS**. Establishing `data.json` and page-specific content overrides serves as a sort of an ad-hoc content management system. Rather than having to install Wordpres, Drup
