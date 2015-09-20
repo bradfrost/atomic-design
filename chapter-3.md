@@ -144,9 +144,9 @@ So how does this look in code? As you might expect, it involves more includes!
     {{> molecules-hero }}
     {{/ hero }}
     \<section\>
-        {{# experience-hero }}
-        {{> molecules-hero-main }}
-        {{/ experience-hero }}
+        {{# experience-block }}
+        {{> molecules-block-main }}
+        {{/ experience-block }}
         {{# experience-feature }}
         {{> organisms-story-feature }}
         {{/ experience-feature }}
@@ -158,7 +158,7 @@ So how does this look in code? As you might expect, it involves more includes!
     \</section\>
     \<section\>
         {{# advertising }}
-        {{> molecules-hero-main }}
+        {{> molecules-block-main }}
         {{/ advertising }}
     \</section\>
     …   
@@ -187,18 +187,18 @@ We're including `organisms-factoid` the same way as all the other patterns, but 
 
 This Russian nesting doll approach to building UIs is simple but tremendously powerful. This structure allows designers and developers to keep patterns DRY saving time, effort, and money.  This approach also allows teams to build a final UI while simultaneously creating the underlying UI design system.  After all, the final interface is one instantiation of its underlying design system. Teams can also traverse between abstract and concrete, zeroing in on a particular pattern to fix bugs ("The header's broken!"), while also seeing how changes to small patterns affect the overall page layout.
 
-## A separation between structure and data
+## Working with dynamic data
 It's important to articulate the underlying content structure of UI patterns within the context of a pattern library. That's why we've been looking at dimension-displaying grayscale images and placeholder text containing character limits. But while this information is helpful for creative teams, grayscale images and lorem ipsum text are not what end users interact with on your actual site. We need a way to replace our default dummy content with real representative content in order to ensure our UI patterns match the reality of the content that lives inside them.
 
 To demonstrate how Pattern Lab dynamically swaps in real content into templates, let's take a look at a side-by-side comparison of Time Inc.'s homepage template and page levels:
 
 {% include figure.html src="../images/content/timeinc-template-page.png" caption="A side-by-side comparison of Time Inc.'s homepage template and page levels. The template articulates the content structure of the design system, while the page shows what the system looks like with real content poured into it." %}
 
-On the left we have the template level, which articulates the content structure of the patterns making up the webpage. And at the page level, we're pouring in real representative content to demonstrate what the final UI might look like and test the effectiveness of the design system. 
+On the left we have the template level, which articulates the content structure of the patterns making up the webpage. And on the right we have the page level, where we're pouring in real representative content to demonstrate what the final UI might look like and test the effectiveness of the design system. 
 
-So how do we swap dummy content for real content in Pattern Lab? Pattern Lab uses JSON (as well as YAML, Markdown, and other data formats) to define the dynamic bits of content in our designs.
+So how do we swap dummy content for real content in Pattern Lab? Pattern Lab uses JSON (as well as YAML, Markdown, and other data formats) to define and swap out the dynamic bits of content in our designs.
 
-The default placeholder data is defined in a file called `data.json` that lives in Pattern Lab's `source` directory. Inside this file we define all the dynamic text, image paths, and other data that will be poured into our UI. Here's a sample from Time Inc.'s `data.json`:
+The default placeholder data is defined in a file called `data.json` that lives in Pattern Lab's `source` directory. Inside this file we define all the text, image paths, and other dynamic data that will make up our UI. Here's a small sample from Time Inc.'s `data.json` file:
 
 <pre>
 <code>
@@ -214,9 +214,13 @@ The default placeholder data is defined in a file called `data.json` that lives 
 </code>
 </pre>
 
-If you're a developer, this type of format most likely looks familiar to you. If you're not a developer, don't freak out! Once you look beyond the curly braces and quotes, you
+For developers, this type of format most likely looks familiar. If you're not a developer, don't freak out! Once you look beyond the curly braces and quotes, you'll see that we're defining a *hero* object (for the full-bleed hero area directly below the header) that has a *headline* value of "Lorem Ipsum" and an *img* with a *src* value of "/images/sample/fpo_hero.png". We're simply defining this object's attributes and values for those attributes.
 
-Then, at the page level within Pattern Lab's `homepage.json`
+Once those objects are defined, then we can override their attributes at Pattern Lab's page level. This is accomplished by creating a new JSON file that matches the page pattern name (for Time Inc.'s homepage, we'll call it `homepage.json`) inside the `pages` directory. 
+
+{% include figure.html src="../images/content/timeinc-page-directory.png" caption="Inside the 'pages' directory we have the homepage pattern as well as a JSON file that matches the name of the pattern. This is where we'll override the default content with page-specific content." %}
+
+When we open up `homepage.json` we can override the placeholder data we established earlier. Here's what that might look like:
 
 <pre>
 <code>
@@ -232,11 +236,19 @@ Then, at the page level within Pattern Lab's `homepage.json`
 </code>
 </pre>
 
-- Allows designers, content people, and other non-developers to contribute to the living, breathing, prototype.
+By overriding the default data, the *hero* headline now reads "Moving People" instead of "Lorem Ipsum". And instead of pointing to a grayscale FPO (for placement only) hero image, we're now pointing to a picture of Beyoncè located at `"/images/hero_beyonce.jpg"`.
+
+This process of establishing defaults for dynamic data then replacing it with page-specific content continues for each section of the website. In addition to simply replacing strings, we can also dynamically set variables to `true` or `false`, loop through an array of items, and more. 
+
+Approaching content in this dynamic way provides some very crucial benefits:
+
+- **We create a clear separation between structure and content**. A pattern's structure and its content very much influence each other, however resilient design systems strive to establish agnostic, flexible patterns that can contain a variety of content. Decoupling pattern structure and data allows us to keep things DRY (which again stands for Don't Repeat Yourself) and make changes to content without affecting the pattern structure. Likewise, we're able to make changes to a pattern without having to update every instance of that pattern simply because each instance contains different data. This separation results in huge savings in both time and effort. 
+- **This approach creates an ad-hoc CMS**. Establishing `data.json` and page-specific content overrides serves as a sort of an ad-hoc content management system. Rather than 
+- Allows designers, content people, and other non-developers to contribute to the living, breathing, prototype. As a front-end developer, I can't begin to count the amount of times I've been forced to fix typos, swap in a new image, and make other content-related 
 - Serve as a blueprint for backend developers responsible for integrating the frontend into a CMS.
 
 ## Pattern variations with pseudo-patterns
-In addition to swapping out 
+Replacing . Historically the visual designers have had a tendancy to 
 - Different permissions. Homepage differences 
 
 ### Viewport tools for flexible patterns
