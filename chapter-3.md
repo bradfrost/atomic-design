@@ -331,14 +331,14 @@ We're defining a variable called `isAdmin` and setting it to true. We can now us
 
 The first few lines are pulling in the `img`, `name`, and `title` we defined in `dashboard.json`. But pay close attention to what's wrapped in the `isAdmin` mustache section. What we're saying here is "if `isAdmin` is set to `true`, include a molecule pattern called `block-actions`." The `block-actions` pattern contains the "edit" and "delete" buttons, and will only display if `isAdmin` is set to `true` (or anything besides `false`). In our default `dashboard.json`, `isAdmin` isn't set so the extra actions won't display. In `dashboard~admin.json`, we're setting `isAdmin` to `true` so the extra actions will display. You can extend this technique to dramatically alter the entire UI (like altering the primary navigation, showing additional panels on the dashboard, adding extra controls, etc) just by changing a single variable. Powerful stuff indeed.
 
-Whew. If you've made it this far, congratulations! You now understand the core of Pattern Lab and its ability to work with dynamic data. Using Pattern Lab to design dynamic UI systems provides some very crucial benefits:
+Whew. If you've made it this far, congratulations! You now know how to add and manipulate dynamic data in Pattern Lab. Pattern Lab's ability to design with dynamic data provides some very crucial benefits:
 
 - **Creates a clear separation between structure and content**. A pattern's structure and its content very much influence each other, however resilient design systems strive to establish agnostic, flexible patterns that can contain a variety of content. Decoupling pattern structure and data allows us to keep things DRY (which again stands for Don't Repeat Yourself) and make changes to content without affecting the pattern structure. Likewise, we're able to make changes to a pattern without having to update every instance of that pattern simply because each instance contains different data. This separation results in huge savings in both time and effort. 
-- **Establishes an ad-hoc CMS**. Establishing `data.json` and page-specific content overrides serves as a sort of an ad-hoc content management system. Rather than having to install Wordpres, Drup
-- **Serves as a blueprint for backend developers** responsible for integrating the frontend into a CMS.
-- Allows designers, content people, and other non-developers to contribute to the living, breathing, prototype. As a front-end developer, I can't begin to count the amount of times I've been forced to fix typos, swap in a new image, and make other content-related 
+- **Establishes an ad-hoc CMS**. Establishing default and page-specific data serves as an ad-hoc content management system. As mentioned earlier, static design tools aren't well equipped to handle dynamic data, but it's also overkill to install Wordpress, Drupal, or some other CMS just to demonstrate UI variations. Pattern Lab strikes a balance as it allows teams to work with dynamic data but doesn't require setting up any crazy MySQL databases.
+- **Serves as a blueprint for backend developers** responsible for integrating the frontend UI into a real content management system. Backend developers can look at the UI created in Pattern Lab, understand which bits are static and dynamic, then translate that into the backend system.
+- **Allows writers, content people, designers, and other non-developers to contribute to the living, breathing design system**. As a front-end developer, I can't count the number of times I've had to fix typos, swap in new images, translate copy decks, and make other content-related edits to front-end code. It's death by a million paper cuts, and I'm sure most developers would agree that making minor copy changes isn't an effective use of a developer's time. By separating structure and data, Pattern Lab enables non-developer team members to manage the content which in turn frees up developer time to focus on the structure of the design system.
 
-But we're not done yet! There are a few other features 
+We've now covered Pattern Lab's core functionality, but we're not done yet! Next we'll cover a few additional features that should be considered irrespective of what tool you use to create your pattern library.
 
 ### Viewport tools for flexible patterns
 - The importance of flexible patterns
@@ -360,7 +360,7 @@ But we're not done yet! There are a few other features
 
 ### More tools
 - Plugins
-- Next version
+- Next version - decoupling pattern engines
 
 
 ## To each their own
