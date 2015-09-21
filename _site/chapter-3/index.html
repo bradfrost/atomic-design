@@ -333,11 +333,11 @@
 
 <p><strong>In order to create more robust and resilient designs, we need to concurrently account for the best situations, the worst, and everything in between</strong>.</p>
 
-<p>What if the user doesn’t upload a profile picture? What if the user has 87 items in their shopping cart? What if the product has 14 options? What if the blog post title contains 400 characters? Return user? First-time user? What if the article doesn’t have any comments? What if it has seven layers of nested comments? What if we need to display an urgent message on the homepage?</p>
+<p>What if the user doesn’t upload a profile picture? What if the user has 87 items in their shopping cart? What if the product has 14 options? What if the blog post title contains 400 characters? Return user? First-time user? What if the article doesn’t have any comments? What if it has seven layers of nested comments? What if we need to display an urgent message on the dashboard?</p>
 
 <p>Articulating these UI variations in a static design tool is an exercise in tediousness and redundancy, which may explain why they’re rarely designed. But if we want to create systems that address all the variables and realities of our content, we must take those “what if” questions into account.</p>
 
-<p>How do we account for all manner of UI variation without exhausting ourselves in the process? Pattern Lab’s <em><a href="http://patternlab.io/docs/pattern-pseudo-patterns.html">pseudo-pattern</a></em> feature allows us to articulate (sometimes wildly) different scenarios with just a few changes to our data.</p>
+<p>How do we address all manner of UI variation without exhausting ourselves in the process? Pattern Lab’s <em><a href="http://patternlab.io/docs/pattern-pseudo-patterns.html">pseudo-pattern</a></em> feature allows us to articulate (sometimes wildly) different scenarios with just a few changes to our data.</p>
 
 <p>Let’s say we’re making an app whose dashboard displays a list of project collaborators. The UI might look something like this:</p>
 
@@ -348,7 +348,7 @@
 	</figcaption>
 </figure>
 
-<p>In order to create this dynamic content, we’ll define our list of collaborators as an array inside <code>dashboard.json</code>:</p>
+<p>To create the dynamic content inside each of these blocks, we’ll define our list of collaborators as an array inside <code>dashboard.json</code>:</p>
 
 <pre>
 <code>
@@ -379,14 +379,16 @@
 </code>
 </pre>
 
-<p>Our default design assumes the user is a regular user and not an administrator. </p>
+<p>By default, our design assumes the user is a regular user and not an administrator, but what if we wanted to give administrators the ability to manage project collaborators from the dashboard? That UI might look something like this:</p>
 
 <figure>
-    <img src="../images/content/pseudo-pattern-admin.jpg" alt="How an administrator would view the list of collaborators of our hypothetical app." />
+    <img src="../images/content/pseudo-pattern-admin.jpg" alt="The administrator's dashboard UI introduces extra 'edit' and 'delete' actions." />
 	<figcaption>
-	    How an administrator would view the list of collaborators of our hypothetical app.
+	    The administrator's dashboard UI introduces extra 'edit' and 'delete' actions.
 	</figcaption>
 </figure>
+
+<p>In order to show additional admin “edit” and “delete” actions on the dashboard in Pattern Lab, we can create a pseudo-pattern, a new file in the <code>pages</code> folder that looks like this:</p>
 
 <pre>
 <code>
@@ -396,7 +398,7 @@ dashboard~admin.json
 </code>
 </pre>
 
-<p><code>dashboard~admin.json</code> will inherit all the data contained in <code>dashboard.json</code>, but also gives us the opportunity to append or override additional data. </p>
+<p>The tilde (<code>~</code>) symbol indicates a pseudo-pattern. <code>dashboard~admin.json</code> will inherit all the data contained in <code>dashboard.json</code>, but also gives us the opportunity to append or override additional data. That means the list of collaborators we defined earlier in <code>dashboard.json</code> is still available, but we can add additional data inside <code>dashboard~admin.json</code> like so:</p>
 
 <pre>
 <code>
@@ -406,6 +408,27 @@ dashboard~admin.json
 </code>
 </pre>
 
+<p>We’re defining a variable called <code>isAdmin</code> and setting it to true. We can now use that to conditionally include the additional actions inside the block pattern.</p>
+
+<pre>
+<code>
+
+\&lt;div class="block"\&gt;
+  \&lt;img src="{{ img }}" alt="{{ name }}" /\&gt;
+  \&lt;h3\&gt;{{ name }}\&lt;/h3\&gt;
+  \&lt;h4\&gt;{{ title }}\&lt;/h4\&gt;
+  {{# isAdmin }}
+  {{&gt; molecules-block-actions }}
+  {{/ isAdmin }}
+\&lt;/div\&gt;
+
+</code>
+</pre>
+
+<p>The first few lines are pulling in the <code>img</code>, <code>name</code>, and <code>title</code> we defined in <code>dashboard.json</code>. But pay close attention to what’s wrapped in the <code>isAdmin</code> mustache section. What we’re saying here is “if <code>isAdmin</code> is set to <code>true</code>, include a molecule pattern called <code>block-actions</code>.” The <code>block-actions</code> pattern contains the “edit” and “delete” buttons, and will only display if <code>isAdmin</code> is set to <code>true</code> (or anything besides <code>false</code>). In our default <code>dashboard.json</code>, <code>isAdmin</code> isn’t set so the extra actions won’t display. In <code>dashboard~admin.json</code>, we’re setting <code>isAdmin</code> to <code>true</code> so the extra actions will display.</p>
+
+<p>Whew. If you’ve made it this far, congratulations! You now understand the core of </p>
+
 <p>Using Pattern Lab to design dynamic UI systems provides some very crucial benefits:</p>
 
 <ul>
@@ -414,6 +437,8 @@ dashboard~admin.json
   <li><strong>Serves as a blueprint for backend developers</strong> responsible for integrating the frontend into a CMS.</li>
   <li>Allows designers, content people, and other non-developers to contribute to the living, breathing, prototype. As a front-end developer, I can’t begin to count the amount of times I’ve been forced to fix typos, swap in a new image, and make other content-related </li>
 </ul>
+
+<p>But we’re not done yet! There are a few other features </p>
 
 <h3 id="viewport-tools-for-flexible-patterns">Viewport tools for flexible patterns</h3>
 <ul>

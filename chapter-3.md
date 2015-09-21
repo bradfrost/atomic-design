@@ -247,17 +247,17 @@ Of course these best-case scenarios rarely, if ever, occur in the real world.
 
 **In order to create more robust and resilient designs, we need to concurrently account for the best situations, the worst, and everything in between**.
 
-What if the user doesn’t upload a profile picture? What if the user has 87 items in their shopping cart? What if the product has 14 options? What if the blog post title contains 400 characters? Return user? First-time user? What if the article doesn’t have any comments? What if it has seven layers of nested comments? What if we need to display an urgent message on the homepage?
+What if the user doesn’t upload a profile picture? What if the user has 87 items in their shopping cart? What if the product has 14 options? What if the blog post title contains 400 characters? Return user? First-time user? What if the article doesn’t have any comments? What if it has seven layers of nested comments? What if we need to display an urgent message on the dashboard?
 
 Articulating these UI variations in a static design tool is an exercise in tediousness and redundancy, which may explain why they're rarely designed. But if we want to create systems that address all the variables and realities of our content, we must take those "what if" questions into account.
 
-How do we account for all manner of UI variation without exhausting ourselves in the process? Pattern Lab's *[pseudo-pattern](http://patternlab.io/docs/pattern-pseudo-patterns.html)* feature allows us to articulate (sometimes wildly) different scenarios with just a few changes to our data.
+How do we address all manner of UI variation without exhausting ourselves in the process? Pattern Lab's *[pseudo-pattern](http://patternlab.io/docs/pattern-pseudo-patterns.html)* feature allows us to articulate (sometimes wildly) different scenarios with just a few changes to our data.
 
 Let's say we're making an app whose dashboard displays a list of project collaborators. The UI might look something like this:
 
 {% include figure.html src="../images/content/pseudo-pattern-normal.jpg" caption="A list of project collaboratos in our hypothetical app" %}
 
-In order to create this dynamic content, we'll define our list of collaborators as an array inside `dashboard.json`:
+To create the dynamic content inside each of these blocks, we'll define our list of collaborators as an array inside `dashboard.json`:
 
 <pre>
 <code>
@@ -288,9 +288,11 @@ In order to create this dynamic content, we'll define our list of collaborators 
 </code>
 </pre>
 
-Our default design assumes the user is a regular user and not an administrator. 
+By default, our design assumes the user is a regular user and not an administrator, but what if we wanted to give administrators the ability to manage project collaborators from the dashboard? That UI might look something like this:
 
-{% include figure.html src="../images/content/pseudo-pattern-admin.jpg" caption="How an administrator would view the list of collaborators of our hypothetical app." %}
+{% include figure.html src="../images/content/pseudo-pattern-admin.jpg" caption="The administrator's dashboard UI introduces extra 'edit' and 'delete' actions." %}
+
+In order to show additional admin "edit" and "delete" actions on the dashboard in Pattern Lab, we can create a pseudo-pattern, a new file in the `pages` folder that looks like this:
 
 <pre>
 <code>
@@ -300,7 +302,7 @@ dashboard~admin.json
 </code>
 </pre>
 
-`dashboard~admin.json` will inherit all the data contained in `dashboard.json`, but also gives us the opportunity to append or override additional data. 
+The tilde (`~`) symbol indicates a pseudo-pattern. `dashboard~admin.json` will inherit all the data contained in `dashboard.json`, but also gives us the opportunity to append or override additional data. That means the list of collaborators we defined earlier in `dashboard.json` is still available, but we can add additional data inside `dashboard~admin.json` like so:
 
 <pre>
 <code>
@@ -310,12 +312,35 @@ dashboard~admin.json
 </code>
 </pre>
 
+We're defining a variable called `isAdmin` and setting it to true. We can now use that to conditionally include the additional actions inside the block pattern.
+
+<pre>
+<code>
+{% raw %}
+\<div class="block"\>
+  \<img src="{{ img }}" alt="{{ name }}" /\>
+  \<h3\>{{ name }}\</h3\>
+  \<h4\>{{ title }}\</h4\>
+  {{# isAdmin }}
+  {{> molecules-block-actions }}
+  {{/ isAdmin }}
+\</div\>
+{% endraw %}
+</code>
+</pre>
+
+The first few lines are pulling in the `img`, `name`, and `title` we defined in `dashboard.json`. But pay close attention to what's wrapped in the `isAdmin` mustache section. What we're saying here is "if `isAdmin` is set to `true`, include a molecule pattern called `block-actions`." The `block-actions` pattern contains the "edit" and "delete" buttons, and will only display if `isAdmin` is set to `true` (or anything besides `false`). In our default `dashboard.json`, `isAdmin` isn't set so the extra actions won't display. In `dashboard~admin.json`, we're setting `isAdmin` to `true` so the extra actions will display.
+
+Whew. If you've made it this far, congratulations! You now understand the core of 
+
 Using Pattern Lab to design dynamic UI systems provides some very crucial benefits:
 
 - **Creates a clear separation between structure and content**. A pattern's structure and its content very much influence each other, however resilient design systems strive to establish agnostic, flexible patterns that can contain a variety of content. Decoupling pattern structure and data allows us to keep things DRY (which again stands for Don't Repeat Yourself) and make changes to content without affecting the pattern structure. Likewise, we're able to make changes to a pattern without having to update every instance of that pattern simply because each instance contains different data. This separation results in huge savings in both time and effort. 
 - **Establishes an ad-hoc CMS**. Establishing `data.json` and page-specific content overrides serves as a sort of an ad-hoc content management system. Rather than having to install Wordpres, Drup
 - **Serves as a blueprint for backend developers** responsible for integrating the frontend into a CMS.
 - Allows designers, content people, and other non-developers to contribute to the living, breathing, prototype. As a front-end developer, I can't begin to count the amount of times I've been forced to fix typos, swap in a new image, and make other content-related 
+
+But we're not done yet! There are a few other features 
 
 ### Viewport tools for flexible patterns
 - The importance of flexible patterns
