@@ -341,7 +341,7 @@ Whew. If you've made it this far, congratulations! You now know how to add and m
 We've now covered Pattern Lab's core functionality, but we're not done yet! Next we'll cover a few additional features that should be considered irrespective of what tool you use to create your pattern library.
 
 ### Viewport tools for flexible patterns
-- The importance of flexible patterns
+It's essential to establish The importance of flexible patterns
 - The dangers of focusing on popular device dimensions
 - Ish
 - Disco mode
