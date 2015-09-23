@@ -341,11 +341,16 @@ Whew. If you've made it this far, congratulations! You now know how to add and m
 We've now covered Pattern Lab's core functionality, but we're not done yet! Next we'll cover a few additional features that should be considered irrespective of what tool you use to create your pattern library.
 
 ### Viewport tools for flexible patterns
-It's essential to establish The importance of flexible patterns
+The myriad of devices now accessing the Web has forced designers to re-embrace the intrinsic fluidity of the medium. Thankfully, techniques like responsive web design allow us to create layouts that look and function beautifully on any screen.
+
+Responsive design makes establishing flexible patterns in our design systems a no-brainer, but creating fluid patterns has other advantages as well. The more fluid a UI component is, the more resilient and versatile it becomes. Imagine being able to take a component, let's say a photo gallery slider, and 
+
+Indeed, that is the promise of element [container queries](http://alistapart.com/article/container-queries-once-more-unto-the-breach)
+
 - The dangers of focusing on popular device dimensions
-- Ish
+- I created a tool called [ish.](http://bradfrost.com/demo/ish/), which is baked into Pattern Lab.
 - Disco mode
-- It's helpful for designers and developers to see where there might be 
+- Helpts designers and developers uncover bugs along the viewport continuum.  
 - It's more helpful as a client and colleague education tool. Helps them appreciate that you're creating a user interface that looks and functions great no matter what viewport size 
 
 ### Code View
