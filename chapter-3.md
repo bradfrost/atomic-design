@@ -341,16 +341,18 @@ Whew. If you've made it this far, congratulations! You now know how to add and m
 We've now covered Pattern Lab's core functionality, but we're not done yet! Next we'll cover a few additional features that should be considered irrespective of what tool you use to create your pattern library.
 
 ### Viewport tools for flexible patterns
-The myriad of devices now accessing the Web has forced designers to re-embrace the intrinsic fluidity of the medium. Thankfully, techniques like responsive web design allow us to create layouts that look and function beautifully on any screen.
+The myriad of devices now accessing the Web has forced designers to re-embrace the intrinsic fluidity of the medium. Thankfully, techniques like [responsive web design](http://alistapart.com/article/responsive-web-design) allow us to create layouts that look and function beautifully on any screen.
 
-Responsive design makes establishing flexible patterns in our design systems a no-brainer, but creating fluid patterns has other advantages as well. The more fluid a UI component is, the more resilient and versatile it becomes. Imagine being able to take a component, let's say a photo gallery slider, and 
+It's a no-brainer that we need to establish flexible patterns in our design systems if we want to create responsive designs, but creating fluid patterns has additional advantages. The more fluid a UI component is, the more resilient and versatile it becomes. Imagine being able to take a component — let's say a photo gallery slider — and be able to plunk it anywhere we need it. Sometimes we may need it to be a full-bleed element occupying the entire viewport. Other times we may need to include it in the context of an article. And still other times we may want to include it in the sidebar. The idea is that we can build our components fluidly, and they'll adapt their layout and functionality to and whatever containers we put them into.
 
-Indeed, that is the promise of element [container queries](http://alistapart.com/article/container-queries-once-more-unto-the-breach)
+Indeed, this is the promise of [container queries](http://alistapart.com/article/container-queries-once-more-unto-the-breach). While still being developed as a native browser capability, this feature would allow us pattern-crazed designers and developers to better implement fluid UI systems.
+
+So between responsive design, container queries, and common-sense resiliency, we now understand why it's so imperative to create flexible UI patterns. But how do we do that? And how can our pattern library tools help us think flexibly? 
 
 - The dangers of focusing on popular device dimensions
 - I created a tool called [ish.](http://bradfrost.com/demo/ish/), which is baked into Pattern Lab.
 - Disco mode
-- Helpts designers and developers uncover bugs along the viewport continuum.  
+- Helps designers and developers uncover bugs along the viewport continuum.  
 - It's more helpful as a client and colleague education tool. Helps them appreciate that you're creating a user interface that looks and functions great no matter what viewport size 
 
 ### Code View
