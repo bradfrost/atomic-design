@@ -343,14 +343,22 @@ We've now covered Pattern Lab's core functionality, but we're not done yet! Next
 ### Viewport tools for flexible patterns
 The myriad of devices now accessing the Web has forced designers to re-embrace the intrinsic fluidity of the medium. Thankfully, techniques like [responsive web design](http://alistapart.com/article/responsive-web-design) allow us to create layouts that look and function beautifully on any screen.
 
-It's a no-brainer that we need to establish flexible patterns in our design systems if we want to create responsive designs, but creating fluid patterns has additional advantages. The more fluid a UI component is, the more resilient and versatile it becomes. Imagine being able to take a component — let's say a photo gallery slider — and be able to plunk it anywhere we need it. Sometimes we may need it to be a full-bleed element occupying the entire viewport. Other times we may need to include it in the context of an article. And still other times we may want to include it in the sidebar. The idea is that we can build our components fluidly, and they'll adapt their layout and functionality to and whatever containers we put them into.
+It's a no-brainer that we need to establish flexible UI patterns if we want to create responsive designs, but creating fluid patterns has additional advantages. The more fluid a UI component is, the more resilient and versatile it becomes. Imagine being able to take a component — let's say a photo gallery slider — and plunk it anywhere we need it. Sometimes we may need it to be a full-bleed element occupying the entire viewport. Other times we may need to include it in the context of an article. And still other times we may want to include it in the sidebar. The idea is that we can build our components fluidly, and they'll adapt their styles and functionality to whatever containers we put them into.
 
-Indeed, this is the promise of [container queries](http://alistapart.com/article/container-queries-once-more-unto-the-breach). While still being developed as a native browser capability, this feature would allow us pattern-crazed designers and developers to better implement fluid UI systems.
+Indeed, this is the promise of [container queries](http://alistapart.com/article/container-queries-once-more-unto-the-breach). Container queries let elements adapt themselves based on their parent container rather than the entire viewport, which is currently how we adapt elements using `@media` queries.  While still being developed as a native browser capability, container queries would allow us pattern-crazed designers and developers to easily create and deploy fluid UI systems.
 
-So between responsive design, container queries, and common-sense resiliency, we now understand why it's so imperative to create flexible UI patterns. But how do we do that? And how can our pattern library tools help us think flexibly? 
+So between responsive design, container queries, and good-ol' common sense, we now understand why it's so imperative to create flexible UI patterns. But how do we do that? And how can our pattern library tools help us think and act flexibly? 
 
-- The dangers of focusing on popular device dimensions
-- I created a tool called [ish.](http://bradfrost.com/demo/ish/), which is baked into Pattern Lab.
+A while back, I created a tool called [ish.](http://bradfrost.com/demo/ish/) to combat the notion that designers should just focus on popular device dimensions. For a
+
+Ish. is baked into Pattern Lab, which means we can view our UIs and their underlying patterns across the entire resolution spectrum.
+
+{% include figure.html src="../images/content/ish-s.png" caption="Pattern Lab displaying a design in a small-ish viewport." %}
+
+{% include figure.html src="../images/content/ish-m.png" caption="Pattern Lab displaying a design in a medium-ish viewport." %}
+
+{% include figure.html src="../images/content/ish-l.png" caption="Pattern Lab displaying a design in a large-ish viewport." %}
+
 - Disco mode
 - Helps designers and developers uncover bugs along the viewport continuum.  
 - It's more helpful as a client and colleague education tool. Helps them appreciate that you're creating a user interface that looks and functions great no matter what viewport size 
