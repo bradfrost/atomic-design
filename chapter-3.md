@@ -343,13 +343,15 @@ We've now covered Pattern Lab's core functionality, but we're not done yet! Next
 ### Viewport tools for flexible patterns
 The myriad of devices now accessing the Web has forced designers to re-embrace the intrinsic fluidity of the medium. Thankfully, techniques like [responsive web design](http://alistapart.com/article/responsive-web-design) allow us to create layouts that look and function beautifully on any screen.
 
-It's a no-brainer that we need to establish flexible UI patterns if we want to create responsive designs, but creating fluid patterns has additional advantages. The more fluid a UI component is, the more resilient and versatile it becomes. Imagine being able to take a component — let's say a photo gallery slider — and plunk it anywhere we need it. Sometimes we may need it to be a full-bleed element occupying the entire viewport. Other times we may need to include it in the context of an article. And still other times we may want to include it in the sidebar. The idea is that we can build our components fluidly, and they'll adapt their styles and functionality to whatever containers we put them into.
+It's a no-brainer that we need to establish flexible UI patterns if we want to create responsive designs, but creating fluid patterns has additional advantages. The more fluid a UI component is, the more resilient and versatile it becomes. Imagine being able to take a component — let's say a photo gallery slider — and plunk it anywhere we need it. Sometimes we may need it to be a full-bleed element occupying the entire viewport. Other times we may need to include it in the context of an article. And still other times we may want to include it in the sidebar. The dream is to build our components fluidly and they'll adapt their styles and functionality to fit whatever containers we put them into.
 
-Indeed, this is the promise of [container queries](http://alistapart.com/article/container-queries-once-more-unto-the-breach). Container queries let elements adapt themselves based on their parent container rather than the entire viewport, which is currently how we adapt elements using `@media` queries.  While still being developed as a native browser capability, container queries would allow us pattern-crazed designers and developers to easily create and deploy fluid UI systems.
+Indeed, this is the promise of [container queries](http://alistapart.com/article/container-queries-once-more-unto-the-breach). Container queries let elements adapt themselves based on their parent container rather than the entire viewport, which is currently how we adapt elements using `@media` queries.  While still being developed as a native browser capability, container queries will allow us pattern-crazed designers and developers to easily create and deploy fluid UI systems.
 
-So between responsive design, container queries, and good-ol' common sense, we now understand why it's so imperative to create flexible UI patterns. But how do we do that? And how can our pattern library tools help us think and act flexibly? 
+So between responsive design, container queries, and good ol'-fashioned common sense, we now understand why it's so imperative to create flexible UI patterns. But how do we do that? And how can our pattern library tools help us think and act flexibly? 
 
-A while back, I created a tool called [ish.](http://bradfrost.com/demo/ish/) to combat the notion that designers should just focus on popular device dimensions. For a
+Many early responsive design testing tools focused on viewing designs on popular mobile device widths, such as 320px (an iPhone 4 in portrait mode),  480px (an iPhone 4 in landscape mode), 768px (an iPad in portrait mode), and so on. But of course the Web is *much* more diverse than a "mobile" view, "tablet" view, and a "desktop" view. To help designers better consider the entire resolution spectrum when testing their responsive designs, I created a tool called [ish.](http://bradfrost.com/demo/ish/).
+
+The tool is called "ish." because selecting the small button results in a "small-ish" viewport. Selecting it again provides a different "small-ish" viewport. Selecting the medium button gives you a "medium-ish" viewport. And of course the large button results in a "large-ish" viewport. These randomized values help designers and developers better consider the entire resolution spectrum rather than a handful of popular device dimensions.
 
 Ish. is baked into Pattern Lab, which means we can view our UIs and their underlying patterns across the entire resolution spectrum.
 
@@ -359,18 +361,20 @@ Ish. is baked into Pattern Lab, which means we can view our UIs and their underl
 
 {% include figure.html src="../images/content/ish-l.png" caption="Pattern Lab displaying a design in a large-ish viewport." %}
 
-- Disco mode
-- Helps designers and developers uncover bugs along the viewport continuum.  
-- It's more helpful as a client and colleague education tool. Helps them appreciate that you're creating a user interface that looks and functions great no matter what viewport size 
+While ish. helps designers and developers uncover bugs along the viewport continuum, it's more helpful as a client and colleague education tool. By building a device-agnostic viewport resizing tool directly into the pattern library, clients and colleagues can better appreciate the fact that their design system should look and function great no matter what the user's viewport size is when interacting with the UI.
 
 ### Code View
-- A good pattern library allows teams to look under the hood to see the source code. HTML, CSS, JS, template code
+- An effective pattern library allows teams to look under the hood to see the source code. HTML, CSS, JS, template code
 
 ### Annotations
 - Annotation tool - the issue tool
 - Documentation tools
 
 ### Pattern Lineage
+- Shows what patterns comprise a particular pattern
+- Shows where a particular pattern is employed 
+- Provides context
+- If designers and developers make changes to a particular pattern, they immediately know which patterns and templates need retested, QA.  
 
 
 ### More tools
