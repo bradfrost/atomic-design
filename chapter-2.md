@@ -149,12 +149,12 @@ We must create systems that establish reusable design patterns and also accurate
 
 **Pages also provide a place to articulate variations in templates**, which is crucial for establishing robust and reliant design systems. Here are just a few examples of template variations:
 
-- A user has one item in their shopping cart and other user has 10 items in their cart.
+- A user has one item in their shopping cart and another user has 10 items in their cart.
 - A web app's dashboard typically shows recent activity, but that section is suppressed for first-time users.
 - An article contains a 40-character-long headline while other article with a 340-character-long headline.  
 - Users with administrative privileges see additional buttons and options on their dashboard compared to users who aren't admins.
 
-In all of these examples, the underlying templates are the same, but the user interfaces change to reflect the nature of the content. These variations directly influence how the underlying molecules, organisms, and templates are constructed. Therefore, creating pages that account for these variables helps us create more resilient design systems.
+In all of these examples, the underlying templates are the same, but the user interfaces change to reflect the nature of the content. These variations directly influence how the underlying molecules, organisms, and templates are constructed. Therefore, creating pages that account for these variations helps us create more resilient design systems.
 
 So that's atomic design! These five distinct stages work together to produce effective user interface design systems. To sum up atomic design in a nutshell:
 
