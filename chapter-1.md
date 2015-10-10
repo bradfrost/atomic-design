@@ -291,7 +291,7 @@ The ability to pull an interface apart into its component pieces makes testing a
 ### Speed
 Earlier in the chapter we discussed how *design and development speed* is one of the main reasons why UI frameworks like Bootstrap are so popular. We're under pressure to get projects out the door as soon as humanly possible. By developing your own design system, you can reap those same speed rewards as the out-of-the-box UI toolkits.
 
-It's true that devising an interface design system and creating a custom pattern library initially takes a lot of time, thought, and effort. But once the pattern library is established subsequent design and development becomes much faster, which tends to make everybody happy.
+It's true that devising an interface design system and creating a custom pattern library initially takes a lot of time, thought, and effort. But once the pattern library is established, subsequent design and development becomes much faster, which tends to make everybody happy.
 
 Federico Holgado, Lead UX developer at MailChimp, [explained](http://styleguides.io/podcast/federico-holgado/) how MailChimp's pattern library initially consisted of patterns created from the four primary screens of their app. But once they moved onto other areas of the site, they realized they were able to utilize existing patterns rather than having to generate brand new patterns from scratch every time.
 
