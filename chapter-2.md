@@ -89,7 +89,7 @@ Now we have simple, functional, reusable components that we can put into a broad
 
 **Organisms are relatively complex UI components composed of groups of molecules and possibly even atoms**. These organisms form distinct sections of an interface.
 
-Let's revisit our search form molecule. A search form can often be found in the header of many Web experiences, so let's put that search form molecule into context of a header organism.
+Let's revisit our search form molecule. A search form can often be found in the header of many Web experiences, so let's put that search form molecule into a context of a header organism.
 
 {% include figure.html src="../images/content/organism-header.png" caption="The search form molecule placed in the context of the header organism, which also contains the logo atom and the primary navigation molecule." %}
 
