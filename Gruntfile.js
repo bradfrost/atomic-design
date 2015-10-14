@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     // Configuration
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        
+
         connect: {
 	      server: {
 		      options: {
@@ -59,9 +59,20 @@ module.exports = function(grunt) {
 		      dest: "source/_patterns/00-atoms/02-text/02-type-sizes.json"
 		    }
 		},
+        copy: {
+		  main: {
+		    files: [
+		      { src:"_patternlab/public/css/style.css", dest:"css/style.css" },
+              { src:"public/js/libraries.js", dest:"../node/listy.io/assets/js/libraries.js" },
+		      { src:"public/js/production.min.js", dest:"../node/listy.io/assets/js/production.min.js" },
+              { expand: true, cwd: 'source/', src:"i/*", dest:"public/" },
+		      { expand: true, cwd: 'public/', src:"i/*", dest:"../../node/listy.io/assets/" }
+		    ]
+		  }
+		},
 		watch: {
 			options: {
-				livereload: true	
+				livereload: true
 			},
 			html: {
   				files: ['_patternlab/source/_patterns/**/*.mustache', '_patternlab/source/_patterns/**/*.json', '_patternlab/source/_data/*.json'],
@@ -74,14 +85,14 @@ module.exports = function(grunt) {
 				files: ['index.html', '_layouts/*.html', '_includes/*.html', '*.md'],
 				tasks: ['jekyll'],
 				options: {
-					livereload: true	
+					livereload: true
 				}
 			},
 			css: {
 				files: ['_patternlab/source/css/*.scss', '_patternlab/source/css/**/*.scss'],
-				tasks: ['sass', 'autoprefixer', 'jekyll', 'shell:patternlab'],
+				tasks: ['sass', 'autoprefixer', 'jekyll', 'shell:patternlab', 'copy'],
 				options: {
-					livereload: true	
+					livereload: true
 				}
 			}
 		}
