@@ -214,7 +214,7 @@ The default placeholder data is defined in a file called `data.json` that lives 
 </code>
 </pre>
 
-For developers, this type of format most likely looks familiar. If you're not a developer, don't freak out! Once you look beyond the curly braces and quotes, you'll see that we're defining a *hero* object (for the full-bleed hero area directly below the header) that has a *headline* value of "Lorem Ipsum" and an *img* with a *src* value of "/images/sample/fpo_hero.png". We're simply defining this object's attributes and values for those attributes.
+For developers, this type of format most likely looks familiar. If you're not a developer, don't freak out! Once you look beyond the curly braces and quotes, you'll see that we're defining a *hero* object (for the full-bleed hero area directly below the header) that has a *headline* value of "Lorem Ipsum" and an *img* with a *src* value of "/images/sample/fpo_hero.png". We're simply defining this object's attributes and providing values for those attributes.
 
 Once those objects are defined, then we can override their attributes at Pattern Lab's page level. This is accomplished by creating a new JSON file that matches the page pattern name (for Time Inc.'s homepage, we'll call it `homepage.json`) inside the `pages` directory. 
 
@@ -336,14 +336,14 @@ Whew. If you've made it this far, congratulations! You now know how to add and m
 - **Creates a clear separation between structure and content**. A pattern's structure and its content very much influence each other, however resilient design systems strive to establish agnostic, flexible patterns that can contain a variety of content. Decoupling pattern structure and data allows us to keep things DRY (which again stands for Don't Repeat Yourself) and make changes to content without affecting the pattern structure. Likewise, we're able to make changes to a pattern without having to update every instance of that pattern simply because each instance contains different data. This separation results in huge savings in both time and effort. 
 - **Establishes an ad-hoc CMS**. Establishing default and page-specific data serves as an ad-hoc content management system. As mentioned earlier, static design tools aren't well equipped to handle dynamic data, but it's also overkill to install Wordpress, Drupal, or some other CMS just to demonstrate UI variations. Pattern Lab strikes a balance as it allows teams to work with dynamic data but doesn't require setting up any crazy MySQL databases.
 - **Serves as a blueprint for backend developers** responsible for integrating the frontend UI into a real content management system. Backend developers can look at the UI created in Pattern Lab, understand which bits are static and dynamic, then translate that into the backend system.
-- **Allows writers, content people, designers, and other non-developers to contribute to the living, breathing design system**. As a front-end developer, I can't count the number of times I've had to fix typos, swap in new images, translate copy decks, and make other content-related edits to front-end code. It's death by a million paper cuts, and I'm sure most developers would agree that making minor copy changes isn't an effective use of a developer's time. By separating structure and data, Pattern Lab enables non-developer team members to manage the content which in turn frees up developer time to focus on the structure of the design system.
+- **Allows writers, content people, designers, and other non-developers to contribute to the living, breathing design system**. As a front-end developer, I can't count the number of times I've had to fix typos, swap in new images, translate copy decks, and make other content-related edits to front-end code. It's death by a million paper cuts, and I'm sure most developers would agree that making minor copy changes isn't an effective use of their time. By separating structure and data, Pattern Lab enables non-developer team members to safely manage the content-related aspects of the design, freeing up developers to focus on building the design system's structure.
 
 We've now covered Pattern Lab's core functionality, but we're not done yet! Next we'll cover a few additional features that should be considered irrespective of what tool you use to create your pattern library.
 
 ### Viewport tools for flexible patterns
 The myriad of devices now accessing the Web has forced designers to re-embrace the intrinsic fluidity of the medium. Thankfully, techniques like [responsive web design](http://alistapart.com/article/responsive-web-design) allow us to create layouts that look and function beautifully on any screen.
 
-It's a no-brainer that we need to establish flexible UI patterns if we want to create responsive designs, but creating fluid patterns has additional advantages. The more fluid a UI component is, the more resilient and versatile it becomes. Imagine being able to take a component — let's say a photo gallery slider — and plunk it anywhere we need it. Sometimes we may need it to be a full-bleed element occupying the entire viewport. Other times we may need to include it in the context of an article. And still other times we may want to include it in the sidebar. The dream is to build our components fluidly and they'll adapt their styles and functionality to fit whatever containers we put them into.
+It's a no-brainer that we need to establish flexible UI patterns if we want to create responsive designs, but creating fluid patterns has additional advantages. **The more fluid a UI component is, the more resilient and versatile it becomes**. Imagine being able to take a component — let's say a photo gallery slider — and plunk it anywhere we need it. Sometimes we may need it to be a full-bleed element occupying the entire viewport. Other times we may need to include it in the context of an article. And still other times we may want to include it in the sidebar. The dream is to build our components fluidly and they'll adapt their styles and functionality to fit whatever containers we put them into.
 
 Indeed, this is the promise of [container queries](http://alistapart.com/article/container-queries-once-more-unto-the-breach). Container queries let elements adapt themselves based on their parent container rather than the entire viewport, which is currently how we adapt elements using `@media` queries.  While still being developed as a native browser capability, container queries will allow us pattern-crazed designers and developers to easily create and deploy fluid UI systems.
 
@@ -351,7 +351,7 @@ So between responsive design, container queries, and good ol'-fashioned common s
 
 Many early responsive design testing tools focused on viewing designs on popular mobile device widths, such as 320px (an iPhone 4 in portrait mode),  480px (an iPhone 4 in landscape mode), 768px (an iPad in portrait mode), and so on. But of course the Web is *much* more diverse than a "mobile" view, "tablet" view, and a "desktop" view. To help designers better consider the entire resolution spectrum when testing their responsive designs, I created a tool called [ish.](http://bradfrost.com/demo/ish/).
 
-The tool is called "ish." because selecting the small button results in a "small-ish" viewport. Selecting it again provides a different "small-ish" viewport. Selecting the medium button gives you a "medium-ish" viewport. And of course the large button results in a "large-ish" viewport. These randomized values help designers and developers better consider the entire resolution spectrum rather than a handful of popular device dimensions.
+The tool is called "ish." because selecting the small button results in a "small-ish" viewport. Selecting it again provides a different "small-ish" viewport. Selecting the medium button gives you a "medium-ish" viewport. And the large button results in a — wait for it — "large-ish" viewport. These randomized values help designers and developers better consider the entire resolution spectrum rather than a handful of popular device dimensions.
 
 Ish. is baked into Pattern Lab, which means we can view our UIs and their underlying patterns across the entire resolution spectrum.
 
@@ -361,10 +361,17 @@ Ish. is baked into Pattern Lab, which means we can view our UIs and their underl
 
 {% include figure.html src="../images/content/ish-l.png" caption="Pattern Lab displaying a design in a large-ish viewport." %}
 
-While ish. helps designers and developers uncover bugs along the viewport continuum, it's more helpful as a client and colleague education tool. By building a device-agnostic viewport resizing tool directly into the pattern library, clients and colleagues can better appreciate the fact that their design system should look and function great no matter what the user's viewport size is when interacting with the UI.
+While ish. helps designers and developers uncover bugs along the viewport continuum, I've found it to be more helpful as a client and colleague education tool. By building a device-agnostic viewport resizing tool directly into the pattern library, clients and colleagues can better appreciate the fact that their design system should look and function great no matter what the viewport size is.
 
 ### Code View
-- An effective pattern library allows teams to look under the hood to see the source code. HTML, CSS, JS, template code
+A common pattern library feature is the ability to peek under the hood and view the underlying code that makes up a particular component. Exposing a UI pattern's code speeds up development time (I love copying and pasting as much as the next coder) and helps developers enforce code syntax and style conventions. This becomes especially rewarding when a ton of developers are touching an organization's codebase.   
+
+The types of code highlighted in pattern libraries varies from organization to organization, which makes sense when you consider the myriad environments, technologies, and conventions. Most [pattern libraries out there in the wild](http://styleguides.io/examples.html) demonstrate patterns' underlying HTML, while others also include pattern-specific CSS and JavaScript. Salesforce's Lightning design system, for example, shows a pattern's HTML as well as its specific (S)CSS.
+
+{% include figure.html src="../images/content/salesforce-code-example.png" caption="Salesforce's Lightning design system showcases UI components' HTML and SCSS code." %}
+
+
+- HTML and template code 
 
 ### Annotations
 - Annotation tool - the issue tool
