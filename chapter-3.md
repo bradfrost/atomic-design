@@ -406,27 +406,19 @@ Thanks to the Russian nesting doll include approach described earlier in the cha
 
 In the above example, we have a molecule pattern called `block-media-link`, which contains an image, headline, and call to action. Looking at the pattern's lineage, we can see it contains another pattern called `atoms-square`, which is the circular thumbnail-sized image (the naming is a bit confusing, but we're using CSS to round the square image's corners). We can also see where exactly this pattern gets utilized: the `profile-nav` molecule, the `section-media-list` organism, the `settings-account` template, and the `settings-account-edit` template.
 
-This contextual information is amazingly helpful for designers and developers; I know I use the lineage feature *all the time* in my own workflow. Let's say we wanted to make changes to a particular pattern, like doubling the size of the image or adding an additional text element, we'd immediately know which patterns and templates would need retested and QA'd to ensure nothing breaks with the changes. The lineage feature also helps point out unused or underutilized patterns so that teams can weed them out of the pattern library.
+This contextual information is amazingly helpful for designers and developers; I know I use the lineage feature *all the time* in my own workflow. Let's say we wanted to make changes to a particular pattern, like doubling the size of the image or adding an additional text element, **we'd immediately know which patterns and templates would need retested and QA'd to ensure nothing breaks with the changes**. The lineage feature also helps point out unused or underutilized patterns so that teams can weed them out of the pattern library.
 
 ## To each their own
-There are [ton of tools](http://styleguides.io/tools.html) out there to help you create 
+So there you have it. Pattern Lab provides several helpful features for teams to create deliberate, thoughtful design systems. But as I mentioned before, no one tool is going to be perfect for everyone and every situation. There are [ton of tools](http://styleguides.io/tools.html) out there to help you create effective pattern libraries, and which tools you decide on will undoubtedly be influenced by your organization's environment, technologies, workflow, and personalities.
 
-Considerations:
-- Your environment
-- Your workflow
+When choosing tools to create your pattern library, you should keep your eyes open for these qualities and features of effective pattern libraries:
 
-When considering the tool to choose to create your pattern library, you should consider the following:
+- Articulating pattern variations, such as active or disabled tabs
+- Viewing patterns across the entire resolution spectrum
+- Providing pattern descriptions and annotations
+- Showcasing pattern frontend and/or template code
+- The ability to dynamically pour real representative content into the patterns' structure
+- Providing contextual information like which patterns make up a particular component as well as where that component gets utilized
 
-- Demonstrate what patterns look like with real content inside  
-- Demonstrate pattern variations
-- 
-- Ensure patterns work across all viewport sizes
-- Demonstrate lineage
-- Provide a clear bridge between the production 
-
-- Plugins
-- Next version - decoupling pattern engines
-
-## Making it all work
-This chapter we 
-At the end of the day, it's not about the tools we use, but rather the way we use them. Introducing a pattern library to your workflow 
+At the end of the day, it's not about the tools we use to create pattern libraries, but rather how we use them. Creating and maintaining an effective design system means dramatically changing your organization's culture, processes, and workflows. If that sounds hard to you, it's because it is! But fear not! The next chapter will detail the entire process of creating and maintaining a successful design system to set your organization up for longterm success. 
+ 
