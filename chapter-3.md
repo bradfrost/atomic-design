@@ -398,7 +398,7 @@ Pattern Lab also provides a (dare I say) cool feature that enables you to attach
 {% include figure.html src="../images/content/pattern-lab-annotations-1.png" caption="Pattern Lab's annotation feature is interactive and baked into the living UI." %}
 
 ### Pattern Lineage
-While Many pattern libraries fail to provide context where. Where  Shows what patterns comprise a particular pattern
+Documenting UI patterns in a style guide is extraordinarily helpful (), but  provide context where. Where  Shows what patterns comprise a particular pattern
 - Shows where a particular pattern is employed 
 - Provides context
 - If designers and developers make changes to a particular pattern, they immediately know which patterns and templates need retested, QA.  
