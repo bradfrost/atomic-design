@@ -511,13 +511,13 @@ dashboard~admin.json
 <p>Ultimately, whichever pattern library tool you decide to use should have some form of code view feature. And perhaps more importantly, the pattern libraries you create should showcase the types of code that enables you and your development team to be as effective as possible.</p>
 
 <h3 id="living-documentation-and-annotations">Living Documentation and Annotations</h3>
-<p>In a traditional siloed design process, it’s typical to see lengthy wireframe and spec documents created, debated, and ultimately approved. These documents typically take the form of gigantic PDFs, which is unfortunate considering they often contain all sorts of valuable insights, instructions, and documentation about the design. Sadly, these bulky artifacts are often thrown in a (virtual) trashcan by the time the project makes its way into production.</p>
+<p>In a traditional siloed design process, it’s typical to see lengthy wireframe and spec documents created, debated, and ultimately approved. These documents typically take the form of gigantic PDFs, which is unfortunate considering they often contain all sorts of valuable insights, instructions, and documentation about the design system. Sadly, these bulky artifacts are often thrown into a (virtual) trashcan by the time the project makes its way into production.</p>
 
 <p>This shouldn’t be the case. A UI’s documentation should contain insights from every discipline involved in creating it, and — this is key — should be baked into the living, breathing design system. </p>
 
 <p>Effective pattern libraries carve out a space to define and describe UI components, articulating considerations ranging from accessibility to performance to aesthetics and beyond.</p>
 
-<p>Pattern Lab provides several ways to add pattern descriptions and annotations to a design system. Pattern descriptions can be added by creating a markdown (<code>.md</code>) that corresponds with the name of a pattern, which will show itself in the context of the pattern library list view.</p>
+<p>Pattern Lab provides several ways to add pattern descriptions and annotations to a design system. Pattern descriptions can be added by creating a markdown that corresponds with the name of a pattern (i.e. <code>pattern-name.md</code>), which will show the pattern description in the library list view.</p>
 
 <figure>
     <img src="../images/content/pattern-lab-annotations-2.png" alt="Pattern Lab's annotation feature  shows pattern descriptions alongside the patterns themselves." />
@@ -535,20 +535,28 @@ dashboard~admin.json
 	</figcaption>
 </figure>
 
-<h3 id="pattern-lineage">Pattern Lineage</h3>
-<p>Documenting UI patterns in a style guide is extraordinarily helpful (), but  provide context where. Where  Shows what patterns comprise a particular pattern
-- Shows where a particular pattern is employed 
-- Provides context
-- If designers and developers make changes to a particular pattern, they immediately know which patterns and templates need retested, QA.  </p>
+<h3 id="providing-context-with-pattern-lineage">Providing context with pattern lineage</h3>
+<p>When looking at various patterns in a library, I’ve found myself wondering “Great, but where is this component actually used?” Defining and describing pattern characteristics is one thing, but there’s an opportunity to provide additional contextual information about your UI patterns.</p>
 
-<h3 id="more-tools">More tools</h3>
-<ul>
-  <li>Plugins</li>
-  <li>Next version - decoupling pattern engines</li>
-</ul>
+<p>Thanks to the Russian nesting doll include approach described earlier in the chapter, Pattern Lab can display what patterns make up any given component, and also show where that pattern is employed in the design system.</p>
+
+<figure>
+    <img src="../images/content/pattern-lab-lineage.png" alt="Pattern Lab's lineage feature displays what patterns make up any component, and also shows all the places that component is employed." />
+	<figcaption>
+	    Pattern Lab's lineage feature displays what patterns make up any component, and also shows all the places that component is employed.
+	</figcaption>
+</figure>
+
+<p>In the above example, we have a molecule pattern called <code>block-media-link</code>, which contains an image, headline, and call to action. Looking at the pattern’s lineage, we can see it contains another pattern called <code>atoms-square</code>, which is the circular thumbnail-sized image (the naming is a bit confusing, but we’re using CSS to round the square image’s corners). We can also see where exactly this pattern gets utilized: the <code>profile-nav</code> molecule, the <code>section-media-list</code> organism, the <code>settings-account</code> template, and the <code>settings-account-edit</code> template.</p>
+
+<p>This contextual information is amazingly helpful for designers and developers, and I can attest that I use the lineage feature <em>all the time</em> in my own workflow. Let’s say we wanted to make changes to a particular pattern, like doubling the size of the image or adding an additional text element, we’d immediately know which patterns and templates would need retested and QA’d to ensure nothing breaks with the changes. The lineage feature also helps point out unused or underutilized patterns so that teams can weed them out of the pattern library.</p>
 
 <h2 id="to-each-their-own">To each their own</h2>
-<p><a href="">Styleguides.io/tools.html</a></p>
+<p>There are <a href="http://styleguides.io/tools.html">ton of tools</a> out there to help you create </p>
+
+<p>Considerations:
+- Your environment
+- Your workflow</p>
 
 <p>When considering the tool to choose to create your pattern library, you should consider the following:</p>
 
@@ -558,11 +566,16 @@ dashboard~admin.json
   <li></li>
   <li>Ensure patterns work across all viewport sizes</li>
   <li>Demonstrate lineage</li>
-  <li>Provide a clear bridge between the production </li>
+  <li>
+    <p>Provide a clear bridge between the production </p>
+  </li>
+  <li>Plugins</li>
+  <li>Next version - decoupling pattern engines</li>
 </ul>
 
 <h2 id="making-it-all-work">Making it all work</h2>
-<p>This chapter we </p>
+<p>This chapter we 
+At the end of the day, it’s not about the tools we use, but rather the way we use them. Introducing a pattern library to your workflow </p>
 
     <nav role="navigaiton" class="pagination">
     <!-- <a href="#">Next Chapter</a>
