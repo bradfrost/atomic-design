@@ -363,15 +363,24 @@ Ish. is baked into Pattern Lab, which means we can view our UIs and their underl
 
 While ish. helps designers and developers uncover bugs along the viewport continuum, I've found it to be more helpful as a client and colleague education tool. By building a device-agnostic viewport resizing tool directly into the pattern library, clients and colleagues can better appreciate the fact that their design system should look and function great no matter what the viewport size is.
 
-### Code View
-A common pattern library feature is the ability to peek under the hood and view the underlying code that makes up a particular component. Exposing a UI pattern's code speeds up development time (I love copying and pasting as much as the next coder) and helps developers enforce code syntax and style conventions. This becomes especially rewarding when a ton of developers are touching an organization's codebase.   
+### A look under the hood with code view
+A common pattern library feature is the ability to peek under the hood and view the underlying code that makes up a particular component. Exposing a UI pattern's code speeds up development time (I love copying and pasting as much as the next coder) and helps team leaders enforce code syntax and style conventions. This becomes especially rewarding when a ton of developers are touching an organization's codebase.
 
-The types of code highlighted in pattern libraries varies from organization to organization, which makes sense when you consider the myriad environments, technologies, and conventions. Most [pattern libraries out there in the wild](http://styleguides.io/examples.html) demonstrate patterns' underlying HTML, while others also include pattern-specific CSS and JavaScript. Salesforce's Lightning design system, for example, shows a pattern's HTML as well as its specific (S)CSS.
+The types of code to be highlighted in a pattern library nauturally varies from organization to organization, in order to meet the requirements of the myriad environments, technologies, and conventions used. Most [pattern libraries out there in the wild](http://styleguides.io/examples.html) demonstrate patterns' underlying HTML, while others also include pattern-specific CSS and/or JavaScript. Salesforce's Lightning design system, for example, shows a pattern's HTML as well as all the (S)CSS pertaining to that pattern.
 
-{% include figure.html src="../images/content/salesforce-code-example.png" caption="Salesforce's Lightning design system showcases UI components' HTML and SCSS code." %}
+{% include figure.html src="../images/content/salesforce-code-example.png" caption="Salesforce's Lightning design system showcases the UI components' HTML and SCSS code." %}
 
+Showcasing patterns' front-end code leads to authors writing more consistent code, but that doesn't guarantee perfection. There's still room for developers to go rogue and write sloppy, incongruent code, which is why some organizations have gone above and beyond to establish incredibly sophisticated design systems. **Companies like Lonely Planet have achieved the Holy Grail of pattern libraries, which is to say their pattern library and production environment are perfectly in sync**. We'll discuss the Holy Grail in more detail in the next chapter, but it's worth brining up in this section to demonstrate how that affects the code exposed in the context of a pattern library. Rather than surfacing HTML and CSS, Lonely Planet's [Rizzo style guide](http://rizzo.lonelyplanet.com/) surfaces the include code for teams to pull in the appropriate UI component.
 
-- HTML and template code 
+{% include figure.html src="../images/content/lonely-planet-code.png" caption="Lonely Planet's Rizzo design system pattern library showcases the template usage." %}
+
+This setup allows the core development team to maintain a single source of truth for all patterns' frontend code. That means the pattern library only needs to provide the code to include a particular pattern in order for developers to get up and running.
+
+Pattern Lab provides the ability to view both a pattern's underlying HTML as well as the template code used to generate the HTML. It can also be extended to also showcase accompanying CSS and/or JavaScript code.
+
+{% include figure.html src="../images/content/pattern-lab-code.png" caption="Pattern Lab's code view demonstrates any pattern's HTML code and " %}
+
+Ultimately, whichever pattern library tool you decide to use should have some form of code view feature. And perhaps more importantly, the pattern libraries you create should showcase the types of code that enables you and your development team to be as effective as possible.
 
 ### Annotations
 - Annotation tool - the issue tool
