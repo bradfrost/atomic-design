@@ -382,12 +382,23 @@ Pattern Lab provides the ability to view both a pattern's underlying HTML as wel
 
 Ultimately, whichever pattern library tool you decide to use should have some form of code view feature. And perhaps more importantly, the pattern libraries you create should showcase the types of code that enables you and your development team to be as effective as possible.
 
-### Annotations
-- Annotation tool - the issue tool
-- Documentation tools
+### Living Documentation and Annotations
+In a traditional siloed design process, it's typical to see lengthy wireframe and spec documents created, debated, and ultimately approved. These documents typically take the form of gigantic PDFs, which is unfortunate considering they often contain all sorts of valuable insights, instructions, and documentation about the design. Sadly, these bulky artifacts are often thrown in a (virtual) trashcan by the time the project makes its way into production.
+  
+This shouldn't be the case. A UI's documentation should contain insights from every discipline involved in creating it, and — this is key — should be baked into the living, breathing design system. 
+
+Effective pattern libraries carve out a space to define and describe UI components, articulating considerations ranging from accessibility to performance to aesthetics and beyond.
+
+Pattern Lab provides several ways to add pattern descriptions and annotations to a design system. Pattern descriptions can be added by creating a markdown (`.md`) that corresponds with the name of a pattern, which will show itself in the context of the pattern library list view.
+
+{% include figure.html src="../images/content/pattern-lab-annotations-2.png" caption="Pattern Lab's annotation feature  shows pattern descriptions alongside the patterns themselves." %}
+
+Pattern Lab also provides a (dare I say) cool feature that enables you to attach annotations to any UI element and view those annotations in the context of the living, breathing design. When annotations are switched on, each annotated element receives a number when clicked jumps you to the corresponding annotation. This allows teams to view pattern considerations within the context of the full UI. Pretty neat!
+
+{% include figure.html src="../images/content/pattern-lab-annotations-1.png" caption="Pattern Lab's annotation feature is interactive and baked into the living UI." %}
 
 ### Pattern Lineage
-- Shows what patterns comprise a particular pattern
+While Many pattern libraries fail to provide context where. Where  Shows what patterns comprise a particular pattern
 - Shows where a particular pattern is employed 
 - Provides context
 - If designers and developers make changes to a particular pattern, they immediately know which patterns and templates need retested, QA.  
