@@ -4,7 +4,10 @@ title: The Atomic Workflow
 chapterTitle: Chapter 4
 permalink: /chapter-4/
 ---
-
+## When to establish a pattern library
+- Anytime
+- Often associated with a design or redesign project, replatforming to a different URL. 
+- Overcome the challenge of 
 ## The sales pitch
 - Get stakeholders and clients on board with a pattern-based workflow
 - Answer a simple question "Do you like saving time and money, yes or no?" 
@@ -82,7 +85,7 @@ At many workshops and consulting engagements, I’ve encountered folks who say s
 
 Gather a cross-disciplinary group of folks – designers, developers, project managers, business owners, QA, and really anyone that touches the experience – in a room together to conduct the interface inventory exercise together. After all, one of the most crucial results of this exercise is to establish a shared vocabulary for everyone in the organization, and that requires input from everyone.
 
-### Step 2: Prepare for screenshotting
+#### Step 2: Prepare for screenshotting
 This exercise requires generating a ton of screenshots, so naturally you’ll need screenshotting software. Ultimately, it doesn’t really matter what tool to use, but everyone involved in the exercise should agree on a tool to make it easier to combine at the end. A few options:
 
 Keynote/Powerpoint
@@ -92,7 +95,7 @@ Google Docs
 Google Slides
 Lately I’ve found Google Slides to be my go-to recommendation for conducting interface inventories. It provides a canvas for freeform positioning of images, it’s chunked out into slides for better categorization, and it’s web-based so can be shared with ease. I’ve created a template for you to use if you’re interested.
 
-### Step 3: Screenshot exercise
+#### Step 3: Screenshot exercise
 And now for the main event, which is to document, name, and categorize unique UI patterns across the entire experience.
 
 I typically break people up into pairs and assign them a UI category or categories, but this all depends on how many people are participating. I try to timebox the screenshotting exercise to avoid going down a rabbit hole that ends up lasting all day. The amount of time to allocate will vary depending on how many people are participating, but I find between 30-90 minutes to be sufficient for a first pass of the interface inventory.
@@ -117,14 +120,14 @@ Headings – h1, h2, h3, h4, h5, h6 and variations of typographic headings. This
 - **Animation** – This is a special category as it involves capturing UI animation. This requires using screen recording software such as Quicktime to capture motion (you can capture screens in Quicktime with File > New Screen Recording).
 Again, these categories aren’t set in stone and will vary based on the nature of the project. Once these patterns are documented the person (or pair of people) should drop them into  Google Slides and cluster them together. Now the fun part: naming these patterns. Obviously it’s important to use existing conventions wherever possible, but you’ll quickly find out many UI patterns either don’t have names or have conflicting/confusing names.
 
-### Step 4: Present Findings
+#### Step 4: Present Findings
 Screenshotting and naming can be exhausting and overwhelming, so be sure to take a break after the gathering exercise is complete. Get some food, grab some coffee, and stretch your legs.
 
 Once everyone’s recharged, reconvene and spend about 10-15 minutes per category presenting the findings to the group. This is where things get interesting. Presenting to the group allows the team to start discussing the naming conventions and rationale for these UI patterns.  As I do more of these exercises with teams, it’s fascinating to hear that designers, developers, and product owners often have different names for the same UI pattern.
 
 Once every category has been presented and discussed, have all the participants send their slides to the exercise leader, who merges everything into one uber-document.
 
-Step 5: Regroup and Establish Next Steps
+#### Step 5: Regroup and Establish Next Steps
 The hard work is done, so now what? This exercise should be used as a conversation starter to get the entire organization on board with crafting an interface design system.
 
 The uber-document can be shopped around to stakeholders to get buy in for establishing an interface design system. The beautiful thing about seeing all the disparities of an interface laid bare for everyone to see is that it becomes crystal clear something needs done about it.
@@ -138,12 +141,15 @@ How do developers, designers, and managers begin to utilize this shared vocabula
 How do we translate this exercise into a living pattern library?
 
 ## Establish Direction
-- [Style Tiles](http://styletil.es/)
-- [Prep chef](http://bradfrost.com/blog/post/primed-and-ready-to-go/)
+> Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
+
+- Rather than leading off with high fidelity wireframes and comps, the design process
+- [Style Tiles](http://styletil.es/) by Samantha Warren
+- Front-end [prep chef](http://bradfrost.com/blog/post/primed-and-ready-to-go/)
 
 ## Roll up our sleeves
 - [Element collages](http://danielmall.com/articles/rif-element-collages/)
-- Going from rough wireframes 
+- Going from rough wireframes into the browser, iterating there
 
 ## Maintaining a living design system
 - Throw the design system in the trashcan, right along side the 
