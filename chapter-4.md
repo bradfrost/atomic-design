@@ -152,5 +152,5 @@ How do we translate this exercise into a living pattern library?
 - Going from rough wireframes into the browser, iterating there
 
 ## Maintaining a living design system
-- Throw the design system in the trashcan, right along side the 
+- Throw the design system in the trashcan, right along side the PSDs 
 
