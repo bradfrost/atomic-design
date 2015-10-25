@@ -4,6 +4,18 @@ title: The Atomic Workflow
 chapterTitle: Chapter 4
 permalink: /chapter-4/
 ---
+
+Talk is cheap. And up until now, we've been doing a whole lotta talkin'. That's not to say it hasn't been productive talk! After all, we've discussed the importance of modular thinking, we've introduced a methodology for crafting deliberate UI design systems, and we've introduced tools for creating effective pattern libraries. 
+
+But this is where the rubber meets the road. Where we roll up our sleeves and put all of this theory into practice.  
+
+- Why
+- What
+- When
+- Where
+- Who
+- How
+
 ## When to establish a pattern library
 - Anytime
 - Often associated with a design or redesign project, replatforming to a different URL. 
@@ -152,5 +164,8 @@ How do we translate this exercise into a living pattern library?
 - Going from rough wireframes into the browser, iterating there
 
 ## Maintaining a living design system
-- Throw the design system in the trashcan, right along side the PSDs 
+- And they made a pattern library and lived happily ever after. Right? Not quite.
+- There's a very real risk of a lot of time and effort going into making a design system and accompanying pattern library, only to have it die on the vine.
+- Throw the design system in the trashcan, right along side the PSDs, PDFs and other artifacts
+- How to prevent this? 
 
