@@ -261,7 +261,7 @@ Making style guides central to your process results in user interfaces that feel
 ### A shared vocabulary
 What does “utility toolbar” mean? Does everyone understand what “touch slider hero” is?
 
-As the number of people working on a project increase, it becomes all-too-easy for communication breakdowns to occur. It's not uncommon for different disciplines have different names for the same module, and for individuals to go rogue and invent their own naming conventions. In order for true collaboration to occur, it's essential for teams to speak a common language. Style guides are there to help establish that shared vocabulary.
+As the number of people working on a project increases, it becomes all-too-easy for communication breakdowns to occur. It's not uncommon for different disciplines have different names for the same module, and for individuals to go rogue and invent their own naming conventions. In order for true collaboration to occur, it's essential for teams to speak a common language. Style guides are there to help establish that shared vocabulary.
 
 {% include figure.html src="../images/content/starbucks-blocks-3up.png" caption="Giving names to patterns like 'Blocks 3-Up' in Starbucks' style guide helps team members speak the same language" %}
 
