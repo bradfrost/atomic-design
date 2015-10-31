@@ -5,9 +5,16 @@ chapterTitle: Chapter 4
 permalink: /chapter-4/
 ---
 
-Talk is cheap. And up until now, we've been doing a whole lotta talkin'. That's not to say it hasn't been productive talk! After all, we've discussed the importance of modular thinking, we've introduced a methodology for crafting deliberate UI design systems, and we've introduced tools for creating effective pattern libraries. 
+Talk is cheap. And up until now, we've been doing a whole lotta talkin'. That's not to say it hasn't been productive talk! After all, we've discussed the importance of modular thinking, we've introduced a methodology for crafting deliberate UI design systems, and we've showcased tools for creating effective pattern libraries. 
 
-But this is where the rubber meets the road. Where we roll up our sleeves and put all of this theory into practice. We'll discuss how to go about selling, creating, and maintaining an effective design system.
+But here's where the rubber meets the road. Where we roll up our sleeves and put all of this theory into practice. Where we *get stuff done*. This chapter will tackle all that goes into selling, creating, and maintaining effective design systems. You ready? Let's go.
+
+## It's People!
+
+> The design process is weird and complicated, because _people_ are weird and complicated. <cite>Mark Boulton</cite>
+
+Here's the not-so-secret secret about creating and maintaining an effective design system: it's about the people. The same goes with doing any good 
+
 
 - Why
 - What
@@ -204,4 +211,6 @@ How do we translate this exercise into a living pattern library?
 - Publish updates (Material Design example)
 - Regular E-mail newsletters, blog updates, etc, whenever things change
 - Monitor progress - Lonely Planet performance 
+
+## Be Atomic
 
