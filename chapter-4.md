@@ -10,28 +10,21 @@ Talk is cheap. And up until now, we've been doing a whole lotta talkin'. That's 
 But here's where the rubber meets the road. Where we roll up our sleeves and put all of this theory into practice. Where we *get stuff done*. This chapter will tackle all that goes into selling, creating, and maintaining effective design systems. You ready? Let's go.
 
 ## It's People!
+The not-so-secret secret about creating an effective design system (or any good work really): it all comes down to people. 
 
 > The design process is weird and complicated, because _people_ are weird and complicated. <cite>Mark Boulton</cite>
 
-Here's the not-so-secret secret about creating and maintaining an effective design system: it's about the people. The same goes with doing any good 
-
-
-- Why
-- What
-- When
-- Where
-- Who
-- How
-
-## When to establish a pattern library
-- Anytime
-- Often associated with a design or redesign project, replatforming to a different URL. 
-- Overcome the challenge of 
+You can have all the right technologies and tools in place, and even have extraordinarily talented individuals on staff, but if the coordination, cooperation, and communication between everyone involved in the project is lacking
 
 ## The sales pitch
 - Get stakeholders and clients on board with a pattern-based workflow
 - Answer a simple question "Do you like saving time and money, yes or no?" 
 - Even if they say no, do it anyways. Much like building in performance and accessibility and responsiveness
+
+### When to establish a pattern library
+- Anytime
+- Often associated with a design or redesign project, replatforming to a different URL. 
+- Overcome the challenge of 
 
 ## (Re)setting expectations
 > As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
