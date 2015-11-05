@@ -10,16 +10,23 @@ Talk is cheap. And up until now, we've been doing a whole lotta talkin'. That's 
 But here's where the rubber meets the road. Where we roll up our sleeves and put all of this theory into practice. Where we *get stuff done*. This chapter will tackle all that goes into selling, creating, and maintaining effective design systems. You ready? Let's go.
 
 ## It's People!
-The not-so-secret secret about creating an effective design system (or any good work really): it all comes down to people truly collaborating and communicating with each other. 
+The not-so-secret secret about creating effective design systems (or doing any great work really): **it all comes down to people truly collaborating and communicating with each other**.
+
+If this is such common knowledge, then why aren't we constantly hearing thousands of success stories from around the world? I'll let Mark Boulton explain:
 
 > The design process is weird and complicated, because _people_ are weird and complicated. <cite>Mark Boulton</cite>
 
-You can have all the right technologies and tools in place, and even have extraordinarily talented individuals on staff, but if the coordination, cooperation, and communication between everyone involved in the project is lacking
+You can have all the right technologies in place, use the latest tools, and even have extraordinarily talented individuals on board, but if everyone involved isn't actually cooperating and communicating with each other then you're not going to create great work. It's as simple as that. That's not to say you can't create *good* work, but more often than not you're going to create *one of the many disappointing shades of bad* work.
+
+This chapter will discuss how to overcome human beings' many quirks and complications in order to make and maintain successful interface design systems. 
 
 ## The sales pitch
 - Get stakeholders and clients on board with a pattern-based workflow
 - Answer a simple question "Do you like saving time and money, yes or no?" 
-- Even if they say no, do it anyways. Much like building in performance and accessibility and responsiveness
+- In-house vs client work
+- Even if they say no, do it anyways. Much like building in performance and accessibility and responsiveness into 
+
+### 
 
 ### When to establish a pattern library
 - Anytime
