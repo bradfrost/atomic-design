@@ -5,12 +5,12 @@ chapterTitle: Chapter 4
 permalink: /chapter-4/
 ---
 
-Talk is cheap. And up until now, we've been doing a whole lotta talkin'. That's not to say it hasn't been productive talk! After all, we've discussed the importance of modular thinking, we've introduced a methodology for crafting deliberate UI design systems, and we've showcased tools for creating effective pattern libraries. 
+Talk is cheap. And up until now, we've been doing a whole lotta talkin'. That's not to say it hasn't been productive talk! After all, we've discussed the importance of modular thinking, we've learned a methodology for crafting deliberate UI design systems, and we've showcased tools for creating effective pattern libraries. 
 
 But here's where the rubber meets the road. Where we roll up our sleeves and put all of this theory into practice. Where we *get stuff done*. This chapter will tackle all that goes into selling, creating, and maintaining effective design systems. You ready? Let's go.
 
 ## It's People!
-The not-so-secret secret about creating an effective design system (or any good work really): it all comes down to people. 
+The not-so-secret secret about creating an effective design system (or any good work really): it all comes down to people truly collaborating and communicating with each other. 
 
 > The design process is weird and complicated, because _people_ are weird and complicated. <cite>Mark Boulton</cite>
 
@@ -23,13 +23,17 @@ You can have all the right technologies and tools in place, and even have extrao
 
 ### When to establish a pattern library
 - Anytime
-- Often associated with a design or redesign project, replatforming to a different URL. 
+- Often done in conjunction with a design or redesign project, replatforming, some other effort. 
+- Other times it's 
 - Overcome the challenge of 
 
 ## (Re)setting expectations
 > As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
 
 - Death to the waterfall
+
+{% include figure.html src="../images/content/pattern-lab-code.png" caption="" %}
+
 - This involves everyone - UX designers, visual oriented designers, front-end developers, backend developers, business owners, clients, etc
 - [Development is design](http://bradfrost.com/blog/post/development-is-design/)
 
