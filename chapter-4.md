@@ -23,7 +23,7 @@ This chapter will discuss how to overcome human beings' many quirks to come toge
 ## Pitching patterns
 In order to get stakeholders and clients on board with establishing a pattern-based organization, we must change their existing behavior. That involves constant education, as well as a bit of marketing savvy.
 
-**Extol the virtues of establishing interface design systems**. By this point in the book you've hopefully become familiar with the benefits of interface patterns, so you'll be able to rattle off the benefits of pattern libraries to your clients and colleagues:
+It's essential to educate clients, colleagues, and stakeholders on the benefits of establishing interface design systems.  **Extol the virtues of establishing interface design systems**. By this point in the book you've hopefully become familiar with the benefits of interface patterns, so you'll be able to rattle off the benefits of pattern libraries to your clients and colleagues:
 
 - They **promote consistency and cohesion** across the entire experience.
 - They **speed up your team's workflow**, saving time and money.
