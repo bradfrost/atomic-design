@@ -10,41 +10,42 @@ Talk is cheap. And up until now, we've been doing a whole lotta talkin'. That's 
 But here's where the rubber meets the road. Where we roll up our sleeves and put all of this theory into practice. Where we *get stuff done*. This chapter will tackle all that goes into selling, creating, and maintaining effective design systems. You ready? Let's go.
 
 ## It's People!
-The not-so-secret secret about creating effective design systems (or doing any great work really): **it all comes down to people truly collaborating and communicating with each other**.
+The not-so-secret secret about creating effective design systems (or doing any great work, really): **it all comes down to people truly collaborating and communicating with each other**.
 
-If this is such common knowledge, then why aren't we constantly hearing thousands of success stories from around the world? I'll let Mark Boulton explain:
+If this is such common knowledge, then why aren't we constantly hearing about thousands of success stories from around the world? I'll let Mark Boulton explain:
 
 > The design process is weird and complicated, because _people_ are weird and complicated. <cite>Mark Boulton</cite>
 
-You can have all the right technologies in place, use the latest tools, and even have extraordinarily talented individuals on board, but if everyone involved isn't actually cooperating and communicating with each other then you're not going to create great work. It's as simple as that. That's not to say you can't create *good* work, but more often than not you're going to create *one of the many disappointing shades of bad* work.
+You can have all the right technologies in place, use the latest-and-greatest tools, and even have extraordinarily talented individuals on board, but if everyone involved isn't actually cooperating and communicating with each other then you're not going to create great work. It's as simple as that. That's not to say you can't create *good* work, but more often than not you're going to create *one of the many disappointing shades of bad* work.
 
-This chapter will discuss how to overcome human beings' many quirks and complications in order to make and maintain successful interface design systems. 
+This chapter will discuss how to overcome human beings' many quirks to come together as an organization to make and maintain successful interface design systems. 
 
-## The sales pitch
-- Get stakeholders and clients on board with a pattern-based workflow
-- Answer a simple question "Do you like saving time and money, yes or no?" 
-- In-house vs client work
-- Even if they say no, do it anyways. Much like building in performance and accessibility and responsiveness into 
+## Pitching patterns
+In order to get stakeholders and clients on board with establishing a pattern-based organization, we must change their existing behavior. That involves constant education, as well as a bit of marketing savvy.
 
-### 
+**Extol the virtues of establishing interface design systems**. By this point in the book you've hopefully become familiar with the benefits of interface patterns, so you'll be able to rattle off the benefits of pattern libraries to your clients and colleagues:
+
+- They **promote consistency and cohesion** across the entire experience.
+- They **speed up your team's workflow**, saving time and money.
+- They **establish a more collaborative workflow** between all disciplines involved in a project.
+- They **establish a shared vocabulary** between everyone in an organization, including outside vendors.
+- They **provide helpful documentation** to help educate stakeholders, colleagues, and even third parties.
+- They **make cross-browser/device, performance, and accessibility testing easier**.
+- They **serve as a future-friendly foundation** for teams to modify, extend, and improve upon over time.
+
+What I've found is that I can talk aboutAnswer a simple question "Do you like saving time and money, yes or no?" 
+
 
 ### When to establish a pattern library
-- Anytime
-- Often done in conjunction with a design or redesign project, replatforming, some other effort. 
-- Other times it's 
-- Overcome the challenge of 
+Interface design systems and their accompanying pattern libraries are often done in conjunction with a new design or redesign project, replatforming effort, some other project. Piggybacking off another effort is a great way to sneak a pattern library project into your organization.
 
-## (Re)setting expectations
-> As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
+But establishing a pattern library doesn't necessarily need to be attached to another project. If you can convince your clients and bosses to pony up the cash and resources to make things happen, then good on you! 
 
-- Death to the waterfall
+- In-house vs client work
 
-{% include figure.html src="../images/content/pattern-lab-code.png" caption="" %}
+### Show, Don't tell
+- Even if they say no, do it anyways. Much like building in performance and accessibility and responsiveness into our experiences
 
-- This involves everyone - UX designers, visual oriented designers, front-end developers, backend developers, business owners, clients, etc
-- [Development is design](http://bradfrost.com/blog/post/development-is-design/)
-
-## Gather
 - In addition to gathering user research, competitive research, business requirements, etc, can start laying the foundation for the future pattern library.
 - conducting an interface inventory
 
@@ -164,6 +165,16 @@ Can we merge patterns together easily?
 How do developers, designers, and managers begin to utilize this shared vocabulary?
 How do we translate this exercise into a living pattern library?
 
+## (Re)setting expectations
+> As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
+
+- Death to the waterfall
+
+{% include figure.html src="../images/content/pattern-lab-code.png" caption="" %}
+
+- This involves everyone - UX designers, visual oriented designers, front-end developers, backend developers, business owners, clients, etc
+- [Development is design](http://bradfrost.com/blog/post/development-is-design/)
+
 ## Establish Direction
 > Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
 
@@ -216,5 +227,5 @@ How do we translate this exercise into a living pattern library?
 - Regular E-mail newsletters, blog updates, etc, whenever things change
 - Monitor progress - Lonely Planet performance 
 
-## Be Atomic
+## Go forth and be atomic
 
