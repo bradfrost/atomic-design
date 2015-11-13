@@ -12,31 +12,30 @@ But here's where the rubber meets the road. Where we roll up our sleeves and put
 ## It's People!
 The not-so-secret secret about creating effective design systems (or doing any great work, really): **it all comes down to people truly collaborating and communicating with each other**.
 
-If this is such common knowledge, then why aren't we constantly hearing about thousands of success stories from around the world? I'll let Mark Boulton explain:
+If this is such common knowledge, why aren't we constantly hearing thousands of success stories from around the world? I'll let Mark Boulton explain:
 
 > The design process is weird and complicated, because _people_ are weird and complicated. <cite>Mark Boulton</cite>
 
 You can have all the right technologies in place, use the latest-and-greatest tools, and even have extraordinarily talented individuals on board, but if everyone involved isn't actually cooperating and communicating with each other then you're not going to create great work. It's as simple as that. That's not to say you can't create *good* work, but more often than not you're going to create *one of the many disappointing shades of bad* work.
 
-This chapter will discuss how to overcome human beings' many quirks to come together to make and maintain successful interface design systems. 
+Establishing and maintaining successful interface design systems is an organization-wide effort, and this chapter will discuss how to overcome human beings' many quirks to make them happen. 
 
 ## Pitching patterns
-In order to get stakeholders and clients on board with establishing a design system, we must change existing mentalities and behaviors. That involves constant education, as well as a bit of marketing savvy.
+Introducing a new way of doing things is no easy task as it requires changing people's existing mentalities and behaviors. Getting stakeholders and clients on board with establishing a design system involves constant education, as well as a bit of marketing savvy. 
 
-Of course it's necessary to **introduce the concept of interface design systems and extol their virtues** to your clients, colleagues, and stakeholders. We've discussed these benefits throughout the book, so you can explain that design systems **promote consistency and cohesion**, **speed up your team's workflow**, **establish a more collaborative workflow**, **establish a shared vocabulary**, **provide helpful documentation**, **make testing easier**, and **serve as a future-friendly foundation**. Who can say no to all that!?
+First things first. It's necessary to introduce the concept of interface design systems to your clients, colleagues, and stakeholders. Explain what these design systems are and the many ways they can help the organization. We've discussed these benefits throughout the book, so you can explain that design systems **promote consistency and cohesion**, **speed up your team's workflow**, **establish a more collaborative workflow**, **establish a shared vocabulary**, **provide helpful documentation**, **make testing easier**, and **serve as a future-friendly foundation**. Who can say no to all that!?
 
-I've found that I can talk about the benefits of design systems until I'm blue in the face, but stakeholders and clients don't always see things . A simple reframing of the question helps immensely. I now simply ask, "**Do you like saving time and money, yes or no**?" If the answer to that question is *no*, I'm afraid you have way bigger problems than selling a design system. If the answer is *yes*, then 
+Alas, I've found that I can hype design systems until I'm blue in the face, but stakeholders and clients don't always see things through the same lens as a designer or developer. A simple reframing of the question helps immensely. I've found it much more effective to simply ask, "**Do you like saving time and money, yes or no?**" If the answer to that question is *no*, I'm afraid you have way bigger problems than selling a design system. If the answer is *yes*, then you can pitch style guide benefits through the lens of time and money. Let's try this out, shall we?
 
-
-### When to establish a pattern library
-Interface design systems and their accompanying pattern libraries are often done in conjunction with a new design or redesign project, replatforming effort, some other project. Piggybacking off another effort is a great way to sneak a pattern library project into your organization.
-
-But establishing a pattern library doesn't necessarily need to be attached to another project. If you can convince your clients and bosses to pony up the cash and resources to make things happen, then good on you! 
-
-- In-house vs client work
+- Design systems **promote UI consistency and cohesion**. That means users become experts at your UI faster, which leads to more conversions and as a result **more money**.
+- Design systems **speed up your team's workflow**. This is big. Rather than reinventing the wheel for every new feature or request, teams can reuse the puzzle pieces showcased in the  saving time and money.
+- They **establish a more collaborative workflow** between all disciplines involved in a project.
+- They **establish a shared vocabulary** between everyone in an organization, including outside vendors.
+- They **provide helpful documentation** to help educate stakeholders, colleagues, and even third parties.
+- They **make cross-browser/device, performance, and accessibility testing easier**.
+- They **serve as a future-friendly foundation** for teams to modify, extend, and improve upon over time.
 
 ### Show, Don't tell
-- Even if they say no, do it anyways. Much like building in performance and accessibility and responsiveness into our experiences
 
 - In addition to gathering user research, competitive research, business requirements, etc, can start laying the foundation for the future pattern library.
 - conducting an interface inventory
@@ -156,6 +155,15 @@ What patterns should stay, and which should go?
 Can we merge patterns together easily?
 How do developers, designers, and managers begin to utilize this shared vocabulary?
 How do we translate this exercise into a living pattern library?
+
+- Even if they say no, do it anyways. Much like building in performance and accessibility and responsiveness into our experiences
+
+### When to establish a pattern library
+Interface design systems and their accompanying pattern libraries are often done in conjunction with a new design or redesign project, replatforming effort, some other project. Piggybacking off another effort is a great way to sneak a pattern library project into your organization.
+
+But establishing a pattern library doesn't necessarily need to be attached to another project. If you can convince your clients and bosses to pony up the cash and resources to make things happen, then good on you! 
+
+- In-house vs client workae
 
 ## (Re)setting expectations
 > As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
