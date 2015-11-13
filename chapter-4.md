@@ -18,22 +18,14 @@ If this is such common knowledge, then why aren't we constantly hearing about th
 
 You can have all the right technologies in place, use the latest-and-greatest tools, and even have extraordinarily talented individuals on board, but if everyone involved isn't actually cooperating and communicating with each other then you're not going to create great work. It's as simple as that. That's not to say you can't create *good* work, but more often than not you're going to create *one of the many disappointing shades of bad* work.
 
-This chapter will discuss how to overcome human beings' many quirks to come together as an organization to make and maintain successful interface design systems. 
+This chapter will discuss how to overcome human beings' many quirks to come together to make and maintain successful interface design systems. 
 
 ## Pitching patterns
-In order to get stakeholders and clients on board with establishing a pattern-based organization, we must change their existing behavior. That involves constant education, as well as a bit of marketing savvy.
+In order to get stakeholders and clients on board with establishing a design system, we must change existing mentalities and behaviors. That involves constant education, as well as a bit of marketing savvy.
 
-It's essential to educate clients, colleagues, and stakeholders on the benefits of establishing interface design systems.  **Extol the virtues of establishing interface design systems**. By this point in the book you've hopefully become familiar with the benefits of interface patterns, so you'll be able to rattle off the benefits of pattern libraries to your clients and colleagues:
+Of course it's necessary to **introduce the concept of interface design systems and extol their virtues** to your clients, colleagues, and stakeholders. We've discussed these benefits throughout the book, so you can explain that design systems **promote consistency and cohesion**, **speed up your team's workflow**, **establish a more collaborative workflow**, **establish a shared vocabulary**, **provide helpful documentation**, **make testing easier**, and **serve as a future-friendly foundation**. Who can say no to all that!?
 
-- They **promote consistency and cohesion** across the entire experience.
-- They **speed up your team's workflow**, saving time and money.
-- They **establish a more collaborative workflow** between all disciplines involved in a project.
-- They **establish a shared vocabulary** between everyone in an organization, including outside vendors.
-- They **provide helpful documentation** to help educate stakeholders, colleagues, and even third parties.
-- They **make cross-browser/device, performance, and accessibility testing easier**.
-- They **serve as a future-friendly foundation** for teams to modify, extend, and improve upon over time.
-
-What I've found is that I can talk aboutAnswer a simple question "Do you like saving time and money, yes or no?" 
+I've found that I can talk about the benefits of design systems until I'm blue in the face, but stakeholders and clients don't always see things . A simple reframing of the question helps immensely. I now simply ask, "**Do you like saving time and money, yes or no**?" If the answer to that question is *no*, I'm afraid you have way bigger problems than selling a design system. If the answer is *yes*, then 
 
 
 ### When to establish a pattern library
