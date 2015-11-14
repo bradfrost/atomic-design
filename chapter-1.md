@@ -347,7 +347,7 @@ Without providing context, designers and developers don't know how global a part
 {% include figure.html src="../images/content/pattern-highlight-block.png" caption="'Highlight Block' looks like a useful and reusable pattern, but where is it being utilized?" %}
 
 ### Lacking a clear methodology
-As much as I adore the pattern libraries out there [in the wild](http://styleguides.io/examples.html), I can't help but notice a lack of structure in many of them. Don't get me wrong, I think it's absolutely fantastic teams are thinking systematically and are documenting their UI patterns. But I often feel like many pattern libraries are little more than loosely-arranged spray of modules. I think there's room for improvement.
+As much as I adore the pattern libraries out there [in the wild](http://styleguides.io/examples.html), I can't help but notice a lack of structure in many of them. Don't get me wrong, I think it's absolutely fantastic teams are thinking systematically and are documenting their UI patterns. But I often feel like many pattern libraries are little more than loosely-arranged sprays of modules. I think there's room for improvement.
 
 ## In search of an interface design methodology
 In order for us to create experiences for this eclectic Web landscape, we must evolve beyond the page metaphor that's been with us since the birth of the Web. Thankfully, organizations are embracing modularity across every aspect of the Web creation process, which is leading to smarter work and more sustainable systems.
