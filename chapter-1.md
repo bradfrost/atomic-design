@@ -323,7 +323,7 @@ Perhaps the biggest, most unavoidable challenge is the fact that **style guides 
 This auxiliary project conundrum reminds me of sentiments I often hear around factoring accessibility into projects. They say, "Oh, we wish we had time and budget for accessibility, but…" The notion that accessibility (and other principles like performance, responsiveness, etc.) is a costly "extra" line item is a fallacy. Pattern libraries, like accessibility, are good ideas to bake into your workflow whether or not the project plan explicitly calls for them.
 
 ### Maintenance and Governance
-Even if time and money are allocated to establish style guides, these valuable tools often can die on the vine when if they're not given the focus they need in order to reach their true potential. 
+Even if time and money are allocated to establish style guides, these valuable tools often die on the vine if they're not given the focus they need to reach their true potential. 
 
 **Maintenance and governance strategy is critical to style guides' success**. Style guides will be thrown in the trash (right beside all those PSDs and wireframes) and abandoned without a proper strategy in place for who will manage, maintain, and enforce them. 
 
