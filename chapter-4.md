@@ -96,16 +96,16 @@ Try to set time limits on the screenshotting exercise to avoid going down a rabb
 #### Dig deep
 Which parts of the site should the participants capture in the interface inventory? Short answer: *everything*. Any UI piece that is part of the owned user experience should be documented.  
 
-This is difficult as organizations tend to favor certain parts of the experience (*cough* homepage *cough*) over others. For example, people working on an e-commerce website tend to focus on the core shopping experience, but areas like customer support, FAQs, sizing charts, 404 pages, legal terms are all important parts of the user experience. Remember, users perceive your brand as a singular entity and don't care about your organizational structure, tech stack, or anything else that might cause disparities in the UI. So encourage interface audit participants to look under every stone during the exercise.
+This is difficult as organizations tend to favor certain parts of the experience (*cough* homepage *cough*) over others. For example, people working on an e-commerce website tend to focus on the core shopping experience while areas like customer support, FAQs, sizing charts, 404 pages, legal terms are all just as important to the user experience. Remember, users perceive your brand as a singular entity and don't care about your organizational structure, tech stack, or anything else that might cause disparities in the UI. So encourage interface audit participants to be thorough during the exercise.
 
 #### Step 4: present findings
-The screenshotting exercise can be exhausting and overwhelming, so be sure the team takes a break after the exercise is complete. Get some food, grab some coffee, and stretch your legs for a bit.
+The screenshotting exercise can be a bit overwhelming, so be sure the team takes a break after the exercise is complete. Get some food, grab some coffee, and stretch your legs for a bit. Once everyone's feeling refreshed, it's time to discuss what everybody captured.
 
-Once these patterns are documented the person (or pair of people) should drop them into Google Slides and cluster them together. Now the fun part: naming these patterns. Obviously it’s important to use existing conventions wherever possible, but you’ll quickly find out many UI patterns either don’t have names or have conflicting/confusing names.
+Have each participant spend 5 or 10 minutes presenting their UI category (or categories) to the group. Here's where the fun begins. Presenting to the group allows the team to discuss the rationale behind the existing UI, and also kickstarts a conversation about naming conventions. 
 
-Once everyone’s recharged, reconvene and spend about 10-15 minutes per category presenting the findings to the group. This is where things get interesting. Presenting to the group allows the team to start discussing the naming conventions and rationale for these UI patterns.  As I do more of these exercises with teams, it’s fascinating to hear that designers, developers, and product owners often have different names for the same UI pattern.
+**Naming things is hard**. I's fascinating that designers, developers, product owners, and other stakeholders often have different names for the same UI pattern. Obviously it’s helpful to use existing naming conventions wherever possible, but you’ll quickly find out many UI patterns either don’t have names or have conflicting/confusing names. This exercise is an opportunity to establish labels and iron out some of the differences in labeling ("Oh, we call that the utility bar." "Oh we call it the admin nav." "Oh we call it the floating action area!"). 
 
-Once every category has been presented and discussed, have all the participants send their slides to the exercise leader, who merges everything into one uber-document.
+Once every category has been presented and discussed, all the participants should send their slides to the exercise leader, who will merge everything into one giant uber-document.
 
 #### Step 5: pegroup and establish next steps
 The hard work is done, so now what? This exercise should be used as a conversation starter to get the entire organization on board with crafting an interface design system.
@@ -114,11 +114,11 @@ The uber-document can be shopped around to stakeholders to get buy in for establ
 
 In addition to selling the idea through, the interface inventory should be used as the groundwork for a future pattern library. Gather a smaller cross-disciplinary team together to go through the uber-document and have some conversations about it. Some important questions for this group to cover:
 
-What names should we settle on?
-What patterns should stay, and which should go?
-Can we merge patterns together easily?
-How do developers, designers, and managers begin to utilize this shared vocabulary?
-How do we translate this exercise into a living pattern library?
+- What names should we settle on?
+- What patterns should stay, and which should go?
+- Can we merge patterns together easily?
+- How do developers, designers, and managers begin to utilize this shared vocabulary?
+- How do we translate this exercise into a living pattern library?
 
 ### Benefits of an Interface Inventory
 Why go through all the trouble of deconstructing and cataloging an interface? It’s certainly a tedious process, but the results are extremely beneficial. Here are just some of the benefits of an interface inventory:
