@@ -33,12 +33,12 @@ Alas, I've found that I can hype design systems until I'm blue in the face, but 
 - Design systems **make cross-browser/device, performance, and accessibility testing easier**, vastly speeding up production time and therefore allowing teams to launch more stuff faster. Also, baking things like accessibility into a living design system means less risk of getting sued for inaccessible features.
 - Once a design system (with accompanying pattern library) is established, it **serves as a future-friendly foundation** for the organization to modify, tweak, extend, and improve upon over time. Doing some AB testing? Roll the learnings from those tests into the living design system! Made some big performance optimizations? Roll them into the living design system! The *living* part of living design systems means they can always adapt to meet the future needs of the organization, saving time and money all the while.
 
-Framing things through the lens of time and money helps the people controlling the pursestrings understand why a design system is a worthwhile pursuit. With any luck, these conversations can help get the organization's wheels turning to free up time and budget to make establishing a design system a priority.
+Framing things through the lens of time and money helps the people controlling the pursestrings understand why a design system is a worthwhile pursuit. With any luck, these conversations will translate to a concrete commitment from the organization (read: allocating real time and money) to make a design system happen.
 
-### Show, Don't tell
+### Show, don't tell: interface inventories
+If only getting buy-in were as easy as having a few well-placed conversations. 
 
 
-- In addition to gathering user research, competitive research, business requirements, etc, can start laying the foundation for the future pattern library.
 - conducting an interface inventory
 
 ### Conducting an interface inventory
