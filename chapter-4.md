@@ -25,17 +25,18 @@ Introducing a new way of doing things is no easy task as it requires changing pe
 
 First things first. It's necessary to introduce the concept of interface design systems to your clients, colleagues, and stakeholders. Explain what these design systems are and the many ways they can help the organization. We've discussed these benefits throughout the book, so you can explain that design systems **promote consistency and cohesion**, **speed up your team's workflow**, **establish a more collaborative workflow**, **establish a shared vocabulary**, **provide helpful documentation**, **make testing easier**, and **serve as a future-friendly foundation**. Who can say no to all that!?
 
-Alas, I've found that I can hype design systems until I'm blue in the face, but stakeholders and clients don't always see things through the same lens as a designer or developer. A simple reframing of the question helps immensely. I've found it much more effective to simply ask, "**Do you like saving time and money, yes or no?**" If the answer to that question is *no*, I'm afraid you have way bigger problems than selling a design system. If the answer is *yes*, then you can pitch style guide benefits through the lens of time and money. Let's try this out, shall we?
+Alas, I've found that I can hype design systems until I'm blue in the face, but the suits don't always see things through the same lens as the people on the ground. A simple reframing of the question helps immensely. I've found it much more effective to simply ask, "**Do you like saving time and money, yes or no?**" If the answer to that question is *no*, I'm afraid you have way bigger problems than selling a design system. If the answer is *yes*, then you can pitch the benefits through the lens of time and money. Let's try this out, shall we?
 
-- Design systems **promote UI consistency and cohesion**. That means users become experts at your UI faster, which leads to more conversions and as a result **more money**.
-- Design systems **speed up your team's workflow**. This is big. Rather than reinventing the wheel for every new feature or request, teams can reuse the puzzle pieces showcased in the  saving time and money.
-- They **establish a more collaborative workflow** between all disciplines involved in a project.
-- They **establish a shared vocabulary** between everyone in an organization, including outside vendors.
-- They **provide helpful documentation** to help educate stakeholders, colleagues, and even third parties.
-- They **make cross-browser/device, performance, and accessibility testing easier**.
-- They **serve as a future-friendly foundation** for teams to modify, extend, and improve upon over time.
+- Design systems **lead to cohesive, consistent experiences**. That means users master your UI faster, leading to more conversions and **more money**.
+- Design systems **speed up your team's workflow**. Rather than reinventing the wheel every time a new request comes down the pipe, teams can reuse already-established UI puzzle pieces to roll out new pages and features faster than ever before.
+- Centralizing UI components in a pattern library **establishes a shared vocabulary** for everyone in the organization and **creates a more collaborative workflow** across all disciplines. With everyone speaking the same language, more time is spent getting work done and less time is spent dealing with superfluous back-and-forth communications and meetings discussing "that thing on the homepage".
+- Design systems **make cross-browser/device, performance, and accessibility testing easier**, vastly speeding up production time and therefore allowing teams to launch more stuff faster. Also, baking things like accessibility into a living design system means less risk of getting sued for inaccessible features.
+- Once a design system (with accompanying pattern library) is established, it **serves as a future-friendly foundation** for the organization to modify, tweak, extend, and improve upon over time. Doing some AB testing? Roll the learnings from those tests into the living design system! Made some big performance optimizations? Roll them into the living design system! The *living* part of living design systems means they can always adapt to meet the future needs of the organization, saving time and money all the while.
+
+Framing things through the lens of time and money helps the people controlling the pursestrings understand why a design system is a worthwhile pursuit. With any luck, these conversations can help get the organization's wheels turning to free up time and budget to make establishing a design system a priority.
 
 ### Show, Don't tell
+
 
 - In addition to gathering user research, competitive research, business requirements, etc, can start laying the foundation for the future pattern library.
 - conducting an interface inventory
