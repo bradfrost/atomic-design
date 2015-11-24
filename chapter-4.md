@@ -68,6 +68,7 @@ Get your screenshotting fingers ready because it's time for the main event! **Th
 
 Assign each participant a UI category. Depending on how many people are participating, you may need to break people up into pairs or have participants document multiple categories. Again, the more the merrier, as more people screenshotting will result in more thorough documentation.
 
+#### What patterns to capture
 So what categories of interface elements should be captured? Obviously the interface element categories are going to vary from experience to experience, but here’s a few categories to start with:
 
 - **Global elements** – components like headers, footers, and other global elements that are shared across the entire experience
@@ -87,12 +88,18 @@ So what categories of interface elements should be captured? Obviously the inter
 - **Colors** – Capture all unique colors presented in the interface. This category can be aided by fantastic style-guide bootstrapping tools like [CSS Stats](http://cssstats.com/) and [Stylify Me](http://stylifyme.com/)
 - **Animation** – Animation is an elemental aspect of user interfaces, and should therefore be documented. This requires using screen recording software such as Quicktime to capture motion 
 
-I try to timebox the screenshotting exercise to avoid going down a rabbit hole that ends up lasting all day. The amount of time to allocate will vary depending on how many people are participating, but I find between 30-90 minutes to be sufficient for a first pass of the interface inventory.
+Again, these categories aren’t set in stone and will vary based on the nature of the type of user interface. Feel free to add, subtract, or modify these categories to best fit your organizational needs.
 
-These categories aren’t set in stone and will vary based on the nature of the type of user interface. Once these patterns are documented the person (or pair of people) should drop them into  Google Slides and cluster them together. Now the fun part: naming these patterns. Obviously it’s important to use existing conventions wherever possible, but you’ll quickly find out many UI patterns either don’t have names or have conflicting/confusing names.
+#### Timing is everything
+Try to timebox the screenshotting exercise to avoid going down a rabbit hole that ends up lasting all day. The amount of time to allocate will vary depending on how many people are participating, but I find between 30-90 minutes to be sufficient for a first pass of the interface inventory. Set a timer, throw on some *Jeopardy* music (well, maybe not *Jeopardy* music, but maybe some other music that sets a good tone for the exercise), and have the participants concentrate on screenshotting the unique UI patterns they encounter.
+
+#### Dig deepd 
+
 
 #### Step 4: present findings
-Screenshotting and naming can be exhausting and overwhelming, so be sure to take a break after the gathering exercise is complete. Get some food, grab some coffee, and stretch your legs.
+Screenshotting and naming can be exhausting and overwhelming, so be sure to take a break after the screenshot exercise is complete. Get some food, grab some coffee, and stretch your legs.
+
+Once these patterns are documented the person (or pair of people) should drop them into Google Slides and cluster them together. Now the fun part: naming these patterns. Obviously it’s important to use existing conventions wherever possible, but you’ll quickly find out many UI patterns either don’t have names or have conflicting/confusing names.
 
 Once everyone’s recharged, reconvene and spend about 10-15 minutes per category presenting the findings to the group. This is where things get interesting. Presenting to the group allows the team to start discussing the naming conventions and rationale for these UI patterns.  As I do more of these exercises with teams, it’s fascinating to hear that designers, developers, and product owners often have different names for the same UI pattern.
 
