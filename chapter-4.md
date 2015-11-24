@@ -40,17 +40,17 @@ If only getting buy-in were as easy as having a few well-timed conversations wit
 
 Enter the interface inventory.
 
-Many are familiar with the concept of a [content inventory](https://en.wikipedia.org/wiki/Content_inventory). Content audits are usually performed in the early stages of a website redesign process to take stock of all a site’s content. It’s a tedious process involving spreadsheets and caffeine, but all that hard work pays off. By the end of the exercise the organization's content is laid out on the table, giving teams valuable insights in how to tackle their project.  
+Many are familiar with the concept of a [content inventory](https://en.wikipedia.org/wiki/Content_inventory). Content audits are usually performed in the early stages of a website redesign process to take stock of all a site’s content. It’s a tedious process involving spreadsheets and caffeine, but all that hard work pays off. By the end of the exercise the organization's content is laid out on the table, giving teams valuable insights for how to handle their content as they tackle their project.  
 
-An interface inventory is similar to a content inventory, only instead of sifting through and categorizing content, you’re taking stock and categorizing the components making up your user interface. **An interface inventory is a comprehensive collection of the bits and pieces that make up your interface**.
+An interface inventory is similar to a content inventory, only instead of sifting through and categorizing content, you’re taking stock and categorizing the components making up your user interface. **An interface inventory is a comprehensive collection of the bits and pieces that make up your user interface**.
 
 ### Conducting an interface audit
-So how do you go about conducting an interface audit? How do you go about rounding up all the components that make up your UI? While an interface inventory is essentially a whole lot of screenshots, there are some key considerations to keep in mind to make the exercise a success.
+So how do you go about conducting an interface audit? How do you go about rounding up all the components that make up your UI? The simple answer to those questions is *screenshots*. Lots of them! Creating an interface inventory requires screenshotting all the unique UI components that make up your user experience. While that's a relatively straightforward endeavor, there are some important considerations to keep in mind to make the inventory as fruitful as possible. Let's go through the process on how to create a successful interface inventory.
 
 #### Step 1: round up the troops
 I’ve encountered many ambitious designers or developers who have taken it upon themselves to start documenting the organization's UI patterns. While I certainly applaud this individual ambition, **it’s absolutely essential to get all members of the team to experience the pain of an inconsistent UI and start thinking systematically**.
 
-In order for the interface inventory to be as fruitful as possible, **representatives from all disciplines responsible for the success of the site should be in a room together** for the exercise. Round up the troops: designers, front-end developers, back-end developers, copywriters, content strategists, project managers, business owners, QA, and any other stakeholder. The more the merrier! After all, one of the most crucial results of this exercise is to establish a shared vocabulary for everyone in the organization, and that requires input from everyone.
+In order for the interface inventory to be as effective as possible, **representatives from all disciplines responsible for the success of the site should be in a room together** for the exercise. Round up the troops: designers, front-end developers, back-end developers, copywriters, content strategists, project managers, business owners, QA, and any other stakeholders. The more the merrier! After all, one of the most crucial results of this exercise is to establish a shared vocabulary for everyone in the organization, and that requires input from everyone.
 
 #### Step 2: prepare for screenshotting
 The interface inventory exercise generates a ton of screenshots, so naturally you’ll need screenshotting software like the following:
@@ -64,40 +64,42 @@ The interface inventory exercise generates a ton of screenshots, so naturally yo
 Ultimately, it doesn’t really matter what tool you use, but everyone should agree on a single tool to make it easier to combine at the end of the exercise. I’ve found online slide-building software like Google Slides to be most effective as they provide a canvas for freeform positioning of images, they're chunked out into slides for better categorization, and they're web-based so can be shared with ease.
 
 #### Step 3: screenshot exercise
-Get your screenshotting fingers ready because it's time for the main event! **The interface inventory exercise involves screenshotting, naming, and categorizing all the unique UI patterns that make up your experience**. Bear in mind this exercise doesn't mean capturing *every instance* of a UI pattern, but rather capturing one instance of each unique UI pattern.
+Get your screenshotting fingers ready because it's time for the main event! **The interface inventory exercise involves screenshotting and categorizing all the unique UI patterns that make up your experience**. Bear in mind this exercise doesn't mean capturing *every instance* of a particular UI pattern, but rather capturing *one instance of each* unique UI pattern.
 
-Assign each participant a UI category. Depending on how many people are participating, you may need to break people up into pairs or have participants document multiple categories. Again, the more the merrier, as more people screenshotting will result in more thorough documentation.
+Assign each participant a UI category. You may need to break people up into pairs or have participants document multiple categories, depending on how many people are participating. Again, the more the merrier, as more people screenshotting will result in more thorough documentation.
 
 #### What patterns to capture
-So what categories of interface elements should be captured? Obviously the interface element categories are going to vary from experience to experience, but here’s a few categories to start with:
+So what categories of interface elements should be captured? Obviously the interface element categories are going to vary from interface to interface, but here’s a few categories to start with:
 
 - **Global elements** – components like headers, footers, and other global elements that are shared across the entire experience
 - **Navigation** – primary navigation, footer navigation, pagination, breadcrumbs, interactive component controls, and essentially anything that’s used to navigate around a user interface
-- **Image types** – Logos, hero images, avatars, thumbnails, backgrounds, etc and any other unique image pattern that shows up in the UI. 
+- **Image types** – Logos, hero images, avatars, thumbnails, backgrounds, etc and any other type of image pattern that shows up in the UI. 
 - **Icons** – Icons are a special type of image worthy of their own category. Capture magnifying glasses, social icons, arrows, hamburgers, spinners, favicons, and every other interface icon.
-- **Forms** – Inputs, text areas, select menus, checkboxes, switches, radio buttons, sliders, and other forms of user input
+- **Forms** – Inputs, text areas, select menus, checkboxes, switches, radio buttons, sliders, and other forms of user input.
 - **Buttons** – Buttons are the quintessential UI element. Capture all the unique button patterns throughout an experience: primary, secondary, big, small, disabled, active, loading, and even buttons that look more like text links.
 - **Headings** – h1, h2, h3, h4, h5, h6 and variations of typographic headings. 
 - "**Blocks**" – Also known as touts, callouts, summaries, ads, or hero units, "blocks" are collections of typographic headings and/or images and/or summary text (see Nicole Sullivan’s write-up about the [Media Object](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/)).
 - **Lists** – Round up unordered, ordered, definition, bulleted, numbered, lined, striped, or any group of elements presented in a list-type format.
-- **Interactive Components** – Accordions, tabs, carousels, and other modules with moving parts.
+- **Interactive Components** – Components in the truest sense, accordions, tabs, carousels, and other modules with moving parts are crucial to capture.
 - **Media** – Video players, audio players and other rich media elements.
-- **3rd Party** – Widgets, iframes, stock tickers, social buttons,  [invisible tracking scripts](http://bradfrost.com/blog/post/surfacing-invisible-elements/), and anything else that isn’t hosted on your domain.
+- **3rd Party Components** – Widgets, iframes, stock tickers, social buttons,  [invisible tracking scripts](http://bradfrost.com/blog/post/surfacing-invisible-elements/), and anything else that isn’t hosted on your domain.
 - **Advertising** – Document all ad formats and dimensions.
-- **Messaging** – Alerts, success, errors, warnings, errors, validation, in-progress, popups, tooltips, etc. This is a challenging category to capture as these messages often require user action to expose.
-- **Colors** – Capture all unique colors presented in the interface. This category can be aided by fantastic style-guide bootstrapping tools like [CSS Stats](http://cssstats.com/) and [Stylify Me](http://stylifyme.com/)
-- **Animation** – Animation is an elemental aspect of user interfaces, and should therefore be documented. This requires using screen recording software such as Quicktime to capture motion 
+- **Messaging** – Alerts, success, errors, warnings, validation, loaders, popups, tooltips, etc. This is a challenging category to capture as these messages often require user action to expose.
+- **Colors** – Capture all unique colors presented in the interface. This category can be aided by fantastic style-guide bootstrapping tools like [CSS Stats](http://cssstats.com/) and [Stylify Me](http://stylifyme.com/).
+- **Animation** – Animation is an elemental aspect of user interfaces, and should therefore be documented. This requires using screen recording software such as Quicktime to capture any UI element that moves, fades, shakes, transitions, or shimmies across the screen.
 
-Again, these categories aren’t set in stone and will vary based on the nature of the type of user interface. Feel free to add, subtract, or modify these categories to best fit your organizational needs.
+Again, these categories aren’t set in stone and will vary based on the nature of the type of user interface you're dealing with. It's important to add, subtract, or modify these categories to best fit your organizational needs.
 
 #### Timing is everything
-Try to timebox the screenshotting exercise to avoid going down a rabbit hole that ends up lasting all day. The amount of time to allocate will vary depending on how many people are participating, but I find between 30-90 minutes to be sufficient for a first pass of the interface inventory. Set a timer, throw on some *Jeopardy* music (well, maybe not *Jeopardy* music, but maybe some other music that sets a good tone for the exercise), and have the participants concentrate on screenshotting the unique UI patterns they encounter.
+Try to set time limits on the screenshotting exercise to avoid going down a rabbit hole that ends up lasting all day. The amount of time you allocate will vary depending on how many people are participating, but I find between **30-90 minutes** to be sufficient for a first pass of an interface inventory. Set a timer, throw on some *Jeopardy* music (well, maybe not *Jeopardy* music, but maybe some other music that sets a good tone for the exercise), and have the participants concentrate on screenshotting the unique UI patterns they encounter.
 
-#### Dig deepd 
+#### Dig deep
+Which parts of the site should the participants capture in the interface inventory? Short answer: *everything*. Any UI piece that is part of the owned user experience should be documented.  
 
+This is difficult as organizations tend to favor certain parts of the experience (*cough* homepage *cough*) over others. For example, people working on an e-commerce website tend to focus on the core shopping experience, but areas like customer support, FAQs, sizing charts, 404 pages, legal terms are all important parts of the user experience. Remember, users perceive your brand as a singular entity and don't care about your organizational structure, tech stack, or anything else that might cause disparities in the UI. So encourage interface audit participants to look under every stone during the exercise.
 
 #### Step 4: present findings
-Screenshotting and naming can be exhausting and overwhelming, so be sure to take a break after the screenshot exercise is complete. Get some food, grab some coffee, and stretch your legs.
+The screenshotting exercise can be exhausting and overwhelming, so be sure the team takes a break after the exercise is complete. Get some food, grab some coffee, and stretch your legs for a bit.
 
 Once these patterns are documented the person (or pair of people) should drop them into Google Slides and cluster them together. Now the fun part: naming these patterns. Obviously it’s important to use existing conventions wherever possible, but you’ll quickly find out many UI patterns either don’t have names or have conflicting/confusing names.
 
