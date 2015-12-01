@@ -101,18 +101,18 @@ This is difficult as organizations tend to favor certain parts of the experience
 #### Step 4: present findings
 The screenshotting exercise can be a bit overwhelming, so be sure the team takes a break after the exercise is complete. Get some food, grab some coffee, and stretch your legs for a bit. Once everyone's feeling refreshed, it's time to discuss what everybody captured.
 
-Have each participant spend 5 or 10 minutes presenting their UI category (or categories) to the group. Here's where the fun begins. Presenting to the group allows the team to discuss the rationale behind existing UI patterns, and also kickstarts a conversation about naming conventions. 
+Have each participant spend 5 or 10 minutes presenting each UI category to the group. Here's where the fun begins. Presenting to the group allows the team to discuss the rationale behind existing UI patterns, and also kickstarts a conversation about naming conventions. 
 
-**Naming things is hard**. It's fascinating that designers, developers, product owners, and other stakeholders often have different names for the same UI pattern. This exercise is an opportunity to establish labels for patterns and iron out some of the differences in labeling ("Oh, we call that the utility bar." "Oh we call it the admin nav." "Oh we call it the floating action area!"). Obviously it’s helpful to use existing naming conventions wherever possible, but you’ll quickly find out many UI patterns either don’t have names or have conflicting/confusing names. Don't feel like you need to come to a consensus on patterns' final names; this exercise is simply meant to kickstart a broader discussion.
+**Naming things is hard**. It's fascinating to hear the inconsistent names designers, developers, product owners, and other stakeholders give for the same UI pattern. "Oh, we call that the utility bar." "Oh we call it the admin nav." "Oh we call it the floating action area!" This exercise is an opportunity to unearth and iron out disparities between pattern labels, and also establish names for previously-unlabeled patterns. Don't feel like you need to come to a consensus on patterns' final names in the course of 10 minutes; this exercise is simply meant to kickstart a broader discussion.
 
-Once every category has been presented and discussed, all the participants should send their slides to the exercise leader, who will combine everything into one giant uber-document.
+Once every category has been presented and discussed, all the participants should send their slides to the exercise leader, who will combine everything into one giant über-document. This über-document will become a wrecking ball of truth and justice.  
 
 #### Step 5: regroup and establish next steps
 The hard work is done, so now what? 
 
 This exercise should be used as a conversation starter to get the entire organization on board with crafting an interface design system.
 
-The uber-document can be shopped around to stakeholders to get buy in for establishing an interface design system. The beautiful thing about seeing all the disparities of an interface laid bare for everyone to see is that it becomes crystal clear something needs done about it. 
+The über-document can be shopped around to stakeholders to get buy in for establishing an interface design system. The beautiful thing about seeing all the disparities of an interface laid bare for everyone to see is that it becomes crystal clear something needs done about it. 
 
 In addition to selling the idea through, the interface inventory should be used as the groundwork for a future pattern library. Gather a smaller cross-disciplinary team together to go through the uber-document and have some conversations about it. Some important questions for this group to cover:
 
@@ -216,4 +216,6 @@ But establishing a pattern library doesn't necessarily need to be attached to an
 - Monitor progress - Lonely Planet performance 
 
 ## Go forth and be atomic
+
+
 
