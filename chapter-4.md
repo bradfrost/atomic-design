@@ -123,16 +123,15 @@ Once the gaps in the interface inventory have been filled in, the working group 
 - What are the next steps to translate the interface inventory into a living pattern library?
 
 ### Benefits of an Interface Inventory
-Creating an interface inventory can be a big undertaking, but  the benefits are many:
+Creating an interface inventory can be a big undertaking, but the benefits of making one are many:
 
-- **Captures inconsistencies** — Creating an interface inventory rounds up all the unique patterns that make up your UI. Seeing all those similar-but-still-different patterns next to each other exposes redundancy and underscores the need to create a consistent, cohesive experience.
-- **Gets organizational buy-in**. Having a large, diverse group of disciplines participate in the exercise helps everyone understand the need for a consistent UI. 
-- **Ensures all interface components are accounted for**—This happens a lot. A full-on redesign is underway, and somewhere along the line certain modules end up slipping between the cracks. Creating an interface inventory up front helps establish project scope and ensures that all components are accounted for so there are no nasty surprises at the 11th hour before launch.
-- **Lays the groundwork to a sound design system**—Creating systematic, atomic, styleguide-driven design is a smart strategy, and an interface inventory is that first step at deconstructing pages down to their atomic level. Eventually the interface inventory can be used to help set up a style guide or pattern library. An interface inventory is the first step toward establishing a common interface language.
-- **Establishes a scope of work**—While mobile-first responsive design is certainly a preferred approach to responsive design, it’s not always feasible to undertake right away. Budget, time, scope, skillset, and more often force organizations to retrofit their existing website into a responsive site. Creating an interface inventory allows design teams to analyze the interface in order to establish what components will be easy and relatively difficult to convert into a responsive environment.
+- **Captures all patterns and their inconsistencies** — An interface inventory rounds up all the unique patterns that make up your UI. Seeing all those similar-but-still-different patterns next to each other exposes redundancy and underscores the need to create a consistent, cohesive experience.
+- **Gets organizational buy-in** — Having a large, diverse group of disciplines participate in the exercise helps everyone understand the value of maintaining a consistent user interface. Also, the interface inventory über-document can be a tremendously powerful tool for convincing stakeholders, bosses, and clients to invest in an interface design system.
+- **Establishes a scope of work** — An interface inventory helps design teams determine the level of effort required to design and build each UI pattern as part of a design or redesign project. Which components will be easy and relatively difficult to convert into a responsive environment? What are the content, design, and development considerations around each component? An interface inventory enables teams to have important conversations that help establish a project's realistic scope and timeline.  
+- **Lays the groundwork to a sound design system** — Eventually the interface inventory can be used to help set up a style guide or pattern library. An interface inventory is the first step toward establishing a shared language around the design system.
 
 ### Forgiveness, not permission
-Even if they say no, do it anyways. Much like building in performance and accessibility and responsiveness into our experiences
+Even if they say no, do it anyways. Much like building in performance and accessibility and responsiveness into our experiences, a systematic way. 
 
 ### When to establish a pattern library
 Interface design systems and their accompanying pattern libraries are often done in conjunction with a new design or redesign project, replatforming effort, some other project. Piggybacking off another effort is a great way to sneak a pattern library project into your organization.
