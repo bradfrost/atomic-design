@@ -261,7 +261,7 @@ Making style guides central to your process results in user interfaces that feel
 ### A shared vocabulary
 What does “utility toolbar” mean? Does everyone understand what “touch slider hero” is?
 
-As the number of people working on a project increase, it becomes all-too-easy for communication breakdowns to occur. It's not uncommon for different disciplines have different names for the same module, and for individuals to go rogue and invent their own naming conventions. In order for true collaboration to occur, it's essential for teams to speak a common language. Style guides are there to help establish that shared vocabulary.
+As the number of people working on a project increase, it becomes all-too-easy for communication breakdowns to occur. It's not uncommon for different disciplines to have different names for the same module, and for individuals to go rogue and invent their own naming conventions. In order for true collaboration to occur, it's essential for teams to speak a common language. Style guides are there to help establish that shared vocabulary.
 
 {% include figure.html src="../images/content/starbucks-blocks-3up.png" caption="Giving names to patterns like 'Blocks 3-Up' in Starbucks' style guide helps team members speak the same language" %}
 
@@ -289,7 +289,7 @@ The homepage is broken, you say? Well, what exactly is breaking it?
 The ability to pull an interface apart into its component pieces makes testing a lot easier. A style guide allows you to view interface patterns in isolation, which lets developers hone in on what's causing errors, browser inconsistencies, or performance issues. 
 
 ### Speed
-Earlier in the chapter we discussed how *design and development speed* is one of the main reasons why UI frameworks like Bootstrap are so popular. We're under pressure to get projects out the door as soon as humanly possible. By developing your own design system, you can reap those same speed rewards as the out-of-the-box UI toolkits.
+Earlier in the chapter we discussed how *faster design and development* is one of the main reasons why UI frameworks like Bootstrap are so popular. We're under pressure to get projects out the door as soon as humanly possible. By developing your own design system, you can reap those same speed rewards as the out-of-the-box UI toolkits.
 
 It's true that devising an interface design system and creating a custom pattern library initially takes a lot of time, thought, and effort. But once the pattern library is established subsequent design and development becomes much faster, which tends to make everybody happy.
 
