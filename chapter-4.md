@@ -44,6 +44,8 @@ Many are familiar with the concept of a [content inventory](https://en.wikipedia
 
 An interface inventory is similar to a content inventory, only instead of sifting through and categorizing content, you’re taking stock and categorizing the components making up your user interface. **An interface inventory is a comprehensive collection of the bits and pieces that make up your user interface**.
 
+{% include figure.html src="../images/content/united-buttons.jpg" caption="Here's a collection of all the unique button styles found on the homepage of United.com. An interface inventory rounds up and categorizes all the unique patterns that make up an interface." %}
+
 ### Conducting an interface audit
 So how do you go about conducting an interface audit? How do you go about rounding up all the components that make up your UI? The simple answer to those questions is *screenshots*. Lots of them! Creating an interface inventory requires screenshotting all the unique UI components that make up your user experience. While that's a relatively straightforward endeavor, there are some important considerations to keep in mind to make the inventory as fruitful as possible. Let's go through the process on how to create a successful interface inventory.
 
@@ -60,6 +62,8 @@ The interface inventory exercise generates a ton of screenshots, so naturally yo
 - Evernote web clipper
 - Google Docs or Microsoft Word
 - Google Slides (If you're interested, I've created a [Google Slides interface inventory template](https://docs.google.com/presentation/d/1GqFmiDV_NqKi36fXAwD3WTJL5-JV-gHL7XVD2fVeL0M/edit?usp=sharing))
+
+{% include figure.html src="../images/content/interface-inventory-template.png" caption="It's important for all participants to capture screenshots using the same software so they can be combined later. I've created a Google Slides interface inventory template for teams to use as a starting point." %}
 
 Ultimately, it doesn’t really matter what tool you use, but everyone should agree on a single tool to make it easier to combine at the end of the exercise. I’ve found online slide-building software like Google Slides to be very effective as they provide a canvas for free-form image positioning, they're chunked out into slides for easier categorization, and they're web-based so can be shared with ease.
 
@@ -87,6 +91,10 @@ So what categories of interface elements should be captured? Obviously the inter
 - **Messaging** – alerts, success, errors, warnings, validation, loaders, popups, tooltips, etc. This can be a challenging category to capture as messaging often requires user action to expose.
 - **Colors** – Capture all unique colors presented in the interface. This category can be aided by fantastic style-guide bootstrapping tools like [CSS Stats](http://cssstats.com/) and [Stylify Me](http://stylifyme.com/).
 - **Animation** – Animation is an elemental aspect of user interfaces, and should therefore be documented. This requires using screen recording software such as Quicktime to capture any UI element that moves, fades, shakes, transitions, or shimmies across the screen.
+
+{% include figure.html src="../images/content/pnc-forms.png" caption="An example of various form elements captured in an interface inventory for a major bank's website" %}
+
+{% include figure.html src="../images/content/pnc-buttons.png" caption="An example of unique button patterns captured in an interface inventory for a major bank's website" %}
 
 Again, these categories aren’t set in stone and will vary based on the nature of the type of user interface you're dealing with. Of course it's important to add, subtract, or modify these categories to best fit your organizational needs.
 
@@ -138,7 +146,7 @@ Interface design systems and their accompanying pattern libraries are often done
 
 But establishing a pattern library doesn't necessarily need to be attached to another project. If you can convince your clients and bosses to pony up the cash and resources to make things happen, then good on you! 
 
-- In-house vs client workae
+- In-house vs client work
 
 ## (Re)setting expectations
 > As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
@@ -203,29 +211,3 @@ But establishing a pattern library doesn't necessarily need to be attached to an
 - Monitor progress - Lonely Planet performance 
 
 ## Go forth and be atomic
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Container
-.tabs 
-
-//Tabs themselves
-.tabs__list
-
-//Tab Panel
-.tabs__panel {
-
-}
-
