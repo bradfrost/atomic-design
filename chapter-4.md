@@ -147,18 +147,23 @@ Creating an interface inventory can be a big undertaking, but the benefits of ma
 - **Establishes a scope of work** — An interface inventory helps design teams determine the level of effort required to design and build each UI pattern as part of a design or redesign project. Which components will be easy and relatively difficult to convert into a responsive environment? What are the content, design, and development considerations around each component? An interface inventory enables teams to have important conversations that help establish a project's realistic scope and timeline.  
 - **Lays the groundwork to a sound interface design system** — The interface inventory is an important first step for setting up a comprehensive pattern library. It's essential to capture all existing UI patterns in order to determine which patterns will make the final cut in the living design system. The interface audit exercise also helps teams establish a shared vocabulary, which will be crucial for the success of the eventual design system. 
 
-### Forgiveness, not permission
-So you've discussed the benefits of establishing a living design system
+### Ask forgiveness, not permission
+So you've discussed the benefits of establishing a living design system with your stakeholders, and you've even created an interface inventory to show them the inconsistent train wreck that is the current UI. And yet, despite all your efforts, they still shoot down the sound idea of establishing an interface design system and pattern library. What's a responsible Web team to do?
 
-Even if they say no, do it anyways. Much like building in performance and accessibility and responsiveness into our experiences, a systematic way. 
+**Do it anyways**.
+
+Just how we build things like performance, accessibility, and responsiveness into our process by default, we should also accept systematic design as a default. You don't need to get the client's blessing in order to follow your craft's best practices. When you give stakeholders the option to say *no* to something, they will. So simply don't give them that opportunity. We're tasked with creating great work for our clients and organizations, and interface design systems are a means to that end.
+ 
+The fact of the matter is that **in order to create the whole, you need to create the parts of that whole**. You have a decision to make: you can haphazardly create the project at hand, or you can spend a little more time to organize the parts to help you more efficiently create that whole.
+
+Once you've successfully launched the project, you can bring up your methodologies with your stakeholders. "Oh by the way, we established a pattern library so the team could work more efficiently and be more collaborative." 
+
+[here's as far as I've gotten so far. Thanks for reading!]
 
 ## (Re)setting expectations
 > As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
 
 - Death to the waterfall
-
-{% include figure.html src="../images/content/pattern-lab-code.png" caption="" %}
-
 - This involves everyone - UX designers, visual oriented designers, front-end developers, backend developers, business owners, clients, etc
 - [Development is design](http://bradfrost.com/blog/post/development-is-design/)
 
