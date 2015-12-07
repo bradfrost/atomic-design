@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 			      hostname: 'localhost',
 			      port: 4000,
 			      base: '_site',
-			      livereload: true
+			      livereload: 12345
 		      }
 	      }
         },
@@ -72,7 +72,7 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			options: {
-				livereload: true
+				livereload: 12345
 			},
 			html: {
   				files: ['_patternlab/source/_patterns/**/*.mustache', '_patternlab/source/_patterns/**/*.json', '_patternlab/source/_data/*.json'],
@@ -85,14 +85,14 @@ module.exports = function(grunt) {
 				files: ['index.html', '_layouts/*.html', '_includes/*.html', '*.md'],
 				tasks: ['jekyll'],
 				options: {
-					livereload: true
+					livereload: 12345
 				}
 			},
 			css: {
 				files: ['_patternlab/source/css/*.scss', '_patternlab/source/css/**/*.scss'],
 				tasks: ['sass', 'autoprefixer', 'jekyll', 'shell:patternlab', 'copy'],
 				options: {
-					livereload: true
+					livereload: 12345
 				}
 			}
 		}
