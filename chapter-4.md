@@ -154,11 +154,11 @@ So you've discussed the benefits of establishing a living design system with you
 
 Just how we build things like performance, accessibility, and responsiveness into our process by default, we should also accept systematic design as a default. You don't need to get the client's blessing in order to follow your craft's best practices. When you give stakeholders the option to say *no* to something, they will. So simply don't give them that opportunity. We're tasked with creating great work for our clients and organizations, and interface design systems are a means to that end.
  
-The fact of the matter is that **in order to create the whole, you need to create the parts of that whole**. You have a decision to make: you can haphazardly create the project at hand, or you can spend a little more time to organize the parts to help you more efficiently create that whole.
+The fact of the matter is that **in order to create the whole, you need to create the parts of that whole**. You have a decision to make: you can focus on creating the haphazard whole while ignoring the parts, or you can spend a little more time to organize the parts to help you more efficiently create that whole. [Wolfram Nagel Lego example] There's no real need to surface any of this to the client; it's simply a decision your team is making to work better together.
 
-Once you've successfully launched the project, you can bring up your methodologies with your stakeholders. "Oh by the way, we established a pattern library so the team could work more efficiently and be more collaborative." 
+Once you've successfully launched the project and the champagne has been poured, you can bring up your methodologies with your stakeholders. "Oh by the way, we established a design system and pattern library so the team could work more efficiently and be more collaborative." At this stage in the game, it would be difficult for them to argue against this approach, especially if you've come in on time and on budget. Hopefully, you can use the initial project's success to parlay into a more official initiative at the organization. 
 
-[here's as far as I've gotten so far. Thanks for reading!]
+[this is as far as I've gotten so far. Thanks for reading!]
 
 ## (Re)setting expectations
 > As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
