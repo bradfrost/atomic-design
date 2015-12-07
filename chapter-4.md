@@ -20,7 +20,7 @@ You can have all the right technologies in place, use the latest-and-greatest to
 
 Establishing and maintaining successful interface design systems is an organization-wide effort, and this chapter will discuss how to overcome human beings' many quirks to make them happen. 
 
-### When to establish a design system
+## When to establish a design system
 So when's the best time to establish an interface design system?  Short answer: *now*. 
 
 Design systems and their accompanying pattern libraries are often created in conjunction with a new design or redesign project, replatforming effort, or other initiative. Piggybacking off another project is a great way to sneak a pattern library into your organization.
