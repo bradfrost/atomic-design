@@ -20,6 +20,15 @@ You can have all the right technologies in place, use the latest-and-greatest to
 
 Establishing and maintaining successful interface design systems is an organization-wide effort, and this chapter will discuss how to overcome human beings' many quirks to make them happen. 
 
+### When to establish a design system
+So when's the best time to establish an interface design system?  Short answer: *now*. 
+
+Design systems and their accompanying pattern libraries are often created in conjunction with a new design or redesign project, replatforming effort, or other initiative. Piggybacking off another project is a great way to sneak a pattern library into your organization.
+
+That being said, creating a design system and pattern library doesn't necessarily need to coincide with another project. If you can convince your clients and stakeholders to pony up the cash and resources for a dedicated design system project, then good on you! 
+
+How exactly do you sell a design system to your clients, bosses, colleagues, and stakeholders? Put on your business hat, because we're going to tackle that in the next section!
+
 ## Pitching patterns
 Introducing a new way of doing things is no easy task as it requires changing people's existing mentalities and behaviors. Getting stakeholders and clients on board with establishing a design system involves constant education, as well as a bit of marketing savvy. 
 
@@ -139,14 +148,9 @@ Creating an interface inventory can be a big undertaking, but the benefits of ma
 - **Lays the groundwork to a sound interface design system** — The interface inventory is an important first step for setting up a comprehensive pattern library. It's essential to capture all existing UI patterns in order to determine which patterns will make the final cut in the living design system. The interface audit exercise also helps teams establish a shared vocabulary, which will be crucial for the success of the eventual design system. 
 
 ### Forgiveness, not permission
+So you've discussed the benefits of establishing a living design system
+
 Even if they say no, do it anyways. Much like building in performance and accessibility and responsiveness into our experiences, a systematic way. 
-
-### When to establish a pattern library
-Interface design systems and their accompanying pattern libraries are often done in conjunction with a new design or redesign project, replatforming effort, some other project. Piggybacking off another effort is a great way to sneak a pattern library project into your organization.
-
-But establishing a pattern library doesn't necessarily need to be attached to another project. If you can convince your clients and bosses to pony up the cash and resources to make things happen, then good on you! 
-
-- In-house vs client work
 
 ## (Re)setting expectations
 > As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
