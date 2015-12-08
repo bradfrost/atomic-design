@@ -152,31 +152,42 @@ So you've discussed the benefits of establishing a living design system with you
 
 **Do it anyways**.
 
-Just how we build things like performance, accessibility, and responsiveness into our process by default, we should also accept systematic design as a default. You don't need to get the client's blessing in order to follow your craft's best practices. When you give stakeholders the option to say *no* to something, they will. So simply don't give them that opportunity. We're tasked with creating great work for our clients and organizations, and interface design systems are a means to that end.
+Just how we build things like performance, accessibility, and responsiveness into our process by default, we should also create design systems by default. You don't need to get the client's blessing in order to follow your craft's best practices. When you give stakeholders the option to say *no* to something, they will. So simply don't give them that opportunity. We're tasked with creating great work for our clients and organizations, and interface design systems are a means to that end.
  
-The fact of the matter is that **in order to create the whole, you need to create the parts of that whole**. You have a decision to make: you can focus on creating the haphazard whole while ignoring the parts, or you can spend a little more time to organize the parts to help you more efficiently create that whole. [Wolfram Nagel Lego example] There's no real need to surface any of this to the client; it's simply a decision your team is making to work better together.
+The fact of the matter is that **in order to create the whole, you need to create the parts of that whole**. You have a decision to make: you can focus on creating the haphazard whole while ignoring the parts, or you can spend a little more time to organize the parts to help you more efficiently create that whole. [Wolfram Nagel Lego example] There's no real need to surface any of this to the client; it's simply a decision your team makes to create better work.
 
-Once you've successfully launched the project and the champagne has been poured, you can bring up your methodologies with your stakeholders. "Oh by the way, we established a design system and pattern library so the team could work more efficiently and be more collaborative." At this stage in the game, it would be difficult for them to argue against this approach, especially if you've come in on time and on budget. Hopefully, you can use the initial project's success to parlay into a more official initiative at the organization. 
-
-[this is as far as I've gotten so far. Thanks for reading!]
+Once you've successfully launched the project and the champagne has been poured, you can discuss your process methodologies with your stakeholders. "Oh by the way, we established a design system and pattern library so the team could work more efficiently and be more collaborative." Especially if you've come in on time and on budget, it would be extremely difficult for them to argue against you now. With any luck, you can parlay the initial project's success into a more official initiative to establishing a design system within the organization. 
 
 ## (Re)setting expectations
-> As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
+You've put in the hard work to sell the concept of a design system, but before you can roll up your sleeves and get to work, you need to set stakeholder and team expectations before you wander down the pattern-paved road.
 
-- Death to the waterfall
+We all bring our own experiences, opinions, and quirks to a project. This reality becomes one of the biggest hurdles to overcome in order to do successful work.
+
+It's ludicrous for anyone to utter the phrase "this is how we've always done things" in an industry that's only 25 years old. Unfortunately, we humans are creatures of habit, and stepping outside the warm embrace of familiar is uncomfortable. We don't like being uncomfortable.
+
+Because our industry is still so young, many people working on Web projects are coming from other industries with their own established Ways Of Doing Things.
+
+### Death to the waterfall
+> As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
+The approach for creating a 
 - This involves everyone - UX designers, visual oriented designers, front-end developers, backend developers, business owners, clients, etc
+- 
+#### Redefining design
 - [Development is design](http://bradfrost.com/blog/post/development-is-design/)
 
-## Establish Direction
+#### Destroying the concept of permanence 
+
+## Establishing direction
 > Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
 
-- Rather than leading off with high fidelity wireframes and comps, the design process
-- [Style Tiles](http://styletil.es/) by Samantha Warren
+- Rather than leading off with high fidelity wireframes and comps, 
+- [Style Tiles](http://styletil.es/) by Samantha Warren reinforces pattern-based thinking
 - Front-end [prep chef](http://bradfrost.com/blog/post/primed-and-ready-to-go/)
 
 ## Roll up our sleeves
 - [Element collages](http://danielmall.com/articles/rif-element-collages/)
 - Going from rough wireframes into the browser, iterating there
+- The role of full comps, and design iteration
 
 ## Maintaining a living design system
 - And they made a pattern library and lived happily ever after. Right? Not quite.
