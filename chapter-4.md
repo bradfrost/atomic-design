@@ -167,18 +167,23 @@ We all bring our own experiences, opinions, and quirks to a project. Overcoming 
 
 Our industry is still incredibly young, so many people working on Web projects are coming from other industries with their own established Ways Of Doing Things. Even people who have only worked in the digital world have felt the baggage of industries past.
 
-#### Redefining design
-Perhaps the biggest influence on the Web is print design. We've come a long way from simply translating print PDFs onto the Web, but the long shadow of print still looms over the Web and influences how things get done. 
+### Redefining design
+We've come a long way from simply transplanting print PDFs onto the World Wide Web, but **print design still casts a long shadow and continues to influence how things get done on the Web**. 
+
+Design in the print world focuses heavily on visual aesthetics. After all, you can't do much more with a poster than look at it. To be clear, I'm not out to disparage print design by saying it's easy or one-dimensional; no doubt the world of print is steeped in nuance, tradition, and craft. What I am saying is that **the bi-directional and interactive nature of the Web adds many more dimensions to what constitutes good design**. Speed, screen size, environment, technological capabilities, form-factor, ergonomics, usability, accessibility, context, and user preferences are all essential factors we must consider if we want to create great work for this brave new digital world. 
+
+These additional design considerations are vital for creating great digital work, yet sadly they are too-often absent from our processes. Designer Dan Mall explains:
 
 > As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
 
-Need to redefine what constitutes good design. 
-- Destroying the concept of permanence 
+Have up-front conversations with your colleagues and stakeholders about what to expect from the process as you collectively execute the project. Help them understand and appreciate all those uniquely-digital design principles, and explain how they will radically transform how   
 
-- [Development is design](http://bradfrost.com/blog/post/development-is-design/)
+One essential expectation to reset is the concept of *done*. Print and other physical mediums involve creating tangible objects that have a sense of permanence to them. That sense of completeness simply doesn't exist in the digital world. The ephemeral nature of the Web is something that needs to be extolled to your clients, colleagues, and stakeholders. If we're to create living design systems, we need to recognize that the Web is never done, and that our work can and should be constantly evolved and improved upon over time.
 
 ### Death to the waterfall
+We must escape the antiquated processes of print design if we're to create experiences that truly feel at home on the Web. 
 - This involves everyone - UX designers, visual oriented designers, front-end developers, backend developers, business owners, clients, etc
+- [Development is design](http://bradfrost.com/blog/post/development-is-design/)
 
 ## Establishing direction
 > Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
