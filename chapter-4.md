@@ -176,14 +176,13 @@ These additional design considerations are vital for creating great digital work
 
 > As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
 
-Have up-front conversations with your colleagues and stakeholders about what to expect from the process as you collectively execute the project. Help them understand and appreciate all those uniquely-digital design principles, and explain how they will radically transform how   
+Have up-front conversations with your colleagues and stakeholders about what to expect from the process as you collectively execute your projects. Help them understand and appreciate all those uniquely-digital design principles, and explain how they will radically transform your process and workflow.
 
 One essential expectation to reset is the concept of *done*. Print and other physical mediums involve creating tangible objects that have a sense of permanence to them. That sense of completeness simply doesn't exist in the digital world. The ephemeral nature of the Web is something that needs to be extolled to your clients, colleagues, and stakeholders. If we're to create living design systems, we need to recognize that the Web is never done, and that our work can and should be constantly evolved and improved upon over time.
 
 ### Death to the waterfall
-We must escape the antiquated processes of print design if we're to create experiences that truly feel at home on the Web. 
-- This involves everyone - UX designers, visual oriented designers, front-end developers, backend developers, business owners, clients, etc
 - [Development is design](http://bradfrost.com/blog/post/development-is-design/)
+- This involves everyone - UX designers, visual oriented designers, front-end developers, backend developers, business owners, clients, etc
 
 ## Establishing direction
 > Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
