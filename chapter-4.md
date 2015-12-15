@@ -125,7 +125,7 @@ Have each participant spend 5 or 10 minutes presenting each UI category to the g
 Once every category has been presented and discussed, all the participants should send their slides to the exercise leader. The leader will then combine everything into one giant über-document, which will soon become a wrecking ball of truth and justice.  
 
 #### Step 5: regroup and establish next steps
-With the über-document in hand, now it's time to et the entire organization on board with crafting an interface design system. 
+With the über-document in hand, now it's time to get the entire organization on board with crafting an interface design system. 
 
 Have you ever wanted to see a CEO cry? Laying bare all your UI's inconsistencies is a great way to make that happen! One of the most powerful aspects of an interface inventory is that you can show it to anyone, including non-designers and developers, and they'll understand why an inconsistent UI is problematic. You don't need to be a designer to recognize that having 37 unique button styles probably isn't a good idea. Here's your opportunity to make it crystal clear to stakeholders that approaching your UI in a more systematic way makes great sense for both your users and your organization.
 
@@ -152,11 +152,35 @@ So you've discussed the benefits of establishing a living design system with you
 
 **Do it anyways**.
 
-Just how we build things like performance, accessibility, and responsiveness into our process by default, we should also create design systems by default. You don't need to get the client's blessing in order to follow your craft's best practices. When you give stakeholders the option to say *no* to something, they will. So simply don't give them that opportunity. **We're tasked with creating great work for our clients and organizations, and interface design systems are a means to that end**.
+Just how we build things like performance, accessibility, and responsiveness into our products and process by default, we should also create design systems by default. You don't need to get the client's blessing in order to follow your craft's best practices. When you give stakeholders the option to say *no* to something, they will. So simply don't give them that opportunity. **We're tasked with creating great work for our clients and organizations, and interface design systems are a means to that end**.
  
-The fact of the matter is that **in order to create the whole, you need to create the parts of that whole**. You have a decision to make: you can focus on creating the haphazard whole while ignoring the parts, or you can spend a little more time to organize the parts to help you more efficiently create that whole. [Wolfram Nagel Lego example] There's no real need to surface any of this to the client; it's simply a decision your team makes to create better work.
+The fact of the matter is that **in order to create the whole, you need to create the parts of that whole**. Our interfaces are comprised of smaller pieces, whether you pay those smaller pieces any mind or not. 
 
-Once you've successfully launched the project and the champagne has been poured, you can discuss your internal processes with your stakeholders. Now you can pull back the curtain and say, "Oh by the way, we established a design system and pattern library so the team could work more efficiently and be more collaborative." Especially if you've come in on time and on budget, it would be extremely difficult for them to argue against you now. And if you're really lucky, you can parlay the initial project's success into a more official initiative within the organization to evolve your design system. 
+You have a decision to make: focus solely on creating the whole while ignoring the parts, or spend some time organizing the parts to help you more efficiently create the whole. In his book *[Multiscreen UX Design](http://store.elsevier.com/Multiscreen-UX-Design/Wolfram-Nagel/isbn-9780128027295/)*, Wolfram Nagel wonderfully articulates these approaches using Lego bricks as an analogy. 
+
+One way to approach a Lego project is to simply dump the pieces out of the box onto a table, roll up your sleeves, then start building your creation.
+
+{% include figure.html src="../images/content/lego-2.png" caption="One way to approach a Lego project is to simply dump the pieces out onto a table, and rummage through the pile to find the pieces you need. Image adapted from *Multiscreen UX Design* by Wolfram Nagel" %}
+
+This approach to a Lego project is certainly a viable strategy, even if it is unapologetically haphazard. The only time you'd pay attention to the pile of bricks is when you're sifting through it to find the specific piece you need. 
+
+This is not dissimilar to how many digital projects are approached. The client needs a website, so we jump in to designing and building the website. The client needs a mobile app, so we immediately start building the screens of the app. Our gaze remains transfixed on the final product, and we rarely if ever glance at the underlying patterns that comprise our final UIs.
+
+Of course, there is another way to approach your Lego and digital projects. Rather than diving head-first into constructing the final work, you can take the time to take stock of the available pieces and organize them in such a way that they become more useful.
+
+{% include figure.html src="../images/content/lego-3.png" caption="Taking the time to organize the pieces that make up your final creations allows you to approach the final work in a more deliberate and efficient manner. Image adapted from *Multiscreen UX Design* by Wolfram Nagel" %}
+
+No doubt this organization takes time, planning and effort. It doesn't come for free. The fact that this organization isn't visibly represented in the final product may tempt one to say it serves as a distraction to the "real" work that needs done. So why bother? 
+
+**By taking the time to organize the parts, you can now create the whole in a more realistic, deliberate, and efficient manner**. Creating a helpful inventory of your available materials allows you to approach the project in a more methodical way, and saves immense amounts of time in your process. Rather than rummaging through a haphazard pile of bricks and burning time reinventing patterns, you can create an organized system of components that will help produce better work in a shorter amount of time.
+
+{% include figure.html src="../images/content/lego-4.png" caption="Taking the time to organize the pieces that make up your final creations allows you to work in a more deliberate and efficient manner. Rather than sifting through a haphazard pile of bricks, an organized inventory of components can produce better, faster work. Image adapted from *Multiscreen UX Design* by Wolfram Nagel" %}
+
+As far as your clients and stakeholders are concerned, the final product is still being produced. You have a decision to make about how much of your internal process you expose to them. The fact that you're creating a design system to produce the final work is really of no concern to them; it's simply a decision your team is making to create better work. 
+
+If you're dealing with change-adverse stakeholders, I say do what you need to do and tell them to pay no attention to the person behind the curtain. Once you've successfully launched the project and the champagne has been poured, you can pull back the curtain and say, "Oh by the way, we established a design system and pattern library so the team could collaborate and work more efficiently together." It would be extremely difficult for them to argue against you now, especially if the project came in on time and on budget. If you're really lucky, you can parlay the initial project's success into a more official initiative within the organization to evolve your design system. 
+
+Of course it's far more preferable to get your clients, colleagues, and stakeholders excited about creating an interface design system, or at the very least get their blessing to pursue the project in a modular fashion. But I think it's important to find ways to follow your craft's best practices even when faced with extreme organizational resistance.
 
 ## (Re)setting expectations
 You've put in the hard work to sell the concept of a design system, but you need to set stakeholder and team expectations before you roll up your sleeves and get to work.
