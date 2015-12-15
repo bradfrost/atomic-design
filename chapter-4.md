@@ -183,24 +183,33 @@ If you're dealing with change-adverse stakeholders, I say do what you need to do
 Of course it's far more preferable to get your clients, colleagues, and stakeholders excited about creating an interface design system, or at the very least get their blessing to pursue the project in a modular fashion. But I think it's important to find ways to follow your craft's best practices even when faced with extreme organizational resistance.
 
 ## (Re)setting expectations
-You've put in the hard work to sell the concept of a design system, but you need to set stakeholder and team expectations before you roll up your sleeves and get to work.
+You've put in a lot of hard work to sell the concept of a design system, but you still need to set stakeholder and team expectations before you roll up your sleeves and get to work.
 
-We all bring our own experiences, opinions, and quirks to a project. Overcoming our existing predispositions proves to be one of the biggest hurdles we must overcome if we want to create successful work.
+When I say "set expectations" I'm really saying "*re*set expectations." You see, we all bring our own experiences, opinions, and quirks to a project. Our industry is still incredibly young, so many people working on Web projects are coming from other industries with their own established Ways Of Doing Things. Even people who have exclusively worked in the digital world have felt the baggage of industries past. Moreover, the guiding principles and tactics of digital design are still very much being established.
 
-**It's ludicrous for anyone to utter the phrase "this is how we've always done things" in an industry that's only 25 years old**. Unfortunately, we humans are creatures of habit, and stepping outside the warm embrace of familiar is uncomfortable. We don't like being uncomfortable.
-
-Our industry is still incredibly young, so many people working on Web projects are coming from other industries with their own established Ways Of Doing Things. Even people who have only worked in the digital world have felt the baggage of industries past.
+**It's ludicrous for anyone to utter the phrase "this is how we've always done things" in an industry that's only 25 years old**. Unfortunately, we humans are creatures of habit, and stepping outside familiarity's warm embrace is uncomfortable. We don't like being uncomfortable. We must overcome our existing predispositions if we're going to embrace our ever-shifting industry's best practices and create successful digital work.
 
 ### Redefining design
 We've come a long way from simply transplanting print PDFs onto the World Wide Web, but **print design still casts a long shadow and continues to influence how things get done on the Web**. 
 
-Design in the print world focuses heavily on visual aesthetics. After all, you can't do much more with a poster than look at it. To be clear, I'm not out to disparage print design by saying it's easy or one-dimensional; no doubt the world of print is steeped in nuance, tradition, and craft. What I am saying is that **the bi-directional and interactive nature of the Web adds many more dimensions to what constitutes good design**. Speed, screen size, environment, technological capabilities, form-factor, ergonomics, usability, accessibility, context, and user preferences are all essential factors we must consider if we want to create great work for this brave new digital world. 
+Design in the print world focuses heavily on visual aesthetics. After all, you can't do much more with a poster than look at it. To be clear, I'm not out to disparage print design by saying it's easy or one-dimensional; no doubt the world of print is steeped in nuance and craft. What I am saying is that **the bi-directional and interactive nature of the Web adds many more dimensions to what constitutes good design**. **Speed, screen size, environment, technological capabilities, form-factor, ergonomics, usability, accessibility, context, and user preferences are all essential factors we must consider if we want to create great work for this brave new digital world**. 
 
-These additional design considerations are vital for creating great digital work, yet sadly they are too-often absent from our processes. Designer Dan Mall explains:
+These additional design considerations are vital for creating great digital work, yet sadly they are too-often absent from our processes and workflows. Designer Dan Mall explains:
 
 > As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
 
-Have up-front conversations with your colleagues and stakeholders about what to expect from the process as you collectively execute your projects. Help them understand and appreciate all those uniquely-digital design principles, and explain how they will radically transform your process and workflow.
+How can we address this? It's important to have up-front conversations with your colleagues and stakeholders to help them understand and appreciate all those uniquely-digital design principles.
+
+- There's a dizzying array of devices all accessing the Web, each with their own screen size, 
+- Performance is an essential design principle and is one of the biggest 
+- Ergonomics - form factor, touch input, 
+- Designs don't need to look the same in every browser
+- Design isn't how it looks, it's how it works.
+- Users exist in an ecosystem and perceive you as a single brand
+
+Broadening their perspective about what constitutes good design will help them open up to the idea of changing their process.
+
+and explain how they will radically transform your process and workflow.
 
 One essential expectation to reset is the concept of *done*. Print and other physical mediums involve creating tangible objects that have a sense of permanence to them. That sense of completeness simply doesn't exist in the digital world. The ephemeral nature of the Web is something that needs to be extolled to your clients, colleagues, and stakeholders. If we're to create living design systems, we need to recognize that the Web is never done, and that our work can and should be constantly evolved and improved upon over time.
 
@@ -219,6 +228,8 @@ One essential expectation to reset is the concept of *done*. Print and other phy
 - [Element collages](http://danielmall.com/articles/rif-element-collages/)
 - Going from rough wireframes into the browser, iterating there
 - The role of full comps, and design iteration
+
+---------
 
 ## Maintaining a living design system
 - And they made a pattern library and lived happily ever after. Right? Not quite.
