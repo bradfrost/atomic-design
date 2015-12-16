@@ -200,9 +200,9 @@ These additional design considerations are vital for creating great digital work
 
 How did this happen? During the formative years of the Web we created experiences meant to be consumed solely by desktop computers, which is understandable since desktops were really the only game in town. The real estate provided by desktop screens made the idea of simply translating a PDF onto the Web a feasible and enticing one. So that's what we did, and for a while it actually worked! 
 
-However, this print-to-digital splicing didn't come without consequences. This print-esque perspective of the Web reinforced the notion that Web designs, like their offline print counterparts, can and should look the same in every environment.    It also kept the focus on how the web design *looks* rather than how it *works*, ignoring all the fundamentally unique aspects of the medium. Moreover, it reinforced the notion that we could simply apply the same linear processes used to create print work to our digital work.
+{% include figure.html src="../images/content/this-is-the-web-1.png" caption="Once upon a time the Web was primarily consumed on desktop screens, hence this crusty-looking, old machine." %}
 
-{% include figure.html src="../images/content/this-is-the-web-1.png" caption="This is not the Web. Once upon a time it was, hence this crusty-looking desktop machine." %}
+However, this print-to-digital splicing didn't come without consequences. This print-esque perspective of the Web reinforced the notion that Web designs, like their offline print counterparts, can and should look the same in every environment.    It also kept the focus on how the web design *looks* rather than how it *works*, ignoring all the fundamentally unique aspects of the medium. Moreover, it reinforced the notion that we could simply apply the same linear processes used to create print work to our digital work.
 
 Of course technology evolved and the Web become the incredibly large and diverse landscape we know today. Gone are the desktop-only days of yore. Today's landscape includes smartphones, dumb phones, tablets, phablets, netbooks, notebooks, desktops, e-readers, wearables, TVs, game consoles, car dashboards, and so much more.
 
