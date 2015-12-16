@@ -198,7 +198,9 @@ These additional design considerations are vital for creating great digital work
 
 > As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
 
-How did this happen? During the formative years of the Web we created experiences meant to be consumed solely by desktop computers, which is understandable since desktops were really the only game in town. The screen real estate provided by desktop screens made the idea of simply translating a PDF onto the Web an enticing one. So that's what we did, and for a while it worked! However, this didn't come without consequences. one-dimensional view of the Web reinforced the notion that Web designs, like their offline print counterparts, can and should look the same in every environment.  Moreover, it reinforced the notion that we could simply apply the linear processes used in the print world could be replicated 
+How did this happen? During the formative years of the Web we created experiences meant to be consumed solely by desktop computers, which is understandable since desktops were really the only game in town. The real estate provided by desktop screens made the idea of simply translating a PDF onto the Web a feasible and enticing one. So that's what we did, and for a while it actually worked! 
+
+However, this print-to-digital splicing didn't come without consequences. This print-esque perspective of the Web reinforced the notion that Web designs, like their offline print counterparts, can and should look the same in every environment.    It also kept the focus on how the web design *looks* rather than how it *works*. Moreover, it reinforced the notion that we could simply apply the same linear processes used to create print work
 
 {% include figure.html src="../images/content/this-is-the-web-1.png" caption="This is not the Web. Once upon a time it was, hence this crusty-looking desktop machine." %}
   
