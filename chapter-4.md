@@ -194,17 +194,17 @@ We've come a long way from simply transplanting print PDFs onto the World Wide W
 
 Design in the print world focuses heavily on visual aesthetics. After all, you can't do much more with a poster than look at it. To be clear, I'm certainly not implying print design is easy or one-dimensional; no doubt the world of print is steeped in nuance and craft. What I am saying is that **the bi-directional and interactive nature of the Web adds many more dimensions to what constitutes good design**. **Speed, screen size, environment, technological capabilities, form-factor, ergonomics, usability, accessibility, context, and user preferences must be considered if we want to create great work for this brave new digital world**. 
 
-These additional design considerations are vital for creating great digital work, yet sadly they are too-often absent from our processes and workflows. Designer Dan Mall explains:
+These additional design considerations are vital for creating great digital work, yet sadly they are too often absent from our processes and workflows. Designer Dan Mall explains:
 
 > As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
 
-How did this happen? During the formative years of the Web we created experiences meant to be consumed solely by desktop computers, which is understandable since desktops were really the only game in town. The real estate provided by desktop screens made the idea of simply translating a PDF onto the Web a feasible and enticing one. So that's what we did, and for a while it actually worked! 
+How did we get to the point where we're selling and designing websites like they're static images? During the formative years of the Web we created experiences meant to be consumed solely by desktop computers, which is understandable since desktops were really the only game in town. The real estate provided by desktop screens made the idea of simply translating a PDF onto the Web a feasible and enticing one. So that's what we did, and for a while it actually worked! 
 
 {% include figure.html src="../images/content/this-is-the-web-1.png" caption="Once upon a time the Web was primarily consumed on desktop screens, hence this crusty-looking, old machine." %}
 
 However, this print-to-digital splicing didn't come without consequences. This print-esque perspective of the Web reinforced the notion that Web designs, like their offline print counterparts, can and should look the same in every environment.    It also kept the focus on how the web design *looks* rather than how it *works*, ignoring all the fundamentally unique aspects of the medium. Moreover, it reinforced the notion that we could simply apply the same linear processes used to create print work to our digital work.
 
-Of course technology evolved and the Web become the incredibly large and diverse landscape we know today. Gone are the desktop-only days of yore. Today's landscape includes smartphones, dumb phones, tablets, phablets, netbooks, notebooks, desktops, e-readers, wearables, TVs, game consoles, car dashboards, and so much more.
+Of course mobile came along, technology improved, and the Web become the incredibly large and diverse landscape we know today. Gone are the desktop-only days of yore. Today's landscape includes smartphones, dumb phones, tablets, phablets, netbooks, notebooks, desktops, e-readers, wearables, TVs, game consoles, car dashboards, and so much more.
 
 {% include figure.html src="../images/content/this-is-the-web-2.png" caption="This is the Web: a potpourri of devices, screen sizes, capabilities, form factors, network speeds, input types, and more." %}
 
