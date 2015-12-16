@@ -202,40 +202,33 @@ How did we get to the point where we're selling and designing websites like they
 
 {% include figure.html src="../images/content/this-is-the-web-1.png" caption="Once upon a time the Web was primarily consumed on desktop screens, hence this crusty-looking, old machine." %}
 
-However, this didn't come without consequences. This print-esque perspective of the Web reinforced the notion that Web designs, like their offline print counterparts, can and should look the same in every environment. It also kept the focus on how a web design *looks* rather than how it *works*, ignoring all the unique characteristics of this entirely new medium. Moreover, it reinforced the notion that we could simply apply the same linear processes used to create print work to our digital work.
+However, this didn't come without consequences. This print-esque perspective of the Web reinforced the notion that Web designs, like their offline print counterparts, can and should look the same in every environment. It also kept the focus on how a web design *looks* rather than how it *works*, ignoring all the unique characteristics of this rich new medium. Moreover, it reinforced the notion that we could simply apply the same linear processes used to create print work to our digital work.
 
 Of course time went by, mobile exploded, technology improved, and the Web become the incredibly large and diverse landscape we know today. Gone are the desktop-only days of yore, and in its place is a tapestry of smartphones, dumb phones, tablets, phablets, netbooks, notebooks, e-readers, wearables, TVs, game consoles, car dashboards, and so much more.
 
 {% include figure.html src="../images/content/this-is-the-web-2.png" caption="This is the Web: a potpourri of devices, screen sizes, capabilities, form factors, network speeds, input types, and more." %}
 
-The diversity of today's Web landscape has shattered the [consensual hallucination](https://adactio.com/journal/4443) of the "desktop Web", where we could simply bolt the mentalities and processes of print onto this new medium. Simply looking at a smartphone, tablet, and desktop machine next to each other quickly erodes the notion that a Web design should look the same in every environment.
+The diversity of today's Web landscape has shattered the [consensual hallucination](https://adactio.com/journal/4443) of the "desktop Web," where we could simply bolt the mentalities and processes of print onto this new medium. Simply looking at a smartphone, tablet, and desktop machine next to each other quickly erodes the notion that a Web design should look the same in every environment.
 
 And of course, we're still at the very beginning of the Big Bang of connected devices. The device and Web landscape of tomorrow will be even bigger and diverse than today's. In addition to today's devices and the nascent technologies already on the horizon, the future Web landscape will involve technologies and ideas that haven't been conceived yet.
 
 {% include figure.html src="../images/content/this-is-the-web-3.png" caption="In addition to all the Web-capable devices we concern ourselves with today, we must understand that the device and Web landscape is becoming more diverse all the time." %}
 
-This diversity makes it absolutely imperative to change how we create for this unique medium. I've found the three previous images to be a tremendously helpful shorthand for helping clients, colleagues, and stakeholders understand the reality of the Web landscape. Once this is understood, everyone becomes a whole lot more receptive to updating their processes and workflows to create great work for this unique medium.
+I've found the three previous images to be a tremendously helpful shorthand for helping clients, colleagues, and stakeholders understand the reality of the Web landscape. Once this is understood, everyone becomes a whole lot more receptive to updating their processes and workflows to create great work for this unique medium.
 
-With appreciate all those uniquely-digital design principles,
+As I mentioned earlier, there are many factors other than visual aesthetics to consider when designing for the Web. We must create experiences for a diversity of devices, screen sizes, network speeds, device capabilities, browser capabilities, input types, form factors, contexts, and user preferences. Here are just some of the ramifications of that diversity:
 
-- Diversity of devices, screen sizes, network speeds, device capabilities, browser capabilities, input types, form factors, contexts, and preferences.
-- Variable network speeds
-- Variable browser and device capabilities
-- Variable input types
-- Performance is an essential design principle and is one of the biggest 
-- Ergonomics - form factor, touch input, 
-- Designs don't need to look the same in every browser
-- Users exist in an ecosystem and perceive you as a single brand
+- We should create flexible user interfaces that look and function beautifully irrespective of a screen's size. 
+- We must recognize that performance isn't just a technical best practice, but rather an essential design principle. 
+- We need to design for a diversity of form factors and input types. Ergonomics, how people hold their devices, touch input vs mouse-and-keyboard input, speech, etc 
+- We must enhance experiences to rise to the capabilities of the device, browser, and user.
 
-Broadening their perspective about what constitutes good design will help them open up to the idea of changing their process.
-
-and explain how they will radically transform your process and workflow.
-
-One essential expectation to reset is the concept of *done*. Print and other physical mediums involve creating tangible objects that have a sense of permanence to them. That sense of completeness simply doesn't exist in the digital world. The ephemeral nature of the Web is something that needs to be extolled to your clients, colleagues, and stakeholders. If we're to create living design systems, we need to recognize that the Web is never done, and that our work can and should be constantly evolved and improved upon over time.
+How can we better factor in these additional considerations in our workflow? 
 
 ### Death to the waterfall
+- Historically
 - [Development is design](http://bradfrost.com/blog/post/development-is-design/)
-- This involves everyone - UX designers, visual oriented designers, front-end developers, backend developers, business owners, clients, etc
+- This involves everyone - UX designers, visual oriented designers, front-end developers, backend developers, business owners, clients, etc No one discipline has all the answers. 
 
 ## Establishing direction
 > Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
@@ -252,6 +245,8 @@ One essential expectation to reset is the concept of *done*. Print and other phy
 ---------
 
 ## Maintaining a living design system
+One essential expectation to reset is the concept of *done*. Print and other physical mediums involve creating tangible objects that have a sense of finality to them. That simply doesn't exist in the digital world. The ephemeral nature of the Web is something that needs to be extolled to your clients, colleagues, and stakeholders. If we're to create living design systems, we need to recognize that the Web is never done, and that our work can and should be constantly evolved and improved upon over time.
+
 - And they made a pattern library and lived happily ever after. Right? Not quite.
 - There's a very real risk of a lot of time and effort going into making a design system and accompanying pattern library, only to have it die on the vine.
 - Throw the design system in the trashcan, right along side the PSDs, PDFs and other artifacts
