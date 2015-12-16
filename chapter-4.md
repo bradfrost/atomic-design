@@ -39,7 +39,7 @@ Alas, I've found that I can hype design systems until I'm blue in the face, but 
 - Design systems **lead to cohesive, consistent experiences**. That means users master your UI faster, leading to more conversions and **more money** based on the metrics your stakeholders care about.
 - Design systems **speed up your team's workflow**. Rather than reinventing the wheel every time a new request comes down the pipe, teams can reuse already-established UI puzzle pieces to roll out new pages and features faster than ever before.
 - Centralizing UI components in a pattern library **establishes a shared vocabulary** for everyone in the organization and **creates a more collaborative workflow** across all disciplines. With everyone speaking the same language, more time is spent getting work done and less time is spent dealing with superfluous back-and-forth communications and meetings.
-- Design systems **make cross-browser/device, performance, and accessibility testing easier**, vastly speeding up production time and therefore allowing teams to launch more stuff faster. Also, baking best practices like accessibility into a living design system means less risk of getting sued for inaccessible features.
+- Design systems **make cross-browser/device, performance, and accessibility testing easier**, vastly speeding up production time and therefore allowing teams to launch higher-quality work faster. Also, baking best practices like accessibility into a living design system means less risk of getting sued for inaccessible features.
 - Once a design system (with accompanying pattern library) is established, it **serves as a future-friendly foundation** for the organization to modify, tweak, extend, and improve upon over time. Doing some AB testing? Roll the learnings from those tests into the living design system! Made some big performance optimizations? Roll them into the living design system! The *living* part of living design systems means they can always adapt to meet the future needs of the organization, saving time and money all the while.
 
 Framing things through the lens of time and money helps the people controlling the pursestrings understand why a design system is a worthwhile pursuit. With any luck, these conversations will translate to a concrete commitment from the organization (read: allocating real time and money) to make a design system happen.
@@ -127,9 +127,9 @@ Once every category has been presented and discussed, all the participants shoul
 #### Step 5: regroup and establish next steps
 With the über-document in hand, now it's time to get the entire organization on board with crafting an interface design system. 
 
-Have you ever wanted to see a CEO cry? Laying bare all your UI's inconsistencies is a great way to make that happen! One of the most powerful aspects of an interface inventory is that you can show it to anyone, including non-designers and developers, and they'll understand why an inconsistent UI is problematic. You don't need to be a designer to recognize that having 37 unique button styles probably isn't a good idea. Here's your opportunity to make it crystal clear to stakeholders that approaching your UI in a more systematic way makes great sense for both your users and your organization.
+Have you ever wanted to see a CEO cry? Laying bare all your UI's inconsistencies is a great way to make that happen! **One of the most powerful benefits of interface inventories is that you can show them to anyone, including non-designers and developers, and they'll understand why inconsistent UIs are problematic**. You don't need to be a designer to recognize that having 37 unique button styles probably isn't a good idea. Here's your opportunity to make it crystal clear to stakeholders that approaching your UI in a more systematic way makes great sense for both your users and your organization.
 
-In addition to selling the idea through to key stakeholders, all the hard work and discussion that went into the initial interface inventory exercise should be translated into the seeds of your future design system and pattern library. 
+In addition to selling the idea through to key stakeholders, **all the hard work and discussion that went into the initial interface inventory exercise should be translated into the seeds of your future design system and pattern library**. 
 
 It's very likely the initial exercise didn't capture every unique UI pattern, so you may need to conduct another interface audit exercise to capture a more complete picture of your UI patterns. This may involve a large group again, but in reality a smaller, cross-disciplinary team will be the ones who will be going through the über-document and establishing next steps for the design system. 
 
@@ -172,39 +172,59 @@ Of course, there is another way to approach your Lego and digital projects. Rath
 
 No doubt this organization takes time, planning and effort. It doesn't come for free. The fact that this organization isn't visibly represented in the final product may tempt one to say it serves as a distraction to the "real" work that needs done. So why bother? 
 
-**By taking the time to organize the parts, you can now create the whole in a more realistic, deliberate, and efficient manner**. Creating a helpful inventory of your available materials allows you to approach the project in a more methodical way, and saves immense amounts of time in your process. Rather than rummaging through a haphazard pile of bricks and burning time reinventing patterns, you can create an organized system of components that will help produce better work in a shorter amount of time.
+**By taking the time to organize the parts, you can now create the whole in a more realistic, deliberate, and efficient manner**. Creating a library of your available materials allows you to approach the project in a more methodical way, and saves immense amounts of time in your process. Rather than rummaging through a haphazard pile of bricks and burning time reinventing patterns, you can create an organized system of components that will help produce better work in a shorter amount of time.
 
 {% include figure.html src="../images/content/lego-4.png" caption="Taking the time to organize the pieces that make up your final creations allows you to work in a more deliberate and efficient manner. Rather than sifting through a haphazard pile of bricks, an organized inventory of components can produce better, faster work. Image adapted from *Multiscreen UX Design* by Wolfram Nagel" %}
 
-As far as your clients and stakeholders are concerned, the final product is still being produced. You have a decision to make about how much of your internal process you expose to them. The fact that you're creating a design system to produce the final work is really of no concern to them; it's simply a decision your team is making to create better work. 
+As far as your clients and stakeholders are concerned, the final product is still being produced. So long as you're showing progress on the final work, you can decide how much of your internal process you're willing to expose to them. The fact that you're creating a design system to produce the final product is really of no concern to them; it's simply a decision your team is making to create better work. 
 
-If you're dealing with change-adverse stakeholders, I say do what you need to do and tell them to pay no attention to the person behind the curtain. Once you've successfully launched the project and the champagne has been poured, you can pull back the curtain and say, "Oh by the way, we established a design system and pattern library so the team could collaborate and work more efficiently together." It would be extremely difficult for them to argue against you now, especially if the project came in on time and on budget. If you're really lucky, you can parlay the initial project's success into a more official initiative within the organization to evolve your design system. 
+If you're dealing with change-adverse stakeholders, I say do what you need to do and tell them to pay no attention to what's happening behind the curtain. Once you've successfully launched the project and the champagne has been poured, you can pull back the curtain and say, "Oh by the way, we established a design system and pattern library so the team could collaborate and work more efficiently together." It would be extremely difficult for them to argue against you now, especially if the project came in on time and on budget. If you're really lucky, you can parlay the initial project's success into a more official initiative within the organization to evolve your design system. 
 
-Of course it's far more preferable to get your clients, colleagues, and stakeholders excited about creating an interface design system, or at the very least get their blessing to pursue the project in a modular fashion. But I think it's important to find ways to follow your craft's best practices even when faced with extreme organizational resistance.
+Of course it's far more preferable to get your clients, colleagues, and stakeholders excited about creating an interface design system, or at the very least get their blessing to pursue the project in a modular fashion. But I think it's important to find ways to follow your craft's best practices even when you're faced with extreme organizational resistance.
 
 ## (Re)setting expectations
 You've put in a lot of hard work to sell the concept of a design system, but you still need to set stakeholder and team expectations before you roll up your sleeves and get to work.
 
-When I say "set expectations" I'm really saying "*re*set expectations." You see, we all bring our own experiences, opinions, and quirks to a project. Our industry is still incredibly young, so many people working on Web projects are coming from other industries with their own established Ways Of Doing Things. Even people who have exclusively worked in the digital world have felt the baggage of industries past. Moreover, the guiding principles and tactics of digital design are still very much being established.
+When I say "set expectations" I'm really saying "*re*set expectations." You see, we all bring our own experiences, opinions, and biases to a project. Our industry is still incredibly young, so many people working on Web projects are coming from other industries with their own established Ways Of Doing Things. Even people who have exclusively worked in the digital world have felt the baggage of industries past. Moreover, the guiding principles, best practices, and tactics of digital design are still very much being established.
 
 **It's ludicrous for anyone to utter the phrase "this is how we've always done things" in an industry that's only 25 years old**. Unfortunately, we humans are creatures of habit, and stepping outside familiarity's warm embrace is uncomfortable. We don't like being uncomfortable. We must overcome our existing predispositions if we're going to embrace our ever-shifting industry's best practices and create successful digital work.
 
 ### Redefining design
 We've come a long way from simply transplanting print PDFs onto the World Wide Web, but **print design still casts a long shadow and continues to influence how things get done on the Web**. 
 
-Design in the print world focuses heavily on visual aesthetics. After all, you can't do much more with a poster than look at it. To be clear, I'm not out to disparage print design by saying it's easy or one-dimensional; no doubt the world of print is steeped in nuance and craft. What I am saying is that **the bi-directional and interactive nature of the Web adds many more dimensions to what constitutes good design**. **Speed, screen size, environment, technological capabilities, form-factor, ergonomics, usability, accessibility, context, and user preferences are all essential factors we must consider if we want to create great work for this brave new digital world**. 
+Design in the print world focuses heavily on visual aesthetics. After all, you can't do much more with a poster than look at it. To be clear, I'm certainly not implying print design is easy or one-dimensional; no doubt the world of print is steeped in nuance and craft. What I am saying is that **the bi-directional and interactive nature of the Web adds many more dimensions to what constitutes good design**. **Speed, screen size, environment, technological capabilities, form-factor, ergonomics, usability, accessibility, context, and user preferences must be considered if we want to create great work for this brave new digital world**. 
 
 These additional design considerations are vital for creating great digital work, yet sadly they are too-often absent from our processes and workflows. Designer Dan Mall explains:
 
 > As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
 
-How can we address this? It's important to have up-front conversations with your colleagues and stakeholders to help them understand and appreciate all those uniquely-digital design principles.
+How did this happen? During the formative years of the Web we created experiences meant to be consumed solely by desktop computers, which is understandable since desktops were really the only game in town. The screen real estate provided by desktop screens made the idea of simply translating a PDF onto the Web an enticing one. So that's what we did, and for a while it worked! However, this didn't come without consequences. one-dimensional view of the Web reinforced the notion that Web designs, like their offline print counterparts, can and should look the same in every environment.  Moreover, it reinforced the notion that we could simply apply the linear processes used in the print world could be replicated 
 
-- There's a dizzying array of devices all accessing the Web, each with their own screen size, 
+{% include figure.html src="../images/content/this-is-the-web-1.png" caption="This is not the Web. Once upon a time it was, hence this crusty-looking desktop machine." %}
+  
+
+
+Of course technology evolved and the Web become the incredibly large and diverse landscape we know today. Gone are the desktop-only days of yore. Today's landscape includes smartphones, dumb phones, tablets, phablets, netbooks, notebooks, desktops, e-readers, wearables, TVs, game consoles, car dashboards, and so much more.
+
+{% include figure.html src="../images/content/this-is-the-web-2.png" caption="This is the Web: a potpourri of devices, screen sizes, capabilities, form factors, network speeds, input types, and more." %}
+
+Of course we're just getting started. The device and Web landscape of tomorrow will continue to 
+
+{% include figure.html src="../images/content/this-is-the-web-3.png" caption="In addition to all the Web-capable devices we concern ourselves with today, we must understand that the device and Web landscape is becoming more diverse all the time. In addition to nascent technologies already on the horizon, the future Web landscape will involve technologies and ideas that haven't been conceived yet." %}
+
+I've found these three images to be a tremendously helpful shorthand for helping clients, colleagues, and stakeholders understand the need to approach digital projects differently than they have in the past. Creating great work for the present and future Web landscape requires embracing the diversity of the Web Have up-front conversations with your colleagues and stakeholders to help them understand and appreciate all those uniquely-digital design principles, so that collectively you can create great experiences
+
+Have up-front conversations with your colleagues and stakeholders to help them understand and appreciate all those uniquely-digital design principles
+
+
+
+- Diversity of devices, screen sizes, network speeds, device capabilities, browser capabilities, input types, form factors, contexts, and preferences.
+- Variable network speeds
+- Variable browser and device capabilities
+- Variable input types
 - Performance is an essential design principle and is one of the biggest 
 - Ergonomics - form factor, touch input, 
 - Designs don't need to look the same in every browser
-- Design isn't how it looks, it's how it works.
 - Users exist in an ecosystem and perceive you as a single brand
 
 Broadening their perspective about what constitutes good design will help them open up to the idea of changing their process.
