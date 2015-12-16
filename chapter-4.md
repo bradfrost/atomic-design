@@ -202,21 +202,21 @@ How did we get to the point where we're selling and designing websites like they
 
 {% include figure.html src="../images/content/this-is-the-web-1.png" caption="Once upon a time the Web was primarily consumed on desktop screens, hence this crusty-looking, old machine." %}
 
-However, this print-to-digital splicing didn't come without consequences. This print-esque perspective of the Web reinforced the notion that Web designs, like their offline print counterparts, can and should look the same in every environment.    It also kept the focus on how the web design *looks* rather than how it *works*, ignoring all the fundamentally unique aspects of the medium. Moreover, it reinforced the notion that we could simply apply the same linear processes used to create print work to our digital work.
+However, this didn't come without consequences. This print-esque perspective of the Web reinforced the notion that Web designs, like their offline print counterparts, can and should look the same in every environment. It also kept the focus on how a web design *looks* rather than how it *works*, ignoring all the unique characteristics of this entirely new medium. Moreover, it reinforced the notion that we could simply apply the same linear processes used to create print work to our digital work.
 
-Of course mobile came along, technology improved, and the Web become the incredibly large and diverse landscape we know today. Gone are the desktop-only days of yore. Today's landscape includes smartphones, dumb phones, tablets, phablets, netbooks, notebooks, desktops, e-readers, wearables, TVs, game consoles, car dashboards, and so much more.
+Of course time went by, mobile exploded, technology improved, and the Web become the incredibly large and diverse landscape we know today. Gone are the desktop-only days of yore, and in its place is a tapestry of smartphones, dumb phones, tablets, phablets, netbooks, notebooks, e-readers, wearables, TVs, game consoles, car dashboards, and so much more.
 
 {% include figure.html src="../images/content/this-is-the-web-2.png" caption="This is the Web: a potpourri of devices, screen sizes, capabilities, form factors, network speeds, input types, and more." %}
 
-Of course we're just getting started. The device and Web landscape of tomorrow will continue to 
+The diversity of today's Web landscape has shattered the [consensual hallucination](https://adactio.com/journal/4443) of the "desktop Web", where we could simply bolt the mentalities and processes of print onto this new medium. Simply looking at a smartphone, tablet, and desktop machine next to each other quickly erodes the notion that a Web design should look the same in every environment.
 
-{% include figure.html src="../images/content/this-is-the-web-3.png" caption="In addition to all the Web-capable devices we concern ourselves with today, we must understand that the device and Web landscape is becoming more diverse all the time. In addition to nascent technologies already on the horizon, the future Web landscape will involve technologies and ideas that haven't been conceived yet." %}
+And of course, we're still at the very beginning of the Big Bang of connected devices. The device and Web landscape of tomorrow will be even bigger and diverse than today's. In addition to today's devices and the nascent technologies already on the horizon, the future Web landscape will involve technologies and ideas that haven't been conceived yet.
 
-I've found these three images to be a tremendously helpful shorthand for helping clients, colleagues, and stakeholders understand the need to approach digital projects differently than they have in the past. Creating great work for the present and future Web landscape requires embracing the diversity of the Web Have up-front conversations with your colleagues and stakeholders to help them understand and appreciate all those uniquely-digital design principles, so that collectively you can create great experiences
+{% include figure.html src="../images/content/this-is-the-web-3.png" caption="In addition to all the Web-capable devices we concern ourselves with today, we must understand that the device and Web landscape is becoming more diverse all the time." %}
 
-Have up-front conversations with your colleagues and stakeholders to help them understand and appreciate all those uniquely-digital design principles
+This diversity makes it absolutely imperative to change how we create for this unique medium. I've found the three previous images to be a tremendously helpful shorthand for helping clients, colleagues, and stakeholders understand the reality of the Web landscape. Once this is understood, everyone becomes a whole lot more receptive to updating their processes and workflows to create great work for this unique medium.
 
-
+With appreciate all those uniquely-digital design principles,
 
 - Diversity of devices, screen sizes, network speeds, device capabilities, browser capabilities, input types, form factors, contexts, and preferences.
 - Variable network speeds
