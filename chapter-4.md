@@ -204,40 +204,76 @@ How did we get to the point where we're selling and designing websites like they
 
 However, this didn't come without consequences. This print-esque perspective of the Web reinforced the notion that Web designs, like their offline print counterparts, can and should look the same in every environment. It also kept the focus on how a web design *looks* rather than how it *works*, ignoring all the unique characteristics of this rich new medium. Moreover, it reinforced the notion that we could simply apply the same linear processes used to create print work to our digital work.
 
-Of course time went by, mobile exploded, technology improved, and the Web become the incredibly large and diverse landscape we know today. Gone are the desktop-only days of yore, and in its place is a tapestry of smartphones, dumb phones, tablets, phablets, netbooks, notebooks, e-readers, wearables, TVs, game consoles, car dashboards, and so much more.
+Of course time went by, mobile exploded, technology improved, and the Web become the incredibly large and diverse landscape we know today. Gone are the desktop-only days of yore, and in its place is a plethora of smartphones, dumb phones, tablets, phablets, netbooks, notebooks, e-readers, wearables, TVs, game consoles, car dashboards, and so much more.
 
 {% include figure.html src="../images/content/this-is-the-web-2.png" caption="This is the Web: a potpourri of devices, screen sizes, capabilities, form factors, network speeds, input types, and more." %}
 
 The diversity of today's Web landscape has shattered the [consensual hallucination](https://adactio.com/journal/4443) of the "desktop Web," where we could simply bolt the mentalities and processes of print onto this new medium. Simply looking at a smartphone, tablet, and desktop machine next to each other quickly erodes the notion that a Web design should look the same in every environment.
 
-And of course, we're still at the very beginning of the Big Bang of connected devices. The device and Web landscape of tomorrow will be even bigger and diverse than today's. In addition to today's devices and the nascent technologies already on the horizon, the future Web landscape will involve technologies and ideas that haven't been conceived yet.
+And of course, we're still at the very beginning of the Big Bang of connected devices. The device and Web landscape of tomorrow will undoubtedly be even bigger and diverse than today's. In addition to today's devices and the nascent technologies already on the horizon, the future Web landscape will involve technologies and ideas that haven't been conceived yet.
 
-{% include figure.html src="../images/content/this-is-the-web-3.png" caption="In addition to all the Web-capable devices we concern ourselves with today, we must understand that the device and Web landscape is becoming more diverse all the time." %}
+{% include figure.html src="../images/content/this-is-the-web-3.png" caption="In addition to all the Web-capable devices we concern ourselves with today, we must understand that the device and Web landscape is becoming bigger and more diverse all the time." %}
 
-I've found the three previous images to be a tremendously helpful shorthand for helping clients, colleagues, and stakeholders understand the reality of the Web landscape. Once this is understood, everyone becomes a whole lot more receptive to updating their processes and workflows to create great work for this unique medium.
+**I've found the three previous images to be a tremendously helpful shorthand for helping clients, colleagues, and stakeholders understand the reality of the Web landscape**. With this newfound understanding, everyone becomes a whole lot more receptive to updating their processes and workflows in order to create great work for this unique medium.
 
-As I mentioned earlier, there are many factors other than visual aesthetics to consider when designing for the Web. We must create experiences for a diversity of devices, screen sizes, network speeds, device capabilities, browser capabilities, input types, form factors, contexts, and user preferences. Here are just some of the ramifications of that diversity:
+It's our job to create great experiences for a diversity of devices, screen sizes, network speeds, device capabilities, browser capabilities, input types, form factors, contexts, and user preferences. No doubt that's a herculean task, but all these variables really underscore the need for us to extend far beyond visual aesthetics when creating interface design systems. 
 
-- We should create flexible user interfaces that look and function beautifully irrespective of a screen's size. 
-- We must recognize that performance isn't just a technical best practice, but rather an essential design principle. 
-- We need to design for a diversity of form factors and input types. Ergonomics, how people hold their devices, touch input vs mouse-and-keyboard input, speech, etc 
-- We must enhance experiences to rise to the capabilities of the device, browser, and user.
+In addition to making visually beautiful and consistent experiences, our design systems should:
 
-How can we better factor in these additional considerations in our workflow? 
+- Embrace the ubiquity of the Web by 
+- **Be flexible**, so that our layouts and components will look and function
+- Performance
+- Enhancement
+- Future Friendly
+
+Of course there are many other more specific principles to embrace 
 
 ### Death to the waterfall
-- Historically
-- [Development is design](http://bradfrost.com/blog/post/development-is-design/)
-- This involves everyone - UX designers, visual oriented designers, front-end developers, backend developers, business owners, clients, etc No one discipline has all the answers. 
+Once upon a time in the not-so-distant past, our digital process looked something like a Henry Ford-style assembly line. Clients shout "We need a website!" and we'd respond with a production-line process that involved one discipline completing their work, passing it off to 
+
+{% include figure.html src="../images/content/waterfall.png" caption="" %}
+
+In the tangible world of print and other fields like architecture
+
+{% include figure.html src="../images/content/waterfall-2.png" caption="" %}
+
+#### [Development is design](http://bradfrost.com/blog/post/development-is-design/)
+- Cross-disciplinary approach - No one discipline has all the answers. this involves everyone - UX designers, visual oriented designers, front-end developers, backend developers, business owners, clients, etc  
+- **Get into the browser faster**.
+
+#### The Post-PSD era
+- Build up fidelity over time, rather than painting a false.
+- "Here's a picture of what your website will never look like." -Stephen Hay
+- When you show pictures of websites, stakeholders will comment on the picture of the website. Unrealistic
+
+#### An iterative iterative iterative iterative process 
+- Stone sculpture analogy
+- Get stakeholders comfortable without
+- Pixels are cheap, important to take steps in the right direction 
+- Accept gray, blurriness. Human beings don't neatly fit into the rigid borders of Excel documents and Gantt charts, despite the wishes of project managers.
+
+
 
 ## Establishing direction
 > Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
 
-- Rather than leading off with high fidelity wireframes and comps, 
+### A matter of hierarchy
+- In addition to research, important strategic conversations, etc.
+- Paint the broad strokes first, rather than leading off with high fidelity wireframes
+- Start with high-level sketches. 
+- What goes on a screen, and in what general order?
+
+### Establishing visual direction
+- 20 Second Gut Test exercise - http://goodkickoffmeetings.com/2010/04/the-20-second-gut-test/
 - [Style Tiles](http://styletil.es/) by Samantha Warren reinforces pattern-based thinking
+- No doubt there are other tactics that can be used to establish what visual aesthetics 
+
+### Front-end Prep Chef
 - Front-end [prep chef](http://bradfrost.com/blog/post/primed-and-ready-to-go/)
 
 ## Roll up our sleeves
+With the broad strokes established
+
 - [Element collages](http://danielmall.com/articles/rif-element-collages/)
 - Going from rough wireframes into the browser, iterating there
 - The role of full comps, and design iteration
