@@ -238,6 +238,7 @@ In the tangible world of print and other fields like architecture
 {% include figure.html src="../images/content/waterfall-2.png" caption="" %}
 
 #### [Development is design](http://bradfrost.com/blog/post/development-is-design/)
+The line between design and development “phases” gets in the way of true collaboration between disciplines.
 - Cross-disciplinary approach - No one discipline has all the answers. this involves everyone - UX designers, visual oriented designers, front-end developers, backend developers, business owners, clients, etc  
 - **Get into the browser faster**.
 
