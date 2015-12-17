@@ -216,24 +216,26 @@ And of course, we're still at the very beginning of the Big Bang of connected de
 
 **I've found the three previous images to be a tremendously helpful shorthand for helping clients, colleagues, and stakeholders understand the reality of the Web landscape**. With this newfound understanding, everyone becomes a whole lot more receptive to updating their processes and workflows in order to create great work for this unique medium.
 
-It's our job to create great experiences for a diversity of devices, screen sizes, network speeds, device capabilities, browser capabilities, input types, form factors, contexts, and user preferences. No doubt that's a herculean task, but all these variables really underscore the need for us to extend far beyond visual aesthetics when creating interface design systems. 
+It's our job to create great experiences for a diversity of devices, screen sizes, network speeds, device capabilities, browser capabilities, input types, form factors, contexts, and user preferences. That's undoubtedly a herculean task, but all these variables really underscore the need to extend far beyond visual aesthetics when creating interface design systems. 
 
-In addition to making visually beautiful and consistent experiences, our design systems should:
+In addition to making visually beautiful and consistent experiences, we should:
 
-- Embrace the ubiquity of the Web by 
-- **Be flexible**, so that our layouts and components will look and function
-- Performance
-- Enhancement
-- Future Friendly
+- **Embrace the ubiquity of the Web** by creating accessible, resilient design systems. Recognize that a whole slew of people with a vast spectrum of capabilities will be accessing our experiences, so construct design systems to be as inclusive as possible.
+- **Create flexible layouts and components** so that our interfaces look and function beautifully irrespective of any particular device dimension or screen size.
+- **Treat performance as an essential design principle** and create fast-loading experiences that respect users and their time. 
+- **Progressively enhance our interfaces** by establishing core experiences then layering on enhancements to take advantage of the unique capabilities of modern devices and browsers.
+- **Create future-friendly design systems** meant to stand the test of time and anticipate inevitable changes to the device and Web landscape. 
 
-Of course there are many other more specific principles to embrace 
+Of course there are many other design considerations that should be included in our interface design systems (ergonomics, touch input, Section 508 compliance, legibility, and so on), but the key takeaway here is to expand beyond visual . Your clients, colleagues, and stakeholders all need to expand their definition of good digital design if you want to do great work together.
+
+As you might expect, substantial changes need to happen to our process  in order to properly address all these uniquely digital design considerations.
 
 ### Death to the waterfall
-Once upon a time in the not-so-distant past, our digital process looked something like a Henry Ford-style assembly line. Clients shout "We need a website!" and we'd respond with a production-line process that involved one discipline completing their work, passing it off to 
+Once upon a time in the not-so-distant past, our digital process looked something like a Henry Ford-style assembly line. Clients shout "We need a website!" and we'd respond with a production-line process involving one discipline completing their work, passing it off to the next discipline to complete their work, who would pass it off to the next discipline, and so on. This is known as [the waterfall process](https://en.wikipedia.org/wiki/Waterfall_model) 
 
 {% include figure.html src="../images/content/waterfall.png" caption="" %}
 
-In the tangible world of print and other fields like architecture
+In the tangible world of print and other fields like architecture, this process makes 
 
 {% include figure.html src="../images/content/waterfall-2.png" caption="" %}
 
