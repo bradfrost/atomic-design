@@ -210,13 +210,13 @@ Of course time went by, mobile exploded, technology improved, and the Web become
 
 The diversity of today's Web landscape has shattered the [consensual hallucination](https://adactio.com/journal/4443) of the "desktop Web," where we could simply bolt the mentalities and processes of print onto this new medium. Simply looking at a smartphone, tablet, and desktop machine next to each other quickly erodes the notion that a Web design should look the same in every environment.
 
-And of course, we're still at the very beginning of the Big Bang of connected devices. The device and Web landscape of tomorrow will undoubtedly be even bigger and diverse than today's. In addition to today's devices and the nascent technologies already on the horizon, the future Web landscape will involve technologies and ideas that haven't been conceived yet.
+Of course, we're still at the very beginning of the Big Bang of connected devices. The device and Web landscape of tomorrow will undoubtedly be even bigger and diverse than today's. In addition to today's devices and the nascent technologies already on the horizon, the future Web landscape will involve technologies and ideas that haven't been conceived yet.
 
 {% include figure.html src="../images/content/this-is-the-web-3.png" caption="In addition to all the Web-capable devices we concern ourselves with today, we must understand that the device and Web landscape is becoming bigger and more diverse all the time." %}
 
 **I've found the three previous images to be a tremendously helpful shorthand for helping clients, colleagues, and stakeholders understand the reality of the Web landscape**. With this newfound understanding, everyone becomes a whole lot more receptive to updating their processes and workflows in order to create great work for this unique medium.
 
-It's our job to create great experiences for a diversity of devices, screen sizes, network speeds, device capabilities, browser capabilities, input types, form factors, contexts, and user preferences. That's undoubtedly a herculean task, but all these variables really underscore the need to extend far beyond visual aesthetics when creating interface design systems. 
+It's our job to create great experiences for a diversity of devices, screen sizes, network speeds, device capabilities, browser features, input types, form factors, contexts, and user preferences. That's undoubtedly a herculean task, but all these variables really underscore the need to extend far beyond visual aesthetics when creating interface design systems. 
 
 In addition to making visually beautiful and consistent experiences, we should:
 
@@ -226,22 +226,50 @@ In addition to making visually beautiful and consistent experiences, we should:
 - **Progressively enhance our interfaces** by establishing core experiences then layering on enhancements to take advantage of the unique capabilities of modern devices and browsers.
 - **Create future-friendly design systems** meant to stand the test of time and anticipate inevitable changes to the device and Web landscape. 
 
-Of course there are many other design considerations that should be included in our interface design systems (ergonomics, touch input, Section 508 compliance, legibility, and so on), but the key takeaway here is to expand beyond visual . Your clients, colleagues, and stakeholders all need to expand their definition of good digital design if you want to do great work together.
+Of course there are many other design considerations that should be included in our interface design systems (ergonomics, input type, Section 508 compliance, legibility, and so on), but the key takeaway here is to expand the definition of what constitutes good digital design beyond visual aesthetics.
 
-As you might expect, substantial changes need to happen to our process  in order to properly address all these uniquely digital design considerations.
+As you might expect, substantial changes need to happen to our process in order to properly address all these uniquely digital design considerations. It therefore becomes our responsibility to set client, colleague, and stakeholder expectations so that everyone knows things will be different this time around.
 
 ### Death to the waterfall
-Once upon a time in the not-so-distant past, our digital process looked something like a Henry Ford-style assembly line. Clients shout "We need a website!" and we'd respond with a production-line process involving one discipline completing their work, passing it off to the next discipline to complete their work, who would pass it off to the next discipline, and so on. This is known as [the waterfall process](https://en.wikipedia.org/wiki/Waterfall_model) 
+Tell me if you've heard this one before. A team is tasked with making a website. Once the kickoff meeting dust has settled, a UX designer goes away, puts their head down, and after a while emerges with a giant PDF document detailing the entire experience. This monolithic wireframe document gets passed around to the project stakeholders, who sign off on it after a bit of feedback and suggestions. 
+
+The UX designer then passes the wireframes off to the visual designer, who hops into Photoshop or Sketch to apply color, typography, and texture to the structured-but-sterile wireframes. At the design review meeting, stakeholders sit eagerly while the projector fires up and the project manager runs off to print copies of the design deck for everyone. The art director takes their position at the front of the room and unveils the design. Behold, a website design! Once the presentation is finished, the room quickly becomes abuzz with feedback and conversation. After the initial reactions and compliments die down, a key stakeholder speaks up.
+
+"This looks fantastic, and I think really hits the mark for what we're trying to accomplish with this project. *But*..."
+
+They then express their desire to see something perhaps with an alternate layout, something that captures a certain vibe, maybe something that uses different photography, something that just...*pops*.
+
+With the floodgates opened, the other stakeholders suddenly realize they too have opinions and constructive criticism they'd like to share. By the time the meeting draws to a close, everyone has rambled off their Christmas wish list of what they'd like the site design to be.
+
+Slightly deflated but determined to nail it, the visual designer retreats back to their tools to work the stakeholders' suggestions into the composition. At the next design review meeting, the same scene repeats itself, with equal parts encouragement and longing for more. "I feel like we're almost there. Could we just..."
+
+Weeks pass and seasons change. Nerves wear thin, and the reality  of the deadline looms large over everyone's heads. It's with a sense of urgency that "homepage_v8_final_for-review_FINAL_v2_for-handoff.psd" finally gets approval by the stakeholders. 
+
+The visual designer, relieved they've done their job right, then tiptoes oh-so-quietly up to the entrance of the Code Cave. They slip the approved design under the door, and as they scamper away they yell "Can you get this done in 3 weeks? We're already behind schedule and we're out of budget!" 
+
+The visual designer has already disappeared into the night by the time the front-end developer picks the design off the floor. With one glance at the composition, a strange feeling — some combination of bewilderment, rage, and dread – washes over them. But what's wrong with the design, exactly? 
+
+Alas, it's too late to make significant changes to the design. The front-end developer tries in vain to state their case to the broader group, but they're quickly 
 
 {% include figure.html src="../images/content/waterfall.png" caption="" %}
 
-In the tangible world of print and other fields like architecture, this process makes 
+This may or may not be an exaggerated story. 
+
+[This is as far as I've gotten]
+
+This production-line process involving one discipline completing their work, passing it off to the next discipline to complete their work, who would pass it off to the next discipline, and so on. 
+
+Once upon a time in the not-so-distant past, the process for making Web experiences looked something like a Henry Ford-style assembly line. In print, architecture, manufacturing, and other physical mediums this process makes sense as mistakes and changes are extraordinarily costly. Miss a mistake made early in the process and 
+
+The digital world isn't constrained by the same limitations as the physical world. Pixels are cheap. 
+
+Cross-disciplinary approach - No one discipline has all the answers. Approaching our designs in a systematic way demands involvement from everyone - UX designers, visual oriented designers, front-end developers, backend developers, business owners, clients, etc.
 
 {% include figure.html src="../images/content/waterfall-2.png" caption="" %}
 
 #### [Development is design](http://bradfrost.com/blog/post/development-is-design/)
 The line between design and development “phases” gets in the way of true collaboration between disciplines.
-- Cross-disciplinary approach - No one discipline has all the answers. this involves everyone - UX designers, visual oriented designers, front-end developers, backend developers, business owners, clients, etc  
+
 - **Get into the browser faster**.
 
 #### The Post-PSD era
@@ -272,6 +300,7 @@ The line between design and development “phases” gets in the way of true col
 - No doubt there are other tactics that can be used to establish what visual aesthetics 
 
 ### Front-end Prep Chef
+- If you're not coding from day one of the project, there's something wrong.
 - Front-end [prep chef](http://bradfrost.com/blog/post/primed-and-ready-to-go/)
 
 ## Roll up our sleeves
