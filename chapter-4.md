@@ -68,7 +68,7 @@ The interface inventory exercise generates a ton of screenshots, so naturally yo
 
 - Powerpoint or Keynote
 - Photoshop or Sketch
-- Evernote web clipper
+- Evernote Web Clipper
 - Google Docs or Microsoft Word
 - Google Slides (If you're interested, I've created a [Google Slides interface inventory template](https://docs.google.com/presentation/d/1GqFmiDV_NqKi36fXAwD3WTJL5-JV-gHL7XVD2fVeL0M/edit?usp=sharing))
 
@@ -228,7 +228,7 @@ In addition to making visually beautiful and consistent experiences, we should:
 
 Of course there are many other design considerations that should be included in our interface design systems (ergonomics, input type, Section 508 compliance, legibility, and so on), but the key takeaway here is to expand the definition of what constitutes good digital design beyond visual aesthetics.
 
-As you might expect, substantial changes need to happen to our process in order to properly address all these uniquely digital design considerations. It therefore becomes our responsibility to set client, colleague, and stakeholder expectations so that everyone knows the process for creating will be different this time around.
+As you might expect, substantial changes to our processes need to happen in order to properly address all these uniquely digital design considerations. It therefore becomes our responsibility to set client, colleague, and stakeholder expectations so that everyone knows the process for creating will be different this time around.
 
 ### Death to the waterfall
 Tell me if you've heard this one before. A team is tasked with making a website. Once the kickoff meeting dust has settled, a UX designer goes away, puts their head down, and eventually emerges with a giant PDF document detailing the entire experience. This monolithic wireframe document gets passed around to the project stakeholders, who sign off on it after some feedback and suggestions. 
@@ -268,23 +268,28 @@ That work will happen in parallel doesn't imply that everyone will be guns blazi
 {% include figure.html src="../images/content/waterfall-2.png" caption="A more collaborative workflow involves a cross-disciplinary team working together throughout the entire process. While active work will wax and wane, each discipline continues to consult with the other team members to ensure their insights are present in the final work." %}
 
 #### Development is design
-When starting previous jobs, people have asked me "so what do you do?" I reply "well I write HTML, CSS, and JavaScript". "Oh so you're a *coder*? Well then, go over and sit with the Ruby folks and whip us up some gems." "How long is that middleware going to take 
+When a previous employer discovered I wrote HTML, CSS, and presentational JavaScript, they moved me to sit with the engineers and back-end developers. Before too long I was being asked, "Hey Brad, how long is that middleware going to take to build?" and "can you normalize this database real quick?"
 
-There's a fundamental misunderstanding that all coding is ultra-geeky programming and engineering. HTML is not programming. CSS is not programming. But because they’re still code, front-end developers are often put in the same bucket as Python, Java, PHP, Ruby, C#, C++, Objective C and other programming languages. developers, rather than with the rest of the design team. This is a big problem when it comes to process. [front-end development is part of ](http://bradfrost.com/blog/post/development-is-design/)
+Here's the thing: I've never had a computer science class in my life, and I spent my high school career hanging out in the art room. Suffice it to say those requests made me extremely uncomfortable.
 
-Development is The line between design and development “phases” gets in the way of true collaboration between disciplines.
+There's a fundamental misunderstanding that all coding is ultra-geeky programming, which simply isn't the case. HTML is not a programming language. CSS is not a programming language. But **because HTML and CSS are still technically code, front-end development is often put in the same bucket as Python, Java, PHP, Ruby, C++, and other programming languages**. 
 
-Almost all of the programming I’ve done is to manipulate something on a screen. People who write HTML and CSS for a living
+Organizationally, there is often a massive divide between designers and developers (or "marketing" and "IT", or "creative" and "engineering", or some other divisive labels). Designers and developers often sit on different floors, in different buildings altogether, in different cities, and sometimes even in different countries in different continents. While some of this organizational separation may be justified, **creating a division between designers and front-end developers is an absolutely terrible idea**.
 
-- **Get into the browser faster**. Final environment faster. More realistic. Address the realities of the final medium much faster.
+Here's the thing: HTML, CSS, and presentational JavaScript build user interfaces – yes, the same user interfaces that those designers working in Photoshop and Sketch are meticulously crafting. That's why it's so crucial to treat [front-end development as part of the design process](http://bradfrost.com/blog/post/development-is-design/) so that teams can build successful user interface design systems together. 
 
-#### The Post-PSD era
-- When you show pictures of websites, stakeholders will comment on the picture of the website. Unrealistic
+When you only show stakeholders static pictures of websites, they can naturally only comment on those pictures. But by **getting the design into the browser as fast as possible**, stakeholders are confronted the realities of the final medium much sooner. Articulating the design in the browser allows teams to not only aesthetically beautiful designs, but rather also address those uniquely-digital design considerations like performance, flexibility, ergonomics, and so on.
+
+That's not to say teams must design entirely in the browser. As with anything, it's about using the right tools at the right time for the right things. Once again, Dan Mall has some words of insight:
+
+> Let’s change the phrase “designing in the browser” to “deciding in the browser.” <cite>[Dan Mall](https://the-pastry-box-project.net/dan-mall/2012-september-12)</cite>
+
+Having the design represented in the browser *in addition to* other static design artifacts lets teams to 
 
 #### An iterative iterative iterative iterative process 
 - Stone sculpture analogy
-- Get stakeholders comfortable without
-- Pixels are cheap, important to take steps in the right direction 
+- Get stakeholders comfortable with viewing works in progress rather than glossy static images
+- More important make steps in the right direction than painting an unrealistic final picture
 - Accept gray, blurriness. Human beings don't neatly fit into the rigid borders of Excel documents and Gantt charts, despite the wishes of project managers.
 - Constant communication and true collaboration become the glue that holds the process together. 
 
