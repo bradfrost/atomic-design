@@ -251,36 +251,34 @@ The visual designer has already disappeared into the night by the time the front
 
 The front-end developer tries in vain to raise their concerns to the broader group, but is quickly dismissed as being either inept or curmudgeonly. Alas, it's too late in the game to make significant changes to the design, especially since it's already been approved by the stakeholders.
 
-So the developer tries their best to make lemonade out of the lemony static comps. They bend over backwards to create responsive layouts that still retain the integrity of the static comps, normalize some of the more blatant component inconsistencies, establish pattern states (like button hover, active, and disabled states) that weren't articulated in the designs, and make some on-the-fly decisions regarding the relatively interactive functionality of the experience. Discussions with designers are strained, but everyone realizes that in order to get the project done, they need to work through these issues.
+So the developer tries their best to make lemonade out of the lemony static comps. They bend over backwards to create responsive layouts that still retain the integrity of the static comps, normalize some of the more blatant component inconsistencies, establish pattern states (like button hover, active, and disabled states) that weren't articulated in the designs, and make some on-the-fly decisions regarding the relatively interactive functionality of the experience. Discussions with designers are strained, but everyone realizes that they need to work through these issues to get the project done.
 
 After plugging the front-end code into a CMS, frantically finalizing the site's content, and doing some last-minute QA testing, the team finally launches the site. While no one may say it out loud, there's a tinge of disappointment in the air alongside the joy and relief of getting the project out the door. After all, the live site lacks the glossy polish that the comps promised to the stakeholders, and friction between disciplines has bruised some relationships. 
 
-I hope this story reads as a work of fiction to you, but based on my own experiences and conversations with countless others, I'm guessing it doesn't. This scenario hits home for a lot of people like a punch in the gut. Whether you've endured this process firsthand or not, it's important to recognize that the Henry Ford-esque [waterfall process](https://en.wikipedia.org/wiki/Waterfall_model) increasingly isn't likely to result in great digital work.
+I hope this story reads as a work of fiction to you, but based on my own experiences and conversations with countless others, I'm guessing you've experienced this to some degree. It may even hit home like a punch in the gut. Whether you've endured this process firsthand or not, it's important to recognize that the Henry Ford-esque [waterfall process](https://en.wikipedia.org/wiki/Waterfall_model) increasingly isn't likely to result in great digital work.
 
-{% include figure.html src="../images/content/waterfall-1.png" caption="The waterfall process, where disciplines pass off work to each other in sequential order, does not result in great digital work." %}
+{% include figure.html src="../images/content/waterfall-1.png" caption="The waterfall process, where disciplines pass off work to each other in sequential order, isn't likely to result in great digital work." %}
 
-The waterfall process may make sense for print, architecture, manufacturing, and other physical mediums since mistakes and changes are extraordinarily costly. If a team misses a mistake made early in the process, they'll pay dearly for it later. However, the digital world isn't constrained by the same limitations as the physical one. Pixels are cheap. Changes can happen in an instant, hypotheses can be quickly tested out, and designs and code can be iterated upon.
+The waterfall process may make sense for print, architecture, manufacturing, and other physical mediums since mistakes and changes are extraordinarily costly. If a team misses a mistake made early in the process, they'll pay dearly for it later. However, **the digital world isn't constrained by the same limitations as the physical one. Pixels are cheap**. Changes can happen in an instant, hypotheses can be quickly tested out, and designs and code can be iterated upon.
  
-The waterfall process hinges on the premise that work must flow in a sequential order. The UX designer's work must be completed before the visual designer can start their job. The visual designer must finish their job before the front-end development can begin. This simply isn't true. There is much work that can and should happen in parallel. And in order to create sound UI design systems, we must reset our stakeholders' expectations and get them comfortable with blurrier, more collaborative process.
+The waterfall process hinges on the premise that work must flow in a sequential order: the UX designer's work must be completed before visual design can start; the visual designer must finish their job before front-end development can begin. This simply isn't true. There is much work that can and should happen in parallel. In order to create sound UI design systems, we must reset our stakeholders' expectations and get them comfortable with a blurrier, more collaborative process.
 
-To say that work will happen in parallel doesn't imply that everyone will be guns blazing throughout the entire process. Of course research, information architecture
+That work will happen in parallel doesn't imply that everyone will be guns blazing throughout the entire process. Of course the bulk of research, information architecture, and other elemental aspects of UX design will tend to happen earlier in the process, but that work shouldn't delay the other disciplines from starting their jobs. And even when the bulk of a person's *active* work is done, they should never simply fade away from the project. It's crucial for every discipline to continue to consult with the other disciplines to ensure their vision makes it into the final product. So rather than a rigid, sequential waterfall process, a more collaborative process over time looks something like this: 
 
-{% include figure.html src="../images/content/waterfall-2.png" caption="" %}
+{% include figure.html src="../images/content/waterfall-2.png" caption="A more collaborative workflow involves a cross-disciplinary team working together throughout the entire process. While active work will wax and wane, each discipline continues to consult with the other team members to ensure their insights are present in the final work." %}
 
-#### [Development is design](http://bradfrost.com/blog/post/development-is-design/)
+#### Development is design
 When starting previous jobs, people have asked me "so what do you do?" I reply "well I write HTML, CSS, and JavaScript". "Oh so you're a *coder*? Well then, go over and sit with the Ruby folks and whip us up some gems." "How long is that middleware going to take 
 
-There's a misunderstanding that all coding is ultra-geeky programming and engineering. HTML is not programming. CSS is not programming. But because they’re still code, front-end developers are often put in the same bucket as Python, Java, PHP, Ruby, C#, C++, Objective C and other programming languages. developers, rather than with the rest of the design team. This is a big problem when it comes to process.
+There's a fundamental misunderstanding that all coding is ultra-geeky programming and engineering. HTML is not programming. CSS is not programming. But because they’re still code, front-end developers are often put in the same bucket as Python, Java, PHP, Ruby, C#, C++, Objective C and other programming languages. developers, rather than with the rest of the design team. This is a big problem when it comes to process. [front-end development is part of ](http://bradfrost.com/blog/post/development-is-design/)
 
 Development is The line between design and development “phases” gets in the way of true collaboration between disciplines.
 
- Almost all of the programming I’ve done is to manipulate something on a screen. While I’m slowly learning the fundamentals of programming, I wouldn’t dare call myself a programmer.
+Almost all of the programming I’ve done is to manipulate something on a screen. People who write HTML and CSS for a living
 
-- **Get into the browser faster**.
+- **Get into the browser faster**. Final environment faster. More realistic. Address the realities of the final medium much faster.
 
 #### The Post-PSD era
-- Build up fidelity over time, rather than painting a false.
-- "Here's a picture of what your website will never look like." -Stephen Hay
 - When you show pictures of websites, stakeholders will comment on the picture of the website. Unrealistic
 
 #### An iterative iterative iterative iterative process 
@@ -335,6 +333,7 @@ One essential expectation to reset is the concept of *done*. Print and other phy
 ### The Holy Grail
 - Holy Grail is when the pattern library and production environment are perfectly in sync. Make a change to a pattern library, and anywhere the pattern is included in production will be updated.
 - [Rizzo](http://rizzo.lonelyplanet.com/) by Lonely Planet has accomplished this.
+- [Chasing the holy grail](https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.vy45rkm7m)
 
 ### Make it cross-disciplinary
 - Not just a developer tool. Not just a designer tool. Every discipline invested in the success of the website should be contributing to the pattern library.
