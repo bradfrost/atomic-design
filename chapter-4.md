@@ -228,38 +228,38 @@ In addition to making visually beautiful and consistent experiences, we should:
 
 Of course there are many other design considerations that should be included in our interface design systems (ergonomics, input type, Section 508 compliance, legibility, and so on), but the key takeaway here is to expand the definition of what constitutes good digital design beyond visual aesthetics.
 
-As you might expect, substantial changes need to happen to our process in order to properly address all these uniquely digital design considerations. It therefore becomes our responsibility to set client, colleague, and stakeholder expectations so that everyone knows things will be different this time around.
+As you might expect, substantial changes need to happen to our process in order to properly address all these uniquely digital design considerations. It therefore becomes our responsibility to set client, colleague, and stakeholder expectations so that everyone knows the process for creating will be different this time around.
 
 ### Death to the waterfall
-Tell me if you've heard this one before. A team is tasked with making a website. Once the kickoff meeting dust has settled, a UX designer goes away, puts their head down, and after a while emerges with a giant PDF document detailing the entire experience. This monolithic wireframe document gets passed around to the project stakeholders, who sign off on it after a bit of feedback and suggestions. 
+Tell me if you've heard this one before. A team is tasked with making a website. Once the kickoff meeting dust has settled, a UX designer goes away, puts their head down, and eventually emerges with a giant PDF document detailing the entire experience. This monolithic wireframe document gets passed around to the project stakeholders, who sign off on it after some feedback and suggestions. 
 
-The UX designer then passes the wireframes off to the visual designer, who hops into Photoshop or Sketch to apply color, typography, and texture to the structured-but-sterile wireframes. At the design review meeting, stakeholders sit eagerly while the projector fires up and the project manager runs off to print copies of the design deck for everyone. The art director takes their position at the front of the room and unveils the design. Behold, a website design! Once the presentation is finished, the room quickly becomes abuzz with feedback and conversation. After the initial reactions and compliments die down, a key stakeholder speaks up.
+The UX designer then passes the wireframes off to the visual designer, who hops into Photoshop or Sketch to apply color, typography, and texture to the structured-but-sterile wireframes. In the design review meeting, stakeholders sit eagerly while the projector fires up and the project manager runs off to print copies of the design deck for everyone. The art director takes their position at the front of the room and unveils the design. Behold, a website design! Once the presentation is finished, the room quickly becomes abuzz with feedback and conversation. After the initial reactions and compliments die down, a key stakeholder speaks up.
 
 "This looks fantastic, and I think really hits the mark for what we're trying to accomplish with this project. *But*..."
 
-They then express their desire to see something perhaps with an alternate layout, something that captures a certain vibe, maybe something that uses different photography, something that just...*pops*.
+They express their desire to see something perhaps with an alternate layout, something that captures a certain vibe, maybe something that uses different photography, something that just...*pops*.
 
-With the floodgates opened, the other stakeholders suddenly realize they too have opinions and constructive criticism they'd like to share. By the time the meeting draws to a close, everyone has rambled off their Christmas wish list of what they'd like the site design to be.
+With the floodgates opened, the other stakeholders suddenly realize they too have opinions and constructive criticism they'd like to share. By the time the meeting draws to a close, everyone has rambled off their Christmas wish list of what they'd like the design to accomplish.
 
-Slightly deflated but determined to nail it, the visual designer retreats back to their tools to work the stakeholders' suggestions into the composition. At the next design review meeting, the same scene repeats itself, with equal parts encouragement and longing for more. "I feel like we're almost there. Could we just..."
+Slightly deflated but determined to nail it, the visual designer retreats back to their tools to work in the stakeholders' suggestions. At the next design review meeting, the same scene repeats itself, with stakeholders expressing equal parts encouragement and longing for more. "I feel like we're almost there. Could we just..."
 
-Weeks pass and seasons change. Nerves wear thin, and the reality  of the deadline looms large over everyone's heads. It's with a sense of urgency that "homepage_v8_final_for-review_FINAL_v2_for-handoff.psd" finally gets approval by the stakeholders. 
+Weeks pass and seasons change. Nerves wear thin, and the deadline date looms over everyone's heads. It's with a sense of urgency that `homepage_v9_final_for-review_FINAL_bradEdits_for-handoff.psd` finally gets approval by the stakeholders. 
 
-The visual designer, relieved they've done their job right, then tiptoes oh-so-quietly up to the entrance of the Code Cave. They slip the approved design under the door, and as they scamper away they yell "Can you get this done in 3 weeks? We're already behind schedule and we're out of budget!" 
+The visual designer, relieved they've finally completed their job, tiptoes oh-so-quietly up to the entrance of the Code Cave. They slip the approved design under the door, and as they scamper away they yell "Can you get this done in 3 weeks? We're already behind schedule and we're out of budget!" 
 
-The visual designer has already disappeared into the night by the time the front-end developer picks the design off the floor. With one glance at the composition, a strange feeling — some combination of bewilderment, rage, and dread – washes over them. But what's wrong with the design, exactly? 
+The visual designer has already disappeared into the night by the time the front-end developer picks the design off the floor. With one glance at the composition, a strange feeling — some combination of bewilderment, rage, and dread – washes over them. What's wrong with the design, exactly? Maybe it's the 7 typefaces and 5 unique button styles peppered throughout the comps. Maybe it's the desktop-centric, impossible-to-actually-execute layout. Maybe it's the perfect-yet-improbable user-generated content. 
 
-Alas, it's too late to make significant changes to the design. The front-end developer tries in vain to state their case to the broader group, but they're quickly 
+The front-end developer tries in vain to raise their concerns to the broader group, but is quickly dismissed as being either inept or curmudgeonly. Alas, it's too late in the game to make significant changes to the design, especially since it's already been approved by the stakeholders.
 
-{% include figure.html src="../images/content/waterfall.png" caption="" %}
+So the developer tries their best to make lemonade out of the lemony static comps. They bend over backwards to create responsive layouts that still retain the integrity of the static comps, normalize some of the more blatant component inconsistencies, establish pattern states (like hover, active, and disabled) that weren't articulated in the designs, and make some on-the-fly decisions regarding the more interactive functionality. Discussions with designers are strained, but everyone realizes that in order to get the project done, they need to work through their issues.
 
-This may or may not be an exaggerated story. 
+After plugging the front-end code into a CMS, frantically finalizing the site's content, and doing some last-minute QA testing, the team finally launches the site. While no one may say it out loud, there's a tinge of disappointment in the air alongside the joy and relief of getting the project out the door. After all, the live site lacks the glossy polish that the comps promised to the stakeholders, and friction between disciplines has damaged some relationships. 
 
-[This is as far as I've gotten]
+This story may or may not read as massive hyperbole to you, depending on your experience. But whether or not the above story hits you like a punch in the gut matters not. The takeaway is to recognize that the Henry Ford-esque [waterfall process](https://en.wikipedia.org/wiki/Waterfall_model) isn't likely to result in great digital work.
 
-This production-line process involving one discipline completing their work, passing it off to the next discipline to complete their work, who would pass it off to the next discipline, and so on. 
+{% include figure.html src="../images/content/waterfall-1.png" caption="The waterfall process, where disciplines pass off work to each other in sequential order, does not result in great digital work." %}
 
-Once upon a time in the not-so-distant past, the process for making Web experiences looked something like a Henry Ford-style assembly line. In print, architecture, manufacturing, and other physical mediums this process makes sense as mistakes and changes are extraordinarily costly. Miss a mistake made early in the process and 
+In print, architecture, manufacturing, and other physical mediums this process makes more sense, since mistakes and changes are extraordinarily costly. If a team misses a mistake made early in the process, they'll pay dearly for it later.
 
 The digital world isn't constrained by the same limitations as the physical world. Pixels are cheap. 
 
@@ -356,3 +356,5 @@ One essential expectation to reset is the concept of *done*. Print and other phy
 - Monitor progress - Lonely Planet performance 
 
 ## Go forth and be atomic
+
+particle photon
