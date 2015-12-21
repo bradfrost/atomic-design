@@ -247,28 +247,34 @@ Weeks pass and seasons change. Nerves wear thin, and the deadline date looms ove
 
 The visual designer, relieved they've finally completed their job, tiptoes oh-so-quietly up to the entrance of the Code Cave. They slip the approved design under the door, and as they scamper away they yell "Can you get this done in 3 weeks? We're already behind schedule and we're out of budget!" 
 
-The visual designer has already disappeared into the night by the time the front-end developer picks the design off the floor. With one glance at the composition, a strange feeling — some combination of bewilderment, rage, and dread – washes over them. What's wrong with the design, exactly? Maybe it's the 7 typefaces and 5 unique button styles peppered throughout the comps. Maybe it's the desktop-centric, impossible-to-actually-execute layout. Maybe it's the perfect-yet-improbable user-generated content. 
+The visual designer has already disappeared into the night by the time the front-end developer picks the design off the floor. With one glance at the composition, a strange feeling — some combination of bewilderment, rage, and dread – washes over them. What's wrong with the design, exactly? Maybe it's the 7 typefaces and 9 unique button styles peppered throughout the comps. Maybe it's the desktop-centric, impossible-to-actually-execute layout. Maybe it's the perfect-yet-improbable user-generated content. 
 
 The front-end developer tries in vain to raise their concerns to the broader group, but is quickly dismissed as being either inept or curmudgeonly. Alas, it's too late in the game to make significant changes to the design, especially since it's already been approved by the stakeholders.
 
-So the developer tries their best to make lemonade out of the lemony static comps. They bend over backwards to create responsive layouts that still retain the integrity of the static comps, normalize some of the more blatant component inconsistencies, establish pattern states (like hover, active, and disabled) that weren't articulated in the designs, and make some on-the-fly decisions regarding the more interactive functionality. Discussions with designers are strained, but everyone realizes that in order to get the project done, they need to work through their issues.
+So the developer tries their best to make lemonade out of the lemony static comps. They bend over backwards to create responsive layouts that still retain the integrity of the static comps, normalize some of the more blatant component inconsistencies, establish pattern states (like button hover, active, and disabled states) that weren't articulated in the designs, and make some on-the-fly decisions regarding the relatively interactive functionality of the experience. Discussions with designers are strained, but everyone realizes that in order to get the project done, they need to work through these issues.
 
-After plugging the front-end code into a CMS, frantically finalizing the site's content, and doing some last-minute QA testing, the team finally launches the site. While no one may say it out loud, there's a tinge of disappointment in the air alongside the joy and relief of getting the project out the door. After all, the live site lacks the glossy polish that the comps promised to the stakeholders, and friction between disciplines has damaged some relationships. 
+After plugging the front-end code into a CMS, frantically finalizing the site's content, and doing some last-minute QA testing, the team finally launches the site. While no one may say it out loud, there's a tinge of disappointment in the air alongside the joy and relief of getting the project out the door. After all, the live site lacks the glossy polish that the comps promised to the stakeholders, and friction between disciplines has bruised some relationships. 
 
-This story may or may not read as massive hyperbole to you, depending on your experience. But whether or not the above story hits you like a punch in the gut matters not. The takeaway is to recognize that the Henry Ford-esque [waterfall process](https://en.wikipedia.org/wiki/Waterfall_model) isn't likely to result in great digital work.
+I hope this story reads as a work of fiction to you, but based on my own experiences and conversations with countless others, I'm guessing it doesn't. This scenario hits home for a lot of people like a punch in the gut. Whether you've endured this process firsthand or not, it's important to recognize that the Henry Ford-esque [waterfall process](https://en.wikipedia.org/wiki/Waterfall_model) increasingly isn't likely to result in great digital work.
 
 {% include figure.html src="../images/content/waterfall-1.png" caption="The waterfall process, where disciplines pass off work to each other in sequential order, does not result in great digital work." %}
 
-In print, architecture, manufacturing, and other physical mediums this process makes more sense, since mistakes and changes are extraordinarily costly. If a team misses a mistake made early in the process, they'll pay dearly for it later.
+The waterfall process may make sense for print, architecture, manufacturing, and other physical mediums since mistakes and changes are extraordinarily costly. If a team misses a mistake made early in the process, they'll pay dearly for it later. However, the digital world isn't constrained by the same limitations as the physical one. Pixels are cheap. Changes can happen in an instant, hypotheses can be quickly tested out, and designs and code can be iterated upon.
+ 
+The waterfall process hinges on the premise that work must flow in a sequential order. The UX designer's work must be completed before the visual designer can start their job. The visual designer must finish their job before the front-end development can begin. This simply isn't true. There is much work that can and should happen in parallel. And in order to create sound UI design systems, we must reset our stakeholders' expectations and get them comfortable with blurrier, more collaborative process.
 
-The digital world isn't constrained by the same limitations as the physical world. Pixels are cheap. 
-
-Cross-disciplinary approach - No one discipline has all the answers. Approaching our designs in a systematic way demands involvement from everyone - UX designers, visual oriented designers, front-end developers, backend developers, business owners, clients, etc.
+To say that work will happen in parallel doesn't imply that everyone will be guns blazing throughout the entire process. Of course research, information architecture
 
 {% include figure.html src="../images/content/waterfall-2.png" caption="" %}
 
 #### [Development is design](http://bradfrost.com/blog/post/development-is-design/)
-The line between design and development “phases” gets in the way of true collaboration between disciplines.
+When starting previous jobs, people have asked me "so what do you do?" I reply "well I write HTML, CSS, and JavaScript". "Oh so you're a *coder*? Well then, go over and sit with the Ruby folks and whip us up some gems." "How long is that middleware going to take 
+
+There's a misunderstanding that all coding is ultra-geeky programming and engineering. HTML is not programming. CSS is not programming. But because they’re still code, front-end developers are often put in the same bucket as Python, Java, PHP, Ruby, C#, C++, Objective C and other programming languages. developers, rather than with the rest of the design team. This is a big problem when it comes to process.
+
+Development is The line between design and development “phases” gets in the way of true collaboration between disciplines.
+
+ Almost all of the programming I’ve done is to manipulate something on a screen. While I’m slowly learning the fundamentals of programming, I wouldn’t dare call myself a programmer.
 
 - **Get into the browser faster**.
 
@@ -282,8 +288,7 @@ The line between design and development “phases” gets in the way of true col
 - Get stakeholders comfortable without
 - Pixels are cheap, important to take steps in the right direction 
 - Accept gray, blurriness. Human beings don't neatly fit into the rigid borders of Excel documents and Gantt charts, despite the wishes of project managers.
-
-
+- Constant communication and true collaboration become the glue that holds the process together. 
 
 ## Establishing direction
 > Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
@@ -298,6 +303,7 @@ The line between design and development “phases” gets in the way of true col
 - 20 Second Gut Test exercise - http://goodkickoffmeetings.com/2010/04/the-20-second-gut-test/
 - [Style Tiles](http://styletil.es/) by Samantha Warren reinforces pattern-based thinking
 - No doubt there are other tactics that can be used to establish what visual aesthetics 
+- Play the tools in your toolkit to their respective strengths
 
 ### Front-end Prep Chef
 - If you're not coding from day one of the project, there's something wrong.
