@@ -278,7 +278,7 @@ Organizationally, there is often a massive divide between designers and develope
 
 Here's the thing: HTML, CSS, and presentational JavaScript build user interfaces – yes, the same user interfaces that those designers working in Photoshop and Sketch are meticulously crafting. In order for teams to build successful user interface design systems together, **it's crucial to treat [front-end development as a core part of the design process](http://bradfrost.com/blog/post/development-is-design).** 
 
-When you only show stakeholders static pictures of websites, they can naturally only comment and sign off on pictures of websites. This [sets the wrong expectations](https://stuffandnonsense.co.uk/blog/about/time_to_stop_showing_clients_static_design_visuals). But by **getting the design into the browser as fast as possible**, you confront stakeholders with the realities of the final medium much sooner. Working in HTML, CSS, and presentational JavaScript allows teams to not only create aesthetically beautiful designs, but demonstrates those uniquely-digital design considerations like: 
+When you only show stakeholders static pictures of websites, they can naturally only comment and sign off on pictures of websites. This naturally [sets the wrong expectations](https://stuffandnonsense.co.uk/blog/about/time_to_stop_showing_clients_static_design_visuals). But by **getting the design into the browser as fast as possible**, you confront stakeholders with the realities of the final medium much sooner in the process. Working in HTML, CSS, and presentational JavaScript allows teams to not only create aesthetically beautiful designs, but demonstrates those uniquely-digital design considerations like: 
 
 - Flexibility
 - Impact of the network
@@ -291,7 +291,7 @@ When you only show stakeholders static pictures of websites, they can naturally 
 - Device and browser quirks 
 - User preferences
 
-Crucially, jumping into the browser faster kickstarts establishing the patterns for the living, breathing design system. More on this in a bit.
+Crucially, jumping into the browser faster also kickstarts the creation of the patterns that will make up the living, breathing design system. More on this in a bit.
 
 This is not to say teams must design *entirely* in the browser. As with anything, it's about using the right tools at the right time to articulate the right things. Once again, Dan Mall has some words of wisdom:
 
@@ -310,9 +310,9 @@ With the general shape of the sculpture roughed out, the artist can then begin h
 
 Again, I think this a great way to frame a successful digital process, although unlike stone sculpture we have the power of *undo*!
 
-It's essential to get stakeholders comfortable with reviewing works in progress rather than fully-baked designs and code. As I mentioned in Chapter 1, every organization these days desires to become more "agile", and iteration is a key part of that process. **It's more important to make steps in the right direction** rather than exhausting a ton of effort painting unrealistic pictures of what you want the final piece to be. A sound design system doesn't roll off an assembly line, but is rather sculpted in iterative loops, building up fidelity as the project progresses.
+It's essential to get stakeholders comfortable with reviewing works in progress rather than fully-baked designs and code. As I mentioned in Chapter 1, every organization these days desires to become more "agile", and iteration is a key part of that process. **It's more important to make steps in the right direction** than exhaust a ton of effort painting unrealistic pictures of what you want the final piece to be. **A sound design system doesn't roll off an assembly line, but is rather sculpted in iterative loops, building up fidelity as the project progresses**.
 
-If this all sounds a bit messy, that's because it is! To the dismay of some project managers, human beings don't neatly fit into the rigid borders of Excel documents and Gantt charts. True collaboration between disciplines is fuzzy and chaotic, and that's not a bad thing. Constant communication, tight feedback loops, and true collaboration become the glue that holds the process together. Get your entire team to commit to honest conversation and genuine collaboration, and the details of your process will fall into place.
+If this all sounds a bit messy, that's because it is! To the dismay of some project managers, human beings don't neatly fit into the rigid borders of Excel documents and Gantt charts. True collaboration between disciplines is fuzzy and chaotic, and that's not a bad thing. Constant communication, tight feedback loops, and true collaboration therefore become the glue that holds the process together. Get your entire team to commit to honest conversation and genuine collaboration, and the details of your process will fall into place.
 
 Are everyone's expectations properly set? Good! Now let's roll up our sleeves and get to work establishing our design system.
 
