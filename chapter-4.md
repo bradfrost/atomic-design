@@ -272,7 +272,7 @@ When a previous employer discovered I wrote HTML, CSS, and presentational JavaSc
 
 Here's the thing: I've never had a computer science class in my life, and I spent my high school career hanging out in the art room. Suffice it to say those requests made me extremely uncomfortable.
 
-There's a fundamental misunderstanding that all coding is ultra-geeky programming, which simply isn't the case. HTML is not a programming language. CSS is not a programming language. But **because HTML and CSS are still technically code, front-end development is often put in the same bucket as Python, Java, PHP, Ruby, C++, and other programming languages**. 
+There's a fundamental misunderstanding that all coding is ultra-geeky programming, which simply isn't the case. HTML is not a programming language. CSS is not a programming language. But **because HTML and CSS are still technically code, front-end development is often put in the same bucket as Python, Java, PHP, Ruby, C++, and other programming languages**. This misunderstanding tends to give many front-end developers, myself included, a severe identity crisis.
 
 Organizationally, there is often a massive divide between designers and developers (or "marketing" and "IT", or "creative" and "engineering", or some other divisive labels). Designers and developers often sit on different floors, in different buildings altogether, in different cities, and sometimes even in different countries in different continents. While some of this organizational separation may be justified, **creating a division between designers and front-end developers is an absolutely terrible idea**.
 
@@ -297,26 +297,24 @@ This is not to say teams must design *entirely* in the browser. As with anything
 
 > Let’s change the phrase “designing in the browser” to “deciding in the browser.” <cite>[Dan Mall](https://the-pastry-box-project.net/dan-mall/2012-september-12)</cite>
 
-Having the design represented in the browser *in addition to* other design artifacts gives teams to ability to paint a fuller picture. Teams may demonstrate an aesthetically-focused design idea as a static image and simultaneously demonstrate a working prototype of that same idea. 
-
-Getting to this point requires true collaboration between designers and developers, and hinges on honest conversation to  set everyone's expectations.
+Having the design represented in the browser *in addition to* other design artifacts gives teams to ability to paint a richer, more realistic picture. Teams may demonstrate an aesthetically-focused design idea as a static image and simultaneously demonstrate a working prototype of that same idea. 
 
 #### An iterative iterative iterative iterative process 
-I think of a successful digital design process as being quite similar to subtractive stone sculpture. At the start of the process, the sculptor (and their client) has a general idea of what they're creating, but that vision won't be fully realized until the sculpture is complete.
+I think of a successful digital design process as being quite similar to subtractive stone sculpture. At the beginning of the process, the sculptor (and their patron) has a general idea of what they're creating, but that vision won't be fully realized until the sculpture is complete. 
 
 The sculptor starts with a giant slab of rock and starts chipping away at it. After a first pass, a crude shape begins to form. They take another pass and the shape becomes more pronounced. After a few rounds of whacking away at the rock, it becomes clear that the sculptor's subject is a human form.
 
-With the general shape of the sculpture roughed out, the artist can then begin honing in on specific sections of the piece. For instance, they may begin detailing the face. After several passes, they then move onto the arms, and then the legs. All the while, they step back to see how those details impact the overall sculpture. They continue this process until  
+With the general shape of the sculpture roughed out, the artist can then begin honing in on specific sections of the piece. For instance, they may begin by detailing the face. After several passes, they then move onto the arms, and then begin detailing the legs. All the while, they step back to see how those details impact the overall sculpture. This process continues until the sculpture is complete and everyone is pleased with the results.
 
-{% include figure.html src="../images/content/stone-sculptor.jpg" caption="<a href='http://flickr.com/photos/15609463@N03/7854373494/'>Image credit</a>" %}
+{% include figure.html src="../images/content/stone-sculptor.jpg" caption="An iterative digital process is similar to subtractive stone sculpture, where fidelity is built up over many iterations. <a href='http://flickr.com/photos/15609463@N03/7854373494/'>Image credit</a>" %}
 
-Unlike stone sculpture, we have the power of *undo*! Again, pixels are cheap.
+Again, I think this a great way to frame a successful digital process, although unlike stone sculpture we have the power of *undo*!
 
-It's essential to get stakeholders comfortable with viewing works in progress rather than fully-baked designs and functioning code. As I mentioned in Chapter 1, most every organization these days desires to become more "agile", and that is what being agile entails. Rather than painting an unrealistic final picture, **it's more important to make steps in the right direction**. 
+It's essential to get stakeholders comfortable with reviewing works in progress rather than fully-baked designs and code. As I mentioned in Chapter 1, every organization these days desires to become more "agile", and iteration is a key part of that process. **It's more important to make steps in the right direction** rather than exhausting a ton of effort painting unrealistic pictures of what you want the final piece to be. A sound design system doesn't roll off an assembly line, but is rather sculpted in iterative loops, building up fidelity as the project progresses.
 
-Without setting the proper expectations, suddenly showing stakeholders new and diverse artifacts may scramble their brains. That's why it's important to communicate to get them comfortable with a fuzzier process. Despite the wishes of project managers, human beings don't neatly fit into the rigid borders of Excel documents and Gantt charts.
+If this all sounds a bit messy, that's because it is! To the dismay of some project managers, human beings don't neatly fit into the rigid borders of Excel documents and Gantt charts. True collaboration between disciplines is fuzzy and chaotic, and that's not a bad thing. Constant communication, tight feedback loops, and true collaboration become the glue that holds the process together. Get your entire team to commit to honest conversation and genuine collaboration, and the details of your process will fall into place.
 
-- Constant communication and true collaboration become the glue that holds the process together. 
+Are everyone's expectations properly set? Good! Now let's roll up our sleeves and get to work establishing our design system.
 
 ## Establishing direction
 > Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
