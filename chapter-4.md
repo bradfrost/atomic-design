@@ -278,7 +278,7 @@ Organizationally, there is often a massive divide between designers and develope
 
 Here's the thing: HTML, CSS, and presentational JavaScript build user interfaces – yes, the same user interfaces that those designers working in Photoshop and Sketch are meticulously crafting. In order for teams to build successful user interface design systems together, **it's crucial to treat [front-end development as a core part of the design process](http://bradfrost.com/blog/post/development-is-design).** 
 
-When you only show stakeholders static pictures of websites, they can naturally only comment and sign off on pictures of websites. This [sets the wrong expectations](https://stuffandnonsense.co.uk/blog/about/time_to_stop_showing_clients_static_design_visuals). But by **getting the design into the browser as fast as possible**, you confront stakeholders with the realities of the final medium much sooner. Working with HTML, CSS, and presentational JavaScript allows teams to not only create aesthetically beautiful designs, but demonstrates those uniquely-digital design considerations like: 
+When you only show stakeholders static pictures of websites, they can naturally only comment and sign off on pictures of websites. This [sets the wrong expectations](https://stuffandnonsense.co.uk/blog/about/time_to_stop_showing_clients_static_design_visuals). But by **getting the design into the browser as fast as possible**, you confront stakeholders with the realities of the final medium much sooner. Working in HTML, CSS, and presentational JavaScript allows teams to not only create aesthetically beautiful designs, but demonstrates those uniquely-digital design considerations like: 
 
 - Flexibility
 - Impact of the network
@@ -297,21 +297,25 @@ This is not to say teams must design *entirely* in the browser. As with anything
 
 > Let’s change the phrase “designing in the browser” to “deciding in the browser.” <cite>[Dan Mall](https://the-pastry-box-project.net/dan-mall/2012-september-12)</cite>
 
-Having the design represented in the browser *in addition to* other design artifacts gives teams to ability to paint a fuller picture. Teams may demonstrate aesthetically-focused design ideas as a static image and simultaneously demonstrate a working prototype of that same idea. Getting to this point requires true collaboration between designers and developers, and hinges on honest conversation to properly set everyone's expectations. 
+Having the design represented in the browser *in addition to* other design artifacts gives teams to ability to paint a fuller picture. Teams may demonstrate an aesthetically-focused design idea as a static image and simultaneously demonstrate a working prototype of that same idea. 
+
+Getting to this point requires true collaboration between designers and developers, and hinges on honest conversation to  set everyone's expectations.
 
 #### An iterative iterative iterative iterative process 
-Without setting the proper expectations, suddenly showing stakeholders new and diverse artifacts can scramble their brains. That's why it's important to set their expectations to get them comfortable with viewing works in progress rather than glossy static images. 
+I think of a successful digital design process as being quite similar to subtractive stone sculpture. At the start of the process, the sculptor (and their client) has a general idea of what they're creating, but that vision won't be fully realized until the sculpture is complete.
 
-I think of the digital design process as being quite similar to stone sculpture.
+The sculptor starts with a giant slab of rock and starts chipping away at it. After a first pass, a crude shape begins to form. They take another pass and the shape becomes more pronounced. After a few rounds of whacking away at the rock, it becomes clear that the sculptor's subject is a human form.
 
-{% include figure.html src="../images/content/stone-sculptor.jpg" caption="<a href='http://flickr.com/photos/15609463@N03/7854373494/'>image credit</a>" %}
+With the general shape of the sculpture roughed out, the artist can then begin honing in on specific sections of the piece. For instance, they may begin detailing the face. After several passes, they then move onto the arms, and then the legs. All the while, they step back to see how those details impact the overall sculpture. They continue this process until  
 
-Again, pixels are cheap.
+{% include figure.html src="../images/content/stone-sculptor.jpg" caption="<a href='http://flickr.com/photos/15609463@N03/7854373494/'>Image credit</a>" %}
 
-As mentioned in Chapter 1, most every organization these days desires to become more "agile", which I feel is shorthand for create an efficient, more collaborative process.
+Unlike stone sculpture, we have the power of *undo*! Again, pixels are cheap.
 
-- More important make steps in the right direction than painting an unrealistic final picture
-- Accept gray, blurriness. Human beings don't neatly fit into the rigid borders of Excel documents and Gantt charts, despite the wishes of project managers.
+It's essential to get stakeholders comfortable with viewing works in progress rather than fully-baked designs and functioning code. As I mentioned in Chapter 1, most every organization these days desires to become more "agile", and that is what being agile entails. Rather than painting an unrealistic final picture, **it's more important to make steps in the right direction**. 
+
+Without setting the proper expectations, suddenly showing stakeholders new and diverse artifacts may scramble their brains. That's why it's important to communicate to get them comfortable with a fuzzier process. Despite the wishes of project managers, human beings don't neatly fit into the rigid borders of Excel documents and Gantt charts.
+
 - Constant communication and true collaboration become the glue that holds the process together. 
 
 ## Establishing direction
