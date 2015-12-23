@@ -276,19 +276,40 @@ There's a fundamental misunderstanding that all coding is ultra-geeky programmin
 
 Organizationally, there is often a massive divide between designers and developers (or "marketing" and "IT", or "creative" and "engineering", or some other divisive labels). Designers and developers often sit on different floors, in different buildings altogether, in different cities, and sometimes even in different countries in different continents. While some of this organizational separation may be justified, **creating a division between designers and front-end developers is an absolutely terrible idea**.
 
-Here's the thing: HTML, CSS, and presentational JavaScript build user interfaces – yes, the same user interfaces that those designers working in Photoshop and Sketch are meticulously crafting. That's why it's so crucial to treat [front-end development as part of the design process](http://bradfrost.com/blog/post/development-is-design/) so that teams can build successful user interface design systems together. 
+Here's the thing: HTML, CSS, and presentational JavaScript build user interfaces – yes, the same user interfaces that those designers working in Photoshop and Sketch are meticulously crafting. In order for teams to build successful user interface design systems together, **it's crucial to treat [front-end development as a core part of the design process](http://bradfrost.com/blog/post/development-is-design).** 
 
-When you only show stakeholders static pictures of websites, they can naturally only comment on those pictures. But by **getting the design into the browser as fast as possible**, stakeholders are confronted the realities of the final medium much sooner. Articulating the design in the browser allows teams to not only aesthetically beautiful designs, but rather also address those uniquely-digital design considerations like performance, flexibility, ergonomics, and so on.
+When you only show stakeholders static pictures of websites, they can naturally only comment and sign off on pictures of websites. This [sets the wrong expectations](https://stuffandnonsense.co.uk/blog/about/time_to_stop_showing_clients_static_design_visuals). But by **getting the design into the browser as fast as possible**, you confront stakeholders with the realities of the final medium much sooner. Working with HTML, CSS, and presentational JavaScript allows teams to not only create aesthetically beautiful designs, but demonstrates those uniquely-digital design considerations like: 
 
-That's not to say teams must design entirely in the browser. As with anything, it's about using the right tools at the right time for the right things. Once again, Dan Mall has some words of insight:
+- Flexibility
+- Impact of the network
+- Interaction
+- Motion
+- Ergonomics
+- Color and text rendering
+- Pixel density
+- Scrolling performance
+- Device and browser quirks 
+- User preferences
+
+Crucially, jumping into the browser faster kickstarts establishing the patterns for the living, breathing design system. More on this in a bit.
+
+This is not to say teams must design *entirely* in the browser. As with anything, it's about using the right tools at the right time to articulate the right things. Once again, Dan Mall has some words of wisdom:
 
 > Let’s change the phrase “designing in the browser” to “deciding in the browser.” <cite>[Dan Mall](https://the-pastry-box-project.net/dan-mall/2012-september-12)</cite>
 
-Having the design represented in the browser *in addition to* other static design artifacts lets teams to 
+Having the design represented in the browser *in addition to* other design artifacts gives teams to ability to paint a fuller picture. Teams may demonstrate aesthetically-focused design ideas as a static image and simultaneously demonstrate a working prototype of that same idea. Getting to this point requires true collaboration between designers and developers, and hinges on honest conversation to properly set everyone's expectations. 
 
 #### An iterative iterative iterative iterative process 
-- Stone sculpture analogy
-- Get stakeholders comfortable with viewing works in progress rather than glossy static images
+Without setting the proper expectations, suddenly showing stakeholders new and diverse artifacts can scramble their brains. That's why it's important to set their expectations to get them comfortable with viewing works in progress rather than glossy static images. 
+
+I think of the digital design process as being quite similar to stone sculpture.
+
+{% include figure.html src="../images/content/stone-sculptor.jpg" caption="<a href='http://flickr.com/photos/15609463@N03/7854373494/'>image credit</a>" %}
+
+Again, pixels are cheap.
+
+As mentioned in Chapter 1, most every organization these days desires to become more "agile", which I feel is shorthand for create an efficient, more collaborative process.
+
 - More important make steps in the right direction than painting an unrealistic final picture
 - Accept gray, blurriness. Human beings don't neatly fit into the rigid borders of Excel documents and Gantt charts, despite the wishes of project managers.
 - Constant communication and true collaboration become the glue that holds the process together. 
@@ -368,3 +389,4 @@ One essential expectation to reset is the concept of *done*. Print and other phy
 ## Go forth and be atomic
 
 particle photon
+
