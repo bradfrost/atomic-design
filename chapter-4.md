@@ -300,43 +300,66 @@ This is not to say teams must design *entirely* in the browser. As with anything
 Having the design represented in the browser *in addition to* other design artifacts gives teams to ability to paint a richer, more realistic picture. Teams may demonstrate an aesthetically-focused design idea as a static image and simultaneously demonstrate a working prototype of that same idea. 
 
 #### An iterative iterative iterative iterative process 
-I think of a successful digital design process as being quite similar to subtractive stone sculpture. At the beginning of the process, the sculptor (and their patron) has a general idea of what they're creating, but that vision won't be fully realized until the sculpture is complete. 
+I believe a successful digital design process is quite similar to subtractive stone sculpture. At the beginning of the sculpting process, the artist and their patron have a general idea of what's being creating, but that vision won't be fully realized until the sculpture is complete. 
 
-The sculptor starts with a giant slab of rock and starts chipping away at it. After a first pass, a crude shape begins to form. They take another pass and the shape becomes more pronounced. After a few rounds of whacking away at the rock, it becomes clear that the sculptor's subject is a human form.
+The sculptor starts with a giant slab of rock and starts chipping away. A crude shape begins to form after the first pass, and the shape becomes more pronounced with every subsequent pass. After a few rounds of whacking away at the rock, it becomes clear that the sculptor's subject is a human form.
 
-With the general shape of the sculpture roughed out, the artist can then begin honing in on specific sections of the piece. For instance, they may begin by detailing the face. After several passes, they then move onto the arms, and then begin detailing the legs. All the while, they step back to see how those details impact the overall sculpture. This process continues until the sculpture is complete and everyone is pleased with the results.
+With the general shape of the sculpture roughed out, the artist thens begin honing in on specific sections of the piece. For instance, they may begin with the face, moving up close to detail the shape of the eyes, nose, and mouth. After several passes, they then move onto the arms, and then begin detailing the legs. At regular intervals the artist steps back to see how their detailing work impacts the overall sculpture. This process continues until the sculpture is complete and everyone is pleased with the results.
 
 {% include figure.html src="../images/content/stone-sculptor.jpg" caption="An iterative digital process is similar to subtractive stone sculpture, where fidelity is built up over many iterations. <a href='http://flickr.com/photos/15609463@N03/7854373494/'>Image credit</a>" %}
 
-Again, I think this a great way to frame a successful digital process, although unlike stone sculpture we have the power of *undo*!
+Again, I think subtractive stone sculpture is a great analogy for a successful digital process, although unlike sculpture we have the power of *undo*!
 
 It's essential to get stakeholders comfortable with reviewing works in progress rather than fully-baked designs and code. As I mentioned in Chapter 1, every organization these days desires to become more "agile", and iteration is a key part of that process. **It's more important to make steps in the right direction** than exhaust a ton of effort painting unrealistic pictures of what you want the final piece to be. **A sound design system doesn't roll off an assembly line, but is rather sculpted in iterative loops, building up fidelity as the project progresses**.
 
-If this all sounds a bit messy, that's because it is! To the dismay of some project managers, human beings don't neatly fit into the rigid borders of Excel documents and Gantt charts. True collaboration between disciplines is fuzzy and chaotic, and that's not a bad thing. Constant communication, tight feedback loops, and true collaboration therefore become the glue that holds the process together. Get your entire team to commit to honest conversation and genuine collaboration, and the details of your process will fall into place.
+If this all sounds a bit messy, that's because it is! To the dismay of some project managers, the design process doesn't fit neatly into the rigid borders of Excel documents and Gantt charts. True collaboration between disciplines is fuzzy and chaotic, and that's not a bad thing. Constant communication, tight feedback loops, and true collaboration therefore become the glue that holds the process together. Get your entire team to commit to honest conversation and genuine collaboration, and the details of your process will fall into place.
 
 Are everyone's expectations properly set? Good! Now let's roll up our sleeves and get to work establishing our design system.
 
 ## Establishing direction
-> Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
+Teams are often eager to jump right into fun high-fidelity design and development work, and clients are eager to see and react to that detailed work. However, this leads to distractions, assumptions, and all the aforementioned misguided expectations we discussed in the last section. In short,  disastrous results. **It's essential to get alignment on an overall design direction and paint the broad strokes first** before moving into high-fidelity design and development work. This requires restraint and expectation management, but doing so results in more focused decision making and more realistic work.
+
+What does this lo-fi work look like? Let's take a look at some  techniques UX designers, visual designers, and front-end developers can use to begin crafting a strong overall direction for a UI design system.
 
 ### A matter of hierarchy
-- In addition to research, important strategic conversations, etc.
-- Paint the broad strokes first, rather than leading off with high fidelity wireframes
-- Start with high-level sketches. 
-- What goes on a screen, and in what general order?
+There's a ton of up-front strategic and research work that can and should happen toward the beginning of a project. *UX designers* (known by other monikers such as *information designers*, *information architects*, *interaction designers*, etc) are tasked with synthesizing all that vital information and translating that into a user interface that solves the project's business and user goals.
+
+In a traditional waterfall process, many UX designers have gone about this task by generating high-fidelity wireframes that document every screen of the entire user experience. These wireframe documents, complete with an abundance of black rectangles and annotations, spec out the details of what the interface will accomplish, and are presented to stakeholders to get buy-in. As thorough as these documents tend to be, they don't paint the full picture and often make dangerous assumptions about visual layout and technical functionality. 
+
+Rather than jumping straight into such high-fidelity documents that paint an unrealistic picture, it's better to **start with lo-fi sketches that establish what goes on a particular screen and in what general order**. Establishing the experience's basic information architecture can be accomplished with a simple bulleted list and a conversation.
+
+{% include figure.html src="../images/content/food-bank-wireframe.png" caption="" %}
+
+Mobile-first. Do we have the right things on this screen? Are they in the right general order? These are critical things to establish, and don't require articulating any sort of layout or technical functionality.
+
+In addition to foundational information architecture, a UX designer can also articulate some site-wide UI patterns the team is anticipating utilizing  
+
+[TechCrunch wireframes]
+
+The "Featured Island" component is an area that will feature content in some fashion. How that content will be articulated is to be determined, but 
+
+- Notice these wireframes are gestural and don't make any assumptions about layout or functionality.
 
 ### Establishing visual direction
 - 20 Second Gut Test exercise - http://goodkickoffmeetings.com/2010/04/the-20-second-gut-test/
 - [Style Tiles](http://styletil.es/) by Samantha Warren reinforces pattern-based thinking
-- No doubt there are other tactics that can be used to establish what visual aesthetics 
+- No doubt there are other tactics that can be used to establish an overall art direction, but the key takeaway is to gauge what the team and stakeholders value, don't value. This will 
 - Play the tools in your toolkit to their respective strengths
+- Want to make sure all that hard work won't be thrown out later.
 
 ### Front-end Prep Chef
-- If you're not coding from day one of the project, there's something wrong.
+- If you're not coding from day one of the project, there's something wrong with the process.
 - Front-end [prep chef](http://bradfrost.com/blog/post/primed-and-ready-to-go/)
 
+### When to establish and enforce patterns
+> Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
+
+- Need time to establish the UI patterns that will be used
+- Doing so too early leads to stifling
+- Once art direction, IA, etc are established, patterns can be established and encouraged
+
 ## Roll up our sleeves
-With the broad strokes established
+With the broad strokes established, the detailing work can now take place.
 
 - [Element collages](http://danielmall.com/articles/rif-element-collages/)
 - Going from rough wireframes into the browser, iterating there
@@ -389,6 +412,3 @@ One essential expectation to reset is the concept of *done*. Print and other phy
 - Monitor progress - Lonely Planet performance 
 
 ## Go forth and be atomic
-
-particle photon
-
