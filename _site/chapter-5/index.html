@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>Maintaining Design Systems | Atomic Design by Brad Frost</title>
+  <meta name="description" content="Atomic design is a methodology for crafting effective design systems
+">
+
+  <link rel="stylesheet" href="/css/style.css">
+  
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="Maintaining Design Systems | Atomic Design by Brad Frost">
+<meta itemprop="image" content="http://atomicdesign.bradfrost.com/images/book-cover-thumb.png">
+<meta itemprop="description" content="Atomic design is a methodology for crafting effective design systems
+">
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Maintaining Design Systems | Atomic Design by Brad Frost">
+<meta name="twitter:description" content="Atomic design is a methodology for crafting effective design systems
+">
+<meta name="twitter:creator" content="@brad_frost">
+<!-- Twitter summary card with large image must be at least 280x150px -->
+<meta name="twitter:image:src" content="http://atomicdesign.bradfrost.com/images/book-cover-thumb.png/images/book-cover-thumb.png">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Maintaining Design Systems | Atomic Design by Brad Frost" />
+<meta property="og:url" content="http://atomicdesign.bradfrost.com/chapter-5/" />
+<meta property="og:image" content="http://atomicdesign.bradfrost.com/images/book-cover-thumb.png/images/book-cover-thumb.png" />
+<meta property="og:description" content="Atomic design is a methodology for crafting effective design systems
+" />
+</head>
+
+  <body>
+    <header role="banner">
+    <a href="/" rel="home"><img src="/images/atomic-design.svg" alt="" /></a>
+</header>
+
+    <main role="main">
+        <div class="text">
+    <h1><em>Chapter 5</em> Maintaining Design Systems</h1>
+    <div class="note">
+	<p>Greetings, reader! The following text is a <a href="http://bradfrost.com/blog/post/atomic-design-book/">work in progress</a> so be warned you will encounter incomplete thoughts, grammar errors, and more. If you see something worth fixing, please <a href="https://github.com/bradfrost/atomic-design">submit an issue on Github</a>. Thanks and happy reading!</p>
+</div>
+    <p>One essential expectation to reset is the concept of <em>done</em>. Print and other physical mediums involve creating tangible objects that have a sense of finality to them. That simply doesn’t exist in the digital world. The ephemeral nature of the Web is something that needs to be extolled to your clients, colleagues, and stakeholders. If we’re to create living design systems, we need to recognize that the Web is never done, and that our work can and should be constantly evolved and improved upon over time.</p>
+
+<ul>
+  <li>And they made a pattern library and lived happily ever after. Right? Not quite.</li>
+  <li>There’s a very real risk of a lot of time and effort going into making a design system and accompanying pattern library, only to have it die on the vine.</li>
+  <li>Throw the design system in the trashcan, right along side the PSDs, PDFs and other artifacts</li>
+  <li>How to prevent this?</li>
+</ul>
+
+<h3 id="make-it-maintainable">Make It Maintainable</h3>
+<ul>
+  <li>Don’t let it die on the vine and become obsolete</li>
+  <li>Sharing CSS and JS with the production environment is easy, but sharing templates is tough</li>
+  <li>Templating language should match the production environment</li>
+  <li><a href="http://bradfrost.com/blog/post/using-grunt-with-pattern-lab/">Using Grunt with Pattern Lab</a></li>
+</ul>
+
+<h3 id="the-holy-grail">The Holy Grail</h3>
+<ul>
+  <li>Holy Grail is when the pattern library and production environment are perfectly in sync. Make a change to a pattern library, and anywhere the pattern is included in production will be updated.</li>
+  <li><a href="http://rizzo.lonelyplanet.com/">Rizzo</a> by Lonely Planet has accomplished this.</li>
+  <li><a href="https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.vy45rkm7m">Chasing the holy grail</a></li>
+</ul>
+
+<h3 id="make-it-cross-disciplinary">Make it cross-disciplinary</h3>
+<ul>
+  <li>Not just a developer tool. Not just a designer tool. Every discipline invested in the success of the website should be contributing to the pattern library.</li>
+  <li>Carousel component example - amazingly complex component requiring input from business owners, editorial staff, content strategists, art directors, UX designers, front-end people, backend people</li>
+</ul>
+
+<h3 id="make-it-approachable">Make it Approachable</h3>
+<ul>
+  <li>No shocker here, but good design leads to more usage.</li>
+  <li>Avoid exposing tons of code right out of the gate as it might discourage other disciplines from looking at it (“Oh this must not be for me”)</li>
+</ul>
+
+<h3 id="make-it-visible">Make it visible</h3>
+<ul>
+  <li>Make it public.</li>
+  <li>Recruitment, recruitment, recruitment.</li>
+</ul>
+
+<h3 id="make-it-agnostic">Make it Agnostic</h3>
+<ul>
+  <li>The more agnostic pattern names are, the more versatile and reusable they become.</li>
+  <li>Nicole Sullivan <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">media object</a></li>
+</ul>
+
+<h3 id="make-it-contextual">Make it Contextual</h3>
+<ul>
+  <li>Demonstrate context. Where are</li>
+  <li>Pattern Lab lineage</li>
+</ul>
+
+<h3 id="make-it-last">Make it last</h3>
+<ul>
+  <li>Publish updates (Material Design example)</li>
+  <li>Regular E-mail newsletters, blog updates, etc, whenever things change</li>
+  <li>Monitor progress - Lonely Planet performance</li>
+</ul>
+
+<h2 id="go-forth-and-be-atomic">Go forth and be atomic</h2>
+
+    <nav role="navigaiton" class="pagination">
+    <!-- <a href="#">Next Chapter</a>
+    <a href="#">Previous Chapter</a> -->
+    <a href="/table-of-contents/">Table of Contents</a>
+</nav>
+
+</div>
+
+        <div class="banner">
+	<div class="banner-content">
+		<h3><a href="/" rel="home">Atomic Design</a></h3>
+		<p>by <a href="http://bradfrost.com" rel="me">Brad Frost</a></p>
+		<a href="http://shop.bradfrost.com/products/atomic-design-ebook" class="btn">Preorder the Book</a>
+	</div>
+</div>
+
+
+    </main>
+    <footer role="contentinfo">
+    &copy; 2015 Brad Frost
+</footer>
+
+  </body>
+</html>
