@@ -341,13 +341,32 @@ These blocky grayscale wireframes help establish the necessary [content patterns
 From the above image, you can gather that the "featured island" component will feature content in some fashion. Note the gestural nature of this sketch and how it doesn't make any specific assumptions about layout or functionality. The details of how this pattern will look and function will come later, but at the beginning stage of the project it's useful simply to define it and articulate where it might get utilized.
 
 ### Establishing visual direction
-- Important to establish what aesthetics the team and stakeholders value and don't value. As it turns out, there's a way to find this out without having to do a whole hell of a lot of design work.
+A visual designer's job is to create a visual language and apply it to the user interface in a way that aligns with the project's goals. To do this, it's essential for a visual designer to unearth what aesthetics the project stakeholders value and what they don't value. 
 
-- [20-Second Gut Test](http://goodkickoffmeetings.com/2010/04/the-20-second-gut-test/) exercise
-- [Style Tiles](http://styletil.es/) by Samantha Warren reinforces pattern-based thinking
-- No doubt there are other tactics that can be used to establish an overall art direction, but the key takeaway is to gauge . This will
+Historically, visual designers have gone about this by creating full comps — often many comps — to discover the aesthetic values of the organization. As you might imagine, generating a slew of comps from scratch takes an immense amount of time and effort, and much of that work will find itself on the cutting room floor. There must be a more efficient way.
+
+As it turns out, there's a better way to arrive at aesthetic values without having to do a whole hell of a lot of design work. Let's talk about some of the tactics for making this happen. 
+
+#### The 20-Second Gut Test
+A fantastic exercise for quickly establishing aesthetic values is the [20-Second Gut Test](http://goodkickoffmeetings.com/2010/04/the-20-second-gut-test/). Typically done as part of the project kickoff meeting, the exercise involves showing the stakeholders a handful (about 20-30) of pertinent websites for 20 seconds each. The sites you choose should be a healthy blend between industry-specific sites as well as other visually-interesting sites from other industries. For added believability, you can Photoshop in your client's logo overtop of the site's actual logo.
+
+For each site presented, each person votes on a scale from 1 to 10, where a score of 1 means "If this were our site I would quit my job and cry myself to sleep," while a score of 10 means "If this were our site I would be absolutely ecstatic!" Instruct the participants to consider visual properties they find interesting, such as typography, color, density, layout, illustration style, general vibe, and so on.
+
+{% include figure.html src="../images/content/foodbank-20-second.jpg" caption="For the Pittsburgh Food Bank website redesign, we showed a blend of same-industry sites and visually-interesting sites from other industries for 20 seconds each. The participants vote on how happy they would be if the particular site was there." %}
+
+When the exercise is complete, you quickly tally the scores and come back to the group to discuss the results. Have a conversation about the sites with the 5 lowest scores, the 5 highest scores, and the scores with the most disagreement (sites which some people ranked very highly and others ranked lowly). The participants should explain why they were attracted or repulsed by a particular site, and work through differences in opinions. 
+
+This exercise and subsequent conversation is a fantastic way of establishing the aesthetic values of the group, which the visual designer can latch onto and apply to the project's design.
+
+
+#### Style Tiles
+[Style Tiles](http://styletil.es/) by Samantha Warren reinforces pattern-based thinking
+- No doubt there are other tactics that can be used to establish an overall art direction, but the key takeaway is to gauge . This will vary from project to project.
 - Play the tools in your toolkit to their respective strengths
 - Want to make sure all that hard work won't be thrown out later.
+
+#### Element Collages
+- [Element collages](http://danielmall.com/articles/rif-element-collages/)
 
 ### Front-end Prep Chef
 - If you're not coding from day one of the project, there's something wrong with the process.
@@ -357,12 +376,11 @@ From the above image, you can gather that the "featured island" component will f
 > Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
 
 - Need time to establish the UI patterns that will be used
-- Doing so too early leads to stifling
+- Doing so too early stifles creativity and flexibility 
 - Once art direction, IA, etc are established, patterns can be established and encouraged
 
 ## Roll up our sleeves
 With the broad strokes established, the detailing work can now take place.
 
-- [Element collages](http://danielmall.com/articles/rif-element-collages/)
 - Going from rough wireframes into the browser, iterating there
 - The role of full comps, and design iteration
