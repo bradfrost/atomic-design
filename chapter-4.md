@@ -356,7 +356,7 @@ For each site presented, each person votes on a scale from 1 to 10, where a scor
 
 When the exercise is complete, you quickly tally the scores and come back to the group to discuss the results. Have a conversation about the sites with the 5 lowest scores, the 5 highest scores, and the scores with the most disagreement (sites which some people ranked very highly and others ranked lowly). The participants should explain why they were attracted or repulsed by a particular site, and work through differences in opinions. 
 
-This exercise and subsequent conversation is a fantastic way of establishing the aesthetic values of the group, which the visual designer can latch onto and apply to the project's design.
+This exercise and subsequent conversation is a fantastic way of unearthing the aesthetic values of the group, working through differences, and with any luck arriving at a general consensus for  which the visual designer can latch onto and apply to the project's design.
 
 
 #### Style Tiles
@@ -384,3 +384,4 @@ With the broad strokes established, the detailing work can now take place.
 
 - Going from rough wireframes into the browser, iterating there
 - The role of full comps, and design iteration
+- Back and forth between design and development
