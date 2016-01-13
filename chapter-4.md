@@ -373,15 +373,15 @@ Style tiles facilitate conversation to uncover what stakeholders value and what 
 Style tiles also crucially reinforce pattern-based thinking by educating stakeholders about design *systems* rather than *pages*. Presenting color swatches, type examples, and textures  exposes stakeholders to the ingredients that will underpin any implementation of the design system.
 
 #### Element Collages
-Style tiles can be fantastic tools for quickly establishing design direction, but it's also important to show  
+While style tiles are great for exploring design atmosphere, they're still a bit abstract. To get a sense of how those design ingredients will be applied to an interface, it's important to quickly move into something a bit more tangible than a style tile. But does that mean visual designers need to jump from style tiles straight into full comps? Not necessarily. 
 
-Dan Mall [Element collages](http://danielmall.com/articles/rif-element-collages/), which are more tangible 
+Somewhere in between style tiles and full comps live [*element collages*](http://danielmall.com/articles/rif-element-collages/), which are collections of UI component design explorations. Element collages provide a playground for designers to apply design atmosphere to actual interface elements, but still be free from layout and highly-polished presentation.
 
-Deliverables should always be coupled with a conversation. 
+{% include figure.html src="../images/content/ew-element-collage.jpg" caption="An element collage for the Entertainment Weekly redesign applied color, typography, and texture to actual interface elements. These collages enable important conversations about the aesthetic direction of the project." %}
 
-No doubt there are other tactics that can be used to establish an overall art direction, but the key takeaway is to gauge. This will vary from project to project.
-- Play the tools in your toolkit to their respective strengths
-- Want to make sure all that hard work won't be thrown out later.
+Like style tiles, element collages are meant to facilitate conversation about the aesthetic direction of the project. It's very clear these collages aren't an actual website, but stakeholders can still get a sense of what the site *could* look like. Conversation about these element collages can give visual designers more ideas and direction about where to take the design next, and because of the lo-fi nature of these collages, designers can quickly iterate and evolve these ideas. 
+
+No doubt other tactics exist to establish aesthetic direction for your projects, and which techniques you decide to employ will vary from project to project. But the key takeaway is to paint some broader strokes before exhausting a lot of time and effort on highly detailed design work. Engage in conversation with stakeholders at this exploratory stage creates a more inclusive process, which is far preferable to a process in which stakeholders simply approve or disapprove of design deliverables.  
 
 ### Front-end Prep Chef
 - If you're not coding from day one of the project, there's something wrong with the process.
