@@ -405,20 +405,20 @@ Let's quickly review what establishing design direction looks like across discip
 - **Visual designers ** can gather the teams' aesthetic values by conducting a 20-second gut test exercise, then create style tiles and element collages to explore initial design directions.
 - **Front-end developers** can set up project dependencies, stub out basic templates, and write structural markup for patterns the team anticipates using in the project. 
 
-This work can happen concurrently but shouldn't happen in isolation. Sure, there will need to be some head-down time for each discipline to initially get set up, but all team members should be fully aware of each disciplines' explorations in anticipation to work together to evolve these ideas. 
+This work can happen concurrently but shouldn't happen in isolation. Sure, there will need to be some initial head-down time for each discipline to get set up, but all team members should be fully aware of each disciplines' explorations in anticipation to work together to evolve these ideas. 
 
 > Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
 
-At this early stage, it's important to underscore the importance of exploration, play, and idea generation. The lo-fi nature of the techniques we just discussed help encourage this exploration.  Which ideas are the team feeling excited about. Sometimes those ideas might be best articulated as a napkin sketch, or a [Codpen](http://codepen.io/) prototype, or a Sketch  exploration, or a 
+At this early stage, it's important to stress the importance of exploration, play, and idea generation. The lo-fi nature of the techniques we just discussed help encourage this exploration, allowing team members to pursue ideas that excite them. Sometimes those ideas might be best articulated as a napkin sketch, a prototype in [Codpen](http://codepen.io/), a visual exploration in Sketch, a quick wire in Balsamiq, a motion concept in Flash, or some combination of mediums and tools. The point is for the team to generate ideas and solve problems, not to enforce a rigid order of operations. By approaching this exploration in a cross-disciplinary way, teams can find balance between aesthetics, technical opportunities and information design.
 
 ### Codifying patterns
 
-- Need time to establish the UI patterns that will be used
+- Need time to establish the UI patterns that will be used in the interface.
 - Doing so too early stifles creativity and flexibility
-- Once art direction, IA, etc are established, patterns can be established and encouraged
+- Once the general art direction, IA, etc are established, patterns can be established and codified for reuse. 
 
 ## Roll up our sleeves
-With a general design direction established, the team can roll up their sleeves and begin work the detailing work can now take place.
+With a general design direction established, the team can roll up their sleeves and begin work building out the interface and its underlying design system.
 
 - Going from rough wireframes into the browser, iterating there
 - The role of full comps, and design iteration. 
