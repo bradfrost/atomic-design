@@ -330,7 +330,7 @@ Rather than jumping straight into such high-fidelity documents, it's better to *
 
 {% include figure.html src="../images/content/food-bank-wireframe.png" caption="Basic HTML wireframes for the Greater Pittsburgh Community Food Bank homepage." %}
 
-No one in their right mind would mistaken this blocked out grayscale page as complete, but it provides more than enough information to have important conversations about the page structure and hierarchy.
+No one in their right mind would mistaken this blocked-out grayscale page as complete, but it provides more than enough information to have important conversations about the page structure and hierarchy.
 
 Making these lo-fi wireframes *[mobile-first](http://www.lukew.com/ff/entry.asp?933)* means using the constraints of small screens to force the team to focus on the core content and hierarchy. You can now ask, "Do we have the right things on this screen?" "Are they in the right general order?" These are critical questions to ask, and can and should be answered devoid of any layout or technical functionality.
 
@@ -379,24 +379,49 @@ Somewhere in between style tiles and full comps live [*element collages*](http:/
 
 {% include figure.html src="../images/content/ew-element-collage.jpg" caption="An element collage for the Entertainment Weekly redesign applied color, typography, and texture to actual interface elements. These collages enable important conversations about the aesthetic direction of the project." %}
 
-Like style tiles, element collages are meant to facilitate conversation about the aesthetic direction of the project. It's very clear these collages aren't an actual website, but stakeholders can still get a sense of what the site *could* look like. Conversation about these element collages can give visual designers more ideas and direction about where to take the design next, and because of the lo-fi nature of these collages, designers can quickly iterate and evolve these ideas. 
+Like style tiles, element collages are meant to facilitate conversation about the aesthetic direction of the project. It's very clear these collages aren't an actual website, but stakeholders can still get a sense of what the site *could* look like. Conversation about these element collages can give visual designers more ideas and direction about where to take the design next, and because of the collages' lo-fi nature, designers can quickly iterate and evolve their ideas. 
 
-No doubt other tactics exist to establish aesthetic direction for your projects, and which techniques you decide to employ will vary from project to project. But the key takeaway is to paint some broader strokes before exhausting a lot of time and effort on highly detailed design work. Engage in conversation with stakeholders at this exploratory stage creates a more inclusive process, which is far preferable to a process in which stakeholders simply approve or disapprove of design deliverables.  
+No doubt other tactics exist to establish aesthetic direction for your projects, and which techniques you decide to employ will vary from project to project. But the key takeaway is to paint some broader strokes before exhausting a lot of time and effort on highly detailed design work. Engaging in conversation with stakeholders at this exploratory stage creates a more inclusive process, which is far preferable to a process in which stakeholders simply grunt approval or disapproval of design deliverables.  
 
 ### Front-end Prep Chef
-- If you're not coding from day one of the project, there's something wrong with the process.
-- Front-end [prep chef](http://bradfrost.com/blog/post/primed-and-ready-to-go/)
+As we discussed earlier, front-end developers are often relegated to crude production machines that are brought into the project only after all the design decisions are made. This archaic process keeps disciplines out of sync with each other and prevents teams from working together in a meaningful way. This of course is a huge mistake. Including front-end development as a critical part of the design process requires changes to both project structure and team members' mentalities.
 
-### When to establish and enforce patterns
+In the restaurant business, an important-yet-unsung role is that of the prep chef. A prep chef chops vegetables, marinades meat, and makes salads in preparation for the following day's work. By  having ingredients prepared ahead of time, the kitchen staff can focus on collaboration and cooking rather than menial tasks. Without the up-front work of the prep chef, the flow of the main chefs would be interrupted and the fast pace of the kitchen would grind to a halt.
+
+{% include figure.html src="../images/content/food-prep.jpg" caption="A prep chef chops vegetables, marinades meat, makes salads, and prepares other ingredients so that the main kitchen staff can focus on cooking meals and collaborating." %}
+
+Front-end developers need to be the prep chefs of the Web design process. **If developers aren't coding from day one of the project, there's something wrong with the process**. "But Brad," I can hear you saying, "how can I start coding if I don't know what I'm supposed to code?" 
+
+Believe me, there is plenty of front-end work to do without knowing a thing about the project's information design or aesthetic direction. In addition to setting up the development environment (such as preparing Git repositories, dev servers, CMSs, and development tools), developers can dive into code and begin marking up patterns. But what should you be marking up if you don't know anything about the design? That depends on the type of project you're working on. 
+
+Are you making an e-commerce site? You can set up site search, shopping cart table, placeholder product detail page, homepage, and checkout pages. Making an online service? Start marking up the signup & login forms, forgot password flow, and dashboard. And of course most websites will have a header, footer, and main content area. Set up shell templates and write basic markup for patterns you anticipate using. Of course this markup will be initially crude, but it provides a crucial starting point for collaboration and iteration.
+
+**This front-end prep chef work frees up developers' time to collaborate *with* designers**, rather than working *after* design work is complete. With basic markup in place, developers can work with designers to help validate UX design decisions through conversations and working prototypes, can help visual designers better understand source order & web layout, and can quickly produce a fledgling codebase that will eventually evolve into the final product.
+
+### Stop, Collaborate, and Listen
+Let's quickly review what establishing design direction looks like across disciplines:
+
+- **UX designers** can create lo-fi sketches that establish basic information architecture and some anticipated UI patterns.
+- **Visual designers ** can gather the teams' aesthetic values by conducting a 20-second gut test exercise, then create style tiles and element collages to explore initial design directions.
+- **Front-end developers** can set up project dependencies, stub out basic templates, and write structural markup for patterns the team anticipates using in the project. 
+
+This work can happen concurrently but shouldn't happen in isolation. Sure, there will need to be some head-down time for each discipline to initially get set up, but all team members should be fully aware of each disciplines' explorations in anticipation to work together to evolve these ideas. 
+
 > Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
 
+At this early stage, it's important to underscore the importance of exploration, play, and idea generation. The lo-fi nature of the techniques we just discussed help encourage this exploration.  Which ideas are the team feeling excited about. Sometimes those ideas might be best articulated as a napkin sketch, or a [Codpen](http://codepen.io/) prototype, or a Sketch  exploration, or a 
+
+### Codifying patterns
+
 - Need time to establish the UI patterns that will be used
-- Doing so too early stifles creativity and flexibility 
+- Doing so too early stifles creativity and flexibility
 - Once art direction, IA, etc are established, patterns can be established and encouraged
 
 ## Roll up our sleeves
-With the broad strokes established, the detailing work can now take place.
+With a general design direction established, the team can roll up their sleeves and begin work the detailing work can now take place.
 
 - Going from rough wireframes into the browser, iterating there
-- The role of full comps, and design iteration
+- The role of full comps, and design iteration. 
 - Back and forth between design and development
+- Get into the browser and iterate there. Static design work becomes complementary to the living version
+- Once the team feels good about the 
