@@ -434,10 +434,11 @@ With input from the stakeholders and team, we iterated over the header pattern t
 
 {% include figure.html src="../images/content/techcrunch-header-complete.png" caption="The header we launched with was the culmination of plenty of conversations and decisions around the pattern's content, design, and functionality." %}
 
-Obviously the header pattern doesn't exist in a vacuum. The header is included in every template using Mustache's include pattern. `{% raw %}{{> organisms-header }}{% endraw %}`
+Obviously the header pattern doesn't exist in a vacuum. Within Pattern Lab, the header was included in every template like so: `{% raw %}{{> organisms-header }}{% endraw %}`. This allowed us to view the header in context of the rest of the page content. 
 
 {% include figure.html src="../images/content/techcrunch-incomplete-template.png" caption="In a more iterative process, there will be instances where some patterns are further developed than others. Seeing a partially-done page might look unusual out of context, but communication between the team and stakeholders should alleviate confusion." %}
 
+In the early stages of the project, the in-browser design is crude at best. Seeing these partially-designed prototypes might look unusual as an out-of-context static image, but constant communication between the team and stakeholders during the process helped everyone appreciate the evolution of the design system.
 
 ### The role of comps in a post-PSD era
 - This client feedback still sticks out in my mind: "You're asking me to comment on how beautiful a face is by showing me the nose."
