@@ -340,7 +340,7 @@ Whew. If you've made it this far, congratulations! You now know how to add and m
 
 We've now covered Pattern Lab's core functionality, but we're not done yet! Next we'll cover a few additional features that should be considered irrespective of what tool you use to create your pattern library.
 
-### Viewport tools for flexible patterns
+## Viewport tools for flexible patterns
 The myriad of devices now accessing the Web has forced designers to re-embrace the intrinsic fluidity of the medium. Thankfully, techniques like [responsive web design](http://alistapart.com/article/responsive-web-design) allow us to create layouts that look and function beautifully on any screen.
 
 It's a no-brainer that we need to establish flexible UI patterns if we want to create responsive designs, but creating fluid patterns has additional advantages. **The more fluid a UI component is, the more resilient and versatile it becomes**. Imagine being able to take a component — let's say a photo gallery slider — and plunk it anywhere we need it. Sometimes we may need it to be a full-bleed element occupying the entire viewport. Other times we may need to include it in the context of an article. And still other times we may want to include it in the sidebar. The dream is to build our components fluidly and they'll adapt their styles and functionality to fit whatever containers we put them into.
@@ -363,7 +363,7 @@ Ish. is baked into Pattern Lab, which means we can view our UIs and their underl
 
 While ish. helps designers and developers uncover bugs along the viewport continuum, I've found it to be more helpful as a client and colleague education tool. By building a device-agnostic viewport resizing tool directly into the pattern library, clients and colleagues can better appreciate the fact that their design system should look and function great no matter what the viewport size is.
 
-### A look under the hood with code view
+## A look under the hood with code view
 A common pattern library feature is the ability to peek under the hood and view the underlying code that makes up a particular component. Exposing a UI pattern's code speeds up development time (I love copying and pasting as much as the next coder) and helps team leaders enforce code syntax and style conventions. This becomes especially rewarding when a ton of developers are touching an organization's codebase.
 
 The types of code to be highlighted in a pattern library nauturally varies from organization to organization, in order to meet the requirements of the myriad environments, technologies, and conventions used. Most [pattern libraries out there in the wild](http://styleguides.io/examples.html) demonstrate patterns' underlying HTML, while others also include pattern-specific CSS and/or JavaScript. Salesforce's Lightning design system, for example, shows a pattern's HTML as well as all the (S)CSS pertaining to that pattern.
@@ -382,7 +382,7 @@ Pattern Lab provides the ability to view both a pattern's underlying HTML as wel
 
 Ultimately, whichever pattern library tool you decide to use should have some form of code view feature. And perhaps more importantly, the pattern libraries you create should showcase the types of code that enables you and your development team to be as effective as possible.
 
-### Living Documentation and Annotations
+## Living Documentation and Annotations
 In a traditional siloed design process, it's typical to see lengthy wireframe and spec documents created, debated, and ultimately approved. These documents typically take the form of gigantic PDFs, which is unfortunate considering they often contain all sorts of valuable insights, instructions, and documentation about the design system. Sadly, these bulky artifacts are often thrown into a (virtual) trashcan by the time the project makes its way into production.
   
 This shouldn't be the case. A UI's documentation should contain insights from every discipline involved in creating it, and — this is key — should be baked into the living, breathing design system. 
@@ -397,7 +397,7 @@ Pattern Lab also provides a (dare I say) cool feature that enables you to attach
 
 {% include figure.html src="../images/content/pattern-lab-annotations-1.png" caption="Pattern Lab's annotation feature is interactive and baked into the living UI." %}
 
-### Providing context with pattern lineage
+## Providing context with pattern lineage
 When looking at various patterns in a library, I've found myself wondering "Great, but where is this component actually used?" Defining and describing pattern characteristics is one thing, but there's an opportunity to provide additional contextual information about your UI patterns.
 
 Thanks to the Russian nesting doll include approach described earlier in the chapter, Pattern Lab can display what patterns make up any given component, and also show where that pattern is employed in the design system.

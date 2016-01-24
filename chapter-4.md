@@ -321,7 +321,7 @@ Teams are often eager to jump right into fun high-fidelity design and developmen
 
 What does this lo-fi work look like? Let's take a look at some  techniques UX designers, visual designers, and front-end developers can use to begin crafting a strong overall direction for a UI design system.
 
-### Establishing Content and Display Patterns
+### Establishing content and display patterns
 There's a ton of up-front strategic and research work that can and should happen toward the beginning of a project. *UX designers* (known by other monikers such as *information designers*, *information architects*, *interaction designers*, and so on) are tasked with synthesizing all that vital information and translating that into a user interface that solves the project's business and user goals.
 
 In a traditional waterfall process, many UX designers have gone about this task by generating high-fidelity wireframes that document every screen of the entire user experience. These wireframe documents, stuffed to the gills with black rectangles and annotations, spec out the details of what the interface will accomplish, and are used to get stakeholder buy-in. As thorough as these documents tend to be, they don't paint the full picture and often make dangerous assumptions about visual layout and technical functionality.
@@ -347,19 +347,19 @@ Historically, visual designers have gone about this by creating full comps — o
 
 As it turns out, there's a better path to take in order to arrive at aesthetic values without having to do a whole hell of a lot of upfront design work. Let's talk about some of the tactics for making this happen. 
 
-#### The 20-Second Gut Test
+#### The 20-second gut test
 A fantastic exercise for quickly establishing aesthetic values is the [20-Second Gut Test](http://goodkickoffmeetings.com/2010/04/the-20-second-gut-test/). Typically done as part of the project kickoff meeting, the exercise involves showing the stakeholders a handful of pertinent websites (about 20-30 of them) for 20 seconds each. The sites you choose should be a healthy blend between industry-specific sites as well as other visually-interesting sites from other industries. For added believability, you can photoshop in your client's logo in place of the site's actual logo.
 
 For each site presented, each person votes on a scale from 1 to 10, where a score of 1 means "If this were our site I would quit my job and cry myself to sleep," while a score of 10 means "If this were our site I would be absolutely ecstatic!" Instruct participants to consider visual properties they find interesting, such as typography, color, density, layout, illustration style, general vibe, and so on.
 
-{% include figure.html src="../images/content/foodbank-20-second.jpg" caption="For the Pittsburgh Food Bank website redesign, we showed a blend of same-industry sites and visually-interesting sites from other industries for 20 seconds each. The participants vote on how happy they would be if the particular site was theirs." %}
+{% include figure.html src="../images/content/foodbank-20-second.jpg" caption="For the Pittsburgh Food Bank website redesign kickoff, we showed stakeholders a variety of relevant websites for 20 seconds each. The participants voted on how happy they would be if the particular site was theirs. Then we discussed the results." %}
 
 When the exercise is complete, quickly tally up the scores and come back to the group to discuss the results. Have a conversation about the sites that received the 5 lowest scores, the 5 highest scores, and the most contentious scores (sites which some people ranked very highly and others ranked very lowly). The participants should explain why they were attracted or repulsed by a particular site, and work through differences in opinions with the group. 
 
 This exercise exposes stakeholders to a variety of aesthetic directions early in the process, allows them to work through differences in taste, and (with any luck) helps arrive at some shared aesthetic values. The visual designer can then latch onto these insights and begin to translate those aesthetic values into a visual direction for the project.
 
 
-#### Style Tiles
+#### Style tiles
 Once again, visual designers' first instinct is often to jump right into creating full comps to articulate an aesthetic direction for the project. This high-fidelity work is certainly tangible, but also wastes a ton of time and effort if the comps don't resonate with the stakeholders. Also, creating high-fidelity comps often makes big assumptions about technical feasibility, which leads to unrealistic expectations and antagonistic relationships with front-end developers.
 
 It's essential to establish a solid visual direction for the project, so how does a visual designer do that without burning a ton of time on upfront high-fidelity comps? That's the question that designer Samantha Warren answered when she created [style tiles](http://styletil.es/), a deliverable that's more tangible than a mood board but not as high fidelity as a fully-baked comp. 
@@ -372,7 +372,7 @@ Style tiles facilitate conversation to uncover what stakeholders value and what 
 
 Style tiles also crucially reinforce pattern-based thinking by educating stakeholders about design *systems* rather than *pages*. Presenting color swatches, type examples, and textures  exposes stakeholders to the ingredients that will underpin any implementation of the design system.
 
-#### Element Collages
+#### Element collages
 While style tiles are great for exploring design atmosphere, they're still a bit abstract. To get a sense of how those design ingredients will be applied to an interface, it's important to quickly move into something a bit more tangible than a style tile. But does that mean visual designers need to jump from style tiles straight into full comps? Not necessarily. 
 
 Somewhere in between style tiles and full comps live [*element collages*](http://danielmall.com/articles/rif-element-collages/), which are collections of UI component design explorations. Element collages provide a playground for designers to apply design atmosphere to actual interface elements, but still be free from layout and highly-polished presentation.
@@ -383,12 +383,12 @@ Like style tiles, element collages are meant to facilitate conversation about th
 
 No doubt other tactics exist to establish aesthetic direction for your projects, and which techniques you decide to employ will vary from project to project. But the key takeaway is to paint some broader strokes before exhausting a lot of time and effort on highly detailed design work. Engaging in conversation with stakeholders at this exploratory stage creates a more inclusive process, which is far preferable to a process in which stakeholders simply grunt approval or disapproval of design deliverables.  
 
-### Front-end Prep Chef
+### Front-end prep chef
 As we discussed earlier, front-end developers are often relegated to crude production machines that are brought into the project only after all the design decisions are made. This archaic process keeps disciplines out of sync with each other and prevents teams from working together in a meaningful way. This of course is a huge mistake. Including front-end development as a critical part of the design process requires changes to both project structure and team members' mentalities.
 
 In the restaurant business, an important-yet-unsung role is that of the prep chef. A prep chef chops vegetables, marinades meat, and makes salads in preparation for the following day's work. By  having ingredients prepared ahead of time, the kitchen staff can focus on collaboration and cooking rather than menial tasks. Without the up-front work of the prep chef, the flow of the main chefs would be interrupted and the fast pace of the kitchen would grind to a halt.
 
-{% include figure.html src="../images/content/food-prep.jpg" caption="A prep chef chops vegetables, marinades meat, makes salads, and prepares other ingredients so that the main kitchen staff can focus on cooking meals and collaborating." %}
+{% include figure.html src="../images/content/food-prep.jpg" caption="A prep chef chops vegetables, marinades meat, makes salads, and prepares other ingredients so that the main kitchen staff can focus on cooking meals and collaboration." %}
 
 Front-end developers need to be the prep chefs of the Web design process. **If developers aren't coding from day one of the project, there's something wrong with the process**. "But Brad," I can hear you saying, "how can I start coding if I don't know what I'm supposed to code?" 
 
@@ -396,9 +396,9 @@ Believe me, there is plenty of front-end work to do without knowing a thing abou
 
 Are you making an e-commerce site? You can set up site search, shopping cart table, placeholder product detail page, homepage, and checkout pages. Making an online service? Start marking up the signup & login forms, forgot password flow, and dashboard. And of course most websites will have a header, footer, and main content area. Set up shell templates and write basic markup for patterns you anticipate using. Of course this markup will be initially crude, but it provides a crucial starting point for collaboration and iteration.
 
-**This front-end prep chef work frees up developers' time to collaborate *with* designers**, rather than working *after* design work is complete. With basic markup in place, developers can work with designers to help validate UX design decisions through conversations and working prototypes, can help visual designers better understand source order & web layout, and can quickly produce a fledgling codebase that will eventually evolve into the final product.
+**This front-end prep chef work frees up developers' time to collaborate *with* designers**, rather than working *after* design is complete. With basic markup in place, developers can work with designers to help validate UX design decisions through conversations and working prototypes, can help visual designers better understand source order & web layout, and can quickly produce a fledgling codebase that will eventually evolve into the final product.
 
-### Stop, Collaborate, and Listen
+### Stop, collaborate, and listen
 Let's quickly review what establishing design direction looks like across disciplines:
 
 - **UX designers** can create lo-fi sketches that establish basic information architecture and some anticipated UI patterns.
@@ -409,22 +409,56 @@ This work can happen concurrently but shouldn't happen in isolation. Sure, there
 
 > Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
 
-At this early stage, it's important to stress the importance of exploration, play, and idea generation. The lo-fi nature of the techniques we just discussed help encourage this exploration, allowing team members to pursue ideas that excite them. Sometimes those ideas might be best articulated as a napkin sketch, a prototype in [Codpen](http://codepen.io/), a visual exploration in Sketch, a quick wire in Balsamiq, a motion concept in Flash, or some combination of mediums and tools. The point is for the team to generate ideas and solve problems, not to enforce a rigid order of operations. By approaching this exploration in a cross-disciplinary way, teams can find balance between aesthetics, technical opportunities and information design.
+At this early stage, it's important to stress the importance of exploration, play, and idea generation. The lo-fi nature of the techniques we just discussed help encourage this exploration, allowing team members to pursue ideas that excite them. Sometimes those ideas might be best articulated as a napkin sketch, a prototype in [Codpen](http://codepen.io/), a visual exploration in Sketch, a quick wire in Balsamiq, a motion concept in Flash, or some combination of mediums and tools. **The point is for the team to generate ideas and solve problems, not to enforce a rigid order of operations**. By approaching this design exploration in a cross-disciplinary way, teams can find balance between aesthetics, technical feasibility, usability, and functionality.
 
-### Codifying patterns
-- Need time to establish the UI patterns that will be used in the interface.
-- Doing so too early stifles creativity and flexibility
-- Once the general art direction, IA, etc are established, patterns can be established and codified for reuse. 
 
-## Roll up our sleeves
-With a general design direction established, the team can roll up their sleeves and begin work building out the interface and its underlying design system.
+## Rolling up our sleeves
+With a general design direction established, the team can roll up their sleeves to build out the interface and its underlying design system. But how do teams turn a vague sense of direction into a beautiful, functional, usable, and complete design system? 
 
-- Going from rough wireframes into the browser, iterating there
-- The role of full comps, and design iteration. 
-- Back and forth between design and development
+### From concept to complete
+Turning explorations into finished patterns is a blurry, imperfect process. This should come as absolutely no surprise to you by this point in the book.
 
-### The role of comps in modern 
+Riffing on the team's initial design conversations, Dan Mall created a visual exploration for TechCrunch's global header. This piece of interface was a logical place to start since the header is one of the most prominent and branded elements on the page. After a little bit of work, we hopped on a call to discuss the exploration with the client.
 
-### In-Browser Iteration
-- Get into the browser and iterate there. Static design work becomes complementary to the living version
-- Once the team feels good about the 
+{% include figure.html src="../images/content/techcrunch-header-element-collage.png" caption="Dan Mall created an element collage to explore an aesthetic direction for the global header." %}
+
+Even though this design artifact was a simple in-progress exploration, we were able to have important conversations about the header's aesthetics, hierarchy, and suggested functionality. Because the header was presented sans context, we were able to discuss the issues pertaining the header without stakeholders' focus wandering to other page elements. 
+
+Though the client didn't know it, I had been building out a working HTML version of the header behind the scenes in Pattern Lab.
+
+{% include figure.html src="../images/content/techcrunch-header-prototype.png" caption="Using Dan's exploration as a reference, I created an HTML version of the global header in Pattern Lab. This grayscale prototype helped us demonstrate interactivity and how the header would adapt across the resolution spectrum." %}
+
+This grayscale prototype allowed us to demonstrate interactivity and responsiveness, which helped facilitate even more conversation. Collectively we proposed changes to the header's layout and functionality, and I was able to make changes using the browser's dev tools during the call. Suddenly, the entire team and stakeholders were actively participating in the design process!
+
+With input from the stakeholders and team, we iterated over the header pattern to massage the layout, IA, aesthetic details, and functionality to arrive at the solution we ultimately launched with.
+
+{% include figure.html src="../images/content/techcrunch-header-complete.png" caption="The header we launched with was the culmination of plenty of conversations and decisions around the pattern's content, design, and functionality." %}
+
+Obviously the header pattern doesn't exist in a vacuum. The header is included in every template using Mustache's include pattern. `{% raw %}{{> organisms-header }}{% endraw %}`
+
+{% include figure.html src="../images/content/techcrunch-incomplete-template.png" caption="In a more iterative process, there will be instances where some patterns are further developed than others. Seeing a partially-done page might look unusual out of context, but communication between the team and stakeholders should alleviate confusion." %}
+
+
+### The role of comps in a post-PSD era
+- This client feedback still sticks out in my mind: "You're asking me to comment on how beautiful a face is by showing me the nose."
+- It's important to paint the full picture to some degree.
+- That doesn't mean you have to _lead_ with full comps though.
+- Get the big picture art direction down and then translate into the browser as quickly as possible.
+- If the feedback is "this is all wrong" then it's back to the drawing board. It's probably worth creating a new comp. But if the feedback is "Can we move this from here to here? Can we add a gray border around the article text? Can we increase the size of this image?" that's a sign the overall direction is in good shape. Those relatively minor issues can and should be addressed in the browser.
+
+### In-browser iteration
+> Let’s change the phrase “designing in the browser” to “deciding in the browser.” <cite>[Dan Mall](https://the-pastry-box-project.net/dan-mall/2012-september-12)</cite>
+
+- Once in the browser, stay in the browser. Static design work becomes complementary to the living version.
+- Process becomes a loop of design and development work, with the front-end becoming more solid and stable with each iteration.
+- Iron out browser bugs, layout issues across the resolution spectrum, solving design issues around dynamic data (character lengths, different images, etc)
+- Tighten up visuals, review usability. Have the entire team (and potentially user testing) hitting the working prototype
+
+#### When to codify a pattern
+When do you codify a pattern? In a pattern-based workflow, it's important to understand when to establish and enforce patterns.
+
+The team needs time to establish the UI patterns that will be used in the interface. Only when the team feels good about the pattern's general design and functionality should it be 
+
+Codifying patterns too early stifles the creativity and flexibility needed to solve problems and . Creating the parts first and blindly stitching them together
+patterns can be established and codified for reuse. 
+
