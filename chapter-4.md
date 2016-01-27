@@ -446,14 +446,24 @@ This allowed us to view the header within the context of the rest of the pages, 
 
 {% include figure.html src="../images/content/techcrunch-incomplete-template.png" caption="In a more iterative process, there will be instances where some patterns are further developed than others. Seeing a partially-done page might look unusual out of context, but communication between the team and stakeholders should alleviate confusion." %}
 
-In the early stages of the project, the in-browser code tends to be crude at best. That's A-okay. The intention is to stub out the template's basic architecture, wire up pattern includes, and begin marking up the patterns' structure. When the team begins styling  Seeing these partially-designed prototypes might look unusual as an out-of-context static image, but constant communication between the team and stakeholders during the process helped everyone appreciate the evolution of the design system.
+In the early stages of the project, the in-browser designs tend to look crude at best. That's a-okay. The intention is to stub out the template's basic information architecture in the browser, define patterns, wire those patterns up using includes, and begin the patterns' general markup. With that work in place, the team can collectively begin styling specific patterns and refining the overall structure.
+
+Seeing these partially-designed prototypes might look unusual to those used more traditional, pixel-perfect design deliverables. But with these rolling updates it's more important to communicate the fact that you're making progress than to communicate a false sense of perfection. 
 
 ### The role of comps in a post-PSD era
-- This client feedback still sticks out in my mind: "You're asking me to comment on how beautiful a face is by showing me the nose."
-- It's important to paint the full picture to some degree.
-- That doesn't mean you have to _lead_ with full comps though.
-- Get the big picture art direction down and then translate into the browser as quickly as possible.
-- If the feedback is "this is all wrong" then it's back to the drawing board. It's probably worth creating a new comp. But if the feedback is "Can we move this from here to here? Can we add a gray border around the article text? Can we increase the size of this image?" that's a sign the overall direction is in good shape. Those relatively minor issues can and should be addressed in the browser.
+Up until this point we've been talking about establishing a general aesthetic direction and then designing some patterns to experiment with the application of that aesthetic direction. These tactics allow teams to explore freely, iterate quickly, and get feedback sooner.
+
+But I'll never forget this client feedback we received on the first pattern-driven project I worked on: "These element collages look great, but it's like you're asking me to comment on how beautiful a face is by showing me the nose."
+
+If you've gotten to this point in your process, congratulations! If stakeholders aren't repulsed by your initial design sketches and element collages, that means you've captured the essence of the aesthetic direction and it's safe to take those explorations further. 
+
+A lot of conversation about designing in the browser implies a sentiment that PHOTOSHOP COMPS ARE THE DEVIL. Not really. At some point in time it's important to paint the full picture. The trick is knowing when to paint those full pictures, and how long to dwell in static design documents. 
+
+Full comps are still very useful for demonstrating a coherent picture. 
+
+Get the big picture art direction down and then translate into the browser as quickly as possible.
+
+If the feedback is "this is all wrong" then it's back to the drawing board. It's probably worth creating a new comp. But if the feedback is "Can we move this from here to here? Can we add a gray border around the article text? Can we increase the size of this image?" that's a sign the overall direction is in good shape. Those relatively minor issues can and should be addressed in the browser.
 
 ### In-browser iteration
 > Let’s change the phrase “designing in the browser” to “deciding in the browser.” <cite>[Dan Mall](https://the-pastry-box-project.net/dan-mall/2012-september-12)</cite>
