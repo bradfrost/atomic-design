@@ -251,7 +251,7 @@ The visual designer has already disappeared into the night by the time the front
 
 The front-end developer tries in vain to raise their concerns to the broader group, but is quickly dismissed as being either inept or curmudgeonly. Alas, it's too late in the game to make significant changes to the design, especially since it's already been approved by the stakeholders.
 
-So the developer tries their best to make lemonade out of the lemony static comps. They bend over backwards to create responsive layouts that still retain the integrity of the static comps, normalize some of the more blatant component inconsistencies, establish pattern states (like button hover, active, and disabled states) that weren't articulated in the designs, and make some on-the-fly decisions regarding the relatively interactive functionality of the experience. Discussions with designers are strained, but everyone realizes that they need to work through these issues to get the project done.
+So the developer tries their best to make lemonade out of the lemony static comps. They bend over backwards to create responsive layouts that still retain the integrity of the static comps, normalize some of the more blatant component inconsistencies, establish pattern states (like button hover, active, and disabled states) that weren't articulated in the designs, and make some on-the-fly decisions regarding the interactive aspects of the experience. Discussions with designers are strained, but everyone realizes that they need to work through these issues to get the project done.
 
 After plugging the front-end code into a CMS, frantically finalizing the site's content, and doing some last-minute QA testing, the team finally launches the site. While no one may say it out loud, there's a tinge of disappointment in the air alongside the joy and relief of getting the project out the door. After all, the live site lacks the glossy polish that the comps promised to the stakeholders, and friction between disciplines has bruised some relationships.
 
@@ -418,7 +418,7 @@ With a general design direction established, the team can roll up their sleeves 
 ### From concept to complete
 Turning explorations into finished patterns is a blurry, imperfect process. This should come as absolutely no surprise to you by this point in the book.
 
-Riffing on the team's initial design conversations, Dan Mall created a visual exploration for TechCrunch's global header. This piece of interface was a logical place to start since the header is one of the most prominent and branded elements on the page. After a little bit of work, we hopped on a call to discuss the exploration with the client.
+For the TechCrunch project, Dan Mall riffed on the team's initial design conversations to create a visual exploration for the global header. This piece of interface was a logical place to start since the header is one of the most prominent and branded elements on the page. After a little bit of work, we hopped on a call to discuss the exploration with the client.
 
 {% include figure.html src="../images/content/techcrunch-header-element-collage.png" caption="Dan Mall created an element collage to explore an aesthetic direction for the global header." %}
 
@@ -428,17 +428,25 @@ Though the client didn't know it, I had been building out a working HTML version
 
 {% include figure.html src="../images/content/techcrunch-header-prototype.png" caption="Using Dan's exploration as a reference, I created an HTML version of the global header in Pattern Lab. This grayscale prototype helped us demonstrate interactivity and how the header would adapt across the resolution spectrum." %}
 
-This grayscale prototype allowed us to demonstrate interactivity and responsiveness, which helped facilitate even more conversation. Collectively we proposed changes to the header's layout and functionality, and I was able to make changes using the browser's dev tools during the call. Suddenly, the entire team and stakeholders were actively participating in the design process!
+This grayscale prototype allowed us to demonstrate interactivity and responsiveness, which helped facilitate even more conversation. Collectively we proposed changes to the header's layout and functionality, and I was able to make changes using the browser's development tools during the call. Suddenly, the entire team and stakeholders were actively participating in the design process!
 
 With input from the stakeholders and team, we iterated over the header pattern to massage the layout, IA, aesthetic details, and functionality to arrive at the solution we ultimately launched with.
 
 {% include figure.html src="../images/content/techcrunch-header-complete.png" caption="The header we launched with was the culmination of plenty of conversations and decisions around the pattern's content, design, and functionality." %}
 
-Obviously the header pattern doesn't exist in a vacuum. Within Pattern Lab, the header was included in every template like so: `{% raw %}{{> organisms-header }}{% endraw %}`. This allowed us to view the header in context of the rest of the page content. 
+Obviously the header pattern doesn't exist in a vacuum. Within Pattern Lab, the header was included in every template using Mustache's include pattern we discussed in Chapter 3. 
+
+<pre>
+<code>
+`{% raw %}{{> organisms-header }}{% endraw %}`. 
+</code>
+</pre>
+
+This allowed us to view the header within the context of the rest of the pages, sketchy as they initially were. So while we were focusing on designing one specific pattern, we were simultaneously taking into account the context of where that pattern would be employed.
 
 {% include figure.html src="../images/content/techcrunch-incomplete-template.png" caption="In a more iterative process, there will be instances where some patterns are further developed than others. Seeing a partially-done page might look unusual out of context, but communication between the team and stakeholders should alleviate confusion." %}
 
-In the early stages of the project, the in-browser design is crude at best. Seeing these partially-designed prototypes might look unusual as an out-of-context static image, but constant communication between the team and stakeholders during the process helped everyone appreciate the evolution of the design system.
+In the early stages of the project, the in-browser code tends to be crude at best. That's A-okay. The intention is to stub out the template's basic architecture, wire up pattern includes, and begin marking up the patterns' structure. When the team begins styling  Seeing these partially-designed prototypes might look unusual as an out-of-context static image, but constant communication between the team and stakeholders during the process helped everyone appreciate the evolution of the design system.
 
 ### The role of comps in a post-PSD era
 - This client feedback still sticks out in my mind: "You're asking me to comment on how beautiful a face is by showing me the nose."
@@ -462,4 +470,3 @@ The team needs time to establish the UI patterns that will be used in the interf
 
 Codifying patterns too early stifles the creativity and flexibility needed to solve problems and . Creating the parts first and blindly stitching them together
 patterns can be established and codified for reuse. 
-
