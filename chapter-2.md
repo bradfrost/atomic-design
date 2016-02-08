@@ -87,7 +87,7 @@ Now we have simple, functional, reusable components that we can put into a broad
 ## Organisms
 {% include figure.html src="../images/content/atomic-design-organisms.png" caption="" %}
 
-**Organisms are relatively complex UI components composed of groups of molecules and possibly even atoms**. These organisms form distinct sections of an interface.
+**Organisms are relatively complex UI components composed of groups of molecules and/or atoms and/or other organisms**. These organisms form distinct sections of an interface.
 
 Let's revisit our search form molecule. A search form can often be found in the header of many Web experiences, so let's put that search form molecule into context of a header organism.
 
