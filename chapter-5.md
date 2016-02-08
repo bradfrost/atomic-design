@@ -5,12 +5,13 @@ chapterTitle: Chapter 5
 permalink: /chapter-5/
 ---
 
-One essential expectation to reset is the concept of *done*. Print and other physical mediums involve creating tangible objects that have a sense of finality to them. That simply doesn't exist in the digital world. The ephemeral nature of the Web is something that needs to be extolled to your clients, colleagues, and stakeholders. If we're to create living design systems, we need to recognize that the Web is never done, and that our work can and should be constantly evolved and improved upon over time.
-
 - And they made a pattern library and lived happily ever after. Right? Not quite.
 - There's a very real risk of a lot of time and effort going into making a design system and accompanying pattern library, only to have it die on the vine.
 - Throw the design system in the trashcan, right along side the PSDs, PDFs and other artifacts
 - How to prevent this?
+
+### Done and done
+One essential expectation to reset is the concept of *done*. Print and other physical mediums involve creating tangible objects that have a sense of finality to them. That simply doesn't exist in the digital world. The ephemeral nature of the Web is something that needs to be extolled to your clients, colleagues, and stakeholders. If we're to create living design systems, we need to recognize that the Web is never done, and that our work can and should be constantly evolved and improved upon over time.
 
 ### Make It Maintainable
 - Don't let it die on the vine and become obsolete
