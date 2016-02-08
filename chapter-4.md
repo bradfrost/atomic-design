@@ -468,22 +468,32 @@ The comps, like any other design artifact, were used to facilitate a conversatio
 Static comps can be great for establishing the over-arching design of a template, but once that's accomplished the designs should be quickly translated into the browser for further work.
 
 ### In-browser iteration
+Static design artifacts can help shape the direction of the
+
 > Let’s change the phrase “designing in the browser” to “deciding in the browser.” <cite>[Dan Mall](https://the-pastry-box-project.net/dan-mall/2012-september-12)</cite>
 
-- Once in the browser, stay in the browser. Static design work becomes complementary to the living version.
-- Process becomes a loop of design and development work, with the front-end becoming more solid and stable with each iteration.
-- [Trent Image]
+- **Once in the browser, stay in the browser**. Static design work becomes complementary to the living version.
+- The process becomes a loop of design and development work, with the front-end becoming more solid and stable with each iteration.
 
-- Iron out browser bugs, layout issues across the resolution spectrum, solving design issues around dynamic data (character lengths, different images, etc)
+[Trent Image?]
+
+Working in the browser allows teams to address layout issues across the resolution spectrum, solve design issues around dynamic data (dealing with character lengths, different image sizes, and so on)
 - Tighten up visuals, review usability. Have the entire team (and real users if you can swing it) hitting the working prototype.
+- Beautiful thing about patterns and includes. As the front-end code progresses, the level of effort to create subsequent templates decreases dramatically. Becomes a matter of including
 
-#### When to codify a pattern
-When do you codify a pattern? In a pattern-based workflow, it's important to understand when to establish and enforce patterns.
+#### When to codify patterns
+When do you codify a pattern? In a pattern-based workflow, it's important to understand when to establish and enforce patterns. 
 
-The team needs time to establish the UI patterns that will be used in the interface. Only when the team feels good about the pattern's general design and functionality should it be 
+The team needs time to establish the UI patterns that will be used in the interface. Only when the team feels good about the pattern's general design and functionality should it be codified as a pattern. 
 
 Codifying patterns too early stifles the creativity and flexibility needed to solve problems and . Creating the parts first and blindly stitching them together
 patterns can be established and codified for reuse. 
 
 ## Bring it on home
+The website is taking shape and the team is cooking with grease to bring the website home.
+- Final pass of design details
+- Browser and device testing
+- Tighten up documentation 
+- CMS integration (more on this in Chapter 5) 
+- Launch website. Pour champagne
 
