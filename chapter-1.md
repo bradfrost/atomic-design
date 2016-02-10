@@ -82,7 +82,7 @@ The short answer is that modularity matters more than ever. Right now, our entir
 
 Like it or not, this multi-device universe is our reality. It was hard enough to get our web pages to display consistently in a handful of desktop browsers, but we’re now tasked with ensuring our web experiences look and function beautifully on a plethora of smartphones, tablets, phablets, netbooks, notebooks, desktops, TVs, game consoles, and more. 
 
-[Ed]: (Plethora plethora plethora. It's nice to say, it tastes good. But it's a word I dislike. Or rather a word whose use I dislike. It rubs me the wrong way. It feels self-conscious. A plethora is an excess of something, not just a large amount. As the vast number of devices feels excessive, I'll let it stand. Medically it's a bodily condition characterized by an excess of blood and marked by swelling and a florid complexion. So there you go.)
+[Ed]: # (Plethora plethora plethora. It's nice to say, it tastes good. But it's a word I dislike. Or rather a word whose use I dislike. It rubs me the wrong way. It feels self-conscious. A plethora is an excess of something, not just a large amount. As the vast number of devices feels excessive, I'll let it stand. Medically it's a bodily condition characterized by an excess of blood and marked by swelling and a florid complexion. So there you go.)
 
 To address this reality while maintaining our sanity, it’s absolutely necessary for us to take a step back and break these giant responsibilities into smaller, more manageable chunks.
 
