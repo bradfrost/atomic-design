@@ -12,14 +12,13 @@ Awful things. I’m so glad these book things with their razor-sharp pages aren�
 Oh, wait.
 
 ## Our paginated past
-The page has been with us for a long time now. A few millennia, actually. The first books were thick slabs of clay created about 4,000 years ago, soon replaced by scrolls as the preferred way to consume the written word. And while reading technology has come a long way – from papyrus to parchment to paperback to pixels – the concept of the page holds strong to this day. 
+The page has been with us for a long time now. A few millennia, actually. The first books were thick slabs of clay created about [[4,000 years ago]], soon replaced by scrolls as the preferred way to consume the written word. And while reading technology has come a long way – from papyrus to parchment to paperback to pixels – the concept of the page holds strong to this day. 
 
-[Ed]: # (This comment won't appear in the HTML output. Useful or not?)
-[Ed]: # (Tablets have been found that date to around 2000BC. These were superseded by scrolls, not the other way around as you put it. Also, I couldn't resist adding papyrus before parchment to your alliterative list!)
+[[*Ed: Tablets have been found that date to around 2000BC. These were superseded by scrolls, not the other way around as you put it. Also, I couldn't resist adding papyrus before parchment to boost your alliteration!*]]
 
-The page metaphor has been baked into the lexicon of the web since the very beginning. Tim Berners-Lee invented the World Wide Web so that he, his colleagues at CERN, and other academics could easily share and link together their world of *documents*. This document-based, academic genesis of the web is why the concept of the page is so deeply ingrained in the vocabulary of the internet.
+The page metaphor has been baked into the lexicon of the [[web]] since the very beginning. Tim Berners-Lee invented the World Wide Web so that he, his colleagues at CERN, and other academics could easily share and link together their world of *documents*. This document-based, academic genesis of the web is why the concept of the page is so deeply ingrained in the vocabulary of the internet.
 
-[Ed]: # (So, an uppercase W on web? I don't think so. It's a bit old-fashioned. You don't capitalize internet, I notice. World Wide Web is fine, though.)
+[[*Ed: An uppercase W on web? I don't think so. It's a bit old-fashioned. You don't capitalize internet, I notice. World Wide Web is fine, though.*]]
 
 So what? 
 
@@ -48,9 +47,9 @@ But we’re now 25 years into this new medium, and this once necessary figure of
 
 “How are we ever going to redesign this university website that contains over 30,000 *pages*?!”
 
-All of the statements above make the fundamental mistake of assuming a page is a uniform, isolated, quantifiable thing. The reality is that the web is a fluid, bidirectional, interdependent medium. As soon as we come to terms with this fact, the notion of the page quickly erodes as a useful means to scope and create web experiences.
+All of the statements above make the fundamental mistake of assuming a page is a uniform, isolated, quantifiable thing. The reality is that the web is a fluid, [[bidirectional]], interdependent medium. As soon as we come to terms with this fact, the notion of the page quickly erodes as a useful means to scope and create web experiences.
 
-[Ed]: # (What do you mean by bidirectional? That there's communication between publisher and reader?)
+[[*Ed: What do you mean by bidirectional? That there's communication between publisher and reader?*]]
 
 How long will a homepage take to build? Well, that sort of depends on what’s on it, right? Maybe the homepage simply consists of a  tagline and a background image, which means it could be done by lunch. Or maybe it’s chock-full of carousels, dynamic forms, and third-party integrations. In that case, maybe the homepage will take several months to complete. 
 
@@ -68,9 +67,9 @@ and Henry Ford’s assembly line forever transformed the automobile manufacturin
 
 As the machine age became the computer age, computer scientists began practicing object-oriented programming and establishing important modular concepts like *separation of concerns* and the *single responsibility principle*. It is from this world that the World Wide Web was born, so it’s no surprise that [modular design](http://www.w3.org/DesignIssues/Principles.html#Modular) quickly became a design principle for the architecture of the web. 
 
-Slowly, but surely, these concepts found their way into web designers’ workflows. In the early 2000s we saw the introduction of libraries like [YUI](http://yuilibrary.com/) and [jQuery UI](http://jqueryui.com/) that provided developers with a toolkit of widgets and patterns to better create interactive interfaces.
+Slowly, but surely, these concepts found their way into web designers’ workflows. In the early 2000s we saw the introduction of libraries like [YUI](http://yuilibrary.com/) and [jQuery UI](http://jqueryui.com/) that provided developers with a toolkit of widgets and patterns [[to better create]] interactive interfaces.
 
-[Ed]: # (To better create or to create better?)
+[[*Ed: To better create or to create better?*]]
 
 If modularity has been around for such a long time, why are we talking about it now?
 
@@ -89,48 +88,52 @@ To address this reality while maintaining our sanity, it’s absolutely necessar
 And that’s exactly what folks are doing. The spirit of modularity is weaving its way into every aspect of the web creation process and having profound effects on organizations’ strategy, process, content, design, and development.
 
 ### A manageable strategy
-Every organization is finally realizing that bulldozing their entire website and replacing it with a New-And-Shiny™ website every three-to-eight years isn’t (and never was) an optimal solution.
+Every organization is finally realizing that bulldozing their entire website and replacing it with a New-And-Shiny™ website every three to eight years isn’t (and never was) an optimal solution.
 
-Out with the old! In with the new! It’s certainly an attractive prospect. But even before the launch-party confetti is swept up, the calls start coming in. “You moved my cheese!” cry the users, who spent years learning the previous interface and functionality. 
+Out with the old! In with the new! It’s certainly an attractive prospect. But even before the launch party confetti is swept up, the calls start coming in. “You moved my cheese!” cry the users, who spent years learning the previous interface and functionality. 
 
-When massive redesigns launch with significant changes to the experience, users get knocked down what Jared Spool calls the [“Magic Escalator of Acquired Knowledge”](http://www.uie.com/articles/magic_escalator/). Huge redesigns are a jolt to the system, and newly-frustrated users have to spend a great deal of time and energy relearning the experience in order to slowly climb back up that escalator of acquired knowledge. 
+When massive redesigns launch with significant changes to the experience, users get knocked down what Jared Spool calls the [“Magic Escalator of Acquired Knowledge”](http://www.uie.com/articles/magic_escalator/). Huge redesigns are a jolt to the system, and newly frustrated users have to spend a great deal of time and energy relearning the experience in order to slowly climb back up that escalator of acquired knowledge. 
 
-In addition to disorienting users, these monolithic redesigns don’t get to the organizational root of the problem. Without a fundamental change in process, history is bound to repeat itself, and what’s New-And-Shiny™ today becomes Old-And-Crusty™ tomorrow. The cycle repeats itself as companies push off minor updates until the next Big Redesign, ultimately paralyzing themselves and frustrating users in the process.
+In addition to disorienting users, these monolithic redesigns don’t get to the organizational root of the problem. Without a fundamental change in process, history is bound to repeat itself, and what’s New-And-Shiny™ today becomes Old-And-Crusty™ tomorrow. The cycle repeats itself as companies push off minor updates until the next big redesign, ultimately paralyzing themselves and frustrating users in the process.
 
-Thankfully, even massive organizations are taking cues from the smaller, leaner startup world and striving to get things out the door quicker. By creating *minimum viable products* and shipping often to iteratively improve the experience, organizations are able to better address user feedback and keep up with the ever-shifting Web landscape.
+Thankfully, even massive organizations are taking cues from the smaller, leaner startup world and striving to get things out the door quicker. By creating *minimum viable products* and shipping often to iteratively improve the experience, organizations are able to better address user feedback and keep up with the ever-shifting web landscape.
 
-Moving away from Ron-Popeil-esque, set-it-and-forget-it redesigns requires deliberate changes in organizational structure and workflow. Which is a heck of a lot easier said than done.
+Moving away from [[Ron Popeil]]-esque, set-it-and-forget-it redesigns requires deliberate changes in organizational structure and workflow. Which is a heck of a lot easier said than done.
+
+[[*Ed: Will anyone outside the US have heard of Ron Popeil? I had to look him up.*]]
 
 ### An iterative process 
-If I had a quarter for every time I heard some stakeholder declare “we’re trying to be more agile,” I’d be orbiting the earth in my private spacecraft instead of writing this book.
+If I had a quarter for every time I heard some stakeholder declare “We’re trying to be more agile,” I’d be orbiting the earth in my private spacecraft instead of writing this book.
 
-Wanting to be more agile is commendable. But “agile” is a loaded term, with big differences between capital-“A” Agile and lowercase-“a” agile. Capital-“A” Agile is a specific methodology for software development, equipped with a [manifesto](http://www.agilemanifesto.org/) and accompanying frameworks like [Scrum](http://en.wikipedia.org/wiki/Scrum_%28software_development%29) and [Lean](http://en.wikipedia.org/wiki/Lean_software_development). 
+Wanting to be more agile is commendable. But _agile_ is a loaded term, with big differences between capital-A Agile and lowercase-a agile. Capital-A Agile is a specific methodology for software development, equipped with a [manifesto](http://www.agilemanifesto.org/) and accompanying frameworks like [Scrum](http://en.wikipedia.org/wiki/Scrum_%28software_development%29) and [Lean](http://en.wikipedia.org/wiki/Lean_software_development). 
 
-Lowercase-“a” agile is more of an informal desire to create an efficient process. This desire may certainly involve adopting general [principles](http://www.agilemanifesto.org/principles.html) from capital-“A” Agile, but it may not involve adopting the Agile process in its entirety. Project manager Brett Harned explains:
+Lowercase-a agile is more of an informal desire to create an efficient process. This desire may certainly involve adopting general [principles](http://www.agilemanifesto.org/principles.html) from capital-A Agile, but it may not involve adopting the Agile process in its entirety. Project manager Brett Harned explains:
 
 > We want to be more agile; we’re embracing change, continuing improvement, being as flexible as possible, and adapting as we see fit. The thing is, we won’t ever truly be Agile, as the Manifesto states. That’s okay, as long as we say what we will be. <cite>[Brett Harned](http://cognition.happycog.com/article/diy-process)</cite>
 
-Organizational structure, client relations, personalities, etc all play major roles in determining a project’s process. The trick is to find the process that works best for you, your organizational constraints and opportunities.
+Organizational structure, client relations, personalities, and so on all play major roles in determining a project’s process. The trick is to find the process that works best for you, your organizational constraints and opportunities.
 
 Even though it may be impossible to adopt a truly Agile process, it’s still a sound idea to work in cross-disciplinary teams, get into the final environment faster, ship early and often, and break bigger tasks into smaller components. In Chapter 4, we’ll detail how to establish an effective pattern-based workflow.
 
 ### Modularizing content: I’m on Team Chunk 
 > Get your content ready to go anywhere, because it’s going to go everywhere. <cite>[For A Future-Friendly Web](http://bradfrost.com/blog/web/for-a-future-friendly-web/)</cite>
 
-Publishing content for the Web used to be a fairly straightforward endeavor, as the desktop Web was the only game in town. Oh, how things have changed. Today, our content is being consumed by a whole slew of  smartphones, dumb phones, netbooks, notebooks, tablets, e-readers, smart watches, TVs, game consoles, digital signage, car dashboards, and more.
+Publishing content for the Web used to be a fairly straightforward endeavor, as the desktop web was the only game in town. Oh, how things have changed. Today, our content is consumed by a whole slew of smartphones, dumb phones, netbooks, notebooks, tablets, e-readers, smartwatches, TVs, game consoles, digital signage, car dashboards, and more.
 
-In order to properly address this increasingly diverse and eclectic digital landscape, we need to dramatically overhaul our perception of content and the tools we use to manage it.
+To properly address this increasingly diverse and eclectic digital landscape, we need to dramatically overhaul our perception of content and the tools we use to manage it.
 
 > In the future, what I believe is that we are going to have better content management and content publishing tools. We are going to have ways to take well-structured content, well-designed chunks of content that we can then figure out how we want to restructure and publish and display in a way that’s going to be right for the appropriate platform. <cite>[Karen McGrane](http://karenmcgrane.com/2012/09/04/adapting-ourselves-to-adaptive-content-video-slides-and-transcript-oh-my/)</cite>
 
-Thankfully, this future is starting to take shape. Organizations are recognizing the need to create modularized content to better reach their audience wherever they may be. And content management systems are evolving beyond their Web publishing platform roots into tools that can elegantly create and maintain modular content. While sophisticated content management systems have existed for years now in the form of custom solutions like [NPR’s COPE (Create Once, Publish Everywhere) platform](http://www.programmableweb.com/news/cope-create-once-publish-everywhere/2009/10/13) , smart modular thinking is making its way into mainstream content management systems.
+Thankfully, this future is starting to take shape. Organizations are recognizing the need to create modularized content to better reach their audience wherever they may be. And content management systems are evolving beyond their web publishing platform roots into tools that can elegantly create and maintain modular content. While sophisticated content management systems have existed for years in the form of custom solutions like [NPR’s COPE (Create Once, Publish Everywhere) platform](http://www.programmableweb.com/news/cope-create-once-publish-everywhere/2009/10/13), smart modular thinking is making its way into mainstream content management systems.
 
 ### Classy code
-Modularity has long been a staple principle in the world of computer science, as we discussed earlier in the chapter. While this principle existed long before the Web was invented, it has taken some time for modularity to become engrained in the minds and hearts of Web developers.
+Modularity has long been a staple principle in the world of computer science, as we discussed earlier. While this principle existed long before the web was invented, it has taken some time for modularity to become engrained in the minds and hearts of web developers.
 
-Despite it being around since 1995, JavaScript, the programming language of the Web, first had to endure some growing pains in order to mature into the capable, respected language it is today. Now that JavaScript has grown up and the dust has settled, developers can now apply those tried-and-true computer science principles to their Web development workflows. As a result, we’re seeing folks develop sophisticated JavaScript [patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/) and architectures.
+Despite being around since 1995, JavaScript, the programming language of the web, first had to endure some growing pains to mature into the capable, respected language it is today. Now that JavaScript [[has grown up and the dust has settled]], developers can now apply those tried-and-true computer science principles to their web development workflows. As a result, we’re seeing folks develop sophisticated [JavaScript patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/) and architectures.
 
-Applying modular programming principles to JavaScript is a bit of a no brainer, since JavaScript is itself a programming language. But  object-oriented thinking is weaving its way into other aspects of the Web as well, including CSS, the styling language of the Web. Methodologies like [OOCSS](http://oocss.org/), [SMACSS](https://smacss.com/), and [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax) have cropped up to help Web designers create and maintain modular CSS architectures.
+[[*Ed: Mixing metaphors? Grown up and swapped short pants for comfortable slacks, maybe?*]]
+
+Applying modular programming principles to JavaScript is a bit of a no brainer, since JavaScript is itself a programming language. But object-oriented thinking is weaving its way into other aspects of the Web as well, including CSS, the styling language of the Web. Methodologies like [OOCSS](http://oocss.org/), [SMACSS](https://smacss.com/), and [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax) have cropped up to help Web designers create and maintain modular CSS architectures.
 
 ### Visually repaired
 Not only is modularity infiltrating the code side of style on the Web, it’s totally revolutionizing how visual designers approach modern Web design. 
