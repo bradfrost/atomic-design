@@ -9,10 +9,13 @@ A long, long time ago, there were these things called _books_. Remember them? Th
 
 Awful things. I’m so glad these book things with their razor-sharp pages aren’t around anymore.
 
-Oh wait.
+Oh, wait.
 
 ## Our paginated past
-The _page_ has been with us for a long time now. A few millennia, actually. The first books were thick slabs of clay created about 2,000 years ago, which quickly replaced scrolls as the preferred way to consume the written word. And while reading technology has come a long way – from parchment to paperback to pixels – the concept of the page holds strong to this day. 
+The page has been with us for a long time now. A few millennia, actually. The first books were thick slabs of clay created about 4,000 years ago, soon replaced by scrolls as the preferred way to consume the written word. And while reading technology has come a long way – from papyrus to parchment to paperback to pixels – the concept of the page holds strong to this day. 
+
+[Ed]: # (This comment won't appear in the HTML output. Useful or not?)
+[Ed]: # (Tablets have been found that date to around 2000BC. These were superceded by scrolls, not the other way around as you put it. Also, I couldn't resist adding papyrus before parchment to your alliterative list!)
 
 The page metaphor has been baked into the lexicon of the Web since the very beginning. Tim Berners-Lee invented the World Wide Web so that he, his colleagues at CERN, and other academics could easily share and link together their world of *documents*. This document-based, academic genesis of the Web is why the concept of the *page* is so deeply ingrained in the vocabulary of the internet.
 
