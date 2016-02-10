@@ -297,14 +297,14 @@ This is not to say teams must design *entirely* in the browser. As with anything
 
 > Let’s change the phrase “designing in the browser” to “deciding in the browser.” <cite>[Dan Mall](https://the-pastry-box-project.net/dan-mall/2012-september-12)</cite>
 
-Having the design represented in the browser *in addition to* other design artifacts gives teams to ability to paint a richer, more realistic picture. Teams may demonstrate an aesthetically-focused design idea as a static image and simultaneously demonstrate a working prototype of that same idea.
+Having the design represented in the browser *in addition to* other design artifacts gives teams the ability to paint a richer, more realistic picture. Teams may demonstrate an aesthetically-focused design idea as a static image and simultaneously demonstrate a working prototype of that same idea.
 
 #### An iterative iterative iterative iterative process
 I believe a successful digital design process is quite similar to subtractive stone sculpture. At the beginning of the sculpting process, the artist and their patron have a general idea of what's being creating, but that vision won't be fully realized until the sculpture is complete.
 
 The sculptor starts with a giant slab of rock and starts chipping away. A crude shape begins to form after the first pass, and the shape becomes more pronounced with every subsequent pass. After a few rounds of whacking away at the rock, it becomes clear that the sculptor's subject is a human form.
 
-With the general shape of the sculpture roughed out, the artist thens begin honing in on specific sections of the piece. For instance, they may begin with the face, moving up close to detail the shape of the eyes, nose, and mouth. After several passes, they then move onto the arms, and then begin detailing the legs. At regular intervals the artist steps back to see how their detailing work impacts the overall sculpture. This process continues until the sculpture is complete and everyone is pleased with the results.
+With the general shape of the sculpture roughed out, the artist then begins honing in on specific sections of the piece. For instance, they may begin with the face, moving up close to detail the best shape of the eyes, nose, and mouth. After several passes, they then move onto the arms, and then begin detailing the legs. At regular intervals the artist steps back to see how their detailing work impacts the overall sculpture. This process continues until the sculpture is complete and everyone is pleased with the results.
 
 {% include figure.html src="../images/content/stone-sculptor.jpg" caption="An iterative digital process is similar to subtractive stone sculpture, where fidelity is built up over many iterations. <a href='http://flickr.com/photos/15609463@N03/7854373494/'>Image credit</a>" %}
 
