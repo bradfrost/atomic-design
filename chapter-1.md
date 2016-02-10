@@ -15,63 +15,78 @@ Oh, wait.
 The page has been with us for a long time now. A few millennia, actually. The first books were thick slabs of clay created about 4,000 years ago, soon replaced by scrolls as the preferred way to consume the written word. And while reading technology has come a long way – from papyrus to parchment to paperback to pixels – the concept of the page holds strong to this day. 
 
 [Ed]: # (This comment won't appear in the HTML output. Useful or not?)
-[Ed]: # (Tablets have been found that date to around 2000BC. These were superceded by scrolls, not the other way around as you put it. Also, I couldn't resist adding papyrus before parchment to your alliterative list!)
+[Ed]: # (Tablets have been found that date to around 2000BC. These were superseded by scrolls, not the other way around as you put it. Also, I couldn't resist adding papyrus before parchment to your alliterative list!)
 
-The page metaphor has been baked into the lexicon of the Web since the very beginning. Tim Berners-Lee invented the World Wide Web so that he, his colleagues at CERN, and other academics could easily share and link together their world of *documents*. This document-based, academic genesis of the Web is why the concept of the *page* is so deeply ingrained in the vocabulary of the internet.
+The page metaphor has been baked into the lexicon of the web since the very beginning. Tim Berners-Lee invented the World Wide Web so that he, his colleagues at CERN, and other academics could easily share and link together their world of *documents*. This document-based, academic genesis of the web is why the concept of the page is so deeply ingrained in the vocabulary of the internet.
+
+[Ed]: # (So, an uppercase W on web? I don't think so. It's a bit old-fashioned. You don't capitalize internet, I notice. World Wide Web is fine, though.)
 
 So what? 
 
-As we’ll discuss throughout this book, the way things are named very much impacts how they’re perceived and utilized. Thinking of the Web as *pages* has real ramifications on how people interact with web experiences, and influences how we as an industry go about creating Web interfaces.
+As we’ll discuss throughout this book, the way things are named very much impacts how they’re perceived and utilized. Thinking of the web as pages has real ramifications on how people interact with web experiences, and influences how we go about creating web interfaces.
 
-From the beginning, the page metaphor provided users with a familiar language for which to navigate this brave new World Wide Web. Concepts like bookmarking, pagination, etc. helped new Web users explore and eventually master an entirely new medium using conventions they were already comfortable with.
+[Ed]: # (Normally, I'd change utilized for used, but here I think you can get away with it, if we stretch the meaning of utilized to be 'turned into useful tools'.)
+
+From the beginning, the page metaphor provided users with a familiar language with which to navigate this brave new World Wide Web. Concepts like bookmarking and pagination helped new web users explore and eventually master an entirely new medium using conventions they were already comfortable with.
+
+[Ed]: # (I tend to remove etc. (and e.g. and i.e.) from main narrative text. Often authors aren't really sure what they'd actually include behind an etc. and readers are often none the wiser as well. Such abbreviations can trip readers up, and at the very least interrupt the flow of reading. Sometimes I'll replace etc. with and so on, depending on the context. These abbreviations are useful, however, in lists and tables.)
 
 {% include figure.html src="../images/content/chrome-webpage.png" caption="Chrome browser displaying ‘This webpage is not available’ message" %}
 
-The page was–and continues to be–a very visible and helpful metaphor for the end users of the Web. It also has a profound influence on how Web experiences are created.
+The page was—and continues to be—a very visible and helpful metaphor for the users of the web. It also has a profound influence on how web experiences are created.
 
-In the early days of the Web, companies looking to get online simply translated their printed materials onto their websites. But even though these brochure websites offered a very one-dimensional perspective of what the Web could offer, viewing websites as digital representations of the printed page was easy for creators to wrap their heads around. 
+[Ed]: # (It's more conventional in US English to use em dashes rather than en dashes in this way.)
+[Ed]: # (I find end users to be a dead phrase. Are there start users and middle users?)
 
-But we’re now 25 years into this new medium, and this once-necessary figure of speech has overstayed its welcome. Unfortunately, the page metaphor continues to run deep with respects to how we scope and execute our Web projects. Here are just a few examples I hear on a regular basis:
+In the early days of the web, companies looking to get online simply translated their printed materials onto their websites. But even though these brochure websites offered a very one-dimensional perspective of what the web could offer, viewing websites as digital representations of the printed page was easy for creators to wrap their heads around. 
 
-“We’re a startup looking to launch a 5-*page* website this October…”
+But we’re now 25 years into this new medium, and this once necessary figure of speech has overstayed its welcome. Unfortunately, the page metaphor continues to run deep with respect to how we scope and execute our web projects. Here are just a few examples I hear on a regular basis:
 
-“Brad, how long will the home *page* take to build?”
+“We’re a startup looking to launch a five-*page* website this October…”
+
+“Brad, how long will the home*page* take to build?”
 
 “How are we ever going to redesign this university website that contains over 30,000 *pages*?!”
 
-All of the above statements make the fundamental mistake of assuming a *page* is a uniform, isolated, quantifiable thing. The reality is that the Web is a fluid, bi-directional, interdependent medium. As soon as we come to terms with this fact, the notion of the page quickly erodes as a useful means to scope and create Web experiences.
+All of the statements above make the fundamental mistake of assuming a page is a uniform, isolated, quantifiable thing. The reality is that the web is a fluid, bidirectional, interdependent medium. As soon as we come to terms with this fact, the notion of the page quickly erodes as a useful means to scope and create web experiences.
 
-How long will a homepage take to build? Well, that sort of depends on what’s on it, right? Maybe the homepage simply consists of a  tagline and a background image, which means it could be done by lunch. Or maybe it’s chock full of carousels, dynamic forms, and third-party integrations. In that case, maybe the homepage will take several months to complete. 
+[Ed]: # (What do you mean by bidirectional? That there's communication between publisher and reader?)
 
-As for the 30,000-page university website, it might be tempting to declare, “Thousands of pages!? Wow, that sounds challenging!” But in reality, those 30,000 pages may consist of three content types and two over-arching layouts.
+How long will a homepage take to build? Well, that sort of depends on what’s on it, right? Maybe the homepage simply consists of a  tagline and a background image, which means it could be done by lunch. Or maybe it’s chock-full of carousels, dynamic forms, and third-party integrations. In that case, maybe the homepage will take several months to complete. 
+
+As for the 30,000-page university website, it might be tempting to declare, “Thousands of pages?! Wow, that sounds challenging!” But in reality, those 30,000 pages may consist of three content types and two overarching layouts.
 
 Ultimately, a project’s level of effort is much better determined by the functionality and [components](http://bradfrost.com/blog/post/scope-components-not-pages/) contained within those pages, rather than on the quantity of pages themselves.
 
-The page metaphor served its purpose helping users familiarize themselves with the Web, and provided creators with a necessary transitional language for which to create for a brand new medium. But in order to create thoughtful interfaces meant to be served to a multitude of connected devices, the time has come for us to evolve beyond the page.
+The page metaphor has served its purpose helping users familiarize themselves with the web, and provided creators with the necessary transitional language with which to create for a brand new medium. But to build thoughtful interfaces meant to be served to a multitude of connected devices, the time has come for us to evolve beyond the page.
 
 ## Tearing up the page
-Thankfully, the Web community is hard at work establishing principles and practices to help us effectively talk about and create for the Web. And there’s one concept that keeps popping up in every conversation about how to create successful Web experiences: **modularity**. 
+Thankfully, the web community is hard at work establishing principles and practices to help us effectively talk about and create for the web. And there’s one concept that keeps popping up in every conversation about how to make successful web experiences: **modularity**. 
 
-The concept of modularity predates the Web by a long shot. The Industrial Revolution brought about interchangeable parts
-and Henry Ford’s assembly line, which forever transformed the automobile-manufacturing process. Early cars and components were individually crafted, which led to many safety and maintainability nightmares. Ford broke the automobile down into its component parts and modularized the assembly process. The results spoke for themselves: more uniform, more reliable, safer cars rolled out of the factory, and in record time to boot.   
+Modularity predates the web by a long shot. The Industrial Revolution brought about interchangeable parts
+and Henry Ford’s assembly line forever transformed the automobile manufacturing process. The earliest cars and components were individually crafted, which led to many safety and maintainability nightmares. Ford broke the automobile down into its component parts and modularized the assembly process. The results spoke for themselves: more uniform, more reliable, safer cars rolled out of the factory, and in record time to boot.   
 
-As the machine age transitioned into the computer age, the computer science field began practicing object-oriented programming and establishing important modular concepts like *separation of concerns* and the *single responsibility principle*. It is from this world that the World Wide Web was born, so it’s no surprise that [modular design](http://www.w3.org/DesignIssues/Principles.html#Modular) quickly became a design principle for the architecture of the Web. 
+As the machine age became the computer age, computer scientists began practicing object-oriented programming and establishing important modular concepts like *separation of concerns* and the *single responsibility principle*. It is from this world that the World Wide Web was born, so it’s no surprise that [modular design](http://www.w3.org/DesignIssues/Principles.html#Modular) quickly became a design principle for the architecture of the web. 
 
-Slowly, but surely, these concepts found their way into web designers’ workflows. In the early 2000s we saw the introduction of libraries like [YUI](http://yuilibrary.com/) and [jQuery UI](http://jqueryui.com/), which provided developers with a toolkit of widgets and patterns to better create interactive interfaces.
+Slowly, but surely, these concepts found their way into web designers’ workflows. In the early 2000s we saw the introduction of libraries like [YUI](http://yuilibrary.com/) and [jQuery UI](http://jqueryui.com/) that provided developers with a toolkit of widgets and patterns to better create interactive interfaces.
+
+[Ed]: # (To better create or to create better?)
 
 If modularity has been around for such a long time, why are we talking about it now?
 
-The short answer is that modularity matters now more than ever. Right now, our entire industry is drowning in a sea of devices, viewport sizes, and online environments. And things aren’t slowing down anytime soon.
+The short answer is that modularity matters more than ever. Right now, our entire industry is drowning in a sea of devices, viewport sizes, and online environments. And things aren’t slowing down anytime soon.
 
 > Disruption will only accelerate. The quantity and diversity of connected devices — many of which we haven't imagined yet — will explode, as will the quantity and diversity of the people around the world who use them. Our existing standards, workflows, and infrastructure won't hold up. Today's onslaught of devices is already pushing them to the breaking point. They can't withstand what's ahead. <cite>[The Future-Friendly manifesto](http://futurefriendlyweb.com/)</cite>
 
 {% include figure.html src="../images/content/devices.jpg" caption="These are just some of the connected devices we need to worry about." %}
 
-Like it or not, this multi-device universe is now our reality. It was hard enough to get our Web pages to display consistently in a handful of desktop browsers, but we’re now tasked with ensuring our web experiences look and function beautifully on a plethora of smartphones, tablets, phablets, netbooks, notebooks, desktops, TVs, game consoles, and more. 
+Like it or not, this multi-device universe is our reality. It was hard enough to get our web pages to display consistently in a handful of desktop browsers, but we’re now tasked with ensuring our web experiences look and function beautifully on a plethora of smartphones, tablets, phablets, netbooks, notebooks, desktops, TVs, game consoles, and more. 
 
-In order to address this reality while maintaining our sanity, it’s absolutely necessary for us to take a step back and break these giant responsibilities into smaller, more manageable  chunks.
+[Ed]: (Plethora plethora plethora. It's nice to say, it tastes good. But it's a word I dislike. Or rather a word whose use I dislike. It rubs me the wrong way. It feels self-conscious. A plethora is an excess of something, not just a large amount. As the vast number of devices feels excessive, I'll let it stand. Medically it's a bodily condition characterized by an excess of blood and marked by swelling and a florid complexion. So there you go.)
 
-And that’s exactly what folks are doing. The spirit of modularity is weaving its way into every aspect of the Web creation process and having profound effects on organizations’ strategy, process, content, design, and development.
+To address this reality while maintaining our sanity, it’s absolutely necessary for us to take a step back and break these giant responsibilities into smaller, more manageable chunks.
+
+And that’s exactly what folks are doing. The spirit of modularity is weaving its way into every aspect of the web creation process and having profound effects on organizations’ strategy, process, content, design, and development.
 
 ### A manageable strategy
 Every organization is finally realizing that bulldozing their entire website and replacing it with a New-And-Shiny™ website every three-to-eight years isn’t (and never was) an optimal solution.
