@@ -398,7 +398,7 @@ Pattern Lab also provides a (dare I say) cool feature that enables you to attach
 {% include figure.html src="../images/content/pattern-lab-annotations-1.png" caption="Pattern Lab's annotation feature is interactive and baked into the living UI." %}
 
 ## Providing context with pattern lineage
-When looking at various patterns in a library, I've found myself wondering "Great, but where is this component actually used?" Defining and describing pattern characteristics is one thing, but there's an opportunity to provide additional contextual information about your UI patterns.
+When looking at various patterns in a library, I've found myself wondering, "Great, but where is this component actually used?" Defining and describing pattern characteristics is one thing, but there's an opportunity to provide additional contextual information about your UI patterns.
 
 Thanks to the Russian nesting doll include approach described earlier in the chapter, Pattern Lab can display what patterns make up any given component, and also show where that pattern is employed in the design system.
 
