@@ -241,7 +241,7 @@ By overriding the default data, the *hero* headline now reads "Moving People" in
 This process of establishing defaults for dynamic data then replacing it with page-specific content continues for each section of the website. In addition to replacing simple strings like headings, we can also dynamically set variables to `true` or `false`, loop through an array of items, and more. We can even dramatically alter the UI with just a few changes to a JSON file, which we'll talk about next!
 
 ## Articulating pattern variations with pseudo-patterns
-Historically designers working in static tools have had a tendancy to only design best-case scenarios. You know what I’m talking about. The user’s name is "Sara Smith" and always fits neatly on one line. Her profile picture looks like it was clipped out of a magazine. Her profile is completely filled out. The two columns of her profile content magically are exactly the same height.
+Historically, designers working in static tools have had a tendency to only design best-case scenarios. You know what I’m talking about. The user’s name is "Sara Smith" and always fits neatly on one line. Her profile picture looks like it was clipped out of a magazine. Her profile is completely filled out. The two columns of her profile content magically are exactly the same height.
 
 Of course these best-case scenarios rarely, if ever, occur in the real world.
 
