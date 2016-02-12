@@ -409,7 +409,7 @@ In the above example, we have a molecule pattern called `block-media-link`, whic
 This contextual information is amazingly helpful for designers and developers; I know I use the lineage feature *all the time* in my own workflow. Let's say we wanted to make changes to a particular pattern, like doubling the size of the image or adding an additional text element, **we'd immediately know which patterns and templates would need retested and QA'd to ensure nothing breaks with the changes**. The lineage feature also helps point out unused or underutilized patterns so that teams can weed them out of the pattern library.
 
 ## To each their own
-So there you have it. Pattern Lab provides several helpful features for teams to create deliberate, thoughtful design systems. But as I mentioned before, no one tool is going to be perfect for everyone and every situation. There are [ton of tools](http://styleguides.io/tools.html) out there to help you create effective pattern libraries, and which tools you decide on will undoubtedly be influenced by your organization's environment, technologies, workflow, and personalities.
+So there you have it. Pattern Lab provides several helpful features for teams to create deliberate, thoughtful design systems. But as I mentioned before, no one tool is going to be perfect for everyone and every situation. There are [tons of tools](http://styleguides.io/tools.html) out there to help you create effective pattern libraries, and which tools you decide on will undoubtedly be influenced by your organization's environment, technologies, workflow, and personalities.
 
 When choosing tools to create your pattern library, you should keep your eyes open for these qualities and features of effective pattern libraries:
 
