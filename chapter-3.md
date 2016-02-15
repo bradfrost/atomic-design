@@ -420,5 +420,5 @@ When choosing tools to create your pattern library, you should keep your eyes op
 - The ability to dynamically pour real representative content into the patterns' structure
 - Providing contextual information like which patterns make up a particular component as well as where that component gets utilized
 
-At the end of the day, it's not about the tools we use to create pattern libraries, but rather how we use them. Creating and maintaining an effective design system means dramatically changing your organization's culture, processes, and workflows. If that sounds hard to you, it's because it is! But fear not! The next chapter will detail the entire process of creating and maintaining a successful design system to set your organization up for longterm success. 
+At the end of the day, it's not about the tools we use to create pattern libraries, but rather how we use them. Creating and maintaining an effective design system means dramatically changing your organization's culture, processes, and workflows. If that sounds hard to you, it's because it is! But fear not! The next chapter will detail the entire process of creating and maintaining a successful design system to set your organization up for long-term success. 
  
