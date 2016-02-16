@@ -35,6 +35,7 @@ From the beginning, the page metaphor provided users with a familiar language wi
 The page was—and continues to be—a very visible and helpful metaphor for the users of the web. It also has a profound influence on how web experiences are created.
 
 [Ed]: # (It's more conventional in US English to use em dashes rather than en dashes in this way.)
+
 [Ed]: # (I find end users to be a dead phrase. Are there start users and middle users?)
 
 In the early days of the web, companies looking to get online simply translated their printed materials onto their websites. But even though these brochure websites offered a very one-dimensional perspective of what the web could offer, viewing websites as digital representations of the printed page was easy for creators to wrap their heads around. 
@@ -223,6 +224,7 @@ As it happens, there are [many flavors of style guides](http://bradfrost.com/blo
 Brand identity guidelines define the assets and materials that make a company unique. Logos, typography, color palettes, messaging (such as mission statements and taglines), collateral (such as business card and PowerPoint templates), and more are aggregated and described in brand identity guidelines.
 
 [[*Ed: You need to be consistent in the subheadings. Sometimes you include the "guide" or "guidelines" (Brand identity guidelines, Code style guides), sometimes you don't (Voice and tone, Writing). As you're talking about different kinds of style guide, you can probably drop the "guidelines" and just put the subject of those guidelines in the heading (Design language, Code, etc.).*]]
+
 [[*Ed: I always advise against placing an image directly after a heading. It can cause confusion: Is the heading a caption? Does the text below relate to the image specifically? Where the hell am I? So I've placed a text paragraph first.*]]
 
 {% include figure.html src="../images/content/styleguide-wvu.png" caption="West Virginia University’s brand style guide." %}
@@ -230,6 +232,7 @@ Brand identity guidelines define the assets and materials that make a company un
 [[Brand style guides]] provide a [[foundational center]] for an organization. It’s essential for a brand to present itself in a cohesive manner across an increasing number of media, channels, and touchpoints. How can everyone within an organization speak in one voice and feel part of a singular entity? How do third parties know which Pantone colors to use and how to correctly use the brand’s logo? Brand identity guidelines provide answers to these fundamental questions.
 
 [[*Ed: Is the term brand style guide interchangeable with brand identity guidelines (the subheading you use)?*]]
+
 [[*Ed: What does foundational center mean? Do you mean a foundation for an organization's brand-related activity?*]]
 
 Historically, brand identity guidelines were contained in hard-cover books (remember, those things with the pages?), but as with everything else, brand style guides are making their way online.
@@ -251,6 +254,7 @@ Design language guidelines aren’t set in stone the way brand guidelines are. F
 People interact with brands across a dizzying array of channels and media: [[web, mobile, print, retail, outdoor, radio, TV, email, and much more]]. Speaking in a [[cohesive]], consistent manner across all of these touchpoints is critical to a brand’s success.  
 
 [[*Ed: You list these different media a few times. I think readers can be expected to understand all this encompasses by now.*]]
+
 [[*Ed: You use cohesive several times in this section. Consider alternatives: uniform, united, integrated, unified, congruent, joined up, etc.*]]
 
 {% include figure.html src="../images/content/styleguide-voiceandtone.png" caption="Mailchimp’s Voice and Tone guidelines." %}
