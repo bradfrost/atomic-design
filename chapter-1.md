@@ -30,7 +30,7 @@ From the beginning, the page metaphor provided users with a familiar language wi
 
 [Ed]: # (I tend to remove etc. (and e.g. and i.e.) from main narrative text. Often authors aren't really sure what they'd actually include behind an etc. and readers are often none the wiser as well. Such abbreviations can trip readers up, and at the very least interrupt the flow of reading. Sometimes I'll replace etc. with and so on, depending on the context. These abbreviations are useful, however, in lists and tables.)
 
-{% include figure.html src="../images/content/chrome-webpage.png" caption="Chrome browser displaying ‘This webpage is not available’ message" %}
+{% include figure.html src="../images/content/chrome-webpage.png" caption="Chrome browser displaying ‘This webpage is not available’ message." %}
 
 The page was—and continues to be—a very visible and helpful metaphor for the users of the web. It also has a profound influence on how web experiences are created.
 
@@ -41,7 +41,9 @@ In the early days of the web, companies looking to get online simply translated 
 
 But we’re now 25 years into this new medium, and this once necessary figure of speech has overstayed its welcome. Unfortunately, the page metaphor continues to run deep with respect to how we scope and execute our web projects. Here are just a few examples I hear on a regular basis:
 
-“We’re a startup looking to launch a five-*page* website this October…”
+“We’re a [[startup]] looking to launch a five-*page* website this October…”
+
+[[*Ed: Merriam-Webster (my go-to US English dictionary) has start-up, as do most current dictionaries, though startup without the hyphen is increasingly common. Up to you. A quick find-and-replace can change the lot, if necessary.*]]
 
 “Brad, how long will the home*page* take to build?”
 
@@ -158,28 +160,28 @@ By breaking visual explorations into smaller chunks, designers save time and eff
 
 What is an interface made of? What are our Lego bricks? What are our Subway sandwich pieces that we combine into millions of delicious combinations? It’s these questions that we’ve been asking ourselves more and more now that we’re sending our interfaces to more and more places. 
 
-A few years ago Ethan Marcotte introduced us to the idea of [responsive web design](http://alistapart.com/article/responsive-web-design) and its three core tenets: fluid grids, flexible media, and CSS media queries. These three ingredients provided a much-needed foundation for designers to create flexible layouts that smartly adapt to any screen size. Perhaps more importantly, responsive design helped get designers excited about creating thoughtful, adaptable, multi-device Web experiences.
+A few years ago Ethan Marcotte introduced us to the idea of [responsive web design](http://alistapart.com/article/responsive-web-design) and its three core tenets: fluid grids, flexible media, and CSS media queries. These three ingredients provided a much needed foundation for designers to create flexible layouts that smartly adapt to any screen size. Perhaps more importantly, responsive design helped get designers excited about creating thoughtful, adaptable, multi-device web experiences.
 
-As designers quickly discovered, creating multi-device Web experiences involves a lot more than creating squishy pages.  Each individual piece of an interface contains its own unique challenges and opportunities in order for it to look and function beautifully across many screen sizes and environments. 
+As designers quickly discovered, creating multi-device web experiences involves a lot more than creating squishy pages. Each individual piece of an interface contains its own unique challenges and opportunities in order for it to look and function beautifully across many screen sizes and environments. 
 
 How can we present primary navigation — typically displayed as a horizontal list on large screens — in a thoughtful way on smaller screens? How do lightboxes, breadcrumbs, and carousels translate to smaller viewports and alternate input types? It’s these questions that led me to create [This Is Responsive](http://bradfrost.github.io/this-is-responsive/index.html), a showcase of responsive patterns that demonstrate the various ways a particular component could be executed in a responsive environment.
 
 While This Is Responsive is successful at articulating how these interface patterns can scale across screen sizes and environments, it’s still up to designers and developers to put these patterns into action. And as it turns out, that’s a lot of work.
 
 ## UI frameworks, in theory and in practice
-Designers and developers are already strapped for time and resources, and they’re now being tasked with making interfaces that look and function beautifully in any environment. It’s a tall order indeed.
+Designers and developers are already strapped for time and resources, and they’re now being tasked with making interfaces that look and function beautifully in any environment. That’s a very tall order.
 
-This need to address growing device diversity while still sanely getting projects out the door has given rise to front-end frameworks like [Foundation by Zurb](http://foundation.zurb.com/) and [Bootstrap](http://getbootstrap.com/). 
+This need to address growing device diversity while still sanely getting projects out the door has given rise to front-end frameworks like [Foundation by Zurb](http://foundation.zurb.com/) and [Bootstrap](http://getbootstrap.com/). These user interface frameworks provide designers with a collection of preassembled HTML patterns, CSS styles, and JavaScript to add functionality to interactive components like dropdowns and carousels. In essence, these frameworks are handy tool kits for quickly assembling interfaces.
 
-These user interface frameworks provide designers with a collection of pre-assembled HTML patterns, CSS styles, and JavaScript to add functionality to interactive components like dropdowns and carousels. In essence, these frameworks are handy toolkits for quickly assembling interfaces.
+{% include figure.html src="../images/content/bootstrap-components.png" caption="Bootstrap provides a collection of UI components to speed up development."  %}
 
-{% include figure.html src="../images/content/bootstrap-components.png" caption="Bootstrap provides a collection of UI components to speed up development"  %}
+And boy are these things popular. As I’m writing this, Bootstrap is the most popular repository on the code-sharing site [GitHub](https://github.com/), with over 77,000 stars and 30,000 forks. These frameworks’ popularity is a testament to the fact that designers and developers are seeking solid ground to stand on in this ever-complex web landscape.
 
-And boy are these things popular. As I’m writing this, Bootstrap is the most popular repository on the code-sharing site [Github](https://github.com/), with over 77,000 stars and 30,000 forks. These frameworks’ popularity is a testament to the fact that designers and developers are seeking solid ground to stand on in this ever-complex Web landscape.
+One of the most attractive aspects of these frameworks is *speed*. Frameworks like Bootstrap allow designers to get ideas off the ground quickly, rapidly create prototypes, and launch sites sooner. Because the patterns provided by a tool kit are already cross-browser tested, [[developers can spend their]] time on more important tasks rather than beating their heads against a table testing some archaic version of Internet Explorer. And in case designers do get stuck, these frameworks’ communities can provide helpful support and advice.
 
-One of the most attractive aspects of these frameworks is *speed*. Frameworks like Bootstrap allow designers to get ideas off the ground quickly, rapidly create prototypes, and launch sites sooner. Because the toolkit’s provided patterns are already cross-browser tested, a developer can spend her time on more important tasks rather than beating her head against a table testing some archaic version of Internet Explorer. And in case designers do get stuck, these frameworks’ communities can provide helpful support and advice.
+[[*Ed: I've changed "a developer can spend her" to a plural form (and will do so throughout). This avoids any his/her preference or confusion and includes everyone.*]]
 
-For a freelancer, this increase in speed might mean they can take on an extra project or three, yielding more financial stability for the year. And in the startup world — a place where Bootstrap is omnipresent — minimum viable products can launch sooner, leading to faster answers regarding the products’ viability.
+For freelancers, this increase in speed might mean they can take on an extra project or three, yielding more financial stability for the year. And in the startup world — a place where Bootstrap is omnipresent — minimum viable products can launch sooner, leading to faster answers regarding the products’ viability.
 
 So frameworks like Bootstrap are insanely popular design systems that provide well-tested components, resulting in consistent designs and faster launches. What’s not to love? Well, like most everything in life, there are cons right there alongside the pros. 
 
@@ -190,21 +192,19 @@ When I was a kid, I’d watch sci-fi movies and TV shows with a strange fascinat
 
 I could only guess that given enough time, we *solve fashion*. “Say, these jumpsuits are pretty snazzy, and comfortable too! Let’s just all wear these from now on.” “Sounds good to me!” 
 
-Of course that’s not how human beings work. We all have different tastes, goals, and desires. Variety, as they say, is the spice of life, and fashion, music, and design reflect our diverse nature.
+Of course, that’s not how human beings work. We all have different tastes, goals, and desires. Variety, as they say, is the spice of life, and fashion, music, and design reflect our diverse nature. Yet on the web we tend to fall into the trap of wanting everyone to do things the same way. “Why don’t all browsers just standardize on WebKit?” “Why can’t device manufacturers just use the same screen sizes?” “Always use jQuery!” “Never use jQuery!” “Just use frameworks!” “Never use frameworks!” 
 
-Yet we on the Web tend to fall into the trap of wanting everyone to do things the same way. “Why don’t all browsers just standardize on Webkit?” “Why can’t device manufacturers just use the same screen sizes?” “Always use jQuery!” “Never use jQuery!” “Just use frameworks!” “Never use frameworks!” 
+Just like the real world, the diverse needs, goals, and desires of web projects lead to a myriad of different solutions. Of course, there’s a time and place for everything, and designers and developers need the discernment to know which tools to use and when.
 
-Just like the real world, the diverse needs, goals, and desires of Web projects lead to a myriad of different solutions. Of course, there’s a time and place for everything, and designers and developers need the discernment to know which tools to use and when.
+Front-end frameworks are tools that provide a specific solution and a particular look and feel. While those solutions help speed up development, the resulting experiences end up resembling those sci-fi jumpsuits. When everyone uses the same buttons, grids, dropdowns, and components, things naturally start to look the same. If Nike, Adidas, Puma, and Reebok were to redesign their respective sites using Bootstrap, they would look substantially similar. That’s certainly not what these brands are going for. Sure, each brand can modify and extend the default look and feel, but after a while customization means fighting the framework’s given structure, style, and functionality.
 
-Front-end frameworks are tools that provide a specific solution and a particular look and feel. While those solutions help speed up development, the resulting experiences end up resembling those sci-fi jumpsuits. When everyone uses the same buttons, grids, dropdowns, and components, things naturally start to look the same. If Nike, Adidas, Puma, and Reebok were to redesign their respective sites using Bootstrap, they would look substantially similar. That’s certainly not what these brands are going for. Sure, each brand can modify and extend the default look and feel, but after a while customization means fighting the framework’s provided structure, style, and functionality.
+In addition to look-alike issues, these frameworks can add unnecessary bloat to an experience. It’s fantastic that frameworks provide plenty of prebuilt components and functionality, but a large percentage of designers and developers won’t adopt every aspect of the framework. Unfortunately, users still have to download the framework’s unused CSS and JavaScript, resulting in slower page loads and frustration.
 
-In addition to lookalike issues, these frameworks can add unnecessary bloat to an experience. It’s fantastic that frameworks provide plenty of pre-built components and functionality, but a large percentage of designers and developers won’t utilize every aspect of the framework. Unfortunately, end users still have to download the framework’s unused CSS and JavaScript, resulting in slower page loads and frustration.
+On the flip side of that coin, frameworks might not go far enough, leading to developers needing to create a substantial amount of custom code to achieve their projects’ goals. At some point, a threshold is crossed where the initial benefits of using a framework–namely development *speed*–are outweighed by the time spent modifying, extending, and fixing the framework.
 
-On the flip side of that coin, frameworks might not go far enough, leading to developers needing to create a substantial amount of custom code in order to achieve their projects’ goals. At some point, a threshold is crossed where the initial benefits of using a framework–namely development *speed*– are outweighed by the time spent modifying, extending, and fixing the framework.
+And then there’s the issue with naming. Using a framework means subscribing to someone else’s structure, naming, and style conventions. Of course, it’s important to establish a useful front-end lexicon, but what makes sense for an organization might not be what comes out of a framework’s box. I, for one, would balk at the idea of using Bootstrap’s default component for a featured content area they call a “jumbotron”. How a framework’s naming conventions jive with an existing codebase and workflow should be properly discussed before jumping on board the framework train.
 
-And then there’s the issue with naming. Using a framework means subscribing to someone else’s structure, naming, and style conventions. Of course it’s important to establish a useful front-end lexicon, but what makes sense for an organization might not be what comes out of a framework’s box.  I, for one, would balk at the idea of using Bootstrap’s default featured-content area component they call a “jumbotron”. How a framework’s naming conventions jive with an existing codebase and workflow should be properly discussed before jumping on board the framework train.
-
-Now that we’ve put frameworks through the wringer, it’s important to take a step back and recognize that conceptually these frameworks are very much on point. It’s an excellent idea to work with a design toolkit that promotes consistency and speeds up development time. While discussing the redesign of Microsoft’s homepage by Austin-based Web shop Paravel, developer Dave Rupert stressed the importance of creating and delivering a design system to their client. Dave wonderfully articulated that it’s not necessarily about using Bootstrap for every client, but rather creating “tiny Bootstraps for every client.”
+Now that we’ve put frameworks through the wringer, it’s important to take a step back and recognize that conceptually these frameworks are very much on point. It’s an excellent idea to work with a design tool kit that promotes consistency and speeds up development time. While discussing the redesign of Microsoft’s homepage by Austin-based web shop Paravel, developer Dave Rupert stressed the importance of creating and delivering a design system to their client. Dave wonderfully articulated that it’s not necessarily about using Bootstrap for every client, but rather creating “tiny Bootstraps for every client.”
 
 > Responsive deliverables should look a lot like fully-functioning Twitter Bootstrap-style systems custom tailored for your clients’ needs. These living code samples are self-documenting style guides that extend to accommodate a client’s needs as well as the needs of the ever-evolving multi-device web. <cite>[Dave Rupert](http://daverupert.com/2013/04/responsive-deliverables/)<cite>
 
