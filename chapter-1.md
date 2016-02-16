@@ -211,88 +211,121 @@ Now that we’ve put frameworks through the wringer, it’s important to take a 
 It’s not just about using a design system, it’s about creating *your* system.
 
 ## Design systems save the day
-So what do sound design systems look like? What form do they take? How do you create, maintain, and enforce them? 
+So what do [[sound]] design systems look like? What form do they take? How do you create, maintain, and enforce them? 
+
+[[*Ed: Consider changing sound to robust. Sound design (acoustics) is a thing. You're a musician so I'm sure you know.*]]
 
 The cornerstones of good design systems are *style guides*, which document and organize design materials while providing guidelines, usage, and guardrails.
 
-As it happens, there are [many flavors of style guides](http://bradfrost.com/blog/post/style-guides/), including documentation for brand identity, writing, voice and tone, code, design language, and user interface patterns. This book won’t detail every category of style guide, but it’s important to take a look at each to better understand how each style guide influences the others, and how style guides for the Web fit into a larger ecosystem.
+As it happens, there are [many flavors of style guides](http://bradfrost.com/blog/post/style-guides/), including documentation for brand identity, writing, voice and tone, code, design language, and user interface patterns. This book won’t detail every category of style guide, but it’s important to take a look at each to better understand how each style guide influences the others, and how style guides for the web fit into a larger ecosystem.
 
-### Brand identity guidelines
-{% include figure.html src="../images/content/styleguide-wvu.png" caption="West Virginia University’s Brand Style Guide" %}
-
+### Brand identity [[guidelines]]
 Brand identity guidelines define the assets and materials that make a company unique. Logos, typography, color palettes, messaging (such as mission statements and taglines), collateral (such as business card and PowerPoint templates), and more are aggregated and described in brand identity guidelines.
 
-Brand style guides provide a foundational center for an organization. It’s essential for a brand to present itself in a cohesive manner across an increasing number of media, channels, and touchpoints. How can everyone within an organization speak in a cohesive voice and feel part of a singular entity? How do third parties know which Pantone colors to use and how to correctly use the brand’s logo? Brand identity guidelines provide answers to these extremely fundamental questions.
+[[*Ed: You need to be consistent in the subheadings. Sometimes you include the "guide" or "guidelines" (Brand identity guidelines, Code style guides), sometimes you don't (Voice and tone, Writing). As you're talking about different kinds of style guide, you can probably drop the "guidelines" and just put the subject of those guidelines in the heading (Design language, Code, etc.).*]]
+[[*Ed: I always advise against placing an image directly after a heading. It can cause confusion: Is the heading a caption? Does the text below relate to the image specifically? Where the hell am I? So I've placed a text paragraph first.*]]
 
-Historically, brand identity guidelines were contained in hard-cover physical books (remember, those things with the pages?), but as with everything else brand style guides are making their way online.
+{% include figure.html src="../images/content/styleguide-wvu.png" caption="West Virginia University’s brand style guide." %}
+
+[[Brand style guides]] provide a [[foundational center]] for an organization. It’s essential for a brand to present itself in a cohesive manner across an increasing number of media, channels, and touchpoints. How can everyone within an organization speak in one voice and feel part of a singular entity? How do third parties know which Pantone colors to use and how to correctly use the brand’s logo? Brand identity guidelines provide answers to these fundamental questions.
+
+[[*Ed: Is the term brand style guide interchangeable with brand identity guidelines (the subheading you use)?*]]
+[[*Ed: What does foundational center mean? Do you mean a foundation for an organization's brand-related activity?*]]
+
+Historically, brand identity guidelines were contained in hard-cover books (remember, those things with the pages?), but as with everything else, brand style guides are making their way online.
 
 ### Design language
 While brand identity guidelines are fairly tactile, design language guidelines are a bit harder to pin down. Design language style guides articulate a general design direction, philosophy, and approach to specific projects or products.
 
-In order to present itself in a cohesive way across a growing range of products and mediums, Google developed a design language they call *material design*. The [material design style guide](http://www.google.com/design/spec/material-design/introduction.html) defines its overarching design philosophy, goals, and general principles, while also providing specific applications of the material design language.
+To present itself in a cohesive way across a growing range of products and [[media]], Google developed a design language called *material design*. The [material design style guide](http://www.google.com/design/spec/material-design/introduction.html) defines its overarching design philosophy, goals, and general principles, while also providing specific applications of the material design language.
 
-{% include figure.html src="../images/content/styleguide-material.png" caption="Google’s Material Design Language" %}
+[[*Ed: Mediums refers to a group of clairvoyants, surely?*]]
+
+{% include figure.html src="../images/content/styleguide-material.png" caption="Google’s material design language." %}
 
 Design language style guides can (and usually do) incorporate aspects of other style guide categories in order to make high-level concepts a bit more tangible. 
 
-Design language guidelines aren’t set in stone the same way brand guidelines are. For example, one day Google will likely develop a new design language to replace material design, so while Google’s overall brand will remain intact, the design vocabulary around its products will change.
+Design language guidelines aren’t set in stone the way brand guidelines are. For example, one day Google will likely develop a new design language to replace material design, so while Google’s overall brand will remain intact, the design vocabulary around its products will change.
 
-### Voice and Tone
-{% include figure.html src="../images/content/styleguide-voiceandtone.png" caption="Mailchimp’s Voice and Tone guidelines" %}
+### Voice and tone
+People interact with brands across a dizzying array of channels and media: [[web, mobile, print, retail, outdoor, radio, TV, email, and much more]]. Speaking in a [[cohesive]], consistent manner across all of these touchpoints is critical to a brand’s success.  
 
-People are interacting with brands across a dizzying array of channels and mediums: Web, mobile, print, retail, outdoor, radio, TV, email, and much more. Speaking in a cohesive, consistent manner across all of these touchpoints is critical to a brand’s success.  
+[[*Ed: You list these different media a few times. I think readers can be expected to understand all this encompasses by now.*]]
+[[*Ed: You use cohesive several times in this section. Consider alternatives: uniform, united, integrated, unified, congruent, joined up, etc.*]]
 
-Voice is an elemental aspect of a brand’s identity, so typically brand identity guidelines include some reference to tone of voice. However, these overarching guidelines usually aren’t very nuanced, which is why voice and tone guidelines are so important. 
+{% include figure.html src="../images/content/styleguide-voiceandtone.png" caption="Mailchimp’s Voice and Tone guidelines." %}
 
-Voice and tone guidelines get into the weeds by articulating how the company’s voice and tone should shift across a variety of scenarios. [MailChimp’s brilliant voice and tone guidelines](http://voiceandtone.com/) define how the brand’s tone changes across content types, so that when a user’s credit card is declined, writers know to shift away from their generally-cheeky-and-playful tone of voice and adopt a more serious tone instead.
+[[Voice is an elemental aspect of a brand’s identity, so typically brand identity guidelines include some reference to tone of voice.]] However, these overarching guidelines usually aren’t very nuanced, which is why voice and tone guidelines are so important. 
+
+[[*Ed: Is it worth noting the distinction between voice and tone? They are different, though most style guides, like most of us, tend to use the terms interchangeably. Simply, tone is a matter for adjectives: playful, authoritative, excited, angry; voice is about identification and recognition, a reader knowing that something was written by someone in particular – and only that person could have written it. You know you're reading Jeffrey Zeldman or Mandy Brown (maybe even you, Brad), for example, because you recognize their voices and only they write like that.*]]
+
+Voice and tone guidelines [[get into the weeds]] by articulating how the company’s voice and tone should shift across a variety of scenarios. [MailChimp’s brilliant voice and tone guidelines](http://voiceandtone.com/) define how the brand’s tone changes across content types, so that when a user’s credit card is declined, writers know to shift away from their generally cheeky and playful tone of voice and adopt a more serious tone instead.
+
+[[*Ed: Nice phrase. See, I do praise occasionally ;) *]]
 
 ### Writing
-{% include figure.html src="../images/content/styleguide-economist.png" caption="The Economist’s writing style guide" %}
+The rise of the web and content-managed websites makes it easier than ever for many people within an organization to publish content. This, of course, can be a double-edged sword, as maintaining a consistent writing style for an organization with many voices can be challenging. Writing style guides provide every author some guidelines and guardrails for contributing content.
 
-The rise of the Web and content managed websites makes it easier than ever for many people within an organization to publish content. This of course can be a double-edged sword, as maintaining a consistent writing style for an organization with many voices can be challenging. Writing style guides provide every author some guidelines and guardrails for contributing content.
+{% include figure.html src="../images/content/styleguide-economist.png" caption="The Economist’s writing style guide." %}
 
 Writing style guides can be extremely granular, defining particulars around punctuation and grammar, but they don’t always have to be so detailed. [Dalhousie University’s writing style guide](http://www.dal.ca/webteam/web_style_guide/writing_for_the_web.html) provides a concise list of principles and best practices for content contributors to follow.
 
 ### Code style guides
+It’s essential for teams to write legible, scalable, maintainable code. But without a way to promote and enforce code consistency, it’s easy for things to fall apart and leave every developer to fend for themselves. 
+
 {% include figure.html src="../images/content/styleguide-github.png" caption="Github’s code style guide" %}
 
-It’s absolutely essential for teams to write legible, scalable, maintainable code. But without a way to promote and enforce code consistency, it’s easy for things to fall apart and leave every developer to fend for themselves. 
+Code style guides provide conventions, patterns, and examples for how teams should approach their code. These [[guidelines and guardrails]] help rein in the madness so that teams can focus on producing great work together rather than refactoring a bunch of sloppy, inconsistent code.
 
-Code style guides provide conventions, patterns, and examples for how teams should approach their code. These guidelines and guardrails help reign in the madness so that teams can focus on producing great work together rather than refactoring a bunch of sloppy, inconsistent code.
+[[*Ed: Worth avoiding repetition? Though I love guardrails applied in this context. Sheesh! Praise again. Must cut that out.*]]
 
 ## Pattern Libraries
+And now for the main event. Pattern libraries, also known as front-end style guides, UI libraries, or component libraries, are quickly becoming a cornerstone of modern interface design.
+
 {% include figure.html src="../images/content/styleguide-codeforamerica.png" caption="Code for America’s pattern library" %}
 
-And now for the main event. Pattern libraries, also known as front-end style guides, UI libraries, or component libraries, are quickly becoming a cornerstone of modern interface design. The rest of this book will concentrate on how to approach interface design in a systematic manner, and detail how to establish and maintain pattern libraries.
+The rest of this book will concentrate on how to approach interface design in a systematic manner, and detail how to establish and maintain pattern libraries.
 
 
 ## Style guide benefits
-As Web designers, we’re now tasked with creating interfaces that look and function beautifully across a myriad of screen sizes, devices, browsers, and environments. That’s a tall order in and of itself. But once you factor in other team members, clients, stakeholders, and organizational quirks, things start looking downright _intimidating_. 
+[[Web designers are now tasked with creating interfaces that look and function beautifully across a myriad of screen sizes, devices, browsers, and environments. That’s a tall order in and of itself.]] But once you factor in other team members, clients, stakeholders, and organizational quirks, things start looking downright _intimidating_. 
 
-Style guides are important tools that help prevent chaos, both from a design/development standpoint and also from an organizational perspective. Here’s why style guides are quickly becoming essential tools for modern Web design and development.
+[[*Ed: I've read this before (lines 84, 165, 172). Yes, it's an important point, but perhaps it needs thinning out or reworking elsewhere.*]]
+
+Style guides are important tools that help prevent chaos, both from a design and development standpoint and also from an organizational perspective. Here’s why style guides are [[quickly becoming]] essential tools for modern web design and development.
+
+[[*Ed: Are quickly becoming essential…? Or are *now* essential…?*]]
 
 ### Consistently awesome
-**Web Style guides promote consistency and cohesion** across a user interface. This consistency benefits both the people who create these interfaces but also the users of these interfaces. 
+**Web style guides promote consistency and cohesion** across a user interface. This consistency benefits both the people who create these interfaces but also their users. 
 
-I recently visited my health insurance provider’s website to pay my bill. In the course of 5 clicks, I was hit with 4 distinct interface designs, some of which looked like they were last touched in 1999. This inconsistent experience put the burden on me, the user, to figure out what goes where and how to interpret disparate interface elements. By the time I got to the payment form, I felt like I couldn’t trust the company to successfully and securely process my payment.
+I recently visited my health insurance provider’s website to pay my bill. In the course of five clicks, I was hit with four distinct interface designs, some of which looked like they were last touched in 1999. This inconsistent experience put the burden on me, the user, to figure out what went where and how to interpret disparate interface elements. By the time I got to the payment form, I felt like I couldn’t trust the company to successfully and securely process my payment.
 
-Style guides help reign in these inconsistencies by encouraging  reuse of interface elements. Designers and developers can refer back to existing patterns to ensure the work they’re producing is consistent with what’s already been established.
+Style guides help [[rein in]] these inconsistencies by encouraging reuse of interface elements. Designers and developers can refer back to existing patterns to ensure the work they’re producing is consistent with what’s already been established.
 
-Even third parties responsible for matching their experiences with the branding/look and feel of a primary experience can make great use of a style guide. Outside experiences, such as payment portals or localized sites, can better match the look and feel of the primary experience by applying the patterns in the style guide.
+[[*Ed: Repetition. Consider: avoid, sidestep, iron out, prevent, etc.*]]
 
-Making style guides central to your process results in user interfaces that feel more cohesive and trustworthy, which helps users accomplish their tasks faster and empowers them to master the interface. 
+Even third parties responsible for matching their experiences with the branding and look and feel of a primary experience can make great use of a style guide. [[Outside]] experiences, such as payment portals or localized sites, can better match the look and feel of the primary experience by applying the patterns in the style guide.
+
+[[*Ed: External? Subsidiary? Secondary?*]]
+
+Making style guides central to your process results in user interfaces that feel more [[cohesive]] and trustworthy, which helps users accomplish their tasks faster and empowers them to master the interface. 
+
+[[*Ed: Hello!*]]
 
 ### A shared vocabulary
-What does “utility toolbar” mean? Does everyone understand what “touch slider hero” is?
+What does “utility toolbar” mean? Does everyone understand what a “touch slider hero” is?
 
-As the number of people working on a project increase, it becomes all-too-easy for communication breakdowns to occur. It's not uncommon for different disciplines to have different names for the same module, and for individuals to go rogue and invent their own naming conventions. In order for true collaboration to occur, it's essential for teams to speak a common language. Style guides are there to help establish that shared vocabulary.
+As the number of people working on a project increases, it becomes all too easy for communication breakdowns to occur. It's not uncommon for different disciplines to have different names for the same module, and for individuals to go rogue and invent their own naming conventions. For true collaboration to occur, it's essential for teams to speak a common language. Style guides are there to help establish that shared vocabulary.
 
 {% include figure.html src="../images/content/starbucks-blocks-3up.png" caption="Giving names to patterns like 'Blocks 3-Up' in Starbucks' style guide helps team members speak the same language" %}
 
 **Style guides establish a consistent, shared vocabulary between everyone involved in a project**, encouraging collaboration between disciplines and reducing communication breakdowns.
 
 ### Education
-In her book [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/), Anna Debenham deftly explains the myriad advantages of creating style guides, including one of the most crucial benefits: education.
+In [[her book]] [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/), Anna Debenham deftly explains the myriad advantages of creating style guides, including one of the most crucial benefits: education.
+
+[[*Ed: Can you put the title of books in HTML cite elements? Is that appropriate?*]]
 
 > Education is as important as documentation. A style guide can show clients that websites are systems rather than collections of pages. <cite>[Anna Debenham](http://maban.co.uk/projects/front-end-style-guides/)</cite>
 
