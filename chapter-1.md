@@ -14,17 +14,17 @@ Oh, wait.
 ## Our paginated past
 The page has been with us for a long time now. A few millennia, actually. The first books were thick slabs of clay created about [[4,000 years ago]], soon replaced by scrolls as the preferred way to consume the written word. And while reading technology has come a long way – from papyrus to parchment to paperback to pixels – the concept of the page holds strong to this day. 
 
-[[*Ed: Tablets have been found that date to around 2000BC. These were superseded by scrolls, not the other way around as you put it. Also, I couldn't resist adding papyrus before parchment to boost your alliteration!*]]
+[[*Ed: Tablets have been found that date to around 2000BC, so I up(back?)dated your date. These were superseded by scrolls, not the other way around as you initially put it. Also, I couldn't resist adding papyrus before parchment to boost your alliteration. Feel free to push my elbow back out again.*]]
 
 The page metaphor has been baked into the lexicon of the [[web]] since the very beginning. Tim Berners-Lee invented the World Wide Web so that he, his colleagues at CERN, and other academics could easily share and link together their world of *documents*. This document-based, academic genesis of the web is why the concept of the page is so deeply ingrained in the vocabulary of the internet.
 
-[[*Ed: An uppercase W on web? I don't think so. It's a bit old-fashioned. You don't capitalize internet, I notice. World Wide Web is fine, though.*]]
+[[*Ed: An uppercase W on web? I don't think so. It's a bit old-fashioned. You don't capitalize internet, I notice. World Wide Web is fine, though. I've changed Web to web throughout.*]]
 
 So what? 
 
-As we’ll discuss throughout this book, the way things are named very much impacts how they’re perceived and utilized. Thinking of the web as pages has real ramifications on how people interact with web experiences, and influences how we go about creating web interfaces.
+As we’ll discuss throughout this book, the way things are named very much impacts how they’re perceived and [utilized]. Thinking of the web as pages has real ramifications on how people interact with web experiences, and influences how we go about creating web interfaces.
 
-[Ed]: # (Normally, I'd change utilized for used, but here I think you can get away with it, if we stretch the meaning of utilized to be 'turned into useful tools'.)
+[[*Ed: Normally, I'd change utilized to used, but here I think you can get away with it, if we stretch the meaning of utilized to be 'turned into useful tools'.*]]
 
 From the beginning, the page metaphor provided users with a familiar language with which to navigate this brave new World Wide Web. Concepts like bookmarking and pagination helped new web users explore and eventually master an entirely new medium using conventions they were already comfortable with.
 
@@ -32,11 +32,11 @@ From the beginning, the page metaphor provided users with a familiar language wi
 
 {% include figure.html src="../images/content/chrome-webpage.png" caption="Chrome browser displaying ‘This webpage is not available’ message." %}
 
-The page was—and continues to be—a very visible and helpful metaphor for the users of the web. It also has a profound influence on how web experiences are created.
+The page was—and continues to be—a very visible and helpful metaphor for the [[users]] of the web. It also has a profound influence on how web experiences are created.
 
 [Ed]: # (It's more conventional in US English to use em dashes rather than en dashes in this way.)
 
-[Ed]: # (I find end users to be a dead phrase. Are there start users and middle users?)
+[[*Ed: I find end users to be a dead phrase. Are there start users and middle users?*]]
 
 In the early days of the web, companies looking to get online simply translated their printed materials onto their websites. But even though these brochure websites offered a very one-dimensional perspective of what the web could offer, viewing websites as digital representations of the printed page was easy for creators to wrap their heads around. 
 
@@ -84,7 +84,7 @@ The short answer is that modularity matters more than ever. Right now, our entir
 
 Like it or not, this multi-device universe is our reality. It was hard enough to get our web pages to display consistently in a handful of desktop browsers, but we’re now tasked with ensuring our web experiences look and function beautifully on a plethora of smartphones, tablets, phablets, netbooks, notebooks, desktops, TVs, game consoles, and more. 
 
-[Ed]: # (Plethora plethora plethora. It's nice to say, it tastes good. But it's a word I dislike. Or rather a word whose use I dislike. It rubs me the wrong way. It feels self-conscious. A plethora is an excess of something, not just a large amount. As the vast number of devices feels excessive, I'll let it stand. Medically it's a bodily condition characterized by an excess of blood and marked by swelling and a florid complexion. So there you go.)
+[[*Ed: Plethora plethora plethora. It's nice to say, it tastes good. But it's a word I dislike. Or rather a word whose use I dislike. It rubs me the wrong way. It feels self-conscious. A plethora is an excess of something, not just a large amount. As the vast number of devices often feels excessive, I'll let it stand. Medically it's a bodily condition characterized by an excess of blood and marked by swelling and a florid complexion. So there you go.*]]
 
 To address this reality while maintaining our sanity, it’s absolutely necessary for us to take a step back and break these giant responsibilities into smaller, more manageable chunks.
 
@@ -116,7 +116,7 @@ Lowercase-a agile is more of an informal desire to create an efficient process. 
 
 Organizational structure, client relations, personalities, and so on all play major roles in determining a project’s process. The trick is to find the process that works best for you, your organizational constraints and opportunities.
 
-Even though it may be impossible to adopt a truly Agile process, it’s still a sound idea to work in cross-disciplinary teams, get into the final environment faster, ship early and often, and break bigger tasks into smaller components. In Chapter 4, we’ll detail how to establish an effective pattern-based workflow.
+Even though it may be impossible to adopt a truly Agile process, it’s still a sound idea to work in cross-disciplinary teams, get into the final environment faster, ship early and often, and break bigger tasks into smaller components. In chapter 4, we’ll detail how to establish an effective pattern-based workflow.
 
 ### Modularizing content: I’m on Team Chunk 
 > Get your content ready to go anywhere, because it’s going to go everywhere. <cite>[For A Future-Friendly Web](http://bradfrost.com/blog/web/for-a-future-friendly-web/)</cite>
@@ -154,7 +154,7 @@ Establishing design atmosphere early is critical to a project’s success, which
 ![Style Tiles and Element Collages]()
 [Ed]: # (Is there an image missing here?)
 
-By breaking visual explorations into smaller chunks, designers save time and effort while avoiding presenting unrealistic, premature layouts to clients. More importantly, these approaches shift stakeholders away from simply reacting to a pretty picture, and instead facilitate crucial conversations about overall design direction and how they relate to the project’s goals. We’ll discuss these concepts in more detail in Chapter 4, but suffice it to say the visual design workflow is changing in a big way!
+By breaking visual explorations into smaller chunks, designers save time and effort while avoiding presenting unrealistic, premature layouts to clients. More importantly, these approaches shift stakeholders away from simply reacting to a pretty picture, and instead facilitate crucial conversations about overall design direction and how they relate to the project’s goals. We’ll discuss these concepts in more detail in chapter 4, but suffice it to say the visual design workflow is changing in a big way!
 
 ### Systematic UI design
 > We’re not designing pages, we’re designing systems of components. <cite>[Stephen Hay](http://bradfrost.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/)</cite>
@@ -298,7 +298,7 @@ The rest of this book will concentrate on how to approach interface design in a 
 
 Style guides are important tools that help prevent chaos, both from a design and development standpoint and also from an organizational perspective. Here’s why style guides are [[quickly becoming]] essential tools for modern web design and development.
 
-[[*Ed: Are quickly becoming essential…? Or are *now* essential…?*]]
+[[*Ed: Are quickly becoming essential…? Or are _now_ essential…?*]]
 
 ### Consistently awesome
 **Web style guides promote consistency and cohesion** across a user interface. This consistency benefits both the people who create these interfaces but also their users. 
@@ -327,41 +327,51 @@ As the number of people working on a project increases, it becomes all too easy 
 **Style guides establish a consistent, shared vocabulary between everyone involved in a project**, encouraging collaboration between disciplines and reducing communication breakdowns.
 
 ### Education
-In [[her book]] [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/), Anna Debenham deftly explains the myriad advantages of creating style guides, including one of the most crucial benefits: education.
+In [[her book]] [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/), Anna Debenham deftly explains the [[myriad]] advantages of creating style guides, including one of the most crucial benefits: education.
 
 [[*Ed: Can you put the title of books in HTML cite elements? Is that appropriate?*]]
 
+[[*Ed: myriad: see earlier note about plethora.*]]
+
 > Education is as important as documentation. A style guide can show clients that websites are systems rather than collections of pages. <cite>[Anna Debenham](http://maban.co.uk/projects/front-end-style-guides/)</cite>
 
-Style guides demonstrate to clients, stakeholders, and other disciplines that there's a lot of really thoughtful work going into a website's design and development beyond just "hey, let's make a new website". **A pattern library communicates the underlying design language in a very tangible way**, which helps stakeholders understand that an underlying system is determining the final interface. 
+Style guides demonstrate to clients, stakeholders, and other disciplines that there's a lot of really thoughtful work going into a website's design and development beyond just "Hey, let's make a new website." **A pattern library communicates the design language in a very tangible way**, which helps stakeholders understand that an underlying system is determining the final interface. 
 
-Style guides can help alleviate "Special Snowflake Syndrome", where certain departments in an organization think that they have unique problems and therefore demand unique solutions. By exposing the design system in the form of a style guide, these Special Snowflakes can better appreciate consistency and understand why their requests for custom designs receive pushback. 
+Style guides can help alleviate _special snowflake syndrome_, where certain departments in an organization think that they have unique problems and therefore demand unique solutions. By exposing the design system in the form of a style guide, these special snowflakes can better appreciate consistency and understand why their requests for custom designs receive pushback. 
 
 ### An empathetic workflow
-Education isn't just important for clients and stakeholders. A good style guide helps inform designers and developers of the tools they have in their toolbox, and provides guidelines and guardrails for how to use them properly. 
+Education isn't just important for clients and stakeholders. A good style guide helps inform designers and developers of the tools they have in their toolbox, and provides [[guidelines and guardrails]] for how to use them properly. 
 
-By making a style guide a cornerstone of your workflow (which we'll detail in Chapter 4), **designers and developers are forced to think about how their decisions affect the broader design system**. It becomes harder to go rogue and becomes easier to think of the greater good. And this is exactly where you want team members to be.
+[[*Ed: Repetition can be a powerful rhetorical device, but has to be used sparingly and deliberately. I think here we need some elegant variation. Directions, rules, precepts, instructions, etc.*]]
 
-A style guide provides a home for each discipline to contribute their respective considerations and concerns for patterns. By collecting all these considerations under one roof, the style guide becomes a watering hole for everyone involved in the project, which helps each discipline better understand the design system from many perspectives.
+By making a style guide a cornerstone of your workflow (which we'll detail in chapter 4), **designers and developers are forced to think about how their decisions affect the broader design system**. It becomes harder to go rogue and becomes easier to think of the greater good. And this is exactly where you want team members to be.
+
+A style guide provides a [[home]] for each discipline to contribute their respective considerations and concerns for patterns. By collecting all these considerations under [[one roof]], the style guide becomes a [[watering hole]] for everyone involved in the project, which helps each discipline better understand the design system from many perspectives.
+
+[[*Ed: Another mixed metaphor. Home and roof work together; perhaps "watering hole" can become simply "place", though it does lose that community feeling. Hub?*]] 
 
 ### Testing, testing, 1-2-3
 The homepage is broken, you say? Well, what exactly is breaking it?  
 
-The ability to pull an interface apart into its component pieces makes testing a lot easier. A style guide allows you to view interface patterns in isolation, which lets developers hone in on what's causing errors, browser inconsistencies, or performance issues. 
+The ability to pull an interface apart into its component pieces makes testing a lot easier. A style guide allows you to view interface patterns in isolation, which lets developers [[home in]] on what's causing errors, browser inconsistencies, or performance issues. 
+
+[[*Ed: I'll pick this up, though your usage of "hone in" is gaining ground. We might expect someone to "home in" on a target, and to "hone" a blade or their skills. Your usage is what some would call an error, and they're usually the kind who write emails to authors. It's better to assuage their indignation before it arises.*]]
 
 ### Speed
-Earlier in the chapter we discussed how *faster design and development* is one of the main reasons why UI frameworks like Bootstrap are so popular. We're under pressure to get projects out the door as soon as humanly possible. By developing your own design system, you can reap those same speed rewards as the out-of-the-box UI toolkits.
+Earlier in the chapter we discussed how *faster design and development* is one of the main reasons why UI frameworks like Bootstrap are so popular. We're under pressure to get projects out the door as soon as humanly possible. By developing your own design system, you can reap those same speed rewards as the out-of-the-box UI tool kits.
 
-It's true that devising an interface design system and creating a custom pattern library initially takes a lot of time, thought, and effort. But once the pattern library is established subsequent design and development becomes much faster, which tends to make everybody happy.
+It's true that devising an interface design system and creating a custom pattern library initially takes a lot of time, thought, and effort. But once the pattern library is established, subsequent design and development becomes much faster, which tends to make everybody happy.
 
-Federico Holgado, Lead UX developer at MailChimp, [explained](http://styleguides.io/podcast/federico-holgado/) how MailChimp's pattern library initially consisted of patterns created from the four primary screens of their app. But once they moved onto other areas of the site, they realized they were able to utilize existing patterns rather than having to generate brand new patterns from scratch every time.
+Federico Holgado, lead UX developer at MailChimp, [explained](http://styleguides.io/podcast/federico-holgado/) how MailChimp's pattern library initially consisted of patterns created from the four primary screens of their app. But once they moved on to other areas of the site, they realized they were able to use existing patterns rather than having to generate brand new patterns from scratch every time.
 
 > …Once we did that, as we were implementing things in other pages we started to realize: man, this system will actually work here and this system will actually work here and here. <cite>[Federico Holgado](http://styleguides.io/podcast/federico-holgado/)</cite>
 
 ### In it for the long haul
 There's no doubt style guides help teams effectively get things done in the here and now. But much like a fine wine, style guides increase in value over time. The beautiful thing about interface design systems is that they can and should be modified, extended, and refined for years to come.
 
-As previously mentioned, creating a custom pattern library requires a lot of hard work up front, but that hard work should  provide a structural foundation for future iteration and refinement. Learnings gathered from analytics, user testing, AB testing, and experience should be incorporated into the style guide, making it a powerful hub for truth, knowledge, and best practices. 
+As previously mentioned, creating a custom pattern library requires a lot of hard work up front, but that hard work should provide a structural foundation for future iteration and refinement. [[Lessons]] learned from analytics, user testing, A/B testing, and experience should be incorporated into the style guide, making it a powerful hub for truth, knowledge, and best practices. 
+
+[[*Ed: I can't let "Learnings" go. "Lessons learned" is the way to go.*]]
 
 Better yet, even if you were to undertake a major redesign you'll find that many of the structural interface building blocks will remain the same. You'll still have forms, buttons, headings, other common interface patterns, so there's no need to throw the baby out with the bath water. A style guide provides a rock-solid foundation for all future work, even if that future work may look totally different.
 
@@ -388,7 +398,7 @@ Even if time and money are allocated to establish style guides, these valuable t
 
 **Maintenance and governance strategy is critical to style guides' success**. Style guides will be thrown in the trash (right beside all those PSDs and wireframes) and abandoned without a proper strategy in place for who will manage, maintain, and enforce them. 
 
-Style guide maintenance is a hugely important topic and deserves to be covered in detail, so we'll dive into how to create maintainable style guides in Chapter 4.
+Style guide maintenance is a hugely important topic and deserves to be covered in detail, so we'll dive into how to create maintainable style guides in chapter 4.
 
 ### Audience confusion
 **Style guides can be misunderstood as tools useful only to designers or developers**, which leads to a lack of visibility that immediately limits their effectiveness. Instead of serving as a watering hole for everyone in the organization, a style guide can become a best-kept secret guarded by one discipline. Color me naive, but I don't think this helps foster a culture of collaboration.
