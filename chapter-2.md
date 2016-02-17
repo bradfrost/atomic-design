@@ -195,68 +195,84 @@ So why go through all this [[rigamarole]]? What's atomic design good for? These 
 ### The part and the whole
 **One of the biggest advantages atomic design provides is the ability to [[traverse between]] abstract and concrete.** We can simultaneously see our interfaces broken down to their atomic elements and also see how those elements combine together to form our final experiences.
 
-[[*Ed: This usage of "traverse" isn't quite right. We don't traverse between things, we simply traverse them: The candidates traversed the state throughout the campaign. The bridge traverses a river. I take it you mean atomic design lets us move from abstract to concrete and back again, so perhaps traverse here could become "switch" or "shift". I wonder, though, if you can simply remove "between" and "traverse abstract and concrete." Hmmn.*]]
+[[*Ed: This usage of "traverse" isn't quite right, or rather it's not usual. We don't traverse between one thing and another, we  traverse one thing at a time: The candidates traversed the state throughout the campaign. The bridge traverses a river. I take it you mean atomic design lets us move from abstract to concrete and back again, so perhaps traverse here could become "switch" or "shift". A couple of paragraphs further on you use "dance" to echo Frank Chimero, which is rather nice. I wonder, though, if you can simply remove "between" and "traverse abstract and concrete." Hmmn. Doesn't feel right.*]]
 
 {% include figure.html src="../images/content/atomic-design-abstract-concrete.png" caption="Atomic design allows designers to traverse between abstract and concrete." %}
 
-In his book *The Shape of Design*, Frank Chimero beautifully articulates the power this traversal provides:
+In his book [[*The Shape of Design*]], Frank Chimero beautifully articulates the power this traversal provides:
+
+[[*Ed: Book title in HTML cite tags?*]]
 
 > The painter, when at a distance from the easel, can assess and analyze the whole of the work from this vantage. He scrutinizes and listens, chooses the next stroke to make, then approaches the canvas to do it. Then, he steps back again to see what he’s done in relation to the whole. It is a dance of switching contexts, a pitter-patter pacing across the studio floor that produces a tight feedback loop between mark-making and mark-assessing. <cite>[Frank Chimero](http://read.shapeofdesignbook.com/chapter01.html)</cite>
 
 Atomic design lets us dance between contexts like the painter Frank so eloquently describes. The atoms, molecules, and organisms that comprise our interfaces do not live in a vacuum. And our interfaces' templates and pages are indeed composed of smaller parts. The parts of our designs influence the whole, and the whole influences the parts. The two are intertwined, and atomic design embraces this fact.
 
-When designers and developers are crafting a particular component, we are like the painter at the canvas creating detailed strokes. When we are viewing those components in the context of a layout with real representative content in place, we are like the painter several feet back from the canvas assessing how their detailed strokes affect the whole composition. It's necessary to hone in on one particular component to ensure it is functional, usable, and beautiful. But it's also necessary to ensure that component is functional, usable, and beautiful *in the context of the final UI*.
+When designers and developers are crafting a particular component, we are like the painter at the canvas creating detailed strokes. When we are viewing those components in the context of a layout with real representative content in place, we are like the painter several feet back from the canvas assessing how their detailed strokes affect the whole composition. It's necessary to [[hone in]] on one particular component to ensure it is functional, usable, and beautiful. But it's also necessary to ensure that component is functional, usable, and beautiful *in the context of the final UI*.
 
-Atomic design provides us a structure to traverse between the parts and the whole of UIs, which is why it's crucial to reiterate that **atomic design is not a linear process**. It would be foolish to design buttons and other elements in isolation then cross our fingers and hope everything comes together to form a cohesive whole. So don't interpret the five stages of atomic design as "step 1: atoms, step 2: molecules, step 3: organisms, step 4: templates, step 5: pages". Instead, **think of the stages of atomic design as a mental model that allows us to concurrently create final UIs and their underlying design systems**.
+[[*Ed: See note in chapter 1 about "home in* and "hone".]]
+
+Atomic design provides us a structure to [[traverse between]] the parts and the whole of UIs, which is why it's crucial to [[reiterate that **atomic design is not a linear process**]]. It would be foolish to design buttons and other elements in isolation then cross our fingers and hope everything comes together to form a cohesive whole. So don't interpret the five stages of atomic design as "Step 1: atoms; Step 2: molecules; Step 3: organisms; Step 4: templates; Step 5: pages." Instead, **think of the stages of atomic design as a mental model that allows us to concurrently create final UIs and their underlying design systems**.
+
+[[*Ed: See earlier note about traversing.*]]
+
+[[*Ed: Where did you first state this? I can't find it in chapter 1 or earlier in this chapter.*]]
 
 ### Clean separation between structure and content
 Discussing *design* and *content* is a bit like discussing the *chicken* and the *egg*. Mark Boulton explains:
 
 > Content needs to be structured and structuring alters your content, designing alters content. It’s not ‘content then design’, or ‘content or design’. It’s ‘content and design’. <cite>[Mark Boulton](http://www.markboulton.co.uk/journal/structure-first-content-always)</cite>
 
-A well-crafted design system caters to the content that lives inside it, and well-crafted content is aware of how it's presented in the context of a UI. The interface patterns we establish must accurately reflect the nature of the text, images, and other content that live inside them. Similarly, our content should be aware of the manner in which it will be presented. The close relationship between content and design requires us to concurrently consider both as we construct our UIs.
+A well-crafted design system caters to the content that lives inside it, and well-crafted content is aware of how it's presented in the context of a UI. The interface patterns we establish must accurately reflect the nature of the text, images, and other content that live inside them. Similarly, our content should be aware of the manner in which it will be presented. The close relationship between content and design requires us to consider both as we construct our UIs.
 
 Atomic design gives us a language for discussing the structure of our UI patterns and also the content that goes inside those patterns. While there is a clean separation between the content structure skeleton (templates) and the final content (pages), atomic design recognizes the two very much influence each other. For instance, take the following example:
 
 {% include figure.html src="../images/content/templates-pages-users-example.png" caption="" %}
 
-On the left we see the UI's content skeleton, which consists of the same *person block molecule* repeated again and again. On the right we see what happens when we populate each instance of the person block molecule with representative content. Visualizing the content skeleton and the representative final content allows us to create patterns that accurately reflect the content that lives inside them. If a person's name were to wrap onto 5 lines within the pattern, we would need to address that broken behavior at a more atomic level.
+On the left we see the UI's content skeleton, which consists of the same *person block molecule* repeated again and again. On the right we see what happens when we populate each instance of the person block molecule with representative content. Visualizing the content skeleton and the representative final content allows us to create patterns that accurately reflect the content that lives inside them. If a person's name were to wrap onto five lines within the pattern, we would need to address that broken behavior at a more atomic level.
 
 The content we pour into our UIs at the page stage will influence the characteristics and parameters of the underlying design patterns.
 
 ### What's in a name?
-Throughout this book I've mentioned that modular design and development is nothing new. So why are we introducing terms like "atoms", "molecules", and "organisms" when we can just stick with established terms like "modules", "components", "elements" "sections", and "regions"?
+Throughout this book I've mentioned that modular design and development is nothing new. So why are we introducing terms like _atoms_, _molecules_, and _organisms_ when we can just stick with established terms like _modules_, _components_, _elements_, _sections_, and _regions_?
 
-For as long as I've been talking about atomic design, I've had people proffer alternate names for the stages of the methodology. Person One would suggest "Why not just name them 'elements', 'modules', and 'components'?" while Person Two would suggest "Why not just name them 'base', 'components', and 'modules'?" The issue with terms like "components" and "modules" is that a sense of hierarchy can't be deduced from the names alone. **"Atoms", "molecules", and "organisms" imply a hierarchy** that anyone with a basic knowledge of chemistry can hopefully wrap their heads around.
+[[*Ed: I've removed the quote marks around the terms and italicized them instead. While there's nothing wrong with using the marks to highlight words as words, when so many are used together, they make the text more difficult to read, tripping up the reader. Italics serve the same purpose but act more smoothly.*]]
+
+For as long as I've been talking about atomic design, I've had people proffer alternate names for the stages of the methodology. Person One would suggest, "Why not just name them elements, modules, and components?" while Person Two would suggest, "Why not just name them base, components, and modules?" The issue with terms like components and modules is that a sense of hierarchy can't be deduced from the names alone. **Atoms, molecules, and organisms imply a hierarchy** that anyone with a basic knowledge of chemistry can hopefully wrap their heads around.
+
+[[*Ed: And once the terms are under discussion, we can ditch italics on what the reader should now recognize as terminology in this context.*]]
 
 That being said, naming things is hard and imperfect. The names I've chosen for the stages of atomic design have worked really well for me and the teams I've worked with. But maybe they don't work for you. That's more than OK. Here's one perspective from a designer at a digital agency:
 
-> Even though they couldn’t pick up on all the terminology [of atomic design], they didn’t throw the concept out the door. Instead we rallied together to transform it to work for us.  The way we made it work for us is by changing the 5 parts that make it up while still maintaining the overall concept. Our goal was to come up with terms that made sense to us and anyone we would on board in the future. <cite><a href="http://createstopbecreative.com/2015/03/04/how-we-adapted-atomic-design/">Jono Herrington</a></cite>
+> Even though they couldn’t pick up on all the terminology [of atomic design], they didn’t throw the concept out the door. Instead we rallied together to transform it to work for us. The way we made it work for us is by changing the 5 parts that make it up while still maintaining the overall concept. Our goal was to come up with terms that made sense to us and anyone we would on board in the future. <cite><a href="http://createstopbecreative.com/2015/03/04/how-we-adapted-atomic-design/">Jono Herrington</a></cite>
 
-The terms the team came up with were "foundations", "materials", "rooms", "templates", and "pages". Does this make sense to you? It doesn't matter. By taking the time to establish an agreed-upon vocabulary, their team was able to get on board with the concept of atomic design and work together effectively by speaking the same language.
+The terms the team came up with were _foundations_, _materials_, _rooms_, _templates_, and _pages_. Does this make sense to you? It doesn't matter. By taking the time to establish an agreed on vocabulary, their team was able to get on board with the concept of atomic design and work together effectively by speaking the same language.
 
-"Atomic design" as a term encapsulates the concepts of modular design and development, which becomes a useful shorthand for convincing stakeholders and talking with colleagues. But ultimately whatever names you choose to work with should help you and your organization craft an effective UI design system.
+[[*Ed: But as these are a new set of terms being introduced, it's back to the italics.*]]
+
+_Atomic design_ as a term encapsulates the concepts of modular design and development, which becomes a useful shorthand for convincing stakeholders and talking with colleagues. But whatever names you choose to work with should help you and your organization craft an effective UI design system.
 
 ## Atomic design is for user interfaces
-Atomic design is a concept born of the Web. After all, your lowly author is a web designer, which is mainly the reason this book primarily focuses on Web-based interfaces. But it's important to understand that **atomic design applies to all user interfaces, not just Web-based ones.**
+Atomic design is a concept born of the web. After all, your lowly author is a web designer, which is mainly the reason this book primarily focuses on web-based interfaces. But it's important to understand that **atomic design applies to all user interfaces, not just web-based ones.**
 
 You can apply the atomic design methodology to the user interface of any software: Microsoft Word, Keynote, Photoshop, your bank's ATM, whatever. To demonstrate, let's apply atomic design to the native mobile app Instagram.
 
-{% include figure.html src="../images/content/instagram-atomic.png" caption="Atomic design applied to the native mobile app Instagram" %}
+{% include figure.html src="../images/content/instagram-atomic.png" caption="Atomic design applied to the native mobile app Instagram." %}
 
 Let's walk through this atomized Instagram interface:
 
 - **Atoms**: This screen of Instagram's UI consists of a handful of icons, some text-level elements, and two image types: the primary image and the user's avatar image.
 - **Molecules**: Several icons form simple utilitarian components like the bottom navigation bar and the photo actions bar where users can like or comment on a photo. Also, simple combinations of text and/or images form relatively simple components.
-- **Organisms**: Here we can see the photo organism take shape, which consists of the user's information, timestamp, the photo itself, actions around that photo, and information about the photo including like count and caption. This organism becomes the cornerstone of the entire Instagram experience as it is stacked repeatedly in a never-ending stream of user-generated photos.
+- **Organisms**: Here we can see the photo organism take shape, which consists of the user's information, time stamp, the photo itself, actions around that photo, and information about the photo including like count and caption. This organism becomes the cornerstone of the entire Instagram experience as it is stacked repeatedly in a never-ending stream of user-generated photos.
 - **Templates**: We get to see our components come together in the context of a layout. Also, it's here where we see the exposed content skeleton of the Instagram experience, highlighting dynamic content such as the user's handle, avatar, photo, like count, and caption.
 - **Pages**: And finally we see the final product, complete with real content poured into it, which helps ensure the underlying design system comes together to form a beautiful and functional UI.
 
-I show this non-Web example because atomic design tends to get misinterpreted as an approach to Web-specific technologies like CSS and JavaScript. Let me be clear about this: **atomic design has nothing to do with web-specific subjects like CSS or JavaScript architecture**. In Chapter 1 we discussed the trend toward modularity in all aspects of design and development, which includes CSS and JavaScript. These are fantastic trends in CSS and JavaScript, but atomic design deals with crafting user interface design systems irrespective of the technology used to create them.
+I show this non-web example because atomic design tends to get misinterpreted as an approach to web-specific technologies like CSS and JavaScript. Let me be clear about this: **atomic design has nothing to do with web-specific subjects like CSS or JavaScript architecture**. In chapter 1 we discussed the trend toward modularity in all aspects of design and development, which includes CSS and JavaScript. These are fantastic trends in CSS and JavaScript, but atomic design deals with crafting user interface design systems irrespective of the technology used to create them.
 
 ## Atomic design in theory and in practice
-This chapter introduced the atomic design methodology and demonstrated how atoms, molecules, organisms, templates, and pages all work together to craft thoughtful, deliberate interface design systems. Atomic design allows us to see our UIs broken down to their atomic elements and also allows us to simultaneously step through how those elements join together to ultimately form our final UIs. We learned about the tight bond between content and design and how atomic design allows us to craft design systems that are custom-tailored to the content that lives inside them. And finally we learned how the language of atomic design gives us a helpful shorthand for discussing modularity with our colleagues and provides a much-needed sense of hierarchy in our design systems.
+This chapter introduced the atomic design methodology and demonstrated how atoms, molecules, organisms, templates, and pages all work together to craft thoughtful, deliberate interface design systems. Atomic design allows us to see our UIs broken down to their atomic elements, and also allows us to simultaneously step through how those elements join together to form our final UIs. We learned about the tight bond between content and design, and how atomic design allows us to craft design systems that are [[tailored]] to the content that lives inside them. And finally we learned how the language of atomic design gives us a helpful shorthand for discussing modularity with our colleagues, and provides a much needed sense of hierarchy in our design systems.
 
-Atomic design is a helpful design and development methodology, but at the end of the day it's merely a mental model for constructing a UI. By now you may be wondering, "*How* do I make atomic design happen?" Well fear not, dear reader, because the rest of the book focuses on tools and processes to make your atomic design dreams come true.
+[[*Ed: Is "custom-tailored" like belt and braces? We can ditch "custom-" as "tailored" can do all the work.*]]
 
+Atomic design is a helpful design and development methodology, but [[essentially]] it's merely a mental model for constructing a UI. By now you may be wondering *how* you make atomic design happen. Well, fear not, dear reader, because the rest of the book focuses on tools and processes to make your atomic design dreams come true.
 
+[[*Ed: "At the end of the day". Nope. Let's replace that with something a little more meaningful. You use "ultimately" a few times as well (you'll have noticed I deleted them).*]]
