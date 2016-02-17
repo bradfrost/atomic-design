@@ -376,52 +376,55 @@ As previously mentioned, creating a custom pattern library requires a lot of har
 Better yet, even if you were to undertake a major redesign you'll find that many of the structural interface building blocks will remain the same. You'll still have forms, buttons, headings, other common interface patterns, so there's no need to throw the baby out with the bath water. A style guide provides a rock-solid foundation for all future work, even if that future work may look totally different.
 
 ## Style guide challenges
-By now the benefits of creating design systems should be abundantly clear, and hopefully visions of sugar plums and beautiful style guides are dancing through your head. But in order to reach style guide nirvana, you must first overcome the many treacherous challenges that come with the territory.
+By now the benefits of creating design systems should be abundantly clear, and hopefully visions of sugar plums and beautiful style guides are dancing through your head. But to reach style guide nirvana, you must first overcome the many treacherous challenges that come with the territory.
 
 ### The hard sell
 In order to benefit from style guides, organizations must first appropriate the necessary time and budget to make them happen. **That requires organizations to overcome the short-term mentality that all too often creeps its way into company culture.
 
-The long-term benefits that style guides provide are obvious to those who are already thinking about the long game. The challenge, therefore, becomes convincing those stuck in a short-term, quarter-by-quarter mindset that establishing a sound design system is a smart investment in the future.
+The long-term benefits that style guides provide are obvious to those who are already thinking about the long game. The challenge, therefore, becomes convincing those stuck in a short-term, quarter-by-quarter mindset that establishing a [[sound design]] system is a smart investment in the future.
+
+[[*Ed: See earlier note, but I'll leave this one up to you.*]]
 
 ### A matter of time
 > The hard part is building the machine that builds the product.” <cite>[Dennis Crowley](http://techcrunch.com/2011/03/03/founder-stories-foursquare-crowley-machine/) </cite>
 
-Perhaps the biggest, most unavoidable challenge is the fact that **style guides are time-consuming to create**. I don't know about you, but I don't go into work every day twiddling my thumbs wondering what to do with my time. I've never met a person that isn't feeling pressure to get work out the door, and this pressure naturally leads to focusing on the primary Web project. Unfortunately, aggressive timelines and finite budgets detract from the effort required to make style guides happen, even when teams are committed to the cause. 
-
+Perhaps the biggest, most unavoidable challenge is that **style guides are time-consuming to create**. I don't know about you, but I don't go into work every day twiddling my thumbs wondering what to do with my time. I've never met a person who isn't feeling pressure to get work out the door, and this pressure naturally leads to focusing on the primary web project. Unfortunately, aggressive timelines and finite budgets detract from the effort required to make style guides happen, even when teams are committed to the cause. 
 ### Auxiliary Projects
-**Pattern libraries are often treated as auxiliary projects**, rather than as the component parts of the final product. By treating pattern libraries as something separate from the core project, they tend to fall into the "nice to have" category and become first on the chopping block when the going gets tough.
+**Pattern libraries are often treated as auxiliary projects**, rather than as the component parts of the final product. By treating pattern libraries as something separate from the core project, they tend to fall into the _nice to have_ category and become first on the chopping block when the going gets tough.
 
-This auxiliary project conundrum reminds me of sentiments I often hear around factoring accessibility into projects. They say, "Oh, we wish we had time and budget for accessibility, but…" The notion that accessibility (and other principles like performance, responsiveness, etc.) is a costly "extra" line item is a fallacy. Pattern libraries, like accessibility, are good ideas to bake into your workflow whether or not the project plan explicitly calls for them.
+This auxiliary project conundrum reminds me of sentiments I often hear around factoring accessibility into projects. They say, "Oh, we wish we had the time and budget for accessibility, but…" The notion that accessibility (and other principles like performance and responsiveness) is a costly extra line item is a fallacy. Pattern libraries, like accessibility, are good ideas to bake into your workflow whether or not the project plan explicitly calls for them.
 
-### Maintenance and Governance
+### Maintenance and governance
 Even if time and money are allocated to establish style guides, these valuable tools often die on the vine if they're not given the focus they need to reach their true potential. 
 
-**Maintenance and governance strategy is critical to style guides' success**. Style guides will be thrown in the trash (right beside all those PSDs and wireframes) and abandoned without a proper strategy in place for who will manage, maintain, and enforce them. 
+**Maintenance and governance strategy [[is]] critical to style guides' success**. Style guides will be thrown in the trash (right beside all those PSDs and wireframes) and abandoned without a proper strategy in place for who will manage, maintain, and enforce them. 
+
+[[*Ed: Is/Are maintenance and governance strategy one thing or two? That is, one strategy covering maintenance and governance, or one strategy for each?*]]
 
 Style guide maintenance is a hugely important topic and deserves to be covered in detail, so we'll dive into how to create maintainable style guides in chapter 4.
 
 ### Audience confusion
-**Style guides can be misunderstood as tools useful only to designers or developers**, which leads to a lack of visibility that immediately limits their effectiveness. Instead of serving as a watering hole for everyone in the organization, a style guide can become a best-kept secret guarded by one discipline. Color me naive, but I don't think this helps foster a culture of collaboration.
+**Style guides can be misunderstood as tools useful only to designers or developers**, which leads to a lack of visibility that immediately limits their effectiveness. Instead of serving as [[a watering hole]] for everyone in the organization, a style guide can become a best-kept secret guarded by one discipline. Color me naive, but I don't think this helps foster a culture of collaboration.
+
+[[*Ed: See the earlier note. If the previous instance of "a watering hole" is changed, this one can stay.*]]
 
 Without thinking of broader audiences, style guides may come across as too vague or too technical, which can intimidate other disciplines and lead them to believe these resources aren't for them.
 
 ### Style guide structure
-In order for style guides to be useful resources for everyone in an organization, they should clearly convey what they are and why they matter. Style guides should be attractive, inviting, visible, clear, and easy to use. As mentioned above, they should be aware that a whole host of audiences will be viewing the guide, so should therefore aim to make it welcoming and useful for as many people as possible.
+For style guides to be useful resources for everyone in an organization, they should clearly convey what they are and why they matter. Style guides should be attractive, inviting, visible, clear, and easy to use. As mentioned above, they should be aware that a whole host of audiences will be viewing them, so should therefore aim to be welcoming and useful for as many people as possible.
 
-{% include figure.html src="../images/content/styleguide-yelp.png" caption="Yelp's style guide home page sports a handsome design and important intro text explaining the purpose and audience for the guide." %}
+{% include figure.html src="../images/content/styleguide-yelp.png" caption="Yelp's style guide homepage sports a handsome design and important intro text explaining the purpose and audience for the guide." %}
 
 ### Lack of context
-Context is key to understanding a design system. Unfortunately, most pattern libraries out in the wild don't provide any hints as to when, how, and where their components get used.
+Context is key to understanding a design system. Unfortunately, most pattern libraries out in the wild don't provide any hints as to when, how, and where their components get used. Without providing context, designers and developers don't know how global a particular pattern is, and as a result wouldn't know which pages of their app would need to be revisited, QA'd, and tested if changes were made. 
 
-Without providing context, designers and developers don't know how global a particular pattern is, and as a result wouldn't know which pages of their app would need revisited, QA'd, and tested if changes were made. 
-
-{% include figure.html src="../images/content/pattern-highlight-block.png" caption="'Highlight Block' looks like a useful and reusable pattern, but where is it being utilized?" %}
+{% include figure.html src="../images/content/pattern-highlight-block.png" caption="'Highlight Block' looks like a useful and reusable pattern, but where is it being made used of?" %}
 
 ### Lacking a clear methodology
-As much as I adore the pattern libraries out there [in the wild](http://styleguides.io/examples.html), I can't help but notice a lack of structure in many of them. Don't get me wrong, I think it's absolutely fantastic teams are thinking systematically and are documenting their UI patterns. But I often feel like many pattern libraries are little more than loosely-arranged sprays of modules. I think there's room for improvement.
+As much as I adore the pattern libraries [out there](http://styleguides.io/examples.html), I can't help but notice a lack of structure in many of them. Don't get me wrong, I think it's absolutely fantastic that teams are thinking systematically and are documenting their UI patterns. But I often feel like many pattern libraries are little more than loosely arranged sprays of modules. I think there's room for improvement.
 
 ## In search of an interface design methodology
-In order for us to create experiences for this eclectic Web landscape, we must evolve beyond the page metaphor that's been with us since the birth of the Web. Thankfully, organizations are embracing modularity across every aspect of the Web creation process, which is leading to smarter work and more sustainable systems.
+For us to create experiences for this eclectic web landscape, we must evolve beyond the page metaphor that's been with us since the birth of the web. Thankfully, organizations are embracing modularity across every aspect of the web creation process, which is leading to smarter work and more sustainable systems.
 
 As the number of devices, browsers, and environments we must account for increases at a staggering rate, the need to create thoughtful, deliberate interface design systems is becoming more apparent than ever.
 
