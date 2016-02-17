@@ -19,7 +19,7 @@ If you're like me, you may need a bit of a refresher to recall what a chemical e
 
 {% include figure.html src="../images/content/chemical-equation.png" caption="An example of a chemical equation showing hydrogen and oxygen atoms combining together to to form a water molecule." %}
 
-Chemical reactions are represented by chemical equations, which often show how atomic elements combine together to form molecules. <mark>In the example above, we see how hydrogen and oxygen combine together to form water molecules.</mark>
+Chemical reactions are represented by chemical equations, which often show how atomic elements combine together to form molecules. [[In the example above, we see how hydrogen and oxygen combine together to form water molecules.]]
 
 [[*Ed: Is it necessary to repeat the image caption text?*]]
 
