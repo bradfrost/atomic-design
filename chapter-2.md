@@ -7,35 +7,46 @@ permalink: /chapter-2/
 
 My search for a methodology to craft interface design systems led me to look for inspiration in other fields and industries. Given this amazingly complex world we've created, it seemed only natural that other fields would have tackled similar problems we could learn from and appropriate. As it turns out, loads of other fields [such as industrial design and architecture](http://us5.campaign-archive1.com/?u=7e093c5cf4&id=ead8a72012&e=ecb25a3f93) have developed smart modular systems for manufacturing immensely complex objects like airplanes, ships, and skyscrapers.
 
-But my original explorations kept creeping back to the natural world, which ultimately triggered memories of sitting at a rickety desk in my high school's chemistry lab.
+But my original explorations kept creeping back to the natural world, which triggered memories of sitting at a rickety desk in my high school's chemistry lab.
 
-## Taking Cues from Chemistry
-My high school chemistry class was taught by a no-nonsense Vietnam vet with an extraordinarily impressive mustache. Mr. Rae's class had a reputation for being one of the hardest classes in school, largely in part of an assignment that required students to balance hundreds upon hundreds of chemical equations contained in a massive worksheet.
+## Taking cues from chemistry
+
+[[*Ed: Headings in chapter 1 used sentence case, so I've replicated that here. In my experience, US written English tends towards using Title Case for headings, though not exclusively by any means. I'll leave the choice up to you, but my preference, being British, is for sentence case. You mostly use sentence case too. Title case requires a number of decisions to be made (Cap up every word? Cap up words with four or more letters? Cap up first and last word? Cap up nouns, pronouns, adj, verbs, etc? Lowercase a, an, the, to, etc?) and then consistently applied. Sentence case is easier to apply and, I reckon, looks simpler, neater and better.*]]
+
+My high school chemistry class was taught by a no-nonsense Vietnam vet with an extraordinarily impressive mustache. Mr. Rae's class had a reputation for being one of the hardest classes in school, largely because of an assignment that required students to balance hundreds upon hundreds of chemical equations contained in a massive worksheet.
 
 If you're like me, you may need a bit of a refresher to recall what a chemical equation looks like, so here you go:
 
-{% include figure.html src="../images/content/chemical-equation.png" caption="An example of a chemical equation showing hydrogen and oxygen atoms combining together to to form a water molecule" %}
+{% include figure.html src="../images/content/chemical-equation.png" caption="An example of a chemical equation showing hydrogen and oxygen atoms combining together to to form a water molecule." %}
 
-Chemical reactions are represented by chemical equations, which often show how atomic elements combine together to form molecules. In the above example, we see how hydrogen and oxygen combine together to form water molecules.
+Chemical reactions are represented by chemical equations, which often show how atomic elements combine together to form molecules. [[In the example above, we see how hydrogen and oxygen combine together to form water molecules.]]
+
+[[*Ed: Is it necessary to repeat the image caption text?*]]
 
 In the natural world, **atomic elements combine together to form molecules. These molecules can combine further to form relatively complex organisms**. To expound a bit further:
 
-- **Atoms** are the basic building blocks of all matter. Each chemical element has distinct properties, and they can't be broken down further without losing their meaning (yes, it's true atoms are composed of even smaller bits like protons, electrons, and neutrons, but that's outside the realm of this discussion).
+- **Atoms** are the basic building blocks of all matter. Each chemical element has distinct properties, and they can't be broken down further without losing their meaning. (Yes, it's true atoms are composed of even smaller bits like protons, electrons, and neutrons, but that's outside the realm of this discussion.)
 - **Molecules** are groups of two or more atoms held together by chemical bonds. These combinations of atoms take on their own unique properties, and become more tangible and operational than atoms.
-- **Organisms** are assemblies of molecules functioning together as a unit. These relatively complex structures can range from single-celled organisms all the way up to incredibly complex organisms like human beings.
+- **Organisms** are assemblies of molecules functioning together as a unit. These [[multifarious]] structures can range from single-celled organisms all the way up to incredibly complex organisms like human beings.
+ 
+[[*Ed: "Complex" and "relatively complex" appear a few times around here, so I've changed or removed at least a couple of them.*]]
 
-Of course I'm simplifying the incredibly rich, complex composition of the universe, but the basic gist remains: atoms combine together to form molecules, which continue combining to form relatively complex organisms. This atomic theory means that all matter in the known universe can be broken down into a finite set of atomic elements:
+Of course, I'm simplifying the incredibly rich composition of the universe, but the basic gist remains: atoms combine together to form molecules, which continue combining to form organisms. This atomic theory means that all matter in the known universe can be broken down into a finite set of atomic elements:
 
-{% include figure.html src="../images/content/periodic-table.png" caption="The periodic table of chemical elements" %}
+{% include figure.html src="../images/content/periodic-table.png" caption="The periodic table of chemical elements." %}
+
+[[*Ed: Does this image need to be updated to reflect the recent discovery of new elements (atomic numbers 115, 117 and 118)?*]]
 
 Apparently Mr. Rae's strategy of having students mind-numbingly balance tons of chemical equations worked, because I'm coming back to it all these years later for inspiration on how to approach interface design.
 
-## The Atomic Design Methodology
+## The atomic design methodology
 By now you may be wondering why we're talking about atomic theory, and maybe you're even a bit angry at me for forcing you to relive memories of high school chemistry class. But this is going somewhere, I promise.
 
-We discussed earlier how all matter in the universe can be broken down into a finite set of atomic elements. As it happens, our interfaces can be broken down into a similar finite set of elements. [Josh Duck's Periodic Table of HTML Elements](http://smm.zoomquiet.io/data/20110511083224/index.html) beautifully articulates how all of our websites, apps, intranets, hoobadyboops, and whatevers are all composed of the same HTML elements.
+We discussed earlier how all matter in the universe can be broken down into a finite set of atomic elements. As it happens, our interfaces can be broken down into a similar finite set of elements. [Josh Duck's Periodic Table of HTML Elements](http://smm.zoomquiet.io/data/20110511083224/index.html) beautifully articulates how all of our websites, apps, intranets, [[hoobadyboops]], and whatevers are all composed of the same HTML elements.
 
-{% include figure.html src="../images/content/html-periodic-table.png" caption="The periodic table of HTML elements by Josh Duck" %}
+[[*Ed: Yes. Those.*]]
+
+{% include figure.html src="../images/content/html-periodic-table.png" caption="The periodic table of HTML elements by Josh Duck." %}
 
 Because we're starting with a similar finite set of building blocks, we can apply that same process that happens in the natural world to design and develop user interfaces.
 
@@ -57,13 +68,23 @@ Let's dive into each stage and discuss its role in crafting an interface design 
 ## Atoms
 {% include figure.html src="../images/content/atomic-design-atoms.png" caption="" %}
 
-If atoms are the basic building blocks of matter, then the **atoms of our interfaces serve as the foundational building blocks that comprise all our user interfaces**. Therefore these atoms would include [basic HTML tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) like form labels, inputs, buttons, and other elements that can't be broken down any further without ceasing to be functional.
+[[*Ed: Again, it's preferable not to put an image directly beneath a heading, though I appreciate this image is about orientating the reader. I wonder if the image should come before the heading, but I'm not sure how the book will be designed or formatted.*]]
+
+If atoms are the basic building blocks of matter, then the **atoms of our interfaces serve as the foundational building blocks that comprise all our user interfaces**. These atoms would include [basic HTML [[tags]]](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) like form labels, inputs, buttons, and others that can't be broken down any further without ceasing to be functional.
+
+[[*Ed: Tags or elements?*]]
 
 {% include figure.html src="../images/content/atoms-form-elements.png" caption="Atoms include basic HTML tags like inputs, labels, and buttons." %}
 
-Each atom in the natural world has its own unique properties. A hydrogen atom contains one electron, while a helium atom contains two. These intrinsic chemical properties have profound effects on their application (for example, the Hindenburg explosion was so catastrophic because the airship was filled with extremely flammable hydrogen gas versus inert helium gas). In the same manner, each interface atom has its own unique properties, such as the dimensions of a hero image, or the font-size of a primary heading. These properties directly influence when they're applied to the user interface.
+Each atom in the natural world has its own unique properties. A hydrogen atom contains one electron, while a helium atom contains two. These intrinsic chemical properties have profound effects on their application (for example, the Hindenburg explosion was so catastrophic because the airship was filled with extremely flammable hydrogen gas versus inert helium gas). In the same manner, each interface atom has its own unique properties, such as the dimensions of a hero image, or the font size of a primary heading. These properties directly influence when [[they]]'re applied to the user interface.
 
-In addition to the tags that make up our user interfaces, **atoms can also include more abstract elemental items like color palettes, font stacks, and even invisible things like animations**. Defining these elemental properties of our UIs help promote consistency and cohesion throughout the entire experience.
+[[*Ed: It's not clear whether the "they" here refers to the atoms (which I assume is correct) or the properties.*]]
+
+In addition to the [[tags]] that make up our user interfaces, **atoms can also include more abstract elemental items like color palettes, font stacks, and even [[invisible]] things like animations**. Defining these elemental properties of our UIs helps promote consistency and cohesion throughout the entire experience.
+
+[[*Ed: Again, tags or elements?*]]
+
+[[*Ed: An animation is visible, surely? Do you mean intangible? Could these "invisible things" be concepts?*]]
 
 {% include figure.html src="../images/content/styleguide-salesforce-colors.png" caption="The style guide for Salesforce1 defines the color palette used throughout the user interface of the application." %}
 
@@ -72,15 +93,15 @@ In the context of a design system, atoms demonstrate all your global styles at a
 ## Molecules
 {% include figure.html src="../images/content/atomic-design-molecules.png" caption="" %}
 
-In chemistry, molecules are groups of atoms bonded together that resultantly take on new properties. In interfaces, **molecules are relatively simple groups of UI elements functioning together as a unit**. For example, a form label, search input, and button can combine them together to create a search form molecule.
+In chemistry, molecules are groups of atoms bonded together that take on distinct new properties. In interfaces, **molecules are relatively simple groups of UI elements functioning together as a unit**. For example, a form label, search input, and button can join together to create a search form molecule.
 
 {% include figure.html src="../images/content/molecule-search-form.png" caption="A search form molecule is composed of a label atom, input atom, and button atom." %}
 
 When combined, these abstract atoms suddenly have purpose. The label atom now defines the input atom. Clicking the button atom now submits the form. The result is a simple, portable, reusable component that can be dropped in anywhere site search functionality is needed.
 
-Now, assembling elements into simple functioning groups is something we've always done to construct user interfaces. But dedicating a stage in the atomic design methodology to these relatively simple components provides us a few key insights.
+Now, assembling elements into simple functioning groups is something we've always done to construct user interfaces. But dedicating a stage in the atomic design methodology to these relatively simple components affords us a few key insights.
 
-Creating simple components helps UI designers and developers adhere to the [single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), an age-old computer science principle that encourages a “do one thing and do it well” mentality. Burdening a single pattern with too much complexity makes software unwieldy. Therefore, creating simple UI molecules makes testing easier, encourages reusability, and promotes consistency throughout the interface.
+Creating simple components helps UI designers and developers adhere to the [single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), an age-old computer science precept that encourages a “do one thing and do it well” mentality. Burdening a single pattern with too much complexity makes software unwieldy. Therefore, creating simple UI molecules makes testing easier, encourages reusability, and promotes consistency throughout the interface.
 
 Now we have simple, functional, reusable components that we can put into a broader context. Enter organisms!
 
@@ -89,7 +110,7 @@ Now we have simple, functional, reusable components that we can put into a broad
 
 **Organisms are relatively complex UI components composed of groups of molecules and/or atoms and/or other organisms**. These organisms form distinct sections of an interface.
 
-Let's revisit our search form molecule. A search form can often be found in the header of many Web experiences, so let's put that search form molecule into context of a header organism.
+Let's revisit our search form molecule. A search form can often be found in the header of many web experiences, so let's put that search form molecule into the context of a header organism.
 
 {% include figure.html src="../images/content/organism-header.png" caption="The search form molecule placed in the context of the header organism, which also contains the logo atom and the primary navigation molecule." %}
 
@@ -101,18 +122,18 @@ Organisms can consist of similar or different molecule types. A header organism 
 
 While some organisms might consist of different types of molecules, other organisms might consist of the same molecule repeated over and over again. For instance, visit a category page of almost any e-commerce website and you'll see a listing of products displayed in some form of grid.
 
-{% include figure.html src="../images/content/organisms-product-grid.png" caption="A product grid organism on Gap's e-commerce website consist of the same product item molecule repeated again and again." %}
+{% include figure.html src="../images/content/organisms-product-grid.png" caption="A product grid organism on Gap's e-commerce website consists of the same product item molecule repeated again and again." %}
 
-Building up from molecules to relatively complex organisms provides designers and developers with an important sense of context. Organisms demonstrate those smaller, simpler components in action and serve as distinct patterns that can be used again and again. The product grid organism can be employed anywhere a group of products needs to be displayed, from category listings to search results to related products.
+Building up from molecules to more elaborate organisms provides designers and developers with an important sense of context. Organisms demonstrate those smaller, simpler components in action and serve as distinct patterns that can be used again and again. The product grid organism can be employed anywhere a group of products needs to be displayed, from category listings to search results to related products.
 
-Now that we have organisms defined in our design system, we can now break our chemistry analogy and apply all these components to something that resembles a Web page!
+Now that we have organisms defined in our design system, we can break our chemistry analogy and apply all these components to something that resembles a web page!
 
 ## Templates
 {% include figure.html src="../images/content/atomic-design-templates.png" caption="" %}
 
-And now, friends, it's time to say goodbye to our chemistry analogy. The language of atoms, molecules, and organisms carries with it a helpful hierarchy for us to deliberately construct the components of our design systems. But ultimately we must step into language that is more appropriate for our final output and makes more sense to our clients, bosses, and colleagues. Trying to carry the chemistry analogy too far might confuse your stakeholders and cause them to think you're a bit crazy. Trust me.
+Now, friends, it's time to say goodbye to our chemistry analogy. The language of atoms, molecules, and organisms carries with it a helpful hierarchy for us to deliberately construct the components of our design systems. But ultimately we must step into language that is more appropriate for our final output and makes more sense to our clients, bosses, and colleagues. Trying to carry the chemistry analogy too far might confuse your stakeholders and cause them to think you're a bit crazy. Trust me.
 
-**Templates are page-level objects that place components into a layout and articulate the design's underlying content structure**. To build upon our previous example, we can take the header organism and apply it to a homepage template.
+**Templates are page-level objects that place components into a layout and articulate the design's underlying content structure.** To build on our previous example, we can take the header organism and apply it to a homepage template.
 
 {% include figure.html src="../images/content/template.png" caption="The homepage template consists of organisms and molecules applied to a layout." %}
 
@@ -133,11 +154,11 @@ Now that we've established our pages' skeletal system, let's put some meat on th
 ## Pages
 {% include figure.html src="../images/content/atomic-design-pages.png" caption="" %}
 
-**Pages are specific instances of templates that replace placeholder content with real representative content**.  Building upon our previous example, we can take the homepage template and pour representative content into that container to show real content in action.
+**Pages are specific instances of templates that replace placeholder content with real representative content**.  Building on our previous example, we can take the homepage template and pour representative content into that container to show real content in action.
 
 {% include figure.html src="../images/content/page.png" caption="The page stage replaces placeholder content with real representative content to bring the design system to life." %}
 
-The page stage is most concrete stage of atomic design, and it's important for some rather obvious reasons. After all, this is what users will see when they visit your experience. This is what your stakeholders will sign off on. And this is where you see all those components coming together to form a beautiful and functional user interface. Exciting!
+The page stage is the most concrete stage of atomic design, and it's important for some rather obvious reasons. After all, this is what users will see when they visit your experience. This is what your stakeholders will sign off. And this is where you see all those components coming together to form a beautiful and functional user interface. Exciting!
 
 In addition to demonstrating the final interface as your users will see it, **pages are essential for testing the effectiveness of the underlying design system**. It is at the page stage that we're able to take a look at how all those patterns hold up when real content is applied to the design system. Does everything look great and function as it should? If the answer is no, then we can loop back and modify our molecules, organisms, and templates to better address our content's needs.
 
@@ -149,10 +170,12 @@ We must create systems that establish reusable design patterns and also accurate
 
 **Pages also provide a place to articulate variations in templates**, which is crucial for establishing robust and reliant design systems. Here are just a few examples of template variations:
 
-- A user has one item in their shopping cart and another user has 10 items in their cart.
+- A user has one item in their shopping cart and another user has ten items in their cart.
 - A web app's dashboard typically shows recent activity, but that section is suppressed for first-time users.
-- An article contains a 40-character-long headline while other article with a 340-character-long headline.  
+- [[An article contains a 40-character-long headline while other article with a 340-character-long headline.]]  
 - Users with administrative privileges see additional buttons and options on their dashboard compared to users who aren't admins.
+ 
+[[*Ed: List item 3 doesn't make sense.*]]
 
 In all of these examples, the underlying templates are the same, but the user interfaces change to reflect the nature of the content. These variations directly influence how the underlying molecules, organisms, and templates are constructed. Therefore, creating pages that account for these variations helps us create more resilient design systems.
 
@@ -162,13 +185,17 @@ So that's atomic design! These five distinct stages work together to produce eff
 - **Molecules** are collections of atoms that form relatively simple UI components.
 - **Organisms** are relatively complex components that form discrete sections of an interface.
 - **Templates** place components into a page layout and demonstrate the design's underlying content structure.
-- **Pages** apply real content to templates and articulate variations to demonstrate the final UI and test the resiliency of the design system.
+- **Pages** apply real content to templates and articulate variations to demonstrate the final UI and test the resilience of the design system.
 
 ## Advantages of atomic design
-So why go through all this rigamarole? What's atomic design good for? These are valid questions, considering we've been building user interfaces for a long time now without having an explicit five-stage methodology in place. But utilizing atomic design provides us a few key insights that help us create more effective, deliberate UI design systems.
+So why go through all this [[rigamarole]]? What's atomic design good for? These are valid questions, considering we've been building user interfaces for a long time now without having an explicit five-stage methodology in place. But atomic design provides us with a few key insights that help us create more effective, deliberate UI design systems.
 
-### The Part and the Whole
-**One of the biggest advantages atomic design provides is the ability to traverse between abstract and concrete**. We can simultaneously see our interfaces broken down to their atomic elements and also see how those elements combine together to form our final experiences.
+[[*Ed: Rigmarole would be the more usual spelling, but rigamarole is an accepted variant.*]]
+
+### The part and the whole
+**One of the biggest advantages atomic design provides is the ability to [[traverse between]] abstract and concrete.** We can simultaneously see our interfaces broken down to their atomic elements and also see how those elements combine together to form our final experiences.
+
+[[*Ed: This usage of "traverse" isn't quite right. We don't traverse between things, we simply traverse them: The candidates traversed the state throughout the campaign. The bridge traverses a river. I take it you mean atomic design lets us move from abstract to concrete and back again, so perhaps traverse here could become "switch" or "shift". I wonder, though, if you can simply remove "between" and "traverse abstract and concrete." Hmmn.*]]
 
 {% include figure.html src="../images/content/atomic-design-abstract-concrete.png" caption="Atomic design allows designers to traverse between abstract and concrete." %}
 
