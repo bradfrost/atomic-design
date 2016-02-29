@@ -11,36 +11,40 @@ Not quite.
 
 {% include figure.html src="../images/content/trash-can.jpg" caption="" %}
 
-There's a very real risk that a pattern library will be thrown in the trashcan right along with the PSDs, PDFs and other artifacts of the design process. All the time and effort that went into into making a thoughtful design system and pattern library goes down the drain.
+There's a very real risk that a pattern library will be thrown in the trashcan right alongside all the PSDs, PDFs and other artifacts of the design process. All the time and effort that went into into making a thoughtful design system and pattern library goes down the drain.
 
 Why does this happen?
 
 > A style guide is an artifact of design process. A design system is a living, funded product with a roadmap & backlog, serving an ecosystem. <cite>[Nathan Curtis](https://twitter.com/nathanacurtis/status/656829204235972608)</cite>
 
-An *artifact* is something you'd find in an archaeological dig or a museum, whereas a *system* is a living, breathing, kinetic entity. A pattern library provides helpful documentation, but simply making a pattern library doesn't guarantee long-term success. Pattern library
+An *artifact* is something you'd find in an archaeological dig or a museum, whereas a *system* is a living, breathing entity. A pattern library can provide helpful documentation, but the simple existence of a pattern library doesn't guarantee long-term success for the underlying design system. 
  
-We've already discussed the importance of resetting everyone's expectations to create a pattern-driven, more collaborative workflow. In order to make successful, lasting design systems, we must once again fundamentally shift how people think about the work we create.
+We've already discussed the importance of resetting everyone's expectations in order to establish a more collaborative, pattern-driven workflow. In order to make successful, lasting design systems, we must once again fundamentally rewire people's brains about the work we create.
 
-## Resetting expectations
+## Changing minds, once again
 
 ### What are we making again?
-We *think* we make websites. And that's partially true. But the issue with th
+We may *think* we primarily design and build websites. With this mental model, the website remains the primary focus of everyone's attention, while the pattern library is an offshoot of the website providing helpful documentation for the final product.
 
 {% include figure.html src="../images/content/workflow-website-first.png" caption="" %}
 
-With this approach, the website remains the primary focus of attention. The pattern library is an offshoot of the website. But you can almost see that pattern library breaking off and fading into the abyss. This is what tends to happen without a fundamental shift in how we think about our longterm design process.
+With this mentality, you can almost see that pattern library snapping off and fading into the abyss. **Once the pattern library ceases to reflect the current state of the live website, it becomes obsolete**. And once the pattern library managing the design system is no longer relevant, the maintenance process for the website devolves into a cluster of hotfixes and ad hoc changes, ruining all then thoughtfulness that went into creating   the original design system.
 
-Rather than .One of the most fundamental shifts in how we think is around what it is we're building. The website becomes one instantiation of 
+In order to successfully maintain a successful design system, we must fundamentally shift our mentality around just what it is we’re creating. Rather than thinking our primary responsibility 
 
 {% include figure.html src="../images/content/workflow-system-first.png" caption="" %}
+
+Friction can be friendly.
 
 ### Done and done
 One essential expectation to reset is the concept of *done*. Print and other physical mediums involve creating tangible objects that have a sense of finality to them. That simply doesn't exist in the digital world. The ephemeral nature of the Web means that changes can happen  is something that needs to be extolled to your clients, colleagues, and stakeholders. If we're to create living design systems, we need to recognize that the Web is never done, and that our work can and should be constantly evolved and improved upon over time.
 
 - Scope of work. 
-- Build contracts that revisit 
+- Build contracts that revisit the design system
+- Anna Debenham (find link to Styleguides podcast episode where Anna talks about building in )
 
 ## Maintainable Design Systems
+
 
 ### Make It Maintainable
 - Don't let it die on the vine and become obsolete
@@ -77,7 +81,7 @@ One essential expectation to reset is the concept of *done*. Print and other phy
 
 ### Make it last
 - Publish updates (Material Design example)
-- Regular E-mail newsletters, blog updates, etc, whenever things change
+- Notifications - Regular E-mail newsletters, blog updates, etc, whenever things change, Slack integrations 
 - Monitor progress - Lonely Planet performance
 
 ## Go forth and be atomic
