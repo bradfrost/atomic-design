@@ -72,11 +72,11 @@ In the context of a design system, atoms demonstrate all your global styles at a
 ## Molecules
 {% include figure.html src="../images/content/atomic-design-molecules.png" caption="" %}
 
-In chemistry, molecules are groups of atoms bonded together that resultantly take on new properties. In interfaces, **molecules are relatively simple groups of UI elements functioning together as a unit**. For example, a form label, search input, and button can combine them together to create a search form molecule.
+In chemistry, molecules are groups of atoms bonded together that resultantly take on new properties. In interfaces, **molecules are relatively simple groups of UI elements functioning together as a unit**. For example, a form label, search input, and button can combine to create a search form molecule.
 
 {% include figure.html src="../images/content/molecule-search-form.png" caption="A search form molecule is composed of a label atom, input atom, and button atom." %}
 
-When combined, these abstract atoms suddenly have purpose. The label atom now defines the input atom. Clicking the button atom now submits the form. The result is a simple, portable, reusable component that can be dropped in anywhere site search functionality is needed.
+When combined, these abstract atoms suddenly have purpose. The label atom defines the input atom. Clicking the button atom submits the form. The result is a simple, portable, reusable component that can drop in anywhere site search functionality is needed.
 
 Now, assembling elements into simple functioning groups is something we've always done to construct user interfaces. But dedicating a stage in the atomic design methodology to these relatively simple components provides us a few key insights.
 
@@ -89,7 +89,7 @@ Now we have simple, functional, reusable components that we can put into a broad
 
 **Organisms are relatively complex UI components composed of groups of molecules and/or atoms and/or other organisms**. These organisms form distinct sections of an interface.
 
-Let's revisit our search form molecule. A search form can often be found in the header of many Web experiences, so let's put that search form molecule into context of a header organism.
+Let's revisit our search form molecule. A search form is found in the header of many Web experiences, so let's put that search form molecule into the context of a header organism.
 
 {% include figure.html src="../images/content/organism-header.png" caption="The search form molecule placed in the context of the header organism, which also contains the logo atom and the primary navigation molecule." %}
 
@@ -151,7 +151,7 @@ We must create systems that establish reusable design patterns and also accurate
 
 - A user has one item in their shopping cart and another user has 10 items in their cart.
 - A web app's dashboard typically shows recent activity, but that section is suppressed for first-time users.
-- An article contains a 40-character-long headline while other article with a 340-character-long headline.  
+- One article contains a 40-character-long headline while another article has a 340-character-long headline.  
 - Users with administrative privileges see additional buttons and options on their dashboard compared to users who aren't admins.
 
 In all of these examples, the underlying templates are the same, but the user interfaces change to reflect the nature of the content. These variations directly influence how the underlying molecules, organisms, and templates are constructed. Therefore, creating pages that account for these variations helps us create more resilient design systems.
@@ -228,7 +228,7 @@ Let's walk through this atomized Instagram interface:
 I show this non-Web example because atomic design tends to get misinterpreted as an approach to Web-specific technologies like CSS and JavaScript. Let me be clear about this: **atomic design has nothing to do with web-specific subjects like CSS or JavaScript architecture**. In Chapter 1 we discussed the trend toward modularity in all aspects of design and development, which includes CSS and JavaScript. These are fantastic trends in CSS and JavaScript, but atomic design deals with crafting user interface design systems irrespective of the technology used to create them.
 
 ## Atomic design in theory and in practice
-This chapter introduced the atomic design methodology and demonstrated how atoms, molecules, organisms, templates, and pages all work together to craft thoughtful, deliberate interface design systems. Atomic design allows us to see our UIs broken down to their atomic elements and also allows us to simultaneously step through how those elements join together to ultimately form our final UIs. We learned about the tight bond between content and design and how atomic design allows us to craft design systems that are custom-tailored to the content that lives inside them. And finally we learned how the language of atomic design gives us a helpful shorthand for discussing modularity with our colleagues and provides a much-needed sense of hierarchy in our design systems.
+This chapter introduced the atomic design methodology and demonstrated how atoms, molecules, organisms, templates, and pages all work together to craft thoughtful, deliberate interface design systems. Atomic design allows us to see our UIs broken down to their atomic elements and assess how those elements join together to ultimately form our final UIs. We learned about the tight bond between content and design and how atomic design allows us to craft design systems that are custom-tailored to the content that lives inside them. And finally we learned how the language of atomic design gives us a helpful shorthand for discussing modularity with our colleagues and provides a much-needed sense of hierarchy in our design systems.
 
 Atomic design is a helpful design and development methodology, but at the end of the day it's merely a mental model for constructing a UI. By now you may be wondering, "*How* do I make atomic design happen?" Well fear not, dear reader, because the rest of the book focuses on tools and processes to make your atomic design dreams come true.
 
