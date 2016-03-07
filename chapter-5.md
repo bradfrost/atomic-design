@@ -18,19 +18,20 @@ Why does this happen?
 > A style guide is an artifact of design process. A design system is a living, funded product with a roadmap & backlog, serving an ecosystem. <cite>[Nathan Curtis](https://twitter.com/nathanacurtis/status/656829204235972608)</cite>
 
 An *artifact* is something you'd find in an archaeological dig or a museum, whereas a *system* is a living, breathing entity. A pattern library can provide helpful documentation, but the simple existence of a pattern library doesn't guarantee long-term success for the underlying design system. 
- 
-We've already discussed the importance of resetting everyone's expectations in order to establish a more collaborative, pattern-driven workflow. In order to make successful, lasting design systems, we must once again fundamentally rewire people's brains about the work we create.
 
 ## Changing minds, once again
+We've already discussed the importance of resetting everyone's expectations in order to establish a more collaborative, pattern-driven workflow. In order to save our design systems from the trash can and craft successful, lasting design systems instead, we must once again fundamentally rewire people's brains.
 
-### What are we making again?
-We may *think* we primarily design and build websites. With this mental model, the website remains the primary focus of everyone's attention, while the pattern library is an offshoot of the website providing helpful documentation for the final product.
+### What is it we're making again?
+We *think* we merely design and build websites. And that's true for the most part. After all, that's what our clients pay us to do, and the websites we create are the vehicles that generate money and success for an organization. So it seems natural to focus on the end product. With this mentality, the live website remains the primary focus of everyone's attention, while any pattern library exists as an offshoot that provides helpful documentation for the final product.
 
 {% include figure.html src="../images/content/workflow-website-first.png" caption="" %}
 
-With this mentality, you can almost see that pattern library snapping off and fading into the abyss. **Once the pattern library ceases to reflect the current state of the live website, it becomes obsolete**. And once the pattern library managing the design system is no longer relevant, the maintenance process for the website devolves into a cluster of hotfixes and ad hoc changes, ruining all then thoughtfulness that went into creating   the original design system.
+The problem with this mentality is that you can almost see that pattern library snapping off and sliding off into the abyss.  **Once the pattern library ceases to reflect the current state of the live website, it becomes obsolete**. And when the pattern library managing the design system is no longer accurate, the website maintenance process devolves into a smattering of hotfixes and ad hoc changes, ruining all the thoughtfulness that went into creating the original design system.
 
-In order to successfully maintain a successful design system, we must fundamentally shift our mentality around just what it is we’re creating. Rather than thinking our primary responsibility 
+In order to set a design system for long-term success, we must fundamentally shift our mentality around just what exactly it is we’re creating. Rather than thinking of the final website our primary responsibility, we must recognize that the design system is what d
+
+The final website is still a priority, it's just not the _only_ priority. 
 
 {% include figure.html src="../images/content/workflow-system-first.png" caption="" %}
 
