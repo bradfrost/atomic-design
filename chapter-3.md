@@ -5,9 +5,9 @@ chapterTitle: Chapter 3
 permalink: /chapter-3/
 ---
 
-In the last chapter, I introduced the atomic design methodology for constructing user interfaces. Hopefully you'll find atomic design to be a helpful mental model for constructing UI design systems, but now it's time to climb down from the ivory tower and actually put atomic design into practice *in the real world*.
+In the previous chapter, I introduced the atomic design methodology for constructing user interfaces. I hope you'll find atomic design to be a helpful mental model for constructing UI design systems, but now it's time to climb down from the ivory tower and actually put atomic design into practice *in the real world*.
 
-The cornerstone of pattern-based design and development is the pattern library, which serves as a centralized hub of all the UI components that comprise your user interface. As we discussed in Chapter 1, the benefits of pattern libraries are many:
+The cornerstone of pattern-based design and development is the pattern library, which serves as a centralized hub of all the UI components that comprise your user interface. As we discussed in chapter 1, the benefits of pattern libraries are many:
 
 - They **promote consistency and cohesion** across the entire experience.
 - They **speed up your team's workflow**, saving time and money.
@@ -15,11 +15,11 @@ The cornerstone of pattern-based design and development is the pattern library, 
 - They **establish a shared vocabulary** between everyone in an organization, including outside vendors.
 - They **provide helpful documentation** to help educate stakeholders, colleagues, and even third parties.
 - They **make cross-browser/device, performance, and accessibility testing easier**.
-- They **serve as a future-friendly foundation** for teams to modify, extend, and improve upon over time.
+- They **serve as a future-friendly foundation** for teams to modify, extend, and improve on over time.
 
-That all sounds wonderful, right? I can almost hear you saying, "I need this whole pattern library thing in my life." But how do we make pattern libraries happen? Well, you've come to the right place, friend, because the rest of this book is dedicated to exactly that. This chapter will introduce helpful tools for creating pattern libraries, and the following chapter will discuss how to make patterns a cornerstone of your design and development workflow. 
+That all sounds wonderful, right? I can almost hear you saying, "I need this whole pattern library thing in my life." But how do we make pattern libraries happen? Well, you've come to the right place, friend, because the rest of this book is dedicated to exactly that. This chapter will introduce helpful tools for creating pattern libraries, and the next chapter will discuss how to make patterns a cornerstone of your design and development workflow. 
 
-I'll be talking about the qualities of effective pattern libraries through the lens of a tool called [Pattern Lab](http://patternlab.io), an open-source project created by me and [Dave Olsen](http://dmolsen.com) to execute atomic design systems. While I'll excitedly discuss Pattern Lab and its various features, I want to stress that the point of this chapter is to cover the characteristics of well-constructed pattern libraries, not sell any one specific tool to you. Hell, Pattern Lab isn't even for sale! No single tool will be a perfect fit for all readers, but be sure to keep the following principles in mind when deciding what tools to use to create your pattern libraries.
+I'll talk about the qualities of effective pattern libraries through the lens of a tool called [Pattern Lab](http://patternlab.io), an open source project created by me and [Dave Olsen](http://dmolsen.com) to execute atomic design systems. While I'll excitedly discuss Pattern Lab and its various features, I want to stress that the point of this chapter is to cover the characteristics of well-constructed pattern libraries, not sell any one specific tool to you. Hell, Pattern Lab isn't even for sale! No single tool will be a perfect fit for all readers, but be sure to keep the following principles in mind when deciding what tools to use to create your pattern libraries.
 
 ## Just what exactly is Pattern Lab?
 Before we dive into the nuts and bolts of how Pattern Lab works, it's important to take time to explain what the tool is and isn't.
@@ -31,31 +31,31 @@ Before we dive into the nuts and bolts of how Pattern Lab works, it's important 
 
 ### Pattern Lab isn't…
 - a UI framework like Bootstrap or Foundation.
-- language, library, or style dependent.
+- language-, library-, or style-dependent.
 - a replacement for a content management system.
 
-Let's walk through these points, starting with the term *static site generator*. Static site generator tools take in some source code & assets, compile them, and spit plain-ol' HTML, CSS, and JavaScript out the other end. **Pattern Lab takes source code – namely patterns – and compiles those patterns into a functional front-end UI inside a pattern library shell**.
+Let's walk through these points, starting with the term *static site generator*. Static site generator tools take in some source code and assets, compile them, and spit out plain ol' HTML, CSS, and JavaScript at the other end. **Pattern Lab takes source code – namely patterns – and compiles those patterns into a functional front-end UI inside a pattern library shell**.
 
 So what does Pattern Lab look like out of the box? Drumroll, please. 
 
 {% include figure.html src="../images/content/pattern-lab-default.png" caption="The default Pattern Lab dashboard. What it lacks in good looks, it makes up for in utility." %}
 
-Not a terribly inspiring design, eh? Believe it or not, this minimal (one may even say "lack of") design is deliberate. To avoid incorrect classification as a UI framework like Bootstrap, the design is deliberately stripped down so no one would mistakenly use Pattern Lab's demo UI as suggested styles. Pattern Lab doesn't give you any answers as to how to design or architect your front-end code; *you have to do all that work yourself.* The look & feel, naming conventions, syntax, structure, libraries, and scripts you choose to use to create your UI is entirely up to you. Heck, you can even use UI frameworks like Bootstrap within Pattern Lab. Pattern Lab is just there to help stitch everything together.
+Not a terribly inspiring design, eh? Believe it or not, this minimal (one might even say _lack of_) design is deliberate. To avoid incorrect classification as a UI framework like Bootstrap, the design is deliberately stripped down so no one would mistakenly take Pattern Lab's demo UI for suggested styles. Pattern Lab doesn't give you any answers as to how to design or architect your front-end code—*you have to do all that work yourself*. The look and feel, naming conventions, syntax, structure, libraries, and scripts you choose to use to create your UI is entirely up to you. Heck, you can even use UI frameworks like Bootstrap _within_ Pattern Lab. Pattern Lab is just there to help stitch everything together.
 
-As a technical aside, Pattern Lab uses PHP as the engine that stitches patterns together and generates the pattern library. However, you don't need to be a PHP wizard to use Pattern Lab any more than you have to know how to build an internal combustion engine in order to drive a car. Moreover, your final website doesn't have to be built with PHP in order to use the tool, as Pattern Lab's output is backend-agnostic HTML, CSS, and JavaScript. But if you're one of those cool kids who thinks using a PHP-based tool will somehow ruin your reputation, there's also a [Node.js version](https://github.com/pattern-lab/patternlab-node) thanks to web developer [Brian Muenzenmeyer](http://www.brianmuenzenmeyer.com/). 
+As a technical aside, Pattern Lab uses PHP as the engine that stitches patterns together and generates the pattern library. However, you don't need to be a PHP wizard to use Pattern Lab any more than you have to know how to build an internal combustion engine to drive a car. Moreover, your final website doesn't have to be built with PHP to use the tool, as Pattern Lab's output is backend-agnostic HTML, CSS, and JavaScript. But if you're one of those cool kids who thinks using a PHP-based tool will somehow ruin your reputation, there's also a [Node.js version](https://github.com/pattern-lab/patternlab-node) thanks to web developer [Brian Muenzenmeyer](http://www.brianmuenzenmeyer.com/). 
 
-If that all sounded like gibberish to you, don't worry. This chapter focuses on the over-arching features and principles behind Pattern Lab rather than going too far down the technical rabbit hole. You can check out [Pattern Lab's documentation](http://patternlab.io/docs/index.html) to dive into the nitty gritty.
+If that all sounded like gibberish to you, don't worry. This chapter focuses on the overarching features and principles behind Pattern Lab rather than going too far down the technical rabbit hole. You can check out [Pattern Lab's documentation](http://patternlab.io/docs/index.html) to dive into the nitty-gritty.
 
 ## Building atomic design systems with Pattern Lab
-In order to understand the core concept behind Pattern Lab, you need to understand Russian nesting dolls. 
+To understand the core concept behind Pattern Lab, you need to understand [[Russian nesting dolls]].
 
-{% include figure.html src="../images/content/russian-nesting-dolls.jpg" caption="Russian nesting dolls. <a href='https://www.flickr.com/photos/tromal/6901848291/'>via Flickr user Tromal</a>" %}
+{% include figure.html src="../images/content/russian-nesting-dolls.jpg" caption="Russian nesting dolls. <a href='https://www.flickr.com/photos/tromal/6901848291/'>Via Flickr user Tromal</a>" %}
 
-Matryoshka dolls, also known as Russian nesting dolls, are beautifully-carved hollow wooden dolls of increasing size that are placed one inside the other. Patterns in Pattern Lab operate in a similar manner: the smallest patterns (atoms) are included inside bigger patterns (molecules), which are included in even bigger patterns (organisms), which are in turn included in even bigger patterns (templates). 
+Matryoshka dolls (also known as Russian nesting dolls) are beautifully carved hollow wooden dolls of increasing size that are placed inside one another. Patterns in Pattern Lab operate in a similar manner: the smallest patterns (atoms) are included inside bigger patterns (molecules), which are included in even bigger patterns (organisms), which are in turn included in even bigger patterns (templates). 
 
-Constructing UIs in this manner helps keeps things [DRY](https://en.wikipedia.org/wiki/Don't_repeat_yourself), which is a long-standing computer science principle that stands for "Don't Repeat Yourself." Make a change to a pattern, and anywhere that pattern is employed will magically update with those changes. This saves an extraordinary amount of time and grief, and certainly beats the pants off sifting through hundreds of Photoshop documents for every instance of a pattern just to make a simple change.
+Constructing UIs in this manner helps keep things [DRY](https://en.wikipedia.org/wiki/Don't_repeat_yourself), which is a long-standing computer science principle that stands for "don't repeat yourself." Make a change to a pattern, and anywhere that pattern is employed will magically update with those changes. This saves an extraordinary amount of time and grief, and certainly beats the pants off sifting through hundreds of Photoshop documents for every instance of a pattern just to make a simple change.
 
-To make this happen Pattern Lab uses the *include* feature of [Mustache](https://mustache.github.io/), a logic-less templating language. Here's what a Mustache include looks like:
+To make this happen Pattern Lab uses the *include* feature of [Mustache](https://mustache.github.io/), a logicless templating language. Here's what a Mustache include looks like:
 
 <pre>
 <code>
@@ -63,17 +63,21 @@ To make this happen Pattern Lab uses the *include* feature of [Mustache](https:/
 </code>
 </pre>
 
-This is Mustache code, in case the double curly braces ({% raw %}`{{}}`{% endraw %}) that look like little mustaches didn't give it away. The greater than symbol (`>`) is Mustache's way of telling Pattern Lab "hey, I want you to include an atom pattern called "thumbnail". Pattern Lab will go searching through its folders of patterns to find an atom named "thumbnail".
+This is Mustache code, in case the double curly braces ({% raw %}`{{}}`{% endraw %}) that look like little mustaches didn't give it away. The greater-than symbol (`>`) is Mustache's way of telling Pattern Lab to include an atom pattern called "thumbnail". Pattern Lab will go searching through its folders of patterns to find an atom named "thumbnail".
 
-{% include figure.html src="../images/content/pattern-lab-file-structure.png" caption="This is what Pattern Lab's default patterns folder structure looks like. You can name and categorize these folders however you'd like, even removing the labels 'atoms', 'molecules', and 'organisms'. The most important consideration is to establish naming & categorization that is most clear for your team." %}
+[[*Ed: I've retained your use of full stops (periods) outside the quotation marks here, as you're referring to a code sample. Were the full stops within the quotation marks, they might be construed as being part of that code.*]]
+
+{% include figure.html src="../images/content/pattern-lab-file-structure.png" caption="This is what Pattern Lab's default patterns folder structure looks like. You can name and categorize these folders however you'd like, even removing the labels “atoms”, “molecules”, and “organisms.” The most important consideration is to establish naming and categorization that is clearest for your team." %}
 
 Now that we know what an include looks like, let's put it into practice and take a look at a few patterns from a website I helped make for Time Inc. Here's one reusable pattern we designed:
 
 {% include figure.html src="../images/content/pattern-lab-molecule.png" caption="For Time Inc.'s website, we created a basic block pattern consisting of a thumbnail image, headline, and excerpt." %}
 
-This pattern should look fairly familiar. A thumbnail image, headline, and excerpt working together as a single unit is a common pattern found on countless websites. Let's take a peek behind the curtain to see how this pattern is constructed:
+This pattern should look fairly familiar. A thumbnail image, headline, and excerpt working together as a single unit is a common pattern found on countless websites. Let's take a peek behind the curtain to see how this pattern is constructed.
 
-<em>[<small>Note from Brad: Forgive the mess with the markup formatting. I need to look into how to properly escape characters and highlight syntax in a way that works for the site but also for the eventual ebook.</small>]</em>
+<em>[<small>Note from Brad: Forgive the mess with the [[markup formatting]]. I need to look into how to properly escape characters and highlight syntax in a way that works for the site but also for the eventual ebook.</small>]</em>
+
+[[*Ed: Duly noted. Is this helpful? https://help.github.com/articles/creating-and-highlighting-code-blocks/ I'll try a block below.*]]
 
 <pre>
 <code>
@@ -89,6 +93,17 @@ This pattern should look fairly familiar. A thumbnail image, headline, and excer
 </code>
 </pre>
 
+```html
+{% raw %}
+<div class="block-post">
+    <a href="{{ url }}">
+        {{> atoms-thumb }}
+        <h3>{{ headline }}</h3>
+       <p>{{ excerpt }}</p>
+    </a>
+</div>
+{% endraw %}
+```
 You can see we have HTML markup consisting of a wrapper `div` with a class name of `block-post`, a link, a Mustache include for the thumbnail image, a `<h3>` tag for the headline, and a `<p>` tag for the excerpt. You'll notice there's more Mustache code for `url`, `headline`, and `excerpt`, which we'll use later to dynamically swap in actual content. More on that in a bit.
 
 Now that we have our pattern markup established, we can now include that chunk of code in even bigger patterns using the same include method:
