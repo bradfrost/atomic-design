@@ -77,9 +77,9 @@ This pattern should look fairly familiar. A thumbnail image, headline, and excer
 
 <em>[<small>Note from Brad: Forgive the mess with the [[markup formatting]]. I need to look into how to properly escape characters and highlight syntax in a way that works for the site but also for the eventual ebook.</small>]</em>
 
-[[*Ed: Duly noted. Is this helpful? https://help.github.com/articles/creating-and-highlighting-code-blocks/ I'll try a block below.*]]
+[Ed]: # (Duly noted. Is this helpful? https://help.github.com/articles/creating-and-highlighting-code-blocks/ I'll try a block below. I've no idea how this will export to either the website or the ebook.)
 
-[Ed]: # (<pre>
+[Brad's markup block, with additional Markdown escaping from Editor]: # (<pre>
 <code>
 {% raw %}
 \<div class="block-post"\>
@@ -93,6 +93,7 @@ This pattern should look fairly familiar. A thumbnail image, headline, and excer
 </code>
 </pre>)
 
+[Editor's markup block]
 ```html
 {% raw %}
 <div class="block-post">
@@ -104,9 +105,11 @@ This pattern should look fairly familiar. A thumbnail image, headline, and excer
 </div>
 {% endraw %}
 ```
-You can see we have HTML markup consisting of a wrapper `div` with a class name of `block-post`, a link, a Mustache include for the thumbnail image, a `<h3>` tag for the headline, and a `<p>` tag for the excerpt. You'll notice there's more Mustache code for `url`, `headline`, and `excerpt`, which we'll use later to dynamically swap in actual content. More on that in a bit.
+You can see we have: HTML markup consisting of a wrapper `div` with a class name of `block-post`; a link; a Mustache include for the thumbnail image; an `<h3>` [[tag]] for the headline; and a `<p>` tag for the excerpt. You'll notice there's more Mustache code for `url`, `headline`, and `excerpt`, which we'll use later to dynamically swap in actual content. More on that in a bit.
 
-Now that we have our pattern markup established, we can now include that chunk of code in even bigger patterns using the same include method:
+[[*Ed: HTML tag or element? I tend to think of elements as having opening and closing tags (except when they don't, of course…)*]]
+
+Now that our pattern markup is established, we can include that chunk of code in bigger patterns using the same include method:
 
 <pre>
 <code>
@@ -120,19 +123,19 @@ Now let's move up to more complex organisms like the website's header, which loo
 
 When we crack open the hood to look at the header's markup in Pattern Lab, we see the following:
 
-<pre>
-<code>
+```html
 {% raw %}
-\<header role="banner"\>
+<header role="banner">
     {{> atoms-logo }}
     {{> molecules-primary-nav }}
     {{> molecules-search }}
-\</header\>
+</header>
 {% endraw %}
-</code>
-</pre>
+```
 
-What's going on here? Well, we have a basic `<header>` tag, and inside that tag we're including the logo image atom, the primary navigation molecule, and the search form molecule.
+What's going on here? Well, we have a basic `<header>` [[tag]], and inside that [[tag]] we're including the logo image atom, the primary navigation molecule, and the search form molecule.
+
+[[*Ed: HTML tag or element?*]]
 
 And now we can include that relatively complex pattern anywhere we need it.
 
@@ -142,51 +145,49 @@ And now we can include that relatively complex pattern anywhere we need it.
 </code>
 </pre> 
 
-Hopefully by now you can see the Russian nesting dolls taking shape. The smallest atoms are included in bigger molecules, and those molecules get included in even bigger organisms. Now let's take these components and plug them into a layout. Take the homepage template, for instance:
+I hope by now you can see the Russian nesting dolls in action. The smallest atoms are included in bigger molecules, and those molecules get included in even bigger organisms. Now let's take these components and plug them into a layout. Take the homepage template, for instance:
 
-{% include figure.html src="../images/content/template-timeinc-homepage-long.png" caption="The Time Inc. homepage template consists of a few repeatable patterns: a global header, a hero area, a few sections (containing an image, headline, excerpt, and call to action), an area featuring four items, a 'factoid' area, and a global footer." %}
+{% include figure.html src="../images/content/template-timeinc-homepage-long.png" caption="The Time Inc. homepage template consists of a few repeatable patterns: a global header, a hero area, a few sections (containing an image, headline, excerpt, and call to action), an area featuring four items, a factoid area, and a global footer." %}
 
 Take a quick stroll through the homepage template and you'll see some pretty standard patterns: a site header at the top, a site footer at the bottom, and a full-screen hero area. You'll also see a few other patterns repeating themselves throughout the template. 
 
 So how does this look in code? As you might expect, it involves more includes!
 
-<pre>
-<code>
+```html
 {% raw %}
 {{> organisms-header }}
-\<main role="main"\>
+<main role="main">
     {{# hero }}
     {{> molecules-hero }}
     {{/ hero }}
-    \<section\>
+    <section>
         {{# experience-block }}
         {{> molecules-block-main }}
         {{/ experience-block }}
         {{# experience-feature }}
         {{> organisms-story-feature }}
         {{/ experience-feature }}
-    \</section\>
-    \<section\>
+    </section>
+    <section>
         {{# factoid-advertising }}
         {{> organisms-factoid }}
         {{/ factoid-advertising }}
-    \</section\>
-    \<section\>
+    </section>
+    <section>
         {{# advertising }}
         {{> molecules-block-main }}
         {{/ advertising }}
-    \</section\>
+    </section>
     …   
-  \</main\>
+  </main>
   {{> organisms-footer }}
-\</div\>
+</div>
 {% endraw %}
-</code>
-</pre>
+```
 
 At this stage in the game the smaller patterns are already constructed, so all the template needs to do is pull them into the context of a page layout and give them unique names.
 
-Taking a closer look at the code, notice certain patterns like `{% raw %}{{> organisms-header }}{% endraw %}` and `{% raw %}{{> organisms-footer }}{% endraw %}` are included the same way we've done with the prior examples. But there are also a few other includes patterns that are supplemented by some additional information, like the following:
+Taking a closer look at the code, notice certain patterns like `{% raw %}{{> organisms-header }}{% endraw %}` and `{% raw %}{{> organisms-footer }}{% endraw %}` are included the same way as the prior examples. But there are also a few other includes patterns that are supplemented by some additional information, like the following:
 
 <pre>
 <code>
@@ -198,9 +199,9 @@ Taking a closer look at the code, notice certain patterns like `{% raw %}{{> org
 </code>
 </pre>
   
-We're including `organisms-factoid` the same way as all the other patterns, but we're also naming it `factoid-advertising` by wrapping the include in a mustache *section*, indicated by the mustache code containing the `#` and `/` symbols.  By giving the pattern instance a unique name, we can latch onto it and dynamically replace the content of the pattern. More on that in the next section!
+We're including `organisms-factoid` the same way as all the other patterns, but we're also naming it `factoid-advertising` by wrapping the include in a Mustache *section*, indicated by the Mustache code containing the `#` and `/` symbols. By giving the pattern instance a unique name, we can latch on to it and dynamically replace the content of the pattern. More on that in the next section!
 
-This Russian nesting doll approach to building UIs is simple but tremendously powerful. This structure allows designers and developers to keep patterns DRY saving time, effort, and money.  This approach also allows teams to build a final UI while simultaneously creating the underlying UI design system.  After all, the final interface is one instantiation of its underlying design system. Teams can also traverse between abstract and concrete, zeroing in on a particular pattern to fix bugs ("The header's broken!"), while also seeing how changes to small patterns affect the overall page layout.
+This Russian nesting doll approach to building UIs is simple but tremendously powerful. This structure allows designers and developers to keep patterns DRY, saving time, effort, and money. This approach allows teams to build a final UI while simultaneously creating the underlying UI design system. After all, the final interface is one instantiation of its underlying design system. Teams can also move between abstract and concrete, zeroing in on a particular pattern to fix bugs ("The header's broken!"), while also seeing how changes to small patterns affect the overall page layout.
 
 ## Working with dynamic data
 It's important to articulate the underlying content structure of UI patterns within the context of a pattern library. That's why we've been looking at dimension-displaying grayscale images and placeholder text containing character limits. But while this information is helpful for creative teams, grayscale images and lorem ipsum text are not what end users interact with on your actual site. We need a way to replace our default dummy content with real representative content in order to ensure our UI patterns match the reality of the content that lives inside them.
