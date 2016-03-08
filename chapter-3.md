@@ -79,7 +79,7 @@ This pattern should look fairly familiar. A thumbnail image, headline, and excer
 
 [[*Ed: Duly noted. Is this helpful? https://help.github.com/articles/creating-and-highlighting-code-blocks/ I'll try a block below.*]]
 
-<pre>
+[Ed]: # (<pre>
 <code>
 {% raw %}
 \<div class="block-post"\>
@@ -91,7 +91,7 @@ This pattern should look fairly familiar. A thumbnail image, headline, and excer
 \</div\>
 {% endraw %}
 </code>
-</pre>
+</pre>)
 
 ```html
 {% raw %}
