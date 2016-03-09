@@ -57,11 +57,9 @@ Constructing UIs in this manner helps keep things [DRY](https://en.wikipedia.org
 
 To make this happen Pattern Lab uses the *include* feature of [Mustache](https://mustache.github.io/), a logicless templating language. Here's what a Mustache include looks like:
 
-<pre>
-<code>
+```
 {% raw %}{{> atom-thumbnail }}{% endraw %}
-</code>
-</pre>
+```
 
 This is Mustache code, in case the double curly braces ({% raw %}`{{}}`{% endraw %}) that look like little mustaches didn't give it away. The greater-than symbol (`>`) is Mustache's way of telling Pattern Lab to include an atom pattern called "thumbnail". Pattern Lab will go searching through its folders of patterns to find an atom named "thumbnail".
 
@@ -111,11 +109,9 @@ You can see we have: HTML markup consisting of a wrapper `div` with a class name
 
 Now that our pattern markup is established, we can include that chunk of code in bigger patterns using the same include method:
 
-<pre>
-<code>
+```
 {% raw %}{{> molecules-block-post }}{% endraw %}
-</code>
-</pre> 
+```
 
 Now let's move up to more complex organisms like the website's header, which looks a little something like this:
 
@@ -139,11 +135,9 @@ What's going on here? Well, we have a basic `<header>` [[tag]], and inside that 
 
 And now we can include that relatively complex pattern anywhere we need it.
 
-<pre>
-<code>
+```
 {% raw %}{{> organisms-header }}{% endraw %}
-</code>
-</pre> 
+```
 
 I hope by now you can see the Russian nesting dolls in action. The smallest atoms are included in bigger molecules, and those molecules get included in even bigger organisms. Now let's take these components and plug them into a layout. Take the homepage template, for instance:
 
@@ -187,19 +181,17 @@ So how does this look in code? As you might expect, it involves more includes!
 
 At this stage in the game the smaller patterns are already constructed, so all the template needs to do is pull them into the context of a page layout and give them unique names.
 
-Taking a closer look at the code, notice certain patterns like `{% raw %}{{> organisms-header }}{% endraw %}` and `{% raw %}{{> organisms-footer }}{% endraw %}` are included the same way as the prior examples. But there are also a few other includes patterns that are supplemented by some additional information, like the following:
+Taking a closer look at the code, notice that certain patterns like `{% raw %}{{> organisms-header }}{% endraw %}` and `{% raw %}{{> organisms-footer }}{% endraw %}` are included the same way as the earlier examples. But there are also a few other includes patterns that are supplemented by some additional information, like the following:
 
-<pre>
-<code>
+```
 {% raw %}
 {{# factoid-advertising }}
 {{> organisms-factoid }}
 {{/ factoid-advertising }}
 {% endraw %}
-</code>
-</pre>
-  
-We're including `organisms-factoid` the same way as all the other patterns, but we're also naming it `factoid-advertising` by wrapping the include in a Mustache *section*, indicated by the Mustache code containing the `#` and `/` symbols. By giving the pattern instance a unique name, we can latch on to it and dynamically replace the content of the pattern. More on that in the next section!
+```
+
+We're including `organisms-factoid` in the same way as all the other patterns, but we're also naming it `factoid-advertising` by wrapping the include in a Mustache *section*, indicated by the Mustache code containing the `#` and `/` symbols. By giving the pattern instance a unique name, we can latch on to it and dynamically replace the content of the pattern. More on that in the next section!
 
 This Russian nesting doll approach to building UIs is simple but tremendously powerful. This structure allows designers and developers to keep patterns DRY, saving time, effort, and money. This approach allows teams to build a final UI while simultaneously creating the underlying UI design system. After all, the final interface is one instantiation of its underlying design system. Teams can also move between abstract and concrete, zeroing in on a particular pattern to fix bugs ("The header's broken!"), while also seeing how changes to small patterns affect the overall page layout.
 
