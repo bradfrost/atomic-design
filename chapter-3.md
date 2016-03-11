@@ -208,7 +208,7 @@ How do we swap dummy content for real content in Pattern Lab? Pattern Lab uses J
 
 The default placeholder data is defined in a file called _data.json_ that lives in Pattern Lab's _/source_ directory. Inside this file we define all the text, image paths, and other dynamic data that will make up our UI. Here's a small sample from Time Inc.'s _data.json_ file:
 
-[[*Ed: File names aren't code (unless they appear in code), so shouldn't be marked up as such. Using italics is a better option. For convenience I've just used Markdown's _underscore_, but this marks them up using <em>. In this case, <i> would be better. I've also added a slash to the directory name to clarify matters a little.*]]
+[[*Ed: File names aren't code (unless they appear in code), so shouldn't be marked up as such. Using italics is a better option. For convenience I've just used Markdown's _underscore_, but this marks them up using `<em>`. In this case, `<i>` would be better. I've also added a slash to the directory name to clarify matters a little.*]]
 
 ```
 {% raw %}
