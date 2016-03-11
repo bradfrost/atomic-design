@@ -193,23 +193,24 @@ Taking a closer look at the code, notice that certain patterns like `{% raw %}{{
 
 We're including `organisms-factoid` in the same way as all the other patterns, but we're also naming it `factoid-advertising` by wrapping the include in a Mustache *section*, indicated by the Mustache code containing the `#` and `/` symbols. By giving the pattern instance a unique name, we can latch on to it and dynamically replace the content of the pattern. More on that in the next section!
 
-This Russian nesting doll approach to building UIs is simple but tremendously powerful. This structure allows designers and developers to keep patterns DRY, saving time, effort, and money. This approach allows teams to build a final UI while simultaneously creating the underlying UI design system. After all, the final interface is one instantiation of its underlying design system. Teams can also move between abstract and concrete, zeroing in on a particular pattern to fix bugs ("The header's broken!"), while also seeing how changes to small patterns affect the overall page layout.
+This Russian nesting doll approach to building UIs is simple but tremendously powerful. The structure allows designers and developers to keep patterns DRY, saving time, effort, and money. The approach allows teams to build a final UI while simultaneously creating the underlying UI design system. After all, the final interface is one instantiation of its underlying design system. Teams can also move between abstract and concrete, zeroing in on a particular pattern to fix bugs ("The header's broken!"), while also seeing how changes to small patterns affect the overall page layout.
 
 ## Working with dynamic data
-It's important to articulate the underlying content structure of UI patterns within the context of a pattern library. That's why we've been looking at dimension-displaying grayscale images and placeholder text containing character limits. But while this information is helpful for creative teams, grayscale images and lorem ipsum text are not what end users interact with on your actual site. We need a way to replace our default dummy content with real representative content in order to ensure our UI patterns match the reality of the content that lives inside them.
+It's important to articulate the underlying content structure of UI patterns within the context of a pattern library. That's why we've been looking at dimension-displaying grayscale images and placeholder text containing character limits. But while this information is helpful for creative teams, grayscale images and _Lorem ipsum_ text are not what users interact with on your actual site. We need a way to replace our dummy content with real representative content to ensure our UI patterns match the reality of the content that lives inside them.
 
-To demonstrate how Pattern Lab dynamically swaps in real content into templates, let's take a look at a side-by-side comparison of Time Inc.'s homepage template and page levels:
+To demonstrate how Pattern Lab dynamically swaps in real content into templates, let's take a look at a side-by-side comparison of Time Inc.'s home page template and page levels:
 
-{% include figure.html src="../images/content/timeinc-template-page.png" caption="A side-by-side comparison of Time Inc.'s homepage template and page levels. The template articulates the content structure of the design system, while the page shows what the system looks like with real content poured into it." %}
+{% include figure.html src="../images/content/timeinc-template-page.png" caption="A side-by-side comparison of Time Inc.'s home page template and page levels. The template articulates the content structure of the design system, while the page shows what the system looks like with real content displayed by it." %}
 
-On the left we have the template level, which articulates the content structure of the patterns making up the webpage. And on the right we have the page level, where we're pouring in real representative content to demonstrate what the final UI might look like and test the effectiveness of the design system. 
+On the left we have the template level, which articulates the content structure of the patterns making up the web page. And on the right we have the page level, where we're pouring in real representative content to demonstrate what the final UI might look like and test the effectiveness of the design system. 
 
-So how do we swap dummy content for real content in Pattern Lab? Pattern Lab uses JSON (as well as YAML, Markdown, and other data formats) to define and swap out the dynamic bits of content in our designs.
+How do we swap dummy content for real content in Pattern Lab? Pattern Lab uses JSON (as well as YAML, Markdown, and other data formats) to define and swap out the dynamic bits of content in our designs.
 
-The default placeholder data is defined in a file called `data.json` that lives in Pattern Lab's `source` directory. Inside this file we define all the text, image paths, and other dynamic data that will make up our UI. Here's a small sample from Time Inc.'s `data.json` file:
+The default placeholder data is defined in a file called _data.json_ that lives in Pattern Lab's _/source_ directory. Inside this file we define all the text, image paths, and other dynamic data that will make up our UI. Here's a small sample from Time Inc.'s _data.json_ file:
 
-<pre>
-<code>
+[[*Ed: File names aren't code (unless they appear in code), so shouldn't be marked up as such. Using italics is a better option. For convenience I've just used Markdown's _underscore_, but this marks them up using <em>. In this case, <i> would be better. I've also added a slash to the directory name to clarify matters a little.*]]
+
+```
 {% raw %}
 "hero" : {
   "headline": "Lorem Ipsum",
@@ -219,19 +220,21 @@ The default placeholder data is defined in a file called `data.json` that lives 
   }
 }
 {% endraw %}
-</code>
-</pre>
+```
 
-For developers, this type of format most likely looks familiar. If you're not a developer, don't freak out! Once you look beyond the curly braces and quotes, you'll see that we're defining a *hero* object (for the full-bleed hero area directly below the header) that has a *headline* value of "Lorem Ipsum" and an *img* with a *src* value of "/images/sample/fpo_hero.png". We're simply defining this object's attributes and providing values for those attributes.
+For developers, this type of format most likely looks familiar. If you're not a developer, don't freak out! Once you look beyond the curly braces and quotes, you'll see that we're defining a `hero` object (for the full-bleed hero area directly below the header) that has a `headline` value of "Lorem Ipsum" and an `img` with a `src` value of "/images/sample/fpo_hero.png". We're simply defining this object's attributes and providing values for those attributes.
 
-Once those objects are defined, then we can override their attributes at Pattern Lab's page level. This is accomplished by creating a new JSON file that matches the page pattern name (for Time Inc.'s homepage, we'll call it `homepage.json`) inside the `pages` directory. 
+[[*Ed: Here I've changed italics (emphasis) to code ticks as you're referencing a code sample.*]]
 
-{% include figure.html src="../images/content/timeinc-page-directory.png" caption="Inside the 'pages' directory we have the homepage pattern as well as a JSON file that matches the name of the pattern. This is where we'll override the default content with page-specific content." %}
+Once those objects are defined, we can then override their attributes at Pattern Lab's page level. This is accomplished by creating a new JSON file that matches the page pattern name (for Time Inc.'s home page, we'll call it _homepage.json_) inside the _/pages_ directory. 
 
-When we open up `homepage.json` we can override the placeholder data we established earlier. Here's what that might look like:
+{% include figure.html src="../images/content/timeinc-page-directory.png" caption="Inside the ‘pages’ directory we have the home page pattern as well as a JSON file that matches the name of the pattern. This is where we'll override the default content with page-specific content." %}
 
-<pre>
-<code>
+[[*Ed: The file and directory names in the image don't match the names referenced in the text.*]]
+
+When we open up _homepage.json_ we can override the placeholder data we established earlier. Here's what that might look like:
+
+```
 {% raw %}
 "hero" : {
   "headline": "Moving People",
@@ -241,34 +244,34 @@ When we open up `homepage.json` we can override the placeholder data we establis
   }
 }
 {% endraw %}
-</code>
-</pre>
+```
 
-By overriding the default data, the *hero* headline now reads "Moving People" instead of "Lorem Ipsum". And instead of pointing to a grayscale FPO (for placement only) hero image, we're now pointing to a picture of Beyoncè located at `"/images/hero_beyonce.jpg"`.
+By overriding the default data, the `hero` headline now reads "Moving People" instead of "Lorem Ipsum". And instead of pointing to a grayscale [[FPO (for placement only)]] hero image, we're now pointing to a picture of [[Beyoncé]] located at "/images/hero_beyonce.jpg".
 
-This process of establishing defaults for dynamic data then replacing it with page-specific content continues for each section of the website. In addition to replacing simple strings like headings, we can also dynamically set variables to `true` or `false`, loop through an array of items, and more. We can even dramatically alter the UI with just a few changes to a JSON file, which we'll talk about next!
+[[*Ed: Usually, abbreviations are placed in parens after what they abbreviate – for placement only (FPO) – not before. Should I have heard of FPO? I haven't. What might your readers expect? Also, you used a grave accent on Beyoncé, not acute. Shame on you, Brad!*]]
+
+This process of establishing defaults for dynamic data then replacing it with page-specific content continues for each section of the website. In addition to replacing simple strings like headings, we can also dynamically set variables to `true` or `false`, loop through an array of items, and more. We can even dramatically alter the UI with just a few changes to a JSON file, which we'll talk about next.
 
 ## Articulating pattern variations with pseudo-patterns
-Historically designers working in static tools have had a tendancy to only design best-case scenarios. You know what I’m talking about. The user’s name is "Sara Smith" and always fits neatly on one line. Her profile picture looks like it was clipped out of a magazine. Her profile is completely filled out. The two columns of her profile content magically are exactly the same height.
+Historically, designers working with static tools have had a tendency to only design best-case scenarios. You know what I’m talking about: the user’s name is Sara Smith and always fits neatly on one line; her profile picture looks like it was clipped out of a magazine; her profile is completely filled out; the two columns of her profile content are exactly the same height.
 
-Of course these best-case scenarios rarely, if ever, occur in the real world.
+Of course, these best-case scenarios rarely, if ever, occur in the real world.
 
-**In order to create more robust and resilient designs, we need to concurrently account for the best situations, the worst, and everything in between**.
+**To create more robust and resilient designs, we need to concurrently account for the best situations and the worst – and everything in between.**
 
-What if the user doesn’t upload a profile picture? What if the user has 87 items in their shopping cart? What if the product has 14 options? What if the blog post title contains 400 characters? Return user? First-time user? What if the article doesn’t have any comments? What if it has seven layers of nested comments? What if we need to display an urgent message on the dashboard?
+What if the user doesn’t upload a profile picture? What if the user has 87 items in their shopping cart? What if the product has 14 options? What if the blog post title contains 400 characters? What about a returning user? A first-time user? What if the article doesn’t have any comments? What if it has seven layers of nested comments? What if we need to display an urgent message on the dashboard?
 
-Articulating these UI variations in a static design tool is an exercise in tediousness and redundancy, which may explain why they're rarely designed. But if we want to create systems that address all the variables and realities of our content, we must take those "what if" questions into account.
+Articulating these UI variations in a static design tool is an exercise in tediousness and redundancy, which may explain why they're rarely designed. But if we want to create systems that address all the variables and realities of our content, we must take those ‘what if’ questions into account.
 
-How do we address all manner of UI variation without exhausting ourselves in the process? Pattern Lab's *[pseudo-pattern](http://patternlab.io/docs/pattern-pseudo-patterns.html)* feature allows us to articulate (sometimes wildly) different scenarios with just a few changes to our data.
+How do we address all manner of UI variation without exhausting ourselves in the process? Pattern Lab's *[pseudo-pattern](http://patternlab.io/docs/pattern-pseudo-patterns.html)* feature allows us to articulate sometimes wildly different scenarios with just a few changes to our data.
 
 Let's say we're making an app whose dashboard displays a list of project collaborators. The UI might look something like this:
 
-{% include figure.html src="../images/content/pseudo-pattern-normal.jpg" caption="A list of project collaboratos in our hypothetical app" %}
+{% include figure.html src="../images/content/pseudo-pattern-normal.jpg" caption="A list of project collaboratos in our hypothetical app." %}
 
-To create the dynamic content inside each of these blocks, we'll define our list of collaborators as an array inside `dashboard.json`:
+To create the dynamic content inside each of these blocks, we'll define our list of collaborators as an array inside _dashboard.json_:
 
-<pre>
-<code>
+```
 {% raw %}
 "collaborators" : [
   {
@@ -293,58 +296,51 @@ To create the dynamic content inside each of these blocks, we'll define our list
   }
 ]
 {% endraw %}
-</code>
-</pre>
+```
 
 By default, our design assumes the user is a regular user and not an administrator, but what if we wanted to give administrators the ability to manage project collaborators from the dashboard? That UI might look something like this:
 
-{% include figure.html src="../images/content/pseudo-pattern-admin.jpg" caption="The administrator's dashboard UI introduces extra 'edit' and 'delete' actions." %}
+{% include figure.html src="../images/content/pseudo-pattern-admin.jpg" caption="The administrator's dashboard UI introduces extra edit and delete actions." %}
 
-In order to show additional admin "edit" and "delete" actions on the dashboard in Pattern Lab, we can create a pseudo-pattern, a new file in the `pages` folder that looks like this:
+To show additional admin edit and delete actions on the dashboard in Pattern Lab, we can create a pseudo-pattern, a new file in the _pages_ folder that looks like this:
 
-<pre>
-<code>
+```
 {% raw %}
 dashboard~admin.json
 {% endraw %}
-</code>
-</pre>
+```
 
-The tilde (`~`) symbol indicates a pseudo-pattern. `dashboard~admin.json` will inherit all the data contained in `dashboard.json`, but also gives us the opportunity to append or override additional data. That means the list of collaborators we defined earlier in `dashboard.json` is still available, but we can add additional data inside `dashboard~admin.json` like so:
+The tilde (`~`) symbol indicates a pseudo-pattern. _dashboard~admin.json_ will inherit all the data contained in _dashboard.json_, but also gives us the opportunity to append or override additional data. That means the list of collaborators we defined earlier in _dashboard.json_ is still available, but we can add additional data inside _dashboard~admin.json_ like so:
 
-<pre>
-<code>
+```
 {% raw %}
 "isAdmin" : true
 {% endraw %}
-</code>
-</pre>
+```
 
-We're defining a variable called `isAdmin` and setting it to true. We can now use that to conditionally include the additional actions inside the block pattern.
+We're defining a variable called `isAdmin` and setting it to `true`. We can now use that to conditionally include the additional actions inside the block pattern.
 
-<pre>
-<code>
+```html
 {% raw %}
-\<div class="block"\>
-  \<img src="{{ img }}" alt="{{ name }}" /\>
-  \<h3\>{{ name }}\</h3\>
-  \<h4\>{{ title }}\</h4\>
+<div class="block">
+  <img src="{{ img }}" alt="{{ name }}" />
+  <h3>{{ name }}</h3>
+  <h4>{{ title }}</h4>
   {{# isAdmin }}
   {{> molecules-block-actions }}
   {{/ isAdmin }}
-\</div\>
+</div>
 {% endraw %}
-</code>
-</pre>
+```
 
-The first few lines are pulling in the `img`, `name`, and `title` we defined in `dashboard.json`. But pay close attention to what's wrapped in the `isAdmin` mustache section. What we're saying here is "if `isAdmin` is set to `true`, include a molecule pattern called `block-actions`." The `block-actions` pattern contains the "edit" and "delete" buttons, and will only display if `isAdmin` is set to `true` (or anything besides `false`). In our default `dashboard.json`, `isAdmin` isn't set so the extra actions won't display. In `dashboard~admin.json`, we're setting `isAdmin` to `true` so the extra actions will display. You can extend this technique to dramatically alter the entire UI (like altering the primary navigation, showing additional panels on the dashboard, adding extra controls, etc) just by changing a single variable. Powerful stuff indeed.
+The first few lines are pulling in the `img`, `name`, and `title` we defined in _dashboard.json_. But pay close attention to what's wrapped in the `isAdmin` Mustache section. What we're saying here is: if `isAdmin` is set to `true`, include a molecule pattern called `block-actions`. The `block-actions` pattern contains the edit and delete buttons, and will only display if `isAdmin` is set to `true` (or anything besides `false`). In our default _dashboard.json_, `isAdmin` isn't set, so the extra actions won't display. In _dashboard~admin.json_, we're setting `isAdmin` to `true` so the extra actions will display. You can extend this technique to dramatically alter the entire UI (like altering the primary navigation, showing additional panels on the dashboard, adding extra controls, and so on) just by changing a single variable. Powerful stuff, indeed.
 
-Whew. If you've made it this far, congratulations! You now know how to add and manipulate dynamic data in Pattern Lab. Pattern Lab's ability to design with dynamic data provides some very crucial benefits:
+Whew. If you've made it this far, congratulations! You now know how to add and manipulate dynamic data in Pattern Lab. Pattern Lab's ability to design with dynamic data provides some crucial benefits:
 
-- **Creates a clear separation between structure and content**. A pattern's structure and its content very much influence each other, however resilient design systems strive to establish agnostic, flexible patterns that can contain a variety of content. Decoupling pattern structure and data allows us to keep things DRY (which again stands for Don't Repeat Yourself) and make changes to content without affecting the pattern structure. Likewise, we're able to make changes to a pattern without having to update every instance of that pattern simply because each instance contains different data. This separation results in huge savings in both time and effort. 
-- **Establishes an ad-hoc CMS**. Establishing default and page-specific data serves as an ad-hoc content management system. As mentioned earlier, static design tools aren't well equipped to handle dynamic data, but it's also overkill to install Wordpress, Drupal, or some other CMS just to demonstrate UI variations. Pattern Lab strikes a balance as it allows teams to work with dynamic data but doesn't require setting up any crazy MySQL databases.
-- **Serves as a blueprint for backend developers** responsible for integrating the frontend UI into a real content management system. Backend developers can look at the UI created in Pattern Lab, understand which bits are static and dynamic, then translate that into the backend system.
-- **Allows writers, content people, designers, and other non-developers to contribute to the living, breathing design system**. As a front-end developer, I can't count the number of times I've had to fix typos, swap in new images, translate copy decks, and make other content-related edits to front-end code. It's death by a million paper cuts, and I'm sure most developers would agree that making minor copy changes isn't an effective use of their time. By separating structure and data, Pattern Lab enables non-developer team members to safely manage the content-related aspects of the design, freeing up developers to focus on building the design system's structure.
+- **Creates a clear separation between structure and content.** A pattern's structure and its content very much influence each other. However, resilient design systems strive to establish agnostic, flexible patterns that can contain a variety of content. Decoupling pattern structure and data allows us to keep things DRY (which, again, stands for don't repeat yourself) and make changes to content without affecting the pattern structure. Likewise, we're able to make changes to a pattern without having to update every instance of that pattern simply because each instance contains different data. This separation results in huge savings in both time and effort. 
+- **Establishes an ad hoc CMS.** Establishing default and page-specific data serves as an ad hoc content management system. As mentioned earlier, static design tools aren't well equipped to handle dynamic data, but it's also overkill to install WordPress, Drupal, or some other CMS just to demonstrate UI variations. Pattern Lab strikes a balance as it allows teams to work with dynamic data but doesn't require setting up any crazy MySQL databases.
+- **Serves as a blueprint for back-end developers** responsible for integrating the front-end UI into a real content management system. Back-end developers can look at the UI created in Pattern Lab, understand which bits are static and dynamic, then translate that into the back-end system.
+- **Allows writers, content people, designers, and other non-developers to contribute to the living, breathing design system.** As a front-end developer, I can't count the number of times I've had to fix typos, swap in new images, translate copy decks, and make other content-related edits to front-end code. It's death by a million paper cuts, and I'm sure most developers would agree that making minor copy changes isn't an effective use of their time. By separating structure and data, Pattern Lab enables non-developer team members to safely manage the content-related aspects of the design, freeing up developers to focus on building the design system's structure.
 
 We've now covered Pattern Lab's core functionality, but we're not done yet! Next we'll cover a few additional features that should be considered irrespective of what tool you use to create your pattern library.
 
