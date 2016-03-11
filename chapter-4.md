@@ -409,7 +409,7 @@ This work can happen concurrently but shouldn't happen in isolation. Sure, there
 
 > Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
 
-At this early stage, it's important to stress the importance of exploration, play, and idea generation. The lo-fi nature of the techniques we just discussed help encourage this exploration, allowing team members to pursue ideas that excite them. Sometimes those ideas might be best articulated as a napkin sketch, a prototype in [Codpen](http://codepen.io/), a visual exploration in Sketch, a quick wire in Balsamiq, a motion concept in Flash, or some combination of mediums and tools. **The point is for the team to generate ideas and solve problems, not to enforce a rigid order of operations**. By approaching this design exploration in a cross-disciplinary way, teams can find balance between aesthetics, technical feasibility, usability, and functionality.
+At this early stage, it's important to stress the importance of exploration, play, and idea generation. The lo-fi nature of the techniques we just discussed help encourage this exploration, allowing team members to pursue ideas that excite them. Sometimes those ideas might be best articulated as a napkin sketch, a prototype in [CodePen](http://codepen.io/), a visual exploration in Sketch, a quick wire in Balsamiq, a motion concept in Flash, or some combination of mediums and tools. **The point is for the team to generate ideas and solve problems, not to enforce a rigid order of operations**. By approaching this design exploration in a cross-disciplinary way, teams can find balance between aesthetics, technical feasibility, usability, and functionality.
 
 
 ## Rolling up our sleeves
