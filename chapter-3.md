@@ -382,55 +382,57 @@ The types of code to be highlighted in a pattern library naturally vary from org
 
 {% include figure.html src="../images/content/salesforce-code-example.png" caption="Salesforce's Lightning design system showcases the UI components' HTML and SCSS code." %}
 
-Including front-end code leads to authors writing it more consistently, but that doesn't guarantee perfection. There's still room for developers to go rogue and write sloppy, incongruent code, which is why some organizations have gone above and beyond to establish incredibly sophisticated design systems. **Companies like Lonely Planet have achieved the Holy Grail of pattern libraries, which is to say their pattern library and production environment are perfectly in sync**. We'll discuss the Holy Grail in more detail in the next chapter, but it's worth brining up in this section to demonstrate how that affects the code exposed in the context of a pattern library. Rather than surfacing HTML and CSS, Lonely Planet's [Rizzo style guide](http://rizzo.lonelyplanet.com/) surfaces the include code for teams to pull in the appropriate UI component.
+Including front-end code leads to authors writing it more consistently, but that doesn't guarantee perfection. There's still room for developers to go rogue and write sloppy, incongruent code—which is why some organizations have gone above and beyond to establish incredibly sophisticated design systems. [[Companies like]] Lonely Planet have achieved the holy grail of pattern libraries, which is to say **their pattern library and production environment are perfectly in sync**. We'll discuss the holy grail in more detail in the next chapter, but it's worth bringing up in this section to demonstrate how that affects the code exposed in the context of a pattern library. Rather than offering HTML and CSS, Lonely Planet's [Rizzo style guide](http://rizzo.lonelyplanet.com/) surfaces the include code for teams to pull in the appropriate UI component.
+
+[[*Ed: Do you know of other companies that have done this? Could you name some?*]]
 
 {% include figure.html src="../images/content/lonely-planet-code.png" caption="Lonely Planet's Rizzo design system pattern library showcases the template usage." %}
 
-This setup allows the core development team to maintain a single source of truth for all patterns' frontend code. That means the pattern library only needs to provide the code to include a particular pattern in order for developers to get up and running.
+This setup allows the core development team to maintain a single source of truth for all patterns' front-end code. For developers to get up and running, the pattern library needs only provide the code to include a particular pattern.
 
-Pattern Lab provides the ability to view both a pattern's underlying HTML as well as the template code used to generate the HTML. It can also be extended to also showcase accompanying CSS and/or JavaScript code.
+Pattern Lab provides the ability to view both a pattern's underlying HTML as well as the template code used to generate the HTML. It can also be extended to showcase accompanying CSS and JavaScript code.
 
-{% include figure.html src="../images/content/pattern-lab-code.png" caption="Pattern Lab's code view demonstrates any pattern's HTML code and " %}
+{% include figure.html src="../images/content/pattern-lab-code.png" caption="Pattern Lab's code view demonstrates any pattern's HTML code and [this caption is incomplete]." %}
 
-Ultimately, whichever pattern library tool you decide to use should have some form of code view feature. And perhaps more importantly, the pattern libraries you create should showcase the types of code that enables you and your development team to be as effective as possible.
+Ultimately, whichever pattern library tool you decide to use should have some form of code view. Perhaps more importantly, the pattern libraries you create should showcase the types of code that enable you and your development team to be as effective as possible.
 
-## Living Documentation and Annotations
-In a traditional siloed design process, it's typical to see lengthy wireframe and spec documents created, debated, and ultimately approved. These documents typically take the form of gigantic PDFs, which is unfortunate considering they often contain all sorts of valuable insights, instructions, and documentation about the design system. Sadly, these bulky artifacts are often thrown into a (virtual) trashcan by the time the project makes its way into production.
+## Living documentation and annotations
+In a traditional siloed design process, it's typical to see lengthy wireframe and spec documents created, debated, and approved. These documents usually take the form of gigantic PDFs, which is unfortunate considering they often contain all sorts of valuable insights, instructions, and documentation about the design system. Sadly, these bulky artifacts are often thrown into a (virtual) trash can by the time the project makes its way into production.
   
-This shouldn't be the case. A UI's documentation should contain insights from every discipline involved in creating it, and — this is key — should be baked into the living, breathing design system. 
+This shouldn't be the case. A UI's documentation should contain insights from every discipline involved in creating it, and—this is key—should be baked into the living, breathing design system. Effective pattern libraries carve out a space to define and describe UI components, articulating considerations ranging from accessibility to performance to aesthetics and beyond.
 
-Effective pattern libraries carve out a space to define and describe UI components, articulating considerations ranging from accessibility to performance to aesthetics and beyond.
+Pattern Lab provides several ways to add pattern descriptions and annotations to a design system. Pattern descriptions can be added by creating a [[Markdown]] that corresponds to the name of a pattern (e.g. _pattern-name.md_), which will show the pattern description in the library list view.
 
-Pattern Lab provides several ways to add pattern descriptions and annotations to a design system. Pattern descriptions can be added by creating a markdown that corresponds with the name of a pattern (i.e. `pattern-name.md`), which will show the pattern description in the library list view.
+[[*Ed: Should this be more fully described as a "Markdown file" or is this a code snippet inside another kind of file? Will readers understand "create a Markdown"? I've capped up Markdown as it's the name of a language, and I've italicized the file name (at least, I assume it's a file name).*]]
 
-{% include figure.html src="../images/content/pattern-lab-annotations-2.png" caption="Pattern Lab's annotation feature  shows pattern descriptions alongside the patterns themselves." %}
+{% include figure.html src="../images/content/pattern-lab-annotations-2.png" caption="Pattern Lab's annotation feature shows pattern descriptions alongside the patterns themselves." %}
 
-Pattern Lab also provides a (dare I say) cool feature that enables you to attach annotations to any UI element and view those annotations in the context of the living, breathing design. When annotations are switched on, each annotated element receives a number when clicked jumps you to the corresponding annotation. This allows teams to view pattern considerations within the context of the full UI. Pretty neat!
+Pattern Lab also provides a (dare I say) cool feature that enables you to attach annotations to any UI element and view those annotations in the context of the living, breathing design. When annotations are switched on, each annotated element receives a number which, when clicked, jumps you to the corresponding annotation. This allows teams to view pattern considerations within the context of the full UI. Pretty neat!
 
 {% include figure.html src="../images/content/pattern-lab-annotations-1.png" caption="Pattern Lab's annotation feature is interactive and baked into the living UI." %}
 
 ## Providing context with pattern lineage
-When looking at various patterns in a library, I've found myself wondering "Great, but where is this component actually used?" Defining and describing pattern characteristics is one thing, but there's an opportunity to provide additional contextual information about your UI patterns.
+When looking at various patterns in a library, I've found myself wondering, "Great, but where is this component actually used?" Defining and describing pattern characteristics is one thing, but there's an opportunity to provide additional contextual information about your UI patterns.
 
-Thanks to the Russian nesting doll include approach described earlier in the chapter, Pattern Lab can display what patterns make up any given component, and also show where that pattern is employed in the design system.
+Thanks to the Russian nesting doll include approach described earlier, Pattern Lab can display what patterns make up any given component, and also show where those patterns are employed in the design system.
 
 {% include figure.html src="../images/content/pattern-lab-lineage.png" caption="Pattern Lab's lineage feature displays what patterns make up any component, and also shows all the places that component is employed." %}
 
-In the above example, we have a molecule pattern called `block-media-link`, which contains an image, headline, and call to action. Looking at the pattern's lineage, we can see it contains another pattern called `atoms-square`, which is the circular thumbnail-sized image (the naming is a bit confusing, but we're using CSS to round the square image's corners). We can also see where exactly this pattern gets utilized: the `profile-nav` molecule, the `section-media-list` organism, the `settings-account` template, and the `settings-account-edit` template.
+In the example above, we have a molecule pattern called `block-media-link`, which contains an image, headline, and call to action. Looking at the pattern's lineage, we can see it contains another pattern called `atoms-square`, which is the circular thumbnail-sized image (the naming is a bit confusing, but we're using CSS to round the square image's corners). We can also see where exactly this pattern gets used: the `profile-nav` molecule, the `section-media-list` organism, the `settings-account` template, and the `settings-account-edit` template.
 
-This contextual information is amazingly helpful for designers and developers; I know I use the lineage feature *all the time* in my own workflow. Let's say we wanted to make changes to a particular pattern, like doubling the size of the image or adding an additional text element, **we'd immediately know which patterns and templates would need retested and QA'd to ensure nothing breaks with the changes**. The lineage feature also helps point out unused or underutilized patterns so that teams can weed them out of the pattern library.
+This contextual information is amazingly helpful for designers and developers; I know I use the lineage feature *all the time* in my own workflow. Let's say we wanted to make changes to a particular pattern, like doubling the size of an image or adding an additional text element: **we'd immediately know which patterns and templates would need to be retested and QA'd to ensure nothing breaks with the changes**. The lineage feature also helps point out unused or underutilized patterns so that teams can weed them out of the pattern library.
 
 ## To each their own
-So there you have it. Pattern Lab provides several helpful features for teams to create deliberate, thoughtful design systems. But as I mentioned before, no one tool is going to be perfect for everyone and every situation. There are [ton of tools](http://styleguides.io/tools.html) out there to help you create effective pattern libraries, and which tools you decide on will undoubtedly be influenced by your organization's environment, technologies, workflow, and personalities.
+So there you have it. Pattern Lab provides several helpful features for teams to create deliberate, thoughtful design systems. But as I mentioned before, no single tool is going to be perfect for everyone and every situation. There are [a ton of tools](http://styleguides.io/tools.html) out there to help you create effective pattern libraries, and the tools you decide on will undoubtedly be influenced by your organization's environment, technologies, workflow, and personalities.
 
 When choosing tools to create your pattern library, you should keep your eyes open for these qualities and features of effective pattern libraries:
 
 - Articulating pattern variations, such as active or disabled tabs
 - Viewing patterns across the entire resolution spectrum
 - Providing pattern descriptions and annotations
-- Showcasing pattern frontend and/or template code
-- The ability to dynamically pour real representative content into the patterns' structure
-- Providing contextual information like which patterns make up a particular component as well as where that component gets utilized
+- Showcasing a pattern's front-end and/or template code
+- The ability to dynamically add real representative content into the patterns' structures
+- Providing contextual information, like which patterns make up a particular component as well as where that component is used
 
-At the end of the day, it's not about the tools we use to create pattern libraries, but rather how we use them. Creating and maintaining an effective design system means dramatically changing your organization's culture, processes, and workflows. If that sounds hard to you, it's because it is! But fear not! The next chapter will detail the entire process of creating and maintaining a successful design system to set your organization up for longterm success. 
+At the end of the day, it's not about the tools we use to create pattern libraries, but rather how we use them. Creating and maintaining an effective design system means dramatically changing your organization's culture, processes, and workflows. If that sounds hard to you, it's because it is. But fear not! The next chapter will detail the entire process of creating and maintaining a successful design system to set your organization up for long-term success. 
  
