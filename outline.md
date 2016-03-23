@@ -86,7 +86,10 @@ Everyone's design process is different, so I'll also discuss how to introduce an
 - Getting buy-in from clients and colleagues
 - What interface inventories are and why they're effective
 - How to conduct an interface inventory
-- Stylify.me and Type-o-matic
+- 
+
+## 5. [Maintaining Design Systems](/chapter-5)
+- 
 
 
 ## [Conclusion](/conclusion)

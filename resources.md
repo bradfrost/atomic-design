@@ -17,7 +17,7 @@ This is a list of all the resources I've used to create this book:
 
 http://yourls.org/
 
-## Pattern Lab 
+## Pattern Lab
 - [Using Pattern Lab to Design, Build and Maintain a Website](http://www.brianmuenzenmeyer.com/using-patternlab-to-design-build-and-maintain-a-website/)
 
 And this is a list of helpful resources people have brought to my attention during the creation of this book:
@@ -28,6 +28,7 @@ And this is a list of helpful resources people have brought to my attention duri
 - [LeanPub](https://leanpub.com/)
 - [Sitepoint Liveupdate](https://learnable.com/liveupdate)
 - [ConvertKit](http://convertkit.com/)
+- [Coding a Book](http://larahogan.me/blog/coding-a-book/)
 
 
 ## Chapter 1
