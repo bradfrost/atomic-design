@@ -85,7 +85,7 @@ The interface inventory exercise generates a ton of screenshots, so naturally yo
 - Evernote Web Clipper
 - Google Docs or Microsoft Word
 - Google Slides (If you're interested, I've created a [Google Slides interface inventory template](https://docs.google.com/presentation/d/1GqFmiDV_NqKi36fXAwD3WTJL5-JV-gHL7XVD2fVeL0M/edit?usp=sharing))
-- 
+
 [[*Ed: Worth mentioning the new Lingo app from the Noun Project? Can that be used in this way?*]]
 
 {% include figure.html src="../images/content/interface-inventory-template.png" caption="It's important for all participants to capture screenshots using the same software so they can be combined later. I've created a Google Slides interface inventory template for teams to use as a starting point." %}
