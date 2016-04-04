@@ -126,44 +126,46 @@ Again, these categories aren’t set in stone and will vary based on the nature 
 ##### Timing is everything
 It's important to set time limits on the screenshotting exercise to avoid going down a rabbit hole that ends up lasting all day. The amount of time you allocate will vary depending on how many people are participating, but I find between **30 and 90 minutes** to be sufficient for a first pass of an interface inventory. Set a timer, throw on some Jeopardy! music (well, maybe not Jeopardy! music, but some other music that sets an upbeat mood for the exercise), and have the participants concentrate on screenshotting the unique UI patterns they encounter.
 
-[[*Ed: No need to italicize Jeopardy!, but it does need an exclamation mark. I wonder if that reference is too US-specific, though I suppose I got it so others probably will.*]]
+[[*Ed: No need to italicize Jeopardy!, but it does need an exclamation mark. I wondered if that reference is too US-specific, though I suppose I got it so others probably will.*]]
 
 ##### Dig deep
-Which parts of the site should participants capture in the interface inventory? Short answer: *everything*. Any UI piece that is part of the owned user experience should be documented.  
+Which parts of the site should participants capture in the interface inventory? Short answer: *everything*. Any UI piece that is part of the [[owned]] user experience should be documented.
 
-This is difficult as organizations tend to favor certain parts of the experience (*cough* homepage *cough*) over others. For example, people working on an e-commerce website tend to focus on the core shopping experience, even though areas like customer support, FAQs, sizing charts, 404 pages, legal terms are also extremely important to the user experience. Remember, users perceive your brand as a singular entity and don't care about your organizational structure, tech stack, or anything else that might cause disparities in the UI. So encourage interface audit participants to be as thorough as possible during the exercise.
+[[*Ed: What do you mean by 'owned' here? Owned by whom? The site owners?*]]
 
-#### Step 4: present findings
-The screenshotting exercise can be a bit overwhelming, so be sure the team takes a break after the exercise is complete. Get some food, grab some coffee, and stretch your legs for a bit. Once everyone's feeling refreshed, it's time to discuss what everybody captured.
+This is difficult as organizations tend to favor certain parts of the experience (*cough* homepage *cough*) over others. For example, people working on an e-commerce website tend to focus on the core shopping experience, even though areas like customer support, FAQs, sizing charts, 404 pages, and legal terms are also extremely important to the user experience. Remember, users perceive your brand as a singular entity and don't care about your organizational structure, tech stack, or anything else that might cause disparities in the UI. Encourage interface audit participants to be as thorough as possible during the exercise.
 
-Have each participant spend 5 or 10 minutes presenting each UI category to the group. Here's where the fun begins. Presenting to the group allows the team to discuss the rationale behind existing UI patterns, kickstarts a conversation about naming conventions, and gets the team excited to establish a more consistent interface.
+#### Step 4: Present findings
+The screenshotting exercise can be a bit overwhelming, so be sure the team takes a break after the exercise is complete. Get some food, grab some coffee, and stretch your legs for a bit. Once everyone's feeling refreshed, it's time to discuss what you captured.
 
-**Naming things is hard**. It's fascinating to hear the inconsistent names designers, developers, product owners, and other stakeholders all have for the same UI pattern. "Oh, we call that the utility bar." "Oh we call it the admin nav." "Oh we call it the floating action area!" This exercise is an opportunity to unearth and iron out disparities between pattern labels, and also establish names for previously-unlabeled patterns. Don't feel like you need to come to a consensus on patterns' final names in the course of 10 minutes; this exercise is simply meant to kickstart a broader discussion.
+Have each participant spend five or ten minutes presenting each UI category to the group. Here's where the fun begins. Presenting to the group allows the team to discuss the rationale behind existing UI patterns, kick-starts a conversation about naming conventions, and gets the team excited to establish a more consistent interface.
+
+**Naming things is hard.** It's fascinating to hear the inconsistent names designers, developers, product owners, and other stakeholders all have for the same UI pattern. "Oh, we call that the utility bar." "Oh, we call it the admin nav." "Oh, we call it the floating action area!" This exercise is an opportunity to unearth and iron out disparities between pattern labels, and also establish names for previously unlabeled patterns. Don't feel like you need to come to a consensus on patterns' final names in the course of ten minutes; this exercise is simply meant to open up a broader discussion.
 
 Once every category has been presented and discussed, all the participants should send their slides to the exercise leader. The leader will then combine everything into one giant über-document, which will soon become a wrecking ball of truth and justice.  
 
-#### Step 5: regroup and establish next steps
-With the über-document in hand, now it's time to get the entire organization on board with crafting an interface design system.
+#### Step 5: Regroup and establish next steps
+With the über-document in hand, it's time to get the entire organization on board with crafting an interface design system.
 
-Have you ever wanted to see a CEO cry? Laying bare all your UI's inconsistencies is a great way to make that happen! **One of the most powerful benefits of interface inventories is that you can show them to anyone, including non-designers and developers, and they'll understand why inconsistent UIs are problematic**. You don't need to be a designer to recognize that having 37 unique button styles probably isn't a good idea. Here's your opportunity to make it crystal clear to stakeholders that approaching your UI in a more systematic way makes great sense for both your users and your organization.
+Have you ever wanted to see a CEO cry? Laying bare all your UI's inconsistencies is a great way to make that happen! **One of the most powerful benefits of interface inventories is that you can show them to anyone, including non-designers and developers, and they'll understand why inconsistent UIs are problematic.** You don't need to be a designer to recognize that having 37 unique button styles probably isn't a good idea. Here's your opportunity to make it crystal clear to stakeholders that approaching your UI in a more systematic way makes great sense for both your users and your organization.
 
-In addition to selling the idea through to key stakeholders, **all the hard work and discussion that went into the initial interface inventory exercise should be translated into the seeds of your future design system and pattern library**.
+In addition to selling the idea to key stakeholders, **all the hard work and discussion that went into the initial interface inventory exercise should be translated into the seeds of your future design system and pattern library**.
 
-It's very likely the initial exercise didn't capture every unique UI pattern, so you may need to conduct another interface audit exercise to capture a more complete picture of your UI patterns. This may involve a large group again, but in reality a smaller, cross-disciplinary team will be the ones who will be going through the über-document and establishing next steps for the design system.
+It's very likely the initial exercise didn't capture every unique UI pattern, so you may need to conduct another interface audit exercise to capture a more complete picture of your UI patterns. This may involve a large group again, but in reality a smaller, cross-disciplinary team will be going through the über-document and establishing next steps for the design system.
 
-Once the gaps in the interface inventory have been filled in, the working group can have some important conversations about next steps for the design system project. Some key questions for this group to cover include:
+Once the gaps in the interface inventory have been filled, the working group can have some important conversations about next steps for the design system project. Some key questions for this group to cover include:
 
 - Which patterns should stay, which should go, and which can be merged together?
 - What pattern names should we settled on?
 - What are the next steps to translate the interface inventory into a living pattern library?
 
-### Benefits of an Interface Inventory
-Creating an interface inventory can be a big undertaking, but the benefits of making one are many:
+### Benefits of an interface inventory
+Creating an interface inventory can be quite an undertaking, but the benefits of making one are many:
 
-- **Captures all patterns and their inconsistencies** — An interface inventory rounds up all the unique patterns that make up your UI. Seeing all those similar-but-still-different patterns next to each other exposes redundancy and underscores the need to create a consistent, cohesive experience.
-- **Gets organizational buy-in** — Having a large, diverse group of disciplines participate in the exercise helps everyone understand the value of creating and maintaining a consistent user interface. Also, the interface inventory über-document can be a tremendously powerful tool for convincing stakeholders, bosses, and clients to invest in an interface design system.
-- **Establishes a scope of work** — An interface inventory helps design teams determine the level of effort required to design and build each UI pattern as part of a design or redesign project. Which components will be easy and relatively difficult to convert into a responsive environment? What are the content, design, and development considerations around each component? An interface inventory enables teams to have important conversations that help establish a project's realistic scope and timeline.  
-- **Lays the groundwork to a sound interface design system** — The interface inventory is an important first step for setting up a comprehensive pattern library. It's essential to capture all existing UI patterns in order to determine which patterns will make the final cut in the living design system. The interface audit exercise also helps teams establish a shared vocabulary, which will be crucial for the success of the eventual design system.
+- **Captures all patterns and their inconsistencies**: an interface inventory rounds up all the unique patterns that make up your UI. Seeing all those similar, but still different, patterns next to each other exposes redundancy and underscores the need to create a consistent, cohesive experience.
+- **Gets organizational buy-in**: having a large, diverse group of disciplines participate in the exercise helps everyone understand the value of creating and maintaining a consistent user interface. Also, the interface inventory über-document can be a tremendously powerful tool for convincing stakeholders, bosses, and clients to invest in an interface design system.
+- **Establishes a scope of work**: an interface inventory helps design teams determine the level of effort required to design and build each UI pattern as part of a design or redesign project. Which components will be realtively easy or difficult to convert into a responsive environment? What are the content, design, and development considerations around each component? An interface inventory enables teams to have important conversations that help establish a project's realistic scope and timeline.  
+- **Lays the groundwork to a sound interface design system**: the interface inventory is an important first step for setting up a comprehensive pattern library. It's essential to capture all existing UI patterns to determine which patterns will make the final cut in the living design system. The interface audit exercise also helps teams establish a shared vocabulary, which will be crucial for the success of the eventual design system.
 
 ### Ask forgiveness, not permission
 So you've discussed the benefits of establishing a living design system with your stakeholders, and you've even created an interface inventory to show them the inconsistent train wreck that is the current UI. And yet, despite all your efforts, they still shoot down the sound idea of establishing an interface design system and pattern library. What's a responsible Web team to do?
