@@ -236,19 +236,23 @@ We're still at the very beginning of the Big Bang of connected devices. The devi
 
 {% include figure.html src="../images/content/this-is-the-web-3.png" caption="In addition to all the web-capable devices we concern ourselves with today, we must understand that the device and web landscape is becoming bigger and more diverse all the time." %}
 
-**I've found the three previous images to be a tremendously helpful shorthand for helping clients, colleagues, and stakeholders understand the reality of the web landscape.** With this newfound understanding, everyone becomes a whole lot more receptive to updating their processes and workflows in order to create great work for this unique medium.
+**I've found the three previous images to be a tremendously helpful shorthand for helping clients, colleagues, and stakeholders understand the reality of the web landscape.** With this newfound understanding, everyone becomes a whole lot more receptive to updating their processes and workflows to create great work for this unique medium.
 
-It's our job to create great experiences for a diversity of devices, screen sizes, network speeds, device capabilities, browser features, input types, form factors, contexts, and user preferences. That's undoubtedly a herculean task, but all these variables really underscore the need to extend far beyond visual aesthetics when creating interface design systems.
+It's our job to create great experiences for [[a diversity of]] devices, screen sizes, network speeds, device capabilities, browser features, input types, form factors, contexts, and user preferences. That's undoubtedly a Herculean task, but all these variables really underscore the need to extend far beyond visual aesthetics when creating interface design systems.
+
+[[*Ed: What about the people who use the devices, etc?*]]
 
 In addition to making visually beautiful and consistent experiences, we should:
 
-- **Embrace the ubiquity of the Web** by creating accessible, resilient design systems. Recognize that a whole slew of people with a vast spectrum of capabilities will be accessing our experiences, so construct design systems to be as inclusive as possible.
-- **Create flexible layouts and components** so that our interfaces look and function beautifully irrespective of any particular device dimension or screen size.
+- **Embrace the ubiquity of the web** by creating accessible, resilient design systems. Recognize that a whole slew of people with a vast spectrum of capabilities will be accessing our experiences, so construct design systems to be as inclusive as possible.
+- **Create flexible layouts and components** so our interfaces look and function beautifully irrespective of any particular device dimension or screen size.
 - **Treat performance as an essential design principle** and create fast-loading experiences that respect users and their time.
 - **Progressively enhance our interfaces** by establishing core experiences then layering on enhancements to take advantage of the unique capabilities of modern devices and browsers.
-- **Create future-friendly design systems** meant to stand the test of time and anticipate inevitable changes to the device and Web landscape.
+- **Create future-friendly design systems** meant to stand the test of time and anticipate inevitable changes to the device and web landscape.
 
-Of course there are many other design considerations that should be included in our interface design systems (ergonomics, input type, Section 508 compliance, legibility, and so on), but the key takeaway here is to expand the definition of what constitutes good digital design beyond visual aesthetics.
+Of course, there are many other design considerations that should be included in our interface design systems (ergonomics, input type, [[Section 508 compliance]], legibility, and so on), but the key takeaway here is to expand the definition of what constitutes good digital design beyond visual aesthetics.
+
+[[*Ed: This is US-specific. In the UK we have to comply with the Equality Act 2010, and other nations will have their own legal requirements. I suppose Section 508 compliance and what it implies are pretty well known. Up to you.*]]
 
 As you might expect, substantial changes to our processes need to happen in order to properly address all these uniquely digital design considerations. It therefore becomes our responsibility to set client, colleague, and stakeholder expectations so that everyone knows the process for creating will be different this time around.
 
