@@ -516,11 +516,11 @@ Static comps can be great for shaping the overall aesthetic direction of a templ
 ## Bring it on home
 The website is taking shape and the team is [[cooking with grease]] to bring the project home. At this stage, UI patterns are well established, the team is taking some final steps to tighten everything up and prepare for launch.
 
-[[*Ed: If this means ‘Now we're getting somewhere!’, in the UK, this phrase is ‘cooking with gas’. I've never come across this greasy version before. Hmmn.*]]
+[[*Ed: If this means ‘Now we're getting somewhere!’, the phrase is ‘cooking with gas’ not grease.*]]
 
 UX designers are hitting the prototype hard to make sure the flows and interactions are all logical and intuitive. Visual designers are combing over the interface and proposing tweaks to the UI to polish up the design. Front-end developers are testing the experience in a [[myriad]] of browsers and devices, while also addressing design feedback. Back-end developers are hard at work integrating the front-end UI into the CMS (we'll talk more about the relationship between front-end and back-end in chapter 5). The whole team is tightening up documentation, cleaning up the pattern library, [[...]]
 
-[[**Ed: Myriad myriad myriad.]]
+[[*Ed: Myriad myriad myriad.*]]
 
 [[*Ed: It seems like something's missing here. The online version has the following:
 ------------
