@@ -434,19 +434,19 @@ Are you making an e-commerce site? You can set up site search, a shopping cart t
 ### Stop, collaborate, and listen
 Let's quickly review what establishing design direction looks like across disciplines:
 
-- **UX designers** can create lo-fi sketches that establish basic information architecture and some anticipated UI patterns.
+- **UX designers** can create lo-fi sketches to establish basic information architecture and some anticipated UI patterns.
 - **Visual designers** can gather the teams' aesthetic values by conducting a 20-second gut test exercise, then create style tiles and element collages to explore initial design directions.
 - **Front-end developers** can set up project dependencies, stub out basic templates, and write structural markup for patterns the team anticipates using in the project. 
 
-This work can happen concurrently but shouldn't happen in isolation. Sure, there will need to be some initial head-down time for each discipline to get set up, but all team members should be fully aware of each disciplines' explorations in anticipation to work together to evolve these ideas. 
+This work can happen concurrently but shouldn't happen in isolation. Sure, there will need to be some initial head-down time for each discipline to get set up, but all team members should be fully aware of each disciplines' explorations in anticipation of working together to evolve these ideas. 
 
 > Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
 
-At this early stage, it's important to stress the importance of exploration, play, and idea generation. The lo-fi nature of the techniques we just discussed help encourage this exploration, allowing team members to pursue ideas that excite them. Sometimes those ideas might be best articulated as a napkin sketch, a prototype in [Codpen](http://codepen.io/), a visual exploration in Sketch, a quick wire in Balsamiq, a motion concept in Flash, or some combination of mediums and tools. **The point is for the team to generate ideas and solve problems, not to enforce a rigid order of operations**. By approaching this design exploration in a cross-disciplinary way, teams can find balance between aesthetics, technical feasibility, usability, and functionality.
+At this early stage, it's important to stress the importance of exploration, play, and idea generation. The lo-fi nature of the techniques we just discussed help encourage this exploration, allowing team members to pursue ideas that excite them. Sometimes those ideas might be best articulated as a napkin sketch, a prototype in [CodePen](http://codepen.io/), a visual exploration in Sketch, a quick wire in Balsamiq, a motion concept in Flash, or some combination of media and tools. **The point is for the team to generate ideas and solve problems, not to enforce a rigid order of operations.** By approaching this design exploration in a cross-disciplinary way, teams can find balance between aesthetics, technical feasibility, usability, and functionality.
 
 
 ## Rolling up our sleeves
-With a general design direction established, the team can roll up their sleeves to build out the interface and its underlying design system. But how do teams turn a vague sense of direction into a beautiful, functional, usable, and complete design system? 
+With a general design direction established, the team can roll up their sleeves to build the interface and its underlying design system. But how do teams turn a vague sense of direction into a beautiful, functional, usable, and complete design system? 
 
 ### From concept to complete
 Turning explorations into finished patterns is a blurry, imperfect process. This should come as absolutely no surprise to you by this point in the book.
@@ -455,33 +455,31 @@ For the TechCrunch project, Dan Mall riffed on the team's initial design convers
 
 {% include figure.html src="../images/content/techcrunch-header-element-collage.png" caption="Dan Mall created an element collage to explore an aesthetic direction for the global header." %}
 
-Even though this design artifact was a simple in-progress exploration, we were able to have important conversations about the header's aesthetics, hierarchy, and suggested functionality. Because the header was presented sans context, we were able to discuss the issues pertaining the header without stakeholders' focus wandering to other page elements. 
+Even though this design artifact was a simple in-progress exploration, we were able to have important conversations about the header's aesthetics, hierarchy, and suggested functionality. Because the header was presented sans context, we were able to discuss the issues pertaining to the header without stakeholders' focus wandering to other page elements. 
 
 Though the client didn't know it, I had been building out a working HTML version of the header behind the scenes in Pattern Lab.
 
 {% include figure.html src="../images/content/techcrunch-header-prototype.png" caption="Using Dan's exploration as a reference, I created an HTML version of the global header in Pattern Lab. This grayscale prototype helped us demonstrate interactivity and how the header would adapt across the resolution spectrum." %}
 
-This grayscale prototype allowed us to demonstrate interactivity and responsiveness, which led to even more conversation. Collectively we proposed changes to the header's layout and functionality, and I was able to make changes using the browser's development tools during the call. Suddenly, the entire team and stakeholders were actively participating in the design process!
+This grayscale prototype allowed us to demonstrate interactivity and responsiveness, which led to even more discussion. Collectively we proposed changes to the header's layout and functionality, and I was able to make changes using the browser's development tools during the call. Suddenly, the entire team and stakeholders were actively participating in the design process!
 
 With input from the stakeholders and team, we iterated over the header pattern to massage the layout, IA, aesthetic details, and functionality to arrive at the solution we ultimately launched with.
 
 {% include figure.html src="../images/content/techcrunch-header-complete.png" caption="The header we launched with was the culmination of plenty of conversations and decisions around the pattern's content, design, and functionality." %}
 
-Obviously the header pattern doesn't exist in a vacuum. Within Pattern Lab, the header was included in every template using Mustache's include pattern we discussed in Chapter 3. 
+Obviously the header pattern doesn't exist in a vacuum. Within Pattern Lab, the header was included in every template using Mustache's include pattern that we discussed in chapter 3. 
 
-<pre>
-<code>
+```
 {% raw %}{{> organisms-header }}{% endraw %} 
-</code>
-</pre>
+```
 
 This allowed us to view the header within the context of the rest of the pages, sketchy as they initially were. So while we were focusing on designing one specific pattern, we were simultaneously taking into account the context of where that pattern would be employed.
 
-{% include figure.html src="../images/content/techcrunch-incomplete-template.png" caption="In a more iterative process, there will be instances where some patterns are further developed than others. Seeing a partially-done page might look unusual out of context, but communication between the team and stakeholders should alleviate confusion." %}
+{% include figure.html src="../images/content/techcrunch-incomplete-template.png" caption="In a more iterative process, there will be instances where some patterns are further developed than others. Seeing a partially done page might look unusual out of context, but communication between the team and stakeholders should alleviate confusion." %}
 
-Initially, in-browser designs tend to look crude at best, which is a-okay. The intention is to stub out the template's basic information architecture in the browser, define patterns, wire those patterns up using includes, and begin the patterns' general markup. With that work in place, the team can collectively begin styling specific patterns and refining the overall structure.
+Initially, in-browser designs tend to look crude at best, which is A-OK. The intention is to stub out the template's basic information architecture in the browser, define patterns, wire up those patterns using includes, and begin the patterns' general markup. With that work in place, the team can collectively begin styling specific patterns and refining the overall structure.
 
-Seeing these partially-designed prototypes might look unusual to those used more traditional, pixel-perfect design deliverables. But it's far more important to communicate progress than a false sense of perfection, which is why rolling updates are preferable to big reveals. 
+Seeing these partially designed prototypes might look unusual to those used more traditional, pixel-perfect design deliverables. But it's far more important to communicate progress than a false sense of perfection, which is why rolling updates are preferable to big reveals. 
 
 ### The role of comps in a post-PSD era
 Up until this point we've been talking about establishing a general aesthetic direction and then designing some patterns to experiment with the application of that aesthetic direction. These relatively lo-fi tactics allow teams to explore freely, iterate quickly, and get feedback sooner.
@@ -490,31 +488,51 @@ But I'll never forget this client feedback we received on the first pattern-driv
 
 If you've gotten to this point in your process, congratulations! Feedback like this means they're salivating for more, so now that you've captured a general aesthetic direction you can safely put those explorations into context. That likely involves creating full static comps.
 
-Listen to the chatter around "designing in the browser" and you'll undoubtedly hear that *Photoshop comps are the devil incarnate*. Which of course isn't true. Throughout this book we've discussed the importance of breaking things down into their atomic elements while simultaneously building up a cohesive whole. **Static comps are effective at painting a full picture of what the UI could look like**. The trick is knowing *when* to paint those full pictures, and knowing how long to dwell in static design documents.
+Listen to the chatter around "designing in the browser" and you'll undoubtedly hear that *Photoshop comps are the devil incarnate*. Which, of course, isn't true. Throughout this book we've discussed the importance of breaking things down into their atomic elements while simultaneously building up a cohesive whole. **Static comps are effective at painting a full picture of what the UI could look like.** The trick is knowing *when* to paint those full pictures, and knowing how long to dwell on static design documents.
 
-{% include figure.html src="../images/content/techcrunch-article-comp.png" caption="Dan Mall created a full comp to demonstrate what a featured article template for TechCrunch might look like. This artifact was used to show the design system in context and get approval for the over-arching design. Subsequent design revisions would be handled in the browser." %}
+{% include figure.html src="../images/content/techcrunch-article-comp.png" caption="Dan Mall created a full comp to demonstrate what a featured article template for TechCrunch might look like. This artifact was used to show the design system in context and get approval for the overarching design. Subsequent design revisions would be handled in the browser." %}
 
-For the TechCrunch project, we created a comp for the article template only *after* the client was feeling good about our element collage explorations. Creating full comps exerts a lot of effort, which is why we established design direction first to mitigate the risk of all that full-comp effort going straight into the trash if we got it totally wrong.
+For the TechCrunch project, we created a comp for the article template only *after* the client was feeling good about our element collage explorations. Creating full comps requires a lot of effort, which is why we established the design direction first to mitigate the risk of all that full-comp effort going straight into the trash if we got it totally wrong.
 
-The comps, like any other design artifact, were used to facilitate a conversation with the project stakeholders. If their feedback is, "This feels all wrong," then it's back to the drawing board to create a new comp. But if their feedback involves, "Can we move this from here to here? Can we add a gray border around the article text? Can we increase the size of this image?" that's a sign the overall direction is in good shape and those relatively minor issues can be addressed in the browser.
+Comps, like any other design artifact, are used to facilitate a conversation with the project stakeholders. If their feedback is, "This feels all wrong," then it's back to the drawing board to create a new comp. But if their feedback suggests, "Can we move this from here to here? Can we add a gray border around the article text? Can we increase the size of this image?" that's a sign the overall direction is in good shape and those relatively minor issues can be addressed in the browser.
 
 ### In-browser iteration
-Static comps can be great for shaping the over-arching aesthetic direction of a template, but users will ultimately view and interact with the experience in the browser. That's why designs should be quickly translated into the final environment and iterated upon there.
+Static comps can be great for shaping the overall aesthetic direction of a template, but users will ultimately view and interact with the experience in a browser. That's why designs should be quickly translated into the final environment and iterated on there.
 
-**Working in the browser allows teams to address layout issues across the entire resolution spectrum, design around dynamic data (such as variable character lengths, image sizes, and other dynamic content), demonstrate interaction & animation, gauge performance, factor in ergonomics, and confront technical considerations (such as pixel density, text rendering, scrolling performance, and browser quirks)**. Static design comps cannot address this plethora of considerations, so they should be treated merely as hypotheses rather than set-in-stone blueprints. Only when transferred to the browser can any design hypothesis truly be confirmed or rejected. 
+**Working in the browser allows teams to address layout issues across the entire resolution spectrum, design around dynamic data (such as variable character lengths, image sizes, and other dynamic content), demonstrate interaction and animation, gauge performance, factor in ergonomics, and confront technical considerations (such as pixel density, text rendering, scrolling performance, and browser quirks).** Static design comps cannot deal with all these considerations, so they should be treated merely as hypotheses rather than [[set-in-stone blueprints]]. Only when transferred to the browser can any design hypothesis truly be confirmed or rejected. 
+
+[[*Ed: Not sure a blueprint is set in stone, as it were. Wouldn't that be the building? ;)*]]
 
 > Let’s change the phrase “designing in the browser” to “deciding in the browser.” <cite>[Dan Mall](https://the-pastry-box-project.net/dan-mall/2012-september-12)</cite>
 
-**Once the designs are in the browser, they should stay in the browser**. At this stage in the process, the point of production shifts to team members adept at crafting HTML, CSS, and presentational JavaScript. Patterns should be created, styled, and plugged in wherever they're needed. Designers can react to these in-browser implementations and can work in static tools to help iron out responsive wrinkles at the organism level. This back and forth between static and in-browser tools establishes a healthy loop between design and development, where the front-end code becomes more solid and stable with each iterative loop.
+[[*Ed: Hmmn. You use the exact same quotation earlier in the chapter. Is that deliberate?*]]
 
-{% include figure.html src="../images/content/trent-loop.jpg" caption="This illustration by Trent Walton of Paravel perfectly articulates a more iterative design and development process. By getting designs into the browser sooner, teams can iterate over the design and address the many considerations that can only be addressed once the design is in the browser." %}
+**Once the designs are in the browser, they should stay in the browser.** At this stage in the process, the point of production shifts to team members adept at crafting HTML, CSS, and presentational JavaScript. Patterns should be created, styled, and plugged in wherever they're needed. Designers can react to these in-browser implementations and can work in static tools to help iron out responsive wrinkles at the organism level. This back-and-forth between static and in-browser tools establishes a healthy loop between design and development, where the front-end code becomes stabler and more solid with each iterative loop.
 
-**The beautiful thing about a pattern-based workflow is that as each pattern becomes more fully baked, any template that includes the pattern will become more fully baked as well**. That means the level of effort to create new templates decreases dramatically over the course of the project, until eventually creating a new template mostly involves stitching together existing patterns.
+{% include figure.html src="../images/content/trent-loop.jpg" caption="This illustration by Trent Walton of Paravel perfectly articulates a more iterative design and development process. By getting designs into the browser sooner, teams can iterate over the design and address the many considerations that can only be dealt with once the design is in the browser." %}
+
+**The beautiful thing about a pattern-based workflow is that as each pattern becomes more fully baked, any template that includes the pattern will become more fully baked as well.** That means the level of effort to create new templates decreases dramatically over the course of the project, until eventually creating a new template mostly involves stitching together existing patterns.
 
 ## Bring it on home
-The website is taking shape and the team is cooking with grease to bring the project home. At this stage, UI patterns are well established, the team is taking some final steps to tighten everything up and prepare for launch.
+The website is taking shape and the team is [[cooking with grease]] to bring the project home. At this stage, UI patterns are well established, the team is taking some final steps to tighten everything up and prepare for launch.
 
-UX designers are hitting the prototype hard to make sure the flows and interactions are all logical and intuitive. Visual designers are combing over the interface and proposing tweaks to the UI to tighten up the design. Front-end developers are testing the experience in a myriad of browsers and devices, while also addressing design feedback. Backend developers are hard at work integrating the front-end UI into the CMS (we'll talk more about the relationship between front-end and backend in Chapter 5). The whole team is tightening up documentation, cleaning up the pattern library, 
+[[*Ed: If this means ‘Now we're getting somewhere!’, in the UK, this phrase is ‘cooking with gas’. I've never come across this greasy version before. Hmmn.*]]
 
-Launch website. Pour champagne
+UX designers are hitting the prototype hard to make sure the flows and interactions are all logical and intuitive. Visual designers are combing over the interface and proposing tweaks to the UI to polish up the design. Front-end developers are testing the experience in a [[myriad]] of browsers and devices, while also addressing design feedback. Back-end developers are hard at work integrating the front-end UI into the CMS (we'll talk more about the relationship between front-end and back-end in chapter 5). The whole team is tightening up documentation, cleaning up the pattern library, [[...]]
+
+[[**Ed: Myriad myriad myriad.]]
+
+[[*Ed: It seems like something's missing here. The online version has the following:
+------------
+…and back-end in chapter 5). And of course the clients and stakeholders make last-minute demands—I mean suggestions—about the design and content. The whole team is tightening up documentation, cleaning up the pattern library, and working hard to get the site off the ground.
+
+Then—seemingly in the blink of an eye—the website launches. Champagne is poured, high-fives are exchanged and, of course, post-launch bugs are squashed. Users visit the new site to find a beautiful, functional, consistent, and cohesive experience that undoubtedly makes them weep tears of joy. Mission accomplished.
+
+What began as a giant slab of rock is now a finely polished sculpture, thanks to a ton of hard work, genuine collaboration, constant communication, and plenty of iteration. Moreover, in addition to a brand-spanking-new website, the team leaves behind a flexible, deliberate UI design system bundled up in a beautiful pattern library.
+
+This chapter explored everything that goes into making an effective UI design system. In the next chapter, we’ll discuss how to make sure that design system is successful in the long run.
+------------
+I've copy-edited the text above, so feel free to add it back in if necessary. I'm guessing that the words below are notes towards this ending.*]]
+
+Launch website. Pour champagne.
 
