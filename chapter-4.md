@@ -522,17 +522,17 @@ UX designers are hitting the prototype hard to make sure the flows and interacti
 
 [[*Ed: Myriad myriad myriad.*]]
 
-[[*Ed: It seems like something's missing here. The online version has the following:
-------------
-…and back-end in chapter 5). And of course the clients and stakeholders make last-minute demands—I mean suggestions—about the design and content. The whole team is tightening up documentation, cleaning up the pattern library, and working hard to get the site off the ground.
+[[*Ed: It seems like something's missing here. The online version has the following:*
+*------------*
+*…and back-end in chapter 5). And of course the clients and stakeholders make last-minute demands—I mean suggestions—about the design and content. The whole team is tightening up documentation, cleaning up the pattern library, and working hard to get the site off the ground.*
 
-Then—seemingly in the blink of an eye—the website launches. Champagne is poured, high-fives are exchanged and, of course, post-launch bugs are squashed. Users visit the new site to find a beautiful, functional, consistent, and cohesive experience that undoubtedly makes them weep tears of joy. Mission accomplished.
+*Then—seemingly in the blink of an eye—the website launches. Champagne is poured, high-fives are exchanged and, of course, post-launch bugs are squashed. Users visit the new site to find a beautiful, functional, consistent, and cohesive experience that undoubtedly makes them weep tears of joy. Mission accomplished.*
 
-What began as a giant slab of rock is now a finely polished sculpture, thanks to a ton of hard work, genuine collaboration, constant communication, and plenty of iteration. Moreover, in addition to a brand-spanking-new website, the team leaves behind a flexible, deliberate UI design system bundled up in a beautiful pattern library.
+*What began as a giant slab of rock is now a finely polished sculpture, thanks to a ton of hard work, genuine collaboration, constant communication, and plenty of iteration. Moreover, in addition to a brand-spanking-new website, the team leaves behind a flexible, deliberate UI design system bundled up in a beautiful pattern library.*
 
-This chapter explored everything that goes into making an effective UI design system. In the next chapter, we’ll discuss how to make sure that design system is successful in the long run.
-------------
-I've copy-edited the text above, so feel free to add it back in if necessary. I'm guessing that the words below are notes towards this ending.*]]
+*This chapter explored everything that goes into making an effective UI design system. In the next chapter, we’ll discuss how to make sure that design system is successful in the long run.*
+*------------*
+*I've copy-edited the text above, so feel free to add it back in if necessary. I'm guessing that the words below are notes towards this ending.*]]
 
 Launch website. Pour champagne.
 
