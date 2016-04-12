@@ -1,0 +1,64 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+
+// .btn        - Default button style
+// Styleguide atoms-buttons
+
+.btn {
+	font-weight: bold;
+	background: $orange;
+	color: $tan;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 0.65em 1.2em;
+	margin-bottom: 0.5em;
+	text-decoration: none;
+	text-transform: lowercase;
+
+	&:hover, &:focus {
+		color: $white;
+	}
+}
+
+.btn-alt {
+	border-color: $tan;
+	color: $tan;
+}
+
+.btn-group {
+	.btn {
+		margin-right: 0.5em;
+	}
+}
+
+// A button suitable for giving a star to someone.
+//
+// :hover             - Subtle hover highlight.
+// .star-given        - A highlight indicating you've already given a star.
+// .star-given:hover  - Subtle hover highlight on top of star-given styling.
+// .disabled          - Dims the button to indicate it cannot be used.
+//
+// Styleguide atoms-button-star
+
+.star {
+	background: yellow;
+	padding: 1em;
+	display: inline-block;
+	margin: 0 0 1em;
+	border-radius: 5px;
+	text-decoration: none;
+	
+	&.star-given {
+		background: red;
+		
+		&:hover {
+			background: blue;
+		}
+	}
+	
+	&.disabled {
+		background: #f0f0f0;
+		color: gray;
+	}
+}

@@ -4,5 +4,4 @@ config/*
 export/*
 packages/*
 public/*
-source/*
 vendor/*

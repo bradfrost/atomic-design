@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    $TABLE OF CONTENTS=
+\*------------------------------------*/
+
+.toc-list {
+	border-top: 1px solid $tan-dim;
+	text-align: center;
+	list-style: none;
+	margin: 0 0 2em;
+	padding: 0;
+
+	li {
+		border-bottom: 1px solid $tan-dim;
+	}
+
+	a {
+		display: block;
+		padding: 1em 0;
+		text-decoration: none;
+		transition: all $speed-fast ease-out;
+		
+		&:hover, &:focus {
+			background: $tan-dim-min;
+			color: $orange;
+		}
+	}
+
+	h3 {
+		font-size: 1.4em;
+		margin: 0;
+	}
+
+	p {
+		color: $tan-dark;
+		margin: 0;
+		font-size: 85%;
+	}
+}
+
+.toc-li-minor h3 {
+	font-size: 1em;
+}

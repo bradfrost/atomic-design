@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    $TEXT PASSAGE STYLES
+\*------------------------------------*/
+
+.text {
+	font-family: $font-secondary;
+	font-size: 120%;
+
+	h1 {
+		font-family: $font-primary;
+	}
+
+	h2, h3 {
+		font-family: $font-primary;
+		margin: 2em 0 0.5em;
+	}
+	
+	ul, ol {
+		margin-bottom: 1em;
+	}
+}

@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    $FORM GLOBAL STYLES
+\*------------------------------------*/
+
+label {
+	display: block;
+	font-weight: bold;
+	font-family: $font-primary;
+}
+
+input, select, textarea {
+	border: 6px solid #dedcb9;
+	background: $tan-dim;
+	color: $brown;
+	font: 1em/1 $font-primary;
+	padding: 0.5em;
+	width: 100%;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	margin-bottom: 0.5em;
+}
+
+input:focus, select:focus, textarea:focus {
+	background-color: $tan-light;
+	outline: 0;
+}
+
+input[type=submit] {
+	border: 0;
+	display: inline-block;
+	width: auto;
+}

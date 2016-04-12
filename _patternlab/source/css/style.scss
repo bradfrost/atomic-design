@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/*------------------------------------*\
+    $TABLE OF CONTENTS
+\*------------------------------------*/
+/**
+ * VARIABLES..............................Declarations of Sass variables 
+ * .....Colors
+ * .....Typography
+ * .....Layout
+ * .....Defaults
+ * .....Breakpoints
+ * MIXINS.................................Sass mixins 
+ * RESET..................................Set reset defaults
+ * GLOBAL CLASSES.........................Set reset defaults
+ * GLOBAL ELEMENTS........................Establish global styles
+ * .....Main
+ * .....Headings
+ * .....Text-related elements (p, blockquote, lists)
+ * .....Defaults
+ * TYPOGRAPHY------------------------------
+ * MEDIA------------------------------
+ * LAYOUT------------------------------
+ * NAVIGATION------------------------------
+ * TOC To Be Continued
+ */
+
+
+/*------------------------------------*\
+    $META ELEMENTS
+\*------------------------------------*/
+@import "generic/variables";
+@import "generic/mixins";
+@import "generic/reset";
+
+
+/*------------------------------------*\
+    $GLOBAL ELEMENTS
+\*------------------------------------*/
+@import "base/global-classes";
+@import "base/body";
+@import "base/links";
+@import "base/headings";
+@import "base/text";
+@import "base/lists";
+@import "base/media";
+@import "base/forms";
+@import "base/tables";
+
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+@import "objects/layout";
+
+
+/*------------------------------------*\
+    $PAGE STRUCTURE
+\*------------------------------------*/
+@import "objects/header";
+@import "objects/main";
+@import "objects/footer";
+@import "objects/banner";
+
+
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+@import "objects/buttons";
+@import "objects/note";
+@import "objects/text";
+@import "objects/navigation";
+
+/*------------------------------------*\
+    $PAGES
+\*------------------------------------*/
+@import "objects/title";
+@import "objects/toc";
+@import "objects/timeline";
+
+

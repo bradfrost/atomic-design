@@ -1,0 +1,95 @@
+/*------------------------------------*\
+    $TIMELINE
+\*------------------------------------*/
+
+//Timeline
+.timeline {
+	padding-left: 2em;
+	max-width: 32em;
+	margin: 0 auto;
+	
+	ol {
+		border-left: 3px solid $brown;
+		padding: 0 0 3em;
+		position: relative;
+		margin: 0;
+		list-style: none;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: -1.78em;
+			width: 50px;
+			height: 50px;
+			background: url(../images/icon-atom.svg) no-repeat;
+			background-size: 100% 100%;
+			-webkit-animation: spin 10s linear infinite; 
+			-moz-animation: spin 10s linear infinite;
+			-o-animation: spin 10s linear infinite;
+			animation: spin 10s linear infinite;
+		}
+	}
+
+	li {
+		padding-left: 1.2em;
+		margin: 0 0 3em;
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -0.95em;
+			width: 25px;
+			height: 25px;
+			background: url(../images/icon-atom.svg) no-repeat;
+			background-size: 100% 100%;
+			-webkit-animation: spin 10s linear infinite; 
+			-moz-animation: spin 10s linear infinite;
+			-o-animation: spin 10s linear infinite;
+			animation: spin 10s linear infinite;
+		}
+	}
+	
+	h3 {
+		margin: 0;
+	}
+
+	a {
+		border-bottom: 1px solid $orange;
+		text-decoration: none;
+		
+		&:hover, &:focus {
+			color: $orange;
+		}
+	}
+
+	em {
+		font-size: 80%;
+		color: $tan-dark;
+		display: block;
+		font-style: normal;
+	}
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}

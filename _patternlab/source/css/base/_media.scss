@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    $MEDIA ELEMENTS
+\*------------------------------------*/
+
+img, video, object {
+	max-width: 100%;
+	height: auto;
+}
+
+figure {
+	margin-bottom: 1em;
+	text-align: center;
+	
+	img {
+		display: inline-block;
+		margin-bottom: 0.1em;
+		border: 1px solid $tan-dark;
+	}
+	
+	@media all and (min-width: 37em) {
+		width: 100vw;
+		margin-left: calc((100vw - 29em) / -2);
+		padding: 0 1em;
+		text-align: center;
+		
+		
+	}
+	
+	@media all and (min-width: 88em) {
+		img {
+			max-width: 1400px;
+		}
+	}
+}
+
+figcaption {
+	font-size: $font-size-sm;
+	font-style: italic;
+	color: $tan-dark;
+	max-width: 38em;
+	margin: 0 auto;
+}

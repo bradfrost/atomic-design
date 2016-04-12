@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+p {
+	margin: 0 0 1em;
+}
+
+blockquote {
+	font-size: $font-size-large;
+	font-style: italic;
+	color: $tan-dark;
+	padding-left: 0.8em;
+	border-left: 1px solid $orange;
+
+	cite {
+		display: block;
+		color: $orange;
+		font-size: $font-size-sm;
+		margin-top: 0.5em;
+
+		a {
+			color: $orange;
+		}
+
+		&:before {
+			content: "–";
+		}
+	}
+}
+
+pre {
+	background: $brown;
+	color: $tan;
+	padding: 1em;
+	word-wrap: break-word;
+	overflow-x: hidden;
+}
