@@ -1,0 +1,50 @@
+{
+	"name":             "pattern-lab/edition-development",
+	"description":      "The development edition of Pattern Lab. Allows one to clone all of the base Pattern Lab repos at once.",
+	"keywords":         ["pattern lab"],
+	"homepage":         "http://patternlab.io",
+	"license":          "MIT",
+	"type":             "project",
+	"authors": [
+		{
+			"name":         "Dave Olsen",
+			"email":        "dmolsen@gmail.com",
+			"homepage":     "http://dmolsen.com",
+			"role":         "Lead Developer"
+		}
+	],
+	"support": {
+		"issues":         "https://github.com/pattern-lab/patternlab-php/issues",
+		"wiki":           "http://patternlab.io/docs/",
+		"source":         "https://github.com/pattern-lab/patternlab-php/releases"
+	},
+	"autoload": {
+		"psr-0": {
+			"PatternLab":   "core/src/"
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"require": {
+		"php": ">=5.3.6",
+		"pattern-lab/core": "dev-dev",
+		"pattern-lab/patternengine-mustache": "dev-dev",
+		"pattern-lab/starterkit-mustache-demo": "dev-dev",
+		"pattern-lab/styleguidekit-mustache-default": "dev-dev",
+		"pattern-lab/plugin-kss": "dev-dev"
+	},
+	"scripts": {
+		"pre-install-cmd": [
+			"PatternLab\\Installer::preInstallCmd"
+		],
+		"post-package-install": [
+			"PatternLab\\Installer::postPackageInstall"
+		],
+		"post-package-update": [
+			"PatternLab\\Installer::postPackageUpdate"
+		],
+		"pre-package-uninstall": [
+			"PatternLab\\Installer::prePackageUninstall"
+		]
+	}
+}
