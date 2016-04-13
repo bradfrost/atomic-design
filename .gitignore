@@ -2,3 +2,13 @@
 .DS_Store
 node_modules
 _patternlab
+_site/timeline/index.html
+_site/thanks/index.html
+_site/outline/index.html
+_site/index.html
+_site/feed.xml
+_site/css/style.css
+_site/chapter-4/index.html
+_site/chapter-3/index.html
+_site/chapter-2/index.html
+_site/chapter-1/index.html
