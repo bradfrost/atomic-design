@@ -32,29 +32,54 @@ How exactly do you sell a design system to your clients, bosses, colleagues, and
 ## Pitching patterns
 Introducing a new way of doing things is no easy task, as it requires changing people's existing mentalities and behaviors. Getting stakeholders and clients on board with establishing a design system involves constant education, in addition to a bit of marketing savvy.
 
-First things first. It's necessary to introduce the concept of interface design systems to your clients, colleagues, and stakeholders. Explain what these design systems are and the many ways they can help the organization. We've discussed these benefits throughout the book, so you can explain how design systems **promote consistency and cohesion**, **speed up your team's productivity**, **establish a more collaborative workflow**, **establish a shared vocabulary**, **provide helpful documentation**, **make testing easier**, and **serve as a future-friendly foundation**. Who can say no to all that[[!?]]
+First things first. It's necessary to introduce the concept of interface design systems to your clients, colleagues, and stakeholders. Explain what these design systems are and the many ways they can help the organization. We've discussed these benefits throughout the book, so you can explain how design systems **promote consistency and cohesion**, **speed up your team's productivity**, **establish a more collaborative workflow**, **establish a shared vocabulary**, **provide helpful documentation**, **make testing easier**, and **serve as a future-friendly foundation**. Who can say no to all that<span class="editor">!?</span>
 
-[[*Ed: I've left alone the order of the punctuation marks here, though some would argue that this is a question first and foremost so the question mark should come first. There's no rule, however, on their order when used together. Yes, there's the interrobang, but it's ugly and silly and draws attention to itself. You could get away with just using either mark on its own. I prefer the order you've chosen as it looks neater. Up to you!?*]]
+<div class="editor">
+{% capture m %}
+Ed: I've left alone the order of the punctuation marks here, though some would argue that this is a question first and foremost so the question mark should come first. There's no rule, however, on their order when used together. Yes, there's the interrobang, but it's ugly and silly and draws attention to itself. You could get away with just using either mark on its own. I prefer the order you've chosen as it looks neater. Up to you!?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 Alas, I've found that I can hype design systems until I'm blue in the face, but the suits don't always see things through the same lens as the people on the ground. A simple reframing of the question helps immensely. It's much more effective to simply ask, "**Do you like saving time and money? Yes or no?**" If the answer to that question is *no*, I'm afraid you have way bigger problems than selling a design system. If the answer is *yes*, then you can pitch the benefits through the lens of time and money. Let's try this out, shall we?
 
 - Design systems **lead to cohesive, consistent experiences**. That means users master your UI faster, leading to more conversions and **more money** based on the metrics your stakeholders care about.
-- Design systems **speed up your team's workflow**. Rather than [[reinventing the wheel every time a new request comes down the pipe]], teams can reuse already established UI puzzle pieces to roll out new pages and features faster than ever before.
+- Design systems **speed up your team's workflow**. Rather than <span class="editor">reinventing the wheel every time a new request comes down the pipe</span>, teams can reuse already established UI puzzle pieces to roll out new pages and features faster than ever before.
 
-[[*Ed: Not exactly a mixed metaphor, but this feels awkward.*]]
+<div class="editor">
+{% capture m %}
+Ed: Not exactly a mixed metaphor, but this feels awkward.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 - Centralizing UI components in a pattern library **establishes a shared vocabulary** for everyone in the organization, and **creates a more collaborative workflow** across all disciplines. With everyone speaking the same language, more time is spent getting work done and less time is spent dealing with superfluous back-and-forth communications and meetings.
-- Design systems **make cross-browser/device, performance, and accessibility testing easier**, vastly speeding up production time and allowing teams to launch higher-quality work faster. Also, baking best practices like accessibility into a living design system means [[less risk of getting sued for inaccessible features]].
+- Design systems **make cross-browser/device, performance, and accessibility testing easier**, vastly speeding up production time and allowing teams to launch higher-quality work faster. Also, baking best practices like accessibility into a living design system means <span class="editor">less risk of getting sued for inaccessible features</span>.
+
+<div class="editor">
+{% capture m %} 
+Ed: That's true, but it might be better to emphasize the positive: that people using assistive technology will find it easier to use a site and become valued customers.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+- Once a design system (with accompanying pattern library) is established, it **serves as a future-friendly foundation** for the organization to modify, tweak, extend, and improve on over time. Doing some A/B testing? Roll the <span class="editor">lessons</span> from those tests into the living design system. Made some big performance optimizations? Roll them into the living design system! The *living* part of living design systems means they can always adapt to meet the future needs of the organization, saving time and money all the while.
  
-[[*Ed: That's true, but it might be better to emphasize the positive: that people using assistive technology will find it easier to use a site and become valued customers.*]]
+<div class="editor">
+{% capture m %} 
+Ed: Sorry, I can't abide "learnings". Just no. Nope.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-- Once a design system (with accompanying pattern library) is established, it **serves as a future-friendly foundation** for the organization to modify, tweak, extend, and improve on over time. Doing some A/B testing? Roll the [[lessons]] from those tests into the living design system. Made some big performance optimizations? Roll them into the living design system! The *living* part of living design systems means they can always adapt to meet the future needs of the organization, saving time and money all the while.
- 
-[[*Ed: Sorry, I can't abide "learnings". Just no. Nope.*]]
+<span class="editor">Framing things through the lens</span> of time and money helps the people controlling the purse strings understand why a design system is a worthwhile pursuit. With any luck, these conversations will translate to a concrete commitment from the organization (read: allocating real time and money) to make a design system happen.
 
-[[Framing things through the lens]] of time and money helps the people controlling the purse strings understand why a design system is a worthwhile pursuit. With any luck, these conversations will translate to a concrete commitment from the organization (read: allocating real time and money) to make a design system happen.
-
-[[*Ed: Not sure you frame things through a lens. Viewing, examining, perceiving, presenting, regarding?*]]
+<div class="editor">
+{% capture m %}
+Ed: Not sure you frame things through a lens. Viewing, examining, perceiving, presenting, regarding?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 ## Show, don't tell: the power of interface inventories
 If only getting buy-in were as easy as having a few well-timed conversations with the right people. Maybe you're savvy enough to seal the deal with talking points alone, but for us mere mortals words aren't enough. Sometimes you need more. Sometimes you need to make them *feel the pain*.
@@ -68,9 +93,14 @@ An interface inventory is similar to a content inventory, only instead of siftin
 {% include figure.html src="../images/content/united-buttons.jpg" caption="Here's a collection of all the unique button styles found on the homepage of United.com. An interface inventory rounds up and categorizes all the unique patterns that make up an interface." %}
 
 ### Conducting an interface audit
-How do you go about conducting an interface audit? How do you round up all the components that make up your UI? The simple answer is *screenshots*. Lots of them! Creating an interface inventory requires screenshotting and loosely categorizing all the unique UI components that [[make up your user experience]]. While that's a relatively straightforward endeavor, there are some important considerations to keep in mind to make the inventory as useful as possible. Let's go through the process for creating a successful interface inventory.
+How do you go about conducting an interface audit? How do you round up all the components that make up your UI? The simple answer is *screenshots*. Lots of them! Creating an interface inventory requires screenshotting and loosely categorizing all the unique UI components that <span class="editor">make up your user experience</span>. While that's a relatively straightforward endeavor, there are some important considerations to keep in mind to make the inventory as useful as possible. Let's go through the process for creating a successful interface inventory.
 
-[[*Ed: Isn't user experience somewhat more intangible? Yes, it includes the UI, but there's more to UX than UI. Oh boy. Can of worms. Maybe instead of 'make up' you could use 'contribute to' or similar?*]]
+<div class="editor">
+{% capture m %}
+Ed: Isn't user experience somewhat more intangible? Yes, it includes the UI, but there's more to UX than UI. Oh boy. Can of worms. Maybe instead of 'make up' you could use 'contribute to' or similar?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 #### Step 1: Round up the troops
 I’ve encountered many ambitious designers and developers who have taken it upon themselves to start documenting their organization's UI patterns. While I certainly applaud this individual ambition, **it’s absolutely essential to get all members of the team to experience the pain of an inconsistent UI for them to start thinking systematically**.
@@ -86,7 +116,12 @@ The interface inventory exercise generates a ton of screenshots, so naturally yo
 - Google Docs or Microsoft Word
 - Google Slides (If you're interested, I've created a [Google Slides interface inventory template](https://docs.google.com/presentation/d/1GqFmiDV_NqKi36fXAwD3WTJL5-JV-gHL7XVD2fVeL0M/edit?usp=sharing))
 
-[[*Ed: Worth mentioning the new Lingo app from the Noun Project? Can that be used in this way?*]]
+<div class="editor">
+{% capture m %}
+Ed: Worth mentioning the new Lingo app from the Noun Project? Can that be used in this way?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 {% include figure.html src="../images/content/interface-inventory-template.png" caption="It's important for all participants to capture screenshots using the same software so they can be combined later. I've created a Google Slides interface inventory template for teams to use as a starting point." %}
 
@@ -126,12 +161,22 @@ Again, these categories aren’t set in stone and will vary based on the nature 
 ##### Timing is everything
 It's important to set time limits on the screenshotting exercise to avoid going down a rabbit hole that ends up lasting all day. The amount of time you allocate will vary depending on how many people are participating, but I find between **30 and 90 minutes** to be sufficient for a first pass of an interface inventory. Set a timer, throw on some Jeopardy! music (well, maybe not Jeopardy! music, but some other music that sets an upbeat mood for the exercise), and have the participants concentrate on screenshotting the unique UI patterns they encounter.
 
-[[*Ed: No need to italicize Jeopardy!, but it does need an exclamation mark. I wondered if that reference is too US-specific, though I suppose I got it so others probably will.*]]
+<div class="editor">
+{% capture m %}
+Ed: No need to italicize Jeopardy!, but it does need an exclamation mark. I wondered if that reference is too US-specific, though I suppose I got it so others probably will.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 ##### Dig deep
-Which parts of the site should participants capture in the interface inventory? Short answer: *everything*. Any UI piece that is part of the [[owned]] user experience should be documented.
+Which parts of the site should participants capture in the interface inventory? Short answer: *everything*. Any UI piece that is part of the <span class="editor">owned</span> user experience should be documented.
 
-[[*Ed: What do you mean by 'owned' here? Owned by whom? The site owners?*]]
+<div class="editor">
+{% capture m %}
+Ed: What do you mean by 'owned' here? Owned by whom? The site owners?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 This is difficult as organizations tend to favor certain parts of the experience (*cough* homepage *cough*) over others. For example, people working on an e-commerce website tend to focus on the core shopping experience, even though areas like customer support, FAQs, sizing charts, 404 pages, and legal terms are also extremely important to the user experience. Remember, users perceive your brand as a singular entity and don't care about your organizational structure, tech stack, or anything else that might cause disparities in the UI. Encourage interface audit participants to be as thorough as possible during the exercise.
 
@@ -178,7 +223,12 @@ In fact, **to create the whole, you need to create the parts of that whole**. Ou
 
 You have a decision to make: focus solely on creating the whole while ignoring the parts, or spend some time organizing the parts to help you more efficiently create the whole. In his book *[Multiscreen UX Design](http://store.elsevier.com/Multiscreen-UX-Design/Wolfram-Nagel/isbn-9780128027295/)*, Wolfram Nagel wonderfully articulates these approaches using LEGO bricks as an analogy.
 
-[[*Ed: Can you use the `<cite>` element to mark up book titles?*]]
+<div class="editor">
+{% capture m %}
+Ed: Can you use the `<cite>` element to mark up book titles?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 One way to approach a LEGO project is to simply dump the pieces out of the box onto a table, roll up your sleeves, then start building your creation.
 
@@ -238,9 +288,14 @@ We're still at the very beginning of the Big Bang of connected devices. The devi
 
 **I've found the three previous images to be a tremendously helpful shorthand for helping clients, colleagues, and stakeholders understand the reality of the web landscape.** With this newfound understanding, everyone becomes a whole lot more receptive to updating their processes and workflows to create great work for this unique medium.
 
-It's our job to create great experiences for [[a diversity of]] devices, screen sizes, network speeds, device capabilities, browser features, input types, form factors, contexts, and user preferences. That's undoubtedly a Herculean task, but all these variables really underscore the need to extend far beyond visual aesthetics when creating interface design systems.
+It's our job to create great experiences for <span class="editor">a diversity of</span> devices, screen sizes, network speeds, device capabilities, browser features, input types, form factors, contexts, and user preferences. That's undoubtedly a Herculean task, but all these variables really underscore the need to extend far beyond visual aesthetics when creating interface design systems.
 
-[[*Ed: What about the people who use the devices, etc?*]]
+<div class="editor">
+{% capture m %}
+Ed: What about the people who use the devices, etc?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 In addition to making visually beautiful and consistent experiences, we should:
 
@@ -250,9 +305,14 @@ In addition to making visually beautiful and consistent experiences, we should:
 - **Progressively enhance our interfaces** by establishing core experiences then layering on enhancements to take advantage of the unique capabilities of modern devices and browsers.
 - **Create future-friendly design systems** meant to stand the test of time and anticipate inevitable changes to the device and web landscape.
 
-Of course, there are many other design considerations that should be included in our interface design systems (ergonomics, input type, [[Section 508 compliance]], legibility, and so on), but the key takeaway here is to expand the definition of what constitutes good digital design beyond visual aesthetics.
+Of course, there are many other design considerations that should be included in our interface design systems (ergonomics, input type, <span class="editor">Section 508 compliance</span>, legibility, and so on), but the key takeaway here is to expand the definition of what constitutes good digital design beyond visual aesthetics.
 
-[[*Ed: This is US-specific. In the UK we have to comply with the Equality Act 2010, and other nations will have their own legal requirements. I suppose Section 508 compliance and what it implies are pretty well known. Up to you.*]]
+<div class="editor">
+{% capture m %}
+Ed: This is US-specific. In the UK we have to comply with the Equality Act 2010, and other nations will have their own legal requirements. I suppose Section 508 compliance and what it implies are pretty well known. Up to you.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 As you might expect, substantial changes to our processes need to happen so we can properly address all these uniquely digital design considerations. It therefore becomes our responsibility to set client, colleague, and stakeholder expectations so that everyone knows the process for creating will be different this time around.
 
@@ -265,15 +325,25 @@ The UX designer then passes the wireframes to the visual designer, who hops into
 
 They express their desire to see something perhaps with an alternate layout, something that captures a certain vibe, maybe something that uses different photography, something that just… *pops*.
 
-With the floodgates opened, the other stakeholders suddenly realize they too have opinions and constructive criticism they'd like to share. By the time the meeting draws to a close, everyone has rambled off their [[Christmas]] wish list of what they'd like the design to accomplish.
+With the floodgates opened, the other stakeholders suddenly realize they too have opinions and constructive criticism they'd like to share. By the time the meeting draws to a close, everyone has rambled off their <span class="editor">Christmas</span> wish list of what they'd like the design to accomplish.
 
-[[*Ed: Why Christmas? I think just wish list will do. Up to you.*]]
+<div class="editor">
+{% capture m %}
+Ed: Why Christmas? I think just wish list will do. Up to you.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 Slightly deflated but determined to nail it, the visual designer retreats back to their tools to work in the stakeholders' suggestions. At the next design review meeting, the same scene repeats itself, with stakeholders expressing equal parts encouragement and longing for more. "I feel like we're almost there. Could we just…"
 
 Weeks pass and seasons change. Nerves wear thin, and the deadline date looms over everyone's heads. It's with a sense of urgency that _homepage_v9_final_for-review_FINAL_bradEdits_for-handoff.psd_ finally gets approval by the stakeholders.
 
-[[*Ed: File names in italics, not as code.*]]
+<div class="editor">
+{% capture m %}
+Ed: File names in italics, not as code.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 The visual designer, relieved they've finally completed their job, tiptoes oh-so-quietly up to the entrance of the Code Cave. They slip the approved design under the door, and as they scamper away they yell, "Can you get this done in three weeks? We're already behind schedule and we're out of budget!"
 
@@ -285,15 +355,25 @@ So the developer tries their best to make lemonade out of the lemony static comp
 
 After plugging the front-end code into a CMS, frantically finalizing the site's content, and doing some last-minute QA testing, the team finally launches the site. While no one says it out loud, there's a tinge of disappointment in the air alongside the joy and relief of getting the project out the door. After all, the live site lacks the glossy polish that the comps promised to the stakeholders, and friction between disciplines has bruised some relationships.
 
-I hope this story reads as a work of fiction to you, but based on my own experiences and conversations with countless others, I'm guessing you've experienced this [[tale of woe]] to some degree. It may even hit home like a punch in the gut. Whether you've endured this process firsthand or not, it's important to recognize that the Henry Ford-esque [waterfall process](https://en.wikipedia.org/wiki/Waterfall_model) increasingly isn't likely to result in great digital work.
+I hope this story reads as a work of fiction to you, but based on my own experiences and conversations with countless others, I'm guessing you've experienced this <span class="editor">tale of woe</span> to some degree. It may even hit home like a punch in the gut. Whether you've endured this process firsthand or not, it's important to recognize that the Henry Ford-esque [waterfall process](https://en.wikipedia.org/wiki/Waterfall_model) increasingly isn't likely to result in great digital work.
 
-[[*Ed: I interpolated ‘tale of woe’ as a progressive enhancement. It adds a certain frisson, but you can remove it if you like with no loss of meaning.*]]
+<div class="editor">
+{% capture m %}
+Ed: I interpolated ‘tale of woe’ as a progressive enhancement. It adds a certain frisson, but you can remove it if you like with no loss of meaning.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 {% include figure.html src="../images/content/waterfall-1.png" caption="The waterfall process, where disciplines pass off work to each other in sequential order, isn't likely to result in great digital work." %}
 
-The waterfall process may make sense for print, architecture, manufacturing, and other physical [[media]] since mistakes and changes are extraordinarily costly. If a team overlooks an error made early in the process, they'll pay dearly for it later. However, **the digital world isn't constrained by the same limitations as the physical one. Pixels are cheap.** Changes can happen in an instant, hypotheses can be quickly tested out, and designs and code can be iterated on.
+The waterfall process may make sense for print, architecture, manufacturing, and other physical <span class="editor">media</span> since mistakes and changes are extraordinarily costly. If a team overlooks an error made early in the process, they'll pay dearly for it later. However, **the digital world isn't constrained by the same limitations as the physical one. Pixels are cheap.** Changes can happen in an instant, hypotheses can be quickly tested out, and designs and code can be iterated on.
 
-[[*Ed: Media is the plural here. Mediums are clairvoyants.*]]
+<div class="editor">
+{% capture m %}
+Ed: Media is the plural here. Mediums are clairvoyants.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 The waterfall process hinges on the premise that work must flow in a sequential order: the UX designer's work must be completed before visual design can start; the visual designer must finish their job before front-end development can begin. This simply isn't true. There is much work that can and should happen in parallel. To create sound UI design systems, we must reset our stakeholders' expectations and get them comfortable with a blurrier, more collaborative process.
 
@@ -499,13 +579,23 @@ Comps, like any other design artifact, are used to facilitate a conversation wit
 ### In-browser iteration
 Static comps can be great for shaping the overall aesthetic direction of a template, but users will ultimately view and interact with the experience in a browser. That's why designs should be quickly translated into the final environment and iterated on there.
 
-**Working in the browser allows teams to address layout issues across the entire resolution spectrum, design around dynamic data (such as variable character lengths, image sizes, and other dynamic content), demonstrate interaction and animation, gauge performance, factor in ergonomics, and confront technical considerations (such as pixel density, text rendering, scrolling performance, and browser quirks).** Static design comps cannot deal with all these considerations, so they should be treated merely as hypotheses rather than [[set-in-stone blueprints]]. Only when transferred to the browser can any design hypothesis truly be confirmed or rejected. 
+**Working in the browser allows teams to address layout issues across the entire resolution spectrum, design around dynamic data (such as variable character lengths, image sizes, and other dynamic content), demonstrate interaction and animation, gauge performance, factor in ergonomics, and confront technical considerations (such as pixel density, text rendering, scrolling performance, and browser quirks).** Static design comps cannot deal with all these considerations, so they should be treated merely as hypotheses rather than <span class="editor">set-in-stone blueprints</span>. Only when transferred to the browser can any design hypothesis truly be confirmed or rejected. 
 
-[[*Ed: Not sure a blueprint is set in stone, as it were. Wouldn't that be the building? ;)*]]
+<div class="editor">
+{% capture m %}
+Ed: Not sure a blueprint is set in stone, as it were. Wouldn't that be the building? ;)
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 > Let’s change the phrase “designing in the browser” to “deciding in the browser.” <cite>[Dan Mall](https://the-pastry-box-project.net/dan-mall/2012-september-12)</cite>
 
-[[*Ed: Hmmn. You use the exact same quotation earlier in the chapter. Is that deliberate?*]]
+<div class="editor">
+{% capture m %}
+Ed: Hmmn. You use the exact same quotation earlier in the chapter. Is that deliberate?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 **Once the designs are in the browser, they should stay in the browser.** At this stage in the process, the point of production shifts to team members adept at crafting HTML, CSS, and presentational JavaScript. Patterns should be created, styled, and plugged in wherever they're needed. Designers can react to these in-browser implementations and can work in static tools to help iron out responsive wrinkles at the organism level. This back-and-forth between static and in-browser tools establishes a healthy loop between design and development, where the front-end code becomes stabler and more solid with each iterative loop.
 
@@ -514,15 +604,27 @@ Static comps can be great for shaping the overall aesthetic direction of a templ
 **The beautiful thing about a pattern-based workflow is that as each pattern becomes more fully baked, any template that includes the pattern will become more fully baked as well.** That means the level of effort to create new templates decreases dramatically over the course of the project, until eventually creating a new template mostly involves stitching together existing patterns.
 
 ## Bring it on home
-The website is taking shape and the team is [[cooking with grease]] to bring the project home. At this stage, UI patterns are well established, the team is taking some final steps to tighten everything up and prepare for launch.
+The website is taking shape and the team is <span class="editor">cooking with grease</span> to bring the project home. At this stage, UI patterns are well established, the team is taking some final steps to tighten everything up and prepare for launch.
 
-[[*Ed: If this means ‘Now we're getting somewhere!’, the phrase is ‘cooking with gas’ not grease.*]]
+<div class="editor">
+{% capture m %}
+Ed: If this means ‘Now we're getting somewhere!’, the phrase is ‘cooking with gas’ not grease.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-UX designers are hitting the prototype hard to make sure the flows and interactions are all logical and intuitive. Visual designers are combing over the interface and proposing tweaks to the UI to polish up the design. Front-end developers are testing the experience in a [[myriad]] of browsers and devices, while also addressing design feedback. Back-end developers are hard at work integrating the front-end UI into the CMS (we'll talk more about the relationship between front-end and back-end in chapter 5). The whole team is tightening up documentation, cleaning up the pattern library, [[...]]
+UX designers are hitting the prototype hard to make sure the flows and interactions are all logical and intuitive. Visual designers are combing over the interface and proposing tweaks to the UI to polish up the design. Front-end developers are testing the experience in a <span class="editor">myriad</span> of browsers and devices, while also addressing design feedback. Back-end developers are hard at work integrating the front-end UI into the CMS (we'll talk more about the relationship between front-end and back-end in chapter 5). The whole team is tightening up documentation, cleaning up the pattern library, <span class="editor">...</span>
 
-[[*Ed: Myriad myriad myriad.*]]
+<div class="editor">
+{% capture m %}
+Ed: Myriad myriad myriad.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-[[*Ed: It seems like something's missing here. The online version has the following:*
+<div class="editor">
+{% capture m %}
+Ed: It seems like something's missing here. The online version has the following:
 
 *------------*
 
@@ -536,7 +638,10 @@ UX designers are hitting the prototype hard to make sure the flows and interacti
 
 *------------*
 
-*I've copy-edited the text above, so feel free to add it back in if necessary. I'm guessing that the words below are notes towards this ending.*]]
+I've copy-edited the text above, so feel free to add it back in if necessary. I'm guessing that the words below are notes towards this ending.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 Launch website. Pour champagne.
 
