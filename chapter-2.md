@@ -11,7 +11,13 @@ But my original explorations kept creeping back to the natural world, which trig
 
 ## Taking cues from chemistry
 
-[[*Ed: Headings in chapter 1 used sentence case, so I've replicated that here. In my experience, US written English tends towards using Title Case for headings, though not exclusively by any means. I'll leave the choice up to you, but my preference, being British, is for sentence case. You mostly use sentence case too. Title case requires a number of decisions to be made (Cap up every word? Cap up words with four or more letters? Cap up first and last word? Cap up nouns, pronouns, adj, verbs, etc? Lowercase a, an, the, to, etc?) and then consistently applied. Sentence case is easier to apply and, I reckon, looks simpler, neater and better.*]]
+<div class="editor">
+{% capture m %}
+Ed: Headings in chapter 1 used sentence case, so I've replicated that here. In my experience, US written English tends towards using Title Case for headings, though not exclusively by any means. I'll leave the choice up to you, but my preference, being British, is for sentence case. You mostly use sentence case too. Title case requires a number of decisions to be made (Cap up every word? Cap up words with four or more letters? Cap up first and last word? Cap up nouns, pronouns, adj, verbs, etc? Lowercase a, an, the, to, etc?) and then consistently applied. Sentence case is easier to apply and, I reckon, looks simpler, neater and better.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
 
 My high school chemistry class was taught by a no-nonsense Vietnam vet with an extraordinarily impressive mustache. Mr. Rae's class had a reputation for being one of the hardest classes in school, largely because of an assignment that required students to balance hundreds upon hundreds of chemical equations contained in a massive worksheet.
 
@@ -19,32 +25,55 @@ If you're like me, you may need a bit of a refresher to recall what a chemical e
 
 {% include figure.html src="../images/content/chemical-equation.png" caption="An example of a chemical equation showing hydrogen and oxygen atoms combining together to to form a water molecule." %}
 
-Chemical reactions are represented by chemical equations, which often show how atomic elements combine together to form molecules. [[In the example above, we see how hydrogen and oxygen combine together to form water molecules.]]
+Chemical reactions are represented by chemical equations, which often show how atomic elements combine together to form molecules. <span class="editor">In the example above, we see how hydrogen and oxygen combine together to form water molecules.</span>
 
-[[*Ed: Is it necessary to repeat the image caption text?*]]
+<div class="editor">
+{% capture m %}
+Ed: Is it necessary to repeat the image caption text?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
 
 In the natural world, **atomic elements combine together to form molecules. These molecules can combine further to form relatively complex organisms**. To expound a bit further:
 
 - **Atoms** are the basic building blocks of all matter. Each chemical element has distinct properties, and they can't be broken down further without losing their meaning. (Yes, it's true atoms are composed of even smaller bits like protons, electrons, and neutrons, but that's outside the realm of this discussion.)
 - **Molecules** are groups of two or more atoms held together by chemical bonds. These combinations of atoms take on their own unique properties, and become more tangible and operational than atoms.
-- **Organisms** are assemblies of molecules functioning together as a unit. These [[multifarious]] structures can range from single-celled organisms all the way up to incredibly complex organisms like human beings.
+- **Organisms** are assemblies of molecules functioning together as a unit. These <span class="editor">multifarious</span> structures can range from single-celled organisms all the way up to incredibly complex organisms like human beings.
  
-[[*Ed: "Complex" and "relatively complex" appear a few times around here, so I've changed or removed at least a couple of them.*]]
+<div class="editor">
+{% capture m %}
+Ed: "Complex" and "relatively complex" appear a few times around here, so I've changed or removed at least a couple of them.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
 
 Of course, I'm simplifying the incredibly rich composition of the universe, but the basic gist remains: atoms combine together to form molecules, which continue combining to form organisms. This atomic theory means that all matter in the known universe can be broken down into a finite set of atomic elements:
 
 {% include figure.html src="../images/content/periodic-table.png" caption="The periodic table of chemical elements." %}
 
-[[*Ed: Does this image need to be updated to reflect the recent discovery of new elements (atomic numbers 115, 117 and 118)?*]]
+<div class="editor">
+{% capture m %}
+Ed: Does this image need to be updated to reflect the recent discovery of new elements (atomic numbers 115, 117 and 118)?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 Apparently Mr. Rae's strategy of having students mind-numbingly balance tons of chemical equations worked, because I'm coming back to it all these years later for inspiration on how to approach interface design.
 
 ## The atomic design methodology
 By now you may be wondering why we're talking about atomic theory, and maybe you're even a bit angry at me for forcing you to relive memories of high school chemistry class. But this is going somewhere, I promise.
 
-We discussed earlier how all matter in the universe can be broken down into a finite set of atomic elements. As it happens, our interfaces can be broken down into a similar finite set of elements. [Josh Duck's Periodic Table of HTML Elements](http://smm.zoomquiet.io/data/20110511083224/index.html) beautifully articulates how all of our websites, apps, intranets, [[hoobadyboops]], and whatevers are all composed of the same HTML elements.
+We discussed earlier how all matter in the universe can be broken down into a finite set of atomic elements. As it happens, our interfaces can be broken down into a similar finite set of elements. [Josh Duck's Periodic Table of HTML Elements](http://smm.zoomquiet.io/data/20110511083224/index.html) beautifully articulates how all of our websites, apps, intranets, <span class="editor">hoobadyboop</span>, and whatevers are all composed of the same HTML elements.
 
-[[*Ed: Yes. Those.*]]
+<div class="editor">
+{% capture m %}
+Ed: Yes. Those.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
 
 {% include figure.html src="../images/content/html-periodic-table.png" caption="The periodic table of HTML elements by Josh Duck." %}
 
@@ -68,23 +97,48 @@ Let's dive into each stage and discuss its role in crafting an interface design 
 ## Atoms
 {% include figure.html src="../images/content/atomic-design-atoms.png" caption="" %}
 
-[[*Ed: Again, it's preferable not to put an image directly beneath a heading, though I appreciate this image is about orientating the reader. I wonder if the image should come before the heading, but I'm not sure how the book will be designed or formatted.*]]
+<div class="editor">
+{% capture m %}
+Ed: Again, it's preferable not to put an image directly beneath a heading, though I appreciate this image is about orientating the reader. I wonder if the image should come before the heading, but I'm not sure how the book will be designed or formatted.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-If atoms are the basic building blocks of matter, then the **atoms of our interfaces serve as the foundational building blocks that comprise all our user interfaces**. These atoms would include [basic HTML [[tags]]](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) like form labels, inputs, buttons, and others that can't be broken down any further without ceasing to be functional.
+If atoms are the basic building blocks of matter, then the **atoms of our interfaces serve as the foundational building blocks that comprise all our user interfaces**. These atoms would include [basic HTML <span class="editor">tags</span>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) like form labels, inputs, buttons, and others that can't be broken down any further without ceasing to be functional.
 
-[[*Ed: Tags or elements?*]]
+<div class="editor">
+{% capture m %}
+Ed: Tags or elements?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 {% include figure.html src="../images/content/atoms-form-elements.png" caption="Atoms include basic HTML tags like inputs, labels, and buttons." %}
 
-Each atom in the natural world has its own unique properties. A hydrogen atom contains one electron, while a helium atom contains two. These intrinsic chemical properties have profound effects on their application (for example, the Hindenburg explosion was so catastrophic because the airship was filled with extremely flammable hydrogen gas versus inert helium gas). In the same manner, each interface atom has its own unique properties, such as the dimensions of a hero image, or the font size of a primary heading. These properties directly influence when [[they]]'re applied to the user interface.
+Each atom in the natural world has its own unique properties. A hydrogen atom contains one electron, while a helium atom contains two. These intrinsic chemical properties have profound effects on their application (for example, the Hindenburg explosion was so catastrophic because the airship was filled with extremely flammable hydrogen gas versus inert helium gas). In the same manner, each interface atom has its own unique properties, such as the dimensions of a hero image, or the font size of a primary heading. These properties directly influence when <span class="editor">they</span>'re applied to the user interface.
 
-[[*Ed: It's not clear whether the "they" here refers to the atoms (which I assume is correct) or the properties.*]]
+<div class="editor">
+{% capture m %}
+Ed: It's not clear whether the "they" here refers to the atoms (which I assume is correct) or the properties.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-In addition to the [[tags]] that make up our user interfaces, **atoms can also include more abstract elemental items like color palettes, font stacks, and even [[invisible]] things like animations**. Defining these elemental properties of our UIs helps promote consistency and cohesion throughout the entire experience.
+In addition to the <span class="editor">tags</span> that make up our user interfaces, **atoms can also include more abstract elemental items like color palettes, font stacks, and even <span class="editor">invisible</span> things like animations**. Defining these elemental properties of our UIs helps promote consistency and cohesion throughout the entire experience.
 
-[[*Ed: Again, tags or elements?*]]
+<div class="editor">
+{% capture m %}
+Ed: Again, tags or elements?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-[[*Ed: An animation is visible, surely? Do you mean intangible? Could these "invisible things" be concepts?*]]
+<div class="editor">
+{% capture m %}
+Ed: An animation is visible, surely? Do you mean intangible? Could these "invisible things" be concepts?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 {% include figure.html src="../images/content/styleguide-salesforce-colors.png" caption="The style guide for Salesforce1 defines the color palette used throughout the user interface of the application." %}
 
@@ -172,10 +226,15 @@ We must create systems that establish reusable design patterns and also accurate
 
 - A user has one item in their shopping cart and another user has ten items in their cart.
 - A web app's dashboard typically shows recent activity, but that section is suppressed for first-time users.
-- [[An article contains a 40-character-long headline while other article with a 340-character-long headline.]]  
+- <span class="editor">An article contains a 40-character-long headline while other article with a 340-character-long headline.</span>  
 - Users with administrative privileges see additional buttons and options on their dashboard compared to users who aren't admins.
  
-[[*Ed: List item 3 doesn't make sense.*]]
+<div class="editor">
+{% capture m %}
+Ed: List item 3 doesn't make sense.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 In all of these examples, the underlying templates are the same, but the user interfaces change to reflect the nature of the content. These variations directly influence how the underlying molecules, organisms, and templates are constructed. Therefore, creating pages that account for these variations helps us create more resilient design systems.
 
@@ -188,34 +247,64 @@ So that's atomic design! These five distinct stages work together to produce eff
 - **Pages** apply real content to templates and articulate variations to demonstrate the final UI and test the resilience of the design system.
 
 ## Advantages of atomic design
-So why go through all this [[rigamarole]]? What's atomic design good for? These are valid questions, considering we've been building user interfaces for a long time now without having an explicit five-stage methodology in place. But atomic design provides us with a few key insights that help us create more effective, deliberate UI design systems.
+So why go through all this <span class="editor">rigamarole</span>? What's atomic design good for? These are valid questions, considering we've been building user interfaces for a long time now without having an explicit five-stage methodology in place. But atomic design provides us with a few key insights that help us create more effective, deliberate UI design systems.
 
-[[*Ed: Rigmarole would be the more usual spelling, but rigamarole is an accepted variant.*]]
+<div class="editor">
+{% capture m %}
+Ed: Rigmarole would be the more usual spelling, but rigamarole is an accepted variant.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 ### The part and the whole
-**One of the biggest advantages atomic design provides is the ability to [[traverse between]] abstract and concrete.** We can simultaneously see our interfaces broken down to their atomic elements and also see how those elements combine together to form our final experiences.
+**One of the biggest advantages atomic design provides is the ability to <span class="editor">traverse between</span> abstract and concrete.** We can simultaneously see our interfaces broken down to their atomic elements and also see how those elements combine together to form our final experiences.
 
-[[*Ed: This usage of "traverse" isn't quite right, or rather it's not usual. We don't traverse between one thing and another, we  traverse one thing at a time: The candidates traversed the state throughout the campaign. The bridge traverses a river. I take it you mean atomic design lets us move from abstract to concrete and back again, so perhaps traverse here could become "switch" or "shift". A couple of paragraphs further on you use "dance" to echo Frank Chimero, which is rather nice. I wonder, though, if you can simply remove "between" and "traverse abstract and concrete." Hmmn. Doesn't feel right.*]]
+<div class="editor">
+{% capture m %}
+Ed: This usage of "traverse" isn't quite right, or rather it's not usual. We don't traverse between one thing and another, we  traverse one thing at a time: The candidates traversed the state throughout the campaign. The bridge traverses a river. I take it you mean atomic design lets us move from abstract to concrete and back again, so perhaps traverse here could become "switch" or "shift". A couple of paragraphs further on you use "dance" to echo Frank Chimero, which is rather nice. I wonder, though, if you can simply remove "between" and "traverse abstract and concrete." Hmmn. Doesn't feel right.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 {% include figure.html src="../images/content/atomic-design-abstract-concrete.png" caption="Atomic design allows designers to traverse between abstract and concrete." %}
 
-In his book [[*The Shape of Design*]], Frank Chimero beautifully articulates the power this traversal provides:
+In his book <span class="editor">The Shape of Design</span>, Frank Chimero beautifully articulates the power this traversal provides:
 
-[[*Ed: Book title in HTML cite tags?*]]
+<div class="editor">
+{% capture m %}
+Ed: Book title in HTML cite tags?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 > The painter, when at a distance from the easel, can assess and analyze the whole of the work from this vantage. He scrutinizes and listens, chooses the next stroke to make, then approaches the canvas to do it. Then, he steps back again to see what he’s done in relation to the whole. It is a dance of switching contexts, a pitter-patter pacing across the studio floor that produces a tight feedback loop between mark-making and mark-assessing. <cite>[Frank Chimero](http://read.shapeofdesignbook.com/chapter01.html)</cite>
 
 Atomic design lets us dance between contexts like the painter Frank so eloquently describes. The atoms, molecules, and organisms that comprise our interfaces do not live in a vacuum. And our interfaces' templates and pages are indeed composed of smaller parts. The parts of our designs influence the whole, and the whole influences the parts. The two are intertwined, and atomic design embraces this fact.
 
-When designers and developers are crafting a particular component, we are like the painter at the canvas creating detailed strokes. When we are viewing those components in the context of a layout with real representative content in place, we are like the painter several feet back from the canvas assessing how their detailed strokes affect the whole composition. It's necessary to [[hone in]] on one particular component to ensure it is functional, usable, and beautiful. But it's also necessary to ensure that component is functional, usable, and beautiful *in the context of the final UI*.
+When designers and developers are crafting a particular component, we are like the painter at the canvas creating detailed strokes. When we are viewing those components in the context of a layout with real representative content in place, we are like the painter several feet back from the canvas assessing how their detailed strokes affect the whole composition. It's necessary to <span class="editor">hone in</span> on one particular component to ensure it is functional, usable, and beautiful. But it's also necessary to ensure that component is functional, usable, and beautiful *in the context of the final UI*.
 
-[[*Ed: See note in chapter 1 about "home in* and "hone".]]
+<div class="editor">
+{% capture m %}
+Ed: See note in chapter 1 about "home in* and "hone"
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-Atomic design provides us a structure to [[traverse between]] the parts and the whole of UIs, which is why it's crucial to [[reiterate that **atomic design is not a linear process**]]. It would be foolish to design buttons and other elements in isolation then cross our fingers and hope everything comes together to form a cohesive whole. So don't interpret the five stages of atomic design as "Step 1: atoms; Step 2: molecules; Step 3: organisms; Step 4: templates; Step 5: pages." Instead, **think of the stages of atomic design as a mental model that allows us to concurrently create final UIs and their underlying design systems**.
+Atomic design provides us a structure to <span class="editor">traverse between</span> the parts and the whole of UIs, which is why it's crucial to <span class="editor">reiterate that **atomic design is not a linear process</span>**. It would be foolish to design buttons and other elements in isolation then cross our fingers and hope everything comes together to form a cohesive whole. So don't interpret the five stages of atomic design as "Step 1: atoms; Step 2: molecules; Step 3: organisms; Step 4: templates; Step 5: pages." Instead, **think of the stages of atomic design as a mental model that allows us to concurrently create final UIs and their underlying design systems**.
 
-[[*Ed: See earlier note about traversing.*]]
+<div class="editor">
+{% capture m %}
+Ed: See earlier note about traversing.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-[[*Ed: Where did you first state this? I can't find it in chapter 1 or earlier in this chapter.*]]
+<div class="editor">
+{% capture m %}
+Ed: Where did you first state this? I can't find it in chapter 1 or earlier in this chapter.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 ### Clean separation between structure and content
 Discussing *design* and *content* is a bit like discussing the *chicken* and the *egg*. Mark Boulton explains:
@@ -235,11 +324,21 @@ The content we pour into our UIs at the page stage will influence the characteri
 ### What's in a name?
 Throughout this book I've mentioned that modular design and development is nothing new. So why are we introducing terms like _atoms_, _molecules_, and _organisms_ when we can just stick with established terms like _modules_, _components_, _elements_, _sections_, and _regions_?
 
-[[*Ed: I've removed the quote marks around the terms and italicized them instead. While there's nothing wrong with using the marks to highlight words as words, when so many are used together, they make the text more difficult to read, tripping up the reader. Italics serve the same purpose but act more smoothly.*]]
+<div class="editor">
+{% capture m %}
+Ed: I've removed the quote marks around the terms and italicized them instead. While there's nothing wrong with using the marks to highlight words as words, when so many are used together, they make the text more difficult to read, tripping up the reader. Italics serve the same purpose but act more smoothly.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 For as long as I've been talking about atomic design, I've had people proffer alternate names for the stages of the methodology. Person One would suggest, "Why not just name them elements, modules, and components?" while Person Two would suggest, "Why not just name them base, components, and modules?" The issue with terms like components and modules is that a sense of hierarchy can't be deduced from the names alone. **Atoms, molecules, and organisms imply a hierarchy** that anyone with a basic knowledge of chemistry can hopefully wrap their heads around.
 
-[[*Ed: And once the terms are under discussion, we can ditch italics on what the reader should now recognize as terminology in this context.*]]
+<div class="editor">
+{% capture m %}
+Ed: And once the terms are under discussion, we can ditch italics on what the reader should now recognize as terminology in this context.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 That being said, naming things is hard and imperfect. The names I've chosen for the stages of atomic design have worked really well for me and the teams I've worked with. But maybe they don't work for you. That's more than OK. Here's one perspective from a designer at a digital agency:
 
@@ -247,7 +346,12 @@ That being said, naming things is hard and imperfect. The names I've chosen for 
 
 The terms the team came up with were _foundations_, _materials_, _rooms_, _templates_, and _pages_. Does this make sense to you? It doesn't matter. By taking the time to establish an agreed on vocabulary, their team was able to get on board with the concept of atomic design and work together effectively by speaking the same language.
 
-[[*Ed: But as these are a new set of terms being introduced, it's back to the italics.*]]
+<div class="editor">
+{% capture m %}
+Ed: But as these are a new set of terms being introduced, it's back to the italics.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 _Atomic design_ as a term encapsulates the concepts of modular design and development, which becomes a useful shorthand for convincing stakeholders and talking with colleagues. But whatever names you choose to work with should help you and your organization craft an effective UI design system.
 
@@ -269,10 +373,20 @@ Let's walk through this atomized Instagram interface:
 I show this non-web example because atomic design tends to get misinterpreted as an approach to web-specific technologies like CSS and JavaScript. Let me be clear about this: **atomic design has nothing to do with web-specific subjects like CSS or JavaScript architecture**. In chapter 1 we discussed the trend toward modularity in all aspects of design and development, which includes CSS and JavaScript. These are fantastic trends in CSS and JavaScript, but atomic design deals with crafting user interface design systems irrespective of the technology used to create them.
 
 ## Atomic design in theory and in practice
-This chapter introduced the atomic design methodology and demonstrated how atoms, molecules, organisms, templates, and pages all work together to craft thoughtful, deliberate interface design systems. Atomic design allows us to see our UIs broken down to their atomic elements, and also allows us to simultaneously step through how those elements join together to form our final UIs. We learned about the tight bond between content and design, and how atomic design allows us to craft design systems that are [[tailored]] to the content that lives inside them. And finally we learned how the language of atomic design gives us a helpful shorthand for discussing modularity with our colleagues, and provides a much needed sense of hierarchy in our design systems.
+This chapter introduced the atomic design methodology and demonstrated how atoms, molecules, organisms, templates, and pages all work together to craft thoughtful, deliberate interface design systems. Atomic design allows us to see our UIs broken down to their atomic elements, and also allows us to simultaneously step through how those elements join together to form our final UIs. We learned about the tight bond between content and design, and how atomic design allows us to craft design systems that are <span class="editor">tailored</span> to the content that lives inside them. And finally we learned how the language of atomic design gives us a helpful shorthand for discussing modularity with our colleagues, and provides a much needed sense of hierarchy in our design systems.
 
-[[*Ed: Is "custom-tailored" like belt and braces? We can ditch "custom-" as "tailored" can do all the work.*]]
+<div class="editor">
+{% capture m %}
+Ed: Is "custom-tailored" like belt and braces? We can ditch "custom-" as "tailored" can do all the work.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-Atomic design is a helpful design and development methodology, but [[essentially]] it's merely a mental model for constructing a UI. By now you may be wondering *how* you make atomic design happen. Well, fear not, dear reader, because the rest of the book focuses on tools and processes to make your atomic design dreams come true.
+Atomic design is a helpful design and development methodology, but <span class="editor">essentially</span> it's merely a mental model for constructing a UI. By now you may be wondering *how* you make atomic design happen. Well, fear not, dear reader, because the rest of the book focuses on tools and processes to make your atomic design dreams come true.
 
-[[*Ed: "At the end of the day". Nope. Let's replace that with something a little more meaningful. You use "ultimately" a few times as well (you'll have noticed I deleted them).*]]
+<div class="editor">
+{% capture m %}
+Ed: "At the end of the day". Nope. Let's replace that with something a little more meaningful. You use "ultimately" a few times as well (you'll have noticed I deleted them).
+{% endcapture %}
+{{ m | markdownify }}
+</div>
