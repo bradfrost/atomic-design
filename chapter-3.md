@@ -101,6 +101,8 @@ Ed: (Duly noted. Is this helpful? https://help.github.com/articles/creating-and-
 </code>
 </pre>)
 
+<div class="editor">
+{% capture m %}
 [Editor's markup block]
 ```html
 {% raw %}
@@ -113,6 +115,10 @@ Ed: (Duly noted. Is this helpful? https://help.github.com/articles/creating-and-
 </div>
 {% endraw %}
 ```
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
 You can see we have: HTML markup consisting of a wrapper `div` with a class name of `block-post`; a link; a Mustache include for the thumbnail image; an `<h3>` <span class="editor">tag</span> for the headline; and a `<p>` tag for the excerpt. You'll notice there's more Mustache code for `url`, `headline`, and `excerpt`, which we'll use later to dynamically swap in actual content. More on that in a bit.
 
 <div class="editor">
