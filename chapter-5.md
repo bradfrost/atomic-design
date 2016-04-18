@@ -78,17 +78,17 @@ Convincing stakeholders to commit a large chunk of money, time, and resources up
 
 Let's break down these steps a bit further.
 
-### Step 1: Make a thing. 
+### Step 1: make a thing
 You have to start somewhere, and having something is better than nothing. Pick a project that would be a great pilot for establishing your design system, follow a process similar to the one discussed in chapter 4, think about the atomic design mental model detailed in chapter 2, and with any luck you'll end up with a solid foundation for a thoughtful design system and pattern library that helps your team work more effectively and thoughtfully. 
 
 Take the time to package your UI patterns in a pattern library and get it ready to shop around. I've talked to several ambitious team members who have built the basic gist of a pattern library over a weekend. This effort makes all the difference in the world since it gives something tangible for stakeholders to react to. Again: show, don't tell.
 
-### Step 2: Show that it's useful. 
+### Step 2: show that it's useful 
 With a nascent-yet-tangible design system in place, you can have a more meaningful conversation with people who control money, scheduling, and resources. You can discuss exactly how the design system helped save time and money (see *Pitching Patterns* in the last chapter), then paint a picture for how those benefits would scale even further if the organization invested in an official, robust design system. 
 
 Get team members across disciplines who have directly benefitted from the initial system to back you up, and pull in other people who are sympathetic to the cause that would stand to benefit from an expanded design system. 
 
-### Step 3: Make it official
+### Step 3: make it official
 You've proven the value of your design system and presented a roadmap for how to make it even better. With any luck your organization will commit to making the design system an Official Thing. 
 
 With approval from the highest levels, you're now able to put a plan into action that involves: allocating and/or hiring people to work on the design system, developing a plan to make the design system more comprehensive, establish a governance strategy, and lay out a product roadmap for the design system.
