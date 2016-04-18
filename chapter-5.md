@@ -20,10 +20,10 @@ Why does this happen?
 **An artifact is something you'd find in an archaeological dig or a museum, whereas a system is a living, breathing entity**. A pattern library can provide helpful documentation, but the simple existence of a pattern library doesn't guarantee long-term success for the underlying design system. 
 
 ## Changing minds, once again
-We've already discussed the importance of resetting everyone's expectations in order to establish a more collaborative, pattern-driven workflow. In order to save our design systems from the trash can and instead craft successful, lasting design systems, we must once again fundamentally rewire people's brains.
+We've already discussed the importance of resetting everyone's expectations in order to establish a more collaborative, pattern-driven workflow. In order to save our design systems from the trash can and craft successful, lasting design systems instead, we must once again fundamentally rewire people's brains.
 
 ### What is it we're making again?
-We *think* we merely design and build websites. And that's true for the most part. After all, that's what our clients pay us to do, and the products we create are the vehicles that generate money and success for an organization. So it seems natural to focus on the final implementations of the design system. With this mentality, the live products remain the primary focus of everyone's attention, while any pattern library exists as an offshoot that provides helpful documentation for the final products.
+We *think* we merely design and build websites. And that's true for the most part. After all, that's what our clients pay us to do, and the products we create are the vehicles that generate money and success for an organization. So it seems natural to focus on the final implementations rather than the underlying system. With this mentality, the live products remain the primary focus of everyone's attention, while any pattern library exists as an offshoot that provides helpful documentation for the final products.
 
 {% include figure.html src="../images/content/workflow-website-first.png" caption="" %}
 
@@ -40,7 +40,7 @@ Say for instance you're working on an e-commerce site, and you run a test to fin
 That is just one example of how design system thinking can lead to broader changes. **Broken behavior and opportunities to enhance the experience will be realized at the *page* level, but those changes often should be acted on at the *system* level**. Adding this bit of worthwhile friction into your workflow  ensures improvements are shared across the entire design system, and that the system isn't eroded by a continuous series of one-off changes.
 
 ### Done and done
-Anther expectation we must revisit is our definition of *done*. Creating things for print and other physical mediums involve making permanent, tangible objects. There's a sense of finality when creating things for a world of atoms. That sense of finality simply doesn't exist in the digital world, which means change can happen with much less effort and friction than other mediums. **Clients, colleagues, and stakeholders should embrace the pliable nature of the digital world to create living design systems that adapt to the ever-shifting nature of the medium, user needs, and the needs of the business**. 
+Anther expectation we must revisit is our definition of *done*. Creating things for print and other physical mediums involve making permanent, tangible objects. There's a sense of finality when creating things for a world of atoms. That concept simply doesn't exist in the digital world, which means change can happen with much less effort and friction than other mediums. **Clients, colleagues, and stakeholders should embrace the pliable nature of the digital world to create living design systems that adapt to the ever-shifting nature of the medium, user needs, and the needs of the business**. 
 
 This shift in thinking fundamentally impacts the scope of our work. Folks working in the client services business are often used to delivering a project in a tidy package then riding off into the sunset. Internal teams don't fair much better, since they tend to float from one initiative to the next. Whether you're part of an internal team or are an external gun for hire, I'm guessing you've experienced the shortcomings of project-based work. We tend to talk about a future that never comes, and instead we set it, forget it, then move onto the next shiny project.
 
@@ -51,7 +51,7 @@ If we're committed to creating genuinely useful work that truly meets the needs 
 The web is never done, and the creation of a design system is merely the first step in a long (and hopefully fruitful!) journey. A design system should be a long-term commitment with the ambitious goal of revolutionizing how your organization creates digital work. Exciting, eh?! So how do we make sure that happens?
 
 ## Creating Maintainable Design Systems
-As you embark on this journey, let's talk about things you can do to craft a design system that sets your organization up for long-term success. How do you create a design system that takes root and becomes an essential part of your organization's workflow? What pitfalls do you need to be on the lookout for? How do you ensure the design system yields big results?
+As you embark on this journey, let's talk about things you can do to craft a design system that sets your organization up for long-term success. How do you create a design system that takes root and becomes an essential part of your organization's workflow? What pitfalls do you need to be on the lookout for? How do you ensure the design system yields big results? Here's what we need to do:
 
 - Make it official.
 - Make it maintainable.
@@ -66,45 +66,71 @@ As you embark on this journey, let's talk about things you can do to craft a des
 Let's go into each one of these points in more detail.
 
 ## Make it official
-Your initial style guide may begin its life as a side project, result of a weekend hackathon, or as a brainchild of one or two ambitious team members. As we discussed in the last chapter, your client or boss doesn't even have to know that you're creating a thoughtful design system. Remember: ask forgiveness, not permission!
+Your initial style guide may begin its life as a side project, result of a weekend hackathon, or as the brainchild of one or two ambitious team members. As we discussed in the last chapter, your client or boss doesn't even have to know that you're creating a thoughtful design system and accompanying pattern library. Remember: ask forgiveness, not permission!
 
-Organic beginnings are all well and good, but in order to create a truly impactful design system that creates longterm success for your organization, **the design system needs to evolve beyond being a pet project and instead become an officially-sanctioned endeavor**. That means it has real time, budget, and people allocated to it.
+Organic beginnings are all well and good, but in order to create a truly impactful design system that creates longterm success for your organization, **the design system needs to evolve beyond being a side project and instead become an officially-sanctioned endeavor**. That means it has real time, budget, and people allocated to it.
 
-I think it's extremely challenging to convince stakeholders to commit a large chunk of money, time, and resources to creating a design system. Again, I highly recommend taking tangible steps towards creating a design system with or without your client's or boss's blessing. So here's my advice:
+Convincing stakeholders to commit a large chunk of money, time, and resources upfront for a design system can be extremely challenging. So what are we to do? Here's my advice:
 
 1. Make a thing.
 2. Show that it's useful.
 3. Make it official.
 
+Let's break down these steps a bit further.
+
 ### Step 1: Make a thing. 
-You have to start somewhere. Pick a project that would be a great pilot for your design system. Using the atomic design methodology detailed in chapter 2  
+You have to start somewhere, and having something is better than nothing. Pick a project that would be a great pilot for establishing your design system, follow a process similar to the one discussed in chapter 4, think about the atomic design mental model detailed in chapter 2, and with any luck you'll end up with a solid foundation for a thoughtful design system and pattern library that helps your team work more effectively and thoughtfully. 
+
+Take the time to package your UI patterns in a pattern library and get it ready to shop around. I've talked to several ambitious team members who have built the basic gist of a pattern library over a weekend. This effort makes all the difference in the world since it gives something tangible for stakeholders to react to. Again: show, don't tell.
 
 ### Step 2: Show that it's useful. 
-With the genesis of a design system in place, you can give your bosses something to react to. You can now talk them through how it helps save time and money (see *Pitching Patterns* in the last chapter). Armed with an initial design system, a pilot project, it 
+With a nascent-yet-tangible design system in place, you can have a more meaningful conversation with people who control money, scheduling, and resources. You can discuss exactly how the design system helped save time and money (see *Pitching Patterns* in the last chapter), then paint a picture for how those benefits would scale even further if the organization invested in an official, robust design system. 
+
+Get team members across disciplines who have directly benefitted from the initial system to back you up, and pull in other people who are sympathetic to the cause that would stand to benefit from an expanded design system. 
 
 ### Step 3: Make it official
-Get the organization to commit to making the design system an Official Thing. With leadership approval, you'll be able to put a plan into action that involves allocating and/or hiring people to work on the design system.  to make the design system more complete, discuss governance, allocations 
+You've proven the value of your design system and presented a roadmap for how to make it even better. With any luck your organization will commit to making the design system an Official Thing. 
 
-### Governance model
-What's the plan of attack for managing this thing in the long-run? What if something changes? How 
+With approval from the highest levels, you're now able to put a plan into action that involves: allocating and/or hiring people to work on the design system, developing a plan to make the design system more comprehensive, establish a governance strategy, and lay out a product roadmap for the design system.
+
+Now it's worth pointing out that things might not shake out the way you hoped. Despite demonstrating real value and presenting a concrete plan of action, higher ups still might shoot your initiative down. **Don't be discouraged**. You may have lost the battle, but you certainly haven't lost the war. Your team should continue to grow and extend the design system (in whatever capacity you can) until its value becomes undeniable. As more people benefit from the system, you'll have a groundswell of support to help push the endeavor through.
 
 ### Establishing a Design System Team
-Who updates it?
-Who approves changes?
-Who interfaces with the users of the design system to make sure it's addressing their needs?
-Who is involved with maintaining a living, breathing design system? A team needs to manage. 
+Who updates the design system? Who approves changes? Who interfaces with the users of the design system to make sure it's addressing their needs? Who gets to decide which patterns stay, go, or need tweaked? 
 
-Cross-disciplinary team should be established responsible for managing the 
+The answers to these questions **will very much depend on the size and setup of your organization**, but ultimately *someone* (or likely some people) needs to own and govern the design system. 
+
+**Large organizations** like Salesforce maintain an official *design systems team*, which currently includes about a dozen full-time employees last I heard. That dedicated team is responsible for governing the design system and making sure it's meeting the needs of the myriad internal product teams, as well as external developers that build things on the company's platform. When a design system is serving literally thousands of  users (meaning designers, developers, and others making use of the system), it's a smart idea to dedicate at least a few full-time employees to maintaining the system.
+
+**Smaller organizations** most likely don't have the luxury of building an entire team to service a design system. Team members in smaller organizations have to wear many (hopefully stylish!) hats out of necessity, so governing the design system will likely become another responsibility. This may sound like an added burden ("oh great, yet another thing I'm responsible for that doesn't involve a pay raise!"), but this particular hat should be a joy to wear as it improves the efficiency and quality of all other work. Hooray for design systems!
+
+And then there are **external agencies, contractors, and consultants**. What is the role of an external party when it comes to long-term maintenance of a client's design system? On one hand, external parties are at a bit of a disadvantage since they don't actually work for the client's organization. A successful design system needs to become a part of an organization's DNA, and since external parties exist outside the company's walls, their influence is intrinsically limited.
+
+But on the other hand, **external parties can often provide a sense of perspective** that's hard to see while working inside a company. This is where outsiders can really shine. In my work as a consultant, I work with organizations to establish long-term design system maintenance strategies and help get the right people and processes in place. While the long-term success of the system will ultimately be up to the organization, external parties can teach them to fish and provide important strategic guidance, feedback, and perspective. 
+
+#### Team makeup and organization
+Who are the players involved in maintaining the design system? What's their relationship with the rest of the organization?
+
+Cross-disciplinary team should be established responsible for managing, maintaining, and extending the system. UX designers, visual designers, content strategists, frontend developers, backend developers product managers, project managers, etc.
+
+**At least someone must be able to provide a birds-eye view of the entire ecosystem the design system serves**. 
+
+Makers and users. 
+
+### Managing change
+What's the plan of attack for managing this thing in the long-run? What if something changes? Governance.
 
 ## Make It Maintainable
-- The pattern library that showcases the  surefire way of making a design system that dies on the vine. It needs to become an an integral part of the teams' workflow. Needs to closely match the technology (or technologies) that use the design system.
+A pattern library that isn't in step with the real applications it serves is a surefire way of making a design system that dies on the vine. The design system needs to become an an integral part of the teams' workflow, so the pattern library needs to closely match the technology (or technologies) that use the design system. Making updates to the design system and having those changes reflected in the pattern library should be as frictionless as possible. There are many ways to accomplish this, and 
+
 - Sharing CSS and JS with the production environment is easy, but sharing templates is tough
-- Templating language should match the production environment - The closer the 
+- Using templating languages Templating language should match the production environment - The closer you get to . 
 - [Using Grunt with Pattern Lab](http://bradfrost.com/blog/post/using-grunt-with-pattern-lab/)
 
 ### The Holy Grail
-- Holy Grail is when the pattern library and production environment are perfectly in sync. Make a change to a pattern library, and anywhere the pattern is included in production will be updated.
-- [Rizzo](http://rizzo.lonelyplanet.com/) by Lonely Planet has accomplished this.
+**The design system Holy Grail involves creating an environment where the pattern library and production environment are perfectly in sync**. The idea is that you can make a change to a pattern, and those changes are automatically reflected in both the pattern library and anywhere the pattern is included in production.
+
+The gold standard for a Holy Grail-style design system is [Rizzo](http://rizzo.lonelyplanet.com/) by Lonely Planet. 
 
 ### Strategies for achieving the Holy Grail
 - [Chasing the holy grail](https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.vy45rkm7m)
@@ -120,23 +146,27 @@ Cross-disciplinary team should be established responsible for managing the
 ## Make it visible
 - Make it public.
 - Recruitment, recruitment, recruitment.
+- Jina Bolton went to Salesforce after seeing their Salesforce1 style guide. 
 
 ## Make it bigger
+In chapter 1, we discussed the six different types of style guides. When a design system has proven to be valuable and there's a solid home base set up to house it, there's an opportunity to extend that home to include things like voice and tone, brand, code, design principles and writing guidelines. Now, every organization may not necessarily need all of these elements, but the point is that 
 
 ## Make it agnostic
 - The more agnostic pattern names are, the more versatile and reusable they become.
 - Nicole Sullivan [media object](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/)
+- Naming things is really freaking hard. 
 
 ## Make it contextual
-- Demonstrate context. Where are
+- Demonstrate context. Where are these patterns utilized? 
 - Pattern Lab lineage
+- Helps with QA efforts. If changes are made to a pattern, you'll know exactly which templates will need retested to ensure things held up. 
 
 ## Make it last
+Making a design system last means consistently . It needs to be visible and stay in the front of everyone's minds. Without a communication strategy in place, how will everyone know when things change?
 - Publish updates (Material Design example)
 - Notifications - Regular E-mail newsletters, blog updates, etc, whenever things change, Slack integrations 
-- Monitor progress - Lonely Planet performance
+- Monitor progress over time - Lonely Planet's Rizze design system tracks performance metrics over time.
 - Revisit our work once time has We should contracts that revisit the design system Anna Debenham.
 
-> When we provide a pattern library to a client, we hope that they’ve got everything they need. If we’ve done our job right, then they’ll be able to combine patterns in ways we haven’t foreseen to create entirely new page types. https://adactio.com/journal/7276
-
 ## Go forth and be atomic
+
