@@ -719,7 +719,15 @@ EDITOR'S NOTES
 ------------------------*/
 
 .editor {
-	color: red;
+	font-size: 1rem;
+	font-style: italic;
+	background: rgba(255,255,0, 0.3);
+    padding: 0.3em;
+    margin: 1em 0;
+    
+    p {
+	    margin: 0;
+    }
 }
 
 
