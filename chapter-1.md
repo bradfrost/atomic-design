@@ -18,7 +18,7 @@ The page has been with us for a long time now. A few millennia, actually. The fi
 Ed: Tablets have been found that date to around 2000BC, so I up(back?)dated your date. These were superseded by scrolls, not the other way around as you initially put it. Also, I couldn't resist adding papyrus before parchment to boost your alliteration. Feel free to push my elbow back out again.
 {% endcapture %}
 {{ m | markdownify }}
-</div>
+</div> 
 
 
 The page metaphor has been baked into the lexicon of the <span class="editor">web</span> since the very beginning. Tim Berners-Lee invented the World Wide Web so that he, his colleagues at CERN, and other academics could easily share and link together their world of *documents*. This document-based, academic genesis of the web is why the concept of the page is so deeply ingrained in the vocabulary of the internet.
@@ -28,7 +28,7 @@ The page metaphor has been baked into the lexicon of the <span class="editor">we
 Ed: An uppercase W on web? I don't think so. It's a bit old-fashioned. You don't capitalize internet, I notice. World Wide Web is fine, though. I've changed Web to web throughout.
 {% endcapture %}
 {{ m | markdownify }}
-</div> 
+</div>
 
 So what? 
 
