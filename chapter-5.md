@@ -40,7 +40,7 @@ Say for instance you're working on an e-commerce site, and you run a test to fin
 That is just one example of how design system thinking can lead to broader changes. **Broken behavior and opportunities to enhance the experience will be realized at the *page* level, but those changes often should be acted on at the *system* level**. Adding this bit of worthwhile friction into your workflow  ensures improvements are shared across the entire design system, and that the system isn't eroded by a continuous series of one-off changes.
 
 ### Done and done
-Anther expectation we must revisit is our definition of *done*. Creating things for print and other physical mediums involve making permanent, tangible objects. There's a sense of finality when creating things for a world of atoms. That concept simply doesn't exist in the digital world, which means change can happen with much less effort and friction than other mediums. **Clients, colleagues, and stakeholders should embrace the pliable nature of the digital world to create living design systems that adapt to the ever-shifting nature of the medium, user needs, and the needs of the business**. 
+Another expectation we must revisit is our definition of *done*. Creating things for print and other physical mediums involve making permanent, tangible objects. There's a sense of finality when creating things for a world of atoms. That concept simply doesn't exist in the digital world, which means change can happen with much less effort and friction than other mediums. **Clients, colleagues, and stakeholders should embrace the pliable nature of the digital world to create living design systems that adapt to the ever-shifting nature of the medium, user needs, and the needs of the business**. 
 
 This shift in thinking fundamentally impacts the scope of our work. Folks working in the client services business are often used to delivering a project in a tidy package then riding off into the sunset. Internal teams don't fair much better, since they tend to float from one initiative to the next. Whether you're part of an internal team or are an external gun for hire, I'm guessing you've experienced the shortcomings of project-based work. We tend to talk about a future that never comes, and instead we set it, forget it, then move onto the next shiny project.
 
@@ -96,26 +96,40 @@ With approval from the highest levels, you're now able to put a plan into action
 Now it's worth pointing out that things might not shake out the way you hoped. Despite demonstrating real value and presenting a concrete plan of action, higher ups still might shoot your initiative down. **Don't be discouraged**. You may have lost the battle, but you certainly haven't lost the war. Your team should continue to grow and extend the design system (in whatever capacity you can) until its value becomes undeniable. As more people benefit from the system, you'll have a groundswell of support to help push the endeavor through.
 
 ### Establishing a Design System Team
+With the design system initiative approved, it's now time to put the right people and processes in place to ensure the system flourishes for your organization.
+
+#### Design system makers and users
+First things first. It's important to understand that **there will inevitably be people at the organization that help <em>make and maintain</em> the design system, and there will be other people who will be <em>users</em> of the design system**. These two groups may not be mutually exclusive, but establishing the roles of makers and users is important.
+
+When I talk about establishing a more collaborative process like the one I detailed in the last chapter, I inevitably hear people say, "but Brad, we have hundreds (or thousands) of developers working on our products, so getting all those people to collaborate and contribute like that would be far too difficult."
+
+They're likely right. It would be ideal if the entire organization adopted more nimble, collaborative processes, but the daunting logistics around such an effort makes it improbable. It's important to recognize that not everyone in the organization needs to directly contribute to the design system, but someone (or more likely, some people) has to.
+
+**The design system <em>makers</em> are the ones who architect, create, and maintain the system**, and they need to work closely together to ensure that the system is smart, flexible, scalable, and addresses the needs of the business. **The design system <em>users</em> are the teams across the organization who will take the interface patterns and apply them to specific products**. 
+
+The design system makers must be in sync with the design system users to ensure the concrete. 
+
+#### Who are the design system makers?
 Who updates the design system? Who approves changes? Who interfaces with the users of the design system to make sure it's addressing their needs? Who gets to decide which patterns stay, go, or need tweaked? 
 
-The answers to these questions **will very much depend on the size and setup of your organization**, but ultimately *someone* (or likely some people) needs to own and govern the design system. 
+The answers to these questions **will very much depend on the size and setup of your organization**.
 
-**Large organizations** like Salesforce maintain an official *design systems team*, which currently includes about a dozen full-time employees last I heard. That dedicated team is responsible for governing the design system and making sure it's meeting the needs of the myriad internal product teams, as well as external developers that build things on the company's platform. When a design system is serving literally thousands of  users (meaning designers, developers, and others making use of the system), it's a smart idea to dedicate at least a few full-time employees to maintaining the system.
+**Large organizations** like Salesforce maintain an official *design systems team*, which currently includes about a dozen full-time employees last I heard. That dedicated team is responsible for governing the design system and making sure it's meeting the needs of the myriad internal product teams, as well as external developers that build things on the company's platform. When a design system is serving literally thousands of  users (designers, developers, and others making use of the system), it's a smart idea to dedicate at least a few full-time employees to maintaining the system.
 
 **Smaller organizations** most likely don't have the luxury of building an entire team to service a design system. Team members in smaller organizations have to wear many (hopefully stylish!) hats out of necessity, so governing the design system will likely become another responsibility. This may sound like an added burden ("oh great, yet another thing I'm responsible for that doesn't involve a pay raise!"), but this particular hat should be a joy to wear as it improves the efficiency and quality of all other work. Hooray for design systems!
 
 And then there are **external agencies, contractors, and consultants**. What is the role of an external party when it comes to long-term maintenance of a client's design system? On one hand, external parties are at a bit of a disadvantage since they don't actually work for the client's organization. A successful design system needs to become a part of an organization's DNA, and since external parties exist outside the company's walls, their influence is intrinsically limited.
 
-But on the other hand, **external parties can often provide a sense of perspective** that's hard to see while working inside a company. This is where outsiders can really shine. In my work as a consultant, I work with organizations to establish long-term design system maintenance strategies and help get the right people and processes in place. While the long-term success of the system will ultimately be up to the organization, external parties can teach them to fish and provide important strategic guidance, feedback, and perspective. 
+But on the other hand, **external parties can often provide a sense of perspective** that's hard to see while working inside a company. This is where outsiders can really shine. In my work as a consultant, I work with organizations to establish long-term design system maintenance strategies and help get the right people and processes in place. While the long-term success of the system will ultimately be up to the organization themselves, external parties can teach them to fish and provide important strategic guidance, feedback, and perspective. 
 
-#### Team makeup and organization
-Who are the players involved in maintaining the design system? What's their relationship with the rest of the organization?
+### Design system team makeup and organization
+Who are the players involved in maintaining the design system? What's their relationship with the rest of the organization? 
 
-Cross-disciplinary team should be established responsible for managing, maintaining, and extending the system. UX designers, visual designers, content strategists, frontend developers, backend developers product managers, project managers, etc.
+A cross-disciplinary team should be established responsible for managing, maintaining, and extending the system. UX designers, visual designers, content strategists, frontend developers, backend developers, product managers, and project managers all have individual perspectives that will undoubtedly shape the design system.
 
 **At least someone must be able to provide a birds-eye view of the entire ecosystem the design system serves**. 
 
-Makers and users. 
+
 
 ### Managing change
 What's the plan of attack for managing this thing in the long-run? What if something changes? Governance.
