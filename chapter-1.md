@@ -28,7 +28,7 @@ The page metaphor has been baked into the lexicon of the <span class="editor">we
 Ed: An uppercase W on web? I don't think so. It's a bit old-fashioned. You don't capitalize internet, I notice. World Wide Web is fine, though. I've changed Web to web throughout.
 {% endcapture %}
 {{ m | markdownify }}
-</div>
+</div> 
 
 So what? 
 
