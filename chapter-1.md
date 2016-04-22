@@ -13,7 +13,7 @@ Oh, wait.
 ## Our paginated past
 The page has been with us for a long time now. A few millennia, actually. The first books were thick slabs of clay created about <span class="editor">4,000 years ago</span>, soon replaced by scrolls as the preferred way to consume the written word. And while reading technology has come a long way – from papyrus to parchment to paperback to pixels – the concept of the page holds strong to this day. 
 
-<div class="editors">
+<div class="editor">
 {% capture m %} 
 Ed: Tablets have been found that date to around 2000BC, so I up(back?)dated your date. These were superseded by scrolls, not the other way around as you initially put it. Also, I couldn't resist adding papyrus before parchment to boost your alliteration. Feel free to push my elbow back out again.
 {% endcapture %}
