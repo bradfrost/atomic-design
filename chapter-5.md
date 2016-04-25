@@ -68,7 +68,7 @@ Let's go into each one of these points in more detail.
 ## Make it official
 Your initial style guide may begin its life as a side project, result of a weekend hackathon, or as the brainchild of one or two ambitious team members. As we discussed in the last chapter, your client or boss doesn't even have to know that you're creating a thoughtful design system and accompanying pattern library. Remember: ask forgiveness, not permission!
 
-Organic beginnings are all well and good, but in order to create a truly impactful design system that creates longterm success for your organization, **the design system needs to evolve beyond being a side project and instead become an officially-sanctioned endeavor**. That means it has real time, budget, and people allocated to it.
+Organic beginnings are all well and good, but in order to create a truly impactful design system that creates longterm success for your organization, **the design system needs to evolve into an officially-sanctioned endeavor rather than a side project**. That means thinking of it as a product and allocating real time, budget, and people to it.
 
 Convincing stakeholders to commit a large chunk of money, time, and resources upfront for a design system can be extremely challenging. So what are we to do? Here's my advice:
 
@@ -79,9 +79,9 @@ Convincing stakeholders to commit a large chunk of money, time, and resources up
 Let's break down these steps a bit further.
 
 ### Step 1: make a thing
-You have to start somewhere, and having something is better than nothing. Pick a project that would be a great pilot for establishing your design system, follow a process similar to the one discussed in [chapter 4](/chapter-4/), think about the atomic design mental model detailed in [chapter 2](/chapter-2/), and with any luck you'll end up with a solid foundation for a thoughtful design system and pattern library that helps your team work more effectively and thoughtfully. 
+You have to start somewhere, and having something is better than nothing. Pick a project that would be a great pilot for establishing your design system, follow a process similar to the one discussed in [chapter 4](/chapter-4/), think about the atomic design mental model detailed in [chapter 2](/chapter-2/), and you'll end up with a solid foundation for a thoughtful design system and pattern library that helps your team work more effectively and thoughtfully. 
 
-Take the time to package your UI patterns in a pattern library and get it ready to shop around. I've talked to several ambitious team members who have built the basic gist of a pattern library over a weekend. This effort makes all the difference in the world since it gives something tangible for stakeholders to react to. Again: show, don't tell.
+Take the time to package your UI patterns in a pattern library and get it ready to shop around. I've talked to several ambitious team members who have built the basic gist of a pattern library over the course of a weekend. This effort makes all the difference in the world since it gives something tangible for stakeholders to react to. Again: *show, don't tell*.
 
 ### Step 2: show that it's useful 
 With a nascent-yet-tangible design system in place, you can have a more meaningful conversation with people who control money, scheduling, and resources. You can discuss exactly how the design system helped save time and money (see *[Pitching Patterns](/chapter-4/#pitching-patterns)* in the last chapter), then paint a picture for how those benefits would scale even further if the organization invested in an official, robust design system. 
@@ -95,28 +95,30 @@ With approval from the highest levels, you're now able to put a plan into action
 
 Now it's worth pointing out that things might not shake out the way you hoped. Despite demonstrating real value and presenting a concrete plan of action, higher ups still might shoot your initiative down. **Don't be discouraged**. You may have lost the battle, but you certainly haven't lost the war. Your team should continue to grow and extend the design system (in whatever capacity you can) until its value becomes undeniable. As more people benefit from the system, you'll have a groundswell of support to help push the endeavor through.
 
-### Establishing a Design System Team
+### Establishing a design system team
 With the design system initiative approved, it's now time to put the right people and processes in place to ensure the system flourishes for your organization.
 
 #### Design system makers and users
-First things first. It's important to understand that **there will inevitably be people at the organization that help <em>make and maintain</em> the design system, and there will be other people who will be <em>users</em> of the design system**. These two groups may not be mutually exclusive, but establishing the roles of makers and users is important.
+First things first. Recognize that **there will inevitably be people at the organization that help <em>make and maintain</em> the design system, and there will be other people who will be <em>users</em> of the design system**. These two groups may not be mutually exclusive, but establishing the roles of makers and users is important.
 
 When I talk about establishing a more collaborative process like the one I detailed in the last chapter, I inevitably hear people say, "but Brad, we have hundreds (or thousands) of developers working on our products, so getting all those people to collaborate and contribute like that would be far too difficult."
 
 They're likely right. It would be ideal if the entire organization adopted more nimble, collaborative processes, but the daunting logistics around such an effort makes it improbable. It's important to recognize that not everyone in the organization needs to directly contribute to the design system, but someone (or more likely, some people) has to.
 
-**The design system <em>makers</em> are the ones who architect, create, and maintain the system**, and they need to work closely together to ensure that the system is smart, flexible, scalable, and addresses the needs of the business. **The design system <em>users</em> are the teams across the organization who will take the interface patterns and apply them to specific products**. 
+**The design system <em>makers</em> are the ones who architect, create, and maintain the system**, and they need to work closely together to ensure that the system is smart, flexible, scalable, and addresses the needs of the business. **The design system <em>users</em> are the teams across the organization who will take the system and employ its interface patterns to specific applications**. 
 
-The design system makers must be in sync with the design system users to ensure the concrete. 
+The design system *makers* must be in sync with the design system *users* to ensure the patterns defined within the system are genuinely useful and serve the needs of the applications. Makers and users should be in constant communication to ensure patterns are useful, documentation is clear, and the relationship between the makers and users is collaborative, not antagonistic.
 
 #### Who are the design system makers?
 Who updates the design system? Who approves changes? Who interfaces with the users of the design system to make sure it's addressing their needs? Who gets to decide which patterns stay, go, or need tweaked? 
 
 The answers to these questions **will very much depend on the size and setup of your organization**.
 
-**Large organizations** like Salesforce maintain an official *design systems team*, which currently includes about a dozen full-time employees last I heard. That dedicated team is responsible for governing the design system and making sure it's meeting the needs of the myriad internal product teams, as well as external developers that build things on the company's platform. When a design system is serving literally thousands of  users (designers, developers, and others making use of the system), it's a smart idea to dedicate at least a few full-time employees to maintaining the system.
+**Large organizations** like Salesforce maintain an official *design systems team*, which currently includes about a dozen full-time employees last I heard. That dedicated team is responsible for governing the design system and making sure it's meeting the needs of the myriad internal product teams, as well as external developers that build things on the company's platform. When a design system is serving literally thousands of  users, it's a smart idea to dedicate at least a few full-time employees to maintain the system.
 
-**Smaller organizations** most likely don't have the luxury of building an entire team to service a design system. Team members in smaller organizations have to wear many (hopefully stylish!) hats out of necessity, so governing the design system will likely become another responsibility. This may sound like an added burden ("oh great, yet another thing I'm responsible for that doesn't involve a pay raise!"), but this particular hat should be a joy to wear as it improves the efficiency and quality of all other work. Hooray for design systems!
+**Smaller organizations** most likely don't have the luxury of building an entire team to service a design system. Team members in smaller organizations have to wear many (hopefully stylish!) hats out of necessity, so governing the design system will likely become another responsibility. This may sound like an added burden ("oh great, yet another thing I'm responsible for that doesn't involve a pay raise!"), but this particular hat should be a joy to wear as it improves the efficiency and quality of all other work. Hooray for design systems! 
+
+Typically, design system makers at smaller organizations will be senior-level staff who have the experience and authority necessary to make thoughtful decisions and also enforce the design system.
 
 And then there are **external agencies, contractors, and consultants**. What is the role of an external party when it comes to long-term maintenance of a client's design system? On one hand, external parties are at a bit of a disadvantage since they don't actually work for the client's organization. A successful design system needs to become a part of an organization's DNA, and since external parties exist outside the company's walls, their influence is intrinsically limited.
 
@@ -125,14 +127,12 @@ But on the other hand, **external parties can often provide a sense of perspecti
 ### Design system team makeup and organization
 Who are the players involved in maintaining the design system? What's their relationship with the rest of the organization? 
 
-A cross-disciplinary team should be established responsible for managing, maintaining, and extending the system. UX designers, visual designers, content strategists, frontend developers, backend developers, product managers, and project managers all have individual perspectives that will undoubtedly shape the design system.
+**A cross-disciplinary team should be established responsible for managing, maintaining, and extending the system**. UX designers, visual designers, content strategists, frontend developers, backend developers, product managers, project managers, and other stakeholders all have unique perspectives that can undoubtedly shape the design system. Gaining these perspectives doesn't necessarily mean these disciplines. Often will include UX designer, visual designer, and frontend developer, and someone to manage it all.
 
 **At least someone must be able to provide a birds-eye view of the entire ecosystem the design system serves**. 
 
-
-
 ### Managing change
-What's the plan of attack for managing this thing in the long-run? What if something changes? Governance.
+What's the plan of attack for managing this thing in the long-run? What if something changes? Creating a clear governance plan will be essential.
 
 ## Make It Maintainable
 A pattern library that isn't in step with the real applications it serves is a surefire way of making a design system that dies on the vine. The design system needs to become an an integral part of the teams' workflow, so the pattern library needs to closely match the technology (or technologies) that use the design system. Making updates to the design system and having those changes reflected in the pattern library should be as frictionless as possible. There are many ways to accomplish this, and 
