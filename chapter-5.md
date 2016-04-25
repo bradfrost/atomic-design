@@ -107,7 +107,7 @@ They're likely right. It would be ideal if the entire organization adopted more 
 
 **The design system <em>makers</em> are the ones who architect, create, and maintain the system**, and they need to work closely together to ensure that the system is smart, flexible, scalable, and addresses the needs of the business. **The design system <em>users</em> are the teams across the organization who will take the system and employ its interface patterns to specific applications**. 
 
-The design system *makers* must be in sync with the design system *users* to ensure the patterns defined within the system are genuinely useful and serve the needs of the applications. Makers and users should be in constant communication to ensure patterns are useful, documentation is clear, and the relationship between the makers and users is collaborative, not antagonistic.
+**The design system <em>makers</em> and design system <em>users</em> need to maintain a close working relationship** to ensure the patterns defined within the system serve the needs of the applications and all documentation is clear. **Makers provide a birds-eye perspective of the entire ecosystem the design system serves, while users provide an on-the-ground perspective focused on the application of the system**. Both perspectives are critical to the success of the design system, which is why it's so important for makers and users to have a healthy relationship that involves frequent communication and collaboration.
 
 #### Who are the design system makers?
 Who updates the design system? Who approves changes? Who interfaces with the users of the design system to make sure it's addressing their needs? Who gets to decide which patterns stay, go, or need tweaked? 
@@ -116,23 +116,31 @@ The answers to these questions **will very much depend on the size and setup of 
 
 **Large organizations** like Salesforce maintain an official *design systems team*, which currently includes about a dozen full-time employees last I heard. That dedicated team is responsible for governing the design system and making sure it's meeting the needs of the myriad internal product teams, as well as external developers that build things on the company's platform. When a design system is serving literally thousands of  users, it's a smart idea to dedicate at least a few full-time employees to maintain the system.
 
+{% include figure.html src="../images/content/workflow-system-first.png" caption="" %}
+
 **Smaller organizations** most likely don't have the luxury of building an entire team to service a design system. Team members in smaller organizations have to wear many (hopefully stylish!) hats out of necessity, so governing the design system will likely become another responsibility. This may sound like an added burden ("oh great, yet another thing I'm responsible for that doesn't involve a pay raise!"), but this particular hat should be a joy to wear as it improves the efficiency and quality of all other work. Hooray for design systems! 
 
 Typically, design system makers at smaller organizations will be senior-level staff who have the experience and authority necessary to make thoughtful decisions and also enforce the design system.
+
+{% include figure.html src="../images/content/workflow-system-first.png" caption="" %}
 
 And then there are **external agencies, contractors, and consultants**. What is the role of an external party when it comes to long-term maintenance of a client's design system? On one hand, external parties are at a bit of a disadvantage since they don't actually work for the client's organization. A successful design system needs to become a part of an organization's DNA, and since external parties exist outside the company's walls, their influence is intrinsically limited.
 
 But on the other hand, **external parties can often provide a sense of perspective** that's hard to see while working inside a company. This is where outsiders can really shine. In my work as a consultant, I work with organizations to establish long-term design system maintenance strategies and help get the right people and processes in place. While the long-term success of the system will ultimately be up to the organization themselves, external parties can teach them to fish and provide important strategic guidance, feedback, and perspective. 
 
-### Design system team makeup and organization
-Who are the players involved in maintaining the design system? What's their relationship with the rest of the organization? 
+{% include figure.html src="../images/content/workflow-system-first.png" caption="" %}
+
+### Design system team makeup
+ Who are those people? Who are the players involved in maintaining the design system? What's their relationship with the rest of the organization? 
 
 **A cross-disciplinary team should be established responsible for managing, maintaining, and extending the system**. UX designers, visual designers, content strategists, frontend developers, backend developers, product managers, project managers, and other stakeholders all have unique perspectives that can undoubtedly shape the design system. Gaining these perspectives doesn't necessarily mean these disciplines. Often will include UX designer, visual designer, and frontend developer, and someone to manage it all.
 
-**At least someone must be able to provide a birds-eye view of the entire ecosystem the design system serves**. 
+Those that are actively doing the work, and those that are 
 
 ### Managing change
-What's the plan of attack for managing this thing in the long-run? What if something changes? Creating a clear governance plan will be essential.
+What's the plan of attack for managing this thing in the long-run? What if something changes? Creating a clear governance plan is essential to make sure your design system will stand the test of time. 
+
+
 
 ## Make It Maintainable
 A pattern library that isn't in step with the real applications it serves is a surefire way of making a design system that dies on the vine. The design system needs to become an an integral part of the teams' workflow, so the pattern library needs to closely match the technology (or technologies) that use the design system. Making updates to the design system and having those changes reflected in the pattern library should be as frictionless as possible. There are many ways to accomplish this, and 
