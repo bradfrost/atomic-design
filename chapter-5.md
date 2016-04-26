@@ -99,7 +99,7 @@ Now it's worth pointing out that things might not shake out the way you hoped. D
 With the design system initiative approved, it's now time to put the right people and processes in place to ensure the system flourishes for your organization.
 
 #### Design system makers and users
-First things first. Recognize that **there will inevitably be people at the organization that help <em>make and maintain</em> the design system, and there will be other people who will be <em>users</em> of the design system**. These two groups may not be mutually exclusive, but establishing the roles of makers and users is important.
+First things first. It's important to recognize that **there will inevitably be people at the organization that help <em>make and maintain</em> the design system, and there will be other people who will be <em>users</em> of the design system**. These two groups may not be mutually exclusive, but establishing the roles of makers and users is important.
 
 When I talk about establishing a more collaborative process like the one I detailed in the last chapter, I inevitably hear people say, "but Brad, we have hundreds (or thousands) of developers working on our products, so getting all those people to collaborate and contribute like that would be far too difficult."
 
@@ -137,16 +137,18 @@ Again, the answers to these questions will largely depend on your organization's
 
 **Design system users may be the same team creating the design system, separate development teams within your organization, junior-level designers and developers, third-party agencies, offshore developers, and/or other external development teams**. 
 
-Users' proximity to and involvement in the creation of the design system will undoubtedly vary. You may work on a singular product at a scrappy startup, so your small team very well may be the ones simultaneously creating and using the design system.  Or you may work at a large multi-national corporation with development teams and third-party partners scattered all across the globe. If this is the case, design system makers and users may seldom (or ever) meet. 
+Users' proximity to and involvement in the creation of the design system will undoubtedly vary. You may work on a singular product at a scrappy startup, so your small team very well may be the ones simultaneously creating and using the design system.  Or you may work at a large multi-national corporation with development teams and third-party partners scattered all across the globe. If this is the case, design system makers and users may seldom (or ever) meet, which makes helpful documentation and a sharp birds-eye perspective that much more important. 
 
-One of the biggest advantages of establishing a sound design system is that it allows organizations to scale design and development best practices. If all those best practices — responsiveness, accessibility, performance, UX, ergonomics, etc — are baked into the UI patterns, design system users can . So long as the users of the design system follow the conventions laid out in the pattern library and documentation, those 
+{% include figure.html src="../images/fpo.png" caption="Spectrum of design system users" %}
+
+One of the biggest advantages of establishing a sound design system is that it allows organizations to scale best practices. If all those best practices — responsiveness, accessibility, performance, UX, ergonomics, and so on — are baked into the system's UI patterns, users can simply plug in those patterns and reap the rewards. This means design system users don't have to be senior-level designers or developers to produce high-quality work.
 
 ### Design system team makeup
-What people do you need to put into place to properly maintain the design system? What's their relationship with the rest of the organization? 
+What disciplines do you need to put into place to properly maintain the design system? What's their relationship with the rest of the organization? 
 
 **A cross-disciplinary team should be established responsible for managing, maintaining, and extending the system**. UX designers, visual designers, content strategists, frontend developers, backend developers, product managers, project managers, and other stakeholders all have unique perspectives that can undoubtedly shape the design system. Gaining these perspectives doesn't necessarily mean these disciplines. Often will include UX designer, visual designer, and frontend developer, and someone to manage it all.
 
-Those that are actively doing the work, and those that are 
+Those that are actively doing the work, and those that serve as advisors. 
 
 ### Managing change
 What's the plan of attack for managing this thing in the long-run? What if something changes? Creating a clear governance plan is essential to make sure your design system will stand the test of time. 
