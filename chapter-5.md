@@ -101,11 +101,11 @@ With the design system initiative approved, it's now time to put the right peopl
 #### Design system makers and users
 First things first. It's important to recognize that **there will inevitably be people at the organization that help <em>make and maintain</em> the design system, and there will be other people who will be <em>users</em> of the design system**. These two groups may not be mutually exclusive, but establishing the roles of makers and users is important.
 
-When I talk about establishing a more collaborative process like the one I detailed in the last chapter, I inevitably hear people say, "but Brad, we have hundreds (or thousands) of developers working on our products, so getting all those people to collaborate and contribute like that would be far too difficult."
+When I talk about establishing a more collaborative process like the one I detailed in the last chapter, I inevitably hear people who work at large organizations say, "but Brad, we have hundreds (or thousands) of developers working on our products, so getting all those people to collaborate and contribute like that would be far too difficult."
 
-They're likely right. It would be ideal if the entire organization adopted more nimble, collaborative processes, but the daunting logistics around such an effort makes it improbable. It's important to recognize that not everyone in the organization needs to directly contribute to the design system, but someone (or more likely, some people) has to.
+They're likely right. It would be ideal if the entire organization adopted more nimble, collaborative processes, but the daunting logistics around such an effort makes it improbable. Not everyone in the organization needs to directly contribute to the design system, but someone (or more likely, some people) must take ownership of it.
 
-**The design system <em>makers</em> are the ones who architect, create, and maintain the system**, and they need to work closely together to ensure that the system is smart, flexible, scalable, and addresses the needs of the business. **The design system <em>users</em> are the teams across the organization who will take the system and employ its interface patterns to specific applications**. 
+**The design system <em>makers</em> are the ones who architect, create, and maintain the system**, and they need to work closely together to ensure that the system is smart, flexible, scalable, and addresses the needs of the business and users. **The design system <em>users</em> are the teams across the organization who will take the system and employ its interface patterns to specific applications**. 
 
 **The design system <em>makers</em> and design system <em>users</em> need to maintain a close working relationship** to ensure the patterns defined within the system serve the needs of the applications and all documentation is clear. **Makers provide a birds-eye perspective of the entire ecosystem the design system serves, while users provide an on-the-ground perspective focused on the application of the system**. Both perspectives are critical to the success of the design system, which is why it's so important for makers and users to have a healthy relationship that involves frequent communication and collaboration. 
 
@@ -137,25 +137,22 @@ Again, the answers to these questions will largely depend on your organization's
 
 **Design system users may be the same team creating the design system, separate development teams within your organization, junior-level designers and developers, third-party agencies, offshore developers, and/or other external development teams**. 
 
-Users' proximity to and involvement in the creation of the design system will undoubtedly vary. You may work on a singular product at a scrappy startup, so your small team very well may be the ones simultaneously creating and using the design system.  Or you may work at a large multi-national corporation with development teams and third-party partners scattered all across the globe. If this is the case, design system makers and users may seldom (or ever) meet, which makes helpful documentation and a sharp birds-eye perspective that much more important. 
+Users' proximity to and involvement in the creation of the design system will undoubtedly vary. You may work on a singular product at a scrappy startup, so your small team very well may be the ones simultaneously creating and using the design system.  Or you may work at a large multi-national corporation with development teams and third-party partners scattered all across the globe. If this is the case, design system makers and users may seldom (or ever) meet, which means that helpful documentation and a sharp birds-eye perspective becomes that much more important. 
 
 {% include figure.html src="../images/fpo.png" caption="Spectrum of design system users" %}
 
-One of the biggest advantages of establishing a sound design system is that it allows organizations to scale best practices. If all those best practices — responsiveness, accessibility, performance, UX, ergonomics, and so on — are baked into the system's UI patterns, users can simply plug in those patterns and reap the rewards. This means design system users don't have to be senior-level designers or developers to produce high-quality work.
+One of the biggest advantages of establishing a sound design system is that it allows organizations to scale best practices. If all those best practices — responsiveness, accessibility, performance, UX, ergonomics, and so on — are baked into the system's UI patterns, users can simply plug in those patterns and reap the rewards. This means design system users don't have to be senior-level designers or developers to produce good work; the design system serves as quality control to help users apply best practices regardless of their skill level.
 
 ### Design system team makeup
-What disciplines do you need to put into place to properly maintain the design system? What's their relationship with the rest of the organization? 
+**A cross-disciplinary team should be established in order to manage, maintain, and extend the system**. All disciplines at an organization — UX designers, visual designers, content strategists, frontend developers, backend developers, product managers, project managers, executives, and other stakeholders — have a unique perspective that can undoubtedly inform and shape the work. Incorporating these perspectives into the system is important, but doesn't necessarily require every discipline to  always be actively involved in developing the design system.
 
-**A cross-disciplinary team should be established responsible for managing, maintaining, and extending the system**. UX designers, visual designers, content strategists, frontend developers, backend developers, product managers, project managers, and other stakeholders all have unique perspectives that can undoubtedly shape the design system. Gaining these perspectives doesn't necessarily mean these disciplines. Often will include UX designer, visual designer, and frontend developer, and someone to manage it all.
+There will inevitably be disciplines that actively do the work, while other disciplines will take on more of an advisory role. The disciplines responsible for designing and building the user interface — UX designers, visual designers, frontend developers — will likely serve as the hands that do the work and make updates to the design system. They should work collaboratively (as detailed in the last chapter) and coordinate with the other disciplines.
 
-Those that are actively doing the work, and those that serve as advisors. 
+Other disciplines may not be the ones actively doing the work, but must be consulted to make sure their perspectives are properly reflected in the system. Backend engineers need to make the team aware of any architectural decisions that would affect the frontend UI, executives need to make the team aware of important initiatives that will affect the role and utility of the system, and of course design system users need to coordinate with the makers to ensure the system is serving the needs of individual applications. 
 
-### Managing change
-What's the plan of attack for managing this thing in the long-run? What if something changes? Creating a clear governance plan is essential to make sure your design system will stand the test of time. 
+{% include figure.html src="../images/fpo.png" caption="" %}
 
-
-
-## Make It Maintainable
+## Make it maintainable
 A pattern library that isn't in step with the real applications it serves is a surefire way of making a design system that dies on the vine. The design system needs to become an an integral part of the teams' workflow, so the pattern library needs to closely match the technology (or technologies) that use the design system. Making updates to the design system and having those changes reflected in the pattern library should be as frictionless as possible. There are many ways to accomplish this, and 
 
 - Sharing CSS and JS with the production environment is easy, but sharing templates is tough
@@ -197,7 +194,15 @@ In chapter 1, we discussed the six different types of style guides. When a desig
 - Helps with QA efforts. If changes are made to a pattern, you'll know exactly which templates will need retested to ensure things held up. 
 
 ## Make it last
+
+### Managing change 
+Change is the only constant, as they say. A successful design system is able to roll with the punches, adapt to feedback, **Creating a clear governance plan is essential to make sure your design system will stand the test of time**. 
+
+- Schedule regular reviews of the patterns. 
+- Deprecate patterns https://github.com/salesforce-ux/sass-deprecate
 Making a design system last means consistently . It needs to be visible and stay in the front of everyone's minds. Without a communication strategy in place, how will everyone know when things change?
+
+### Communicating change
 - Publish updates (Material Design example)
 - Notifications - Regular E-mail newsletters, blog updates, etc, whenever things change, Slack integrations 
 - Monitor progress over time - Lonely Planet's Rizze design system tracks performance metrics over time.
