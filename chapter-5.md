@@ -153,23 +153,40 @@ Other disciplines may not be the ones actively doing the work, but must be consu
 {% include figure.html src="../images/fpo.png" caption="" %}
 
 ## Make it maintainable
-A pattern library that isn't in step with the real applications it serves is a surefire way of making a design system that dies on the vine. The design system needs to become an an integral part of the teams' workflow, so the pattern library needs to closely match the technology (or technologies) that use the design system. Making updates to the design system and having those changes reflected in the pattern library should be as frictionless as possible. There are many ways to accomplish this, and 
-
-- Sharing CSS and JS with the production environment is easy, but sharing templates is tough
-- Using templating languages Templating language should match the production environment - The closer you get to . 
-- [Using Grunt with Pattern Lab](http://bradfrost.com/blog/post/using-grunt-with-pattern-lab/)
+Many pattern libraries fall into a state of disrepair because the level of effort required to update patterns or documentation is far too high. If a pattern library is difficult to update, people will eventually stop updating it and the pattern library will die on the vine. Making updates to UI patterns and documentation should be as frictionless as possible, and reducing this friction involves careful consideration from both a technological and workflow standpoint.
 
 ### The Holy Grail
-**The design system Holy Grail involves creating an environment where the pattern library and production environment are perfectly in sync**. The idea is that you can make a change to a pattern, and those changes are automatically reflected in both the pattern library and anywhere the pattern is included in production.
+**The design system Holy Grail involves creating an environment where the pattern library and production environment are perfectly in sync**. The idea of the Holy Grail is that you can make a change to a UI pattern, and those changes will be automatically reflected in both the pattern library and anywhere the pattern is included in production. 
 
-The gold standard for a Holy Grail-style design system is [Rizzo](http://rizzo.lonelyplanet.com/) by Lonely Planet. 
+{% include figure.html src="../images/content/workflow-system-first.png" caption="The Holy Grail of design systems is one where making a change to the system will " %}
 
-### Strategies for achieving the Holy Grail
-- [Chasing the holy grail](https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.vy45rkm7m)
+Sounds like a dream, right?
+
+As it turns out, this dream can be a reality. Organizations like Lonely Planet established a Holy Grail-style design system called [Rizzo](http://rizzo.lonelyplanet.com/) to serve their products. 
+
+{% include figure.html src="../images/fpo.png" caption="" %}
+
+- Sharing CSS and JS with the production environment is relatively easy, but sharing markup is tough.
+- Using HTML templating languages create Templating language should match the production environment - The closer you get to . 
+- Look for opportunities to automate documentation 
+- [Using Grunt with Pattern Lab](http://bradfrost.com/blog/post/using-grunt-with-pattern-lab/)
+
+How can you set up your applications and pattern library to achieve the Holy Grail? Developer Marcelo Somers outlined several methods for thoughtfully keeping your pattern library and production environments in sync. [Chasing the holy grail](https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.vy45rkm7m)
+
+There are a number of reasons why an organization may not be able to achieve the Holy Grail. Perhaps your organization has digital products on different platforms using wildly different technologies. For instance, the U.S. Web Digital Standards are a collection UI components and visual styles for websites. However, due to the decentralized nature of the , it would be impossible to 
+
+When technology can't achieve maintainable design systems, you must rely on creating a culture that communicates change and enforces that friction 
 
 ## Make it cross-disciplinary
-- Not just a developer tool. Not just a designer tool. Every discipline invested in the success of the website should be contributing to the pattern library.
-- Carousel component example - amazingly complex component requiring input from business owners, editorial staff, content strategists, art directors, UX designers, front-end people, backend people
+Far too often, pattern libraries jump straight into code snippets and usage for the benefit of the developers that will be making use of the patterns. Of course a pattern library should be helpful for the hands-on design system users, but treating it as solely a developer resource limits its potential.
+
+A pattern library has the opportunity to serve as a watering hole for the entire organization, helping establish a common vocabulary for every discipline that's invested in the success of the design system. What does that entail?
+
+Take the carousel (please!). This component is amazingly complex from an organizational standpoint. A homepage carousel on an e-commerce website requires input from a myriad of disciplines across the organization. Business owners and editorial staff must choose products that align with . Copywriters must ensure the copy stays within character limits. Art directors must ensure the aesthetic design is pleasing and the product photography is legible across every screen size.  UX designers, front-end people, backend people, and so on.
+
+{% include figure.html src="../images/fpo.png" caption="Spectrum of design system users" %}
+
+As mentioned earlier in the chapter, every discipline can and should influence the design system. The pattern library containing that carousel pattern should be accessible to all these disciplines, and should contain documentation from each perspective
 
 ## Make it approachable
 - No shocker here, but good design leads to more usage.
@@ -205,7 +222,7 @@ Making a design system last means consistently . It needs to be visible and stay
 ### Communicating change
 - Publish updates (Material Design example)
 - Notifications - Regular E-mail newsletters, blog updates, etc, whenever things change, Slack integrations 
-- Monitor progress over time - Lonely Planet's Rizze design system tracks performance metrics over time.
+- Monitor progress over time - Lonely Planet's Rizzo design system tracks performance metrics over time.
 - Revisit our work once time has We should contracts that revisit the design system Anna Debenham.
 
 ## Go forth and be atomic
