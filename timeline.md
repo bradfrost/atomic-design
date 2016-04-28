@@ -5,16 +5,16 @@ permalink: /timeline/
 ---
 
 1. ### *06/10/13* Original atomic design post
-   [View blog post](http://bradfrost.com/blog/post/atomic-web-design/) 
-2. ### *12/23/13* First outline for the book 
+   [View blog post](http://bradfrost.com/blog/post/atomic-web-design/)
+2. ### *12/23/13* First outline for the book
    [View outline](https://gist.github.com/bradfrost/c90ef0c63fdc38ad4512)
 3. ### *12/17/14* Set up Shopify store
    [View store](http://shop.bradfrost.com/products/atomic-design-ebook)
-4. ### *12/18/14* Set up Github repository 
+4. ### *12/18/14* Set up Github repository
    [View repository](https://github.com/bradfrost/atomic-design/)
 5. ### *12/23/14* Set up automatic deployments with Dploy.io
-   [Visit Dploy.io](http://dploy.io/)
-6. ### *01/08/15* Set up Mailchimp newsletter 
+   [Visit DeployBot](https://deploybot.com/)
+6. ### *01/08/15* Set up Mailchimp newsletter
    [View signup form](http://atomicdesign.bradfrost.com/signup/)
 7. ### *01/08/15* Announce book project
    [View signup form](http://bradfrost.com/blog/post/atomic-design-book/)
@@ -28,7 +28,23 @@ permalink: /timeline/
    [View newsletter](http://us5.campaign-archive1.com/?u=6c0c3f4dcd40d88bc1cedb3fa&id=a80218ef20)
 12. ### *04/09/15* Chapter 1 draft complete
    [Read Chapter 1](http://atomicdesign.bradfrost.com/chapter-1/)
-13. ### *04/27/15* Begin writing chapter 2 
+13. ### *04/27/15* Begin writing chapter 2
    [Read Chapter 2](http://atomicdesign.bradfrost.com/chapter-2/)
 14. ### *07/23/15* Chapter 2 draft complete
    [Read Chapter 2](http://atomicdesign.bradfrost.com/chapter-2/)
+15. ### *01/15/15* Send Email Newsletter #3
+  [View newsletter](http://us5.campaign-archive2.com/?u=6c0c3f4dcd40d88bc1cedb3fa&id=d7f9094e63)
+15. ### *08/28/15* Begin writing chapter 3
+   [Read Chapter 3](http://atomicdesign.bradfrost.com/chapter-3/)
+16. ### *10/16/15* Chapter 3 draft complete
+  [Read Chapter 3](http://atomicdesign.bradfrost.com/chapter-3/)
+17. ### *12/16/15* Begin writing chapter 4
+    [Read Chapter 4](http://atomicdesign.bradfrost.com/chapter-4/)
+18. ### *01/15/15* Send Email Newsletter #4
+  [View newsletter](http://us5.campaign-archive1.com/?u=6c0c3f4dcd40d88bc1cedb3fa&id=4a2b57dbe1)
+19. ### *02/10/16* Chapter 4 draft complete
+    [Read Chapter 4](http://atomicdesign.bradfrost.com/chapter-4/)
+20. ### *02/22/16* Begin writing chapter 5
+    [Read Chapter 5](http://atomicdesign.bradfrost.com/chapter-5/)
+21. ### *02/22/16* Blog post: Copy editing Atomic Design
+    [Read Chapter 5](http://bradfrost.com/blog/post/copy-editing-atomic-design/)
