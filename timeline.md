@@ -48,3 +48,5 @@ permalink: /timeline/
     [Read Chapter 5](http://atomicdesign.bradfrost.com/chapter-5/)
 21. ### *02/22/16* Blog post: Copy editing Atomic Design
     [Read Chapter 5](http://bradfrost.com/blog/post/copy-editing-atomic-design/)
+22. ### *04/15/16* Send Email Newsletter #5
+    [View newsletter](http://us5.campaign-archive1.com/?u=6c0c3f4dcd40d88bc1cedb3fa&id=c88576305f)
