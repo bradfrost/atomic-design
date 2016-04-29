@@ -57,9 +57,11 @@ Constructing UIs in this manner helps keep things [DRY](https://en.wikipedia.org
 
 To make this happen Pattern Lab uses the *include* feature of [Mustache](https://mustache.github.io/), a logicless templating language. Here's what a Mustache include looks like:
 
-```
+<pre>
+<code>
 {% raw %}{{> atom-thumbnail }}{% endraw %}
-```
+</code>
+</pre>
 
 This is Mustache code, in case the double curly braces ({% raw %}`{{}}`{% endraw %}) that look like little mustaches didn't give it away. The greater-than symbol (`>`) is Mustache's way of telling Pattern Lab to include an atom pattern called "thumbnail". Pattern Lab will go searching through its folders of patterns to find an atom named "thumbnail".
 
@@ -105,9 +107,11 @@ Ed: HTML tag or element? I tend to think of elements as having opening and closi
 
 Now that our pattern markup is established, we can include that chunk of code in bigger patterns using the same include method:
 
-```
+<pre>
+<code>
 {% raw %}{{> molecules-block-post }}{% endraw %}
-```
+</code>
+</pre>
 
 Now let's move up to more complex organisms like the website's header, which looks a little something like this:
 
@@ -115,15 +119,17 @@ Now let's move up to more complex organisms like the website's header, which loo
 
 When we crack open the hood to look at the header's markup in Pattern Lab, we see the following:
 
-```html
+<pre>
+<code>
 {% raw %}
-<header role="banner">
+\<header role="banner"\>
     {{> atoms-logo }}
     {{> molecules-primary-nav }}
     {{> molecules-search }}
-</header>
+\</header\>
 {% endraw %}
-```
+</code>
+</pre>
 
 What's going on here? Well, we have a basic `<header>` <span class="editor">tag</span>, and inside that <span class="editor">tag</span> we're including the logo image atom, the primary navigation molecule, and the search form molecule.
 
@@ -136,9 +142,11 @@ Ed: HTML tag or element?
 
 And now we can include that relatively complex pattern anywhere we need it.
 
-```
+<pre>
+<code>
 {% raw %}{{> organisms-header }}{% endraw %}
-```
+</code>
+</pre>
 
 I hope by now you can see the Russian nesting dolls in action. The smallest atoms are included in bigger molecules, and those molecules get included in even bigger organisms. Now let's take these components and plug them into a layout. Take the homepage template, for instance:
 
@@ -148,49 +156,52 @@ Take a quick stroll through the homepage template and you'll see some pretty sta
 
 So how does this look in code? As you might expect, it involves more includes!
 
-```html
+<pre>
+<code>
 {% raw %}
 {{> organisms-header }}
-<main role="main">
+\<main role="main"\>
     {{# hero }}
     {{> molecules-hero }}
     {{/ hero }}
-    <section>
+    \<section\>
         {{# experience-block }}
         {{> molecules-block-main }}
         {{/ experience-block }}
         {{# experience-feature }}
         {{> organisms-story-feature }}
         {{/ experience-feature }}
-    </section>
-    <section>
+    \</section\>
+    \<section\>
         {{# factoid-advertising }}
         {{> organisms-factoid }}
         {{/ factoid-advertising }}
-    </section>
-    <section>
+    \</section\>
+    \<section\>
         {{# advertising }}
         {{> molecules-block-main }}
         {{/ advertising }}
-    </section>
+    \</section\>
     …   
-  </main>
-  {{> organisms-footer }}
-</div>
+\</main\>
+{{> organisms-footer }}
 {% endraw %}
-```
+</code>
+</pre>
 
 At this stage in the game the smaller patterns are already constructed, so all the template needs to do is pull them into the context of a page layout and give them unique names.
 
 Taking a closer look at the code, notice that certain patterns like `{% raw %}{{> organisms-header }}{% endraw %}` and `{% raw %}{{> organisms-footer }}{% endraw %}` are included the same way as the earlier examples. But there are also a few other includes patterns that are supplemented by some additional information, like the following:
 
-```
+<pre>
+<code>
 {% raw %}
 {{# factoid-advertising }}
 {{> organisms-factoid }}
 {{/ factoid-advertising }}
 {% endraw %}
-```
+</code>
+</pre>
 
 We're including `organisms-factoid` in the same way as all the other patterns, but we're also naming it `factoid-advertising` by wrapping the include in a Mustache *section*, indicated by the Mustache code containing the `#` and `/` symbols. By giving the pattern instance a unique name, we can latch on to it and dynamically replace the content of the pattern. More on that in the next section!
 
@@ -216,7 +227,8 @@ Ed: File names aren't code (unless they appear in code), so shouldn't be marked 
 {{ m | markdownify }}
 </div>
 
-```
+<pre>
+<code>
 {% raw %}
 "hero" : {
   "headline": "Lorem Ipsum",
@@ -226,7 +238,8 @@ Ed: File names aren't code (unless they appear in code), so shouldn't be marked 
   }
 }
 {% endraw %}
-```
+</code>
+</pre>
 
 For developers, this type of format most likely looks familiar. If you're not a developer, don't freak out! Once you look beyond the curly braces and quotes, you'll see that we're defining a `hero` object (for the full-bleed hero area directly below the header) that has a `headline` value of "Lorem Ipsum" and an `img` with a `src` value of "/images/sample/fpo_hero.png". We're simply defining this object's attributes and providing values for those attributes.
 
@@ -250,7 +263,8 @@ Ed: The file and directory names in the image don't match the names referenced i
 
 When we open up _homepage.json_ we can override the placeholder data we established earlier. Here's what that might look like:
 
-```
+<pre>
+<code>
 {% raw %}
 "hero" : {
   "headline": "Moving People",
@@ -260,7 +274,8 @@ When we open up _homepage.json_ we can override the placeholder data we establis
   }
 }
 {% endraw %}
-```
+</code>
+</pre>
 
 By overriding the default data, the `hero` headline now reads "Moving People" instead of "Lorem Ipsum". And instead of pointing to a grayscale <span class="editor">FPO (for placement only)</span> hero image, we're now pointing to a picture of <span class="editor">Beyoncé</span> located at "/images/hero_beyonce.jpg".
 
@@ -292,7 +307,8 @@ Let's say we're making an app whose dashboard displays a list of project collabo
 
 To create the dynamic content inside each of these blocks, we'll define our list of collaborators as an array inside _dashboard.json_:
 
-```
+<pre>
+<code>
 {% raw %}
 "collaborators" : [
   {
@@ -317,7 +333,8 @@ To create the dynamic content inside each of these blocks, we'll define our list
   }
 ]
 {% endraw %}
-```
+</code>
+</pre>
 
 By default, our design assumes the user is a regular user and not an administrator, but what if we wanted to give administrators the ability to manage project collaborators from the dashboard? That UI might look something like this:
 
@@ -325,34 +342,40 @@ By default, our design assumes the user is a regular user and not an administrat
 
 To show additional admin edit and delete actions on the dashboard in Pattern Lab, we can create a pseudo-pattern, a new file in the _pages_ folder that looks like this:
 
-```
+<pre>
+<code>
 {% raw %}
 dashboard~admin.json
 {% endraw %}
-```
+</code>
+</pre>
 
 The tilde (`~`) symbol indicates a pseudo-pattern. _dashboard~admin.json_ will inherit all the data contained in _dashboard.json_, but also gives us the opportunity to append or override additional data. That means the list of collaborators we defined earlier in _dashboard.json_ is still available, but we can add additional data inside _dashboard~admin.json_ like so:
 
-```
+<pre>
+<code>
 {% raw %}
 "isAdmin" : true
 {% endraw %}
-```
+</code>
+</pre>
 
 We're defining a variable called `isAdmin` and setting it to `true`. We can now use that to conditionally include the additional actions inside the block pattern.
 
-```html
+<pre>
+<code>
 {% raw %}
-<div class="block">
-  <img src="{{ img }}" alt="{{ name }}" />
-  <h3>{{ name }}</h3>
-  <h4>{{ title }}</h4>
+\<div class="block"\>
+  \<img src="{{ img }}" alt="{{ name }}" /\>
+  \<h3\>{{ name }}\</h3\>
+  \<h4\>{{ title }}\</h4>\
   {{# isAdmin }}
   {{> molecules-block-actions }}
   {{/ isAdmin }}
-</div>
+\</div\>
 {% endraw %}
-```
+</code>
+</pre>
 
 The first few lines are pulling in the `img`, `name`, and `title` we defined in _dashboard.json_. But pay close attention to what's wrapped in the `isAdmin` Mustache section. What we're saying here is: if `isAdmin` is set to `true`, include a molecule pattern called `block-actions`. The `block-actions` pattern contains the edit and delete buttons, and will only display if `isAdmin` is set to `true` (or anything besides `false`). In our default _dashboard.json_, `isAdmin` isn't set, so the extra actions won't display. In _dashboard~admin.json_, we're setting `isAdmin` to `true` so the extra actions will display. You can extend this technique to dramatically alter the entire UI (like altering the primary navigation, showing additional panels on the dashboard, adding extra controls, and so on) just by changing a single variable. Powerful stuff, indeed.
 

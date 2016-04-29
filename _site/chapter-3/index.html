@@ -113,9 +113,11 @@
 
 <p>To make this happen Pattern Lab uses the <em>include</em> feature of <a href="https://mustache.github.io/">Mustache</a>, a logicless templating language. Here’s what a Mustache include looks like:</p>
 
-<p><code>
+<pre>
+<code>
 {{&gt; atom-thumbnail }}
-</code></p>
+</code>
+</pre>
 
 <p>This is Mustache code, in case the double curly braces (<code>{{}}</code>) that look like little mustaches didn’t give it away. The greater-than symbol (<code>&gt;</code>) is Mustache’s way of telling Pattern Lab to include an atom pattern called “thumbnail”. Pattern Lab will go searching through its folders of patterns to find an atom named “thumbnail”.</p>
 
@@ -171,9 +173,11 @@
 
 <p>Now that our pattern markup is established, we can include that chunk of code in bigger patterns using the same include method:</p>
 
-<p><code>
+<pre>
+<code>
 {{&gt; molecules-block-post }}
-</code></p>
+</code>
+</pre>
 
 <p>Now let’s move up to more complex organisms like the website’s header, which looks a little something like this:</p>
 
@@ -186,15 +190,17 @@
 
 <p>When we crack open the hood to look at the header’s markup in Pattern Lab, we see the following:</p>
 
-<p>```html</p>
+<pre>
+<code>
 
-<header role="banner">
+\&lt;header role="banner"\&gt;
     {{&gt; atoms-logo }}
     {{&gt; molecules-primary-nav }}
     {{&gt; molecules-search }}
-</header>
+\&lt;/header\&gt;
 
-<p>```</p>
+</code>
+</pre>
 
 <p>What’s going on here? Well, we have a basic <code>&lt;header&gt;</code> <span class="editor">tag</span>, and inside that <span class="editor">tag</span> we’re including the logo image atom, the primary navigation molecule, and the search form molecule.</p>
 
@@ -207,9 +213,11 @@
 
 <p>And now we can include that relatively complex pattern anywhere we need it.</p>
 
-<p><code>
+<pre>
+<code>
 {{&gt; organisms-header }}
-</code></p>
+</code>
+</pre>
 
 <p>I hope by now you can see the Russian nesting dolls in action. The smallest atoms are included in bigger molecules, and those molecules get included in even bigger organisms. Now let’s take these components and plug them into a layout. Take the homepage template, for instance:</p>
 
@@ -224,49 +232,52 @@
 
 <p>So how does this look in code? As you might expect, it involves more includes!</p>
 
-<p>```html</p>
+<pre>
+<code>
 
-<p>{{&gt; organisms-header }}</p>
-<main role="main">
+{{&gt; organisms-header }}
+\&lt;main role="main"\&gt;
     {{# hero }}
     {{&gt; molecules-hero }}
     {{/ hero }}
-    <section>
+    \&lt;section\&gt;
         {{# experience-block }}
         {{&gt; molecules-block-main }}
         {{/ experience-block }}
         {{# experience-feature }}
         {{&gt; organisms-story-feature }}
         {{/ experience-feature }}
-    </section>
-    <section>
+    \&lt;/section\&gt;
+    \&lt;section\&gt;
         {{# factoid-advertising }}
         {{&gt; organisms-factoid }}
         {{/ factoid-advertising }}
-    </section>
-    <section>
+    \&lt;/section\&gt;
+    \&lt;section\&gt;
         {{# advertising }}
         {{&gt; molecules-block-main }}
         {{/ advertising }}
-    </section>
+    \&lt;/section\&gt;
     …   
-  </main>
-<p>{{&gt; organisms-footer }}
-&lt;/div&gt;</p>
+\&lt;/main\&gt;
+{{&gt; organisms-footer }}
 
-<p>```</p>
+</code>
+</pre>
 
 <p>At this stage in the game the smaller patterns are already constructed, so all the template needs to do is pull them into the context of a page layout and give them unique names.</p>
 
 <p>Taking a closer look at the code, notice that certain patterns like <code>{{&gt; organisms-header }}</code> and <code>{{&gt; organisms-footer }}</code> are included the same way as the earlier examples. But there are also a few other includes patterns that are supplemented by some additional information, like the following:</p>
 
-<p>```</p>
+<pre>
+<code>
 
-<p>{{# factoid-advertising }}
+{{# factoid-advertising }}
 {{&gt; organisms-factoid }}
-{{/ factoid-advertising }}</p>
+{{/ factoid-advertising }}
 
-<p>```</p>
+</code>
+</pre>
 
 <p>We’re including <code>organisms-factoid</code> in the same way as all the other patterns, but we’re also naming it <code>factoid-advertising</code> by wrapping the include in a Mustache <em>section</em>, indicated by the Mustache code containing the <code>#</code> and <code>/</code> symbols. By giving the pattern instance a unique name, we can latch on to it and dynamically replace the content of the pattern. More on that in the next section!</p>
 
@@ -297,17 +308,19 @@
 
 </div>
 
-<p>```</p>
+<pre>
+<code>
 
-<p>“hero” : {
-  “headline”: “Lorem Ipsum”,
-  “img”: {
-    “src”: “/images/sample/fpo_hero.png”,
-    “alt”: “Hero Image”
+"hero" : {
+  "headline": "Lorem Ipsum",
+  "img": {
+    "src": "/images/sample/fpo_hero.png",
+    "alt": "Hero Image"
   }
-}</p>
+}
 
-<p>```</p>
+</code>
+</pre>
 
 <p>For developers, this type of format most likely looks familiar. If you’re not a developer, don’t freak out! Once you look beyond the curly braces and quotes, you’ll see that we’re defining a <code>hero</code> object (for the full-bleed hero area directly below the header) that has a <code>headline</code> value of “Lorem Ipsum” and an <code>img</code> with a <code>src</code> value of “/images/sample/fpo_hero.png”. We’re simply defining this object’s attributes and providing values for those attributes.</p>
 
@@ -336,17 +349,19 @@
 
 <p>When we open up <em>homepage.json</em> we can override the placeholder data we established earlier. Here’s what that might look like:</p>
 
-<p>```</p>
+<pre>
+<code>
 
-<p>“hero” : {
-  “headline”: “Moving People”,
-  “img”: {
-    “src”: “/images/hero_beyonce.jpg”,
-    “alt”: “Beyonce”
+"hero" : {
+  "headline": "Moving People",
+  "img": {
+    "src": "/images/hero_beyonce.jpg",
+    "alt": "Beyonce"
   }
-}</p>
+}
 
-<p>```</p>
+</code>
+</pre>
 
 <p>By overriding the default data, the <code>hero</code> headline now reads “Moving People” instead of “Lorem Ipsum”. And instead of pointing to a grayscale <span class="editor">FPO (for placement only)</span> hero image, we’re now pointing to a picture of <span class="editor">Beyoncé</span> located at “/images/hero_beyonce.jpg”.</p>
 
@@ -383,32 +398,34 @@
 
 <p>To create the dynamic content inside each of these blocks, we’ll define our list of collaborators as an array inside <em>dashboard.json</em>:</p>
 
-<p>```</p>
+<pre>
+<code>
 
-<p>“collaborators” : [
+"collaborators" : [
   {
-    “img”: “/images/sample/avatar1.jpg”,
-    “name” : “Steve Boomshakalaka”,
-    “title” : “CIA”
+    "img": "/images/sample/avatar1.jpg",
+    "name" : "Steve Boomshakalaka",
+    "title" : "CIA"
   },
   {
-    “img”: “/images/sample/avatar2.jpg”,
-    “name” : “Gingersnap Jujubees-Daniels”,
-    “title” : “President of the Longest Company Name in the World Corporation, Global Division”
+    "img": "/images/sample/avatar2.jpg",
+    "name" : "Gingersnap Jujubees-Daniels",
+    "title" : "President of the Longest Company Name in the World Corporation, Global Division"
   },
   {
-    “img”: “/images/sample/avatar3.jpg”,
-    “name” : “Sarunus Marciulionis”,
-    “title” : “Golden State Warriors”
+    "img": "/images/sample/avatar3.jpg",
+    "name" : "Sarunus Marciulionis",
+    "title" : "Golden State Warriors"
   },
   {
-    “img”: “/images/sample/avatar4.jpg”,
-    “name” : “Sara Smith”,
-    “title” : “Short Title”
+    "img": "/images/sample/avatar4.jpg",
+    "name" : "Sara Smith",
+    "title" : "Short Title"
   }
-]</p>
+]
 
-<p>```</p>
+</code>
+</pre>
 
 <p>By default, our design assumes the user is a regular user and not an administrator, but what if we wanted to give administrators the ability to manage project collaborators from the dashboard? That UI might look something like this:</p>
 
@@ -421,34 +438,40 @@
 
 <p>To show additional admin edit and delete actions on the dashboard in Pattern Lab, we can create a pseudo-pattern, a new file in the <em>pages</em> folder that looks like this:</p>
 
-<p>```</p>
+<pre>
+<code>
 
-<p>dashboard~admin.json</p>
+dashboard~admin.json
 
-<p>```</p>
+</code>
+</pre>
 
 <p>The tilde (<code>~</code>) symbol indicates a pseudo-pattern. <em>dashboard~admin.json</em> will inherit all the data contained in <em>dashboard.json</em>, but also gives us the opportunity to append or override additional data. That means the list of collaborators we defined earlier in <em>dashboard.json</em> is still available, but we can add additional data inside <em>dashboard~admin.json</em> like so:</p>
 
-<p>```</p>
+<pre>
+<code>
 
-<p>“isAdmin” : true</p>
+"isAdmin" : true
 
-<p>```</p>
+</code>
+</pre>
 
 <p>We’re defining a variable called <code>isAdmin</code> and setting it to <code>true</code>. We can now use that to conditionally include the additional actions inside the block pattern.</p>
 
-<p>```html</p>
+<pre>
+<code>
 
-<div class="block">
-  <img src="{{ img }}" alt="{{ name }}" />
-  <h3>{{ name }}</h3>
-  <h4>{{ title }}</h4>
+\&lt;div class="block"\&gt;
+  \&lt;img src="{{ img }}" alt="{{ name }}" /\&gt;
+  \&lt;h3\&gt;{{ name }}\&lt;/h3\&gt;
+  \&lt;h4\&gt;{{ title }}\\
   {{# isAdmin }}
   {{&gt; molecules-block-actions }}
   {{/ isAdmin }}
-</div>
+\&lt;/div\&gt;
 
-<p>```</p>
+</code>
+</pre>
 
 <p>The first few lines are pulling in the <code>img</code>, <code>name</code>, and <code>title</code> we defined in <em>dashboard.json</em>. But pay close attention to what’s wrapped in the <code>isAdmin</code> Mustache section. What we’re saying here is: if <code>isAdmin</code> is set to <code>true</code>, include a molecule pattern called <code>block-actions</code>. The <code>block-actions</code> pattern contains the edit and delete buttons, and will only display if <code>isAdmin</code> is set to <code>true</code> (or anything besides <code>false</code>). In our default <em>dashboard.json</em>, <code>isAdmin</code> isn’t set, so the extra actions won’t display. In <em>dashboard~admin.json</em>, we’re setting <code>isAdmin</code> to <code>true</code> so the extra actions will display. You can extend this technique to dramatically alter the entire UI (like altering the primary navigation, showing additional panels on the dashboard, adding extra controls, and so on) just by changing a single variable. Powerful stuff, indeed.</p>
 
