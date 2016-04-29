@@ -213,17 +213,27 @@ In chapter 1, we discussed the six different types of style guides. When a desig
 ## Make it last
 
 ### Managing change 
-Change is the only constant, as they say. A successful design system is able to roll with the punches, adapt to feedback, **Creating a clear governance plan is essential to make sure your design system will stand the test of time**. 
+Change is the only constant, as they say. A successful design system is able to roll with the punches, adapt to feedback, be iterated upon, and evolve alongside the products the system serves. The *living* part of a living design system means that it needs to grow and evolve over time.
 
+**Creating a clear governance plan is essential to make sure your design system will continue to**. Without a clear governance strategy in place, the value your design system may deprecate much like a car that's just been driven off the lot. Instead, your design system should be like a fine wine that increases value over time.
+
+What does a successful 
 - Schedule regular reviews of the patterns. 
-- Deprecate patterns https://github.com/salesforce-ux/sass-deprecate
-Making a design system last means consistently . It needs to be visible and stay in the front of everyone's minds. Without a communication strategy in place, how will everyone know when things change?
+- Have a plan Deprecate patterns https://github.com/salesforce-ux/sass-deprecate
+
+Making a design system last means consistently . It needs to be visible and stay in the front of everyone's minds. 
 
 ### Communicating change
+Without a communication strategy in place, how will everyone know when things change?
+
+- Design system changes should be communicated wherever your team hangs out. If that's Slack Github
+
 - Publish updates (Material Design example)
 - Notifications - Regular E-mail newsletters, blog updates, etc, whenever things change, Slack integrations 
+
+> Whenever someone makes a pull request, it sends a notification to our #Design slack channel, announcing to the team that there is a proposal change and feedback is required <cite><a href="https://medium.com/shyp-design/managing-style-guides-at-shyp-c217116c8126">Micah Sivitz, Shyp</a> 
+
 - Monitor progress over time - Lonely Planet's Rizzo design system tracks performance metrics over time.
-- Revisit our work once time has We should contracts that revisit the design system Anna Debenham.
 
 ## Go forth and be atomic
 
