@@ -224,7 +224,7 @@
 	</figcaption>
 </figure>
 
-<p>One of the biggest advantages of establishing a sound design system is that it allows organizations to scale best practices. If all those best practices — responsiveness, accessibility, performance, UX, ergonomics, and so on — are baked into the system’s UI patterns, users can simply plug in those patterns and reap the rewards. This means design system users don’t have to be senior-level designers or developers to produce good work; the design system serves as quality control to help users apply best practices regardless of their skill level.</p>
+<p>One of the biggest advantages of establishing a sound design system is that it allows organizations to scale best practices. If all those best practices — responsiveness, accessibility, performance, UX, ergonomics, and so on — are baked into the system’s UI patterns, users can simply plug in the patterns and reap the rewards. This means design system users don’t have to be senior-level designers or developers to produce good work; the design system serves as quality control to help users apply best practices regardless of each person’s skill level.</p>
 
 <h3 id="design-system-team-makeup">Design system team makeup</h3>
 <p><strong>A cross-disciplinary team should be established in order to manage, maintain, and extend the system</strong>. All disciplines at an organization — UX designers, visual designers, content strategists, frontend developers, backend developers, product managers, project managers, executives, and other stakeholders — have a unique perspective that can undoubtedly inform and shape the work. Incorporating these perspectives into the system is important, but doesn’t necessarily require every discipline to  always be actively involved in developing the design system.</p>
@@ -241,35 +241,36 @@
 </figure>
 
 <h2 id="make-it-maintainable">Make it maintainable</h2>
-<p>Many pattern libraries fall into a state of disrepair because the level of effort required to update patterns or documentation is far too high. If a pattern library is difficult to update, people will eventually stop updating it and the pattern library will die on the vine. Making updates to UI patterns and documentation should be as frictionless as possible, and reducing this friction involves careful consideration from both a technological and workflow standpoint.</p>
+<p>Many pattern libraries fall into a state of disrepair because the effort required to update patterns and documentation is far too high. If a pattern library is difficult and time consuming to update, people will eventually stop updating it and the pattern library will begin its drift into oblivion. Making updates to UI patterns and documentation should be as frictionless as possible, so reducing this friction should become a high priority for the team responsible for maintaining it. This involves careful consideration from both a technological and workflow standpoint.</p>
 
-<h3 id="the-holy-grail">The Holy Grail</h3>
-<p><strong>The design system Holy Grail involves creating an environment where the pattern library and production environment are perfectly in sync</strong>. The idea of the Holy Grail is that you can make a change to a UI pattern, and those changes will be automatically reflected in both the pattern library and anywhere the pattern is included in production. </p>
+<h3 id="in-search-of-the-holy-grail">In search of the Holy Grail</h3>
+<p><strong>The design system Holy Grail involves creating an environment where the pattern library and production environment are perfectly in sync</strong>. The idea is that you should be able to make a change to a UI pattern and see those changes automatically reflected in both the pattern library and anywhere the pattern is included in production. </p>
 
 <figure>
-    <img src="../images/content/workflow-system-first.png" alt="The Holy Grail of design systems is one where making a change to the system will " />
+    <img src="../images/content/workflow-system-first-holy-grail.png" alt="The Holy Grail of design systems is one where one can make a change to a UI pattern and have it simultaneously update the pattern library and production environments." />
 	<figcaption>
-	    The Holy Grail of design systems is one where making a change to the system will 
+	    The Holy Grail of design systems is one where one can make a change to a UI pattern and have it simultaneously update the pattern library and production environments.
 	</figcaption>
 </figure>
 
-<p>Sounds like a dream, right?</p>
+<p>The Holy Grail removes any duplication of effort and ensures the pattern library and the applications using the patterns remain synchronized. Sounds like a dream, right?</p>
 
-<p>As it turns out, this dream can be a reality. Organizations like Lonely Planet established a Holy Grail-style design system called <a href="http://rizzo.lonelyplanet.com/">Rizzo</a> to serve their products. </p>
+<p>As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, established a Holy Grail-style design system they call <a href="http://rizzo.lonelyplanet.com/">Rizzo</a>.  </p>
 
 <figure>
-    <img src="../images/fpo.png" alt="" />
+    <img src="../images/content/rizzo.png" alt="Lonely Planet created an API for their UI patterns that is consumed by both their pattern library and production environment. By architecting things in this manner, changing UI patterns automatically update both the pattern library and production environment, keeping things in sync and thereby achieving the Holy Grail." />
 	<figcaption>
-	    
+	    Lonely Planet created an API for their UI patterns that is consumed by both their pattern library and production environment. By architecting things in this manner, changing UI patterns automatically update both the pattern library and production environment, keeping things in sync and thereby achieving the Holy Grail.
 	</figcaption>
 </figure>
 
-<ul>
-  <li>Sharing CSS and JS with the production environment is relatively easy, but sharing markup is tough.</li>
-  <li>Using HTML templating languages create Templating language should match the production environment - The closer you get to . </li>
-  <li>Look for opportunities to automate documentation </li>
-  <li><a href="http://bradfrost.com/blog/post/using-grunt-with-pattern-lab/">Using Grunt with Pattern Lab</a></li>
-</ul>
+<p>Achieving the design system Holy Grail is no easy task, as it requires sophisticated technical architecture and smart people to set it up. How you go about chasing the Holy Grail will very much depend on the technical </p>
+
+<p>In my experience, I’ve found that sharing CSS and JS with the production environment is relatively easy, but sharing markup is tough. 
+- In 
+- Using HTML templating languages create Templating language should match the production environment - The closer you get to . 
+- Look for opportunities to automate documentation 
+- <a href="http://bradfrost.com/blog/post/using-grunt-with-pattern-lab/">Using Grunt with Pattern Lab</a></p>
 
 <p>How can you set up your applications and pattern library to achieve the Holy Grail? Developer Marcelo Somers outlined several methods for thoughtfully keeping your pattern library and production environments in sync. <a href="https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.vy45rkm7m">Chasing the holy grail</a></p>
 
@@ -280,7 +281,7 @@
 <h2 id="make-it-cross-disciplinary">Make it cross-disciplinary</h2>
 <p>Far too often, pattern libraries jump straight into code snippets and usage for the benefit of the developers that will be making use of the patterns. Of course a pattern library should be helpful for the hands-on design system users, but treating it as solely a developer resource limits its potential.</p>
 
-<p>A pattern library has the opportunity to serve as a watering hole for the entire organization, helping establish a common vocabulary for every discipline that’s invested in the success of the design system. What does that entail?</p>
+<p>A pattern library has the opportunity to serve as a watering hole for the entire organization, helping establish a common vocabulary for every discipline that’s invested in the success of the design system. Establishing this common vocabulary can lead to better and more efficient collaboration between disciplines. So how do you go about</p>
 
 <p>Take the carousel (please!). This component is amazingly complex from an organizational standpoint. A homepage carousel on an e-commerce website requires input from a myriad of disciplines across the organization. Business owners and editorial staff must choose products that align with . Copywriters must ensure the copy stays within character limits. Art directors must ensure the aesthetic design is pleasing and the product photography is legible across every screen size.  UX designers, front-end people, backend people, and so on.</p>
 
@@ -294,20 +295,35 @@
 <p>As mentioned earlier in the chapter, every discipline can and should influence the design system. The pattern library containing that carousel pattern should be accessible to all these disciplines, and should contain documentation from each perspective</p>
 
 <h2 id="make-it-approachable">Make it approachable</h2>
+<p>This should come as a surprise to no one, but people tend to gravitate towards attractive things.</p>
+
+<blockquote>
+  <p>As much as I love style guides, and I love style guides, I wonder if we’re at Peak Style Guide. I’ve seen logos and mascots. I’ve seen dedicated sites and open repos begging for contributions. <cite><a href="https://css-tricks.com/subscription-options/">Chris Coyier</a></cite></p>
+</blockquote>
+
+<p>I understand Chris’s concern that </p>
+
+<p>But I don’t think these style guide logos and mascots Chris refers to are simply gratuitous visual wankery. It reflects an organization’s commitment to making and maintaining a thoughtful, deliberate design system.</p>
+
+<p>Taking the time to craft an attractive, branded home for your style guide and documentation can lead to more usage.</p>
+
 <ul>
-  <li>No shocker here, but good design leads to more usage.</li>
   <li>Avoid exposing tons of code right out of the gate as it might discourage other disciplines from looking at it (“Oh this must not be for me”)</li>
 </ul>
+
+<p>Helps build awareness of the design system and helps get the organization excited about and invested in the concept. This can lead to more time, funding, and resources dedicated to maintaining and growing the design system.
+Makes it much more approachable, especially for non-technical folks. This can lead to a diversity of perspectives being represented in the design system, resulting in an effective shared vocabulary and better cross-disciplinary collaboration.</p>
 
 <h2 id="make-it-visible">Make it visible</h2>
 <ul>
   <li>Make it public.</li>
+  <li>Creates a sense of accountability for the organization, which better ensures the design system is utilized and doesn’t just die on the vine.</li>
   <li>Recruitment, recruitment, recruitment.</li>
-  <li>Jina Bolton went to Salesforce after seeing their Salesforce1 style guide. </li>
+  <li>as designers and developers are looking to work at organizations that embrace modern Web best practices. Jina Bolton went to Salesforce after seeing their Salesforce1 style guide. </li>
 </ul>
 
 <h2 id="make-it-bigger">Make it bigger</h2>
-<p>In chapter 1, we discussed the six different types of style guides. When a design system has proven to be valuable and there’s a solid home base set up to house it, there’s an opportunity to extend that home to include things like voice and tone, brand, code, design principles and writing guidelines. Now, every organization may not necessarily need all of these elements, but the point is that </p>
+<p>In chapter 1, we discussed the six different types of style guides. When a design system has proven to be valuable and there’s a solid home base set up to house it, there’s an opportunity to extend that home to include things like voice and tone, brand, code, design principles and writing guidelines. Now, every organization may not necessarily need all of these elements, but the point is that once a hub is set up . </p>
 
 <h2 id="make-it-agnostic">Make it agnostic</h2>
 <ul>

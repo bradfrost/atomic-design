@@ -141,7 +141,7 @@ Users' proximity to and involvement in the creation of the design system will un
 
 {% include figure.html src="../images/fpo.png" caption="Spectrum of design system users" %}
 
-One of the biggest advantages of establishing a sound design system is that it allows organizations to scale best practices. If all those best practices — responsiveness, accessibility, performance, UX, ergonomics, and so on — are baked into the system's UI patterns, users can simply plug in those patterns and reap the rewards. This means design system users don't have to be senior-level designers or developers to produce good work; the design system serves as quality control to help users apply best practices regardless of their skill level.
+One of the biggest advantages of establishing a sound design system is that it allows organizations to scale best practices. If all those best practices — responsiveness, accessibility, performance, UX, ergonomics, and so on — are baked into the system's UI patterns, users can simply plug in the patterns and reap the rewards. This means design system users don't have to be senior-level designers or developers to produce good work; the design system serves as quality control to help users apply best practices regardless of each person's skill level.
 
 ### Design system team makeup
 **A cross-disciplinary team should be established in order to manage, maintain, and extend the system**. All disciplines at an organization — UX designers, visual designers, content strategists, frontend developers, backend developers, product managers, project managers, executives, and other stakeholders — have a unique perspective that can undoubtedly inform and shape the work. Incorporating these perspectives into the system is important, but doesn't necessarily require every discipline to  always be actively involved in developing the design system.
@@ -153,20 +153,23 @@ Other disciplines may not be the ones actively doing the work, but must be consu
 {% include figure.html src="../images/fpo.png" caption="" %}
 
 ## Make it maintainable
-Many pattern libraries fall into a state of disrepair because the level of effort required to update patterns or documentation is far too high. If a pattern library is difficult to update, people will eventually stop updating it and the pattern library will die on the vine. Making updates to UI patterns and documentation should be as frictionless as possible, and reducing this friction involves careful consideration from both a technological and workflow standpoint.
+Many pattern libraries fall into a state of disrepair because the effort required to update patterns and documentation is far too high. If a pattern library is difficult and time consuming to update, people will eventually stop updating it and the pattern library will begin its drift into oblivion. Making updates to UI patterns and documentation should be as frictionless as possible, so reducing this friction should become a high priority for the team responsible for maintaining it. This involves careful consideration from both a technological and workflow standpoint.
 
-### The Holy Grail
-**The design system Holy Grail involves creating an environment where the pattern library and production environment are perfectly in sync**. The idea of the Holy Grail is that you can make a change to a UI pattern, and those changes will be automatically reflected in both the pattern library and anywhere the pattern is included in production. 
+### In search of the Holy Grail
+**The design system Holy Grail involves creating an environment where the pattern library and production environment are perfectly in sync**. The idea is that you should be able to make a change to a UI pattern and see those changes automatically reflected in both the pattern library and anywhere the pattern is included in production. 
 
-{% include figure.html src="../images/content/workflow-system-first.png" caption="The Holy Grail of design systems is one where making a change to the system will " %}
+{% include figure.html src="../images/content/workflow-system-first-holy-grail.png" caption="The Holy Grail of design systems is one where one can make a change to a UI pattern and have it simultaneously update the pattern library and production environments." %}
 
-Sounds like a dream, right?
+The Holy Grail removes any duplication of effort and ensures the pattern library and the applications using the patterns remain synchronized. Sounds like a dream, right?
 
-As it turns out, this dream can be a reality. Organizations like Lonely Planet established a Holy Grail-style design system called [Rizzo](http://rizzo.lonelyplanet.com/) to serve their products. 
+As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, established a Holy Grail-style design system they call [Rizzo](http://rizzo.lonelyplanet.com/).  
 
-{% include figure.html src="../images/fpo.png" caption="" %}
+{% include figure.html src="../images/content/rizzo.png" caption="Lonely Planet created an API for their UI patterns that is consumed by both their pattern library and production environment. By architecting things in this manner, changing UI patterns automatically update both the pattern library and production environment, keeping things in sync and thereby achieving the Holy Grail." %}
 
-- Sharing CSS and JS with the production environment is relatively easy, but sharing markup is tough.
+Achieving the design system Holy Grail is no easy task, as it requires sophisticated technical architecture and smart people to set it up. How you go about chasing the Holy Grail will very much depend on the technical 
+
+In my experience, I've found that sharing CSS and JS with the production environment is relatively easy, but sharing markup is tough. 
+- In 
 - Using HTML templating languages create Templating language should match the production environment - The closer you get to . 
 - Look for opportunities to automate documentation 
 - [Using Grunt with Pattern Lab](http://bradfrost.com/blog/post/using-grunt-with-pattern-lab/)
@@ -180,7 +183,7 @@ When technology can't achieve maintainable design systems, you must rely on crea
 ## Make it cross-disciplinary
 Far too often, pattern libraries jump straight into code snippets and usage for the benefit of the developers that will be making use of the patterns. Of course a pattern library should be helpful for the hands-on design system users, but treating it as solely a developer resource limits its potential.
 
-A pattern library has the opportunity to serve as a watering hole for the entire organization, helping establish a common vocabulary for every discipline that's invested in the success of the design system. What does that entail?
+A pattern library has the opportunity to serve as a watering hole for the entire organization, helping establish a common vocabulary for every discipline that's invested in the success of the design system. Establishing this common vocabulary can lead to better and more efficient collaboration between disciplines. So how do you go about
 
 Take the carousel (please!). This component is amazingly complex from an organizational standpoint. A homepage carousel on an e-commerce website requires input from a myriad of disciplines across the organization. Business owners and editorial staff must choose products that align with . Copywriters must ensure the copy stays within character limits. Art directors must ensure the aesthetic design is pleasing and the product photography is legible across every screen size.  UX designers, front-end people, backend people, and so on.
 
@@ -189,16 +192,30 @@ Take the carousel (please!). This component is amazingly complex from an organiz
 As mentioned earlier in the chapter, every discipline can and should influence the design system. The pattern library containing that carousel pattern should be accessible to all these disciplines, and should contain documentation from each perspective
 
 ## Make it approachable
-- No shocker here, but good design leads to more usage.
+This should come as a surprise to no one, but people tend to gravitate towards attractive things.
+
+> As much as I love style guides, and I love style guides, I wonder if we’re at Peak Style Guide. I’ve seen logos and mascots. I’ve seen dedicated sites and open repos begging for contributions. <cite><a href="https://css-tricks.com/subscription-options/">Chris Coyier</a>
+
+I understand Chris's concern that 
+
+But I don’t think these style guide logos and mascots Chris refers to are simply gratuitous visual wankery. It reflects an organization’s commitment to making and maintaining a thoughtful, deliberate design system.
+
+Taking the time to craft an attractive, branded home for your style guide and documentation can lead to more usage.
+
 - Avoid exposing tons of code right out of the gate as it might discourage other disciplines from looking at it ("Oh this must not be for me")
+
+Helps build awareness of the design system and helps get the organization excited about and invested in the concept. This can lead to more time, funding, and resources dedicated to maintaining and growing the design system.
+Makes it much more approachable, especially for non-technical folks. This can lead to a diversity of perspectives being represented in the design system, resulting in an effective shared vocabulary and better cross-disciplinary collaboration.
+
 
 ## Make it visible
 - Make it public.
+- Creates a sense of accountability for the organization, which better ensures the design system is utilized and doesn’t just die on the vine.
 - Recruitment, recruitment, recruitment.
-- Jina Bolton went to Salesforce after seeing their Salesforce1 style guide. 
+- as designers and developers are looking to work at organizations that embrace modern Web best practices. Jina Bolton went to Salesforce after seeing their Salesforce1 style guide. 
 
 ## Make it bigger
-In chapter 1, we discussed the six different types of style guides. When a design system has proven to be valuable and there's a solid home base set up to house it, there's an opportunity to extend that home to include things like voice and tone, brand, code, design principles and writing guidelines. Now, every organization may not necessarily need all of these elements, but the point is that 
+In chapter 1, we discussed the six different types of style guides. When a design system has proven to be valuable and there's a solid home base set up to house it, there's an opportunity to extend that home to include things like voice and tone, brand, code, design principles and writing guidelines. Now, every organization may not necessarily need all of these elements, but the point is that once a hub is set up . 
 
 ## Make it agnostic
 - The more agnostic pattern names are, the more versatile and reusable they become.
