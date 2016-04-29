@@ -146,43 +146,19 @@
 
 <p><em>[<small>Note from Brad: Forgive the mess with the <span class="editor">markup formatting</span>. I need to look into how to properly escape characters and highlight syntax in a way that works for the site but also for the eventual ebook.</small>]</em></p>
 
-<div class="editor">
+<pre>
+<code>
 
-
-<p>Ed: (Duly noted. Is this helpful? https://help.github.com/articles/creating-and-highlighting-code-blocks/ I’ll try a block below. I’ve no idea how this will export to either the website or the ebook.)</p>
-
-</div>
-
-<p><code></code></p>
-
-<p>&lt;div class=”block-post”&gt;
-    &lt;a href=”{{ url }}”&gt;
+\&lt;div class="block-post"\&gt;
+    \&lt;a href="{{ url }}"\&gt;
         {{&gt; atoms-thumb }}
-        &lt;h3&gt;{{ headline }}&lt;/h3&gt;
-       &lt;p&gt;{{ excerpt }}&lt;/p&gt;
-    &lt;/a&gt;
-&lt;/div&gt;</p>
+        \&lt;h3\&gt;{{ headline }}\&lt;/h3\&gt;
+       \&lt;p\&gt;{{ excerpt }}\&lt;/p\&gt;
+    \&lt;/a\&gt;
+\&lt;/div\&gt;
 
-<p>&lt;/code&gt;
-&lt;/pre&gt;)</p>
-
-<div class="editor">
-
-
-<p>[Editor’s markup block]
-```html</p>
-
-<div class="block-post">
-    <a href="{{ url }}">
-        {{&gt; atoms-thumb }}
-        <h3>{{ headline }}</h3>
-       <p>{{ excerpt }}</p>
-    </a>
-</div>
-
-<p>```</p>
-
-</div>
+</code>
+</pre>
 
 <p>You can see we have: HTML markup consisting of a wrapper <code>div</code> with a class name of <code>block-post</code>; a link; a Mustache include for the thumbnail image; an <code>&lt;h3&gt;</code> <span class="editor">tag</span> for the headline; and a <code>&lt;p&gt;</code> tag for the excerpt. You’ll notice there’s more Mustache code for <code>url</code>, <code>headline</code>, and <code>excerpt</code>, which we’ll use later to dynamically swap in actual content. More on that in a bit.</p>
 

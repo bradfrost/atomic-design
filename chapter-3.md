@@ -80,14 +80,7 @@ This pattern should look fairly familiar. A thumbnail image, headline, and excer
 
 <em>[<small>Note from Brad: Forgive the mess with the <span class="editor">markup formatting</span>. I need to look into how to properly escape characters and highlight syntax in a way that works for the site but also for the eventual ebook.</small>]</em>
 
-<div class="editor">
-{% capture m %}
-Ed: (Duly noted. Is this helpful? https://help.github.com/articles/creating-and-highlighting-code-blocks/ I'll try a block below. I've no idea how this will export to either the website or the ebook.)
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-[Brad's markup block, with additional Markdown escaping from Editor]: # (<pre>
+<pre>
 <code>
 {% raw %}
 \<div class="block-post"\>
@@ -99,25 +92,7 @@ Ed: (Duly noted. Is this helpful? https://help.github.com/articles/creating-and-
 \</div\>
 {% endraw %}
 </code>
-</pre>)
-
-<div class="editor">
-{% capture m %}
-[Editor's markup block]
-```html
-{% raw %}
-<div class="block-post">
-    <a href="{{ url }}">
-        {{> atoms-thumb }}
-        <h3>{{ headline }}</h3>
-       <p>{{ excerpt }}</p>
-    </a>
-</div>
-{% endraw %}
-```
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+</pre>
 
 You can see we have: HTML markup consisting of a wrapper `div` with a class name of `block-post`; a link; a Mustache include for the thumbnail image; an `<h3>` <span class="editor">tag</span> for the headline; and a `<p>` tag for the excerpt. You'll notice there's more Mustache code for `url`, `headline`, and `excerpt`, which we'll use later to dynamically swap in actual content. More on that in a bit.
 
