@@ -162,13 +162,14 @@ Many pattern libraries fall into a state of disrepair because the effort require
 
 The Holy Grail removes any duplication of effort and ensures the pattern library and the applications using the patterns remain synchronized. Sounds like a dream, right?
 
-As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, established a Holy Grail-style design system they call [Rizzo](http://rizzo.lonelyplanet.com/).  
+As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, established a Holy Grail-style design system they call [Rizzo](http://rizzo.lonelyplanet.com/). It involves an API for their UI patterns that feeds both their production environments as well as their pattern library. 
 
 {% include figure.html src="../images/content/rizzo.png" caption="Lonely Planet created an API for their UI patterns that is consumed by both their pattern library and production environment. By architecting their design system in this manner, changes to UI patterns are automatically reflected in both the pattern library and production environment, keeping things in sync and thereby achieving the Holy Grail." %}
 
-Achieving the design system Holy Grail is no easy task, as it requires sophisticated technical architecture and smart people to set it up. How you go about chasing the Holy Grail will very much depend on the technical 
+Achieving the design system Holy Grail is no easy task, as it requires sophisticated technical architecture and smart people to set it all up. How you go about chasing the Holy Grail — or even if you can achieve it — is dependent on a whole load of factors. will very much depend on the technical and cultural makeup of your organization.
 
 In my experience, I've found that sharing CSS and JS with the production environment is relatively easy, but sharing markup is tough. 
+
 - In 
 - Using HTML templating languages create Templating language should match the production environment - The closer you get to . 
 - Look for opportunities to automate documentation 
