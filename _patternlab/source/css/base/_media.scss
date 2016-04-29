@@ -18,8 +18,8 @@ figure {
 	}
 	
 	@media all and (min-width: 37em) {
-		width: 100vw;
-		margin-left: calc((100vw - 29em) / -2);
+		width: calc(100vw - 1vw);
+		margin-left: calc((100vw - 1vw - 29em) / -2);
 		padding: 0 1em;
 		text-align: center;
 		
