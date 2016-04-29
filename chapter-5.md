@@ -164,7 +164,7 @@ The Holy Grail removes any duplication of effort and ensures the pattern library
 
 As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, established a Holy Grail-style design system they call [Rizzo](http://rizzo.lonelyplanet.com/).  
 
-{% include figure.html src="../images/content/rizzo.png" caption="Lonely Planet created an API for their UI patterns that is consumed by both their pattern library and production environment. By architecting things in this manner, changing UI patterns automatically update both the pattern library and production environment, keeping things in sync and thereby achieving the Holy Grail." %}
+{% include figure.html src="../images/content/rizzo.png" caption="Lonely Planet created an API for their UI patterns that is consumed by both their pattern library and production environment. By architecting their design system in this manner, changes to UI patterns are automatically reflected in both the pattern library and production environment, keeping things in sync and thereby achieving the Holy Grail." %}
 
 Achieving the design system Holy Grail is no easy task, as it requires sophisticated technical architecture and smart people to set it up. How you go about chasing the Holy Grail will very much depend on the technical 
 
