@@ -192,24 +192,25 @@ Take the carousel (please!). This component is amazingly complex from an organiz
 
 As mentioned earlier in the chapter, every discipline can and should influence the design system. The pattern library containing that carousel pattern should be accessible to all these disciplines, and should contain documentation from each perspective
 
+Avoid exposing tons of code right out of the gate as it might discourage other disciplines from looking at it ("Oh this must not be for me")
+
 ## Make it approachable
-This should come as a surprise to no one, but people tend to gravitate towards attractive things.
+This should come as a surprise to no one, but people tend to gravitate towards attractive things. The container that houses your pattern library and other documentation should be good-looking, inviting, and easy to navigate.
 
-> As much as I love style guides, and I love style guides, I wonder if we’re at Peak Style Guide. I’ve seen logos and mascots. I’ve seen dedicated sites and open repos begging for contributions. <cite><a href="https://css-tricks.com/subscription-options/">Chris Coyier</a>
+{% include figure.html src="../images/fpo.png" caption="Yelp's style guide has an attractive, friendly front page that explains what the resource is, who it's for, and how to use it." %}
 
-I understand Chris's concern. Creating a useful style guide 
+Taking the time to craft an attractive home for your style guide and documentation can lead to more usage, helps build awareness,    helps the organization become more invested in the concept, and helps get non-developers' eyeballs on the style guide, resulting in a shared vocabulary and better cross-disciplinary collaboration.
 
-But I don’t think these style guide logos and mascots Chris refers to are simply gratuitous visual wankery. It reflects an organization’s commitment to making and maintaining a thoughtful, deliberate design system.
+But creating a great-looking, intuitive style guide experience doesn't just happen, and this can be problematic when getting a style guide off the ground. If teams think that making a useful style guide involves making some Big, Official Thing with custom branding and a glossy website, they might be deterred from ever starting the initiative. So remember: 
 
-Taking the time to craft an attractive, branded home for your style guide and documentation can lead to more usage.
+1. Make a thing. 
+2. Show that it's useful. 
+3. Make it official. 
 
-- Avoid exposing tons of code right out of the gate as it might discourage other disciplines from looking at it ("Oh this must not be for me")
-
-Helps build awareness of the design system and helps get the organization excited about and invested in the concept. This can lead to more time, funding, and resources dedicated to maintaining and growing the design system.
-Makes it much more approachable, especially for non-technical folks. This can lead to a diversity of perspectives being represented in the design system, resulting in an effective shared vocabulary and better cross-disciplinary collaboration.
-
+Creating a useful design system should be the team's first priority. A happy home to contain it all might not happen right out of the gate, but should become a bigger priority once the design system becomes official. Making a good-looking style guide isn't just design for design's sake; **it reflects an organization’s commitment to making and maintaining a thoughtful, deliberate design system**.
 
 ## Make it visible
+At the end of the day, style guides are more often than not internal resources to help internal teams work better together.
 - Make it public.
 - Creates a sense of accountability for the organization, which better ensures the design system is utilized and doesn’t just die on the vine.
 - Recruitment, recruitment, recruitment.
