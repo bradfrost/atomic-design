@@ -197,7 +197,7 @@ This should come as a surprise to no one, but people tend to gravitate towards a
 
 > As much as I love style guides, and I love style guides, I wonder if we’re at Peak Style Guide. I’ve seen logos and mascots. I’ve seen dedicated sites and open repos begging for contributions. <cite><a href="https://css-tricks.com/subscription-options/">Chris Coyier</a>
 
-I understand Chris's concern that 
+I understand Chris's concern. Creating a useful style guide 
 
 But I don’t think these style guide logos and mascots Chris refers to are simply gratuitous visual wankery. It reflects an organization’s commitment to making and maintaining a thoughtful, deliberate design system.
 
@@ -242,12 +242,17 @@ What does a successful
 Making a design system last means consistently . It needs to be visible and stay in the front of everyone's minds. 
 
 ### Communicating change
-Without a communication strategy in place, how will everyone know when things change?
+You can create the best style guide in world, use all the right technology, have buy-in from the higher ups, have an amazing team in place, and have excited users, but if you don't communicate updates and changes to the design system the entire effort will suffer.
 
-- Design system changes should be communicated wherever your team hangs out. If that's Slack Github
+It's essential to put a comprehensive communication strategy in place so the design system makers, users, and other stakeholders are aware of the latest changes to and thinking around the design system. Especially in the early days of the initiative, frequent and comprehensive communication helps keep the design system in the front of everyone's mind so it takes root and becomes an integral part of your organization's workflow. As time goes on, frequent communication helps the system increase in value like that fine bottle of wine.
+
+**Design system changes, updates, and requests should be communicated wherever your team hangs out**. That may include Slack, BaseCamp, Github, wikis, Yammer, email lists, company blogs, intranets, and any other internal tools your team uses to communicate and collaborate. 
+
+Surveys, feedback, change logs, roadmaps, success stories,  
 
 - Publish updates (Material Design example)
-- Notifications - Regular E-mail newsletters, blog updates, etc, whenever things change, Slack integrations 
+- Notifications - Regular E-mail newsletters, blog updates, etc, whenever things change, Slack integrations, 
+- email updates, blog posts, video casts, 
 
 > Whenever someone makes a pull request, it sends a notification to our #Design slack channel, announcing to the team that there is a proposal change and feedback is required <cite><a href="https://medium.com/shyp-design/managing-style-guides-at-shyp-c217116c8126">Micah Sivitz, Shyp</a> 
 
