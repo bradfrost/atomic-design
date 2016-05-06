@@ -8,7 +8,7 @@ A long, long time ago, there were these things called _books_. Remember them? Th
 
 Awful things. I’m so glad these book things with their razor-sharp pages aren’t around anymore.
 
-Oh, wait.
+Oh, wait…
 
 ## Our paginated past
 The page has been with us for a long time now. A few millennia, actually. The first books were thick slabs of clay created about <span class="editor">4,000 years ago</span>, soon replaced by scrolls as the preferred way to consume the written word. And while reading technology has come a long way – from papyrus to parchment to paperback to pixels – the concept of the page holds strong to this day. 
