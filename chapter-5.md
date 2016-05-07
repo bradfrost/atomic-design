@@ -11,16 +11,16 @@ Not quite.
 
 {% include figure.html src="../images/content/trash-can.jpg" caption="" %}
 
-There's a very real risk that a pattern library will be thrown in the trashcan right alongside all the PSDs, PDFs and other artifacts of the design process. All the time and effort that went into into making a thoughtful design system and pattern library goes down the drain.
+There's a very real risk that a pattern library will be thrown in the trashcan right alongside all the PSDs, PDFs and other artifacts of the design process. Despite everyone's best intentions, all that time and effort that went into into making a thoughtful design system and pattern library can go straight down the drain.
 
-Why does this happen?
+How can that be?
 
 > A style guide is an artifact of design process. A design system is a living, funded product with a roadmap & backlog, serving an ecosystem. <cite>[Nathan Curtis](https://twitter.com/nathanacurtis/status/656829204235972608)</cite>
 
-**An artifact is something you'd find in an archaeological dig or a museum, whereas a system is a living, breathing entity**. A pattern library can provide helpful documentation, but the simple existence of a pattern library doesn't guarantee long-term success for the underlying design system. 
+**An artifact is something you'd find in an archaeological dig or a museum, whereas a system is a living, breathing entity**. A pattern library can provide helpful documentation and serve as a helpful resource, but the simple existence of a pattern library doesn't guarantee long-term success for the underlying design system. A design system needs ongoing maintenance, support, and tender loving care for it to truly thrive. 
 
 ## Changing minds, once again
-We've already discussed the importance of resetting everyone's expectations in order to establish a more collaborative, pattern-driven workflow. In order to save our design systems from the trash can and craft successful, lasting design systems instead, we must once again fundamentally rewire people's brains.
+We've already discussed the importance of resetting everyone's expectations in order to establish a more collaborative, pattern-driven workflow. In order to save our design systems from the trash can and craft lasting design systems instead, we must once again fundamentally rewire people's brains.
 
 ### What is it we're making again?
 We *think* we merely design and build websites. And that's true for the most part. After all, that's what our clients pay us to do, and the products we create are the vehicles that generate money and success for an organization. So it seems natural to focus on the final implementations rather than the underlying system. With this mentality, the live products remain the primary focus of everyone's attention, while any pattern library exists as an offshoot that provides helpful documentation for the final products.
@@ -29,18 +29,18 @@ We *think* we merely design and build websites. And that's true for the most par
 
 The problem with this mentality is that you can almost see that pattern library snapping off and sliding off into the abyss.  **Once the pattern library ceases to reflect the current state of the products it serves, it becomes obsolete**. And when the pattern library managing the design system is no longer accurate, the website maintenance process devolves into a smattering of hotfixes and ad hoc changes, ruining all the thoughtfulness that went into creating the original design system.
 
-In order to set our design systems up for long-term success, we must fundamentally shift our mentality around just what exactly it is we’re creating. Rather than thinking of the final product our sole responsibility, we must recognize that the design system is what drives both the final website and pattern library.
+In order to set our design systems up for long-term success, we must fundamentally shift our mentality around just what exactly it is we’re creating. Rather than thinking of the final product our sole responsibility, we must recognize that the design system is what underpins our the final products *and* pattern libraries.
 
 {% include figure.html src="../images/content/workflow-system-first.png" caption="" %}
 
-This "design system first" mentality inserts a bit of friction into the maintenance process, and that **friction can be friendly**. It forces us to step back and consider how future client requests, feature additions, and iterations impact the overall system rather than only a piece of the final website. 
+This "design system first" mentality inserts a bit of friction into the maintenance process, and that **friction can be friendly**. It forces us to step back and consider how any client requests, feature additions, and iterations impact the overall system rather than only a piece of the final website. 
 
-Say for instance you're working on an e-commerce site, and you run a test to find a custom-styled dropdown menu on the product detail page isn't performing as well as the browser's default dropdown menu. One course of action is to simply remove the custom-styled dropdown from that page and call it a day. However, considering the entire design system rather than just the product detail page might cause you to take a step back and ask, "If this custom dropdown menu isn't performing well here, perhaps it's not performing well elsewhere?" After digging into the issue further, you find the best course of action is to globally modify the dropdown pattern in the design system to remove the custom styling. Now anywhere the dropdown pattern appears will reflect those changes and likely see similar performance improvements.
+Say for instance you're working on an e-commerce site, and you run a test to find a custom-styled dropdown menu on the product detail page isn't performing as well as the browser's default dropdown menu. One course of action is to simply remove the custom-styled dropdown from that particular page and call it a day. However, considering the entire design system rather than just the product detail page might cause you to take a step back and ask, "If this custom dropdown menu isn't performing well here, perhaps it's not performing well elsewhere?" After digging into the issue further, you find the best course of action is to globally modify the dropdown pattern in the design system to remove the custom styling. Now anywhere the dropdown pattern appears will reflect those changes and likely see similar performance improvements.
 
-That is just one example of how design system thinking can lead to broader changes. **Broken behavior and opportunities to enhance the experience will be realized at the *page* level, but those changes often should be acted on at the *system* level**. Adding this bit of worthwhile friction into your workflow  ensures improvements are shared across the entire design system, and that the system isn't eroded by a continuous series of one-off changes.
+That is just one example of how design system thinking can lead to broader, more considered changes. **Broken behavior and opportunities to enhance the experience will be realized at the *page* level, but those changes should often be acted on at the *system* level**. Adding this bit of worthwhile friction into your workflow  ensures improvements are shared across the entire design system, and that the system isn't eroded by a continuous series of one-off changes.
 
 ### Done and done
-Another expectation we must revisit is our definition of *done*. Creating things for print and other physical mediums involve making permanent, tangible objects. There's a sense of finality when creating things for a world of atoms. That concept simply doesn't exist in the digital world, which means change can happen with much less effort and friction than other mediums. **Clients, colleagues, and stakeholders should embrace the pliable nature of the digital world to create living design systems that adapt to the ever-shifting nature of the medium, user needs, and the needs of the business**. 
+Another expectation we must revisit is our definition of *done*. Creating things for print and other physical mediums involve making permanent, tangible objects. There's a sense of finality when creating things for the physical world. That concept simply doesn't exist in the digital world, which means change can happen with much less effort and friction than other mediums. **Clients, colleagues, and stakeholders should embrace the pliable nature of the digital world to create living design systems that adapt to the ever-shifting nature of the medium, user needs, and the needs of the business**. 
 
 This shift in thinking fundamentally impacts the scope of our work. Folks working in the client services business are often used to delivering a project in a tidy package then riding off into the sunset. Internal teams don't fair much better, since they tend to float from one initiative to the next. Whether you're part of an internal team or are an external gun for hire, I'm guessing you've experienced the shortcomings of project-based work. We tend to talk about a future that never comes, and instead we set it, forget it, then move onto the next shiny project.
 
@@ -79,7 +79,7 @@ Convincing stakeholders to commit a large chunk of money, time, and resources up
 Let's break down these steps a bit further.
 
 ### Step 1: make a thing
-You have to start somewhere, and having something is better than nothing. Pick a project that would be a great pilot for establishing your design system, follow a process similar to the one discussed in [chapter 4](/chapter-4/), think about the atomic design mental model detailed in [chapter 2](/chapter-2/), and you'll end up with a solid foundation for a thoughtful design system and pattern library that helps your team work more effectively and thoughtfully. 
+You have to start somewhere, and having something started is better than nothing at all. Pick a project that would be a great pilot for establishing your design system, follow a process similar to the one discussed in [chapter 4](/chapter-4/), think about the atomic design mental model detailed in [chapter 2](/chapter-2/), and you'll end up with a solid foundation for a thoughtful design system and pattern library that helps your team work more effectively and thoughtfully. 
 
 Take the time to package your UI patterns in a pattern library and get it ready to shop around. I've talked to several ambitious team members who have built the basic gist of a pattern library over the course of a weekend. This effort makes all the difference in the world since it gives something tangible for stakeholders to react to. Again: *show, don't tell*.
 
@@ -182,15 +182,15 @@ There are a number of reasons why an organization may not be able to achieve the
 When technology can't achieve maintainable design systems, you must rely on creating a culture that communicates change and enforces that friction 
 
 ## Make it cross-disciplinary
-Far too often, pattern libraries jump straight into code snippets and usage for the benefit of the developers that will be making use of the patterns. Of course a pattern library should be helpful for the hands-on design system users, but treating it as solely a developer resource limits its potential.
+Style guides often jump straight into code snippets and pattern usage for the benefit of the design system users. Of course a pattern library needs to be helpful for the people actually making use of the patterns, but **treating a style guide solely a developer resource limits its potential**.
 
-A pattern library has the opportunity to serve as a watering hole for the entire organization, helping establish a common vocabulary for every discipline that's invested in the success of the design system. Establishing this common vocabulary can lead to better and more efficient collaboration between disciplines. So how do you go about
+**A style guide has the opportunity to serve as a watering hole for the entire organization**, helping establish a common vocabulary for every discipline that's invested in the success of the company's digital products. Establishing this common vocabulary can lead to more efficient work, better communication, and more collaboration between disciplines across the organization. It makes a lot of sense to create a resource
 
-Take the carousel (please!). This component is amazingly complex from an organizational standpoint. A homepage carousel on an e-commerce website requires input from a myriad of disciplines across the organization. Business owners and editorial staff must choose products that align with . Copywriters must ensure the copy stays within character limits. Art directors must ensure the aesthetic design is pleasing and the product photography is legible across every screen size.  UX designers, front-end people, backend people, and so on.
+Take the carousel (please!). This component is amazingly complex from an organizational standpoint. A homepage carousel on an e-commerce website requires input from a myriad of disciplines across the organization. Business owners and editorial staff must choose products to be featured in the carousel. Copywriters must ensure the copy is effective and stays within the constraints of the design. Art directors must ensure the aesthetic design is pleasing and the product photography is legible across every screen size.  UX designers need to ensure the functionality . Front-end people need to make sure the component is responsive, accessible, and performant. Backend developers need to make sure the component is wired up properly. You get the idea. 
 
 {% include figure.html src="../images/fpo.png" caption="Spectrum of design system users" %}
 
-As mentioned earlier in the chapter, every discipline can and should influence the design system. The pattern library containing that carousel pattern should be accessible to all these disciplines, and should contain documentation from each perspective
+A style guide with proper documentation can help manage all these moving parts. As mentioned earlier in the chapter, every discipline can and should influence the design system. The pattern library containing that carousel pattern should be accessible to all these disciplines, and should contain documentation from each perspective
 
 Avoid exposing tons of code right out of the gate as it might discourage other disciplines from looking at it ("Oh this must not be for me")
 
@@ -243,13 +243,20 @@ What does a successful
 Making a design system last means consistently . It needs to be visible and stay in the front of everyone's minds. 
 
 ### Communicating change
-You can create the best style guide in world, use all the right technology, have buy-in from the higher ups, have an amazing team in place, and have excited users, but if you don't communicate updates and changes to the design system the entire effort will suffer.
+You can create the best style guide in world, use the most appropriate technology, have an amazing team in place, and have excited users, but if you don't communicate updates and changes to the design system the entire effort will suffer.
 
-It's essential to put a comprehensive communication strategy in place so the design system makers, users, and other stakeholders are aware of the latest changes to and thinking around the design system. Especially in the early days of the initiative, frequent and comprehensive communication helps keep the design system in the front of everyone's mind so it takes root and becomes an integral part of your organization's workflow. As time goes on, frequent communication helps the system increase in value like that fine bottle of wine.
+**It's essential to establish a comprehensive communication strategy** so that makers, users, and other stakeholders are well aware of  all the latest changes to and thinking around the design system. This is especially important in the early days of the initiative. Frequent communication helps keep the design system in the front of everyone's mind so it takes root and becomes an integral part of your organization's workflow. 
+
+**As time goes on, frequent communication helps the system increase in value like that fine bottle of wine**. Communication can include: 
+
+- Change logs ("Here's what's changed in the pattern library this month")
+- Roadmaps ("Here's what's coming up over the next few months")
+- requests for feedback ("We're considering deprecating our carousel pattern and would like to hear what you think."),
+- Surveys ("On a scale from 1-5, how useful is the pattern documentation?")
+- Success stories ("Team X launched this new feature using the design system; read more about how they did it.")
+- Resources ("Here's a great article about documenting ")
 
 **Design system changes, updates, and requests should be communicated wherever your team hangs out**. That may include Slack, BaseCamp, Github, wikis, Yammer, email lists, company blogs, intranets, and any other internal tools your team uses to communicate and collaborate. 
-
-Surveys, feedback, change logs, roadmaps, success stories,  
 
 - Publish updates (Material Design example)
 - Notifications - Regular E-mail newsletters, blog updates, etc, whenever things change, Slack integrations, 
