@@ -57,7 +57,7 @@ As you embark on this journey, let's talk about things you can do to craft a des
 - Make it maintainable.
 - Make it cross-disciplinary.
 - Make it approachable.
-- Make it visible.
+- Make it public.
 - Make it bigger.
 - Make it agnostic.
 - Make it contextual.
@@ -68,7 +68,7 @@ Let's go into each one of these points in more detail.
 ## Make it official
 Your initial style guide may begin its life as a side project, result of a weekend hackathon, or as the brainchild of one or two ambitious team members. As we discussed in the last chapter, your client or boss doesn't even have to know that you're creating a thoughtful design system and accompanying pattern library. Remember: ask forgiveness, not permission!
 
-Organic beginnings are all well and good, but in order to establish a truly impactful design system that creates longterm success for your organization, **the design system needs to evolve into an officially-sanctioned endeavor**. That means thinking of it as a product rather than a simple side project, and allocating real time, budget, and people to it.
+Organic beginnings are all well and good, but in order to establish a truly impactful design system that creates long-term success for your organization, **the design system needs to evolve into an officially-sanctioned endeavor**. That means thinking of it as a product rather than a simple side project, and allocating real time, budget, and people to it.
 
 Convincing stakeholders to commit a large chunk of money, time, and resources upfront for a design system can be extremely challenging. So what are we to do? Here's my advice:
 
@@ -209,12 +209,24 @@ But creating a great-looking, intuitive style guide experience doesn't just happ
 
 Creating a useful design system should be the team's first priority. A happy home to contain it all might not happen right out of the gate, but should become a bigger priority once the design system becomes official. Making a good-looking style guide isn't just design for design's sake; **it reflects an organization’s commitment to making and maintaining a thoughtful, deliberate design system**.
 
-## Make it visible
-At the end of the day, style guides are more often than not internal resources to help internal teams work better together.
-- Make it public.
-- Creates a sense of accountability for the organization, which better ensures the design system is utilized and doesn’t just die on the vine.
-- Recruitment, recruitment, recruitment.
-- as designers and developers are looking to work at organizations that embrace modern Web best practices. Jina Bolton went to Salesforce after seeing their Salesforce1 style guide. 
+## Make it public
+Another way to set your design system up for long-term success is to **make your style guide publicly accessible**.
+
+But why? After all, isn't a style guide merely an internal resource to help your organization work better together? What use is it to the outside world? And wouldn't publishing your style guide give away all your trade secrets?
+
+**Publishing your style guide for the world to see increases its visibility, increases accountability, and serves as an amazing recruitment tool**.
+
+Putting your style guide behind a login or firewall reduces visibility and adds an unnecessary burden for your team and partners, which limits the resource's effectiveness and potential. And the fears about giving away your trade secrets are completely unfounded. These are UI patterns, not nuclear codes.
+
+{% include figure.html src="../images/fpo.png" caption="Stlyeguides.io rounds up over 150 public-facing style guides from organizations across the world." %}
+
+In addition to making important documentation easier to access, a public style guide **helps create organizational accountability**. Publishing your style guide demonstrates your organization's commitment to the design system, which creates a helpful bit of pressure to keep it an up-to-date and useful resource. 
+
+Public-facing style guides are also **hugely helpful for recruiting efforts**. Designers, developers, and other disciplines are looking to work at organizations that embrace modern digital best practices, and (as we've discussed throughout this book) design systems are quickly becoming an industry-wide best practice. Publishing your style guide sends out a strong bat signal that can attract passionate, pattern-minded people. For instance, style guide expert Jina Bolton went to work at Salesforce after seeing their Salesforce1 style guide. 
+
+> When I saw Salesforce’s style guide I thought it was beautiful and it's why I wanted to join this team. <cite><a href="http://styleguides.io/podcast/jina-bolton">Jina Bolton</a>
+
+Since joining Salesforce, she's helped create the ultra-successful Lightning Design System and helps manage their growing design system team. Jina's story is not an isolated one; almost every guest Anna Debenham and I interviewed on the [Styleguides Podcast(http://styleguides.io/podcast) discussed how helpful their public-facing pattern library was for attracting talent.
 
 ## Make it bigger
 In chapter 1, we discussed the six different types of style guides. When a design system has proven to be valuable and there's a solid home base set up to house it, there's an opportunity to extend that home to include things like voice and tone, brand, code, design principles and writing guidelines. Now, every organization may not necessarily need all of these elements, but the point is that once a hub is set up . 
