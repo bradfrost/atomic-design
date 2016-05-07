@@ -51,7 +51,7 @@ If we're committed to creating genuinely useful work that truly meets the needs 
 The web is never done, and the creation of a design system is merely the first step in a long (and hopefully fruitful!) journey. A design system should be a long-term commitment with the ambitious goal of revolutionizing how your organization creates digital work. Exciting, eh?! So how do we make sure that happens?
 
 ## Creating Maintainable Design Systems
-As you embark on this journey, let's talk about things you can do to craft a design system that sets your organization up for long-term success. How do you create a design system that takes root and becomes an essential part of your organization's workflow? What pitfalls do you need to be on the lookout for? How do you ensure the design system yields big results? Here's what we need to do:
+As you embark on this journey, let's talk about things you can do to craft a design system that sets your organization up for long-term success. How do you create a design system that takes root and becomes an essential part of your organization's workflow? What pitfalls do you need to be on the lookout for? How do you ensure the design system yields big results? To answer these questions, we need to:
 
 - Make it official.
 - Make it maintainable.
@@ -68,7 +68,7 @@ Let's go into each one of these points in more detail.
 ## Make it official
 Your initial style guide may begin its life as a side project, result of a weekend hackathon, or as the brainchild of one or two ambitious team members. As we discussed in the last chapter, your client or boss doesn't even have to know that you're creating a thoughtful design system and accompanying pattern library. Remember: ask forgiveness, not permission!
 
-Organic beginnings are all well and good, but in order to create a truly impactful design system that creates longterm success for your organization, **the design system needs to evolve into an officially-sanctioned endeavor rather than a side project**. That means thinking of it as a product and allocating real time, budget, and people to it.
+Organic beginnings are all well and good, but in order to establish a truly impactful design system that creates longterm success for your organization, **the design system needs to evolve into an officially-sanctioned endeavor**. That means thinking of it as a product rather than a simple side project, and allocating real time, budget, and people to it.
 
 Convincing stakeholders to commit a large chunk of money, time, and resources upfront for a design system can be extremely challenging. So what are we to do? Here's my advice:
 
@@ -79,19 +79,19 @@ Convincing stakeholders to commit a large chunk of money, time, and resources up
 Let's break down these steps a bit further.
 
 ### Step 1: make a thing
-You have to start somewhere, and having something started is better than nothing at all. Pick a project that would be a great pilot for establishing your design system, follow a process similar to the one discussed in [chapter 4](/chapter-4/), think about the atomic design mental model detailed in [chapter 2](/chapter-2/), and you'll end up with a solid foundation for a thoughtful design system and pattern library that helps your team work more effectively and thoughtfully. 
+You have to start somewhere, and having something started is better than nothing at all. Pick a project that would be a great pilot for establishing your design system, follow a process similar to the one discussed in [chapter 4](/chapter-4/), think about the atomic design mental model detailed in [chapter 2](/chapter-2/), and you'll end up with a solid foundation for a thoughtful design system and pattern library that helps your team work more effectively. 
 
-Take the time to package your UI patterns in a pattern library and get it ready to shop around. I've talked to several ambitious team members who have built the basic gist of a pattern library over the course of a weekend. This effort makes all the difference in the world since it gives something tangible for stakeholders to react to. Again: *show, don't tell*.
+Take the time to package your UI patterns in a pattern library and get it ready to shop around. I've talked to several ambitious team members who have built the basic gist of their pattern library over the course of a weekend. This effort makes all the difference in the world since it gives something tangible for stakeholders to react to. Again: *show, don't tell*.
 
 ### Step 2: show that it's useful 
-With a nascent-yet-tangible design system in place, you can have a more meaningful conversation with people who control money, scheduling, and resources. You can discuss exactly how the design system helped save time and money (see *[Pitching Patterns](/chapter-4/#pitching-patterns)* in the last chapter), then paint a picture for how those benefits would scale even further if the organization invested in an official, robust design system. 
+With a nascent-yet-tangible design system in place, you can have a more meaningful conversation with the people who control money, scheduling, and resources. You can discuss exactly how the design system helped save time and money (see *[Pitching Patterns](/chapter-4/#pitching-patterns)* in the last chapter), then paint a picture for how those benefits would scale even further if the organization invested in an official, robust design system. 
 
-Get team members across disciplines who have directly benefitted from the initial system to back you up, and pull in other people who are sympathetic to the cause that would stand to benefit from an expanded design system. 
+Get team members from different disciplines to back you up and discuss the initial success of the system, and also pull in others who are sympathetic to the cause that would stand to benefit from an expanded design system. 
 
 ### Step 3: make it official
-You've proven the value of your design system and presented a roadmap for how to make it even better. With any luck your organization will commit to making the design system an Official Thing. 
+You've proven the value of your initial design system and presented a roadmap for how to make it even better. With any luck your organization will commit to making the design system an Official Thing. 
 
-With approval from the highest levels, you're now able to put a plan into action that involves: allocating and/or hiring people to work on the design system, developing a plan to make the design system more comprehensive, establish a governance strategy, and lay out a product roadmap for the design system.
+With approval from the highest levels, you're now able to put a plan into action that involves: allocating and/or hiring people to work on the design system, developing a plan to make the design system more comprehensive, establishing a governance strategy, and laying out a product roadmap for the design system.
 
 Now it's worth pointing out that things might not shake out the way you hoped. Despite demonstrating real value and presenting a concrete plan of action, higher ups still might shoot your initiative down. **Don't be discouraged**. You may have lost the battle, but you certainly haven't lost the war. Your team should continue to grow and extend the design system (in whatever capacity you can) until its value becomes undeniable. As more people benefit from the system, you'll have a groundswell of support to help push the endeavor through.
 
