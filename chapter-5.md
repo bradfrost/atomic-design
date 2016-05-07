@@ -93,7 +93,7 @@ You've proven the value of your initial design system and presented a roadmap fo
 
 With approval from the highest levels, you're now able to put a plan into action that involves: allocating and/or hiring people to work on the design system, developing a plan to make the design system more comprehensive, establishing a governance strategy, and laying out a product roadmap for the design system.
 
-Now it's worth pointing out that things might not shake out the way you hoped. Despite demonstrating real value and presenting a concrete plan of action, higher ups still might shoot your initiative down. **Don't be discouraged**. You may have lost the battle, but you certainly haven't lost the war. Your team should continue to grow and extend the design system (in whatever capacity you can) until its value becomes undeniable. As more people benefit from the system, you'll have a groundswell of support to help push the endeavor through.
+Now it's worth pointing out that (as with many things in life) things may not shake out the way you hoped. Despite demonstrating real value and presenting a concrete plan of action, higher ups still might shoot your initiative down. **Don't be discouraged**. You may have lost the battle, but you certainly haven't lost the war. Your team should continue to grow and extend the design system (in whatever capacity you can) until its value becomes undeniable. As more people benefit from the system, you'll have a groundswell of support to help push the endeavor through.
 
 ### Establishing a design system team
 With the design system initiative approved, it's now time to put the right people and processes in place to ensure the system flourishes for your organization.
@@ -101,20 +101,20 @@ With the design system initiative approved, it's now time to put the right peopl
 #### Design system makers and users
 First things first. It's important to recognize that **there will inevitably be people at the organization that help <em>make and maintain</em> the design system, and there will be other people who will be <em>users</em> of the design system**. These two groups may not be mutually exclusive, but establishing the roles of makers and users is important.
 
-When I talk about establishing a more collaborative process like the one I detailed in the last chapter, I inevitably hear people who work at large organizations say, "but Brad, we have hundreds (or thousands) of developers working on our products, so getting all those people to collaborate and contribute like that would be far too difficult."
+When I talk about establishing a more collaborative process like the one I detailed in the last chapter, I inevitably hear people who work at large organizations say, "but Brad, we have hundreds (or even thousands) of developers working on our products, so getting all those people to collaborate and contribute like that would be far too difficult."
 
 They're likely right. It would be ideal if the entire organization adopted more nimble, collaborative processes, but the daunting logistics around such an effort makes it improbable. Not everyone in the organization needs to directly contribute to the design system, but someone (or more likely, some people) must take ownership of it.
 
-**The design system <em>makers</em> are the ones who architect, create, and maintain the system**, and they need to work closely together to ensure that the system is smart, flexible, scalable, and addresses the needs of the business and users. **The design system <em>users</em> are the teams across the organization who will take the system and employ its interface patterns to specific applications**. 
+**The design system <em>makers</em> are the ones who architect, create, and maintain the system**, and they need to work closely together to ensure that the system is smart, flexible, scalable, and addresses the needs of the users and business. **The design system <em>users</em> are the teams across the organization who will take the system and employ its interface patterns to specific applications**. 
 
-**The design system <em>makers</em> and design system <em>users</em> need to maintain a close working relationship** to ensure the patterns defined within the system serve the needs of the applications and all documentation is clear. **Makers provide a birds-eye perspective of the entire ecosystem the design system serves, while users provide an on-the-ground perspective focused on the application of the system**. Both perspectives are critical to the success of the design system, which is why it's so important for makers and users to have a healthy relationship that involves frequent communication and collaboration. 
+**The design system <em>makers</em> and design system <em>users</em> need to maintain a close working relationship** to ensure the patterns defined within the system serve the needs of the applications and all documentation is clear. **Makers provide a birds-eye perspective of the entire ecosystem the design system serves, while users provide an on-the-ground perspective focused on the applications of the system**. Both perspectives are critical to the success of the design system, which is why it's so important for makers and users to have a healthy relationship that involves frequent communication and collaboration. 
 
 #### Who are the design system makers?
 Who updates the design system? Who approves changes? Who interfaces with the users of the design system to make sure it's addressing their needs? Who gets to decide which patterns stay, go, or need tweaked? 
 
 The answers to these questions **will very much depend on the size and setup of your organization**.
 
-**Large organizations** like Salesforce maintain an official *design systems team*, which currently includes about a dozen full-time employees last I heard. That dedicated team is responsible for governing the design system and making sure it's meeting the needs of the myriad internal product teams, as well as external developers that build things on the company's platform. When a design system is serving literally thousands of  users, it's a smart idea to dedicate at least a few full-time employees to maintain the system.
+**Large organizations** like Salesforce maintain an official *design systems team*, which currently includes about a dozen full-time employees last I heard. That dedicated team is responsible for governing the design system and making sure it's meeting the needs of the myriad internal product teams, as well as external developers that build things on the company's platform. When a design system is serving literally thousands of  users, it's a smart idea to dedicate at least a few full-time employees to manage and grow the system.
 
 {% include figure.html src="../images/fpo.png" caption="" %}
 
@@ -133,7 +133,7 @@ But on the other hand, **external parties can often provide a sense of perspecti
 #### Who are the design system users?
 Who are the people responsible for using the design system to build new features and applications? Who are the people that communicate with the system makers to report issues and request features?
 
-Again, the answers to these questions will largely depend on your organization's size and structure.
+Once again, the answers to these questions will largely depend on your organization's size and structure.
 
 **Design system users may be the same team creating the design system, separate development teams within your organization, junior-level designers and developers, third-party agencies, offshore developers, and/or other external development teams**. 
 
@@ -141,19 +141,19 @@ Users' proximity to and involvement in the creation of the design system will un
 
 {% include figure.html src="../images/fpo.png" caption="Spectrum of design system users" %}
 
-One of the biggest advantages of establishing a sound design system is that it allows organizations to scale best practices. If all those best practices — responsiveness, accessibility, performance, UX, ergonomics, and so on — are baked into the system's UI patterns, users can simply plug in the patterns and reap the rewards. This means design system users don't have to be senior-level designers or developers to produce good work; the design system serves as quality control to help users apply best practices regardless of each person's skill level.
+One of the biggest advantages of establishing a thoughtful design system is that it allows organizations to scale best practices. If all those best practices — responsiveness, accessibility, performance, UX, ergonomics, and so on — are baked into the system's UI patterns, users can simply plug in the patterns and reap the rewards. This means design system users don't have to be senior-level designers or developers to produce good work; the design system serves as quality control vehicle that helps users apply best practices regardless of each person's skill level.
 
 ### Design system team makeup
-**A cross-disciplinary team should be established in order to manage, maintain, and extend the system**. All disciplines at an organization — UX designers, visual designers, content strategists, frontend developers, backend developers, product managers, project managers, executives, and other stakeholders — have a unique perspective that can undoubtedly inform and shape the work. Incorporating these perspectives into the system is important, but doesn't necessarily require every discipline to  always be actively involved in developing the design system.
+**A cross-disciplinary team should be established in order to manage, maintain, and extend the system**. All disciplines at an organization — UX designers, visual designers, content strategists, frontend developers, backend developers, product managers, project managers, executives, and other stakeholders — have unique perspectives that can undoubtedly inform and shape the work. Incorporating these perspectives into the design system is important, but doesn't necessarily require every discipline to constantly be involved in developing the design system.
 
-There will inevitably be disciplines that actively do the work, while other disciplines will take on more of an advisory role. The disciplines responsible for designing and building the user interface — UX designers, visual designers, frontend developers — will likely serve as the hands that do the work and make updates to the design system. They should work collaboratively (as detailed in the last chapter) and coordinate with the other disciplines.
+There will inevitably be disciplines that actively do the work, while other disciplines may take on more of an advisory role. The disciplines responsible for designing and building the user interface — UX designers, visual designers, frontend developers — will likely serve as the hands that do the work and make updates to the design system. They should work collaboratively (as detailed in the last chapter) and coordinate with the other disciplines to ensure that the system reflects the values and considerations of the entire business.
 
 Other disciplines may not be the ones actively doing the work, but must be consulted to make sure their perspectives are properly reflected in the system. Backend engineers need to make the team aware of any architectural decisions that would affect the frontend UI, executives need to make the team aware of important initiatives that will affect the role and utility of the system, and of course design system users need to coordinate with the makers to ensure the system is serving the needs of individual applications. 
 
 {% include figure.html src="../images/fpo.png" caption="" %}
 
 ## Make it maintainable
-Many pattern libraries fall into a state of disrepair because the effort required to update patterns and documentation is far too high. If a pattern library is difficult and time consuming to update, people will eventually stop updating it and the pattern library will begin its drift into oblivion. Making updates to UI patterns and documentation should be as frictionless as possible, so reducing this friction should become a high priority for the team responsible for maintaining it. This involves careful consideration from both a technological and workflow standpoint.
+Many pattern libraries fall into a state of disrepair because the effort required to update patterns and documentation is far too high. If a pattern library is difficult and time consuming to update, people will eventually stop updating it and the pattern library will begin its drift into oblivion. Making updates to UI patterns and documentation should be as frictionless as possible, so reducing this friction should become a high priority for the design system team. This involves careful consideration from both a technological and workflow standpoint.
 
 ### In search of the Holy Grail
 **The design system Holy Grail involves creating an environment where the pattern library and production environment are perfectly in sync**. The idea is that you should be able to make a change to a UI pattern and see those changes automatically reflected in both the pattern library and anywhere the pattern is included in production. 
@@ -162,11 +162,13 @@ Many pattern libraries fall into a state of disrepair because the effort require
 
 The Holy Grail removes any duplication of effort and ensures the pattern library and the applications using the patterns remain synchronized. Sounds like a dream, right?
 
-As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, established a Holy Grail-style design system they call [Rizzo](http://rizzo.lonelyplanet.com/). It involves an API for their UI patterns that feeds both their production environments as well as their pattern library. 
+As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, established a Holy Grail-style design system they call [Rizzo](http://rizzo.lonelyplanet.com/). They created an API for their UI patterns that feeds into both their production environments as well as their pattern library. The result is a centralized design system that ensures their live application and documentation remains perfectly in sync with one another.
 
 {% include figure.html src="../images/content/rizzo.png" caption="Lonely Planet created an API for their UI patterns that is consumed by both their pattern library and production environment. By architecting their design system in this manner, changes to UI patterns are automatically reflected in both the pattern library and production environment, keeping things in sync and thereby achieving the Holy Grail." %}
 
-Achieving the design system Holy Grail is no easy task, as it requires sophisticated technical architecture and smart people to set it all up. How you go about chasing the Holy Grail — or even if you can achieve it — is dependent on a whole load of factors. will very much depend on the technical and cultural makeup of your organization.
+Achieving the design system Holy Grail is no easy task, as it requires sophisticated technical architecture and smart people to set it all up. How you go about chasing the Holy Grail — or even if you can achieve it — is dependent on a whole load of factors, including your technical architecture and organizational makeup.
+
+-------
 
 In my experience, I've found that sharing CSS and JS with the production environment is relatively easy, but sharing markup is tough. 
 
@@ -184,22 +186,20 @@ When technology can't achieve maintainable design systems, you must rely on crea
 ## Make it cross-disciplinary
 Style guides often jump straight into code snippets and pattern usage for the benefit of the design system users. Of course a pattern library needs to be helpful for the people actually making use of the patterns, but **treating a style guide solely a developer resource limits its potential**.
 
-**A style guide has the opportunity to serve as a watering hole for the entire organization**, helping establish a common vocabulary for every discipline that's invested in the success of the company's digital products. Establishing this common vocabulary can lead to more efficient work, better communication, and more collaboration between disciplines across the organization. It makes a lot of sense to create a resource
+**A style guide has the opportunity to serve as a watering hole for the entire organization**, helping establish a common vocabulary for every discipline invested in the success of the company's digital products. Establishing this common vocabulary can lead to more efficient work, better communication, and more collaboration between disciplines across the organization. That's why the style guide should be an inviting place for everybody, not just design system users.
 
-Take the carousel (please!). This component is amazingly complex from an organizational standpoint. A homepage carousel on an e-commerce website requires input from a myriad of disciplines across the organization. Business owners and editorial staff must choose products to be featured in the carousel. Copywriters must ensure the copy is effective and stays within the constraints of the design. Art directors must ensure the aesthetic design is pleasing and the product photography is legible across every screen size.  UX designers need to ensure the functionality . Front-end people need to make sure the component is responsive, accessible, and performant. Backend developers need to make sure the component is wired up properly. You get the idea. 
+Take the carousel (please!). This component is amazingly complex from an organizational standpoint. A homepage carousel on an e-commerce website requires input from a myriad of disciplines across the organization. Business owners and editorial staff must choose products to be featured in the carousel. Copywriters must ensure the copy is effective and stays within the constraints of the design. Art directors must ensure the aesthetic design is pleasing and the product photography is legible across every screen size. UX designers need to ensure the functionality and controls are intuitive. Front-end people need to make sure the component is responsive, accessible, and performant. Backend developers need to make sure the component is properly wired up to the backend system. You get the idea. 
 
-{% include figure.html src="../images/fpo.png" caption="Spectrum of design system users" %}
+{% include figure.html src="../images/fpo.png" caption="Walmart carousel example" %}
 
-A style guide with proper documentation can help manage all these moving parts. As mentioned earlier in the chapter, every discipline can and should influence the design system. The pattern library containing that carousel pattern should be accessible to all these disciplines, and should contain documentation from each perspective
-
-Avoid exposing tons of code right out of the gate as it might discourage other disciplines from looking at it ("Oh this must not be for me")
+A well-crafted style guide can help manage all these moving parts and ensure the many perspectives that influence each pattern are properly documented in the style guide. Make the pattern library accessible to every discipline, and think about how to make it easy and inviting for different disciplines to contribute to the documentation. 
 
 ## Make it approachable
-This should come as a surprise to no one, but people tend to gravitate towards attractive things. The container that houses your pattern library and other documentation should be good-looking, inviting, and easy to navigate.
+This should come as a surprise to no one, but people tend to gravitate towards attractive things. A big part of making a style guide a cross-disciplinary resource is ensuring the container that houses your pattern library and other documentation is good-looking, inviting, and easy to navigate.
 
 {% include figure.html src="../images/fpo.png" caption="Yelp's style guide has an attractive, friendly front page that explains what the resource is, who it's for, and how to use it." %}
 
-Taking the time to craft an attractive home for your style guide and documentation can lead to more usage, helps build awareness,    helps the organization become more invested in the concept, and helps get non-developers' eyeballs on the style guide, resulting in a shared vocabulary and better cross-disciplinary collaboration.
+Taking the time to craft an attractive home for your style guide and documentation can lead to more usage, help build awareness,    help create organizational investment, and help get non-developers' eyeballs on the style guide. All of this contributes to that important shared vocabulary that leads to better cross-disciplinary collaboration.
 
 But creating a great-looking, intuitive style guide experience doesn't just happen, and this can be problematic when getting a style guide off the ground. If teams think that making a useful style guide involves making some Big, Official Thing with custom branding and a glossy website, they might be deterred from ever starting the initiative. So remember: 
 
