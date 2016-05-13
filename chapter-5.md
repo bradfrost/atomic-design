@@ -222,22 +222,27 @@ Putting your style guide behind a login or firewall reduces visibility and adds 
 
 In addition to making important documentation easier to access, a public style guide **helps create organizational accountability**. Publishing your style guide demonstrates your organization's commitment to the design system, which creates a helpful bit of pressure to keep it an up-to-date and useful resource. 
 
-Public-facing style guides are also **hugely helpful for recruiting efforts**. Designers, developers, and other disciplines are looking to work at organizations that embrace modern digital best practices, and (as we've discussed throughout this book) design systems are quickly becoming an industry-wide best practice. Publishing your style guide sends out a strong bat signal that can attract passionate, pattern-minded people. For instance, style guide expert Jina Bolton went to work at Salesforce after seeing their Salesforce1 style guide. 
+Public-facing style guides are also **hugely helpful for recruiting efforts**. Designers, developers, and other disciplines are looking to work at organizations that embrace modern digital best practices, and (as we've discussed throughout this book) design systems are quickly becoming an industry-wide best practice. Publishing your style guide sends out a strong bat signal that can attract passionate, pattern-minded people. For instance, style guide expert Jina Bolton went to work at Salesforce after seeing the company's style guide for their Salesforce1 product. 
 
 > When I saw Salesforce’s style guide I thought it was beautiful and it's why I wanted to join this team. <cite><a href="http://styleguides.io/podcast/jina-bolton">Jina Bolton</a>
 
-Since joining Salesforce, she's helped create the ultra-successful Lightning Design System and helps manage their growing design system team. Jina's story is not an isolated one; almost every guest Anna Debenham and I interviewed on the [Styleguides Podcast(http://styleguides.io/podcast) discussed how helpful their public-facing pattern library was for attracting talent.
+Since joining Salesforce, she's helped create the ultra-successful Lightning Design System and helps manage their growing design system team. Jina's story is not an isolated one; almost every guest Anna Debenham and I interviewed on the [Styleguides Podcast(http://styleguides.io/podcast) discussed how helpful their public-facing pattern library was for attracting talent. All that means that your a public style guide makes your organization *more* competitive, not less.
 
 ## Make it bigger
-In chapter 1, we discussed the six different types of style guides. When a design system has proven to be valuable and there's a solid home base set up to house it, there's an opportunity to extend that home to include things like voice and tone, brand, code, design principles and writing guidelines. Now, every organization may not necessarily need all of these elements, but the point is that once a hub is set up . 
+A visible, cross-disciplinary, approachable pattern library is one that your team will frequently reference. Use that to your advantage. Since the team's eyeballs are already fixated on that one resource, there's a big opportunity to extend it to include other helpful documentation like the voice and tone, brand, code, design principles and writing guidelines we discussed in chapter 1. 
+
+{% include figure.html src="../images/fpo.png" caption="[find good example] includes brand guidelines, voice and tone, code, and patterns" %}
+
+Now, your organization may not necessitate every flavor of style guide out there, but the point is that **creating a centralized style guide hub builds more awareness of best practices, increasing the documentations' effectiveness**.
 
 ## Make it agnostic
+A sound pattern library 
 - The more agnostic pattern names are, the more versatile and reusable they become.
 - Nicole Sullivan [media object](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/)
 - Naming things is really freaking hard. 
 
 ## Make it contextual
-- Demonstrate context. Where are these patterns utilized? 
+Showcasing UI patterns in a pattern library is all well and good  Demonstrate context. Where are these patterns utilized? 
 - Pattern Lab lineage
 - Helps with QA efforts. If changes are made to a pattern, you'll know exactly which templates will need retested to ensure things held up. 
 
