@@ -236,10 +236,11 @@ A visible, cross-disciplinary, approachable pattern library is one that your tea
 Now, your organization may not necessitate every flavor of style guide out there, but the point is that **creating a centralized style guide hub builds more awareness of best practices, increasing the documentations' effectiveness**.
 
 ## Make it agnostic
-A sound pattern library 
-- The more agnostic pattern names are, the more versatile and reusable they become.
-- Nicole Sullivan [media object](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/)
-- Naming things is really freaking hard. 
+Your design system's patterns need names, and effective ones at that. Naming patterns is 
+
+**The more agnostic pattern names are, the more versatile and reusable they become**. Nicole Sullivan [media object](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/)
+
+Separate structure and context to make more versatile patterns. Rather than "homepage carousel" (forgive my morbid obsession with carousels), try "carousel" instead. That means you can put carousels everywhere! (but please don't)
 
 ## Make it contextual
 Showcasing UI patterns in a pattern library is all well and good  Demonstrate context. Where are these patterns utilized? 
