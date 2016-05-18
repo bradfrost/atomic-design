@@ -227,7 +227,7 @@
 <p>One of the biggest advantages of establishing a thoughtful design system is that it allows organizations to scale best practices. If all those best practices — responsiveness, accessibility, performance, UX, ergonomics, and so on — are baked into the system’s UI patterns, users can simply plug in the patterns and reap the rewards. This means design system users don’t have to be senior-level designers or developers to produce good work; the design system serves as quality control vehicle that helps users apply best practices regardless of each person’s skill level.</p>
 
 <h3 id="design-system-team-makeup">Design system team makeup</h3>
-<p><strong>A cross-disciplinary team should be established in order to manage, maintain, and extend the system</strong>. All disciplines at an organization — UX designers, visual designers, content strategists, frontend developers, backend developers, product managers, project managers, executives, and other stakeholders — have unique perspectives that can undoubtedly inform and shape the work. Incorporating these perspectives into the design system is important, but doesn’t necessarily require every discipline to constantly be involved in developing the design system.</p>
+<p><strong>A cross-disciplinary team should be established in order to properly manage, maintain, and extend the system</strong>. All disciplines at an organization — UX designers, visual designers, content strategists, frontend developers, backend developers, product managers, project managers, executives, and other stakeholders — have unique perspectives that can undoubtedly inform and shape the work. Incorporating these perspectives into the design system is important, but doesn’t necessarily require every discipline to constantly be involved in developing the design system.</p>
 
 <p>There will inevitably be disciplines that actively do the work, while other disciplines may take on more of an advisory role. The disciplines responsible for designing and building the user interface — UX designers, visual designers, frontend developers — will likely serve as the hands that do the work and make updates to the design system. They should work collaboratively (as detailed in the last chapter) and coordinate with the other disciplines to ensure that the system reflects the values and considerations of the entire business.</p>
 
@@ -351,20 +351,31 @@
 <p>A visible, cross-disciplinary, approachable pattern library is one that your team will frequently reference. Use that to your advantage. Since the team’s eyeballs are already fixated on that one resource, there’s a big opportunity to extend it to include other helpful documentation like the voice and tone, brand, code, design principles and writing guidelines we discussed in chapter 1. </p>
 
 <figure>
-    <img src="../images/fpo.png" alt="[find good example] includes brand guidelines, voice and tone, code, and patterns" />
+    <img src="../images/fpo.png" alt="[find good example] includes brand guidelines, voice and tone, code, and UI patterns" />
 	<figcaption>
-	    [find good example] includes brand guidelines, voice and tone, code, and patterns
+	    [find good example] includes brand guidelines, voice and tone, code, and UI patterns
 	</figcaption>
 </figure>
 
 <p>Now, your organization may not necessitate every flavor of style guide out there, but the point is that <strong>creating a centralized style guide hub builds more awareness of best practices, increasing the documentations’ effectiveness</strong>.</p>
 
 <h2 id="make-it-agnostic">Make it agnostic</h2>
-<p>Your design system’s patterns need names, and effective ones at that. Naming patterns is </p>
+<p>The way your UI patterns are named will undoubtedly shape how they are used. <strong>The more agnostic pattern names are, the more versatile and reusable they become</strong>.</p>
 
-<p><strong>The more agnostic pattern names are, the more versatile and reusable they become</strong>. Nicole Sullivan <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">media object</a></p>
+<p>Because we establish UI patterns in the context of a broader page, it can be tempting to name components based on where they live. But rather than naming your component “homepage carousel” (forgive my morbid obsession with carousels), you can simply call it “carousel” instead, which means you can now put carousels everywhere! (But for the love of all that is holy, please don’t.)</p>
 
-<p>Separate structure and context to make more versatile patterns. Rather than “homepage carousel” (forgive my morbid obsession with carousels), try “carousel” instead. That means you can put carousels everywhere! (but please don’t)</p>
+<p>Another challenge for naming <em>display</em> patterns is that we tend to get distracted by the <em>content</em> patterns that live inside them. For instance, if working on an e-commerce site, you may be tempted to call a block containing a product image and title a “product card.” But naming things in this manner immediately limits what type of content can live inside it. By naming the pattern simply “card,” now you can put all sorts of content patterns inside it: products, promotions, store locations, etc.</p>
+
+<p>Fair warning: <strong>naming things is really freaking hard</strong>. But there are strategies to help you create sound names for your patterns. Conducting an interface inventory (as detailed in chapter 4) helps remove patterns from the context of the page where they normally reside, meaning your team can create names that don’t rely on context. And I’ve conducted naming exercises with teams where we’ve blurred out the content residing inside a pattern so everyone can focus on the pattern’s <em>structure</em> rather than the <em>content</em> that lives inside it.</p>
+
+<figure>
+    <img src="../images/fpo.png" alt="When naming patterns, try blurring out their content so that your names reflect the patterns' structure rather than the content  that lives inside them." />
+	<figcaption>
+	    When naming patterns, try blurring out their content so that your names reflect the patterns' structure rather than the content  that lives inside them.
+	</figcaption>
+</figure>
+
+<p>While naming things will always be a challenge, pattern names that are agnostic to context and content will be more portable, reusable, and versatile.</p>
 
 <h2 id="make-it-contextual">Make it contextual</h2>
 <p>Showcasing UI patterns in a pattern library is all well and good  Demonstrate context. Where are these patterns utilized? 
