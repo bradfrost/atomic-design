@@ -242,9 +242,9 @@ Because we establish UI patterns in the context of a broader page, it can be tem
 
 Another challenge for naming *display* patterns is that we tend to get distracted by the *content* patterns that live inside them. For instance, if working on an e-commerce site, you may be tempted to call a block containing a product image and title a "product card." But naming things in this manner immediately limits what type of content can live inside it. By naming the pattern simply "card," now you can put all sorts of content patterns inside it: products, promotions, store locations, etc.
 
-Fair warning: **naming things is really freaking hard**. But there are strategies to help you create sound names for your patterns. Conducting an interface inventory (as detailed in chapter 4) helps remove patterns from the context of the page where they normally reside, meaning your team can create names that don't rely on context. And I've conducted naming exercises with teams where we've blurred out the content residing inside a pattern so everyone can focus on the pattern's *structure* rather than the *content* that lives inside it.
+Fair warning: **naming things is really freaking hard**. But there are strategies to help you create sound names for your patterns. Conducting an interface inventory (as detailed in [chapter 4](/chapter-4/#show-dont-tell-the-power-of-interface-inventories)) helps remove patterns from the context of the page where they normally reside, meaning your team can create names that aren't distracted by their context. And I've conducted naming exercises with teams where we've blurred out the content residing inside a pattern so everyone can focus on the pattern's *structure* rather than the *content* that lives inside it.
 
-{% include figure.html src="../images/fpo.png" caption="When naming patterns, try blurring out their content so that your names reflect the patterns' structure rather than the content  that lives inside them." %}
+{% include figure.html src="../images/content/modal-blur.png" caption="When naming patterns, try blurring out their content so that your names reflect the patterns' structure rather than the content  that lives inside them." %}
 
 While naming things will always be a challenge, pattern names that are agnostic to context and content will be more portable, reusable, and versatile.
 
