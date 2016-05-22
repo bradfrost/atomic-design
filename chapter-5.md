@@ -23,13 +23,13 @@ How can that be?
 We've already discussed the importance of resetting everyone's expectations in order to establish a more collaborative, pattern-driven workflow. In order to save our design systems from the trash can and craft lasting design systems instead, we must once again fundamentally rewire people's brains.
 
 ### What is it we're making again?
-We *think* we merely design and build websites. And that's true for the most part. After all, that's what our clients pay us to do, and the products we create are the vehicles that generate money and success for an organization. So it seems natural to focus on the final implementations rather than the underlying system. With this mentality, the live products remain the primary focus of everyone's attention, while any pattern library exists as an offshoot that provides helpful documentation for the final products.
+We *think* we merely design and build websites and apps. And that's true for the most part. After all, that's what our clients pay us to do, and the products we create are the vehicles that generate money and success for an organization. So it seems natural to focus on the final implementations rather than the underlying system. With this mentality, the live products remain the primary focus of everyone's attention, while any pattern library exists as an offshoot that provides helpful documentation for the final products.
 
 {% include figure.html src="../images/content/workflow-website-first.png" caption="" %}
 
 The problem with this mentality is that you can almost see that pattern library snapping off and sliding off into the abyss.  **Once the pattern library ceases to reflect the current state of the products it serves, it becomes obsolete**. And when the pattern library managing the design system is no longer accurate, the website maintenance process devolves into a smattering of hotfixes and ad hoc changes, ruining all the thoughtfulness that went into creating the original design system.
 
-In order to set our design systems up for long-term success, we must fundamentally shift our mentality around just what exactly it is we’re creating. Rather than thinking of the final product our sole responsibility, we must recognize that the design system is what underpins our the final products *and* pattern libraries.
+In order to set our design systems up for long-term success, we must fundamentally shift our mentality around just what exactly it is we’re creating. Rather than thinking of the final product as our sole responsibility, we must recognize that the design system is what underpins our final products *and* pattern libraries.
 
 {% include figure.html src="../images/content/workflow-system-first.png" caption="" %}
 
@@ -37,7 +37,7 @@ This "design system first" mentality inserts a bit of friction into the maintena
 
 Say for instance you're working on an e-commerce site, and you run a test to find a custom-styled dropdown menu on the product detail page isn't performing as well as the browser's default dropdown menu. One course of action is to simply remove the custom-styled dropdown from that particular page and call it a day. However, considering the entire design system rather than just the product detail page might cause you to take a step back and ask, "If this custom dropdown menu isn't performing well here, perhaps it's not performing well elsewhere?" After digging into the issue further, you find the best course of action is to globally modify the dropdown pattern in the design system to remove the custom styling. Now anywhere the dropdown pattern appears will reflect those changes and likely see similar performance improvements.
 
-That is just one example of how design system thinking can lead to broader, more considered changes. **Broken behavior and opportunities to enhance the experience will be realized at the *page* level, but those changes should often be acted on at the *system* level**. Adding this bit of worthwhile friction into your workflow  ensures improvements are shared across the entire design system, and that the system isn't eroded by a continuous series of one-off changes.
+That is just one example of how design system thinking can lead to broader, more considered changes. **Broken behavior and opportunities to enhance the UI will be realized at the *page* level, but those changes should often be acted on at the *system* level**. Adding this bit of worthwhile friction into your workflow ensures improvements are shared across the entire design system, and that the system isn't eroded by a series of one-off changes.
 
 ### Done and done
 Another expectation we must revisit is our definition of *done*. Creating things for print and other physical mediums involve making permanent, tangible objects. There's a sense of finality when creating things for the physical world. That concept simply doesn't exist in the digital world, which means change can happen with much less effort and friction than other mediums. **Clients, colleagues, and stakeholders should embrace the pliable nature of the digital world to create living design systems that adapt to the ever-shifting nature of the medium, user needs, and the needs of the business**. 
@@ -146,9 +146,9 @@ One of the biggest advantages of establishing a thoughtful design system is that
 ### Design system team makeup
 **A cross-disciplinary team should be established in order to properly manage, maintain, and extend the system**. All disciplines at an organization — UX designers, visual designers, content strategists, frontend developers, backend developers, product managers, project managers, executives, and other stakeholders — have unique perspectives that can undoubtedly inform and shape the work. Incorporating these perspectives into the design system is important, but doesn't necessarily require every discipline to constantly be involved in developing the design system.
 
-There will inevitably be disciplines that actively do the work, while other disciplines may take on more of an advisory role. The disciplines responsible for designing and building the user interface — UX designers, visual designers, frontend developers — will likely serve as the hands that do the work and make updates to the design system. They should work collaboratively (as detailed in the last chapter) and coordinate with the other disciplines to ensure that the system reflects the values and considerations of the entire business.
+There will inevitably be disciplines that actively do the work, while other disciplines may take on more of an advisory role. **The disciplines responsible for designing and building the user interface — UX designers, visual designers, frontend developers — will likely serve as the hands that do the work and make updates to the design system**. They should work collaboratively (as detailed in the last chapter) and coordinate with the other disciplines to ensure that the system reflects the values and considerations of the entire business.
 
-Other disciplines may not be the ones actively doing the work, but must be consulted to make sure their perspectives are properly reflected in the system. Backend engineers need to make the team aware of any architectural decisions that would affect the frontend UI, executives need to make the team aware of important initiatives that will affect the role and utility of the system, and of course design system users need to coordinate with the makers to ensure the system is serving the needs of individual applications. 
+**Other disciplines may not be the ones actively doing the work, but must be consulted to make sure their perspectives are properly reflected in the system**. Backend engineers need to make the team aware of any architectural decisions that would affect the frontend UI, executives need to make the team aware of important initiatives that will affect the role and utility of the system, and of course design system users need to coordinate with the makers to ensure the system is serving the needs of individual applications. 
 
 {% include figure.html src="../images/fpo.png" caption="" %}
 
@@ -162,7 +162,7 @@ Many pattern libraries fall into a state of disrepair because the effort require
 
 The Holy Grail removes any duplication of effort and ensures the pattern library and the applications using the patterns remain synchronized. Sounds like a dream, right?
 
-As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, established a Holy Grail-style design system they call [Rizzo](http://rizzo.lonelyplanet.com/). They created an API for their UI patterns that feeds into both their production environments as well as their pattern library. The result is a centralized design system that ensures their live application and documentation remains perfectly in sync with one another.
+As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, established a Holy Grail-style design system they call [Rizzo](http://rizzo.lonelyplanet.com/). They created an API for their UI patterns that feeds into both their production environment as well as their pattern library. The result is a centralized design system that ensures their live application and documentation remains perfectly in sync with one another.
 
 {% include figure.html src="../images/content/rizzo.png" caption="Lonely Planet created an API for their UI patterns that is consumed by both their pattern library and production environment. By architecting their design system in this manner, changes to UI patterns are automatically reflected in both the pattern library and production environment, keeping things in sync and thereby achieving the Holy Grail." %}
 
@@ -179,9 +179,9 @@ In my experience, I've found that sharing CSS and JS with the production environ
 
 How can you set up your applications and pattern library to achieve the Holy Grail? Developer Marcelo Somers outlined several methods for thoughtfully keeping your pattern library and production environments in sync. [Chasing the holy grail](https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.vy45rkm7m)
 
-There are a number of reasons why an organization may not be able to achieve the Holy Grail. Perhaps your organization has digital products on different platforms using wildly different technologies. For instance, the U.S. Web Digital Standards are a collection UI components and visual styles for websites. However, due to the decentralized nature of the , it would be impossible to 
+There are a number of reasons why an organization may *not* be able to achieve the Holy Grail. Perhaps your organization has digital products on many different platforms using wildly different technologies. For example, the U.S. government's design system — called the U.S. Web Digital Standards — is a collection of UI components and visual styles meant to help people making government websites make more consistent UIs. It would be amazing to see a Holy Grail-style system  However, due to the vastness and decentralized nature of the organization, it's not really achievable.
 
-When technology can't achieve maintainable design systems, you must rely on creating a culture that communicates change and enforces that friction 
+Technology alone can't achieve maintainable design systems; you must create a culture that communicates
 
 ## Make it cross-disciplinary
 Style guides often jump straight into code snippets and pattern usage for the benefit of the design system users. Of course a pattern library needs to be helpful for the people actually making use of the patterns, but **treating a style guide solely a developer resource limits its potential**.
@@ -258,7 +258,7 @@ Showcasing UI patterns in a pattern library is all well and good  Demonstrate co
 ### Managing change 
 Change is the only constant, as they say. A successful design system is able to roll with the punches, adapt to feedback, be iterated upon, and evolve alongside the products the system serves. The *living* part of a living design system means that it needs to grow and evolve over time.
 
-**Creating a clear governance plan is essential to make sure your design system will continue to**. Without a clear governance strategy in place, the value your design system may deprecate much like a car that's just been driven off the lot. Instead, your design system should be like a fine wine that increases value over time.
+**Creating a clear governance plan is essential to make sure your design system will continue to thrive as time goes by**. Without a clear governance strategy in place, the value your design system may deprecate much like a car that's just been driven off the lot. Instead, your design system should be like a fine wine that increases value over time.
 
 What does a successful 
 - Schedule regular reviews of the patterns. 
@@ -290,5 +290,18 @@ You can create the best style guide in world, use the most appropriate technolog
 
 - Monitor progress over time - Lonely Planet's Rizzo design system tracks performance metrics over time.
 
+So there you have it. In order to make a maintainable design system, you should:
+
+- **Make it official** by allocating real time, money, and resources to your design system.
+- **Make it maintainable** by seeking the Holy Grail and making it easy to deploy and communicate changes to the design system.
+- **Make it cross-disciplinary** by making your pattern library become a watering hole the entire organization can gather around.
+- **Make it approachable** by making an attractive, easy-to-use pattern library with helpful documentation.
+- **Make it public** to increase your design system's visibility, increases accountability, and help with recruiting efforts.
+- **Make it bigger** by including brand, voice and tone, code, design principles, and writing guidelines. 
+- **Make it agnostic** by naming patterns according to their structure rather than their context or content.
+- **Make it contextual** by demonstrating what patterns make up a particular pattern and showing where each pattern is utilized.
+- **Make it last** by creating a clear governance plan and communicating changes to the design system across the entire organization.
+
 ## Go forth and be atomic
+We're tasked with making user interfaces work well and look great across a dizzying array of different devices, screen sizes, form factors, and environments. I hope that the concepts covered in this book give you solid ground to stand on as you bravely tackle this multi-device universe. By creating design systems, being thoughtful about how you construct user interfaces, establishing a collaborative & pattern-driven workflow, and maintaining your design system, I hope you and your team can create great things together. Go forth and be atomic!
 
