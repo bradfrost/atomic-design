@@ -229,11 +229,15 @@ Public-facing style guides are also **hugely helpful for recruiting efforts**. D
 Since joining Salesforce, she's helped create the ultra-successful Lightning Design System and helps manage their growing design system team. Jina's story is not an isolated one; almost every guest Anna Debenham and I interviewed on the [Styleguides Podcast](http://styleguides.io/podcast) discussed how helpful their public-facing pattern library was for attracting talent. All that means that your a public style guide makes your organization *more* competitive, not less.
 
 ## Make it bigger
-A visible, cross-disciplinary, approachable pattern library is one that your team will frequently reference. Use that to your advantage. Since the team's eyeballs are already fixated on that one resource, there's a big opportunity to extend it to include other helpful documentation like the voice and tone, brand, code, design principles and writing guidelines we discussed in chapter 1. 
+A visible, cross-disciplinary, approachable pattern library is one that your team will come back to again and again. Use that to your advantage. Since the team's eyeballs are already fixated on that one resource, there's a big opportunity to extend it to include other helpful documentation like the voice and tone, brand, code, design principles and writing guidelines we discussed in [chapter 1](/chapter-1/). 
 
-{% include figure.html src="../images/fpo.png" caption="[find good example] includes brand guidelines, voice and tone, code, and UI patterns" %}
+{% include figure.html src="../images/content/styleguide-harmony.png" caption="Intuit's Harmony design system includes a pattern library, design principles, voice and tone, marketing guidelines, and more. Housing this helpful documentation under one roof helps increase its visibility." %}
 
-Now, your organization may not necessitate every flavor of style guide out there, but the point is that **creating a centralized style guide hub builds more awareness of best practices, increasing the documentations' effectiveness**.
+Now, your organization may not need to create every flavor of style guide out there, but the point is that **creating a centralized style guide hub builds more awareness of best practices, increasing the documentation's effectiveness**.
+
+Another way to make the extend the functionality of the pattern library is to include native mobile app patterns alongside any web-based patterns. Once again, Intuit's Harmony design system 
+
+{% include figure.html src="../images/content/styleguide-harmony-2.png" caption="Intuit's Harmony pattern library includes tabs to switch between web, iOS, and Android for each pattern. This allows the team to maintain a mostly consistent design system across platforms but also document pattern divergences when they occur." %}
 
 ## Make it agnostic
 The way your UI patterns are named will undoubtedly shape how they are used. **The more agnostic pattern names are, the more versatile and reusable they become**.
