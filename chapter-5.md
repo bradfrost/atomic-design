@@ -197,7 +197,7 @@ A well-crafted style guide can help manage all these moving parts and ensure the
 ## Make it approachable
 This should come as a surprise to no one, but people tend to gravitate towards attractive things. A big part of making a style guide a cross-disciplinary resource is ensuring the container that houses your pattern library and other documentation is good-looking, inviting, and easy to navigate.
 
-{% include figure.html src="../images/fpo.png" caption="Yelp's style guide has an attractive, friendly front page that explains what the resource is, who it's for, and how to use it." %}
+{% include figure.html src="../images/content/styleguide-yelp.png" caption="Yelp's style guide has an attractive, friendly front page that explains what the resource is, who it's for, and how to use it." %}
 
 Taking the time to craft an attractive home for your style guide and documentation can lead to more usage, help build awareness,    help create organizational investment, and help get non-developers' eyeballs on the style guide. All of this contributes to that important shared vocabulary that leads to better cross-disciplinary collaboration.
 
@@ -218,7 +218,7 @@ But why? After all, isn't a style guide merely an internal resource to help your
 
 Putting your style guide behind a login or firewall reduces visibility and adds an unnecessary burden for your team and partners, which limits the resource's effectiveness and potential. And the fears about giving away your trade secrets are completely unfounded. These are UI patterns, not nuclear codes.
 
-{% include figure.html src="../images/fpo.png" caption="Stlyeguides.io rounds up over 150 public-facing style guides from organizations across the world." %}
+{% include figure.html src="../images/content/styleguides-examples.png" caption="Stlyeguides.io rounds up over 150 public-facing style guides from organizations across the world." %}
 
 In addition to making important documentation easier to access, a public style guide **helps create organizational accountability**. Publishing your style guide demonstrates your organization's commitment to the design system, which creates a helpful bit of pressure to keep it an up-to-date and useful resource. 
 
@@ -226,7 +226,7 @@ Public-facing style guides are also **hugely helpful for recruiting efforts**. D
 
 > When I saw Salesforce’s style guide I thought it was beautiful and it's why I wanted to join this team. <cite><a href="http://styleguides.io/podcast/jina-bolton">Jina Bolton</a>
 
-Since joining Salesforce, she's helped create the ultra-successful Lightning Design System and helps manage their growing design system team. Jina's story is not an isolated one; almost every guest Anna Debenham and I interviewed on the [Styleguides Podcast(http://styleguides.io/podcast) discussed how helpful their public-facing pattern library was for attracting talent. All that means that your a public style guide makes your organization *more* competitive, not less.
+Since joining Salesforce, she's helped create the ultra-successful Lightning Design System and helps manage their growing design system team. Jina's story is not an isolated one; almost every guest Anna Debenham and I interviewed on the [Styleguides Podcast](http://styleguides.io/podcast) discussed how helpful their public-facing pattern library was for attracting talent. All that means that your a public style guide makes your organization *more* competitive, not less.
 
 ## Make it bigger
 A visible, cross-disciplinary, approachable pattern library is one that your team will frequently reference. Use that to your advantage. Since the team's eyeballs are already fixated on that one resource, there's a big opportunity to extend it to include other helpful documentation like the voice and tone, brand, code, design principles and writing guidelines we discussed in chapter 1. 
@@ -249,9 +249,15 @@ Fair warning: **naming things is really freaking hard**. But there are strategie
 While naming things will always be a challenge, pattern names that are agnostic to context and content will be more portable, reusable, and versatile.
 
 ## Make it contextual
-Showcasing UI patterns in a pattern library is all well and good  Demonstrate context. Where are these patterns utilized? 
-- Pattern Lab lineage
-- Helps with QA efforts. If changes are made to a pattern, you'll know exactly which templates will need retested to ensure things held up. 
+Showcasing UI patterns in a pattern library is all well and good, but **you need to demonstrate context in order for design system users to understand how and where to properly use them**. Most pattern libraries show a demo of each UI pattern, but as we've discussed throughout this book, those patterns don't live in a vacuum. Where exactly are these patterns utilized?
+
+One way to demonstrate context might include showing screenshots or videos of a component in action. Material Design's documentation does a fantastic job at this; each component is rich with photos, videos, and usage details to give their users a clear understanding of what these patterns look like in the context of an application and demonstrate how each pattern should be used.
+
+{% include figure.html src="../images/content/material-design-bottom-nav.png" caption="Material Design's component library doesn't just contain an example of each component; it thoroughly documents the component's usage with plenty of images and video to support it." %}
+
+Another way to show context is to provide lineage information for each pattern. As we discussed in Chapter 3, tools like Pattern Lab automatically generate this information which lets you to see which patterns make up any given component, and also show where each component is employed. This provides a sort of pattern paper trail that helps immensely with QA efforts, as it highlights exactly which patterns and templates would need tested if changes were made to a particular pattern.
+
+{% include figure.html src="../images/content/pattern-lab-lineage.png" caption="Tools like Pattern Lab allow teams to see which smaller components make up any given component, as well as where each pattern gets used." %}
 
 ## Make it last
 
@@ -282,7 +288,9 @@ You can create the best style guide in world, use the most appropriate technolog
 
 **Design system changes, updates, and requests should be communicated wherever your team hangs out**. That may include Slack, BaseCamp, Github, wikis, Yammer, email lists, company blogs, intranets, and any other internal tools your team uses to communicate and collaborate. 
 
-- Publish updates (Material Design example)
+- Publish updates 
+{% include figure.html src="../images/fpo.png" caption="(Material Design example)" %}
+
 - Notifications - Regular E-mail newsletters, blog updates, etc, whenever things change, Slack integrations, 
 - email updates, blog posts, video casts, 
 
