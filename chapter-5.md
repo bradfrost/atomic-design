@@ -168,7 +168,7 @@ As it turns out, this dream can be a reality. Lonely Planet, the travel guide co
 
 Achieving the design system Holy Grail is no easy task, as it requires sophisticated technical architecture and smart people to set it all up. How you go about chasing the Holy Grail — or even if you can achieve it — is dependent on a whole load of factors, including your technical architecture and organizational makeup.
 
--------
+[TODO]
 
 In my experience, I've found that sharing CSS and JS with the production environment is relatively easy, but sharing markup is tough. 
 
@@ -182,6 +182,8 @@ How can you set up your applications and pattern library to achieve the Holy Gra
 There are a number of reasons why an organization may *not* be able to achieve the Holy Grail. Perhaps your organization has digital products on many different platforms using wildly different technologies. For example, the U.S. government's design system — called the U.S. Web Digital Standards — is a collection of UI components and visual styles meant to help people making government websites make more consistent UIs. It would be amazing to see a Holy Grail-style system  However, due to the vastness and decentralized nature of the organization, it's not really achievable.
 
 Technology alone can't achieve maintainable design systems; you must create a culture that communicates
+
+[/TODO]
 
 ## Make it cross-disciplinary
 Style guides often jump straight into code snippets and pattern usage for the benefit of the design system users. Of course a pattern library needs to be helpful for the people actually making use of the patterns, but **treating a style guide solely a developer resource limits its potential**.
@@ -265,10 +267,12 @@ Another way to show context is to provide lineage information for each pattern. 
 
 ## Make it last
 
-### Managing change 
-Change is the only constant, as they say. A successful design system is able to roll with the punches, adapt to feedback, be iterated upon, and evolve alongside the products the system serves. The *living* part of a living design system means that it needs to grow and evolve over time.
+[TODO]
 
-**Creating a clear governance plan is essential to make sure your design system will continue to thrive as time goes by**. Without a clear governance strategy in place, the value your design system may deprecate much like a car that's just been driven off the lot. Instead, your design system should be like a fine wine that increases value over time.
+### Managing change 
+Change is the only constant, as they say. A design system is not a  The *living* part of a living design system means that it needs to roll with the punches, adapt to feedback, be iterated upon, and evolve alongside the products it serves.  
+
+**Creating a clear governance plan is essential to make sure your design system will continue to thrive as time goes by**. Without a clear governance strategy in place, the value your design system will deprecate much like a car that's just been driven off the lot. Instead, your design system should be like a fine wine that increases value over time.
 
 What does a successful 
 - Schedule regular reviews of the patterns. 
@@ -292,8 +296,9 @@ You can create the best style guide in world, use the most appropriate technolog
 
 **Design system changes, updates, and requests should be communicated wherever your team hangs out**. That may include Slack, BaseCamp, Github, wikis, Yammer, email lists, company blogs, intranets, and any other internal tools your team uses to communicate and collaborate. 
 
-- Publish updates 
 {% include figure.html src="../images/fpo.png" caption="(Material Design example)" %}
+
+- Publish updates 
 
 - Notifications - Regular E-mail newsletters, blog updates, etc, whenever things change, Slack integrations, 
 - email updates, blog posts, video casts, 
@@ -301,6 +306,8 @@ You can create the best style guide in world, use the most appropriate technolog
 > Whenever someone makes a pull request, it sends a notification to our #Design slack channel, announcing to the team that there is a proposal change and feedback is required <cite><a href="https://medium.com/shyp-design/managing-style-guides-at-shyp-c217116c8126">Micah Sivitz, Shyp</a> 
 
 - Monitor progress over time - Lonely Planet's Rizzo design system tracks performance metrics over time.
+
+[/TODO]
 
 So there you have it. In order to make a maintainable design system, you should:
 
