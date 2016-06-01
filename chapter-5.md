@@ -17,7 +17,7 @@ How can that be?
 
 > A style guide is an artifact of design process. A design system is a living, funded product with a roadmap & backlog, serving an ecosystem. <cite>[Nathan Curtis](https://twitter.com/nathanacurtis/status/656829204235972608)</cite>
 
-**An artifact is something you'd find on an archaeological dig or in a museum, whereas a system is a living, breathing entity.** A pattern library can provide helpful documentation and serve as a helpful resource, but the simple existence of a pattern library doesn't guarantee long-term success for the underlying design system. A design system needs ongoing maintenance, support, and tender loving care for it to truly thrive. 
+**An artifact is something you'd find on an archaeological dig or in a museum, whereas a system is a living, breathing entity.** A pattern library can provide documentation and serve as a helpful resource, but the simple existence of a pattern library doesn't guarantee long-term success for the underlying design system. A design system needs ongoing maintenance, support, and tender loving care for it to truly thrive. 
 
 ## Changing minds, once again
 We've already discussed the importance of resetting everyone's expectations in order to establish a more collaborative, pattern-driven workflow. In order to save our design systems from the trash can and craft lasting design systems instead, we must once again fundamentally rewire people's brains.
