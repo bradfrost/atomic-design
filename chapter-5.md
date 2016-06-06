@@ -68,9 +68,14 @@ Let's go into each one of these points in more detail.
 ## Make it official
 Your initial style guide may begin its life as a side project, the result of a weekend hackathon, or as the brainchild of one or two ambitious team members. As we discussed in the last chapter, your client or boss doesn't even have to know you're creating a thoughtful design system and accompanying pattern library. Remember: ask forgiveness, not permission!
 
-Organic beginnings are all well and good, but to establish a truly [[impactful]] design system that creates long-term success for your organization, **the design system needs to evolve into an officially-sanctioned endeavor**. That means thinking of it as a product rather than a simple side project, and allocating real time, budget, and people to it.
+Organic beginnings are all well and good, but to establish a truly <span class="editor">impactful</span> design system that creates long-term success for your organization, **the design system needs to evolve into an officially-sanctioned endeavor**. That means thinking of it as a product rather than a simple side project, and allocating real time, budget, and people to it.
 
-[[*Ed: While I’m not going to change ‘impactful’, I have to say it’s a one of those relatively new coinages that rubs me up the wrong way.*]]
+<div class="editor">
+{% capture m %} 
+Ed: While I’m not going to change ‘impactful’, I have to say it’s a one of those relatively new coinages that rubs me up the wrong way.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 Convincing stakeholders to commit a large chunk of money, time, and resources upfront for a design system can be extremely challenging. So what are we to do? Here's my advice:
 
