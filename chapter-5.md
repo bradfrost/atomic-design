@@ -44,14 +44,14 @@ Another expectation we must revisit is our definition of *done*. Creating things
 
 This shift in thinking fundamentally affects the scope of our work. Folks working in the client services business are often used to delivering a project in a tidy package then riding off into the sunset. Internal teams don't fair much better, since they tend to float from one initiative to the next. Whether you're part of an internal team or you're an external gun for hire, I'm guessing you've experienced the shortcomings of project-based work. We tend to talk about a future that never comes, and instead we set it, forget it, then move on to the next shiny project.
 
-If we're committed to creating genuinely useful work that truly meets the needs of our clients and organizations, we must fundamentally redefine the scope of our work. As Nathan Curtis says, a design system shouldn't be a *project* with a finite scope, but rather a *product* meant to grow and evolve over time:
+If we're committed to creating genuinely useful work that truly meets the needs of our clients and organizations, we must redefine the scope of our work. As Nathan Curtis says, a design system shouldn't be a *project* with a finite scope, but rather a *product* meant to grow and evolve over time:
 
 > Focusing on style guide delivery as the climax is the wrong story to tell. A system isn’t a project with an end, it’s the origin story of a living and evolving product that’ll serve other products. <cite>[Nathan Curtis](https://medium.com/eightshapes-llc/a-design-system-isn-t-a-project-it-s-a-product-serving-products-74dcfffef935#.4umtnfxsx)</cite>
 
 The web is never done, and the creation of a design system is merely the first step in a long (and hopefully fruitful!) journey. A design system should be a long-term commitment with the ambitious goal of revolutionizing how your organization creates digital work. Exciting, eh?! So how do we make sure that happens?
 
-## Creating Maintainable Design Systems
-As you embark on this journey, let's talk about things you can do to craft a design system that sets your organization up for long-term success. How do you create a design system that takes root and becomes an essential part of your organization's workflow? What pitfalls do you need to be on the lookout for? How do you ensure the design system yields big results? To answer these questions, we need to:
+## Creating maintainable design systems
+As you embark on this journey, let's talk about things you can do to craft a design system that sets up your organization for long-term success. How do you create a design system that takes root and becomes an essential part of your organization's workflow? What pitfalls do you need to be on the lookout for? How do you ensure the design system yields big results? To answer these questions, we need to:
 
 - Make it official.
 - Make it maintainable.
@@ -66,9 +66,11 @@ As you embark on this journey, let's talk about things you can do to craft a des
 Let's go into each one of these points in more detail.
 
 ## Make it official
-Your initial style guide may begin its life as a side project, result of a weekend hackathon, or as the brainchild of one or two ambitious team members. As we discussed in the last chapter, your client or boss doesn't even have to know that you're creating a thoughtful design system and accompanying pattern library. Remember: ask forgiveness, not permission!
+Your initial style guide may begin its life as a side project, the result of a weekend hackathon, or as the brainchild of one or two ambitious team members. As we discussed in the last chapter, your client or boss doesn't even have to know you're creating a thoughtful design system and accompanying pattern library. Remember: ask forgiveness, not permission!
 
-Organic beginnings are all well and good, but in order to establish a truly impactful design system that creates long-term success for your organization, **the design system needs to evolve into an officially-sanctioned endeavor**. That means thinking of it as a product rather than a simple side project, and allocating real time, budget, and people to it.
+Organic beginnings are all well and good, but to establish a truly [[impactful]] design system that creates long-term success for your organization, **the design system needs to evolve into an officially-sanctioned endeavor**. That means thinking of it as a product rather than a simple side project, and allocating real time, budget, and people to it.
+
+[[*Ed: While I’m not going to change ‘impactful’, I have to say it’s a one of those relatively new coinages that rubs me up the wrong way.*]]
 
 Convincing stakeholders to commit a large chunk of money, time, and resources upfront for a design system can be extremely challenging. So what are we to do? Here's my advice:
 
