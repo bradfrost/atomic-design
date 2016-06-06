@@ -63,6 +63,13 @@ As you embark on this journey, let's talk about things you can do to craft a des
 - Make it contextual.
 - Make it last.
 
+<div class="editor">
+{% capture m %} 
+Ed: I wonder whether this list should be numbered. The rest of this chapter expands on each of these points, and some of these in turn contain further lists which are also then explained in more detail. It’s easy for a reader to lose track of where they are. If you decide to number this list, you can then add the corresponding number to the heading.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
 Let's go into each one of these points in more detail.
 
 ## Make it official
@@ -72,12 +79,12 @@ Organic beginnings are all well and good, but to establish a truly <span class="
 
 <div class="editor">
 {% capture m %} 
-Ed: While I’m not going to change ‘impactful’, I have to say it’s a one of those relatively new coinages that rubs me up the wrong way.
+Ed: While I’m not going to change ‘impactful’, it’s one of those relatively new (1960s) coinages that annoys some readers. More impressive, effective, cogent, potent or motivating alternatives are available. That said, in this context and with your readership, it’s unlikely to cause much consternation and it makes sense.
 {% endcapture %}
 {{ m | markdownify }}
 </div>
 
-Convincing stakeholders to commit a large chunk of money, time, and resources upfront for a design system can be extremely challenging. So what are we to do? Here's my advice:
+Convincing stakeholders to commit large chunks of money, time, and resources up front for a design system can be extremely challenging. So what are we to do? Here's my advice:
 
 1. Make a thing.
 2. Show that it's useful.
