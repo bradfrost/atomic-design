@@ -65,7 +65,7 @@ As you embark on this journey, let's talk about things you can do to craft a des
 
 <div class="editor">
 {% capture m %} 
-Ed: I wonder whether this list should be numbered. The rest of this chapter expands on each of these points, and some of these in turn contain further lists which are also then explained in more detail. It’s easy for a reader to lose track of where they are. If you decide to number this list, you can then add the corresponding number to the heading.
+Ed: I wonder whether this list should be numbered. (I’ll leave it alone for now as it will impact matters below and you should choose what you prefer.) The rest of this chapter expands on each of these points, and some of these in turn contain further lists which are also then explained in more detail. It’s easy for a reader to lose track of where they are. If you decide to number this list, you can then add the corresponding number to the heading to help readers orient[ate] themselves.
 {% endcapture %}
 {{ m | markdownify }}
 </div>
@@ -75,7 +75,7 @@ Let's go into each one of these points in more detail.
 ## Make it official
 Your initial style guide may begin its life as a side project, the result of a weekend hackathon, or as the brainchild of one or two ambitious team members. As we discussed in the last chapter, your client or boss doesn't even have to know you're creating a thoughtful design system and accompanying pattern library. Remember: ask forgiveness, not permission!
 
-Organic beginnings are all well and good, but to establish a truly <span class="editor">impactful</span> design system that creates long-term success for your organization, **the design system needs to evolve into an officially-sanctioned endeavor**. That means thinking of it as a product rather than a simple side project, and allocating real time, budget, and people to it.
+Organic beginnings are all well and good, but to establish a truly <span class="editor">impactful</span> design system that creates long-term success for your organization, **the design system needs to evolve into an officially sanctioned endeavor**. That means thinking of it as a product rather than a simple side project, and allocating real time, budget, and people to it.
 
 <div class="editor">
 {% capture m %} 
@@ -90,19 +90,34 @@ Convincing stakeholders to commit large chunks of money, time, and resources up 
 2. Show that it's useful.
 3. Make it official.
 
+<div class="editor">
+{% capture m %} 
+Ed: If the main list becomes numbered, then it’s probably best if this one uses something other than numbers, but still captures the sense of progress: lowercase roman numerals (i, ii, iii); or letters (a, b, c).
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
 Let's break down these steps a bit further.
 
-### Step 1: make a thing
-You have to start somewhere, and having something started is better than nothing at all. Pick a project that would be a great pilot for establishing your design system, follow a process similar to the one discussed in [chapter 4](/chapter-4/), think about the atomic design mental model detailed in [chapter 2](/chapter-2/), and you'll end up with a solid foundation for a thoughtful design system and pattern library that helps your team work more effectively. 
+### 1. Make a thing
 
-Take the time to package your UI patterns in a pattern library and get it ready to shop around. I've talked to several ambitious team members who have built the basic gist of their pattern library over the course of a weekend. This effort makes all the difference in the world since it gives something tangible for stakeholders to react to. Again: *show, don't tell*.
+<div class="editor">
+{% capture m %} 
+Ed: And obviously this subheading and the ones following should be updated to reflect the choice you make immediately above – but using uppercase versions as these mark subheadings: “I. Make a thing, II. Show that it’s useful”; “B. Show that it’s useful, C. Make it official”. Hope that’s clear.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-### Step 2: show that it's useful 
-With a nascent-yet-tangible design system in place, you can have a more meaningful conversation with the people who control money, scheduling, and resources. You can discuss exactly how the design system helped save time and money (see *[Pitching Patterns](/chapter-4/#pitching-patterns)* in the last chapter), then paint a picture for how those benefits would scale even further if the organization invested in an official, robust design system. 
+You have to start somewhere, and having something started is better than nothing at all. Pick a project that would be a great pilot for establishing your design system; follow a process similar to the one discussed in [chapter 4](/chapter-4/); think about the atomic design mental model detailed in [chapter 2](/chapter-2/); and you'll end up with a solid foundation for a thoughtful design system and pattern library that helps your team work more effectively. 
 
-Get team members from different disciplines to back you up and discuss the initial success of the system, and also pull in others who are sympathetic to the cause that would stand to benefit from an expanded design system. 
+Take the time to package your UI patterns in a pattern library and get it ready to be shopped around. I've talked to several ambitious team members who have established the basic gist of their pattern library over the course of a weekend. This effort makes all the difference in the world since it provides something tangible for stakeholders to react to. Again: *show, don't tell*.
 
-### Step 3: make it official
+### 2. Show that it's useful 
+With a nascent-yet-tangible design system in place, you can have a more meaningful conversation with the people who control money, scheduling, and resources. You can discuss exactly how the design system helped save time and money (see “[Pitching patterns](/chapter-4/#pitching-patterns)” in chapter 4), then paint a picture of how those benefits would scale even further if the organization invested in an official, robust design system. 
+
+Get team members from different disciplines to back you up and discuss the initial success of the system, and also pull in others who are sympathetic to the cause who would stand to benefit from an expanded design system. 
+
+### 3. Make it official
 You've proven the value of your initial design system and presented a roadmap for how to make it even better. With any luck your organization will commit to making the design system an Official Thing. 
 
 With approval from the highest levels, you're now able to put a plan into action that involves: allocating and/or hiring people to work on the design system, developing a plan to make the design system more comprehensive, establishing a governance strategy, and laying out a product roadmap for the design system.
