@@ -118,7 +118,14 @@ With a nascent-yet-tangible design system in place, you can have a more meaningf
 Get team members from different disciplines to back you up and discuss the initial success of the system, and also pull in others who are sympathetic to the cause who would stand to benefit from an expanded design system. 
 
 ### 3. Make it official
-You've proven the value of your initial design system and presented a roadmap for how to make it even better. With any luck your organization will commit to making the design system an Official Thing. 
+You've <span class="editor">prove<ins>d</ins><del>n</del></span> the value of your initial design system and presented a roadmap for how to make it even better. With any luck your organization will commit to making the design system an Official Thing. 
+
+<div class="editor">
+{% capture m %} 
+Ed: The past tense of prove is proved, but proven has crept out of Scottish courtrooms (where ‘not proven’ is a verdict available alongside ‘guilty’ and ‘not guilty’) over the past three hundred years to become more widely used. I think your usage here harks back to an English idiomatic use, ‘proven record’.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 With approval from the highest levels, you're now able to put a plan into action that involves: allocating and/or hiring people to work on the design system, developing a plan to make the design system more comprehensive, establishing a governance strategy, and laying out a product roadmap for the design system.
 
