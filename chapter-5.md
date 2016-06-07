@@ -127,26 +127,58 @@ Ed: The past tense of prove is proved, but proven has crept out of Scottish cour
 {{ m | markdownify }}
 </div>
 
-With approval from the highest levels, you're now able to put a plan into action that involves: allocating and/or hiring people to work on the design system, developing a plan to make the design system more comprehensive, establishing a governance strategy, and laying out a product roadmap for the design system.
+With approval from the highest levels, you're now able to put a plan into action that involves: allocating or hiring people to work on the design system, developing a plan to make the design system more comprehensive, establishing a governance strategy, and laying out a product roadmap for the design system.
 
-Now it's worth pointing out that (as with many things in life) things may not shake out the way you hoped. Despite demonstrating real value and presenting a concrete plan of action, higher ups still might shoot your initiative down. **Don't be discouraged**. You may have lost the battle, but you certainly haven't lost the war. Your team should continue to grow and extend the design system (in whatever capacity you can) until its value becomes undeniable. As more people benefit from the system, you'll have a groundswell of support to help push the endeavor through.
+It's worth pointing out that things may not shake out the way you hoped. Despite demonstrating real value and presenting a concrete plan of action, higher-ups still might shoot your initiative down. **Don't be discouraged.** You may have lost the battle, but you can certainly win the war. Your team should continue to grow and extend the design system in whatever capacity you can until its value becomes undeniable. As more people benefit from the system, you'll have a groundswell of support to help push the endeavor through.
 
 ### Establishing a design system team
+
 With the design system initiative approved, it's now time to put the right people and processes in place to ensure the system flourishes for your organization.
 
 #### Design system makers and users
-First things first. It's important to recognize that **there will inevitably be people at the organization that help <em>make and maintain</em> the design system, and there will be other people who will be <em>users</em> of the design system**. These two groups may not be mutually exclusive, but establishing the roles of makers and users is important.
+First things first. It's important to recognize that **there will inevitably be people at the organization who help <em>make and maintain</em> the design system, and there will be other people who will be <em>users</em> of the design system**. These two groups may not be mutually exclusive, but establishing the roles of makers and users is important.
 
-When I talk about establishing a more collaborative process like the one I detailed in the last chapter, I inevitably hear people who work at large organizations say, "but Brad, we have hundreds (or even thousands) of developers working on our products, so getting all those people to collaborate and contribute like that would be far too difficult."
+When I talk about establishing a more collaborative process like the one I detailed in the previous chapter, I inevitably hear people who work at large organizations say, "But Brad, we have hundreds (or even thousands) of developers working on our products. Getting all those people to collaborate and contribute like that would be far too difficult."
 
-They're likely right. It would be ideal if the entire organization adopted more nimble, collaborative processes, but the daunting logistics around such an effort makes it improbable. Not everyone in the organization needs to directly contribute to the design system, but someone (or more likely, some people) must take ownership of it.
+They're likely right. It would be ideal if the entire organization adopted nimbler, more collaborative processes, but the daunting logistics around such an effort makes it improbable. Not everyone in the organization needs to contribute directly to the design system, but someone (or more likely, some people) must take ownership of it.
 
-**The design system <em>makers</em> are the ones who architect, create, and maintain the system**, and they need to work closely together to ensure that the system is smart, flexible, scalable, and addresses the needs of the users and business. **The design system <em>users</em> are the teams across the organization who will take the system and employ its interface patterns to specific applications**. 
+**The design system <em>makers</em> are the ones who <span class="editor">architect</span>, create, and maintain the system**, and they need to work closely together to ensure that the system is smart, flexible, scalable, and addresses the needs of the users and business. **The design system <em>users</em> are the teams across the organization who will take the system and employ its interface patterns to specific applications.** 
 
-**The design system <em>makers</em> and design system <em>users</em> need to maintain a close working relationship** to ensure the patterns defined within the system serve the needs of the applications and all documentation is clear. **Makers provide a birds-eye perspective of the entire ecosystem the design system serves, while users provide an on-the-ground perspective focused on the applications of the system**. Both perspectives are critical to the success of the design system, which is why it's so important for makers and users to have a healthy relationship that involves frequent communication and collaboration. 
+<div class="editor">
+{% capture m %} 
+Ed: ‘Architect’ as a verb. Bleurgh. Not wrong, exactly, but clumsy. Can you hear it? It doesn’t sound good. Alternatives: configure, construct, assemble, organize, formulate.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-#### Who are the design system makers?
-Who updates the design system? Who approves changes? Who interfaces with the users of the design system to make sure it's addressing their needs? Who gets to decide which patterns stay, go, or need tweaked? 
+**The design system <em>makers</em> and design system <em>users</em> need to maintain a close working relationship** to ensure the patterns defined within the system serve the needs of the applications, and that all documentation is clear. **Makers provide a birds-eye view of the entire ecosystem the design system serves, while users provide an on-the-ground perspective focused on the applications of the system.** Both outlooks are critical to the success of the design system, which is why it's so important for makers and users to have a healthy relationship that involves frequent communication and collaboration. 
+
+<div class="editor">
+{% capture m %} 
+Ed: There’s a lot of bold and emphasis within bold in the section above. Chances are, you don’t need them. They’re a typographic hammer to crack a semantic nut. You make your points forcefully enough without having to jab the reader in the eye. I’ve left them in, however, as you may feel the points are important enough to warrant it. Up to you.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+
+#### Design system makers
+
+<div class="editor">
+{% capture m %} 
+Ed: I’m not a fan of questions as headings. You can convey what's required in fewer words by what some people call front-loading; that is, remove the question signals (in this case, “Who are the”) that get in the way, and move the relevant content to the front of the heading. Boom. This is particularly effective here as you begin the following paragraph with more questions.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+Who updates the design system? Who approves changes? Who <span class="editor">interfaces</span> with the users of the design system to make sure it's addressing their needs? Who gets to decide which patterns stay, go, or need tweaked? 
+
+<div class="editor">
+{% capture m %} 
+Ed: First ‘architect’ as a verb and now ‘interfaces’, which is beyond ugly. What’s wrong with ‘talks to’?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
 
 The answers to these questions **will very much depend on the size and setup of your organization**.
 
