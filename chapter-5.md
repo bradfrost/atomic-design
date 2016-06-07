@@ -155,7 +155,7 @@ Ed: ‘Architect’ as a verb. Bleurgh. Not wrong, exactly, but clumsy. Can you 
 
 <div class="editor">
 {% capture m %} 
-Ed: There’s a lot of bold and emphasis within bold in the section above. Chances are, you don’t need them. They’re a typographic hammer to crack a semantic nut. You make your points forcefully enough without having to jab the reader in the eye. I’ve left them in, however, as you may feel the points are important enough to warrant it. Up to you.
+Ed: There’s a lot of bold and even emphasis within bold in the section above; indeed, in this whole chapter. Chances are, you don’t need to try so hard – it’s a typographic hammer to crack a semantic nut. You make your points effectively and eloquently enough without having to jab the reader in the eye. I’ve left it all in, however, as you may feel the points are important enough to warrant it. Up to you.
 {% endcapture %}
 {{ m | markdownify }}
 </div>
@@ -170,35 +170,70 @@ Ed: I’m not a fan of questions as headings. You can convey what's required in 
 {{ m | markdownify }}
 </div>
 
-Who updates the design system? Who approves changes? Who <span class="editor">interfaces</span> with the users of the design system to make sure it's addressing their needs? Who gets to decide which patterns stay, go, or need tweaked? 
+Who updates the design system? Who approves changes? Who <span class="editor">interfaces</span> with the users of the design system to make sure it's addressing their needs? Who gets to decide which patterns stay, go, or need to be tweaked? 
 
 <div class="editor">
 {% capture m %} 
-Ed: First ‘architect’ as a verb and now ‘interfaces’, which is beyond ugly. What’s wrong with ‘talks to’?
+Ed: First ‘architect’ as a verb and now ‘interfaces’, which is beyond ugly. What’s wrong with ‘talks’?
 {% endcapture %}
 {{ m | markdownify }}
 </div>
 
 
-The answers to these questions **will very much depend on the size and setup of your organization**.
+The answers to these questions will very much depend on the size and setup of your organization.
 
-**Large organizations** like Salesforce maintain an official *design systems team*, which currently includes about a dozen full-time employees last I heard. That dedicated team is responsible for governing the design system and making sure it's meeting the needs of the myriad internal product teams, as well as external developers that build things on the company's platform. When a design system is serving literally thousands of  users, it's a smart idea to dedicate at least a few full-time employees to manage and grow the system.
+<div class="editor">
+{% capture m %} 
+Ed: OK, so here I did remove the emphasis. You’ve already set this sentence apart to draw attention to it. There’s really no need to impress the thought even deeper into the reader’s eyes.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+**Large organizations** <span class="editor">are able to dedicate serious resources to managing design systems.</span> Salesforce, for example, maintains an official *design systems team*, which currently includes about a dozen full-time employees, last I heard. That dedicated team is responsible for governing the design system and making sure it's meeting the needs of the <span class="editor">myriad</span> internal product teams, as well as external developers who build things on the company's platform. When a design system is serving thousands of users, it's a smart idea to dedicate at least a few full-time employees to manage and expand the system.
+
+<div class="editor">
+{% capture m %} 
+Ed: I’ve interpolated a new sentence to allow the Salesforce example to stand clear of your thought about large organizations.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+<div class="editor">
+{% capture m %} 
+Myriad? We’ve been here before. You could even just delete it here.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 {% include figure.html src="../images/fpo.png" caption="" %}
 
-**Smaller organizations** most likely don't have the luxury of building an entire team to service a design system. Team members in smaller organizations have to wear many (hopefully stylish!) hats out of necessity, so governing the design system will likely become another responsibility. This may sound like an added burden ("oh great, yet another thing I'm responsible for that doesn't involve a pay raise!"), but this particular hat should be a joy to wear as it improves the efficiency and quality of all other work. Hooray for design systems! 
+**Smaller organizations** most likely don't have the luxury of building an entire team to service a design system. Team members in smaller organizations have to wear many (hopefully stylish!) hats out of necessity, so governing the design system will likely become another responsibility. This may sound like an added burden ("Oh great, yet another thing I'm responsible for that doesn't involve a pay raise!"), but this particular hat should be a joy to wear as it improves the efficiency and quality of all other work. Hooray for design systems! 
 
 Typically, design system makers at smaller organizations will be senior-level staff who have the experience and authority necessary to make thoughtful decisions and also enforce the design system.
 
 {% include figure.html src="../images/fpo.png" caption="" %}
 
-And then there are **external agencies, contractors, and consultants**. What is the role of an external party when it comes to long-term maintenance of a client's design system? On one hand, external parties are at a bit of a disadvantage since they don't actually work for the client's organization. A successful design system needs to become a part of an organization's DNA, and since external parties exist outside the company's walls, their influence is intrinsically limited.
+And then there are **external agencies, contractors, and consultants**. What is the role of an <span class="editor">third party</span> when it comes to long-term maintenance of a client's design system? On one hand, external agencies are at a bit of a disadvantage, since they don't actually work for the client's organization. A successful design system needs to become part of an organization's DNA, and since third parties exist outside the company's walls, their influence is intrinsically limited.
 
-But on the other hand, **external parties can often provide a sense of perspective** that's hard to see while working inside a company. This is where outsiders can really shine. In my work as a consultant, I work with organizations to establish long-term design system maintenance strategies and help get the right people and processes in place. While the long-term success of the system will ultimately be up to the organization themselves, external parties can teach them to fish and provide important strategic guidance, feedback, and perspective. 
+<div class="editor">
+{% capture m %} 
+Ed: In these two paragraphs, I’ve changed a few instances of ‘external parties’ to ‘third parties’, which is a more usual way of referring to them, and it provides a little variation.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+But on the other hand, **external parties can often provide a sense of perspective** that's hard to see while working inside a company. This is where outsiders can really shine. In my work as a consultant, I work with organizations to establish long-term design system maintenance strategies and help get the right people and processes in place. While the long-term success of the system will ultimately be up to the organization, third parties can teach them to fish and provide important strategic guidance, feedback, and perspective. 
 
 {% include figure.html src="../images/fpo.png" caption="" %}
 
-#### Who are the design system users?
+#### Design system users
+<div class="editor">
+{% capture m %} 
+Ed: Again with the question for a heading. See above.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
 Who are the people responsible for using the design system to build new features and applications? Who are the people that communicate with the system makers to report issues and request features?
 
 Once again, the answers to these questions will largely depend on your organization's size and structure.
