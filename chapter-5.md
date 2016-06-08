@@ -161,7 +161,7 @@ Ed: There’s a lot of bold and even emphasis within bold in the section above; 
 </div>
 
 
-#### Design system makers
+#### <del>Who are the d</del>Design system makers<del>?</del>
 
 <div class="editor">
 {% capture m %} 
@@ -200,7 +200,7 @@ Ed: I’ve interpolated a new sentence to allow the Salesforce example to stand 
 
 <div class="editor">
 {% capture m %} 
-Myriad? We’ve been here before. You could even just delete it here.
+Myriad? We’ve been here before. Here, you could even just delete it.
 {% endcapture %}
 {{ m | markdownify }}
 </div>
@@ -234,26 +234,55 @@ Ed: Again with the question for a heading. See above.
 {{ m | markdownify }}
 </div>
 
-Who are the people responsible for using the design system to build new features and applications? Who are the people that communicate with the system makers to report issues and request features?
+Who are the people responsible for using the design system to build new features and applications? Who are the people who communicate with the system makers to report issues and request features?
 
 Once again, the answers to these questions will largely depend on your organization's size and structure.
 
-**Design system users may be the same team creating the design system, separate development teams within your organization, junior-level designers and developers, third-party agencies, offshore developers, and/or other external development teams**. 
+**Design system users may be the same team creating the design system, separate development teams within your organization, junior-level designers and developers, third-party agencies, offshore developers, or other external development teams.** 
 
-Users' proximity to and involvement in the creation of the design system will undoubtedly vary. You may work on a singular product at a scrappy startup, so your small team very well may be the ones simultaneously creating and using the design system.  Or you may work at a large multi-national corporation with development teams and third-party partners scattered all across the globe. If this is the case, design system makers and users may seldom (or ever) meet, which means that helpful documentation and a sharp birds-eye perspective becomes that much more important. 
+<div class="editor">
+{% capture m %} 
+Ed: A whole one-sentence paragraph in bold? It doesn’t have to be.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+Users' proximity to and involvement in the creation of the design system will undoubtedly vary. You might work on a singular product at a scrappy <span class="editor">startup</span>, so your small team could be simultaneously creating and using the design system. Or you may work at a large multinational corporation with development teams and third-party partners scattered all across the globe. If this is the case, design system makers and users may seldom (if ever) meet, which means that helpful documentation and a sharp birds-eye perspective become that much more important. 
+
+<div class="editor">
+{% capture m %} 
+Ed: Just flagging up ‘startup’ to make sure we’re consistent with (non)hyphenation.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 {% include figure.html src="../images/fpo.png" caption="Spectrum of design system users" %}
 
-One of the biggest advantages of establishing a thoughtful design system is that it allows organizations to scale best practices. If all those best practices — responsiveness, accessibility, performance, UX, ergonomics, and so on — are baked into the system's UI patterns, users can simply plug in the patterns and reap the rewards. This means design system users don't have to be senior-level designers or developers to produce good work; the design system serves as quality control vehicle that helps users apply best practices regardless of each person's skill level.
+One of the biggest advantages of establishing a thoughtful design system is that it allows organizations to scale best practices. If all those best practices — responsiveness, accessibility, performance, UX, ergonomics, and so on — are baked into the system's UI patterns, users can simply plug in the patterns and reap the rewards. This means design system users don't have to be senior-level designers or developers to produce good work: the design system serves as a quality control vehicle that helps users apply best practices regardless of each person's skill level.
 
 ### Design system team makeup
-**A cross-disciplinary team should be established in order to properly manage, maintain, and extend the system**. All disciplines at an organization — UX designers, visual designers, content strategists, frontend developers, backend developers, product managers, project managers, executives, and other stakeholders — have unique perspectives that can undoubtedly inform and shape the work. Incorporating these perspectives into the design system is important, but doesn't necessarily require every discipline to constantly be involved in developing the design system.
+**A cross-disciplinary team should be established to properly manage, maintain, and extend the system**. All disciplines at an organization — UX designers, visual designers, content strategists, front-end developers, back-end developers, product managers, project managers, executives, and other stakeholders — have unique perspectives that can undoubtedly inform and shape the work. Incorporating these perspectives into the design system is important, but doesn't necessarily require every discipline to be constantly involved in developing it.
 
-There will inevitably be disciplines that actively do the work, while other disciplines may take on more of an advisory role. The disciplines responsible for designing and building the user interface — UX designers, visual designers, frontend developers — will likely serve as the hands that do the work and make updates to the design system. They should work collaboratively (as detailed in the last chapter) and coordinate with the other disciplines to ensure that the system reflects the values and considerations of the entire business.
+There will inevitably be disciplines that actively do the work, while others may take on more of an advisory role. Those responsible for designing and building the user interface — UX designers, visual designers, front-end developers — will likely serve as the hands that do the work and make updates to the design system. They should work collaboratively (as detailed in chapter 4) and coordinate with the other disciplines to ensure that the system reflects the values and considerations of the entire business.
 
-Other disciplines may not be the ones actively doing the work, but must be consulted to make sure their perspectives are properly reflected in the system. Backend engineers need to make the team aware of any architectural decisions that would affect the frontend UI, executives need to make the team aware of important initiatives that will affect the role and utility of the system, and of course design system users need to coordinate with the makers to ensure the system is serving the needs of individual applications. 
+Other people may not be the ones actively doing the work, but must be consulted to make sure their perspectives are properly reflected in the system. Back-end engineers need to make the team aware of any architectural decisions that would affect the front-end UI; executives need to make the team aware of important initiatives that will affect the role and utility of the system; and, of course, design system users need to coordinate with the makers to ensure the system serves the needs of individual applications. 
 
 {% include figure.html src="../images/fpo.png" caption="" %}
+
+<div class="editor">
+{% capture m %} 
+Ed: This has been a very long section, illustrating only the first point in the nine-point list set out earlier. I’d almost forgotten what I was reading was an expansion of a list item. The remaining sections are much shorter. I wonder, then, if the first list should indicate a couple of the subsections:
+
+- Make it official.
+  * Establishing a design system team
+  * Design system team makeup
+- Make it maintainable.
+- etc.
+
+However, this does make that original list a little less punchy. More thought required. Hmmn.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 ## Make it maintainable
 Many pattern libraries fall into a state of disrepair because the effort required to update patterns and documentation is far too high. If a pattern library is difficult and time consuming to update, people will eventually stop updating it and the pattern library will begin its drift into oblivion. Making updates to UI patterns and documentation should be as frictionless as possible, so reducing this friction should become a high priority for the design system team. This involves careful consideration from both a technological and workflow standpoint.
