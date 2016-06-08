@@ -151,6 +151,8 @@ Ed: ‘Architect’ as a verb. Bleurgh. Not wrong, exactly, but clumsy. Can you 
 {{ m | markdownify }}
 </div>
 
+{% include figure.html src="../images/fpo.png" caption="Design system makers and users" %}
+
 **The design system <em>makers</em> and design system <em>users</em> need to maintain a close working relationship** to ensure the patterns defined within the system serve the needs of the applications, and that all documentation is clear. **Makers provide a birds-eye view of the entire ecosystem the design system serves, while users provide an on-the-ground perspective focused on the applications of the system.** Both outlooks are critical to the success of the design system, which is why it's so important for makers and users to have a healthy relationship that involves frequent communication and collaboration. 
 
 <div class="editor">
@@ -205,13 +207,13 @@ Myriad? We’ve been here before. Here, you could even just delete it.
 {{ m | markdownify }}
 </div>
 
-{% include figure.html src="../images/fpo.png" caption="" %}
+{% include figure.html src="../images/fpo.png" caption="Large organization diagram" %}
 
 **Smaller organizations** most likely don't have the luxury of building an entire team to service a design system. Team members in smaller organizations have to wear many (hopefully stylish!) hats out of necessity, so governing the design system will likely become another responsibility. This may sound like an added burden ("Oh great, yet another thing I'm responsible for that doesn't involve a pay raise!"), but this particular hat should be a joy to wear as it improves the efficiency and quality of all other work. Hooray for design systems! 
 
 Typically, design system makers at smaller organizations will be senior-level staff who have the experience and authority necessary to make thoughtful decisions and also enforce the design system.
 
-{% include figure.html src="../images/fpo.png" caption="" %}
+{% include figure.html src="../images/fpo.png" caption="Small organization diagram" %}
 
 And then there are **external agencies, contractors, and consultants**. What is the role of a <span class="editor">third party</span> when it comes to long-term maintenance of a client's design system? On one hand, external agencies are at a bit of a disadvantage, since they don't actually work for the client's organization. A successful design system needs to become part of an organization's DNA, and since third parties exist outside the company's walls, their influence is intrinsically limited.
 
@@ -224,7 +226,7 @@ Ed: In these two paragraphs, I’ve changed a few instances of ‘external parti
 
 But on the other hand, **external parties can often provide a sense of perspective** that's hard to see while working inside a company. This is where outsiders can really shine. In my work as a consultant, I work with organizations to establish long-term design system maintenance strategies and help get the right people and processes in place. While the long-term success of the system will ultimately be up to the organization, third parties can teach them to fish and provide important strategic guidance, feedback, and perspective. 
 
-{% include figure.html src="../images/fpo.png" caption="" %}
+{% include figure.html src="../images/fpo.png" caption="Third-party diagram" %}
 
 #### Design system users
 <div class="editor">
@@ -267,7 +269,7 @@ There will inevitably be disciplines that actively do the work, while others may
 
 Other people may not be the ones actively doing the work, but must be consulted to make sure their perspectives are properly reflected in the system. Back-end engineers need to make the team aware of any architectural decisions that would affect the front-end UI; executives need to make the team aware of important initiatives that will affect the role and utility of the system; and, of course, design system users need to coordinate with the makers to ensure the system serves the needs of individual applications. 
 
-{% include figure.html src="../images/fpo.png" caption="" %}
+{% include figure.html src="../images/fpo.png" caption="Design system team makeup" %}
 
 <div class="editor">
 {% capture m %} 
@@ -358,14 +360,16 @@ Public-facing style guides are also **hugely helpful for recruiting efforts**. D
 
 > When I saw Salesforce’s style guide I thought it was beautiful and it's why I wanted to join this team. <cite><a href="http://styleguides.io/podcast/jina-bolton">Jina Bolton</a>
 
-Since joining Salesforce, she's helped create the ultra-successful Lightning Design System and helps manage their growing design system team. Jina's story is not an isolated one; almost every guest Anna Debenham and I interviewed on the [Styleguides Podcast(http://styleguides.io/podcast) discussed how helpful their public-facing pattern library was for attracting talent. All that means that your a public style guide makes your organization *more* competitive, not less.
+Since joining Salesforce, she's helped create the ultra-successful Lightning Design System and helps manage their growing design system team. Jina's story is not an isolated one; almost every guest Anna Debenham and I interviewed on the Styleguides Podcast(http://styleguides.io/podcast) discussed how helpful their public-facing pattern library was for attracting talent. All that means that your a public style guide makes your organization *more* competitive, not less.
 
 ## Make it bigger
 A visible, cross-disciplinary, approachable pattern library is one that your team will frequently reference. Use that to your advantage. Since the team's eyeballs are already fixated on that one resource, there's a big opportunity to extend it to include other helpful documentation like the voice and tone, brand, code, design principles and writing guidelines we discussed in chapter 1. 
 
-{% include figure.html src="../images/fpo.png" caption="[find good example] includes brand guidelines, voice and tone, code, and UI patterns" %}
+{% include figure.html src="../images/content/styleguide-harmony.png" caption="Intuit's Harmony design system includes a pattern library, design principles, voice and tone, marketing guidelines, and more. Housing this helpful documentation under one roof helps increase its visibility." %}
 
 Now, your organization may not necessitate every flavor of style guide out there, but the point is that **creating a centralized style guide hub builds more awareness of best practices, increasing the documentations' effectiveness**.
+
+{% include figure.html src="../images/content/styleguide-harmony-2.png" caption="Intuit's Harmony pattern library includes tabs to switch between web, iOS, and Android for each pattern. This allows the team to maintain a mostly consistent design system across platforms but also document pattern divergences when they occur." %}
 
 ## Make it agnostic
 The way your UI patterns are named will undoubtedly shape how they are used. **The more agnostic pattern names are, the more versatile and reusable they become**.
@@ -381,11 +385,21 @@ Fair warning: **naming things is really freaking hard**. But there are strategie
 While naming things will always be a challenge, pattern names that are agnostic to context and content will be more portable, reusable, and versatile.
 
 ## Make it contextual
-Showcasing UI patterns in a pattern library is all well and good  Demonstrate context. Where are these patterns utilized? 
-- Pattern Lab lineage
-- Helps with QA efforts. If changes are made to a pattern, you'll know exactly which templates will need retested to ensure things held up. 
+Showcasing UI patterns in a pattern library is all well and good, but **you need to demonstrate context in order for design system users to understand how and where to properly use them**. Most pattern libraries show a demo of each UI pattern, but as we've discussed throughout this book, those patterns don't live in a vacuum. Where exactly are these patterns utilized?
+
+One way to demonstrate context might include showing screenshots or videos of a component in action. Material Design's documentation does a fantastic job at this; each component is rich with photos, videos, and usage details to give their users a clear understanding of what these patterns look like in the context of an application and demonstrate how each pattern should be used.
+
+{% include figure.html src="../images/content/material-design-bottom-nav.png" caption="Material Design's component library doesn't just contain an example of each component; it thoroughly documents the component's usage with plenty of images and video to support it." %}
+
+Another way to show context is to provide lineage information for each pattern. As we discussed in Chapter 3, tools like Pattern Lab automatically generate this information which lets you to see which patterns make up any given component, and also show where each component is employed. This provides a sort of pattern paper trail that helps immensely with QA efforts, as it highlights exactly which patterns and templates would need tested if changes were made to a particular pattern.
+
+{% include figure.html src="../images/content/pattern-lab-lineage.png" caption="Tools like Pattern Lab allow teams to see which smaller components make up any given component, as well as where each pattern gets used." %} 
 
 ## Make it last
+
+Making a design system is an incredibly and important endeavor. But without proper maintenance, the value of your design system will deprecate much like a car that's just been driven off the dealer's lot. Instead, your design system should be like a bottle of fine wine that increases value over time.
+
+{% include figure.html src="../images/fpo.png" caption="Used car and bottle of wine" %}
 
 ### Managing change 
 Change is the only constant, as they say. A successful design system is able to roll with the punches, adapt to feedback, be iterated upon, and evolve alongside the products the system serves. The *living* part of a living design system means that it needs to grow and evolve over time.
