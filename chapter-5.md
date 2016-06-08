@@ -122,7 +122,7 @@ You've <span class="editor">prove<ins>d</ins><del>n</del></span> the value of yo
 
 <div class="editor">
 {% capture m %} 
-Ed: The past tense of prove is proved, but proven has crept out of Scottish courtrooms (where ‘not proven’ is a verdict available alongside ‘guilty’ and ‘not guilty’) over the past three hundred years to become more widely used. I think your usage here harks back to an English idiomatic use, ‘proven record’.
+Ed: The past tense of prove is proved, but proven has crept out of Scottish courtrooms (where ‘not proven’ is a verdict available alongside ‘guilty’ and ‘not guilty’) over the past three hundred years to become more widely used. I think your usage here harks back to an idiomatic use, ‘proven record’.
 {% endcapture %}
 {{ m | markdownify }}
 </div>
