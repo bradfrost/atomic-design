@@ -213,7 +213,7 @@ Typically, design system makers at smaller organizations will be senior-level st
 
 {% include figure.html src="../images/fpo.png" caption="" %}
 
-And then there are **external agencies, contractors, and consultants**. What is the role of an <span class="editor">third party</span> when it comes to long-term maintenance of a client's design system? On one hand, external agencies are at a bit of a disadvantage, since they don't actually work for the client's organization. A successful design system needs to become part of an organization's DNA, and since third parties exist outside the company's walls, their influence is intrinsically limited.
+And then there are **external agencies, contractors, and consultants**. What is the role of a <span class="editor">third party</span> when it comes to long-term maintenance of a client's design system? On one hand, external agencies are at a bit of a disadvantage, since they don't actually work for the client's organization. A successful design system needs to become part of an organization's DNA, and since third parties exist outside the company's walls, their influence is intrinsically limited.
 
 <div class="editor">
 {% capture m %} 
