@@ -202,7 +202,7 @@
   <li><strong>Icons</strong>: icons are a special type of image worthy of their own category. Capture magnifying glasses, social icons, arrows, hamburgers, spinners, favicons, and every other interface icon.</li>
   <li><strong>Forms</strong>: inputs, text areas, select menus, checkboxes, switches, radio buttons, sliders, and other forms of user input.</li>
   <li><strong>Buttons</strong>: buttons are the quintessential UI element. Capture all the unique button patterns found throughout the experience: primary, secondary, big, small, disabled, active, loading, and even buttons that look like text links.</li>
-  <li><strong>Headings</strong>: <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, <code>h6</code> and variations of typographic headings.</li>
+  <li><strong>Headings</strong>: <code class="highlighter-rouge">h1</code>, <code class="highlighter-rouge">h2</code>, <code class="highlighter-rouge">h3</code>, <code class="highlighter-rouge">h4</code>, <code class="highlighter-rouge">h5</code>, <code class="highlighter-rouge">h6</code> and variations of typographic headings.</li>
   <li><strong>Blocks</strong>: also known as touts, callouts, summaries, ads, or hero units, <em>blocks</em> are collections of typographic headings and/or images and/or summary text (see Nicole Sullivan’s write-up about the <em><a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">media object</a></em> as an example of a block).</li>
   <li><strong>Lists</strong>: unordered, ordered, definition, bulleted, numbered, lined, striped, or any group of elements presented in a list-type format.</li>
   <li><strong>Interactive components</strong>: accordions, tabs, carousels, and other functional modules with moving parts.</li>
@@ -302,7 +302,7 @@
 <div class="editor">
 
 
-<p>Ed: Can you use the <code>&lt;cite&gt;</code> element to mark up book titles?</p>
+<p>Ed: Can you use the <code class="highlighter-rouge">&lt;cite&gt;</code> element to mark up book titles?</p>
 
 </div>
 
@@ -726,9 +726,9 @@
 
 <p>Obviously the header pattern doesn’t exist in a vacuum. Within Pattern Lab, the header was included in every template using Mustache’s include pattern that we discussed in chapter 3.</p>
 
-<p><code>
-{{&gt; organisms-header }} 
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="err">{&gt;</span><span class="w"> </span><span class="err">organisms-header</span><span class="w"> </span><span class="p">}</span><span class="err">}</span><span class="w"> 
+</span></code></pre>
+</div>
 
 <p>This allowed us to view the header within the context of the rest of the pages, sketchy as they initially were. So while we were focusing on designing one specific pattern, we were simultaneously taking into account the context of where that pattern would be employed.</p>
 

@@ -119,7 +119,7 @@
 </code>
 </pre>
 
-<p>This is Mustache code, in case the double curly braces (<code>{{}}</code>) that look like little mustaches didn’t give it away. The greater-than symbol (<code>&gt;</code>) is Mustache’s way of telling Pattern Lab to include an atom pattern called “thumbnail”. Pattern Lab will go searching through its folders of patterns to find an atom named “thumbnail”.</p>
+<p>This is Mustache code, in case the double curly braces (<code class="highlighter-rouge"><span class="p">{</span><span class="err">{</span><span class="p">}</span><span class="err">}</span></code>) that look like little mustaches didn’t give it away. The greater-than symbol (<code class="highlighter-rouge">&gt;</code>) is Mustache’s way of telling Pattern Lab to include an atom pattern called “thumbnail”. Pattern Lab will go searching through its folders of patterns to find an atom named “thumbnail”.</p>
 
 <div class="editor">
 
@@ -162,7 +162,7 @@
 </code>
 </pre>
 
-<p>You can see we have: HTML markup consisting of a wrapper <code>div</code> with a class name of <code>block-post</code>; a link; a Mustache include for the thumbnail image; an <code>&lt;h3&gt;</code> <span class="editor">tag</span> for the headline; and a <code>&lt;p&gt;</code> tag for the excerpt. You’ll notice there’s more Mustache code for <code>url</code>, <code>headline</code>, and <code>excerpt</code>, which we’ll use later to dynamically swap in actual content. More on that in a bit.</p>
+<p>You can see we have: HTML markup consisting of a wrapper <code class="highlighter-rouge">div</code> with a class name of <code class="highlighter-rouge">block-post</code>; a link; a Mustache include for the thumbnail image; an <code class="highlighter-rouge">&lt;h3&gt;</code> <span class="editor">tag</span> for the headline; and a <code class="highlighter-rouge">&lt;p&gt;</code> tag for the excerpt. You’ll notice there’s more Mustache code for <code class="highlighter-rouge">url</code>, <code class="highlighter-rouge">headline</code>, and <code class="highlighter-rouge">excerpt</code>, which we’ll use later to dynamically swap in actual content. More on that in a bit.</p>
 
 <div class="editor">
 
@@ -202,7 +202,7 @@
 </code>
 </pre>
 
-<p>What’s going on here? Well, we have a basic <code>&lt;header&gt;</code> <span class="editor">tag</span>, and inside that <span class="editor">tag</span> we’re including the logo image atom, the primary navigation molecule, and the search form molecule.</p>
+<p>What’s going on here? Well, we have a basic <code class="highlighter-rouge">&lt;header&gt;</code> <span class="editor">tag</span>, and inside that <span class="editor">tag</span> we’re including the logo image atom, the primary navigation molecule, and the search form molecule.</p>
 
 <div class="editor">
 
@@ -267,7 +267,7 @@
 
 <p>At this stage in the game the smaller patterns are already constructed, so all the template needs to do is pull them into the context of a page layout and give them unique names.</p>
 
-<p>Taking a closer look at the code, notice that certain patterns like <code>{{&gt; organisms-header }}</code> and <code>{{&gt; organisms-footer }}</code> are included the same way as the earlier examples. But there are also a few other includes patterns that are supplemented by some additional information, like the following:</p>
+<p>Taking a closer look at the code, notice that certain patterns like <code class="highlighter-rouge"><span class="p">{</span><span class="err">{&gt;</span><span class="w"> </span><span class="err">organisms-header</span><span class="w"> </span><span class="p">}</span><span class="err">}</span></code> and <code class="highlighter-rouge"><span class="p">{</span><span class="err">{&gt;</span><span class="w"> </span><span class="err">organisms-footer</span><span class="w"> </span><span class="p">}</span><span class="err">}</span></code> are included the same way as the earlier examples. But there are also a few other includes patterns that are supplemented by some additional information, like the following:</p>
 
 <pre>
 <code>
@@ -279,7 +279,7 @@
 </code>
 </pre>
 
-<p>We’re including <code>organisms-factoid</code> in the same way as all the other patterns, but we’re also naming it <code>factoid-advertising</code> by wrapping the include in a Mustache <em>section</em>, indicated by the Mustache code containing the <code>#</code> and <code>/</code> symbols. By giving the pattern instance a unique name, we can latch on to it and dynamically replace the content of the pattern. More on that in the next section!</p>
+<p>We’re including <code class="highlighter-rouge">organisms-factoid</code> in the same way as all the other patterns, but we’re also naming it <code class="highlighter-rouge">factoid-advertising</code> by wrapping the include in a Mustache <em>section</em>, indicated by the Mustache code containing the <code class="highlighter-rouge">#</code> and <code class="highlighter-rouge">/</code> symbols. By giving the pattern instance a unique name, we can latch on to it and dynamically replace the content of the pattern. More on that in the next section!</p>
 
 <p>This Russian nesting doll approach to building UIs is simple but tremendously powerful. The structure allows designers and developers to keep patterns DRY, saving time, effort, and money. The approach allows teams to build a final UI while simultaneously creating the underlying UI design system. After all, the final interface is one instantiation of its underlying design system. Teams can also move between abstract and concrete, zeroing in on a particular pattern to fix bugs (“The header’s broken!”), while also seeing how changes to small patterns affect the overall page layout.</p>
 
@@ -304,7 +304,7 @@
 <div class="editor">
 
 
-<p>Ed: File names aren’t code (unless they appear in code), so shouldn’t be marked up as such. Using italics is a better option. For convenience I’ve just used Markdown’s <em>underscore</em>, but this marks them up using <code>&lt;em&gt;</code>. In this case, <code>&lt;i&gt;</code> would be better. I’ve also added a slash to the directory name to clarify matters a little.</p>
+<p>Ed: File names aren’t code (unless they appear in code), so shouldn’t be marked up as such. Using italics is a better option. For convenience I’ve just used Markdown’s <em>underscore</em>, but this marks them up using <code class="highlighter-rouge">&lt;em&gt;</code>. In this case, <code class="highlighter-rouge">&lt;i&gt;</code> would be better. I’ve also added a slash to the directory name to clarify matters a little.</p>
 
 </div>
 
@@ -322,7 +322,7 @@
 </code>
 </pre>
 
-<p>For developers, this type of format most likely looks familiar. If you’re not a developer, don’t freak out! Once you look beyond the curly braces and quotes, you’ll see that we’re defining a <code>hero</code> object (for the full-bleed hero area directly below the header) that has a <code>headline</code> value of “Lorem Ipsum” and an <code>img</code> with a <code>src</code> value of “/images/sample/fpo_hero.png”. We’re simply defining this object’s attributes and providing values for those attributes.</p>
+<p>For developers, this type of format most likely looks familiar. If you’re not a developer, don’t freak out! Once you look beyond the curly braces and quotes, you’ll see that we’re defining a <code class="highlighter-rouge">hero</code> object (for the full-bleed hero area directly below the header) that has a <code class="highlighter-rouge">headline</code> value of “Lorem Ipsum” and an <code class="highlighter-rouge">img</code> with a <code class="highlighter-rouge">src</code> value of “/images/sample/fpo_hero.png”. We’re simply defining this object’s attributes and providing values for those attributes.</p>
 
 <div class="editor">
 
@@ -363,7 +363,7 @@
 </code>
 </pre>
 
-<p>By overriding the default data, the <code>hero</code> headline now reads “Moving People” instead of “Lorem Ipsum”. And instead of pointing to a grayscale <span class="editor">FPO (for placement only)</span> hero image, we’re now pointing to a picture of <span class="editor">Beyoncé</span> located at “/images/hero_beyonce.jpg”.</p>
+<p>By overriding the default data, the <code class="highlighter-rouge">hero</code> headline now reads “Moving People” instead of “Lorem Ipsum”. And instead of pointing to a grayscale <span class="editor">FPO (for placement only)</span> hero image, we’re now pointing to a picture of <span class="editor">Beyoncé</span> located at “/images/hero_beyonce.jpg”.</p>
 
 <div class="editor">
 
@@ -372,7 +372,7 @@
 
 </div>
 
-<p>This process of establishing defaults for dynamic data then replacing it with page-specific content continues for each section of the website. In addition to replacing simple strings like headings, we can also dynamically set variables to <code>true</code> or <code>false</code>, loop through an array of items, and more. We can even dramatically alter the UI with just a few changes to a JSON file, which we’ll talk about next.</p>
+<p>This process of establishing defaults for dynamic data then replacing it with page-specific content continues for each section of the website. In addition to replacing simple strings like headings, we can also dynamically set variables to <code class="highlighter-rouge">true</code> or <code class="highlighter-rouge">false</code>, loop through an array of items, and more. We can even dramatically alter the UI with just a few changes to a JSON file, which we’ll talk about next.</p>
 
 <h2 id="articulating-pattern-variations-with-pseudo-patterns">Articulating pattern variations with pseudo-patterns</h2>
 <p>Historically, designers working with static tools have had a tendency to only design best-case scenarios. You know what I’m talking about: the user’s name is Sara Smith and always fits neatly on one line; her profile picture looks like it was clipped out of a magazine; her profile is completely filled out; the two columns of her profile content are exactly the same height.</p>
@@ -446,7 +446,7 @@ dashboard~admin.json
 </code>
 </pre>
 
-<p>The tilde (<code>~</code>) symbol indicates a pseudo-pattern. <em>dashboard~admin.json</em> will inherit all the data contained in <em>dashboard.json</em>, but also gives us the opportunity to append or override additional data. That means the list of collaborators we defined earlier in <em>dashboard.json</em> is still available, but we can add additional data inside <em>dashboard~admin.json</em> like so:</p>
+<p>The tilde (<code class="highlighter-rouge">~</code>) symbol indicates a pseudo-pattern. <em>dashboard~admin.json</em> will inherit all the data contained in <em>dashboard.json</em>, but also gives us the opportunity to append or override additional data. That means the list of collaborators we defined earlier in <em>dashboard.json</em> is still available, but we can add additional data inside <em>dashboard~admin.json</em> like so:</p>
 
 <pre>
 <code>
@@ -456,7 +456,7 @@ dashboard~admin.json
 </code>
 </pre>
 
-<p>We’re defining a variable called <code>isAdmin</code> and setting it to <code>true</code>. We can now use that to conditionally include the additional actions inside the block pattern.</p>
+<p>We’re defining a variable called <code class="highlighter-rouge">isAdmin</code> and setting it to <code class="highlighter-rouge">true</code>. We can now use that to conditionally include the additional actions inside the block pattern.</p>
 
 <pre>
 <code>
@@ -464,7 +464,7 @@ dashboard~admin.json
 \&lt;div class="block"\&gt;
   \&lt;img src="{{ img }}" alt="{{ name }}" /\&gt;
   \&lt;h3\&gt;{{ name }}\&lt;/h3\&gt;
-  \&lt;h4\&gt;{{ title }}\\
+  \&lt;h4\&gt;{{ title }}\&lt;/h4&gt;\
   {{# isAdmin }}
   {{&gt; molecules-block-actions }}
   {{/ isAdmin }}
@@ -473,7 +473,7 @@ dashboard~admin.json
 </code>
 </pre>
 
-<p>The first few lines are pulling in the <code>img</code>, <code>name</code>, and <code>title</code> we defined in <em>dashboard.json</em>. But pay close attention to what’s wrapped in the <code>isAdmin</code> Mustache section. What we’re saying here is: if <code>isAdmin</code> is set to <code>true</code>, include a molecule pattern called <code>block-actions</code>. The <code>block-actions</code> pattern contains the edit and delete buttons, and will only display if <code>isAdmin</code> is set to <code>true</code> (or anything besides <code>false</code>). In our default <em>dashboard.json</em>, <code>isAdmin</code> isn’t set, so the extra actions won’t display. In <em>dashboard~admin.json</em>, we’re setting <code>isAdmin</code> to <code>true</code> so the extra actions will display. You can extend this technique to dramatically alter the entire UI (like altering the primary navigation, showing additional panels on the dashboard, adding extra controls, and so on) just by changing a single variable. Powerful stuff, indeed.</p>
+<p>The first few lines are pulling in the <code class="highlighter-rouge">img</code>, <code class="highlighter-rouge">name</code>, and <code class="highlighter-rouge">title</code> we defined in <em>dashboard.json</em>. But pay close attention to what’s wrapped in the <code class="highlighter-rouge">isAdmin</code> Mustache section. What we’re saying here is: if <code class="highlighter-rouge">isAdmin</code> is set to <code class="highlighter-rouge">true</code>, include a molecule pattern called <code class="highlighter-rouge">block-actions</code>. The <code class="highlighter-rouge">block-actions</code> pattern contains the edit and delete buttons, and will only display if <code class="highlighter-rouge">isAdmin</code> is set to <code class="highlighter-rouge">true</code> (or anything besides <code class="highlighter-rouge">false</code>). In our default <em>dashboard.json</em>, <code class="highlighter-rouge">isAdmin</code> isn’t set, so the extra actions won’t display. In <em>dashboard~admin.json</em>, we’re setting <code class="highlighter-rouge">isAdmin</code> to <code class="highlighter-rouge">true</code> so the extra actions will display. You can extend this technique to dramatically alter the entire UI (like altering the primary navigation, showing additional panels on the dashboard, adding extra controls, and so on) just by changing a single variable. Powerful stuff, indeed.</p>
 
 <p>Whew. If you’ve made it this far, congratulations! You now know how to add and manipulate dynamic data in Pattern Lab. Pattern Lab’s ability to design with dynamic data provides some crucial benefits:</p>
 
@@ -635,7 +635,7 @@ dashboard~admin.json
 	</figcaption>
 </figure>
 
-<p>In the example above, we have a molecule pattern called <code>block-media-link</code>, which contains an image, headline, and call to action. Looking at the pattern’s lineage, we can see it contains another pattern called <code>atoms-square</code>, which is the circular thumbnail-sized image (the naming is a bit confusing, but we’re using CSS to round the square image’s corners). We can also see where exactly this pattern gets used: the <code>profile-nav</code> molecule, the <code>section-media-list</code> organism, the <code>settings-account</code> template, and the <code>settings-account-edit</code> template.</p>
+<p>In the example above, we have a molecule pattern called <code class="highlighter-rouge">block-media-link</code>, which contains an image, headline, and call to action. Looking at the pattern’s lineage, we can see it contains another pattern called <code class="highlighter-rouge">atoms-square</code>, which is the circular thumbnail-sized image (the naming is a bit confusing, but we’re using CSS to round the square image’s corners). We can also see where exactly this pattern gets used: the <code class="highlighter-rouge">profile-nav</code> molecule, the <code class="highlighter-rouge">section-media-list</code> organism, the <code class="highlighter-rouge">settings-account</code> template, and the <code class="highlighter-rouge">settings-account-edit</code> template.</p>
 
 <p>This contextual information is amazingly helpful for designers and developers; I know I use the lineage feature <em>all the time</em> in my own workflow. Let’s say we wanted to make changes to a particular pattern, like doubling the size of an image or adding an additional text element: <strong>we’d immediately know which patterns and templates would need to be retested and QA’d to ensure nothing breaks with the changes</strong>. The lineage feature also helps point out unused or underutilized patterns so that teams can weed them out of the pattern library.</p>
 
