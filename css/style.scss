@@ -189,6 +189,18 @@ a {
 	color: $brown;
 }
 
+h2, h3, h4, h5 {
+	a {
+		text-decoration: none;
+		transition: all $speed-fast ease-out;
+		
+		
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
 /*------------------------------------*\
     $MEDIA ELEMENTS
 \*------------------------------------*/
