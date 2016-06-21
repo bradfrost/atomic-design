@@ -204,6 +204,8 @@ For as long as I've been talking about atomic design, I've had people proffer al
 
 That being said, naming things is hard and imperfect. The names I've chosen for the stages of atomic design have worked really well for me and the teams I've worked with. But maybe they don't work for you. That's more than OK. Here's one perspective from a designer at a digital agency:
 
+[TODO] Replace this example (as link is broken) with this example from GE https://medium.com/ge-design/ges-predix-design-system-8236d47b0891#.uo68yjo9g [/TODO]
+
 > Even though they couldn’t pick up on all the terminology [of atomic design], they didn’t throw the concept out the door. Instead we rallied together to transform it to work for us.  The way we made it work for us is by changing the 5 parts that make it up while still maintaining the overall concept. Our goal was to come up with terms that made sense to us and anyone we would on board in the future. <cite><a href="http://createstopbecreative.com/2015/03/04/how-we-adapted-atomic-design/">Jono Herrington</a></cite>
 
 The terms the team came up with were "foundations", "materials", "rooms", "templates", and "pages". Does this make sense to you? It doesn't matter. By taking the time to establish an agreed-upon vocabulary, their team was able to get on board with the concept of atomic design and work together effectively by speaking the same language.

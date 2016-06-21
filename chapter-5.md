@@ -158,11 +158,11 @@ There will inevitably be disciplines that actively do the work, while other disc
 ## Make it adaptable 
 Change is the only constant, as they say. **The <em>living</em> part of a living design system means that it needs to roll with the punches, adapt to feedback, be iterated upon, and evolve alongside the products it serves**.  
 
-A misconception about design systems is that once they're established, they become an omnipotent and unchangeable source of truth. Thinking in such a rigid way is a surefire way to stir up a mutiny amongst the design system's users. If users are pigeon-holed into using patterns that don't solve their problems, they'll go rogue and the value of the design system's will diminish. 
+A misconception about design systems is that once they're established, they become an omnipotent and unchangeable source of truth. Thinking in such a rigid way is a surefire way to stir up a mutiny amongst the design system's users. If users are pigeon-holed into using patterns that don't solve their problems, they'll go rogue and find something that will solve their needs. 
 
 **Creating a clear governance plan is essential for making sure your design system can adapt and thrive even as time goes by**.  A solid governance strategy starts by answering some important questions about handling change. Consider the following questions:
 
-- What happens when an existing pattern doesn't quite work for a specific application? Does the pattern get modified? Do you recommend a different pattern? Does a new pattern need created?
+- What happens when an existing pattern doesn't quite work for a specific application? Does the pattern get modified? Do you recommend using a different pattern? Does a new pattern need created?
 - How are new pattern requests handled?
 - How do old patterns get retired? 
 - What happens when bugs are found?
@@ -172,22 +172,21 @@ A misconception about design systems is that once they're established, they beco
 - How are design system changes deployed to live applications?
 - How will people find out about changes?
 
-Your team should have answers and processes in place to address these questions. 
+This list isn't comprehensive, but your team should have answers and processes in place to address changes to the design system. 
 
-As mentioned a few times already, frequent communication and collaboration between design system makers and users is key for successfully governing your design system. **Make it as easy as possible to users and makers to communicate**. Set up a design system Slack channel, establish regular office hours, make sure your bug ticket software helps facilitate conversation, and keep the doors open for ad hoc conference/video calls. If users are stuck with something, they should know exactly where and who to turn to for help.
+As mentioned a few times already, frequent communication and collaboration between design system makers and users is key for successfully governing your design system. **Make it as easy as possible to users and makers to communicate**. Set up a design system Slack channel, establish regular office hours, make sure your bug ticket software helps facilitate conversation, and keep the doors open for ad hoc chats and calls. If users are stuck on something, they should know exactly where and who to turn to for help.
 
-In addition to informal day-to-day conversation between makers and users, **schedule regular "state of the union" meetings to review the design system** with makers, users, and other key stakeholders. Discuss what's working, be honest with what needs improved, and review priorities and the roadmap to make sure the   system is serving the needs of the business. These regular checkups are especially helpful for keeping stakeholders up to speed
-
-Make sure the patterns are up to date and are properly serving the products. Make sure documentation is clear and comprehensive. Build in time into makers' schedules to address bugs, improve  
+In addition to informal day-to-day conversation between makers and users, **schedule regular "state of the union" meetings to review the design system** with makers, users, and other key stakeholders. Discuss what's working, be honest with what needs improved, and review priorities and the roadmap to make sure the   system is serving the needs of the business. These regular checkups are especially helpful for keeping stakeholders up to speed since they often aren't involved in the day to day of the design system.
 
 ### Making changes to patterns
+One thing that's critical to the longterm success of your design system is to make sure the UI patterns are up to date and are properly serving the products. 
 
 #### Changing patterns
 
 #### Adding patterns
 
 #### Removing patterns
-- Have a plan for deprecating patterns Deprecate patterns https://github.com/salesforce-ux/sass-deprecate
+- Have a plan for deprecating patterns that are no longer serving the organization.  https://github.com/salesforce-ux/sass-deprecate
 
 ### Communicating change
 You can create the best style guide in world, use the most appropriate technology, have an amazing team in place, and have excited users, but if you don't communicate updates and changes to the design system the entire effort will suffer.
@@ -350,5 +349,5 @@ So there you have it. In order to make a maintainable design system, you should:
 - **Make it last** by creating a clear governance plan and communicating changes to the design system across the entire organization.
 
 ## Go forth and be atomic
-We're tasked with making user interfaces work well and look great across a dizzying array of different devices, screen sizes, form factors, and environments. I hope that the concepts covered in this book give you solid ground to stand on as you bravely tackle this multi-device universe. By creating design systems, being thoughtful about how you construct user interfaces, establishing a collaborative & pattern-driven workflow, and maintaining your design system, I hope you and your team can create great things together. Go forth and be atomic!
+We're tasked with making user interfaces work well and look great across a dizzying array of different devices, screen sizes, form factors, and environments. I hope that the concepts covered in this book give you solid ground to stand on as you bravely tackle this increasingly diverse digital landscape. By creating design systems, being thoughtful about how you construct user interfaces, establishing a collaborative & pattern-driven workflow, and maintaining your design system, I hope you and your team can create great things together. Go forth and be atomic!
 
