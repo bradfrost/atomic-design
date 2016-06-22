@@ -179,7 +179,7 @@ As mentioned a few times already, frequent communication and collaboration betwe
 In addition to informal day-to-day conversation between makers and users, **schedule regular "state of the union" meetings to review the design system** with makers, users, and other key stakeholders. Discuss what's working, be honest with what needs improved, and review priorities and the roadmap to make sure the   system is serving the needs of the business. These regular checkups are especially helpful for keeping stakeholders up to speed since they often aren't involved in the day to day of the design system.
 
 ### Making changes to patterns
-One thing that's critical to the longterm success of your design system is to make sure the UI patterns are up to date and are properly serving the products. 
+One thing that's critical to the longterm success of your design system is to make sure the UI patterns are up to date and are properly serving the products.
 
 #### Changing patterns
 
