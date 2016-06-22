@@ -192,11 +192,12 @@ a {
 h2, h3, h4, h5 {
 	a {
 		text-decoration: none;
+		color: $brown;
 		transition: all $speed-fast ease-out;
 		
 		
 		&:hover, &:focus {
-			text-decoration: underline;
+			color: $orange;
 		}
 	}
 }

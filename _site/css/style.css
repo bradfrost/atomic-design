@@ -141,9 +141,10 @@ a {
 
 h2 a, h3 a, h4 a, h5 a {
   text-decoration: none;
+  color: #100;
   transition: all 0.12s ease-out; }
   h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus {
-    text-decoration: underline; }
+    color: #be6700; }
 
 /*------------------------------------*\
     $MEDIA ELEMENTS
