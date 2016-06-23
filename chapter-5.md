@@ -58,7 +58,7 @@ As you embark on this pattern-paved journey, let's talk about things you can do 
 - Make it maintainable.
 - Make it cross-disciplinary.
 - Make it approachable.
-- Make it public.
+- Make it visible.
 - Make it bigger.
 - Make it agnostic.
 - Make it contextual.
@@ -85,7 +85,7 @@ You have to start somewhere, and having something started is better than nothing
 Take the time to package your UI patterns in a pattern library and get it ready to shop around. I've talked to several ambitious team members who have built the basic gist of their pattern library over the course of a weekend. This effort makes all the difference in the world since it gives something tangible for stakeholders to react to. Again: *show, don't tell*.
 
 ### Step 2: show that it's useful 
-With a nascent-yet-tangible design system in place, you can have a more meaningful conversation with the people who control money, scheduling, and resources. You can discuss exactly how the design system helped save time and money (see *[Pitching Patterns](/chapter-4/#pitching-patterns)* in the last chapter), then paint a picture for how those benefits would scale even further if the organization invested in an official, full-fledged design system. 
+With a nascent-yet-tangible design system in place, you can have more meaningful conversations with the people who control money, scheduling, and resources. You can discuss exactly how the design system helped save time and money (see *[Pitching Patterns](/chapter-4/#pitching-patterns)* in the last chapter), then paint a picture for how those benefits would scale even further if the organization invested in an official, full-fledged design system. 
 
 Get team members from different disciplines to back you up and discuss the initial success of the system, and also pull in others who are sympathetic to the cause that would stand to benefit from an expanded design system. 
 
@@ -158,7 +158,7 @@ There will inevitably be disciplines that actively do the work, while other disc
 ## Make it adaptable 
 Change is the only constant, as they say. **The <em>living</em> part of a living design system means that it needs to roll with the punches, adapt to feedback, be iterated upon, and evolve alongside the products it serves**.  
 
-A misconception about design systems is that once they're established, they become an omnipotent and unchangeable source of truth. Thinking in such a rigid way is a surefire way to stir up a mutiny amongst the design system's users. If users are pigeon-holed into using patterns that don't solve their problems, they'll go rogue and find something that will solve their needs. 
+A misconception about design systems is that once they're established, they become an omnipotent and unchangeable source of truth. Thinking in such a rigid way is a surefire way to have your design system effort backfire. If users feel handcuffed and pigeon-holed into using patterns that don't solve their problems, they'll perceive the design system as a unhelpful tool and start searching elsewhere for something that will better address their needs. 
 
 **Creating a clear governance plan is essential for making sure your design system can adapt and thrive even as time goes by**.  A solid governance strategy starts by answering some important questions about handling change. Consider the following questions:
 
@@ -172,55 +172,43 @@ A misconception about design systems is that once they're established, they beco
 - How are design system changes deployed to live applications?
 - How will people find out about changes?
 
-This list isn't comprehensive, but your team should have answers and processes in place to address changes to the design system. 
+There are likely many more change-related questions to answer, but the point is your team should have answers and processes in place to address changes to the design system. 
 
-As mentioned a few times already, frequent communication and collaboration between design system makers and users is key for successfully governing your design system. **Make it as easy as possible to users and makers to communicate**. Set up a design system Slack channel, establish regular office hours, make sure your bug ticket software helps facilitate conversation, and keep the doors open for ad hoc chats and calls. If users are stuck on something, they should know exactly where and who to turn to for help.
+As mentioned a few times already, frequent communication and collaboration between design system makers and users is key for successfully governing your design system. **Make it as easy as possible to users and makers to communicate**. Set up a design system Slack or Yammer channel, establish regular office hours, make sure your bug ticket software helps facilitate conversation, and keep the doors open for ad hoc chats and calls. If users are stuck on something, they should know exactly where and who to turn to for help.
 
-In addition to informal day-to-day conversation between makers and users, **schedule regular "state of the union" meetings to review the design system** with makers, users, and other key stakeholders. Discuss what's working, be honest with what needs improved, and review priorities and the roadmap to make sure the   system is serving the needs of the business. These regular checkups are especially helpful for keeping stakeholders up to speed since they often aren't involved in the day to day of the design system.
+In addition to informal day-to-day conversation between makers and users, **schedule regular "state of the union" meetings to review the design system** with makers, users, and other key stakeholders. Discuss what's working, be honest with what needs improved, and review priorities and the roadmap to make sure the   system is serving the needs of the business. These regular checkups are especially helpful for keeping stakeholders up to speed since they often aren't involved in the day to day of the design system's operations.
 
 ### Making changes to patterns
-One thing that's critical to the longterm success of your design system is to make sure the UI patterns are up to date and are properly serving the products.
+A critical part of a successfully maintaining a design system is ensuring UI patterns are up to date, embrace design & development best practices (which are always moving targets!), and continue to properly serve the organization's products and applications.
+
+Let's discuss a few scenarios that require managing change to your design system's UI patterns. 
 
 #### Changing patterns
+UI patterns can and should be changed for a number of reasons: bug fixes, subtle or major visual design tweaks, performance improvements, better accessibility, code refactoring, UX best practice updates, and so on. 
+
+The design system maintenance team needs to understand why and when to tweak patterns, how to go about making those changes, and how to roll those improvements out into individual applications.
+
+Keeping patterns fresh is essential for the longterm health of the design system. Nobody wants to use and maintain a Web 2.0-looking design system full of bevels and crusty code!
 
 #### Adding patterns
+As smart as your team may be, it's quite possible you won't think of every conceivable pattern to include in your design system right out of the gate. As the system is applied to more products, gaps will inevitably emerge where the needs of the application aren't solved by existing patterns. In such cases, it will become clear new patterns will need created to address these needs. 
+
+Care should be taken when adding patterns to the library. **If every whim results in a brand new pattern, the design system will become a bloated and unwieldy wild west**. So it's worth asking, is this a one-off situation or is this something can be leveraged in other applications? 
+
+Perhaps you may want to assume a one-off until a different team encounters a similar use case. If the team working on Application 2 looks at Application 1 and says "I want that!" perhaps that's a good indicator that a one-off pattern should be added to the pattern library. 
 
 #### Removing patterns
-- Have a plan for deprecating patterns that are no longer serving the organization.  https://github.com/salesforce-ux/sass-deprecate
+Patterns should be retired/sunsetted/removed/deprecated for a number of reasons. Perhaps you discover through use that a particular pattern is a terrible idea. Perhaps the industry has moved away from a pattern for UX or technical reasons. Maybe a pattern sat there unused by any application for ages. Maybe users reported back with a lot of negative feedback about working with a particular pattern.
 
-### Communicating change
-You can create the best style guide in world, use the most appropriate technology, have an amazing team in place, and have excited users, but if you don't communicate updates and changes to the design system the entire effort will suffer.
-
-Makers, users, and other stakeholders need to be well aware of all the latest changes to and thinking around the design system. 
-
-Communication is especially important in the early days of the initiative. Frequent communication helps keep the design system in the front of everyone's mind so it takes root and becomes an integral part of your organization's workflow. **As time goes on, frequent communication helps the system increase in value like that fine bottle of wine**. Communication can include: 
-
-- Change logs ("Here's what's changed in the pattern library this month")
-- Roadmaps ("Here's what's coming up over the next few months")
-- requests for feedback ("We're considering deprecating our carousel pattern and would like to hear what you think."),
-- Surveys ("On a scale from 1-5, how useful is the pattern documentation?")
-- Success stories ("Team X launched this new feature using the design system; read more about how they did it.")
-- Resources ("Here's a great article about documenting ")
-
-**Design system changes, updates, and requests should be communicated wherever your team hangs out**. That may include Slack, BaseCamp, Github, wikis, Yammer, email lists, company blogs, intranets, and any other internal tools your team uses to communicate and collaborate. 
-
-{% include figure.html src="../images/fpo.png" caption="Material Design's creators publish a handy changelog on their website so " %}
-
-- Publish updates 
-- Notifications - Regular E-mail newsletters, blog updates, etc, whenever things change, Slack integrations, 
-- email updates, blog posts, video casts, 
-
-> Whenever someone makes a pull request, it sends a notification to our #Design slack channel, announcing to the team that there is a proposal change and feedback is required <cite><a href="https://medium.com/shyp-design/managing-style-guides-at-shyp-c217116c8126">Micah Sivitz, Shyp</a> 
-
-- Monitor progress over time - Lonely Planet's Rizzo design system tracks performance metrics over time.
-
-[/TODO]
+Having a plan for deprecating patterns is a great idea. But how do you remove patterns from the design system without pulling the rug out from people relying on those patterns in their applications? To address this issue, Salesforce created a neat utility called [Sass Deprecate](https://github.com/salesforce-ux/sass-deprecate) that flags patterns that are heading to the chopping block in the near future. Through some clever use of flags and styling, the maker team can give a heads-up to users that a particular pattern is going away, and that they should make use of a different recommended pattern instead. 
 
 ## Make it maintainable
-Many pattern libraries fall into a state of disrepair because the effort required to update patterns and documentation is far too high. If a pattern library is difficult and time consuming to update, people will eventually stop updating it and the pattern library will begin its drift into oblivion. Making updates to UI patterns and documentation should be as frictionless as possible, so reducing this friction should become a high priority for the design system team. This involves careful consideration from both a technological and workflow standpoint.
+With all this talk about changing, adding, and removing patterns, you may be wondering "How the hell are our applications supposed to actually keep up with all these changes?!" And in asking that question, you will have stumbled onto one of the biggest challenges organizations face in successfully maintaining a design system. 
+
+Many design systems fall into a state of disrepair because the effort required to make updates is far too high. If it's difficult and time consuming to update patterns, documentation, and applications, people will eventually get so frustrated they stop paying attention and the design system will begin its drift into oblivion. Making updates to UI patterns, documentation, and applications should be as frictionless as possible, so reducing this friction should become a high priority for the design system team. This involves careful consideration from both a technological and workflow standpoint.
 
 ### In search of the Holy Grail
-**The design system Holy Grail involves creating an environment where the pattern library and production environment are perfectly in sync**. The idea is that you should be able to make a change to a UI pattern and see those changes automatically reflected in both the pattern library and anywhere the pattern is included in production. 
+**The design system Holy Grail involves creating an environment where the pattern library and live applications are perfectly in sync**. The idea is that you should be able to make a change to a UI pattern and see those changes automatically reflected in both the pattern library and anywhere the pattern is included in production. 
 
 {% include figure.html src="../images/content/workflow-system-first-holy-grail.png" caption="The Holy Grail of design systems is one where one can make a change to a UI pattern and have it simultaneously update the pattern library and production environments." %}
 
@@ -230,11 +218,10 @@ As it turns out, this dream can be a reality. Lonely Planet, the travel guide co
 
 {% include figure.html src="../images/content/rizzo.png" caption="Lonely Planet created an API for their UI patterns that is consumed by both their pattern library and production environment. By architecting their design system in this manner, changes to UI patterns are automatically reflected in both the pattern library and production environment, keeping things in sync and thereby achieving the Holy Grail." %}
 
+### Jumping technical hurdles
 Achieving the design system Holy Grail is no easy task, as it requires sophisticated technical architecture and smart people to set it all up. How you go about chasing the Holy Grail — or even if you can achieve it — is dependent on a whole load of factors, including your technical architecture and organizational makeup.
 
-[TODO]
-
-In my experience, I've found that sharing CSS and JS with the production environment is relatively easy, but sharing markup is tough. 
+In my experience, I've found that sharing CSS and some JS with the production environment is relatively easy, but sharing markup is tough. 
 
 As we discussed in Chapter 3, using HTML templating languages makes markup portable and dynamic. Templating language should match the production environment - The closer you can get to matching your pattern library and production templating .
 
@@ -244,11 +231,13 @@ Be careful to keep documentation accessible to non developers.
 
 How can you set up your applications and pattern library to achieve the Holy Grail? Developer Marcelo Somers outlined several methods for thoughtfully keeping your pattern library and production environments in sync. [Chasing the holy grail](https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.vy45rkm7m)
 
+
+### Centralized vs decentralized
 There are a number of reasons why an organization may *not* be able to achieve the Holy Grail. Perhaps your organization has digital products on many different platforms using wildly different technologies. For example, the U.S. government's design system — called the U.S. Web Digital Standards — is a collection of UI components and visual styles meant to help people making government websites make more consistent UIs. It would be amazing to see a Holy Grail-style system  However, due to the vastness and decentralized nature of the organization, it's not really achievable.
 
-Technology alone can't achieve maintainable design systems; you must create a culture that communicates
+{% include figure.html src="../images/fpo.png" caption="Spectrum of centralized vs decentralized. " %}
 
-[/TODO]
+Technology alone can't achieve maintainable design systems; you must create a culture that communicates
 
 ## Make it cross-disciplinary
 Style guides often jump straight into code snippets and pattern usage for the benefit of the design system users. Of course a pattern library needs to be helpful for the people actually making use of the patterns, but **treating a style guide solely a developer resource limits its potential**.
@@ -276,7 +265,35 @@ But creating a great-looking, intuitive style guide experience doesn't just happ
 
 Creating a useful design system should be the team's first priority. A happy home to contain it all might not happen right out of the gate, but should become a bigger priority once the design system becomes official. Making a good-looking style guide isn't just design for design's sake; **it reflects an organization’s commitment to making and maintaining a thoughtful, deliberate design system**.
 
-## Make it public
+## Make it visible
+
+### Communicating change
+You can create the best style guide in world, use the most appropriate technology, have an amazing team in place, and have excited users, but if you don't communicate updates and changes to the design system the entire effort will suffer.
+
+Makers, users, and other stakeholders need to be well aware of all the latest changes to and thinking around the design system. 
+
+Communication is especially important in the early days of the initiative. Frequent communication helps keep the design system in the front of everyone's mind so it takes root and becomes an integral part of your organization's workflow. **As time goes on, frequent communication helps the system increase in value like that fine bottle of wine**. Communication can include: 
+
+- Change logs ("Here's what's changed in the pattern library this month")
+- Roadmaps ("Here's what's coming up over the next few months")
+- requests for feedback ("We're considering deprecating our carousel pattern and would like to hear what you think."),
+- Surveys ("On a scale from 1-5, how useful is the pattern documentation?")
+- Success stories ("Team X launched this new feature using the design system; read more about how they did it.")
+- Resources ("Here's a great article about documenting ")
+
+**Design system changes, updates, and requests should be communicated wherever your team hangs out**. That may include Slack, BaseCamp, Github, wikis, Yammer, email lists, company blogs, intranets, and any other internal tools your team uses to communicate and collaborate. 
+
+{% include figure.html src="../images/fpo.png" caption="Material Design's creators publish a handy changelog on their website so " %}
+
+- Publish updates 
+- Notifications - Regular E-mail newsletters, blog updates, etc, whenever things change, Slack integrations, 
+- email updates, blog posts, video casts, 
+
+> Whenever someone makes a pull request, it sends a notification to our #Design slack channel, announcing to the team that there is a proposal change and feedback is required <cite><a href="https://medium.com/shyp-design/managing-style-guides-at-shyp-c217116c8126">Micah Sivitz, Shyp</a> 
+
+- Monitor progress over time - Lonely Planet's Rizzo design system tracks performance metrics over time.
+
+### Make it public.
 Another way to set your design system up for longterm success is to **make your style guide publicly accessible**.
 
 But why? After all, isn't a style guide merely an internal resource to help your organization work better together? What use is it to the outside world? And wouldn't publishing your style guide give away all your trade secrets?
@@ -342,12 +359,12 @@ So there you have it. In order to make a maintainable design system, you should:
 - **Make it maintainable** by seeking the Holy Grail and making it easy to deploy and communicate changes to the design system.
 - **Make it cross-disciplinary** by making your pattern library become a watering hole the entire organization can gather around.
 - **Make it approachable** by making an attractive, easy-to-use pattern library with helpful documentation.
-- **Make it public** to increase your design system's visibility, increases accountability, and help with recruiting efforts.
+- **Make it visible** to communicate change, increase accountability, and help with recruiting efforts.
 - **Make it bigger** by including brand, voice and tone, code, design principles, and writing guidelines. 
 - **Make it agnostic** by naming patterns according to their structure rather than their context or content.
 - **Make it contextual** by demonstrating what patterns make up a particular pattern and showing where each pattern is utilized.
 - **Make it last** by creating a clear governance plan and communicating changes to the design system across the entire organization.
 
 ## Go forth and be atomic
-We're tasked with making user interfaces work well and look great across a dizzying array of different devices, screen sizes, form factors, and environments. I hope that the concepts covered in this book give you solid ground to stand on as you bravely tackle this increasingly diverse digital landscape. By creating design systems, being thoughtful about how you construct user interfaces, establishing a collaborative & pattern-driven workflow, and maintaining your design system, I hope you and your team can create great things together. Go forth and be atomic!
+We're tasked with making a whole slew of products, sites, and applications work and look great across a dizzying array of different devices, screen sizes, form factors, and environments. I hope that the concepts covered in this book give you solid ground to stand on as you bravely tackle this increasingly diverse digital landscape. By creating design systems, being deliberate in how you construct user interfaces, establishing a collaborative & pattern-driven workflow, and setting up processes to successfully maintain your design system, I hope you and your team can create great things together. Go forth and be atomic!
 
