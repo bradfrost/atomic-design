@@ -59,7 +59,7 @@
   <li>They <strong>serve as a future-friendly foundation</strong> for teams to modify, extend, and improve upon over time.</li>
 </ul>
 
-<p>That all sounds wonderful, right? I can almost hear you saying, “I need this whole pattern library thing in my life.” But how do we make pattern libraries happen? Well, you’ve come to the right place, friend, because the rest of this book is dedicated to exactly that. This chapter will introduce helpful tools for creating pattern libraries, and the following chapter will discuss how to make patterns a cornerstone of your design and development workflow. </p>
+<p>That all sounds wonderful, right? I can almost hear you saying, “I need this whole pattern library thing in my life.” But how do we make pattern libraries happen? Well, you’ve come to the right place, friend, because the rest of this book is dedicated to exactly that. This chapter will introduce helpful tools for creating pattern libraries, and the following chapter will discuss how to make patterns a cornerstone of your design and development workflow.</p>
 
 <p>I’ll be talking about the qualities of effective pattern libraries through the lens of a tool called <a href="http://patternlab.io">Pattern Lab</a>, an open-source project created by me and <a href="http://dmolsen.com">Dave Olsen</a> to execute atomic design systems. While I’ll excitedly discuss Pattern Lab and its various features, I want to stress that the point of this chapter is to cover the characteristics of well-constructed pattern libraries, not sell any one specific tool to you. Hell, Pattern Lab isn’t even for sale! No single tool will be a perfect fit for all readers, but be sure to keep the following principles in mind when deciding what tools to use to create your pattern libraries.</p>
 
@@ -82,7 +82,7 @@
 
 <p>Let’s walk through these points, starting with the term <em>static site generator</em>. Static site generator tools take in some source code &amp; assets, compile them, and spit plain-ol’ HTML, CSS, and JavaScript out the other end. <strong>Pattern Lab takes source code – namely patterns – and compiles those patterns into a functional front-end UI inside a pattern library shell</strong>.</p>
 
-<p>So what does Pattern Lab look like out of the box? Drumroll, please. </p>
+<p>So what does Pattern Lab look like out of the box? Drumroll, please.</p>
 
 <figure>
     <img src="../images/content/pattern-lab-default.png" alt="The default Pattern Lab dashboard. What it lacks in good looks, it makes up for in utility." />
@@ -93,12 +93,12 @@
 
 <p>Not a terribly inspiring design, eh? Believe it or not, this minimal (one may even say “lack of”) design is deliberate. To avoid incorrect classification as a UI framework like Bootstrap, the design is deliberately stripped down so no one would mistakenly use Pattern Lab’s demo UI as suggested styles. Pattern Lab doesn’t give you any answers as to how to design or architect your front-end code; <em>you have to do all that work yourself.</em> The look &amp; feel, naming conventions, syntax, structure, libraries, and scripts you choose to use to create your UI is entirely up to you. Heck, you can even use UI frameworks like Bootstrap within Pattern Lab. Pattern Lab is just there to help stitch everything together.</p>
 
-<p>As a technical aside, Pattern Lab uses PHP as the engine that stitches patterns together and generates the pattern library. However, you don’t need to be a PHP wizard to use Pattern Lab any more than you have to know how to build an internal combustion engine in order to drive a car. Moreover, your final website doesn’t have to be built with PHP in order to use the tool, as Pattern Lab’s output is backend-agnostic HTML, CSS, and JavaScript. But if you’re one of those cool kids who thinks using a PHP-based tool will somehow ruin your reputation, there’s also a <a href="https://github.com/pattern-lab/patternlab-node">Node.js version</a> thanks to web developer <a href="http://www.brianmuenzenmeyer.com/">Brian Muenzenmeyer</a>. </p>
+<p>As a technical aside, Pattern Lab uses PHP as the engine that stitches patterns together and generates the pattern library. However, you don’t need to be a PHP wizard to use Pattern Lab any more than you have to know how to build an internal combustion engine in order to drive a car. Moreover, your final website doesn’t have to be built with PHP in order to use the tool, as Pattern Lab’s output is backend-agnostic HTML, CSS, and JavaScript. But if you’re one of those cool kids who thinks using a PHP-based tool will somehow ruin your reputation, there’s also a <a href="https://github.com/pattern-lab/patternlab-node">Node.js version</a> thanks to web developer <a href="http://www.brianmuenzenmeyer.com/">Brian Muenzenmeyer</a>.</p>
 
 <p>If that all sounded like gibberish to you, don’t worry. This chapter focuses on the over-arching features and principles behind Pattern Lab rather than going too far down the technical rabbit hole. You can check out <a href="http://patternlab.io/docs/index.html">Pattern Lab’s documentation</a> to dive into the nitty gritty.</p>
 
 <h2 id="building-atomic-design-systems-with-pattern-lab">Building atomic design systems with Pattern Lab</h2>
-<p>In order to understand the core concept behind Pattern Lab, you need to understand Russian nesting dolls. </p>
+<p>In order to understand the core concept behind Pattern Lab, you need to understand Russian nesting dolls.</p>
 
 <figure>
     <img src="../images/content/russian-nesting-dolls.jpg" alt="Russian nesting dolls. &lt;a href='https://www.flickr.com/photos/tromal/6901848291/'&gt;via Flickr user Tromal&lt;/a&gt;" />
@@ -107,7 +107,7 @@
 	</figcaption>
 </figure>
 
-<p>Matryoshka dolls, also known as Russian nesting dolls, are beautifully-carved hollow wooden dolls of increasing size that are placed one inside the other. Patterns in Pattern Lab operate in a similar manner: the smallest patterns (atoms) are included inside bigger patterns (molecules), which are included in even bigger patterns (organisms), which are in turn included in even bigger patterns (templates). </p>
+<p>Matryoshka dolls, also known as Russian nesting dolls, are beautifully-carved hollow wooden dolls of increasing size that are placed one inside the other. Patterns in Pattern Lab operate in a similar manner: the smallest patterns (atoms) are included inside bigger patterns (molecules), which are included in even bigger patterns (organisms), which are in turn included in even bigger patterns (templates).</p>
 
 <p>Constructing UIs in this manner helps keeps things <a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself">DRY</a>, which is a long-standing computer science principle that stands for “Don’t Repeat Yourself.” Make a change to a pattern, and anywhere that pattern is employed will magically update with those changes. This saves an extraordinary amount of time and grief, and certainly beats the pants off sifting through hundreds of Photoshop documents for every instance of a pattern just to make a simple change.</p>
 
@@ -119,7 +119,7 @@
 </code>
 </pre>
 
-<p>This is Mustache code, in case the double curly braces (<code>{{}}</code>) that look like little mustaches didn’t give it away. The greater than symbol (<code>&gt;</code>) is Mustache’s way of telling Pattern Lab “hey, I want you to include an atom pattern called “thumbnail”. Pattern Lab will go searching through its folders of patterns to find an atom named “thumbnail”.</p>
+<p>This is Mustache code, in case the double curly braces (<code class="highlighter-rouge"><span class="p">{</span><span class="err">{</span><span class="p">}</span><span class="err">}</span></code>) that look like little mustaches didn’t give it away. The greater than symbol (<code class="highlighter-rouge">&gt;</code>) is Mustache’s way of telling Pattern Lab “hey, I want you to include an atom pattern called “thumbnail”. Pattern Lab will go searching through its folders of patterns to find an atom named “thumbnail”.</p>
 
 <figure>
     <img src="../images/content/pattern-lab-file-structure.png" alt="This is what Pattern Lab's default patterns folder structure looks like. You can name and categorize these folders however you'd like, even removing the labels 'atoms', 'molecules', and 'organisms'. The most important consideration is to establish naming &amp; categorization that is most clear for your team." />
@@ -155,7 +155,7 @@
 </code>
 </pre>
 
-<p>You can see we have HTML markup consisting of a wrapper <code>div</code> with a class name of <code>block-post</code>, a link, a Mustache include for the thumbnail image, a <code>&lt;h3&gt;</code> tag for the headline, and a <code>&lt;p&gt;</code> tag for the excerpt. You’ll notice there’s more Mustache code for <code>url</code>, <code>headline</code>, and <code>excerpt</code>, which we’ll use later to dynamically swap in actual content. More on that in a bit.</p>
+<p>You can see we have HTML markup consisting of a wrapper <code class="highlighter-rouge">div</code> with a class name of <code class="highlighter-rouge">block-post</code>, a link, a Mustache include for the thumbnail image, a <code class="highlighter-rouge">&lt;h3&gt;</code> tag for the headline, and a <code class="highlighter-rouge">&lt;p&gt;</code> tag for the excerpt. You’ll notice there’s more Mustache code for <code class="highlighter-rouge">url</code>, <code class="highlighter-rouge">headline</code>, and <code class="highlighter-rouge">excerpt</code>, which we’ll use later to dynamically swap in actual content. More on that in a bit.</p>
 
 <p>Now that we have our pattern markup established, we can now include that chunk of code in even bigger patterns using the same include method:</p>
 
@@ -188,7 +188,7 @@
 </code>
 </pre>
 
-<p>What’s going on here? Well, we have a basic <code>&lt;header&gt;</code> tag, and inside that tag we’re including the logo image atom, the primary navigation molecule, and the search form molecule.</p>
+<p>What’s going on here? Well, we have a basic <code class="highlighter-rouge">&lt;header&gt;</code> tag, and inside that tag we’re including the logo image atom, the primary navigation molecule, and the search form molecule.</p>
 
 <p>And now we can include that relatively complex pattern anywhere we need it.</p>
 
@@ -207,7 +207,7 @@
 	</figcaption>
 </figure>
 
-<p>Take a quick stroll through the homepage template and you’ll see some pretty standard patterns: a site header at the top, a site footer at the bottom, and a full-screen hero area. You’ll also see a few other patterns repeating themselves throughout the template. </p>
+<p>Take a quick stroll through the homepage template and you’ll see some pretty standard patterns: a site header at the top, a site footer at the bottom, and a full-screen hero area. You’ll also see a few other patterns repeating themselves throughout the template.</p>
 
 <p>So how does this look in code? As you might expect, it involves more includes!</p>
 
@@ -247,7 +247,7 @@
 
 <p>At this stage in the game the smaller patterns are already constructed, so all the template needs to do is pull them into the context of a page layout and give them unique names.</p>
 
-<p>Taking a closer look at the code, notice certain patterns like <code>{{&gt; organisms-header }}</code> and <code>{{&gt; organisms-footer }}</code> are included the same way we’ve done with the prior examples. But there are also a few other includes patterns that are supplemented by some additional information, like the following:</p>
+<p>Taking a closer look at the code, notice certain patterns like <code class="highlighter-rouge"><span class="p">{</span><span class="err">{&gt;</span><span class="w"> </span><span class="err">organisms-header</span><span class="w"> </span><span class="p">}</span><span class="err">}</span></code> and <code class="highlighter-rouge"><span class="p">{</span><span class="err">{&gt;</span><span class="w"> </span><span class="err">organisms-footer</span><span class="w"> </span><span class="p">}</span><span class="err">}</span></code> are included the same way we’ve done with the prior examples. But there are also a few other includes patterns that are supplemented by some additional information, like the following:</p>
 
 <pre>
 <code>
@@ -259,7 +259,7 @@
 </code>
 </pre>
 
-<p>We’re including <code>organisms-factoid</code> the same way as all the other patterns, but we’re also naming it <code>factoid-advertising</code> by wrapping the include in a mustache <em>section</em>, indicated by the mustache code containing the <code>#</code> and <code>/</code> symbols.  By giving the pattern instance a unique name, we can latch onto it and dynamically replace the content of the pattern. More on that in the next section!</p>
+<p>We’re including <code class="highlighter-rouge">organisms-factoid</code> the same way as all the other patterns, but we’re also naming it <code class="highlighter-rouge">factoid-advertising</code> by wrapping the include in a mustache <em>section</em>, indicated by the mustache code containing the <code class="highlighter-rouge">#</code> and <code class="highlighter-rouge">/</code> symbols.  By giving the pattern instance a unique name, we can latch onto it and dynamically replace the content of the pattern. More on that in the next section!</p>
 
 <p>This Russian nesting doll approach to building UIs is simple but tremendously powerful. This structure allows designers and developers to keep patterns DRY saving time, effort, and money.  This approach also allows teams to build a final UI while simultaneously creating the underlying UI design system.  After all, the final interface is one instantiation of its underlying design system. Teams can also traverse between abstract and concrete, zeroing in on a particular pattern to fix bugs (“The header’s broken!”), while also seeing how changes to small patterns affect the overall page layout.</p>
 
@@ -275,11 +275,11 @@
 	</figcaption>
 </figure>
 
-<p>On the left we have the template level, which articulates the content structure of the patterns making up the webpage. And on the right we have the page level, where we’re pouring in real representative content to demonstrate what the final UI might look like and test the effectiveness of the design system. </p>
+<p>On the left we have the template level, which articulates the content structure of the patterns making up the webpage. And on the right we have the page level, where we’re pouring in real representative content to demonstrate what the final UI might look like and test the effectiveness of the design system.</p>
 
 <p>So how do we swap dummy content for real content in Pattern Lab? Pattern Lab uses JSON (as well as YAML, Markdown, and other data formats) to define and swap out the dynamic bits of content in our designs.</p>
 
-<p>The default placeholder data is defined in a file called <code>data.json</code> that lives in Pattern Lab’s <code>source</code> directory. Inside this file we define all the text, image paths, and other dynamic data that will make up our UI. Here’s a small sample from Time Inc.’s <code>data.json</code> file:</p>
+<p>The default placeholder data is defined in a file called <code class="highlighter-rouge">data.json</code> that lives in Pattern Lab’s <code class="highlighter-rouge">source</code> directory. Inside this file we define all the text, image paths, and other dynamic data that will make up our UI. Here’s a small sample from Time Inc.’s <code class="highlighter-rouge">data.json</code> file:</p>
 
 <pre>
 <code>
@@ -297,7 +297,7 @@
 
 <p>For developers, this type of format most likely looks familiar. If you’re not a developer, don’t freak out! Once you look beyond the curly braces and quotes, you’ll see that we’re defining a <em>hero</em> object (for the full-bleed hero area directly below the header) that has a <em>headline</em> value of “Lorem Ipsum” and an <em>img</em> with a <em>src</em> value of “/images/sample/fpo_hero.png”. We’re simply defining this object’s attributes and providing values for those attributes.</p>
 
-<p>Once those objects are defined, then we can override their attributes at Pattern Lab’s page level. This is accomplished by creating a new JSON file that matches the page pattern name (for Time Inc.’s homepage, we’ll call it <code>homepage.json</code>) inside the <code>pages</code> directory. </p>
+<p>Once those objects are defined, then we can override their attributes at Pattern Lab’s page level. This is accomplished by creating a new JSON file that matches the page pattern name (for Time Inc.’s homepage, we’ll call it <code class="highlighter-rouge">homepage.json</code>) inside the <code class="highlighter-rouge">pages</code> directory.</p>
 
 <figure>
     <img src="../images/content/timeinc-page-directory.png" alt="Inside the 'pages' directory we have the homepage pattern as well as a JSON file that matches the name of the pattern. This is where we'll override the default content with page-specific content." />
@@ -306,7 +306,7 @@
 	</figcaption>
 </figure>
 
-<p>When we open up <code>homepage.json</code> we can override the placeholder data we established earlier. Here’s what that might look like:</p>
+<p>When we open up <code class="highlighter-rouge">homepage.json</code> we can override the placeholder data we established earlier. Here’s what that might look like:</p>
 
 <pre>
 <code>
@@ -322,9 +322,9 @@
 </code>
 </pre>
 
-<p>By overriding the default data, the <em>hero</em> headline now reads “Moving People” instead of “Lorem Ipsum”. And instead of pointing to a grayscale FPO (for placement only) hero image, we’re now pointing to a picture of Beyoncè located at <code>"/images/hero_beyonce.jpg"</code>.</p>
+<p>By overriding the default data, the <em>hero</em> headline now reads “Moving People” instead of “Lorem Ipsum”. And instead of pointing to a grayscale FPO (for placement only) hero image, we’re now pointing to a picture of Beyoncè located at <code class="highlighter-rouge">"/images/hero_beyonce.jpg"</code>.</p>
 
-<p>This process of establishing defaults for dynamic data then replacing it with page-specific content continues for each section of the website. In addition to replacing simple strings like headings, we can also dynamically set variables to <code>true</code> or <code>false</code>, loop through an array of items, and more. We can even dramatically alter the UI with just a few changes to a JSON file, which we’ll talk about next!</p>
+<p>This process of establishing defaults for dynamic data then replacing it with page-specific content continues for each section of the website. In addition to replacing simple strings like headings, we can also dynamically set variables to <code class="highlighter-rouge">true</code> or <code class="highlighter-rouge">false</code>, loop through an array of items, and more. We can even dramatically alter the UI with just a few changes to a JSON file, which we’ll talk about next!</p>
 
 <h2 id="articulating-pattern-variations-with-pseudo-patterns">Articulating pattern variations with pseudo-patterns</h2>
 <p>Historically designers working in static tools have had a tendancy to only design best-case scenarios. You know what I’m talking about. The user’s name is “Sara Smith” and always fits neatly on one line. Her profile picture looks like it was clipped out of a magazine. Her profile is completely filled out. The two columns of her profile content magically are exactly the same height.</p>
@@ -348,7 +348,7 @@
 	</figcaption>
 </figure>
 
-<p>To create the dynamic content inside each of these blocks, we’ll define our list of collaborators as an array inside <code>dashboard.json</code>:</p>
+<p>To create the dynamic content inside each of these blocks, we’ll define our list of collaborators as an array inside <code class="highlighter-rouge">dashboard.json</code>:</p>
 
 <pre>
 <code>
@@ -388,7 +388,7 @@
 	</figcaption>
 </figure>
 
-<p>In order to show additional admin “edit” and “delete” actions on the dashboard in Pattern Lab, we can create a pseudo-pattern, a new file in the <code>pages</code> folder that looks like this:</p>
+<p>In order to show additional admin “edit” and “delete” actions on the dashboard in Pattern Lab, we can create a pseudo-pattern, a new file in the <code class="highlighter-rouge">pages</code> folder that looks like this:</p>
 
 <pre>
 <code>
@@ -398,7 +398,7 @@ dashboard~admin.json
 </code>
 </pre>
 
-<p>The tilde (<code>~</code>) symbol indicates a pseudo-pattern. <code>dashboard~admin.json</code> will inherit all the data contained in <code>dashboard.json</code>, but also gives us the opportunity to append or override additional data. That means the list of collaborators we defined earlier in <code>dashboard.json</code> is still available, but we can add additional data inside <code>dashboard~admin.json</code> like so:</p>
+<p>The tilde (<code class="highlighter-rouge">~</code>) symbol indicates a pseudo-pattern. <code class="highlighter-rouge">dashboard~admin.json</code> will inherit all the data contained in <code class="highlighter-rouge">dashboard.json</code>, but also gives us the opportunity to append or override additional data. That means the list of collaborators we defined earlier in <code class="highlighter-rouge">dashboard.json</code> is still available, but we can add additional data inside <code class="highlighter-rouge">dashboard~admin.json</code> like so:</p>
 
 <pre>
 <code>
@@ -408,7 +408,7 @@ dashboard~admin.json
 </code>
 </pre>
 
-<p>We’re defining a variable called <code>isAdmin</code> and setting it to true. We can now use that to conditionally include the additional actions inside the block pattern.</p>
+<p>We’re defining a variable called <code class="highlighter-rouge">isAdmin</code> and setting it to true. We can now use that to conditionally include the additional actions inside the block pattern.</p>
 
 <pre>
 <code>
@@ -425,12 +425,12 @@ dashboard~admin.json
 </code>
 </pre>
 
-<p>The first few lines are pulling in the <code>img</code>, <code>name</code>, and <code>title</code> we defined in <code>dashboard.json</code>. But pay close attention to what’s wrapped in the <code>isAdmin</code> mustache section. What we’re saying here is “if <code>isAdmin</code> is set to <code>true</code>, include a molecule pattern called <code>block-actions</code>.” The <code>block-actions</code> pattern contains the “edit” and “delete” buttons, and will only display if <code>isAdmin</code> is set to <code>true</code> (or anything besides <code>false</code>). In our default <code>dashboard.json</code>, <code>isAdmin</code> isn’t set so the extra actions won’t display. In <code>dashboard~admin.json</code>, we’re setting <code>isAdmin</code> to <code>true</code> so the extra actions will display. You can extend this technique to dramatically alter the entire UI (like altering the primary navigation, showing additional panels on the dashboard, adding extra controls, etc) just by changing a single variable. Powerful stuff indeed.</p>
+<p>The first few lines are pulling in the <code class="highlighter-rouge">img</code>, <code class="highlighter-rouge">name</code>, and <code class="highlighter-rouge">title</code> we defined in <code class="highlighter-rouge">dashboard.json</code>. But pay close attention to what’s wrapped in the <code class="highlighter-rouge">isAdmin</code> mustache section. What we’re saying here is “if <code class="highlighter-rouge">isAdmin</code> is set to <code class="highlighter-rouge">true</code>, include a molecule pattern called <code class="highlighter-rouge">block-actions</code>.” The <code class="highlighter-rouge">block-actions</code> pattern contains the “edit” and “delete” buttons, and will only display if <code class="highlighter-rouge">isAdmin</code> is set to <code class="highlighter-rouge">true</code> (or anything besides <code class="highlighter-rouge">false</code>). In our default <code class="highlighter-rouge">dashboard.json</code>, <code class="highlighter-rouge">isAdmin</code> isn’t set so the extra actions won’t display. In <code class="highlighter-rouge">dashboard~admin.json</code>, we’re setting <code class="highlighter-rouge">isAdmin</code> to <code class="highlighter-rouge">true</code> so the extra actions will display. You can extend this technique to dramatically alter the entire UI (like altering the primary navigation, showing additional panels on the dashboard, adding extra controls, etc) just by changing a single variable. Powerful stuff indeed.</p>
 
 <p>Whew. If you’ve made it this far, congratulations! You now know how to add and manipulate dynamic data in Pattern Lab. Pattern Lab’s ability to design with dynamic data provides some very crucial benefits:</p>
 
 <ul>
-  <li><strong>Creates a clear separation between structure and content</strong>. A pattern’s structure and its content very much influence each other, however resilient design systems strive to establish agnostic, flexible patterns that can contain a variety of content. Decoupling pattern structure and data allows us to keep things DRY (which again stands for Don’t Repeat Yourself) and make changes to content without affecting the pattern structure. Likewise, we’re able to make changes to a pattern without having to update every instance of that pattern simply because each instance contains different data. This separation results in huge savings in both time and effort. </li>
+  <li><strong>Creates a clear separation between structure and content</strong>. A pattern’s structure and its content very much influence each other, however resilient design systems strive to establish agnostic, flexible patterns that can contain a variety of content. Decoupling pattern structure and data allows us to keep things DRY (which again stands for Don’t Repeat Yourself) and make changes to content without affecting the pattern structure. Likewise, we’re able to make changes to a pattern without having to update every instance of that pattern simply because each instance contains different data. This separation results in huge savings in both time and effort.</li>
   <li><strong>Establishes an ad-hoc CMS</strong>. Establishing default and page-specific data serves as an ad-hoc content management system. As mentioned earlier, static design tools aren’t well equipped to handle dynamic data, but it’s also overkill to install Wordpress, Drupal, or some other CMS just to demonstrate UI variations. Pattern Lab strikes a balance as it allows teams to work with dynamic data but doesn’t require setting up any crazy MySQL databases.</li>
   <li><strong>Serves as a blueprint for backend developers</strong> responsible for integrating the frontend UI into a real content management system. Backend developers can look at the UI created in Pattern Lab, understand which bits are static and dynamic, then translate that into the backend system.</li>
   <li><strong>Allows writers, content people, designers, and other non-developers to contribute to the living, breathing design system</strong>. As a front-end developer, I can’t count the number of times I’ve had to fix typos, swap in new images, translate copy decks, and make other content-related edits to front-end code. It’s death by a million paper cuts, and I’m sure most developers would agree that making minor copy changes isn’t an effective use of their time. By separating structure and data, Pattern Lab enables non-developer team members to safely manage the content-related aspects of the design, freeing up developers to focus on building the design system’s structure.</li>
@@ -443,9 +443,9 @@ dashboard~admin.json
 
 <p>It’s a no-brainer that we need to establish flexible UI patterns if we want to create responsive designs, but creating fluid patterns has additional advantages. <strong>The more fluid a UI component is, the more resilient and versatile it becomes</strong>. Imagine being able to take a component — let’s say a photo gallery slider — and plunk it anywhere we need it. Sometimes we may need it to be a full-bleed element occupying the entire viewport. Other times we may need to include it in the context of an article. And still other times we may want to include it in the sidebar. The dream is to build our components fluidly and they’ll adapt their styles and functionality to fit whatever containers we put them into.</p>
 
-<p>Indeed, this is the promise of <a href="http://alistapart.com/article/container-queries-once-more-unto-the-breach">container queries</a>. Container queries let elements adapt themselves based on their parent container rather than the entire viewport, which is currently how we adapt elements using <code>@media</code> queries.  While still being developed as a native browser capability, container queries will allow us pattern-crazed designers and developers to easily create and deploy fluid UI systems.</p>
+<p>Indeed, this is the promise of <a href="http://alistapart.com/article/container-queries-once-more-unto-the-breach">container queries</a>. Container queries let elements adapt themselves based on their parent container rather than the entire viewport, which is currently how we adapt elements using <code class="highlighter-rouge">@media</code> queries.  While still being developed as a native browser capability, container queries will allow us pattern-crazed designers and developers to easily create and deploy fluid UI systems.</p>
 
-<p>So between responsive design, container queries, and good ol’-fashioned common sense, we now understand why it’s so imperative to create flexible UI patterns. But how do we do that? And how can our pattern library tools help us think and act flexibly? </p>
+<p>So between responsive design, container queries, and good ol’-fashioned common sense, we now understand why it’s so imperative to create flexible UI patterns. But how do we do that? And how can our pattern library tools help us think and act flexibly?</p>
 
 <p>Many early responsive design testing tools focused on viewing designs on popular mobile device widths, such as 320px (an iPhone 4 in portrait mode),  480px (an iPhone 4 in landscape mode), 768px (an iPad in portrait mode), and so on. But of course the Web is <em>much</em> more diverse than a “mobile” view, “tablet” view, and a “desktop” view. To help designers better consider the entire resolution spectrum when testing their responsive designs, I created a tool called <a href="http://bradfrost.com/demo/ish/">ish.</a>.</p>
 
@@ -513,11 +513,11 @@ dashboard~admin.json
 <h2 id="living-documentation-and-annotations">Living Documentation and Annotations</h2>
 <p>In a traditional siloed design process, it’s typical to see lengthy wireframe and spec documents created, debated, and ultimately approved. These documents typically take the form of gigantic PDFs, which is unfortunate considering they often contain all sorts of valuable insights, instructions, and documentation about the design system. Sadly, these bulky artifacts are often thrown into a (virtual) trashcan by the time the project makes its way into production.</p>
 
-<p>This shouldn’t be the case. A UI’s documentation should contain insights from every discipline involved in creating it, and — this is key — should be baked into the living, breathing design system. </p>
+<p>This shouldn’t be the case. A UI’s documentation should contain insights from every discipline involved in creating it, and — this is key — should be baked into the living, breathing design system.</p>
 
 <p>Effective pattern libraries carve out a space to define and describe UI components, articulating considerations ranging from accessibility to performance to aesthetics and beyond.</p>
 
-<p>Pattern Lab provides several ways to add pattern descriptions and annotations to a design system. Pattern descriptions can be added by creating a markdown that corresponds with the name of a pattern (i.e. <code>pattern-name.md</code>), which will show the pattern description in the library list view.</p>
+<p>Pattern Lab provides several ways to add pattern descriptions and annotations to a design system. Pattern descriptions can be added by creating a markdown that corresponds with the name of a pattern (i.e. <code class="highlighter-rouge">pattern-name.md</code>), which will show the pattern description in the library list view.</p>
 
 <figure>
     <img src="../images/content/pattern-lab-annotations-2.png" alt="Pattern Lab's annotation feature  shows pattern descriptions alongside the patterns themselves." />
@@ -547,7 +547,7 @@ dashboard~admin.json
 	</figcaption>
 </figure>
 
-<p>In the above example, we have a molecule pattern called <code>block-media-link</code>, which contains an image, headline, and call to action. Looking at the pattern’s lineage, we can see it contains another pattern called <code>atoms-square</code>, which is the circular thumbnail-sized image (the naming is a bit confusing, but we’re using CSS to round the square image’s corners). We can also see where exactly this pattern gets utilized: the <code>profile-nav</code> molecule, the <code>section-media-list</code> organism, the <code>settings-account</code> template, and the <code>settings-account-edit</code> template.</p>
+<p>In the above example, we have a molecule pattern called <code class="highlighter-rouge">block-media-link</code>, which contains an image, headline, and call to action. Looking at the pattern’s lineage, we can see it contains another pattern called <code class="highlighter-rouge">atoms-square</code>, which is the circular thumbnail-sized image (the naming is a bit confusing, but we’re using CSS to round the square image’s corners). We can also see where exactly this pattern gets utilized: the <code class="highlighter-rouge">profile-nav</code> molecule, the <code class="highlighter-rouge">section-media-list</code> organism, the <code class="highlighter-rouge">settings-account</code> template, and the <code class="highlighter-rouge">settings-account-edit</code> template.</p>
 
 <p>This contextual information is amazingly helpful for designers and developers; I know I use the lineage feature <em>all the time</em> in my own workflow. Let’s say we wanted to make changes to a particular pattern, like doubling the size of the image or adding an additional text element, <strong>we’d immediately know which patterns and templates would need retested and QA’d to ensure nothing breaks with the changes</strong>. The lineage feature also helps point out unused or underutilized patterns so that teams can weed them out of the pattern library.</p>
 
@@ -565,7 +565,7 @@ dashboard~admin.json
   <li>Providing contextual information like which patterns make up a particular component as well as where that component gets utilized</li>
 </ul>
 
-<p>At the end of the day, it’s not about the tools we use to create pattern libraries, but rather how we use them. Creating and maintaining an effective design system means dramatically changing your organization’s culture, processes, and workflows. If that sounds hard to you, it’s because it is! But fear not! The next chapter will detail the entire process of creating and maintaining a successful design system to set your organization up for long-term success. </p>
+<p>At the end of the day, it’s not about the tools we use to create pattern libraries, but rather how we use them. Creating and maintaining an effective design system means dramatically changing your organization’s culture, processes, and workflows. If that sounds hard to you, it’s because it is! But fear not! The next chapter will detail the entire process of creating and maintaining a successful design system to set your organization up for long-term success.</p>
 
 
     <nav role="navigaiton" class="pagination">

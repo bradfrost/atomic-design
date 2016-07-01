@@ -172,40 +172,38 @@ A misconception about design systems is that once they're established, they beco
 - How are design system changes deployed to live applications?
 - How will people find out about changes?
 
-There are likely many more change-related questions to answer, but the point is your team should have answers and processes in place to address changes to the design system. 
+There are likely many more specific questions to answer, but the point is your team should have answers and processes in place to address inevitable changes to the system. 
 
-As mentioned a few times already, frequent communication and collaboration between design system makers and users is key for successfully governing your design system. **Make it as easy as possible to users and makers to communicate**. Set up a design system Slack or Yammer channel, establish regular office hours, make sure your bug ticket software helps facilitate conversation, and keep the doors open for ad hoc chats and calls. If users are stuck on something, they should know exactly where and who to turn to for help.
+As mentioned a few times already, frequent communication and collaboration between makers and users is key for successfully governing your design system. **Make it as easy as possible to users and makers to communicate**. Set up a design system Slack or Yammer channel, establish regular office hours, make sure your bug ticket software helps facilitate conversation, and keep the doors open for ad hoc chats and calls. If users are stuck on something, they should know exactly where and who to turn to for help.
 
 In addition to informal day-to-day conversation between makers and users, **schedule regular "state of the union" meetings to review the design system** with makers, users, and other key stakeholders. Discuss what's working, be honest with what needs improved, and review priorities and the roadmap to make sure the   system is serving the needs of the business. These regular checkups are especially helpful for keeping stakeholders up to speed since they often aren't involved in the day to day of the design system's operations.
 
 ### Making changes to patterns
-A critical part of a successfully maintaining a design system is ensuring UI patterns are up to date, embrace design & development best practices (which are always moving targets!), and continue to properly serve the organization's products and applications.
-
-Let's discuss a few scenarios that require managing change to your design system's UI patterns. 
+A critical part of successfully maintaining a design system is ensuring that UI patterns are up to date, embrace ever-evolving design & development best practices, and continue to address the  real needs of the organization's products and applications.
 
 #### Changing patterns
-UI patterns can and should be changed for a number of reasons: bug fixes, subtle or major visual design tweaks, performance improvements, better accessibility, code refactoring, UX best practice updates, and so on. 
+UI patterns can and should be changed for a number of reasons: bug fixes, subtle or major visual design tweaks, performance improvements, better accessibility, code refactoring, updating UX best practice, and so on. 
 
-The design system maintenance team needs to understand why and when to tweak patterns, how to go about making those changes, and how to roll those improvements out into individual applications.
+The design system maintainers needs to understand why and when to tweak patterns, how to go about making those changes, and how to roll those improvements out into individual applications.
 
 Keeping patterns fresh is essential for the longterm health of the design system. Nobody wants to use and maintain a Web 2.0-looking design system full of bevels and crusty code!
 
 #### Adding patterns
-As smart as your team may be, it's quite possible you won't think of every conceivable pattern to include in your design system right out of the gate. As the system is applied to more products, gaps will inevitably emerge where the needs of the application aren't solved by existing patterns. In such cases, it will become clear new patterns will need created to address these needs. 
+As smart as your team surely is, it's quite possible you won't think of every conceivable pattern to include in your design system right out of the gate. As the system gets applied to more products, gaps will inevitably emerge where the needs of the application aren't solved by existing patterns. In such cases, it will become clear that new patterns will need created to address these needs. 
 
 Care should be taken when adding patterns to the library. **If every whim results in a brand new pattern, the design system will become a bloated and unwieldy wild west**. So it's worth asking, is this a one-off situation or is this something can be leveraged in other applications? 
 
 Perhaps you may want to assume a one-off until a different team encounters a similar use case. If the team working on Application 2 looks at Application 1 and says "I want that!" perhaps that's a good indicator that a one-off pattern should be added to the pattern library. 
 
 #### Removing patterns
-Patterns should be retired/sunsetted/removed/deprecated for a number of reasons. Perhaps you discover through use that a particular pattern is a terrible idea. Perhaps the industry has moved away from a pattern for UX or technical reasons. Maybe a pattern sat there unused by any application for ages. Maybe users reported back with a lot of negative feedback about working with a particular pattern.
+Patterns should be retired/sunsetted/removed/deprecated for a number of reasons. Perhaps you discover through use that a particular pattern is a terrible idea. Hindsight is 20/20, my friend. Perhaps the industry has moved away from a pattern for UX or technical reasons. Maybe a pattern sat there unused by any application for ages. Maybe users reported back with a lot of negative feedback about working with a particular pattern.
 
-Having a plan for deprecating patterns is a great idea. But how do you remove patterns from the design system without pulling the rug out from people relying on those patterns in their applications? To address this issue, Salesforce created a neat utility called [Sass Deprecate](https://github.com/salesforce-ux/sass-deprecate) that flags patterns that are heading to the chopping block in the near future. Through some clever use of flags and styling, the maker team can give a heads-up to users that a particular pattern is going away, and that they should make use of a different recommended pattern instead. 
+Having a plan for deprecating patterns is a great idea. But how do you remove patterns from the design system without pulling the rug out from people relying on those patterns in their applications? To address this issue, Salesforce created a neat utility called [Sass Deprecate](https://github.com/salesforce-ux/sass-deprecate) that flags patterns that are heading to the chopping block in the near future. Through some clever use of Sass variable flags and styling, the maker team can give a heads-up to users that a particular pattern is being deprecated, and recommend an alternative pattern instead. 
 
 ## Make it maintainable
 With all this talk about changing, adding, and removing patterns, you may be wondering "How the hell are our applications supposed to actually keep up with all these changes?!" And in asking that question, you will have stumbled onto one of the biggest challenges organizations face in successfully maintaining a design system. 
 
-Many design systems fall into a state of disrepair because the effort required to make updates is far too high. If it's difficult and time consuming to update patterns, documentation, and applications, people will eventually get so frustrated they stop paying attention and the design system will begin its drift into oblivion. Making updates to UI patterns, documentation, and applications should be as frictionless as possible, so reducing this friction should become a high priority for the design system team. This involves careful consideration from both a technological and workflow standpoint.
+Many systems fall into a state of disrepair because the effort required to make updates is far too high. If it's difficult and time consuming to update patterns, documentation, and applications, people will eventually get so frustrated they stop making the effort and the design system will begin its drift into oblivion. **Making updates to UI patterns, documentation, and applications should be as frictionless as possible**, so reducing this friction should become a high priority for the design system team. This involves careful consideration from both a technological and workflow standpoint.
 
 ### In search of the Holy Grail
 **The design system Holy Grail involves creating an environment where the pattern library and live applications are perfectly in sync**. The idea is that you should be able to make a change to a UI pattern and see those changes automatically reflected in both the pattern library and anywhere the pattern is included in production. 
@@ -214,30 +212,42 @@ Many design systems fall into a state of disrepair because the effort required t
 
 The Holy Grail removes any duplication of effort and ensures the pattern library and the applications using the patterns remain synchronized. Sounds like a dream, right?
 
-As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, established a Holy Grail-style design system they call [Rizzo](http://rizzo.lonelyplanet.com/). They created an API for their UI patterns that feeds into both their production environment as well as their pattern library. The result is a centralized design system that ensures their live application and documentation remains perfectly in sync with one another.
+As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, established a Holy Grail-style design system they call [Rizzo](http://rizzo.lonelyplanet.com/). Through some smart architecture, they created an API for their UI patterns that feeds into both their production environment as well as their pattern library. The result is a centralized design system that ensures their live application and documentation remains perfectly in sync with one another.
 
 {% include figure.html src="../images/content/rizzo.png" caption="Lonely Planet created an API for their UI patterns that is consumed by both their pattern library and production environment. By architecting their design system in this manner, changes to UI patterns are automatically reflected in both the pattern library and production environment, keeping things in sync and thereby achieving the Holy Grail." %}
 
+Achieving the design system Holy Grail is no easy task, as it requires sophisticated technical architecture, smart people to set it all up, and a relatively centralized organizational culture. How you go about chasing the Holy Grail — or even if you can achieve it — is dependent on a whole load of factors, including your technical architecture and organizational makeup. 
+
 ### Jumping technical hurdles
-Achieving the design system Holy Grail is no easy task, as it requires sophisticated technical architecture and smart people to set it all up. How you go about chasing the Holy Grail — or even if you can achieve it — is dependent on a whole load of factors, including your technical architecture and organizational makeup.
+Keeping a pattern library in sync with production environments requires sharing code in a smart, scalable, and maintainable way. Detailing all the different strategies and considerations around the Holy Grail would necessitate its own book, but let's at least 
 
+#### The frontend of things
 In my experience, I've found that sharing CSS and some JS with the production environment is relatively easy, but sharing markup is tough. 
-
-As we discussed in Chapter 3, using HTML templating languages makes markup portable and dynamic. Templating language should match the production environment - The closer you can get to matching your pattern library and production templating .
-
-Be careful to keep documentation accessible to non developers.  
-- Look for opportunities to automate documentation 
 - [Using Grunt with Pattern Lab](http://bradfrost.com/blog/post/using-grunt-with-pattern-lab/)
 
-How can you set up your applications and pattern library to achieve the Holy Grail? Developer Marcelo Somers outlined several methods for thoughtfully keeping your pattern library and production environments in sync. [Chasing the holy grail](https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.vy45rkm7m)
 
+#### Taming markup with temptlating languages
+As we discussed in Chapter 3, using HTML templating languages —such as Mustache, Handlebars, Twig, Jade, Nunjucks, and a slew of others — makes markup portable and dynamic. Many CMSes and application environments make use  Templating language should match the production environment - The closer you can get to matching your pattern library and production templating .
 
-### Centralized vs decentralized
-There are a number of reasons why an organization may *not* be able to achieve the Holy Grail. Perhaps your organization has digital products on many different platforms using wildly different technologies. For example, the U.S. government's design system — called the U.S. Web Digital Standards — is a collection of UI components and visual styles meant to help people making government websites make more consistent UIs. It would be amazing to see a Holy Grail-style system  However, due to the vastness and decentralized nature of the organization, it's not really achievable.
+Phase 2 Drupal example.
+
+#### Deployment
+Marcelo Somers
+
+Be careful to keep documentation accessible to non developers. Keeping the pattern library and 
+
+- Look for opportunities to automate documentation 
+
+### Is your culture Holy Grail compatible?
+There are a number of reasons why an organization may *not* be able to achieve the Holy Grail. Perhaps your organization has digital products on many different platforms using wildly different technologies. 
+
+{% include figure.html src="../images/fpo.png" caption="Draft US Design System" %}
+
+For example, the U.S. government's design system — called the U.S. Web Digital Standards — is a collection of UI components and visual styles meant to help people making government websites make more consistent UIs. It would be amazing to see a Holy Grail-style system implemented at this scale, but due to the vastness and decentralized nature of the organization, it's not achievable without some dramatic restructuring of how federal governments get built.
 
 {% include figure.html src="../images/fpo.png" caption="Spectrum of centralized vs decentralized. " %}
 
-Technology alone can't achieve maintainable design systems; you must create a culture that communicates
+Technology alone can't achieve maintainable design systems; you must create a culture that communicates effectively. 
 
 ## Make it cross-disciplinary
 Style guides often jump straight into code snippets and pattern usage for the benefit of the design system users. Of course a pattern library needs to be helpful for the people actually making use of the patterns, but **treating a style guide solely a developer resource limits its potential**.
@@ -294,7 +304,7 @@ Communication is especially important in the early days of the initiative. Frequ
 - Monitor progress over time - Lonely Planet's Rizzo design system tracks performance metrics over time.
 
 ### Make it public.
-Another way to set your design system up for longterm success is to **make your style guide publicly accessible**.
+Then there's the option of taking your communication strategy to another level by **making your style guide publicly accessible**.
 
 But why? After all, isn't a style guide merely an internal resource to help your organization work better together? What use is it to the outside world? And wouldn't publishing your style guide give away all your trade secrets?
 
@@ -315,7 +325,7 @@ Since joining Salesforce, she's helped create the ultra-successful Lightning Des
 ## Make it bigger
 A visible, cross-disciplinary, approachable pattern library is one that your team will come back to again and again. Use that to your advantage. Since the team's eyeballs are already fixated on that one resource, there's a big opportunity to extend it to include other helpful documentation like the voice and tone, brand, code, design principles and writing guidelines we discussed in [chapter 1](/chapter-1/). 
 
-{% include figure.html src="../images/content/styleguide-harmony.png" caption="Intuit's Harmony design system includes a pattern library, design principles, voice and tone, marketing guidelines, and more. Housing this helpful documentation under one roof helps increase its visibility." %}
+{% include figure.html src="../images/content/styleguide-harmony.png" caption="Intuit's Harmony design system includes a pattern library, design principles, voice and tone, marketing guidelines, and more. Housing this helpful documentation under one roof helps increase its visibility and effectiveness." %}
 
 Now, your organization may not need to create every flavor of style guide out there, but the point is that **creating a centralized style guide hub builds more awareness of best practices, increasing the documentation's effectiveness**.
 
