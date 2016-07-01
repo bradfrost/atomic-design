@@ -225,6 +225,8 @@ Keeping a pattern library in sync with production environments requires sharing 
 In my experience, I've found that sharing CSS and some JS with the production environment is relatively easy, but sharing markup is tough. 
 - [Using Grunt with Pattern Lab](http://bradfrost.com/blog/post/using-grunt-with-pattern-lab/)
 
+<link rel="stylesheet" href="link/to/stylesheet.css" />
+
 
 #### Taming markup with temptlating languages
 As we discussed in Chapter 3, using HTML templating languages —such as Mustache, Handlebars, Twig, Jade, Nunjucks, and a slew of others — makes markup portable and dynamic. Many CMSes and application environments make use  Templating language should match the production environment - The closer you can get to matching your pattern library and production templating .
