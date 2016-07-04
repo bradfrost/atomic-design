@@ -327,15 +327,20 @@
 <p>Keeping a pattern library in sync with production environments requires sharing code in a smart, scalable, and maintainable way. Detailing all the different strategies and considerations around the Holy Grail would necessitate its own book, but let’s at least cover some important areas around keeping frontend code in sync.</p>
 
 <h4 id="the-frontend-of-things">The frontend of things</h4>
-<p>In my experience, I’ve found that sharing CSS and some JS with the production environment is relatively easy, but sharing markup is tough. 
-- <a href="http://bradfrost.com/blog/post/using-grunt-with-pattern-lab/">Using Grunt with Pattern Lab</a></p>
+<p>Sharing frontend code between pattern library</p>
 
-<p><a href="https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d">Marcelo Somers</a> detailed various approaches to keeping pattern library and production code in sync.</p>
+<p>In my experience, I’ve found that keeping CSS and presentational JavaScript in sync between with the production environment is relatively easy, but sharing markup is tough.</p>
 
-<link rel="stylesheet" href="link/to/stylesheet.css" />
+<blockquote>
+  <p>You’d provide development teams with a versioned URL (e.g., http://mycdn.com/1.3.5/styles.css) and upgrading is as simple as bumping the version number in the URL. <cite><a href="https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d">Marcelo Somers</a></cite></p>
+</blockquote>
+
+<ul>
+  <li><a href="http://bradfrost.com/blog/post/using-grunt-with-pattern-lab/">Using Grunt with Pattern Lab</a></li>
+</ul>
 
 <h4 id="temptlating-languages-bridging-the-gap">Temptlating languages: bridging the gap</h4>
-<p>As we discussed in Chapter 3, using HTML templating languages —such as Mustache, Handlebars, Twig, Jade, Nunjucks, and a slew of others — makes markup more portable and dynamic. Many CMSes and application environments make use of templating languages to serve up frontend markup</p>
+<p>As we discussed in Chapter 3, using HTML templating languages —such as Mustache, Handlebars, Twig, Jade, Nunjucks, and a slew of others — makes markup more portable and dynamic. Many CMSes and application environments make use of templating languages to serve up frontend markup. Intrinsically more complicated as markup and</p>
 
 <p><strong>The templating language can serve as the bridge between your pattern library and production environments</strong>. If you’re using  Templating language should match the production environment - The closer you can get to matching your pattern library and production templating .</p>
 

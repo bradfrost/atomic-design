@@ -222,22 +222,21 @@ Achieving the design system Holy Grail is no easy task, as it requires sophistic
 Keeping a pattern library in sync with production environments requires sharing code in a smart, scalable, and maintainable way. Detailing all the different strategies and considerations around the Holy Grail would necessitate its own book, but let's at least cover some important areas around keeping frontend code in sync.
 
 #### The frontend of things
-In my experience, I've found that sharing CSS and some JS with the production environment is relatively easy, but sharing markup is tough. 
+Sharing frontend code between pattern library 
+
+In my experience, I've found that keeping CSS and presentational JavaScript in sync between with the production environment is relatively easy, but sharing markup is tough. 
+
+> You’d provide development teams with a versioned URL (e.g., http://mycdn.com/1.3.5/styles.css) and upgrading is as simple as bumping the version number in the URL. <cite><a href="https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d">Marcelo Somers</a>
+
 - [Using Grunt with Pattern Lab](http://bradfrost.com/blog/post/using-grunt-with-pattern-lab/)
-
-[Marcelo Somers](https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d) detailed various approaches to keeping pattern library and production code in sync. 
-
-<link rel="stylesheet" href="link/to/stylesheet.css" />
 
 
 #### Temptlating languages: bridging the gap
-As we discussed in Chapter 3, using HTML templating languages —such as Mustache, Handlebars, Twig, Jade, Nunjucks, and a slew of others — makes markup more portable and dynamic. Many CMSes and application environments make use of templating languages to serve up frontend markup
+As we discussed in Chapter 3, using HTML templating languages —such as Mustache, Handlebars, Twig, Jade, Nunjucks, and a slew of others — makes markup more portable and dynamic. Many CMSes and application environments make use of templating languages to serve up frontend markup. Intrinsically more complicated as markup and 
 
 **The templating language can serve as the bridge between your pattern library and production environments**. If you're using  Templating language should match the production environment - The closer you can get to matching your pattern library and production templating .
 
 > By using the same templating engine, along with the help of the Component Libraries Drupal Module, the tool gives Drupal the ability to directly include, extend, and embed the Twig templates that Pattern Lab uses for its components without any template duplication at all! <cite><a href="https://www.phase2technology.com/blog/introducing-pattern-lab-starter-8/">Evan Lovely, Phase2 Technology</a> 
-
-
 
 #### Deployment
 [Marcelo Somers](https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d) detailed various approaches to keeping pattern library and production code in sync. 
