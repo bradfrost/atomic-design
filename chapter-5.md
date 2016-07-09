@@ -189,8 +189,10 @@ The result is a gorgeous decision tree that maps out exactly what process needs 
 
 {% include figure.html src="../images/content/pattern-addition-flowchart.png" caption="Ubuntu's design team mapped out the decision process they use to manage updates and additions to patterns in their Vanilla frontend framework." %}
 
-#### Changing patterns
-UI patterns can and should be changed for a number of reasons: bug fixes, subtle or major visual design tweaks, performance improvements, better accessibility, code refactoring, updating UX best practice, and so on. 
+The three types of change that can happen to patterns in a design system is modification, addition, and removal. 
+
+#### Modifying patterns
+UI patterns can and should be modified for a number of reasons: bug fixes, subtle or major visual design tweaks, performance improvements, better accessibility, code refactoring, updating UX best practice, and so on. 
 
 The design system maintainers needs to understand why and when to tweak patterns, how to go about making those changes, and how to roll those improvements out into individual applications.
 
@@ -210,6 +212,8 @@ Having a plan for deprecating patterns is a great idea. But how do you remove pa
 
 ## Make it maintainable
 With all this talk about modifying, adding, and removing patterns, you may be wondering "How the hell are our applications supposed to actually keep up with all these changes?!" And in asking that question, you will have stumbled onto one of the biggest challenges organizations face in successfully maintaining a design system. 
+
+> The biggest existential threat to any system is neglect. <cite><a href="http://airbnb.design/the-way-we-build/">Alex Schleifer, Airbnb</a>
 
 Many systems fall into a state of disrepair because the effort required to make updates is far too high. If it's difficult and time consuming to update patterns, documentation, and applications, people will eventually get so frustrated that they stop making the effort and the design system will begin its drift into oblivion. **Making updates to UI patterns, documentation, and applications should be as frictionless as possible**, so reducing this friction should become a high priority for the design system team. This involves careful consideration from both a technological and workflow standpoint.
 
