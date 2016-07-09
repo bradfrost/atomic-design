@@ -179,7 +179,15 @@ As mentioned a few times already, frequent communication and collaboration betwe
 In addition to informal day-to-day conversation between makers and users, **schedule regular "state of the union" meetings to review the design system** with makers, users, and other key stakeholders. Discuss what's working, be honest with what needs improved, and review priorities and the roadmap to make sure the   system is serving the needs of the business. These regular checkups are especially helpful for keeping stakeholders up to speed since they often aren't involved in the day to day of the design system's operations.
 
 ### Making changes to patterns
-A critical part of successfully maintaining a design system is ensuring that UI patterns are up to date, embrace ever-evolving design & development best practices, and continue to address the  real needs of the organization's products and applications.
+A critical part of design system maintenance is ensuring that UI patterns stay up to date, embrace ever-evolving design & development best practices, and continue to address the real needs of the organization's products. 
+
+Developing a strategy for handling pattern changes is crucial, which is why Inayaili de León Persson and the Ubuntu design team  spent time to map out that strategy as they created their [Vanilla frontend framework](http://ubuntudesign.github.io/vanilla-framework/). 
+
+> We thought that it would be good to document the process that a pattern should follow in order to become a Vanilla pattern, so after a little bit of brainstorming, we created a diagram that shows the different steps that should be taken from before submitting a pattern proposal to its full acceptance as a Vanilla pattern. <cite><a href="http://design.canonical.com/2016/07/getting-vanilla-ready-for-v1-the-roadmap/">Inayaili de León Persson, Canonical</a>
+
+The result of that thinking is a gorgeous decision chart that maps out exactly what process needs to happen in order to add a new pattern to the design system.
+
+{% include figure.html src="../images/content/pattern-addition-flowchart.png" caption="Ubuntu's design team mapped out the decision process they use to manage updates and additions to patterns in their Vanilla frontend framework." %}
 
 #### Changing patterns
 UI patterns can and should be changed for a number of reasons: bug fixes, subtle or major visual design tweaks, performance improvements, better accessibility, code refactoring, updating UX best practice, and so on. 
@@ -222,17 +230,19 @@ Achieving the design system Holy Grail is no easy task, as it requires sophistic
 Keeping a pattern library in sync with production environments requires sharing code in a smart, scalable, and maintainable way. Detailing all the different strategies and considerations around the Holy Grail would necessitate its own book, but let's at least cover some important areas around keeping frontend code in sync.
 
 #### The frontend of things
-Sharing frontend code between pattern library 
+There are many ways to go about sharing frontend code between pattern library and production
 
 In my experience, I've found that keeping CSS and presentational JavaScript in sync between with the production environment is relatively easy, but sharing markup is tough. 
 
 > You’d provide development teams with a versioned URL (e.g., http://mycdn.com/1.3.5/styles.css) and upgrading is as simple as bumping the version number in the URL. <cite><a href="https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d">Marcelo Somers</a>
 
-- [Using Grunt with Pattern Lab](http://bradfrost.com/blog/post/using-grunt-with-pattern-lab/)
+Similarly, using build tools like Grunt and Gulp can make the migration [Grunt with Pattern Lab](http://bradfrost.com/blog/post/using-grunt-with-pattern-lab/)
+
+Where things get tricky though is sharing markup between. Intrinsically more complicated as markup and backend logic are often intermingled 
 
 
-#### Temptlating languages: bridging the gap
-As we discussed in Chapter 3, using HTML templating languages —such as Mustache, Handlebars, Twig, Jade, Nunjucks, and a slew of others — makes markup more portable and dynamic. Many CMSes and application environments make use of templating languages to serve up frontend markup. Intrinsically more complicated as markup and 
+#### Bridging the gap with templating languages
+As we discussed in Chapter 3, using HTML templating languages —such as Mustache, Handlebars, Twig, Jade, Nunjucks, and a slew of others — makes markup more portable and dynamic. Templating languages allow us to avoid writing the same markup patterns over and over again. Many CMSes and application environments also make use of templating languages to serve up frontend markup. 
 
 **The templating language can serve as the bridge between your pattern library and production environments**. If you're using  Templating language should match the production environment - The closer you can get to matching your pattern library and production templating .
 
