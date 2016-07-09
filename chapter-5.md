@@ -185,7 +185,7 @@ Developing a strategy for handling pattern changes is crucial, which is why Inay
 
 > We thought that it would be good to document the process that a pattern should follow in order to become a Vanilla pattern, so after a little bit of brainstorming, we created a diagram that shows the different steps that should be taken from before submitting a pattern proposal to its full acceptance as a Vanilla pattern. <cite><a href="http://design.canonical.com/2016/07/getting-vanilla-ready-for-v1-the-roadmap/">Inayaili de León Persson, Canonical</a>
 
-The result of that thinking is a gorgeous decision chart that maps out exactly what process needs to happen in order to add a new pattern to the design system.
+The result is a gorgeous decision tree that maps out exactly what process needs to happen in order to add a new pattern to the design system.
 
 {% include figure.html src="../images/content/pattern-addition-flowchart.png" caption="Ubuntu's design team mapped out the decision process they use to manage updates and additions to patterns in their Vanilla frontend framework." %}
 
