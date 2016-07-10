@@ -231,10 +231,12 @@ As it turns out, this dream can be a reality. Lonely Planet, the travel guide co
 Achieving the design system Holy Grail is no easy task, as it requires sophisticated technical architecture, smart people to set it all up, and a relatively-centralized organizational culture. How you go about chasing the Holy Grail — or even if you can achieve it — is dependent on a whole load of factors, including your technical architecture and organizational makeup. 
 
 ### Jumping technical hurdles
-Keeping a pattern library in sync with production environments requires sharing code in a smart, scalable, and maintainable way. Detailing all the different strategies and considerations around the Holy Grail would necessitate its own book, but let's at least cover some important areas around keeping frontend code in sync.
+Keeping a pattern library in sync with production environments requires sharing code in a smart, scalable, and maintainable way. Detailing all the different technical strategies and considerations around the Holy Grail would necessitate its own book, but let's at least cover some important areas around keeping frontend code in sync.
 
 #### The frontend of things
-There are many ways to go about sharing frontend code between pattern library and production
+A UI design system establishes the frontend of a web experience: HTML, CSS, and JavaScript. How we get that frontend code into a production environment — with all its application logic and backend code — is the task at hand. 
+
+Designer & Developer [Marcelo Somers](https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d) detailed various technical approaches for feeding a design system into applications. He highlights
 
 In my experience, I've found that keeping CSS and presentational JavaScript in sync between with the production environment is relatively easy, but sharing markup is tough. 
 
@@ -253,7 +255,6 @@ As we discussed in Chapter 3, using HTML templating languages —such as Mustach
 > By using the same templating engine, along with the help of the Component Libraries Drupal Module, the tool gives Drupal the ability to directly include, extend, and embed the Twig templates that Pattern Lab uses for its components without any template duplication at all! <cite><a href="https://www.phase2technology.com/blog/introducing-pattern-lab-starter-8/">Evan Lovely, Phase2 Technology</a> 
 
 #### Deployment
-[Marcelo Somers](https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d) detailed various approaches to keeping pattern library and production code in sync. 
 
 Be careful to keep documentation accessible to non developers. Keeping the pattern library and 
 
