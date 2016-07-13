@@ -287,10 +287,17 @@ However, this does make that original list a little less punchy. More thought re
 </div>
 
 ## Make it maintainable
-Many pattern libraries fall into a state of disrepair because the effort required to update patterns and documentation is far too high. If a pattern library is difficult and time consuming to update, people will eventually stop updating it and the pattern library will begin its drift into oblivion. Making updates to UI patterns and documentation should be as frictionless as possible, so reducing this friction should become a high priority for the design system team. This involves careful consideration from both a technological and workflow standpoint.
+Many pattern libraries fall into a state of disrepair because the effort required to update patterns and documentation is far too high. If a pattern library is difficult and time-consuming to update, people will eventually stop maintaining it and the pattern library will begin its drift into oblivion. Making updates to UI patterns and documentation should be as frictionless as possible, so smoothing the process should become a high priority for the design system team. This involves careful consideration from both technological and workflow standpoints.
 
-### In search of the Holy Grail
-**The design system Holy Grail involves creating an environment where the pattern library and production environment are perfectly in sync**. The idea is that you should be able to make a change to a UI pattern and see those changes automatically reflected in both the pattern library and anywhere the pattern is included in production. 
+### In search of the <span class="editor">holy grail</span>
+<div class="editor">
+{% capture m %} 
+Ed: I'm capping down holy grail here. This is neither Christian myth, Arthurian legend nor the adventures of Indiana Jones. You'd have an Easter egg at Easter, but hide easter eggs in software; so Christ's cup is the Holy Grail, but all other rare and perfect goals are holy grails. And while it makes for a catchy heading, in the content I'd consider ditching the metaphor altogether. Its repetition in the material below draws too much attention and does your theme a disservice. Perhaps you could consider using words like “ideal”, “perfect”, “model”, etc., depending on context. I’ll leave the grails in for now until such time as you decide to change them.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+**The design system holy grail involves creating an environment where the pattern library and production environment are perfectly in sync.** The idea is that you should be able to make a change to a UI pattern and see that change automatically reflected in the pattern library *and* anywhere the pattern is included in production. 
 
 {% include figure.html src="../images/content/workflow-system-first-holy-grail.png" caption="The Holy Grail of design systems is one where one can make a change to a UI pattern and have it simultaneously update the pattern library and production environments." %}
 
