@@ -299,17 +299,38 @@ Ed: I'm capping down holy grail here. This is neither Christian myth, Arthurian 
 
 **The design system holy grail involves creating an environment where the pattern library and production environment are perfectly in sync.** The idea is that you should be able to make a change to a UI pattern and see that change automatically reflected in the pattern library *and* anywhere the pattern is included in production. 
 
-{% include figure.html src="../images/content/workflow-system-first-holy-grail.png" caption="The Holy Grail of design systems is one where one can make a change to a UI pattern and have it simultaneously update the pattern library and production environments." %}
+{% include figure.html src="../images/content/workflow-system-first-holy-grail.png" caption="The holy grail of design systems is one where you can make a change to a UI pattern and have it simultaneously update the pattern library and production environments." %}
 
-The Holy Grail removes any duplication of effort and ensures the pattern library and the applications using the patterns remain synchronized. Sounds like a dream, right?
+The holy grail removes any duplication of effort and ensures the pattern library and the applications using the patterns remain synchronized. Sounds like a dream, right?
 
-As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, established a Holy Grail-style design system they call [Rizzo](http://rizzo.lonelyplanet.com/). They created an API for their UI patterns that feeds into both their production environments as well as their pattern library. The result is a centralized design system that ensures their live application and documentation remains perfectly in sync with one another.
+As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, established a <span class="editor">holy grail-style design system</span> called [Rizzo](http://rizzo.lonelyplanet.com/). They created an API for their UI patterns that feeds into their production environments as well as their pattern library. The result is a centralized design system that ensures their live application and documentation remain perfectly in sync.
 
-{% include figure.html src="../images/content/rizzo.png" caption="Lonely Planet created an API for their UI patterns that is consumed by both their pattern library and production environment. By architecting their design system in this manner, changes to UI patterns are automatically reflected in both the pattern library and production environment, keeping things in sync and thereby achieving the Holy Grail." %}
+<div class="editor">
+{% capture m %} 
+Ed: “holy grail-style”? So, not <u>the</u> Holy Grail, but something in that style? This feels very odd, another reason to ditch the metaphor and try other ways of describing a model design system – particularly as holy grail-style systems might come in different shapes and sizes, while there's only one Holy Grail?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-Achieving the design system Holy Grail is no easy task, as it requires sophisticated technical architecture and smart people to set it all up. How you go about chasing the Holy Grail — or even if you can achieve it — is dependent on a whole load of factors, including your technical architecture and organizational makeup.
+{% include figure.html src="../images/content/rizzo.png" caption="Lonely Planet created an API for its UI patterns that feeds into the pattern library and production environment. By <span class='editor'>architecting</span> their design system in this manner, changes to UI patterns are automatically reflected in both the pattern library and production environment, keeping things in sync and thereby achieving the holy grail." %}
+
+<div class="editor">
+{% capture m %} 
+Ed: There’s ‘architect’ verbing again. Here are some alternatives again: configure, construct, assemble, organize, formulate.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+Achieving the design system holy grail is, as you might expect, no easy task, as it requires sophisticated technical architecture and smart people to set it all up. How you go about chasing the holy grail — or even if you can achieve it — is dependent on a whole load of factors, including your technical architecture and organizational makeup.
 
 -------
+
+<div class="editor">
+{% capture m %} 
+Ed: The first time you’ve used a horizontal rule. I’m assuming it means this is as far as your completed draft text goes, rather than anything structural…?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 In my experience, I've found that sharing CSS and JS with the production environment is relatively easy, but sharing markup is tough. 
 
@@ -317,6 +338,13 @@ In my experience, I've found that sharing CSS and JS with the production environ
 - Using HTML templating languages create Templating language should match the production environment - The closer you get to . 
 - Look for opportunities to automate documentation 
 - [Using Grunt with Pattern Lab](http://bradfrost.com/blog/post/using-grunt-with-pattern-lab/)
+
+<div class="editor">
+{% capture m %} 
+Ed: Fragmentary list.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 How can you set up your applications and pattern library to achieve the Holy Grail? Developer Marcelo Somers outlined several methods for thoughtfully keeping your pattern library and production environments in sync. [Chasing the holy grail](https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.vy45rkm7m)
 
