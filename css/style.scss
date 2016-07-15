@@ -3,13 +3,14 @@
 ---
 
 /*------------------------------------*\
-    $SASS VARIABLES 
+    $SASS VARIABLES
 \*------------------------------------*/
 
 $white : #fff;
 $tan : #f6f5de;
 $tan-light : #fbfaee;
 $tan-dark : #a29e5e;
+$tan-dim-max : rgba(205,202,162,0.7);
 $tan-dim : rgba(205,202,162,0.4);
 $tan-dim-min : rgba(205,202,162,0.07);
 $brown : #100;
@@ -31,17 +32,17 @@ $speed-fast : 0.12s;
 \*------------------------------------*/
 
 /* Border-Box http:/paulirish.com/2012/box-sizing-border-box-ftw/ */
-* { 
-	-moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
-	box-sizing: border-box; 
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
-html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, legend, label, table, header, footer, nav, section, figure, main { 
-	margin: 0; 
-	padding: 0; 
-} 
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, legend, label, table, header, footer, nav, section, figure, main {
+	margin: 0;
+	padding: 0;
+}
 header, footer, nav, section, article, hgroup, figure, main {
-	display: block;	
+	display: block;
 }
 
 /*------------------------------------*\
@@ -145,7 +146,7 @@ input[type=submit] {
 
 h1 {
 	font-size: 2.5em;
-	line-height: 1.2;
+	line-height: 1.1;
 	margin: 0 0 0.68em;
 	text-align: center;
 
@@ -170,10 +171,12 @@ h2 {
 
 h3 {
 	font-size: 1.4em;
+    line-height: 1.2;
 }
 
 h4 {
 	font-size: 1.1em;
+    line-height: 1.2;
 }
 
 h5 {
@@ -189,19 +192,6 @@ a {
 	color: $brown;
 }
 
-h2, h3, h4, h5 {
-	a {
-		text-decoration: none;
-		color: $brown;
-		transition: all $speed-fast ease-out;
-		
-		
-		&:hover, &:focus {
-			color: $orange;
-		}
-	}
-}
-
 /*------------------------------------*\
     $MEDIA ELEMENTS
 \*------------------------------------*/
@@ -214,22 +204,22 @@ img, video, object {
 figure {
 	margin-bottom: 1em;
 	text-align: center;
-	
+
 	img {
 		display: inline-block;
 		margin-bottom: 0.1em;
 		border: 1px solid $tan-dark;
 	}
-	
+
 	@media all and (min-width: 37em) {
 		width: 100vw;
 		margin-left: calc((100vw - 29em) / -2);
 		padding: 0 1em;
 		text-align: center;
-		
-		
+
+
 	}
-	
+
 	@media all and (min-width: 88em) {
 		img {
 			max-width: 1400px;
@@ -428,15 +418,15 @@ pre {
 	margin: 0 0 1em;
 	border-radius: 5px;
 	text-decoration: none;
-	
+
 	&.star-given {
 		background: red;
-		
+
 		&:hover {
 			background: blue;
 		}
 	}
-	
+
 	&.disabled {
 		background: #f0f0f0;
 		color: gray;
@@ -480,10 +470,10 @@ header {
 	font-size: $font-size-sm;
 	line-height: 1.5;
 	margin-bottom: 1.2em;
-	
+
 	a {
 		color: $tan-dark;
-		
+
 		&:hover, &:focus {
 			color: $orange;
 		}
@@ -502,13 +492,77 @@ header {
 		font-family: $font-primary;
 	}
 
-	h2, h3 {
-		font-family: $font-primary;
-		margin: 2em 0 0.5em;
-	}
-	
+    h2 {
+        font-family: $font-primary;
+    	font-size: 1.8em;
+    	line-height: 1.2;
+        position: relative;
+        padding-left: 20px;
+        margin: 2em 0 0.5em;
+
+        @media all and (min-width: 40em) {
+            padding-left: 0;
+        }
+    }
+
+    h3 {
+        font-family: $font-primary;
+    	font-size: 1.4em;
+        line-height: 1.2;
+        position: relative;
+        padding-left: 20px;
+        margin: 2em 0 0.5em;
+
+        @media all and (min-width: 40em) {
+            padding-left: 0;
+        }
+    }
+
+    h4 {
+    	font-size: 1.3em;
+        line-height: 1.2;
+        position: relative;
+        padding-left: 20px;
+
+        @media all and (min-width: 40em) {
+            padding-left: 0;
+        }
+    }
+
+    h5 {
+    	color: $tan-dark;
+    	font-size: 1.1em;
+        position: relative;
+        padding-left: 20px;
+
+        @media all and (min-width: 40em) {
+            padding-left: 0;
+        }
+    }
+
+    h2, h3, h4, h5 {
+    	a {
+    		text-decoration: none;
+    		color: $tan-dim-max;
+            padding-right: 6px;
+            transition: all $speed-fast ease-out;
+            width: 20px;
+            position: absolute;
+            left: 0;
+            text-align: right;
+
+    		&:hover, &:focus {
+    			color: $orange;
+    		}
+
+            @media all and (min-width: 40em) {
+                left: -24px;
+            }
+    	}
+    }
+
 	ul, ol {
-		margin-bottom: 1em;
+		margin: 0 0 1em 1em;
 	}
 }
 
@@ -521,7 +575,7 @@ header {
 	padding-left: 2em;
 	max-width: 32em;
 	margin: 0 auto;
-	
+
 	ol {
 		border-left: 3px solid $brown;
 		padding: 0 0 3em;
@@ -546,7 +600,7 @@ header {
 			height: 50px;
 			background: url(../images/icon-atom.svg) no-repeat;
 			background-size: 100% 100%;
-			-webkit-animation: spin 10s linear infinite; 
+			-webkit-animation: spin 10s linear infinite;
 			-moz-animation: spin 10s linear infinite;
 			-o-animation: spin 10s linear infinite;
 			animation: spin 10s linear infinite;
@@ -567,13 +621,13 @@ header {
 			height: 25px;
 			background: url(../images/icon-atom.svg) no-repeat;
 			background-size: 100% 100%;
-			-webkit-animation: spin 10s linear infinite; 
+			-webkit-animation: spin 10s linear infinite;
 			-moz-animation: spin 10s linear infinite;
 			-o-animation: spin 10s linear infinite;
 			animation: spin 10s linear infinite;
 		}
 	}
-	
+
 	h3 {
 		margin: 0;
 	}
@@ -581,7 +635,7 @@ header {
 	a {
 		border-bottom: 1px solid $orange;
 		text-decoration: none;
-		
+
 		&:hover, &:focus {
 			color: $orange;
 		}
@@ -704,7 +758,7 @@ header {
 		padding: 1em 0;
 		text-decoration: none;
 		transition: all $speed-fast ease-out;
-		
+
 		&:hover, &:focus {
 			background: $tan-dim-min;
 			color: $orange;

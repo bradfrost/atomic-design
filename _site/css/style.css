@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*------------------------------------*\
-    $SASS VARIABLES 
+    $SASS VARIABLES
 \*------------------------------------*/
 /*------------------------------------*\
     $RESET
@@ -106,7 +106,7 @@ input[type=submit] {
 \*------------------------------------*/
 h1 {
   font-size: 2.5em;
-  line-height: 1.2;
+  line-height: 1.1;
   margin: 0 0 0.68em;
   text-align: center; }
   h1 cite {
@@ -124,10 +124,12 @@ h2 {
   line-height: 1.2; }
 
 h3 {
-  font-size: 1.4em; }
+  font-size: 1.4em;
+  line-height: 1.2; }
 
 h4 {
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  line-height: 1.2; }
 
 h5 {
   color: #a29e5e;
@@ -138,13 +140,6 @@ h5 {
 \*------------------------------------*/
 a {
   color: #100; }
-
-h2 a, h3 a, h4 a, h5 a {
-  text-decoration: none;
-  color: #100;
-  transition: all 0.12s ease-out; }
-  h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus {
-    color: #be6700; }
 
 /*------------------------------------*\
     $MEDIA ELEMENTS
@@ -361,11 +356,58 @@ header {
   font-size: 120%; }
   .text h1 {
     font-family: "Helvetica Neue", Helvetica, sans-serif; }
-  .text h2, .text h3 {
+  .text h2 {
     font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.8em;
+    line-height: 1.2;
+    position: relative;
+    padding-left: 20px;
     margin: 2em 0 0.5em; }
+    @media all and (min-width: 40em) {
+      .text h2 {
+        padding-left: 0; } }
+  .text h3 {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.4em;
+    line-height: 1.2;
+    position: relative;
+    padding-left: 20px;
+    margin: 2em 0 0.5em; }
+    @media all and (min-width: 40em) {
+      .text h3 {
+        padding-left: 0; } }
+  .text h4 {
+    font-size: 1.3em;
+    line-height: 1.2;
+    position: relative;
+    padding-left: 20px; }
+    @media all and (min-width: 40em) {
+      .text h4 {
+        padding-left: 0; } }
+  .text h5 {
+    color: #a29e5e;
+    font-size: 1.1em;
+    position: relative;
+    padding-left: 20px; }
+    @media all and (min-width: 40em) {
+      .text h5 {
+        padding-left: 0; } }
+  .text h2 a, .text h3 a, .text h4 a, .text h5 a {
+    text-decoration: none;
+    color: rgba(205, 202, 162, 0.7);
+    padding-right: 6px;
+    transition: all 0.12s ease-out;
+    width: 20px;
+    position: absolute;
+    left: 0;
+    text-align: right; }
+    .text h2 a:hover, .text h2 a:focus, .text h3 a:hover, .text h3 a:focus, .text h4 a:hover, .text h4 a:focus, .text h5 a:hover, .text h5 a:focus {
+      color: #be6700; }
+    @media all and (min-width: 40em) {
+      .text h2 a, .text h3 a, .text h4 a, .text h5 a {
+        left: -24px; } }
   .text ul, .text ol {
-    margin-bottom: 1em; }
+    margin: 0 0 1em 1em; }
 
 /*------------------------------------*\
     $TIMELINE
