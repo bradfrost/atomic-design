@@ -224,52 +224,47 @@ Many systems fall into a state of disrepair because the effort required to make 
 
 The Holy Grail removes duplication of effort and ensures the pattern library and the applications using the patterns remain synchronized. Sounds like a dream, right?
 
-As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, established a Holy Grail-style design system they call [Rizzo](http://rizzo.lonelyplanet.com/). Through some smart architecture, they created an API for their UI patterns that feeds into both their production environment as well as their pattern library. The result is a centralized design system that ensures their live application and documentation remains perfectly in sync with one another.
+As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, was one of the first to establish a Holy Grail-style design system they call [Rizzo](http://rizzo.lonelyplanet.com/). Through some smart architecture, they created an API for their UI patterns that feeds into both their production environment as well as their pattern library. The result is a centralized design system that ensures their live application and documentation remains perfectly in sync with one another.
 
 {% include figure.html src="../images/content/rizzo.png" caption="Lonely Planet created an API for their UI patterns that is consumed by both their pattern library and production environment. By architecting their design system in this manner, changes to UI patterns are automatically reflected in both the pattern library and production environment, keeping things in sync and thereby achieving the Holy Grail." %}
 
 Achieving the design system Holy Grail is no easy task, as it requires sophisticated technical architecture, smart people to set it all up, and a relatively-centralized organizational culture. How you go about chasing the Holy Grail — or even if you can achieve it — is dependent on a whole load of factors, including your technical architecture and organizational makeup. 
 
 ### Jumping technical hurdles
-Keeping a pattern library in sync with production environments requires sharing code in a smart, scalable, and maintainable way. Detailing all the different technical strategies and considerations around the Holy Grail would necessitate its own book, but let's at least cover some important areas around keeping frontend code in sync.
+Keeping a pattern library in sync with production environments requires sharing code in a smart, scalable, and maintainable way. Detailing all the different technical strategies and considerations around the Holy Grail would necessitate its own book, but let's cover a few important areas around keeping frontend code in sync.
 
 #### The frontend of things
-A UI design system establishes the frontend of a web experience: HTML, CSS, and JavaScript. How we get that frontend code into a production environment — with all its application logic and backend code — is the task at hand. 
+A UI design system manifests itself as the frontend of a web experience, which is comprised of HTML, CSS, and JavaScript. How we get that frontend code into a production environment — with complex application logic and backend code — is the task at hand. 
 
-Designer & Developer [Marcelo Somers](https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d) detailed various technical approaches for feeding a design system into applications. He highlights
+Web designer & developer [Marcelo Somers](https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d) detailed various technical approaches to achieving the Holy Grail. He highlights the pros and cons of each strategy for feeding a design system into applications in order to keep both codebases in lock and step. While I won't detail each of Marcelo's strategies, it's worth noting there a spectrum of choices to choose from: from crude frontend code copying-and-pasting on one end, to baking the pattern library directly into the production environment on the other. 
 
-In my experience, I've found that keeping CSS and presentational JavaScript in sync between with the production environment is relatively easy, but sharing markup is tough. 
+In my experience, I've found that sharing CSS and presentational JavaScript with production environments is relatively easy, while sharing markup is tough. Because CSS and JavaScript tend to get compiled into a single (or perhaps handful) of files, it becomes possible to throw them onto a CDN then simply link to those files in each application. Marcelo explains how to do this while keeping versioning in mind:
 
-> You’d provide development teams with a versioned URL (e.g., http://mycdn.com/1.3.5/styles.css) and upgrading is as simple as bumping the version number in the URL. <cite><a href="https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d">Marcelo Somers</a>
+> You’d provide development teams with a versioned URL (e.g., `http://mycdn.com/1.3.5/styles.css`) and upgrading is as simple as bumping the version number in the URL. <cite><a href="https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d">Marcelo Somers</a>
 
-Similarly, using build tools like Grunt and Gulp can make the migration [Grunt with Pattern Lab](http://bradfrost.com/blog/post/using-grunt-with-pattern-lab/)
+Sharing CSS and JavaScript is all well and good, but where things get tricky is when you want to share markup between environments. Why, you ask? Well, markup and backend logic are often intertwined in an application's codebase, which tends to make it difficult to simply copy and paste markup between your pattern library and production environments. Thankfully, there are ways around this problem.
 
-Where things get tricky though is sharing markup between. Intrinsically more complicated as markup and backend logic are often intermingled 
+#### Bridging the markup gap with templating languages
+Using HTML templating languages —such as Mustache, Handlebars, Twig, Jade, Nunjucks, and a slew of others — makes markup more portable and dynamic. Templating languages provide us a separation between structure and data, and supercharge our HTML to keep us from having to write the same markup patterns over and over again. The good news is that many CMSes and application environments also make use of templating languages to serve up frontend markup. 
 
+**The templating language can serve as the bridge between your pattern library and production environments**. If you're using a templating language to create the patterns in your design system (something we discussed at length in Chapters 3), you can share those patterns with production environments that utilize the same 
 
-#### Bridging the gap with templating languages
-As we discussed in Chapter 3, using HTML templating languages —such as Mustache, Handlebars, Twig, Jade, Nunjucks, and a slew of others — makes markup more portable and dynamic. Templating languages allow us to avoid writing the same markup patterns over and over again. Many CMSes and application environments also make use of templating languages to serve up frontend markup. 
+{% include figure.html src="../images/fpo.png" caption="Diagram: Pattern Library on left <--> Templating language <--> Production on right" %}
 
-**The templating language can serve as the bridge between your pattern library and production environments**. If you're using  Templating language should match the production environment - The closer you can get to matching your pattern library and production templating .
+The team at Phase2 Technology achieved the Holy Grail by using Pattern Lab as their pattern library development tool and [Drupal](https://www.drupal.org) as their content management system. Because both Pattern Lab and Drupal support the popular [Twig](http://twig.sensiolabs.org) templating engine, Phase2 is able to easily share patterns between the two environments, ensuring their clients’ pattern libraries and production builds are always in step with one another.
 
 > By using the same templating engine, along with the help of the Component Libraries Drupal Module, the tool gives Drupal the ability to directly include, extend, and embed the Twig templates that Pattern Lab uses for its components without any template duplication at all! <cite><a href="https://www.phase2technology.com/blog/introducing-pattern-lab-starter-8/">Evan Lovely, Phase2 Technology</a> 
 
-#### Deployment
-
-Be careful to keep documentation accessible to non developers. Keeping the pattern library and 
-
-- Look for opportunities to automate documentation 
-
 ### Is your culture Holy Grail compatible?
-There are a number of reasons why an organization may *not* be able to achieve the Holy Grail. Perhaps your organization has digital products on many different platforms using wildly different technologies. 
+You may have read that last section and thought, "That's amazing! My company needs this now!" While Holy Grail-style systems are indeed great, there are reasons why you may *not* be able to achieve the Holy Grail. Perhaps your organization creates tons of digital products on many different platforms using wildly different technologies. Maybe you're a giant multinational company scattered all over the world. Maybe you're company has an extremely decentralized, autonomous culture. Or maybe you're the the United States federal government.
 
-{% include figure.html src="../images/fpo.png" caption="Draft US Design System" %}
+{% include figure.html src="../images/fpo.png" caption="The Draft US Design System is the design system for the United States federal government." %}
 
-For example, the U.S. government's design system — called the [Draft U.S. Web Digital Standards](https://standards.usa.gov/) — is a collection of UI components and visual styles meant to help people making government websites make more consistent UIs. It would be amazing to see a Holy Grail-style system implemented at this scale, but due to the vastness and decentralized nature of the organization, it's not achievable without some dramatic restructuring of how federal governments get built.
+The U.S. government's design system — called the [Draft U.S. Web Digital Standards](https://standards.usa.gov/) — is a collection of UI components and visual styles created to help people making government websites build more consistent UIs. It would certainly be amazing to see a Holy Grail-style system implemented at this scale, but as you might imagine that's a pretty tall order. The vastness and decentralized nature of the organization means that the Holy Grail isn't really achievable without some dramatic restructuring of how federal government websites get built.
 
-{% include figure.html src="../images/fpo.png" caption="Spectrum of centralized vs decentralized. " %}
+If a relatively scattered, decentralized culture is your reality, don't be disheartened! Even getting *some* design system in place — a handful of go-to UI patterns, some helpful documentation, or guiding principles — can show your organization the light towards the Grail. As we've discussed throughout this chapter, your efforts are ongoing, and before you can run you must first learn to crawl.
 
-Technology alone can't achieve maintainable design systems; you must create a culture that communicates effectively. 
+{% include figure.html src="../images/fpo.png" caption="Spectrum of centralized vs decentralized cultures" %}
 
 ## Make it cross-disciplinary
 Style guides often jump straight into code snippets and pattern usage for the benefit of the design system users. Of course a pattern library needs to be helpful for the people actually making use of the patterns, but **treating a style guide solely a developer resource limits its potential**.
@@ -298,32 +293,45 @@ But creating a great-looking, intuitive style guide experience doesn't just happ
 Creating a useful design system should be the team's first priority. A happy home to contain it all might not happen right out of the gate, but should become a bigger priority once the design system becomes official. Making a good-looking style guide isn't just design for design's sake; **it reflects an organization’s commitment to making and maintaining a thoughtful, deliberate design system**.
 
 ## Make it visible
+Visibility is critically important to the ongoing health of your design system. Such an important endeavor shouldn't be tucked away in a dark corner of your intranet. What steps can you take to ensure the design system remains a cornerstone of your design and development workflows?
 
-### Communicating change
-You can create the best style guide in world, use the most appropriate technology, have an amazing team in place, and have excited users, but if you don't communicate updates and changes to the design system the entire effort will suffer.
+### Design system evangelism
+You can create the best style guide in world, use the most sophisticated technology, have an amazing team in place, and have excited users, but if you don't actively promote the design system and communicate changes, the entire effort will suffer.
 
-Makers, users, and other stakeholders need to be well aware of all the latest changes to and thinking around the design system. 
+Communication is especially important in the early days of your design system efforts. At the onset of your project, you can set up places to document progress of the system to help garner awareness and excitement for the design system project. One client of mine set up an internal blog to publish updates to the project, as well as a design system Yammer channel where developers and other interested parties can share ideas, address concerns, give feedback, and ask questions. Establishing a culture of communication early in the process will increase the likelihood of the design system taking root in your organization.
 
-Communication is especially important in the early days of the initiative. Frequent communication helps keep the design system in the front of everyone's mind so it takes root and becomes an integral part of your organization's workflow. **As time goes on, frequent communication helps the system increase in value like that fine bottle of wine**. Communication can include: 
+#### Communicating change
+Once the design system is off the ground and is being used in real applications, it's critical to communicate changes, updates 
+Here are some materials that can: 
 
-- Change logs ("Here's what's changed in the pattern library this month")
-- Roadmaps ("Here's what's coming up over the next few months")
-- requests for feedback ("We're considering deprecating our carousel pattern and would like to hear what you think."),
-- Surveys ("On a scale from 1-5, how useful is the pattern documentation?")
-- Success stories ("Team X launched this new feature using the design system; read more about how they did it.")
-- Resources ("Here's a great article about documenting ")
+- **Change logs** - "Here's what's changed in the pattern library this month"
+- **Roadmap** - "Here's what's coming up over the next few months"
+- **Success stories** - "Team X launched this great new application using the design system; read more about how they did it."
+- **Tips and tricks** "Here's a great article about documenting "
 
-**Design system changes, updates, and requests should be communicated wherever your team hangs out**. That may include Slack, BaseCamp, Github, wikis, Yammer, email lists, company blogs, intranets, and any other internal tools your team uses to communicate and collaborate. 
+Having a home base for all these materials is a great idea, and it makes sense to have these materials live adjascent to the style guide itself if possible.
 
-{% include figure.html src="../images/fpo.png" caption="Material Design's creators publish a handy changelog on their website so " %}
+{% include figure.html src="../images/fpo.png" caption="The Material Design team publishes a handy change log within their style guide so users can easily learn about the latest changes and improvements to the system." %}
 
-- Publish updates 
-- Notifications - Regular E-mail newsletters, blog updates, etc, whenever things change, Slack integrations, 
-- email updates, blog posts, video casts, 
+**Design system changes, updates, and requests should be communicated wherever your team hangs out**. That may include Slack, BaseCamp, Github, wikis, Yammer, email lists, company blogs, intranets, and any other internal tools your team uses to communicate and collaborate. And this doesn't need to require a huge manual effort. Thanks to linked nature of our tools, teams can automatically be alerted to changes, as the team from Shyp explains: 
 
 > Whenever someone makes a pull request, it sends a notification to our #Design slack channel, announcing to the team that there is a proposal change and feedback is required <cite><a href="https://medium.com/shyp-design/managing-style-guides-at-shyp-c217116c8126">Micah Sivitz, Shyp</a> 
 
-- Monitor progress over time - Lonely Planet's Rizzo design system tracks performance metrics over time.
+Baking this communication into the team's everyday workflow keeps makers, users, and stakeholders engaged in the endeavor, and helps reassure users that the pattern library is being actively maintained and improved upon.
+
+#### Training and support
+It's one thing to Properly training users . Users should know where to go to learn about the  users on
+
+- Issues
+- Webinars
+- Pair sessions
+- Training sessions
+- Regular office hours
+- Interviews
+- Requests for feedback ("We're considering deprecating our carousel pattern and would like to hear what you think."),
+- Surveys ("On a scale from 1-5, how useful is the pattern documentation?")
+- Regular State of the Union meetings anyone can join. Record these sessions and post them somewhere. 
+
 
 ### Make it public.
 Then there's the option of taking your communication strategy to another level by **making your style guide publicly accessible**.
@@ -390,8 +398,8 @@ So there you have it. In order to make a maintainable design system, you should:
 - **Make it adaptable** by counting on change and establishing a clear governance plan.
 - **Make it maintainable** by seeking the Holy Grail and making it easy to deploy and communicate changes to the design system.
 - **Make it cross-disciplinary** by making your pattern library become a watering hole the entire organization can gather around.
-- **Make it approachable** by making an attractive, easy-to-use pattern library with helpful documentation.
-- **Make it visible** to communicate change, increase accountability, and help with recruiting efforts.
+- **Make it approachable** by making an attractive, easy-to-use style guide with helpful accompanying documentation.
+- **Make it visible** by communicating change, evangelizing the design system, and making it public.
 - **Make it bigger** by including brand, voice and tone, code, design principles, and writing guidelines. 
 - **Make it agnostic** by naming patterns according to their structure rather than their context or content.
 - **Make it contextual** by demonstrating what patterns make up a particular pattern and showing where each pattern is utilized.
