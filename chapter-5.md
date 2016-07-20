@@ -329,16 +329,18 @@ You wouldn't hand someone a hammer, saw, and screwdriver then say, "Alright, you
 
 Training users on how to work with the design system can take many forms, including:
 
-- Training sessions - 
-- **Webinars** - if in-person training isn't feasible, webinars that users can tune into
-- Pair sessions - 
-- Tutorials -
-- **Onboarding** - A great way of 
+- **Pair sessions** - Nothing beats pulling up a chair and working together on a project. While more time intensive than other training vehicles, it's the best way to get makers and users collaborating together, learning how the system works, and exposing new opportunities and shortcomings.
+- **In-person workshops** - From immersive full-day sessions to quick walkthroughs, it's incredibly helpful to set up face-to-face training workshops involving both makers and users. These sessions can help smooth out any misconceptions about the system, help level up users with hands-on guidance, and create a healthy relationship between the people in charge of maintaining the system and the people in charge of utilizing it.
+- **Webinars** - If in-person training isn't possible or you need to train a lot of users at scale, webinars can be fantastic. Users can tune into online sessions to learn about how to properly use the system. When conducting webinars, be sure to build in plenty of Q&A time to field both audio and typed questions, concerns, and comments.
+- **Tutorials** - A series of blog posts and/or screencasts can neatly encapsulate core concepts of working with the design system. Not only do these help serve as a training tool, but they can serve as a great reference to keep coming back to.
+- **Onboarding** - A great way of injecting your design system into your company culture is to bake design system training right into new employee onboarding process. New employees will understand the importance of modularity, reuse, and all the other benefits a design system brings.
 
-And users need to know there's a support system there to answer any questions, listen to their needs, address bugs,. 
+Once users are cooking with grease  users need to know there's a support system there to answer any questions, listen to their needs, address bugs,. 
 
-- **Issue trackers** - Tools like JIRA and Github Issues are great  for users and makers to . Make it obvious 
-- **Regular office hours** -
+- **Issue trackers** - Tools like JIRA and Github Issues are great  for users and makers to report bugs and have technical conversations. Users should know the protocol for filing bugs.
+- **Slack and chat tools** - 
+- **Regular office hours** - 
+- Informal 
 - **Forums** - 
 
 Lastly, it's important for users' needs and concerns are being met. Feature requests.
