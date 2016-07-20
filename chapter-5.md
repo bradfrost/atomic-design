@@ -110,7 +110,11 @@ They're likely right. It would be ideal if the entire organization adopted more 
 
 {% include figure.html src="../images/fpo.png" caption="Design system makers and users" %}
 
-**The design system <em>makers</em> and design system <em>users</em> need to maintain a close working relationship** to ensure the patterns defined within the system serve the needs of the applications and all documentation is clear. **Makers provide a birds-eye perspective of the entire ecosystem the design system serves, while users provide an on-the-ground perspective focused on specific applications of the system**. Both perspectives are critical to the success of the design system, which is why it's so important for makers and users to have a healthy relationship that involves frequent communication and collaboration. 
+**The design system <em>makers</em> and design system <em>users</em> need to maintain a close working relationship** to ensure the patterns defined within the system serve the needs of the applications and all documentation is clear. **Makers provide a birds-eye perspective of the entire ecosystem the design system serves, while users provide an on-the-ground perspective focused on specific applications of the system**. Jina Bolton of Salesforce sums the relationship between makers and users quite nicely:
+
+> The Design System informs our Product Design.Our Product Design informs the Design System. <cite><a href="https://medium.com/salesforce-ux/the-salesforce-team-model-for-scaling-a-design-system-d89c2a2d404b">Jina Bolton, Salesforce</a>
+
+Both perspectives are critical to the success of the design system, which is why it's so important for makers and users to have a healthy relationship that involves frequent communication and collaboration. 
 
 #### Who are the design system makers?
 Who updates the design system? Who approves changes? Who interfaces with the users of the design system to make sure it's addressing their needs? Who gets to decide which patterns stay, go, or need tweaked? 
@@ -314,28 +318,35 @@ Having a home base for all these materials is a great idea, and keeping them adj
 
 {% include figure.html src="../images/fpo.png" caption="The Material Design team publishes a handy change log within their style guide so users can easily learn about the latest changes and improvements to the system." %}
 
-**Design system changes, updates, and requests should be communicated wherever your team hangs out**. That may include Slack, BaseCamp, Github, wikis, Yammer, email lists, company blogs, intranets, and any other internal tools your team uses to communicate and collaborate. And it doesn't need to require a huge manual effort to keep your team and users updated. Thanks to the synergistic nature of our tools, teams can automatically be alerted to changes via software, as the team from Shyp explains: 
+**Design system changes, updates, and requests should be communicated wherever your team hangs out**. That may include Slack, BaseCamp, Github, wikis, Yammer, email lists, company blogs, intranets, and any other internal tools your team uses to communicate and collaborate. If that sounds like a lot of work to you, fear not! Keeping your team and users updated doesn't have to require a huge manual effort. Thanks to the connected nature of our tools, teams can automatically get alerted to changes via software, as the team from Shyp explains: 
 
 > Whenever someone makes a pull request, it sends a notification to our #Design slack channel, announcing to the team that there is a proposal change and feedback is required <cite><a href="https://medium.com/shyp-design/managing-style-guides-at-shyp-c217116c8126">Micah Sivitz, Shyp</a> 
 
 Baking this communication into the team's everyday workflow keeps makers, users, and stakeholders engaged in the endeavor, and helps reassure users that the pattern library is being actively maintained and improved upon.
 
 #### Training and support
-You wouldn't hand someone a hammer, saw, and screwdriver then say, "Alright, you've got what you need; now go and build me a beautiful new house." Knowing how to properly use tools is even more important than the tools' availability. Documentation in the form of a style guide is helpful, sure, but by itself is not enough. It's essential to provide adequate training and offer ongoing support for your design system's users to ensure the 
+You wouldn't hand someone a hammer, saw, and screwdriver then say, "Alright, you've got what you need; now go and build me a beautiful new house." Knowing how to properly use a tool is even more important than that tool's availability. Documentation in the form of a style guide is no doubt helpful, but by itself it's not enough. It's essential to provide adequate training and offer ongoing support for your design system's users to ensure they successfully get up and running with the toolkit and continue to create great work with it.
 
-Users should know where to go to learn about the users on
+Training users on how to work with the design system can take many forms, including:
 
-- Webinars -
-- Pair sessions - 
 - Training sessions - 
-- Interviews - 
-- Requests for feedback - "We're considering deprecating our carousel pattern and would like to hear what you think."
-- Surveys - "On a scale from 1-5, how useful is the pattern documentation?"
-- Regular State of the Union meetings anyone can join. Record these sessions and post them somewhere. 
+- **Webinars** - if in-person training isn't feasible, webinars that users can tune into
+- Pair sessions - 
+- Tutorials -
+- **Onboarding** - A great way of 
 
-- **Issues** - JIRA and Github Issues are great tools to
+And users need to know there's a support system there to answer any questions, listen to their needs, address bugs,. 
+
+- **Issue trackers** - Tools like JIRA and Github Issues are great  for users and makers to . Make it obvious 
 - **Regular office hours** -
 - **Forums** - 
+
+Lastly, it's important for users' needs and concerns are being met. Feature requests.
+
+- **Interviews** - Talking to users about their design system experience in 
+- **Requests for feedback** - "We're considering deprecating our carousel pattern and would like to hear what you think."
+- **Surveys** - "On a scale from 1-5, how useful is the pattern documentation?"
+- **Regular state of the union meetings** anyone can join. Record these sessions and post them somewhere.
 
 
 ### Make it public.
