@@ -395,6 +395,7 @@ header {
   .text h2 a, .text h3 a, .text h4 a, .text h5 a {
     text-decoration: none;
     color: rgba(205, 202, 162, 0.7);
+    
     padding-right: 6px;
     transition: all 0.12s ease-out;
     width: 20px;
