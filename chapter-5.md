@@ -256,11 +256,11 @@ The team at Phase2 Technology achieved the Holy Grail by using Pattern Lab as th
 > By using the same templating engine, along with the help of the Component Libraries Drupal Module, the tool gives Drupal the ability to directly include, extend, and embed the Twig templates that Pattern Lab uses for its components without any template duplication at all! <cite><a href="https://www.phase2technology.com/blog/introducing-pattern-lab-starter-8/">Evan Lovely, Phase2 Technology</a> 
 
 ### Is your culture Holy Grail compatible?
-You may have read that last section and thought, "That's amazing! My company needs this now!" While Holy Grail-style systems are indeed great, there are reasons why you may *not* be able to achieve the Holy Grail. Perhaps your organization creates tons of digital products on many different platforms using wildly different technologies. Maybe you're a giant multinational company scattered all over the world. Maybe you're company has an extremely decentralized, autonomous culture. Or maybe you're the the United States federal government.
+You may have read that last section and thought, "That's amazing! My company needs this now!" While Holy Grail-style systems are indeed great, there are reasons why you may *not* be able to achieve the Holy Grail. Perhaps your organization creates tons of digital products on many different platforms using wildly different technologies. Maybe you're a giant multinational company scattered all over the world. Maybe you're company has an extremely decentralized, autonomous culture. Or maybe you're a gigantic federal government.
 
 {% include figure.html src="../images/fpo.png" caption="The Draft US Design System is the design system for the United States federal government." %}
 
-The U.S. government's design system — called the [Draft U.S. Web Digital Standards](https://standards.usa.gov/) — is a collection of UI components and visual styles created to help people making government websites build more consistent UIs. It would certainly be amazing to see a Holy Grail-style system implemented at this scale, but as you might imagine that's a pretty tall order. The vastness and decentralized nature of the organization means that the Holy Grail isn't really achievable without some dramatic restructuring of how federal government websites get built.
+The U.S. government's design system — called the [Draft U.S. Web Digital Standards](https://standards.usa.gov/) — is a collection of UI components and visual styles created to help people making government websites build more consistent UIs. The design system provides markup and styles for users to download and weave into their applications. It would certainly be amazing to see a Holy Grail-style system implemented at this gigantic scale, but as you might imagine that's a pretty tall order. The vastness and decentralized nature of the organization means that the Holy Grail isn't really achievable without some dramatic restructuring of how federal government websites get built.
 
 If a relatively scattered, decentralized culture is your reality, don't be disheartened! Even getting *some* design system in place — a handful of go-to UI patterns, some helpful documentation, or guiding principles — can show your organization the light towards the Grail. As we've discussed throughout this chapter, your efforts are ongoing, and before you can run you must first learn to crawl.
 
@@ -296,41 +296,46 @@ Creating a useful design system should be the team's first priority. A happy hom
 Visibility is critically important to the ongoing health of your design system. Such an important endeavor shouldn't be tucked away in a dark corner of your intranet. What steps can you take to ensure the design system remains a cornerstone of your design and development workflows?
 
 ### Design system evangelism
-You can create the best style guide in world, use the most sophisticated technology, have an amazing team in place, and have excited users, but if you don't actively promote the design system and communicate changes, the entire effort will suffer.
+You can create the best style guide in world, use the most sophisticated technology, have an amazing team in place, and have excited users, but if you don't actively promote the design system and communicate changes, the entire effort will greatly suffer.
 
-Communication is especially important in the early days of your design system efforts. At the onset of your project, you can set up places to document progress of the system to help garner awareness and excitement for the design system project. One client of mine set up an internal blog to publish updates to the project, as well as a design system Yammer channel where developers and other interested parties can share ideas, address concerns, give feedback, and ask questions. Establishing a culture of communication early in the process will increase the likelihood of the design system taking root in your organization.
+Evangelizing your design system efforts can and should happen even before the system is off the ground. At the onset of your project, you can set up places to document progress of the project to help garner awareness and excitement for the design system endeavor. One client of mine set up an internal blog to publish updates to the project, as well as a design system Yammer channel where developers and other interested parties can share ideas, address concerns, give feedback, and ask questions. Establishing a culture of communication early in the process will increase the likelihood of the design system taking root.
 
 #### Communicating change
-Once the design system is off the ground and is being used in real applications, it's critical to communicate changes, updates 
-Here are some materials that can: 
+Once the design system is off the ground and is being used in real applications, it's imperative to communicate changes, updates, and an ongoing vision to the entire organization.
 
-- **Change logs** - "Here's what's changed in the pattern library this month"
-- **Roadmap** - "Here's what's coming up over the next few months"
+The tactics for this communication can vary from nuts-and-bolts utilities to more outward facing marketing efforts. Here are some materials that can help communicate change: 
+
+- **Change logs** - "Here's what's changed in the pattern library this month."
+- **Roadmap** - "Here's what's coming up over the next few months."
 - **Success stories** - "Team X launched this great new application using the design system; read more about how they did it."
-- **Tips and tricks** "Here's a great article about documenting "
+- **Tips and tricks** "Here's a few best practices and considerations for using our system's buttons throughout your application."
 
-Having a home base for all these materials is a great idea, and it makes sense to have these materials live adjascent to the style guide itself if possible.
+Having a home base for all these materials is a great idea, and keeping them adjascent to (or even within) the style guide itself makes a lot of sense as well.
 
 {% include figure.html src="../images/fpo.png" caption="The Material Design team publishes a handy change log within their style guide so users can easily learn about the latest changes and improvements to the system." %}
 
-**Design system changes, updates, and requests should be communicated wherever your team hangs out**. That may include Slack, BaseCamp, Github, wikis, Yammer, email lists, company blogs, intranets, and any other internal tools your team uses to communicate and collaborate. And this doesn't need to require a huge manual effort. Thanks to linked nature of our tools, teams can automatically be alerted to changes, as the team from Shyp explains: 
+**Design system changes, updates, and requests should be communicated wherever your team hangs out**. That may include Slack, BaseCamp, Github, wikis, Yammer, email lists, company blogs, intranets, and any other internal tools your team uses to communicate and collaborate. And it doesn't need to require a huge manual effort to keep your team and users updated. Thanks to the synergistic nature of our tools, teams can automatically be alerted to changes via software, as the team from Shyp explains: 
 
 > Whenever someone makes a pull request, it sends a notification to our #Design slack channel, announcing to the team that there is a proposal change and feedback is required <cite><a href="https://medium.com/shyp-design/managing-style-guides-at-shyp-c217116c8126">Micah Sivitz, Shyp</a> 
 
 Baking this communication into the team's everyday workflow keeps makers, users, and stakeholders engaged in the endeavor, and helps reassure users that the pattern library is being actively maintained and improved upon.
 
 #### Training and support
-It's one thing to Properly training users . Users should know where to go to learn about the  users on
+You wouldn't hand someone a hammer, saw, and screwdriver then say, "Alright, you've got what you need; now go and build me a beautiful new house." Knowing how to properly use tools is even more important than the tools' availability. Documentation in the form of a style guide is helpful, sure, but by itself is not enough. It's essential to provide adequate training and offer ongoing support for your design system's users to ensure the 
 
-- Issues
-- Webinars
-- Pair sessions
-- Training sessions
-- Regular office hours
-- Interviews
-- Requests for feedback ("We're considering deprecating our carousel pattern and would like to hear what you think."),
-- Surveys ("On a scale from 1-5, how useful is the pattern documentation?")
+Users should know where to go to learn about the users on
+
+- Webinars -
+- Pair sessions - 
+- Training sessions - 
+- Interviews - 
+- Requests for feedback - "We're considering deprecating our carousel pattern and would like to hear what you think."
+- Surveys - "On a scale from 1-5, how useful is the pattern documentation?"
 - Regular State of the Union meetings anyone can join. Record these sessions and post them somewhere. 
+
+- **Issues** - JIRA and Github Issues are great tools to
+- **Regular office hours** -
+- **Forums** - 
 
 
 ### Make it public.
