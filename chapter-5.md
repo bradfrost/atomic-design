@@ -262,7 +262,7 @@ The team at Phase2 Technology achieved the Holy Grail by using Pattern Lab as th
 ### Is your culture Holy Grail compatible?
 You may have read that last section and thought, "That's amazing! My company needs this now!" While Holy Grail-style systems are indeed great, there are reasons why you may *not* be able to achieve the Holy Grail. Perhaps your organization creates tons of digital products on many different platforms using wildly different technologies. Maybe you're a giant multinational company scattered all over the world. Maybe you're company has an extremely decentralized, autonomous culture. Or maybe you're a gigantic federal government.
 
-{% include figure.html src="../images/fpo.png" caption="The Draft US Design System is the design system for the United States federal government." %}
+{% include figure.html src="../images/content/styleguide-draft.png" caption="The Draft US Design System is the design system for the United States federal government." %}
 
 The U.S. government's design system — called the [Draft U.S. Web Digital Standards](https://standards.usa.gov/) — is a collection of UI components and visual styles created to help people making government websites build more consistent UIs. The design system provides markup and styles for users to download and weave into their applications. It would certainly be amazing to see a Holy Grail-style system implemented at this gigantic scale, but as you might imagine that's a pretty tall order. The vastness and decentralized nature of the organization means that the Holy Grail isn't really achievable without some dramatic restructuring of how federal government websites get built.
 
@@ -277,7 +277,7 @@ Style guides often jump straight into code snippets and pattern usage for the be
 
 Take the carousel (please!). This component is amazingly complex from an organizational standpoint. A homepage carousel on an e-commerce website requires input from a myriad of disciplines across the organization. Business owners and editorial staff must choose products to be featured in the carousel. Copywriters must ensure the copy is effective and stays within the constraints of the design. Art directors must ensure the aesthetic design is pleasing and the product photography is legible across every screen size. UX designers need to ensure the functionality and controls are intuitive. Frontend people need to make sure the component is responsive, accessible, and performant. Backend developers need to make sure the component is properly wired up to the backend system. You get the idea. 
 
-{% include figure.html src="../images/fpo.png" caption="Walmart carousel example" %}
+{% include figure.html src="../images/content/walmart-carousel.png" caption="A homepage carousel on a site like Walmart requires input from many different disciplines and stakeholders. A style guide can help gather those different perspectives under one roof." %}
 
 A well-crafted style guide can help manage all these moving parts and ensure the many perspectives that influence each pattern are properly documented in the style guide. Make the pattern library accessible to every discipline, and think about how to make it easy and inviting for different disciplines to contribute to the documentation. 
 
@@ -314,9 +314,9 @@ The tactics for this communication can vary from nuts-and-bolts utilities to mor
 - **Success stories** - "Team X launched this great new application using the design system; read more about how they did it."
 - **Tips and tricks** "Here's a few best practices and considerations for using our system's buttons throughout your application."
 
-Having a home base for all these materials is a great idea, and keeping them adjascent to (or even within) the style guide itself makes a lot of sense as well.
+Having a home base for all these materials is a great idea, and keeping them adjacent to (or even within) the style guide itself makes a lot of sense as well.
 
-{% include figure.html src="../images/fpo.png" caption="The Material Design team publishes a handy change log within their style guide so users can easily learn about the latest changes and improvements to the system." %}
+{% include figure.html src="../images/content/material-design-changelog.png" caption="The Material Design team publishes a handy change log within their style guide so users can easily learn about the latest changes and improvements to the system." %}
 
 **Design system changes, updates, and requests should be communicated wherever your team hangs out**. That may include Slack, BaseCamp, Github, wikis, Yammer, email lists, company blogs, intranets, and any other internal tools your team uses to communicate and collaborate. If that sounds like a lot of work to you, fear not! Keeping your team and users updated doesn't have to require a huge manual effort. Thanks to the connected nature of our tools, teams can automatically get alerted to changes via software, as the team from Shyp explains: 
 
