@@ -320,38 +320,40 @@ Having a home base for all these materials is a great idea, and keeping them adj
 
 **Design system changes, updates, and requests should be communicated wherever your team hangs out**. That may include Slack, BaseCamp, Github, wikis, Yammer, email lists, company blogs, intranets, and any other internal tools your team uses to communicate and collaborate. If that sounds like a lot of work to you, fear not! Keeping your team and users updated doesn't have to require a huge manual effort. Thanks to the connected nature of our tools, teams can automatically get alerted to changes via software, as the team from Shyp explains: 
 
-> Whenever someone makes a pull request, it sends a notification to our #Design slack channel, announcing to the team that there is a proposal change and feedback is required <cite><a href="https://medium.com/shyp-design/managing-style-guides-at-shyp-c217116c8126">Micah Sivitz, Shyp</a> 
+> Whenever someone makes a pull request, it sends a notification to our #Design slack channel, announcing to the team that there is a proposal change and feedback is required. <cite><a href="https://medium.com/shyp-design/managing-style-guides-at-shyp-c217116c8126">Micah Sivitz, Shyp</a> 
 
 Baking this communication into the team's everyday workflow keeps makers, users, and stakeholders engaged in the endeavor, and helps reassure users that the pattern library is being actively maintained and improved upon.
 
 #### Training and support
-You wouldn't hand someone a hammer, saw, and screwdriver then say, "Alright, you've got what you need; now go and build me a beautiful new house." Knowing how to properly use a tool is even more important than that tool's availability. Documentation in the form of a style guide is no doubt helpful, but by itself it's not enough. It's essential to provide adequate training and offer ongoing support for your design system's users to ensure they successfully get up and running with the toolkit and continue to create great work with it.
+You wouldn't hand someone a hammer, saw, and screwdriver then say, "Alright, you've got what you need; now go and build me a beautiful new house." Knowing how to properly use a tool is often even more important than that tool's availability. Documentation in the form of a style guide is no doubt helpful, but by itself it's not enough. It's essential to provide adequate training and offer ongoing support for your design system's users to ensure they successfully get up and running with the toolkit and continue to create great work with it.
 
 Training users on how to work with the design system can take many forms, including:
 
-- **Pair sessions** - Nothing beats pulling up a chair and working together on a project. While more time intensive than other training vehicles, it's the best way to get makers and users collaborating together, learning how the system works, and exposing new opportunities and shortcomings.
+- **Pair sessions** - Nothing beats pulling up a chair and working together on a project. While more time intensive than other training vehicles, it's the best way to get makers and users collaborating together, learning how the system works, and exposing new opportunities and shortcomings. 
 - **In-person workshops** - From immersive full-day sessions to quick walkthroughs, it's incredibly helpful to set up face-to-face training workshops involving both makers and users. These sessions can help smooth out any misconceptions about the system, help level up users with hands-on guidance, and create a healthy relationship between the people in charge of maintaining the system and the people in charge of utilizing it.
-- **Webinars** - If in-person training isn't possible or you need to train a lot of users at scale, webinars can be fantastic. Users can tune into online sessions to learn about how to properly use the system. When conducting webinars, be sure to build in plenty of Q&A time to field both audio and typed questions, concerns, and comments.
+- **Webinars** - If in-person workshops or pair sessions aren't possible or you need to train a lot of users at scale, webinars can be fantastic. Users can tune into online sessions to learn about how to properly use the system. When conducting webinars, be sure to build in plenty of Q&A time to field both audio and typed questions, concerns, and comments.
 - **Tutorials** - A series of blog posts and/or screencasts can neatly encapsulate core concepts of working with the design system. Not only do these help serve as a training tool, but they can serve as a great reference to keep coming back to.
 - **Onboarding** - A great way of injecting your design system into your company culture is to bake design system training right into new employee onboarding process. New employees will understand the importance of modularity, reuse, and all the other benefits a design system brings.
 
-Once users are cooking with grease  users need to know there's a support system there to answer any questions, listen to their needs, address bugs,. 
+Users will undoubtedly have questions or encounter issues once they start cooking with grease and building things with the design system. They need to know there's a vibrant support system in place to help answer any questions, listen to their needs, and address bugs. There are a host of mechanisms in place to provide support for users, including:
 
-- **Issue trackers** - Tools like JIRA and Github Issues are great  for users and makers to report bugs and have technical conversations. Users should know the protocol for filing bugs.
-- **Slack and chat tools** - 
-- **Regular office hours** - 
-- Informal 
-- **Forums** - 
+- **Issue trackers** - Tools like JIRA and Github Issues are great  for users and makers to report bugs and have technical conversations. Users should be aware the protocol for filing bugs and should feel empowered to contribute.
+- **Office hours** - Schedule regular times where the design system team is available to field questions, address issues, and talk about what's next for the design system.
+- **Slack and chat tools** - The real-time nature of many of our work collaboration tools presents a huge opportunity to keep the pattern-laden conversation going. Thanks to tools like Slack, Yammer, and HipChat, makers and users can engage each other whenever and wherever.
+- **Forums** - Communities like Stack Overflow and Github have proven to be extremely powerful for enabling grassroots, community-driven support. Rather than design system makers becoming a bottleneck for providing support, it can be worthwhile to open up support to the entire user community. 
+- **Outreach** - Not everyone has the time or personality to contribute back and ask questions. Design system makers should be proactive and reach out to developers using the design system to see if they have any issues or concerns. These kinds of actions can help build a genuine and positive relationship between makers and users.
 
-Lastly, it's important for users' needs and concerns are being met. Feature requests.
+[TODO]
+Knowing where to turn for help is important, but users can also be valuable contributors to the system. Everyone is in the same boat, (hopefully!) sailing towards success. Because of thisneeds and concerns are being met. Feature requests.
 
-- **Interviews** - Talking to users about their design system experience in 
+- **Individual and group interviews** - It's always a good idea to talk to users. Talk to users about their design system experience. Take it all in, both the good and the bad.
 - **Requests for feedback** - "We're considering deprecating our carousel pattern and would like to hear what you think."
-- **Surveys** - "On a scale from 1-5, how useful is the pattern documentation?"
-- **Regular state of the union meetings** anyone can join. Record these sessions and post them somewhere.
+- **Surveys** - If people don't have time for a "On a scale from 1-5, how useful is the pattern documentation?"
+- **Regular state of the union meetings** that anyone can join. Record these sessions and post them somewhere.
 
+[/TODO]
 
-### Make it public.
+### Make it public
 Then there's the option of taking your communication strategy to another level by **making your style guide publicly accessible**.
 
 But why? After all, isn't a style guide merely an internal resource to help your organization work better together? What use is it to the outside world? And wouldn't publishing your style guide give away all your trade secrets?
