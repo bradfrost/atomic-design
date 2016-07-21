@@ -106,7 +106,7 @@ When I talk about establishing a more collaborative process like the one I detai
 
 They're likely right. It would be ideal if the entire organization adopted more nimble, collaborative processes, but the daunting logistics around such an effort makes it improbable. But here's the thing. Not *everyone* in the organization needs to directly contribute to the design system, but someone (or more likely, some people) must take ownership of it.
 
-**The design system <em>makers</em> are the ones who architect, create, and maintain the system**, and they need to work closely together to ensure that the system is smart, flexible, scalable, and addresses the needs of the users and business. **The design system <em>users</em> are the teams across the organization who will take the system and employ its interface patterns to specific applications**. 
+**The design system <em>makers</em> are the ones who create, maintain, and govern the system**, and they need to work closely together to ensure that the system is smart, flexible, scalable, and addresses the needs of the users and business. **The design system <em>users</em> are the teams across the organization who will take the system and employ its interface patterns to specific applications**. 
 
 {% include figure.html src="../images/content/makers-users.png" caption="Design system makers and users" %}
 
