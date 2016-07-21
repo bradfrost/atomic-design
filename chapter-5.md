@@ -100,7 +100,7 @@ Now it's worth pointing out that (as with many things in life) things may not sh
 With the design system initiative approved, it's now time to put the right people and processes in place to ensure the system flourishes for your organization.
 
 #### Design system makers and users
-First things first. It's important to recognize that **there will inevitably be people at the organization that help <em>make and maintain</em> the design system, and there will be other people who will be <em>users</em> of the design system**. These two groups may not be mutually exclusive, but establishing the roles of makers and users is important.
+First things first. It's important to recognize that **there will inevitably be people at the organization that help <em>make and maintain</em> the design system, and there will be people who will be <em>users</em> of the design system**. There may be overlap between these two groups, but establishing the roles of makers and users is important nonetheless.
 
 When I talk about establishing a more collaborative process like the one I detailed in the last chapter, I inevitably hear people who work at large organizations say, "but Brad, we have hundreds (or even thousands) of developers working on our products, so getting all those people to collaborate and contribute like that would be far too difficult."
 
@@ -108,7 +108,7 @@ They're likely right. It would be ideal if the entire organization adopted more 
 
 **The design system <em>makers</em> are the ones who architect, create, and maintain the system**, and they need to work closely together to ensure that the system is smart, flexible, scalable, and addresses the needs of the users and business. **The design system <em>users</em> are the teams across the organization who will take the system and employ its interface patterns to specific applications**. 
 
-{% include figure.html src="../images/fpo.png" caption="Design system makers and users" %}
+{% include figure.html src="../images/content/makers-users.png" caption="Design system makers and users" %}
 
 **The design system <em>makers</em> and design system <em>users</em> need to maintain a close working relationship** to ensure the patterns defined within the system serve the needs of the applications and all documentation is clear. **Makers provide a birds-eye perspective of the entire ecosystem the design system serves, while users provide an on-the-ground perspective focused on specific applications of the system**. Jina Bolton of Salesforce sums the relationship between makers and users quite nicely:
 
@@ -151,13 +151,11 @@ Users' proximity to and involvement in the creation of the design system will un
 One of the biggest advantages of establishing a thoughtful design system is that it allows organizations to scale best practices. If all those best practices — responsiveness, accessibility, performance, UX, ergonomics, and so on — are baked into the system, users can simply plug in patterns and reap the rewards. This means design system users don't have to be senior-level designers or developers to produce good work; the design system serves as quality control vehicle that helps users apply best practices regardless of each individual's skill level.
 
 ### Design system team makeup
-**A cross-disciplinary team should be established in order to properly manage, maintain, and extend the system**. All disciplines at an organization — UX designers, visual designers, content strategists, frontend developers, backend developers, product managers, project managers, executives, and other stakeholders — have unique perspectives that can undoubtedly inform and shape the work. Incorporating these perspectives into the design system is important, but doesn't necessarily require every discipline to constantly be involved in developing the design system.
+**A cross-disciplinary team should be established in order to properly manage, maintain, and extend the system**. All disciplines at an organization — UX designers, visual designers, content strategists, frontend developers, backend developers, product managers, project managers, executives, and other stakeholders — have unique perspectives that can undoubtedly inform and shape the work. Incorporating these perspectives into the design system is important, but doesn't necessarily require every discipline to constantly be involved in developing it.
 
-There will inevitably be disciplines that actively do the work, while other disciplines may take on more of an advisory role. **The disciplines responsible for designing and building the user interface — UX designers, visual designers, frontend developers — will likely serve as the hands that do the work and make updates to the design system**. They should work collaboratively (as detailed in the last chapter) and coordinate with the other disciplines to ensure that the system reflects the values and considerations of the entire business.
+There will inevitably be disciplines that actively do the work, while other disciplines may take on more of an advisory role. **The disciplines responsible for designing and building the user interface — likely UX designers, visual designers, frontend developers — will likely serve as the hands that do the work and make updates to the design system**. They should work collaboratively (as detailed in the last chapter) and coordinate with other disciplines to ensure that the system reflects the values and considerations of the entire business.
 
 **Other disciplines may not be the ones actively doing the work, but must be consulted to make sure their perspectives are properly reflected in the system**. Backend engineers need to make the team aware of any architectural decisions that would affect the frontend UI, executives need to make the team aware of important initiatives that will affect the role and utility of the system, and of course design system users need to coordinate with the makers to ensure the system is serving the needs of individual applications. 
-
-{% include figure.html src="../images/fpo.png" caption="Design system team makeup" %}
 
 ## Make it adaptable 
 Change is the only constant, as they say. **The <em>living</em> part of a living design system means that it needs to roll with the punches, adapt to feedback, be iterated upon, and evolve alongside the products it serves**.  
@@ -390,7 +388,7 @@ Another challenge for naming *display* patterns is that we tend to get distracte
 
 Fair warning: **naming things is really freaking hard**. But there are strategies to help you create sound names for your patterns. Conducting an interface inventory (as detailed in [chapter 4](/chapter-4/#show-dont-tell-the-power-of-interface-inventories)) helps remove patterns from the context of the page where they normally reside, meaning your team can create names that aren't distracted by their context. And I've conducted naming exercises with teams where we've blurred out the content residing inside a pattern so everyone can focus on the pattern's *structure* rather than the *content* that lives inside it.
 
-{% include figure.html src="../images/content/modal-blur.png" caption="When naming patterns, try blurring out their content so that your names reflect the patterns' structure rather than the content  that lives inside them." %}
+{% include figure.html src="../images/content/modal-blur.png" caption="A good exercise when naming patterns is to blur out the content so that your names reflect the patterns' structure rather than the content that lives inside them." %}
 
 While naming things will always be a challenge, pattern names that are agnostic to context and content will be more portable, reusable, and versatile.
 
@@ -399,11 +397,11 @@ Showcasing UI patterns in a pattern library is all well and good, but **you need
 
 One way to demonstrate context might include showing screenshots or videos of a component in action. Material Design's documentation does a fantastic job at this; each component is rich with photos, videos, and usage details to give their users a clear understanding of what these patterns look like in the context of an application and demonstrate how each pattern should be used.
 
-{% include figure.html src="../images/content/material-design-bottom-nav.png" caption="Material Design's component library doesn't just contain an example of each component; it thoroughly documents the component's usage with plenty of images and video to support it." %}
+{% include figure.html src="../images/content/material-design-bottom-nav.png" caption="Material Design's component library doesn't just contain an example of each component; it thoroughly documents the component's usage with plenty of images and videos to support it." %}
 
 Another way to show context is to provide lineage information for each pattern. As we discussed in Chapter 3, tools like Pattern Lab automatically generate this information which lets you to see which patterns make up any given component, and also show where each component is employed. This provides a sort of pattern paper trail that helps immensely with QA efforts, as it highlights exactly which patterns and templates would need tested if changes were made to a particular pattern.
 
-{% include figure.html src="../images/content/pattern-lab-lineage.png" caption="Tools like Pattern Lab allow teams to see which smaller components make up any given component, as well as where each pattern gets used." %}
+{% include figure.html src="../images/content/pattern-lab-lineage.png" caption="Tools like Pattern Lab provide lineage information, allowing teams to see which smaller components are included in any given component, as well as where each pattern gets used." %}
 
 ## Make it last
 Making a design system is an incredibly and important endeavor. But without proper maintenance, the value of your design system will deprecate much like a car that's just been driven off the dealer's lot. Instead, your design system should be like a bottle of fine wine that increases value over time.
