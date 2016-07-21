@@ -112,7 +112,7 @@ They're likely right. It would be ideal if the entire organization adopted more 
 
 **The design system <em>makers</em> and design system <em>users</em> need to maintain a close working relationship** to ensure the patterns defined within the system serve the needs of the applications and all documentation is clear. **Makers provide a birds-eye perspective of the entire ecosystem the design system serves, while users provide an on-the-ground perspective focused on specific applications of the system**. Jina Bolton of Salesforce sums the relationship between makers and users quite nicely:
 
-> The Design System informs our Product Design.Our Product Design informs the Design System. <cite><a href="https://medium.com/salesforce-ux/the-salesforce-team-model-for-scaling-a-design-system-d89c2a2d404b">Jina Bolton, Salesforce</a>
+> The Design System informs our Product Design. Our Product Design informs the Design System. <cite><a href="https://medium.com/salesforce-ux/the-salesforce-team-model-for-scaling-a-design-system-d89c2a2d404b">Jina Bolton, Salesforce</a>
 
 Both perspectives are critical to the success of the design system, which is why it's so important for makers and users to have a healthy relationship that involves frequent communication and collaboration. 
 
@@ -123,19 +123,13 @@ The answers to these questions **will very much depend on the size and setup of 
 
 **Large organizations** like Salesforce maintain an official *design systems team*, which currently includes about a dozen full-time employees last I heard. That dedicated team is responsible for governing the design system and making sure it's meeting the needs of the myriad internal product teams, as well as external developers that build things on the company's platform. When a design system is serving literally thousands of  users, it's a smart idea to dedicate at least a few full-time employees to manage and grow the system.
 
-{% include figure.html src="../images/fpo.png" caption="Large organization diagram" %}
-
 **Smaller organizations** most likely don't have the luxury of building an entire team to service a design system. Team members in smaller organizations have to wear many (hopefully stylish!) hats out of necessity, so governing the design system will likely become another responsibility. This may sound like an added burden ("oh great, yet another thing I'm responsible for that doesn't involve a pay raise!"), but this particular hat should be a joy to wear as it improves the efficiency and quality of all other work. Hooray for design systems! 
 
 Typically, design system makers at smaller organizations will be senior-level staff who have the experience to make thoughtful decisions and authority to enforce the design system.
 
-{% include figure.html src="../images/fpo.png" caption="Small organization diagram" %}
-
 And then there are **external agencies, contractors, and consultants**. What is the role of an external party when it comes to longterm maintenance of a client's design system? On one hand, external parties are at a bit of a disadvantage since they don't actually work for their client's organization. A successful design system needs to become a part of an organization's DNA, and since external parties exist outside the company's walls, their influence is intrinsically limited.
 
 But on the other hand, **external parties can often provide a sense of perspective** that's hard to see while working inside a company. This is where outsiders can really shine. In my work as a consultant, I work with organizations to establish longterm design system maintenance strategies and help get the right people and processes in place. While the longterm success of the system will ultimately be up to the organization themselves, external parties can teach them to fish and provide important strategic guidance, feedback, and perspective. 
-
-{% include figure.html src="../images/fpo.png" caption="Third-party diagram" %}
 
 #### Who are the design system users?
 Who are the people responsible for using the design system to build new features and applications? Who are the people that communicate with the system makers to report issues and request features?
@@ -146,7 +140,7 @@ Once again, the answers to these questions will largely depend on your organizat
 
 Users' proximity to and involvement in the creation of the design system will undoubtedly vary. You may work on a singular product at a scrappy startup, so your small team very well may be the ones simultaneously creating and using the design system.  Or you may work at a large multi-national corporation with development teams and third-party partners scattered all across the globe. If this is the case, design system makers and users may seldom (or ever) meet, which means that helpful documentation and a sharp birds-eye perspective becomes that much more important. 
 
-{% include figure.html src="../images/fpo.png" caption="Spectrum of design system users" %}
+{% include figure.html src="../images/content/spectrum.png" caption="There is a spectrum of potential relationships between design system users and makers, and the size and makeup of your company will undoubtedly shape those relationships." %}
 
 One of the biggest advantages of establishing a thoughtful design system is that it allows organizations to scale best practices. If all those best practices — responsiveness, accessibility, performance, UX, ergonomics, and so on — are baked into the system, users can simply plug in patterns and reap the rewards. This means design system users don't have to be senior-level designers or developers to produce good work; the design system serves as quality control vehicle that helps users apply best practices regardless of each individual's skill level.
 
