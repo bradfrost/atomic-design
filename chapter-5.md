@@ -27,7 +27,7 @@ We *think* we merely design and build websites and apps. And that's true for the
 
 {% include figure.html src="../images/content/workflow-website-first.png" caption="" %}
 
-The problem with this mentality is that you can almost see that pattern library snapping off and sliding off into the abyss.  **Once the pattern library ceases to reflect the current state of the products it serves, it becomes obsolete**. And when the pattern library managing the design system is no longer accurate, the website maintenance process devolves into a smattering of hotfixes and ad hoc changes, ruining all the thoughtfulness that went into creating the original design system.
+The problem with this mentality is that you can almost see that pattern library snapping off and sliding into the abyss.  **Once the pattern library ceases to reflect the current state of the products it serves, it becomes obsolete**. And when the pattern library managing the design system is no longer accurate, the website maintenance process devolves into a smattering of hotfixes and ad hoc changes, ruining all the thoughtfulness that went into creating the original design system.
 
 In order to set ourselves up for longterm success, we must fundamentally shift our mentality around what we’re actually creating. Rather than thinking of final applications as our sole responsibility, we must recognize that the design system is what underpins our final products *and* pattern libraries.
 
