@@ -338,21 +338,21 @@ Users will undoubtedly have questions or encounter issues once they start cookin
 - **Issue trackers** - Tools like JIRA and Github Issues are great  for users and makers to report bugs and have technical conversations. Users should be aware the protocol for filing bugs and should feel empowered to contribute.
 - **Office hours** - Schedule regular times where the design system team is available to field questions, address issues, and talk about what's next for the design system.
 - **Slack and chat tools** - The real-time nature of many of our work collaboration tools presents a huge opportunity to keep the pattern-laden conversation going. Thanks to tools like Slack, Yammer, and HipChat, makers and users can engage each other whenever and wherever.
-- **Forums** - Communities like Stack Overflow and Github have proven to be extremely powerful for enabling grassroots, community-driven support. Rather than design system makers becoming a bottleneck for providing support, it can be worthwhile to open up support to the entire user community. 
-- **Outreach** - Not everyone has the time or the personality to contribute back and ask questions. Design system makers should be proactive and reach out to developers using the design system to see if they have any issues or concerns. These kinds of actions can help build a genuine and positive relationship between makers and users, and can ensure 
+- **Forums** - Communities like Stack Overflow and Github have proven to be extremely powerful for enabling grassroots, community-driven support. Rather than design system makers becoming a support bottleneck, it can be worthwhile to open up support to the entire user community. 
+- **Outreach** - Not everyone has the time or the personality to  ask questions and suggest changes. Design system makers should be proactive and reach out to developers using the design system to see if they have any issues or concerns. These kinds of actions can help build a genuine and positive relationship between makers and users.
 
 {% include figure.html src="../images/content/draft-github.png" caption="The Draft US Design System tracks issues using Github, providing a place for users and makers to file bugs and have conversations about the nitty gritty details of their design system." %}
 
-Of course design system users don't have to be relegated to the role of dumb consumer. Users can be extremely valuable contributors to the design system. After all, everyone is in the same boat (hopefully!) sailing towards success.  Embrace the fact that users are eager to pitch in and make the system as great as it can be. Here are some tactics for encouraging user contributions:
+And thanks to tools like Github, design system users don't have to be relegated to the role of dumb consumer. The people who use the system day in and day out can be extremely valuable contributors to the design system if given the chance. Embrace the fact that users are eager to pitch in and make the system as great as it can be. Here are some tactics for encouraging user contributions:
 
-- **Pull requests** - 
-- **Individual and group interviews** - It's always a good idea to talk to users. Talk to users about their design system experience. Take it all in, both the good and the bad.
-- **Requests for feedback** - "We're considering deprecating our carousel pattern and would like to hear what you think."
-- **Surveys** - If people don't have time for a "On a scale from 1-5, how useful is the pattern documentation?"
-- **Regular state of the union meetings** that anyone can join. Record these sessions and post them somewhere.
+- **Suggestions and pull requests** - Encourage anyone using the design system to suggest changes and new features. Better yet, encourage users to submit changes in the form of pull requests that can be merged directly back into the code base.
+- **Individual interviews and roundtable discussions** - It's always a good idea to talk to users, so regularly schedule time to chat with the people who are touching these patterns on a regular basis. Take it all in, listen to both the good and the bad, and collectively determine a plan of attack to address any issues and suggestions.
+- **Requests for feedback** - Managing a system that can potentially be deployed to hundreds of applications can be tricky. Before pulling the trigger on decisions that could impact a lot of people, reach out for people's opinions. "We're considering deprecating our carousel pattern and would like to hear what you think." 
+- **Surveys** - If in-person interviews aren't feasible, you can lean on quick surveys to get a feel for how effective UI patterns and the style guide are. Questions like, "On a scale from 1-5, how useful is the pattern documentation? Any suggestions?" can help point out any blind spots and get users to suggest features that would make their lives easier.
+- **Regular state of the union meetings** - Schedule regular meetings where the design system team discusses the product roadmap, lessons learned along the way, and suggestions & feedback. Encourage anyone to join the meeting, and be sure to record and distribute these sessions so everyone is aware of the Master Plan.
 
 ### Make it public
-Communicating change, evangelizing, and setting up proper training and support are all great things to increase your system's visibility. But there's another big opportunity to take your communication strategy to another level by **making your style guide publicly accessible**.
+Communicating change, evangelizing, and setting up proper training & support are all great things to increase your system's visibility. But there's another big opportunity to take your communication strategy to another level by **making your style guide publicly accessible**.
 
 But why? After all, isn't a style guide merely an internal resource to help your organization work better together? What use is it to the outside world? And wouldn't publishing your style guide give away all your trade secrets?
 
