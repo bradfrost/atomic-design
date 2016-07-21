@@ -17,10 +17,10 @@ How can that be?
 
 > A style guide is an artifact of design process. A design system is a living, funded product with a roadmap & backlog, serving an ecosystem. <cite>[Nathan Curtis](https://twitter.com/nathanacurtis/status/656829204235972608)</cite>
 
-**An artifact is something you'd find in an archaeological dig or a museum, whereas a system is a living, breathing entity**. A pattern library can provide helpful documentation and serve as a helpful resource, but the simple existence of a pattern library doesn't guarantee longterm success for the underlying design system. A design system needs ongoing maintenance, support, and tender loving care for it to truly thrive. 
+**An artifact is something you'd find in an archaeological dig or a museum, whereas a system is a living, breathing entity**. A pattern library can provide helpful documentation and serve as a ongoing resource, but the simple existence of a pattern library doesn't guarantee longterm success for the underlying design system. A design system needs ongoing maintenance, support, and tender loving care for it to truly thrive. 
 
 ## Changing minds, once again
-We've already discussed the importance of resetting everyone's expectations in order to establish a more collaborative, pattern-driven workflow. In order to save our design systems from the bowels of a trash can, we must once again fundamentally rewire people's brains in order to craft lasting design systems.
+We've already discussed the importance of resetting everyone's expectations in order to establish a more collaborative, pattern-driven workflow. In order to save our style guides from the bowels of a trash can, we must once again fundamentally rewire people's brains.
 
 ### What is it we're making again?
 We *think* we merely design and build websites and apps. And that's true for the most part. After all, that's what our clients pay us to do, and the products we create are the vehicles that generate money and success for an organization. So it seems natural to focus on the final implementations rather than the underlying system. With this mentality, the live products remain the primary focus of everyone's attention, while any pattern library exists as an offshoot that simply provides helpful documentation.
@@ -29,7 +29,7 @@ We *think* we merely design and build websites and apps. And that's true for the
 
 The problem with this mentality is that you can almost see that pattern library snapping off and sliding off into the abyss.  **Once the pattern library ceases to reflect the current state of the products it serves, it becomes obsolete**. And when the pattern library managing the design system is no longer accurate, the website maintenance process devolves into a smattering of hotfixes and ad hoc changes, ruining all the thoughtfulness that went into creating the original design system.
 
-In order to set our design systems up for longterm success, we must fundamentally shift our mentality around just what exactly it is we’re creating. Rather than thinking of the final product as our sole responsibility, we must recognize that the design system is what underpins our final products *and* pattern libraries.
+In order to set ourselves up for longterm success, we must fundamentally shift our mentality around what we’re actually creating. Rather than thinking of final applications as our sole responsibility, we must recognize that the design system is what underpins our final products *and* pattern libraries.
 
 {% include figure.html src="../images/content/workflow-system-first.png" caption="" %}
 
@@ -37,7 +37,7 @@ This "design system first" mentality inserts a bit of friction into the maintena
 
 Say for instance you're working on an e-commerce site, and you run a test to find a custom-styled dropdown menu on the product detail page isn't performing as well as the browser's default dropdown menu. One course of action is to simply remove the custom-styled dropdown from that particular page and call it a day. However, considering the entire design system rather than just the product detail page might cause you to take a step back and ask, "If this custom dropdown menu isn't performing well here, perhaps it's not performing well elsewhere?" After digging into the issue further, you find the best course of action is to globally modify the dropdown pattern in the design system to remove the custom styling. Now anywhere the dropdown pattern appears will reflect those changes and will likely see similar performance improvements.
 
-That is just one example of how design system thinking can lead to broader, more considered changes. **Broken behavior and opportunities to enhance the UI will often be realized at the *page* level, but those changes should often be acted on at the *system* level**. Adding this bit of worthwhile friction into your workflow ensures improvements are shared across the entire design system, and that the system isn't eroded by a series of one-off changes.
+That is just one example of how design system thinking can lead to broader, more considered changes. **Broken behavior and opportunities to enhance the UI will often be realized at the *page* level, but those changes should often be acted on at the *system* level**. Adding this bit of friendly friction into your workflow ensures improvements are shared across the entire ecosystem and prevents the system from being eroded by a series of one-off changes.
 
 ### Done and done
 Another expectation we must revisit is our definition of *done*. Creating things for print and other physical mediums involve making permanent, tangible objects. That sense of finality simply doesn't exist in the digital world, which means change can happen with much less effort and friction than other mediums. **Clients, colleagues, and stakeholders should embrace the pliable nature of the digital world to create living design systems that adapt to the ever-shifting nature of the medium, user needs, and the needs of the business**. 
