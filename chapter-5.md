@@ -183,7 +183,7 @@ Developing a strategy for handling pattern changes is crucial, which is why Inay
 
 The result is a gorgeous decision tree that maps out exactly what process needs to happen in order to add a new pattern to the design system.
 
-{% include figure.html src="../images/content/pattern-addition-flowchart.png" caption="Ubuntu's design team mapped out the decision process they use to manage updates and additions to patterns in their Vanilla frontend framework." %}
+{% include figure.html src="../images/content/pattern-addition-flowchart.png" caption="The Canonical web team mapped out the decision process they use to manage updates and additions to patterns in their Vanilla frontend framework." %}
 
 The three types of change that can happen to patterns in a design system is modification, addition, and removal. 
 
