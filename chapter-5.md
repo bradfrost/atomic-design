@@ -11,7 +11,7 @@ Not quite.
 
 {% include figure.html src="../images/content/trash-can.jpg" caption="" %}
 
-There's a very real risk that a pattern library will end up in the trashcan right alongside all the PSDs, PDFs and other artifacts of the design process. Despite everyone's best intentions, all that time and effort that went into into making a thoughtful design system and pattern library can go straight down the drain.
+There's a very real risk that a pattern library will end up in the trashcan right alongside all the PSDs, PDFs and those other static artifacts of the design process. Despite everyone's best intentions, all that time and effort that went into into making a thoughtful design system and pattern library can go straight down the drain.
 
 How can that be?
 
@@ -20,7 +20,7 @@ How can that be?
 **An artifact is something you'd find in an archaeological dig or a museum, whereas a system is a living, breathing entity**. A pattern library can provide helpful documentation and serve as a helpful resource, but the simple existence of a pattern library doesn't guarantee longterm success for the underlying design system. A design system needs ongoing maintenance, support, and tender loving care for it to truly thrive. 
 
 ## Changing minds, once again
-We've already discussed the importance of resetting everyone's expectations in order to establish a more collaborative, pattern-driven workflow. In order to save our design systems from the trash can, we must once again fundamentally rewire people's brains in order to craft lasting design systems.
+We've already discussed the importance of resetting everyone's expectations in order to establish a more collaborative, pattern-driven workflow. In order to save our design systems from the bowels of a trash can, we must once again fundamentally rewire people's brains in order to craft lasting design systems.
 
 ### What is it we're making again?
 We *think* we merely design and build websites and apps. And that's true for the most part. After all, that's what our clients pay us to do, and the products we create are the vehicles that generate money and success for an organization. So it seems natural to focus on the final implementations rather than the underlying system. With this mentality, the live products remain the primary focus of everyone's attention, while any pattern library exists as an offshoot that simply provides helpful documentation.
