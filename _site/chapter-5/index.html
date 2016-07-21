@@ -331,9 +331,9 @@
 <p><strong>The design system Holy Grail involves creating an environment where the pattern library and live applications are perfectly in sync</strong>. The idea is that you should be able to make a change to a UI pattern and see those changes automatically reflected in both the pattern library and anywhere the pattern is included in production.</p>
 
 <figure>
-    <img src="../images/content/workflow-system-first-holy-grail.png" alt="The Holy Grail of design systems is one where one can make a change to a UI pattern and have it simultaneously update the pattern library and production environments." />
+    <img src="../images/content/workflow-system-first-holy-grail.png" alt="The Holy Grail of design systems is an environment where making changes to a UI pattern updates both the pattern library and production applications simultaneously." />
 	<figcaption>
-	    The Holy Grail of design systems is one where one can make a change to a UI pattern and have it simultaneously update the pattern library and production environments.
+	    The Holy Grail of design systems is an environment where making changes to a UI pattern updates both the pattern library and production applications simultaneously.
 	</figcaption>
 </figure>
 
@@ -367,14 +367,14 @@
 <p>Sharing CSS and JavaScript is all well and good, but where things get tricky is when you want to share markup between environments. Why, you ask? Well, markup and backend logic are often intertwined in an application’s codebase, which tends to make it difficult to simply copy and paste markup between your pattern library and production environments. Thankfully, there are ways around this problem.</p>
 
 <h4 id="bridging-the-markup-gap-with-templating-languages">Bridging the markup gap with templating languages</h4>
-<p>Using HTML templating languages —such as Mustache, Handlebars, Twig, Jade, Nunjucks, and a slew of others — makes markup more portable and dynamic. Templating languages provide us a separation between structure and data, and supercharge our HTML to keep us from having to write the same markup patterns over and over again. The good news is that many CMSes and application environments also make use of templating languages to serve up frontend markup.</p>
+<p>Using HTML templating languages —such as Mustache, Handlebars, Twig, Underscore, Jade, Nunjucks, and a slew of others — makes markup more portable and dynamic. Templating languages provide us a separation between structure and data, and supercharge our HTML to keep us from having to write the same markup patterns over and over again. The good news is that many CMSes and application environments also make use of templating languages to serve up frontend markup.</p>
 
 <p><strong>The templating language can serve as the bridge between your pattern library and production environments</strong>. If you’re using a templating language to create the patterns in your design system (something we discussed at length in Chapters 3), you can share those patterns with production environments that utilize the same</p>
 
 <figure>
-    <img src="../images/fpo.png" alt="Diagram: Pattern Library on left &lt;--&gt; Templating language &lt;--&gt; Production on right" />
+    <img src="../images/content/templating-language-bridge.png" alt="Utilizing a templating language like Mustache, Handlebars, Underscore, Jade, and others can serve as a bridge that allows frontend code to be shared between the pattern library and production application." />
 	<figcaption>
-	    Diagram: Pattern Library on left &lt;--&gt; Templating language &lt;--&gt; Production on right
+	    Utilizing a templating language like Mustache, Handlebars, Underscore, Jade, and others can serve as a bridge that allows frontend code to be shared between the pattern library and production application.
 	</figcaption>
 </figure>
 
@@ -394,16 +394,9 @@
 	</figcaption>
 </figure>
 
-<p>The U.S. government’s design system — called the <a href="https://standards.usa.gov/">Draft U.S. Web Digital Standards</a> — is a collection of UI components and visual styles created to help people making government websites build more consistent UIs. The design system provides markup and styles for users to download and weave into their applications. It would certainly be amazing to see a Holy Grail-style system implemented at this gigantic scale, but as you might imagine that’s a pretty tall order. The vastness and decentralized nature of the organization means that the Holy Grail isn’t really achievable without some dramatic restructuring of how federal government websites get built.</p>
+<p>The U.S. government’s design system — called the <a href="https://standards.usa.gov/">Draft U.S. Web Digital Standards</a> — is a collection of UI components and visual styles created to help people making government websites build more consistent UIs. The design system provides markup and styles for users to download and weave into their applications. It would certainly be amazing to see a Holy Grail-style system implemented at such a gigantic scale, but as you might imagine that’s a pretty tall order. The vastness and decentralized nature of the organization means that the Holy Grail isn’t really achievable without some dramatic restructuring of how federal government websites get built.</p>
 
-<p>If a relatively scattered, decentralized culture is your reality, don’t be disheartened! Even getting <em>some</em> design system in place — a handful of go-to UI patterns, some helpful documentation, or guiding principles — can show your organization the light towards the Grail. As we’ve discussed throughout this chapter, your efforts are ongoing, and before you can run you must first learn to crawl.</p>
-
-<figure>
-    <img src="../images/fpo.png" alt="Spectrum of centralized vs decentralized cultures" />
-	<figcaption>
-	    Spectrum of centralized vs decentralized cultures
-	</figcaption>
-</figure>
+<p>If a relatively scattered, decentralized culture is your reality, don’t be disheartened! Even getting <em>some</em> design system in place — a handful of go-to UI patterns, some helpful documentation, or guiding principles — can show your organization the light towards the Grail. As we’ve discussed throughout this chapter, these efforts should be ongoing, and before you can run you must first learn to crawl.</p>
 
 <h2 id="make-it-cross-disciplinary">Make it cross-disciplinary</h2>
 <p>Style guides often jump straight into code snippets and pattern usage for the benefit of the design system users. Of course a pattern library needs to be helpful for the people actually making use of the patterns, but <strong>treating a style guide solely a developer resource limits its potential</strong>.</p>
@@ -500,23 +493,28 @@
   <li><strong>Office hours</strong> - Schedule regular times where the design system team is available to field questions, address issues, and talk about what’s next for the design system.</li>
   <li><strong>Slack and chat tools</strong> - The real-time nature of many of our work collaboration tools presents a huge opportunity to keep the pattern-laden conversation going. Thanks to tools like Slack, Yammer, and HipChat, makers and users can engage each other whenever and wherever.</li>
   <li><strong>Forums</strong> - Communities like Stack Overflow and Github have proven to be extremely powerful for enabling grassroots, community-driven support. Rather than design system makers becoming a bottleneck for providing support, it can be worthwhile to open up support to the entire user community.</li>
-  <li><strong>Outreach</strong> - Not everyone has the time or personality to contribute back and ask questions. Design system makers should be proactive and reach out to developers using the design system to see if they have any issues or concerns. These kinds of actions can help build a genuine and positive relationship between makers and users.</li>
+  <li><strong>Outreach</strong> - Not everyone has the time or the personality to contribute back and ask questions. Design system makers should be proactive and reach out to developers using the design system to see if they have any issues or concerns. These kinds of actions can help build a genuine and positive relationship between makers and users, and can ensure</li>
 </ul>
 
-<p>[TODO]
-Knowing where to turn for help is important, but users can also be valuable contributors to the system. Everyone is in the same boat, (hopefully!) sailing towards success. Because of thisneeds and concerns are being met. Feature requests.</p>
+<figure>
+    <img src="../images/content/draft-github.png" alt="The Draft US Design System tracks issues using Github, providing a place for users and makers to file bugs and have conversations about the nitty gritty details of their design system." />
+	<figcaption>
+	    The Draft US Design System tracks issues using Github, providing a place for users and makers to file bugs and have conversations about the nitty gritty details of their design system.
+	</figcaption>
+</figure>
+
+<p>Of course design system users don’t have to be relegated to the role of dumb consumer. Users can be extremely valuable contributors to the design system. After all, everyone is in the same boat (hopefully!) sailing towards success.  Embrace the fact that users are eager to pitch in and make the system as great as it can be. Here are some tactics for encouraging user contributions:</p>
 
 <ul>
+  <li><strong>Pull requests</strong> -</li>
   <li><strong>Individual and group interviews</strong> - It’s always a good idea to talk to users. Talk to users about their design system experience. Take it all in, both the good and the bad.</li>
   <li><strong>Requests for feedback</strong> - “We’re considering deprecating our carousel pattern and would like to hear what you think.”</li>
   <li><strong>Surveys</strong> - If people don’t have time for a “On a scale from 1-5, how useful is the pattern documentation?”</li>
   <li><strong>Regular state of the union meetings</strong> that anyone can join. Record these sessions and post them somewhere.</li>
 </ul>
 
-<p>[/TODO]</p>
-
 <h3 id="make-it-public">Make it public</h3>
-<p>Then there’s the option of taking your communication strategy to another level by <strong>making your style guide publicly accessible</strong>.</p>
+<p>Communicating change, evangelizing, and setting up proper training and support are all great things to increase your system’s visibility. But there’s another big opportunity to take your communication strategy to another level by <strong>making your style guide publicly accessible</strong>.</p>
 
 <p>But why? After all, isn’t a style guide merely an internal resource to help your organization work better together? What use is it to the outside world? And wouldn’t publishing your style guide give away all your trade secrets?</p>
 
@@ -605,9 +603,9 @@ Knowing where to turn for help is important, but users can also be valuable cont
 <p>Making a design system is an incredibly and important endeavor. But without proper maintenance, the value of your design system will deprecate much like a car that’s just been driven off the dealer’s lot. Instead, your design system should be like a bottle of fine wine that increases value over time.</p>
 
 <figure>
-    <img src="../images/fpo.png" alt="Used car and bottle of wine" />
+    <img src="../images/content/wine-car-lot.jpg" alt="With proper maintenance, your design system should increase in value over time like a fine bottle of wine, rather than a used car that's just been driven off the lot. Image credit: [Sabin Paul Croce on Flickr](https://flic.kr/p/on4ffK) and [Ray Larabie on Flickr](https://flic.kr/p/e35AtD)" />
 	<figcaption>
-	    Used car and bottle of wine
+	    With proper maintenance, your design system should increase in value over time like a fine bottle of wine, rather than a used car that's just been driven off the lot. Image credit: [Sabin Paul Croce on Flickr](https://flic.kr/p/on4ffK) and [Ray Larabie on Flickr](https://flic.kr/p/e35AtD)
 	</figcaption>
 </figure>
 
