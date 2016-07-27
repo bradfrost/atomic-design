@@ -43,71 +43,601 @@
         <div class="text">
     <h1><em>Chapter 5</em> Maintaining Design Systems</h1>
     <div class="note">
-	<p>Greetings, reader! The following text is a <a href="http://bradfrost.com/blog/post/atomic-design-book/">work in progress</a> so be warned you will encounter incomplete thoughts, grammar errors, and more. If you see something worth fixing, please <a href="https://github.com/bradfrost/atomic-design">submit an issue on Github</a>. Thanks and happy reading!</p>
+	<p>Greetings! I've partnered with <a href="https://twitter.com/fullcreammilk">Owen Gregory</a> who is providing copy editing services for the book. You can read the edits below and check out the changes on <a href="https://github.com/bradfrost/atomic-design/tree/edits">GitHub</a>.</p>
 </div>
-    <ul>
-  <li>And they made a pattern library and lived happily ever after. Right? Not quite.</li>
-  <li>There’s a very real risk of a lot of time and effort going into making a design system and accompanying pattern library, only to have it die on the vine.</li>
-  <li>Throw the design system in the trashcan, right along side the PSDs, PDFs and other artifacts</li>
-  <li>How to prevent this?</li>
-</ul>
+    <p>And they made a design system, delivered a pattern library, and lived happily ever after. Right?</p>
+
+<p>Not quite.</p>
+
+<figure>
+    <img src="../images/content/trash-can.jpg" alt="" />
+	<figcaption>
+	    
+	</figcaption>
+</figure>
+
+<p>There’s a very real risk that a pattern library will be thrown in the trash can right alongside all the PSDs, PDFs and other artifacts of the design process. Despite everyone’s best intentions, all the time and effort that went into making a thoughtful design system and pattern library can go straight down the drain.</p>
+
+<p>How can that be?</p>
+
+<blockquote>
+  <p>A style guide is an artifact of design process. A design system is a living, funded product with a roadmap &amp; backlog, serving an ecosystem. <cite><a href="https://twitter.com/nathanacurtis/status/656829204235972608">Nathan Curtis</a></cite></p>
+</blockquote>
+
+<p><strong>An artifact is something you’d find on an archaeological dig or in a museum, whereas a system is a living, breathing entity.</strong> A pattern library can provide documentation and serve as a helpful resource, but the simple existence of a pattern library doesn’t guarantee long-term success for the underlying design system. A design system needs ongoing maintenance, support, and tender loving care for it to truly thrive.</p>
+
+<h2 id="changing-minds-once-again">Changing minds, once again</h2>
+<p>We’ve already discussed the importance of resetting everyone’s expectations to establish a more collaborative, pattern-driven workflow. To save our design systems from the trash can and craft lasting design systems instead, we must once again fundamentally rewire people’s brains.</p>
+
+<h3 id="what-is-it-were-making-again">What is it we’re making again?</h3>
+<p>We <em>think</em> we merely design and build websites. And that’s true for the most part. After all, that’s what our clients pay us to do, and the products we create are the vehicles that generate money and success for an organization. It seems natural to focus on the final implementations rather than the underlying system. The live products remain the primary focus of everyone’s attention, while any pattern library exists as an offshoot that provides helpful documentation for the final products.</p>
+
+<figure>
+    <img src="../images/content/workflow-website-first.png" alt="" />
+	<figcaption>
+	    
+	</figcaption>
+</figure>
+
+<p>The problem with this mindset is that you can almost see that pattern library snapping off and sliding off into the abyss. <strong>Once the pattern library ceases to reflect the current state of the products it serves, it becomes obsolete.</strong> And when the pattern library managing the design system is no longer accurate, the website maintenance process devolves into a smattering of hotfixes and ad hoc changes, undoing all the thoughtfulness that went into creating the original design system.</p>
+
+<p>To set up our design systems for long-term success, we must fundamentally shift our outlook about just what exactly it is we’re creating. Rather than thinking of the final products as our sole responsibility, we must recognize that the design system is what underpins the final products <em>and</em> pattern libraries.</p>
+
+<figure>
+    <img src="../images/content/workflow-system-first.png" alt="" />
+	<figcaption>
+	    
+	</figcaption>
+</figure>
+
+<p>This “design system first” mentality inserts a little friction into the maintenance process, and <strong>that friction can be friendly</strong>. It forces us to step back and consider how any client requests, feature additions, and iterations affect the overall system rather than only a piece of the final website.</p>
+
+<p>Say you’re working on an e-commerce site, and you run a test that finds a custom-styled dropdown menu on the product detail page isn’t performing as well as the browser’s default dropdown menu. One course of action is to simply remove the custom-styled dropdown from that particular page and call it a day. However, considering the entire design system rather than just the product detail page might cause you to take a step back and wonder, “If this custom dropdown menu isn’t performing well here, perhaps it’s not performing well elsewhere.” After digging into the issue further, you find the best course of action is to globally modify the dropdown pattern in the design system to remove the custom styling. Now anywhere the dropdown pattern appears will reflect those changes and likely see similar performance improvements.</p>
+
+<p>That is just one example of how design system thinking can lead to broader, more considered changes. <strong>Broken behavior and opportunities to enhance the experience will be realized at the <em>page</em> level, but those changes should often be acted on at the <em>system</em> level.</strong> Adding this bit of worthwhile friction into your workflow ensures improvements are shared across the entire design system, and that the system isn’t eroded by a continuous series of one-off changes.</p>
 
 <h3 id="done-and-done">Done and done</h3>
-<p>One essential expectation to reset is the concept of <em>done</em>. Print and other physical mediums involve creating tangible objects that have a sense of finality to them. That simply doesn’t exist in the digital world. The ephemeral nature of the Web is something that needs to be extolled to your clients, colleagues, and stakeholders. If we’re to create living design systems, we need to recognize that the Web is never done, and that our work can and should be constantly evolved and improved upon over time.</p>
+<p>Another expectation we must revisit is our definition of <em>done</em>. Creating things for print and other physical media involves making permanent, tangible objects. There’s a sense of finality when creating things for the physical world. That concept simply doesn’t exist in the digital world, which means change can happen with much less effort and friction than other media. <strong>Clients, colleagues, and stakeholders should embrace the pliable nature of the digital world to create living design systems that adapt to the ever shifting nature of the medium, user needs, and the needs of the business.</strong></p>
 
-<h3 id="make-it-maintainable">Make It Maintainable</h3>
+<p>This shift in thinking fundamentally affects the scope of our work. Folks working in the client services business are often used to delivering a project in a tidy package then riding off into the sunset. Internal teams don’t fair much better, since they tend to float from one initiative to the next. Whether you’re part of an internal team or you’re an external gun for hire, I’m guessing you’ve experienced the shortcomings of project-based work. We tend to talk about a future that never comes, and instead we set it, forget it, then move on to the next shiny project.</p>
+
+<p>If we’re committed to creating genuinely useful work that truly meets the needs of our clients and organizations, we must redefine the scope of our work. As Nathan Curtis says, a design system shouldn’t be a <em>project</em> with a finite scope, but rather a <em>product</em> meant to grow and evolve over time:</p>
+
+<blockquote>
+  <p>Focusing on style guide delivery as the climax is the wrong story to tell. A system isn’t a project with an end, it’s the origin story of a living and evolving product that’ll serve other products. <cite><a href="https://medium.com/eightshapes-llc/a-design-system-isn-t-a-project-it-s-a-product-serving-products-74dcfffef935#.4umtnfxsx">Nathan Curtis</a></cite></p>
+</blockquote>
+
+<p>The web is never done, and the creation of a design system is merely the first step in a long (and hopefully fruitful!) journey. A design system should be a long-term commitment with the ambitious goal of revolutionizing how your organization creates digital work. Exciting, eh?! So how do we make sure that happens?</p>
+
+<h2 id="creating-maintainable-design-systems">Creating maintainable design systems</h2>
+<p>As you embark on this journey, let’s talk about things you can do to craft a design system that sets up your organization for long-term success. How do you create a design system that takes root and becomes an essential part of your organization’s workflow? What pitfalls do you need to be on the lookout for? How do you ensure the design system yields big results? To answer these questions, we need to:</p>
+
 <ul>
-  <li>Don’t let it die on the vine and become obsolete</li>
-  <li>Sharing CSS and JS with the production environment is easy, but sharing templates is tough</li>
-  <li>Templating language should match the production environment</li>
+  <li>Make it official.</li>
+  <li>Make it maintainable.</li>
+  <li>Make it cross-disciplinary.</li>
+  <li>Make it approachable.</li>
+  <li>Make it public.</li>
+  <li>Make it bigger.</li>
+  <li>Make it agnostic.</li>
+  <li>Make it contextual.</li>
+  <li>Make it last.</li>
+</ul>
+
+<div class="editor">
+
+
+<p>Ed: I wonder whether this list should be numbered. (I’ll leave it alone for now as it will impact matters below and you should choose what you prefer.) The rest of this chapter expands on each of these points, and some of these in turn contain further lists which are also then explained in more detail. It’s easy for a reader to lose track of where they are. If you decide to number this list, you can then add the corresponding number to the heading to help readers orient[ate] themselves.</p>
+
+</div>
+
+<p>Let’s go into each one of these points in more detail.</p>
+
+<h2 id="make-it-official">Make it official</h2>
+<p>Your initial style guide may begin its life as a side project, the result of a weekend hackathon, or as the brainchild of one or two ambitious team members. As we discussed in the last chapter, your client or boss doesn’t even have to know you’re creating a thoughtful design system and accompanying pattern library. Remember: ask forgiveness, not permission!</p>
+
+<p>Organic beginnings are all well and good, but to establish a truly <span class="editor">impactful</span> design system that creates long-term success for your organization, <strong>the design system needs to evolve into an officially sanctioned endeavor</strong>. That means thinking of it as a product rather than a simple side project, and allocating real time, budget, and people to it.</p>
+
+<div class="editor">
+
+
+<p>Ed: While I’m not going to change ‘impactful’, it’s one of those relatively new (1960s) coinages that annoys some readers. More impressive, effective, cogent, potent or motivating alternatives are available. That said, in this context and with your readership, it’s unlikely to cause much consternation and it makes sense.</p>
+
+</div>
+
+<p>Convincing stakeholders to commit large chunks of money, time, and resources up front for a design system can be extremely challenging. So what are we to do? Here’s my advice:</p>
+
+<ol>
+  <li>Make a thing.</li>
+  <li>Show that it’s useful.</li>
+  <li>Make it official.</li>
+</ol>
+
+<div class="editor">
+
+
+<p>Ed: If the main list becomes numbered, then it’s probably best if this one uses something other than numbers, but still captures the sense of progress: lowercase roman numerals (i, ii, iii); or letters (a, b, c).</p>
+
+</div>
+
+<p>Let’s break down these steps a bit further.</p>
+
+<h3 id="make-a-thing">1. Make a thing</h3>
+
+<div class="editor">
+
+
+<p>Ed: And obviously this subheading and the ones following should be updated to reflect the choice you make immediately above – but using uppercase versions as these mark subheadings: “I. Make a thing, II. Show that it’s useful”; “B. Show that it’s useful, C. Make it official”. Hope that’s clear.</p>
+
+</div>
+
+<p>You have to start somewhere, and having something started is better than nothing at all. Pick a project that would be a great pilot for establishing your design system; follow a process similar to the one discussed in <a href="/chapter-4/">chapter 4</a>; think about the atomic design mental model detailed in <a href="/chapter-2/">chapter 2</a>; and you’ll end up with a solid foundation for a thoughtful design system and pattern library that helps your team work more effectively.</p>
+
+<p>Take the time to package your UI patterns in a pattern library and get it ready to be shopped around. I’ve talked to several ambitious team members who have established the basic gist of their pattern library over the course of a weekend. This effort makes all the difference in the world since it provides something tangible for stakeholders to react to. Again: <em>show, don’t tell</em>.</p>
+
+<h3 id="show-that-its-useful">2. Show that it’s useful</h3>
+<p>With a nascent-yet-tangible design system in place, you can have a more meaningful conversation with the people who control money, scheduling, and resources. You can discuss exactly how the design system helped save time and money (see “<a href="/chapter-4/#pitching-patterns">Pitching patterns</a>” in chapter 4), then paint a picture of how those benefits would scale even further if the organization invested in an official, robust design system.</p>
+
+<p>Get team members from different disciplines to back you up and discuss the initial success of the system, and also pull in others who are sympathetic to the cause who would stand to benefit from an expanded design system.</p>
+
+<h3 id="make-it-official-1">3. Make it official</h3>
+<p>You’ve <span class="editor">prove<ins>d</ins><del>n</del></span> the value of your initial design system and presented a roadmap for how to make it even better. With any luck your organization will commit to making the design system an Official Thing.</p>
+
+<div class="editor">
+
+
+<p>Ed: The past tense of prove is proved, but proven has crept out of Scottish courtrooms (where ‘not proven’ is a verdict available alongside ‘guilty’ and ‘not guilty’) over the past three hundred years to become more widely used. I think your usage here harks back to an idiomatic use, ‘proven record’.</p>
+
+</div>
+
+<p>With approval from the highest levels, you’re now able to put a plan into action that involves: allocating or hiring people to work on the design system, developing a plan to make the design system more comprehensive, establishing a governance strategy, and laying out a product roadmap for the design system.</p>
+
+<p>It’s worth pointing out that things may not shake out the way you hoped. Despite demonstrating real value and presenting a concrete plan of action, higher-ups still might shoot your initiative down. <strong>Don’t be discouraged.</strong> You may have lost the battle, but you can certainly win the war. Your team should continue to grow and extend the design system in whatever capacity you can until its value becomes undeniable. As more people benefit from the system, you’ll have a groundswell of support to help push the endeavor through.</p>
+
+<h3 id="establishing-a-design-system-team">Establishing a design system team</h3>
+
+<p>With the design system initiative approved, it’s now time to put the right people and processes in place to ensure the system flourishes for your organization.</p>
+
+<h4 id="design-system-makers-and-users">Design system makers and users</h4>
+<p>First things first. It’s important to recognize that <strong>there will inevitably be people at the organization who help <em>make and maintain</em> the design system, and there will be other people who will be <em>users</em> of the design system</strong>. These two groups may not be mutually exclusive, but establishing the roles of makers and users is important.</p>
+
+<p>When I talk about establishing a more collaborative process like the one I detailed in the previous chapter, I inevitably hear people who work at large organizations say, “But Brad, we have hundreds (or even thousands) of developers working on our products. Getting all those people to collaborate and contribute like that would be far too difficult.”</p>
+
+<p>They’re likely right. It would be ideal if the entire organization adopted nimbler, more collaborative processes, but the daunting logistics around such an effort makes it improbable. Not everyone in the organization needs to contribute directly to the design system, but someone (or more likely, some people) must take ownership of it.</p>
+
+<p><strong>The design system <em>makers</em> are the ones who <span class="editor">architect</span>, create, and maintain the system</strong>, and they need to work closely together to ensure that the system is smart, flexible, scalable, and addresses the needs of the users and business. <strong>The design system <em>users</em> are the teams across the organization who will take the system and employ its interface patterns to specific applications.</strong></p>
+
+<div class="editor">
+
+
+<p>Ed: ‘Architect’ as a verb. Bleurgh. Not wrong, exactly, but clumsy. Can you hear it? It doesn’t sound good. Alternatives: configure, construct, assemble, organize, formulate.</p>
+
+</div>
+
+<figure>
+    <img src="../images/fpo.png" alt="Design system makers and users" />
+	<figcaption>
+	    Design system makers and users
+	</figcaption>
+</figure>
+
+<p><strong>The design system <em>makers</em> and design system <em>users</em> need to maintain a close working relationship</strong> to ensure the patterns defined within the system serve the needs of the applications, and that all documentation is clear. <strong>Makers provide a birds-eye view of the entire ecosystem the design system serves, while users provide an on-the-ground perspective focused on the applications of the system.</strong> Both outlooks are critical to the success of the design system, which is why it’s so important for makers and users to have a healthy relationship that involves frequent communication and collaboration.</p>
+
+<div class="editor">
+
+
+<p>Ed: There’s a lot of bold and even emphasis within bold in the section above; indeed, in this whole chapter. Chances are, you don’t need to try so hard – it’s a typographic hammer to crack a semantic nut. You make your points effectively and eloquently enough without having to jab the reader in the eye. I’ve left it all in, however, as you may feel the points are important enough to warrant it. Up to you.</p>
+
+</div>
+
+<h4 id="delwho-are-the-ddeldesign-system-makersdeldel"><del>Who are the d</del>Design system makers<del>?</del></h4>
+
+<div class="editor">
+
+
+<p>Ed: I’m not a fan of questions as headings. You can convey what’s required in fewer words by what some people call front-loading; that is, remove the question signals (in this case, “Who are the”) that get in the way, and move the relevant content to the front of the heading. Boom. This is particularly effective here as you begin the following paragraph with more questions.</p>
+
+</div>
+
+<p>Who updates the design system? Who approves changes? Who <span class="editor">interfaces</span> with the users of the design system to make sure it’s addressing their needs? Who gets to decide which patterns stay, go, or need to be tweaked?</p>
+
+<div class="editor">
+
+
+<p>Ed: First ‘architect’ as a verb and now ‘interfaces’, which is beyond ugly. What’s wrong with ‘talks’?</p>
+
+</div>
+
+<p>The answers to these questions will very much depend on the size and setup of your organization.</p>
+
+<div class="editor">
+
+
+<p>Ed: OK, so here I did remove the emphasis. You’ve already set this sentence apart to draw attention to it. There’s really no need to impress the thought even deeper into the reader’s eyes.</p>
+
+</div>
+
+<p><strong>Large organizations</strong> <span class="editor">are able to dedicate serious resources to managing design systems.</span> Salesforce, for example, maintains an official <em>design systems team</em>, which currently includes about a dozen full-time employees, last I heard. That dedicated team is responsible for governing the design system and making sure it’s meeting the needs of the <span class="editor">myriad</span> internal product teams, as well as external developers who build things on the company’s platform. When a design system is serving thousands of users, it’s a smart idea to dedicate at least a few full-time employees to manage and expand the system.</p>
+
+<div class="editor">
+
+
+<p>Ed: I’ve interpolated a new sentence to allow the Salesforce example to stand clear of your thought about large organizations.</p>
+
+</div>
+
+<div class="editor">
+
+
+<p>Myriad? We’ve been here before. Here, you could even just delete it.</p>
+
+</div>
+
+<figure>
+    <img src="../images/fpo.png" alt="Large organization diagram" />
+	<figcaption>
+	    Large organization diagram
+	</figcaption>
+</figure>
+
+<p><strong>Smaller organizations</strong> most likely don’t have the luxury of building an entire team to service a design system. Team members in smaller organizations have to wear many (hopefully stylish!) hats out of necessity, so governing the design system will likely become another responsibility. This may sound like an added burden (“Oh great, yet another thing I’m responsible for that doesn’t involve a pay raise!”), but this particular hat should be a joy to wear as it improves the efficiency and quality of all other work. Hooray for design systems!</p>
+
+<p>Typically, design system makers at smaller organizations will be senior-level staff who have the experience and authority necessary to make thoughtful decisions and also enforce the design system.</p>
+
+<figure>
+    <img src="../images/fpo.png" alt="Small organization diagram" />
+	<figcaption>
+	    Small organization diagram
+	</figcaption>
+</figure>
+
+<p>And then there are <strong>external agencies, contractors, and consultants</strong>. What is the role of a <span class="editor">third party</span> when it comes to long-term maintenance of a client’s design system? On one hand, external agencies are at a bit of a disadvantage, since they don’t actually work for the client’s organization. A successful design system needs to become part of an organization’s DNA, and since third parties exist outside the company’s walls, their influence is intrinsically limited.</p>
+
+<div class="editor">
+
+
+<p>Ed: In these two paragraphs, I’ve changed a few instances of ‘external parties’ to ‘third parties’, which is a more usual way of referring to them, and it provides a little variation.</p>
+
+</div>
+
+<p>But on the other hand, <strong>external parties can often provide a sense of perspective</strong> that’s hard to see while working inside a company. This is where outsiders can really shine. In my work as a consultant, I work with organizations to establish long-term design system maintenance strategies and help get the right people and processes in place. While the long-term success of the system will ultimately be up to the organization, third parties can teach them to fish and provide important strategic guidance, feedback, and perspective.</p>
+
+<figure>
+    <img src="../images/fpo.png" alt="Third-party diagram" />
+	<figcaption>
+	    Third-party diagram
+	</figcaption>
+</figure>
+
+<h4 id="design-system-users">Design system users</h4>
+<div class="editor">
+
+
+<p>Ed: Again with the question for a heading. See above.</p>
+
+</div>
+
+<p>Who are the people responsible for using the design system to build new features and applications? Who are the people who communicate with the system makers to report issues and request features?</p>
+
+<p>Once again, the answers to these questions will largely depend on your organization’s size and structure.</p>
+
+<p><strong>Design system users may be the same team creating the design system, separate development teams within your organization, junior-level designers and developers, third-party agencies, offshore developers, or other external development teams.</strong></p>
+
+<div class="editor">
+
+
+<p>Ed: A whole one-sentence paragraph in bold? It doesn’t have to be.</p>
+
+</div>
+
+<p>Users’ proximity to and involvement in the creation of the design system will undoubtedly vary. You might work on a singular product at a scrappy <span class="editor">startup</span>, so your small team could be simultaneously creating and using the design system. Or you may work at a large multinational corporation with development teams and third-party partners scattered all across the globe. If this is the case, design system makers and users may seldom (if ever) meet, which means that helpful documentation and a sharp birds-eye perspective become that much more important.</p>
+
+<div class="editor">
+
+
+<p>Ed: Just flagging up ‘startup’ to make sure we’re consistent with (non)hyphenation.</p>
+
+</div>
+
+<figure>
+    <img src="../images/fpo.png" alt="Spectrum of design system users" />
+	<figcaption>
+	    Spectrum of design system users
+	</figcaption>
+</figure>
+
+<p>One of the biggest advantages of establishing a thoughtful design system is that it allows organizations to scale best practices. If all those best practices — responsiveness, accessibility, performance, UX, ergonomics, and so on — are baked into the system’s UI patterns, users can simply plug in the patterns and reap the rewards. This means design system users don’t have to be senior-level designers or developers to produce good work: the design system serves as a quality control vehicle that helps users apply best practices regardless of each person’s skill level.</p>
+
+<h3 id="design-system-team-makeup">Design system team makeup</h3>
+<p><strong>A cross-disciplinary team should be established to properly manage, maintain, and extend the system</strong>. All disciplines at an organization — UX designers, visual designers, content strategists, front-end developers, back-end developers, product managers, project managers, executives, and other stakeholders — have unique perspectives that can undoubtedly inform and shape the work. Incorporating these perspectives into the design system is important, but doesn’t necessarily require every discipline to be constantly involved in developing it.</p>
+
+<p>There will inevitably be disciplines that actively do the work, while others may take on more of an advisory role. Those responsible for designing and building the user interface — UX designers, visual designers, front-end developers — will likely serve as the hands that do the work and make updates to the design system. They should work collaboratively (as detailed in chapter 4) and coordinate with the other disciplines to ensure that the system reflects the values and considerations of the entire business.</p>
+
+<p>Other people may not be the ones actively doing the work, but must be consulted to make sure their perspectives are properly reflected in the system. Back-end engineers need to make the team aware of any architectural decisions that would affect the front-end UI; executives need to make the team aware of important initiatives that will affect the role and utility of the system; and, of course, design system users need to coordinate with the makers to ensure the system serves the needs of individual applications.</p>
+
+<figure>
+    <img src="../images/fpo.png" alt="Design system team makeup" />
+	<figcaption>
+	    Design system team makeup
+	</figcaption>
+</figure>
+
+<div class="editor">
+
+
+<p>Ed: This has been a very long section, illustrating only the first point in the nine-point list set out earlier. I’d almost forgotten what I was reading was an expansion of a list item. The remaining sections are much shorter. I wonder, then, if the first list should indicate a couple of the subsections:</p>
+
+<ul>
+  <li>Make it official.
+    <ul>
+      <li>Establishing a design system team</li>
+      <li>Design system team makeup</li>
+    </ul>
+  </li>
+  <li>Make it maintainable.</li>
+  <li>etc.</li>
+</ul>
+
+<p>However, this does make that original list a little less punchy. More thought required. Hmmn.</p>
+
+</div>
+
+<h2 id="make-it-maintainable">Make it maintainable</h2>
+<p>Many pattern libraries fall into a state of disrepair because the effort required to update patterns and documentation is far too high. If a pattern library is difficult and time-consuming to update, people will eventually stop maintaining it and the pattern library will begin its drift into oblivion. Making updates to UI patterns and documentation should be as frictionless as possible, so smoothing the process should become a high priority for the design system team. This involves careful consideration from both technological and workflow standpoints.</p>
+
+<h3 id="in-search-of-the-span-classeditorholy-grailspan">In search of the <span class="editor">holy grail</span></h3>
+<div class="editor">
+
+
+<p>Ed: I’m capping down holy grail here. This is neither Christian myth, Arthurian legend nor the adventures of Indiana Jones. You’d have an Easter egg at Easter, but hide easter eggs in software; so Christ’s cup is the Holy Grail, but all other rare and perfect goals are holy grails. And while it makes for a catchy heading, in the content I’d consider ditching the metaphor altogether. Its repetition in the material below draws too much attention and does your theme a disservice. Perhaps you could consider using words like “ideal”, “perfect”, “model”, etc., depending on context. I’ll leave the grails in for now until such time as you decide to change them.</p>
+
+</div>
+
+<p><strong>The design system holy grail involves creating an environment where the pattern library and production environment are perfectly in sync.</strong> The idea is that you should be able to make a change to a UI pattern and see that change automatically reflected in the pattern library <em>and</em> anywhere the pattern is included in production.</p>
+
+<figure>
+    <img src="../images/content/workflow-system-first-holy-grail.png" alt="The holy grail of design systems is one where you can make a change to a UI pattern and have it simultaneously update the pattern library and production environments." />
+	<figcaption>
+	    The holy grail of design systems is one where you can make a change to a UI pattern and have it simultaneously update the pattern library and production environments.
+	</figcaption>
+</figure>
+
+<p>The holy grail removes any duplication of effort and ensures the pattern library and the applications using the patterns remain synchronized. Sounds like a dream, right?</p>
+
+<p>As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, established a <span class="editor">holy grail-style design system</span> called <a href="http://rizzo.lonelyplanet.com/">Rizzo</a>. They created an API for their UI patterns that feeds into their production environments as well as their pattern library. The result is a centralized design system that ensures their live application and documentation remain perfectly in sync.</p>
+
+<div class="editor">
+
+
+<p>Ed: “holy grail-style”? So, not <u>the</u> Holy Grail, but something in that style? This feels very odd, another reason to ditch the metaphor and try other ways of describing a model design system – particularly as holy grail-style systems might come in different shapes and sizes, while there’s only one Holy Grail?</p>
+
+</div>
+
+<figure>
+    <img src="../images/content/rizzo.png" alt="Lonely Planet created an API for its UI patterns that feeds into the pattern library and production environment. By &lt;span class='editor'&gt;architecting&lt;/span&gt; their design system in this manner, changes to UI patterns are automatically reflected in both the pattern library and production environment, keeping things in sync and thereby achieving the holy grail." />
+	<figcaption>
+	    Lonely Planet created an API for its UI patterns that feeds into the pattern library and production environment. By <span class="editor">architecting</span> their design system in this manner, changes to UI patterns are automatically reflected in both the pattern library and production environment, keeping things in sync and thereby achieving the holy grail.
+	</figcaption>
+</figure>
+
+<div class="editor">
+
+
+<p>Ed: There’s ‘architect’ verbing again. Here are some alternatives again: configure, construct, assemble, organize, formulate.</p>
+
+</div>
+
+<p>Achieving the design system holy grail is, as you might expect, no easy task, as it requires sophisticated technical architecture and smart people to set it all up. How you go about chasing the holy grail — or even if you can achieve it — is dependent on a whole load of factors, including your technical architecture and organizational makeup.</p>
+
+<hr />
+
+<div class="editor">
+
+
+<p>Ed: The first time you’ve used a horizontal rule. I’m assuming it means this is as far as your completed draft text goes, rather than anything structural…?</p>
+
+</div>
+
+<p>In my experience, I’ve found that sharing CSS and JS with the production environment is relatively easy, but sharing markup is tough.</p>
+
+<ul>
+  <li>In</li>
+  <li>Using HTML templating languages create Templating language should match the production environment - The closer you get to .</li>
+  <li>Look for opportunities to automate documentation</li>
   <li><a href="http://bradfrost.com/blog/post/using-grunt-with-pattern-lab/">Using Grunt with Pattern Lab</a></li>
 </ul>
 
-<h3 id="the-holy-grail">The Holy Grail</h3>
+<div class="editor">
+
+
+<p>Ed: Fragmentary list.</p>
+
+</div>
+
+<p>How can you set up your applications and pattern library to achieve the Holy Grail? Developer Marcelo Somers outlined several methods for thoughtfully keeping your pattern library and production environments in sync. <a href="https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.vy45rkm7m">Chasing the holy grail</a></p>
+
+<p>There are a number of reasons why an organization may not be able to achieve the Holy Grail. Perhaps your organization has digital products on different platforms using wildly different technologies. For instance, the U.S. Web Digital Standards are a collection UI components and visual styles for websites. However, due to the decentralized nature of the , it would be impossible to</p>
+
+<p>When technology can’t achieve maintainable design systems, you must rely on creating a culture that communicates change and enforces that friction</p>
+
+<h2 id="make-it-cross-disciplinary">Make it cross-disciplinary</h2>
+<p>Style guides often jump straight into code snippets and pattern usage for the benefit of the design system users. Of course a pattern library needs to be helpful for the people actually making use of the patterns, but <strong>treating a style guide solely a developer resource limits its potential</strong>.</p>
+
+<p><strong>A style guide has the opportunity to serve as a watering hole for the entire organization</strong>, helping establish a common vocabulary for every discipline invested in the success of the company’s digital products. Establishing this common vocabulary can lead to more efficient work, better communication, and more collaboration between disciplines across the organization. That’s why the style guide should be an inviting place for everybody, not just design system users.</p>
+
+<p>Take the carousel (please!). This component is amazingly complex from an organizational standpoint. A homepage carousel on an e-commerce website requires input from a myriad of disciplines across the organization. Business owners and editorial staff must choose products to be featured in the carousel. Copywriters must ensure the copy is effective and stays within the constraints of the design. Art directors must ensure the aesthetic design is pleasing and the product photography is legible across every screen size. UX designers need to ensure the functionality and controls are intuitive. Front-end people need to make sure the component is responsive, accessible, and performant. Backend developers need to make sure the component is properly wired up to the backend system. You get the idea.</p>
+
+<figure>
+    <img src="../images/fpo.png" alt="Walmart carousel example" />
+	<figcaption>
+	    Walmart carousel example
+	</figcaption>
+</figure>
+
+<p>A well-crafted style guide can help manage all these moving parts and ensure the many perspectives that influence each pattern are properly documented in the style guide. Make the pattern library accessible to every discipline, and think about how to make it easy and inviting for different disciplines to contribute to the documentation.</p>
+
+<h2 id="make-it-approachable">Make it approachable</h2>
+<p>This should come as a surprise to no one, but people tend to gravitate towards attractive things. A big part of making a style guide a cross-disciplinary resource is ensuring the container that houses your pattern library and other documentation is good-looking, inviting, and easy to navigate.</p>
+
+<figure>
+    <img src="../images/fpo.png" alt="Yelp's style guide has an attractive, friendly front page that explains what the resource is, who it's for, and how to use it." />
+	<figcaption>
+	    Yelp's style guide has an attractive, friendly front page that explains what the resource is, who it's for, and how to use it.
+	</figcaption>
+</figure>
+
+<p>Taking the time to craft an attractive home for your style guide and documentation can lead to more usage, help build awareness,    help create organizational investment, and help get non-developers’ eyeballs on the style guide. All of this contributes to that important shared vocabulary that leads to better cross-disciplinary collaboration.</p>
+
+<p>But creating a great-looking, intuitive style guide experience doesn’t just happen, and this can be problematic when getting a style guide off the ground. If teams think that making a useful style guide involves making some Big, Official Thing with custom branding and a glossy website, they might be deterred from ever starting the initiative. So remember:</p>
+
+<ol>
+  <li>Make a thing.</li>
+  <li>Show that it’s useful.</li>
+  <li>Make it official.</li>
+</ol>
+
+<p>Creating a useful design system should be the team’s first priority. A happy home to contain it all might not happen right out of the gate, but should become a bigger priority once the design system becomes official. Making a good-looking style guide isn’t just design for design’s sake; <strong>it reflects an organization’s commitment to making and maintaining a thoughtful, deliberate design system</strong>.</p>
+
+<h2 id="make-it-public">Make it public</h2>
+<p>Another way to set your design system up for long-term success is to <strong>make your style guide publicly accessible</strong>.</p>
+
+<p>But why? After all, isn’t a style guide merely an internal resource to help your organization work better together? What use is it to the outside world? And wouldn’t publishing your style guide give away all your trade secrets?</p>
+
+<p><strong>Publishing your style guide for the world to see increases its visibility, increases accountability, and serves as an amazing recruitment tool</strong>.</p>
+
+<p>Putting your style guide behind a login or firewall reduces visibility and adds an unnecessary burden for your team and partners, which limits the resource’s effectiveness and potential. And the fears about giving away your trade secrets are completely unfounded. These are UI patterns, not nuclear codes.</p>
+
+<figure>
+    <img src="../images/fpo.png" alt="Stlyeguides.io rounds up over 150 public-facing style guides from organizations across the world." />
+	<figcaption>
+	    Stlyeguides.io rounds up over 150 public-facing style guides from organizations across the world.
+	</figcaption>
+</figure>
+
+<p>In addition to making important documentation easier to access, a public style guide <strong>helps create organizational accountability</strong>. Publishing your style guide demonstrates your organization’s commitment to the design system, which creates a helpful bit of pressure to keep it an up-to-date and useful resource.</p>
+
+<p>Public-facing style guides are also <strong>hugely helpful for recruiting efforts</strong>. Designers, developers, and other disciplines are looking to work at organizations that embrace modern digital best practices, and (as we’ve discussed throughout this book) design systems are quickly becoming an industry-wide best practice. Publishing your style guide sends out a strong bat signal that can attract passionate, pattern-minded people. For instance, style guide expert Jina Bolton went to work at Salesforce after seeing the company’s style guide for their Salesforce1 product.</p>
+
+<blockquote>
+  <p>When I saw Salesforce’s style guide I thought it was beautiful and it’s why I wanted to join this team. <cite><a href="http://styleguides.io/podcast/jina-bolton">Jina Bolton</a></cite></p>
+</blockquote>
+
+<p>Since joining Salesforce, she’s helped create the ultra-successful Lightning Design System and helps manage their growing design system team. Jina’s story is not an isolated one; almost every guest Anna Debenham and I interviewed on the Styleguides Podcast(http://styleguides.io/podcast) discussed how helpful their public-facing pattern library was for attracting talent. All that means that your a public style guide makes your organization <em>more</em> competitive, not less.</p>
+
+<h2 id="make-it-bigger">Make it bigger</h2>
+<p>A visible, cross-disciplinary, approachable pattern library is one that your team will frequently reference. Use that to your advantage. Since the team’s eyeballs are already fixated on that one resource, there’s a big opportunity to extend it to include other helpful documentation like the voice and tone, brand, code, design principles and writing guidelines we discussed in chapter 1.</p>
+
+<figure>
+    <img src="../images/content/styleguide-harmony.png" alt="Intuit's Harmony design system includes a pattern library, design principles, voice and tone, marketing guidelines, and more. Housing this helpful documentation under one roof helps increase its visibility." />
+	<figcaption>
+	    Intuit's Harmony design system includes a pattern library, design principles, voice and tone, marketing guidelines, and more. Housing this helpful documentation under one roof helps increase its visibility.
+	</figcaption>
+</figure>
+
+<p>Now, your organization may not necessitate every flavor of style guide out there, but the point is that <strong>creating a centralized style guide hub builds more awareness of best practices, increasing the documentations’ effectiveness</strong>.</p>
+
+<figure>
+    <img src="../images/content/styleguide-harmony-2.png" alt="Intuit's Harmony pattern library includes tabs to switch between web, iOS, and Android for each pattern. This allows the team to maintain a mostly consistent design system across platforms but also document pattern divergences when they occur." />
+	<figcaption>
+	    Intuit's Harmony pattern library includes tabs to switch between web, iOS, and Android for each pattern. This allows the team to maintain a mostly consistent design system across platforms but also document pattern divergences when they occur.
+	</figcaption>
+</figure>
+
+<h2 id="make-it-agnostic">Make it agnostic</h2>
+<p>The way your UI patterns are named will undoubtedly shape how they are used. <strong>The more agnostic pattern names are, the more versatile and reusable they become</strong>.</p>
+
+<p>Because we establish UI patterns in the context of a broader page, it can be tempting to name components based on where they live. But rather than naming your component “homepage carousel” (forgive my morbid obsession with carousels), you can simply call it “carousel” instead, which means you can now put carousels everywhere! (But for the love of all that is holy, please don’t.)</p>
+
+<p>Another challenge for naming <em>display</em> patterns is that we tend to get distracted by the <em>content</em> patterns that live inside them. For instance, if working on an e-commerce site, you may be tempted to call a block containing a product image and title a “product card.” But naming things in this manner immediately limits what type of content can live inside it. By naming the pattern simply “card,” now you can put all sorts of content patterns inside it: products, promotions, store locations, etc.</p>
+
+<p>Fair warning: <strong>naming things is really freaking hard</strong>. But there are strategies to help you create sound names for your patterns. Conducting an interface inventory (as detailed in <a href="/chapter-4/#show-dont-tell-the-power-of-interface-inventories">chapter 4</a>) helps remove patterns from the context of the page where they normally reside, meaning your team can create names that aren’t distracted by their context. And I’ve conducted naming exercises with teams where we’ve blurred out the content residing inside a pattern so everyone can focus on the pattern’s <em>structure</em> rather than the <em>content</em> that lives inside it.</p>
+
+<figure>
+    <img src="../images/content/modal-blur.png" alt="When naming patterns, try blurring out their content so that your names reflect the patterns' structure rather than the content  that lives inside them." />
+	<figcaption>
+	    When naming patterns, try blurring out their content so that your names reflect the patterns' structure rather than the content  that lives inside them.
+	</figcaption>
+</figure>
+
+<p>While naming things will always be a challenge, pattern names that are agnostic to context and content will be more portable, reusable, and versatile.</p>
+
+<h2 id="make-it-contextual">Make it contextual</h2>
+<p>Showcasing UI patterns in a pattern library is all well and good, but <strong>you need to demonstrate context in order for design system users to understand how and where to properly use them</strong>. Most pattern libraries show a demo of each UI pattern, but as we’ve discussed throughout this book, those patterns don’t live in a vacuum. Where exactly are these patterns utilized?</p>
+
+<p>One way to demonstrate context might include showing screenshots or videos of a component in action. Material Design’s documentation does a fantastic job at this; each component is rich with photos, videos, and usage details to give their users a clear understanding of what these patterns look like in the context of an application and demonstrate how each pattern should be used.</p>
+
+<figure>
+    <img src="../images/content/material-design-bottom-nav.png" alt="Material Design's component library doesn't just contain an example of each component; it thoroughly documents the component's usage with plenty of images and video to support it." />
+	<figcaption>
+	    Material Design's component library doesn't just contain an example of each component; it thoroughly documents the component's usage with plenty of images and video to support it.
+	</figcaption>
+</figure>
+
+<p>Another way to show context is to provide lineage information for each pattern. As we discussed in Chapter 3, tools like Pattern Lab automatically generate this information which lets you to see which patterns make up any given component, and also show where each component is employed. This provides a sort of pattern paper trail that helps immensely with QA efforts, as it highlights exactly which patterns and templates would need tested if changes were made to a particular pattern.</p>
+
+<figure>
+    <img src="../images/content/pattern-lab-lineage.png" alt="Tools like Pattern Lab allow teams to see which smaller components make up any given component, as well as where each pattern gets used." />
+	<figcaption>
+	    Tools like Pattern Lab allow teams to see which smaller components make up any given component, as well as where each pattern gets used.
+	</figcaption>
+</figure>
+
+<h2 id="make-it-last">Make it last</h2>
+
+<p>Making a design system is an incredibly and important endeavor. But without proper maintenance, the value of your design system will deprecate much like a car that’s just been driven off the dealer’s lot. Instead, your design system should be like a bottle of fine wine that increases value over time.</p>
+
+<figure>
+    <img src="../images/fpo.png" alt="Used car and bottle of wine" />
+	<figcaption>
+	    Used car and bottle of wine
+	</figcaption>
+</figure>
+
+<h3 id="managing-change">Managing change</h3>
+<p>Change is the only constant, as they say. A successful design system is able to roll with the punches, adapt to feedback, be iterated upon, and evolve alongside the products the system serves. The <em>living</em> part of a living design system means that it needs to grow and evolve over time.</p>
+
+<p><strong>Creating a clear governance plan is essential to make sure your design system will continue to</strong>. Without a clear governance strategy in place, the value your design system may deprecate much like a car that’s just been driven off the lot. Instead, your design system should be like a fine wine that increases value over time.</p>
+
+<p>What does a successful 
+- Schedule regular reviews of the patterns. 
+- Have a plan Deprecate patterns https://github.com/salesforce-ux/sass-deprecate</p>
+
+<p>Making a design system last means consistently . It needs to be visible and stay in the front of everyone’s minds.</p>
+
+<h3 id="communicating-change">Communicating change</h3>
+<p>You can create the best style guide in world, use the most appropriate technology, have an amazing team in place, and have excited users, but if you don’t communicate updates and changes to the design system the entire effort will suffer.</p>
+
+<p><strong>It’s essential to establish a comprehensive communication strategy</strong> so that makers, users, and other stakeholders are well aware of  all the latest changes to and thinking around the design system. This is especially important in the early days of the initiative. Frequent communication helps keep the design system in the front of everyone’s mind so it takes root and becomes an integral part of your organization’s workflow.</p>
+
+<p><strong>As time goes on, frequent communication helps the system increase in value like that fine bottle of wine</strong>. Communication can include:</p>
+
 <ul>
-  <li>Holy Grail is when the pattern library and production environment are perfectly in sync. Make a change to a pattern library, and anywhere the pattern is included in production will be updated.</li>
-  <li><a href="http://rizzo.lonelyplanet.com/">Rizzo</a> by Lonely Planet has accomplished this.</li>
-  <li><a href="https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.vy45rkm7m">Chasing the holy grail</a></li>
+  <li>Change logs (“Here’s what’s changed in the pattern library this month”)</li>
+  <li>Roadmaps (“Here’s what’s coming up over the next few months”)</li>
+  <li>requests for feedback (“We’re considering deprecating our carousel pattern and would like to hear what you think.”),</li>
+  <li>Surveys (“On a scale from 1-5, how useful is the pattern documentation?”)</li>
+  <li>Success stories (“Team X launched this new feature using the design system; read more about how they did it.”)</li>
+  <li>Resources (“Here’s a great article about documenting “)</li>
 </ul>
 
-<h3 id="make-it-cross-disciplinary">Make it cross-disciplinary</h3>
-<ul>
-  <li>Not just a developer tool. Not just a designer tool. Every discipline invested in the success of the website should be contributing to the pattern library.</li>
-  <li>Carousel component example - amazingly complex component requiring input from business owners, editorial staff, content strategists, art directors, UX designers, front-end people, backend people</li>
-</ul>
+<p><strong>Design system changes, updates, and requests should be communicated wherever your team hangs out</strong>. That may include Slack, BaseCamp, Github, wikis, Yammer, email lists, company blogs, intranets, and any other internal tools your team uses to communicate and collaborate.</p>
 
-<h3 id="make-it-approachable">Make it Approachable</h3>
-<ul>
-  <li>No shocker here, but good design leads to more usage.</li>
-  <li>Avoid exposing tons of code right out of the gate as it might discourage other disciplines from looking at it (“Oh this must not be for me”)</li>
-</ul>
-
-<h3 id="make-it-visible">Make it visible</h3>
-<ul>
-  <li>Make it public.</li>
-  <li>Recruitment, recruitment, recruitment.</li>
-</ul>
-
-<h3 id="make-it-agnostic">Make it Agnostic</h3>
-<ul>
-  <li>The more agnostic pattern names are, the more versatile and reusable they become.</li>
-  <li>Nicole Sullivan <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">media object</a></li>
-</ul>
-
-<h3 id="make-it-contextual">Make it Contextual</h3>
-<ul>
-  <li>Demonstrate context. Where are</li>
-  <li>Pattern Lab lineage</li>
-</ul>
-
-<h3 id="make-it-last">Make it last</h3>
 <ul>
   <li>Publish updates (Material Design example)</li>
-  <li>Regular E-mail newsletters, blog updates, etc, whenever things change</li>
-  <li>Monitor progress - Lonely Planet performance</li>
+  <li>Notifications - Regular E-mail newsletters, blog updates, etc, whenever things change, Slack integrations,</li>
+  <li>email updates, blog posts, video casts,</li>
+</ul>
+
+<blockquote>
+  <p>Whenever someone makes a pull request, it sends a notification to our #Design slack channel, announcing to the team that there is a proposal change and feedback is required <cite><a href="https://medium.com/shyp-design/managing-style-guides-at-shyp-c217116c8126">Micah Sivitz, Shyp</a></cite></p>
+</blockquote>
+
+<ul>
+  <li>Monitor progress over time - Lonely Planet’s Rizzo design system tracks performance metrics over time.</li>
 </ul>
 
 <h2 id="go-forth-and-be-atomic">Go forth and be atomic</h2>
+
 
     <nav role="navigaiton" class="pagination">
     <!-- <a href="#">Next Chapter</a>
@@ -130,6 +660,7 @@
     <footer role="contentinfo">
     &copy; 2015 Brad Frost
 </footer>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script src="/../js/link-headings.js"></script>
   </body>
 </html>
