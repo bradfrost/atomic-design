@@ -17,7 +17,7 @@ The cornerstone of pattern-based design and development is the pattern library, 
 - They **make cross-browser/device, performance, and accessibility testing easier**.
 - They **serve as a future-friendly foundation** for teams to modify, extend, and improve on over time.
 
-That all sounds wonderful, right? I can almost hear you saying, "I need this whole pattern library thing in my life." But how do we make pattern libraries happen? Well, you've come to the right place, friend, because the rest of this book is dedicated to exactly that. This chapter will introduce helpful tools for creating pattern libraries, and the next chapter will discuss how to make patterns a cornerstone of your design and development workflow. 
+That all sounds wonderful, right? I can almost hear you saying, "I need this whole pattern library thing in my life." But how do we make pattern libraries happen? Well, you've come to the right place, friend, because the rest of this book is dedicated to exactly that. This chapter will introduce helpful tools for creating pattern libraries, and the next chapter will discuss how to make patterns a cornerstone of your design and development workflow.
 
 I'll talk about the qualities of effective pattern libraries through the lens of a tool called [Pattern Lab](http://patternlab.io), an open source project created by me and [Dave Olsen](http://dmolsen.com) to execute atomic design systems. While I'll excitedly discuss Pattern Lab and its various features, I want to stress that the point of this chapter is to cover the characteristics of well-constructed pattern libraries, not sell any one specific tool to you. Hell, Pattern Lab isn't even for sale! No single tool will be a perfect fit for all readers, but be sure to keep the following principles in mind when deciding what tools to use to create your pattern libraries.
 
@@ -36,13 +36,13 @@ Before we dive into the nuts and bolts of how Pattern Lab works, it's important 
 
 Let's walk through these points, starting with the term *static site generator*. Static site generator tools take in some source code and assets, compile them, and spit out plain ol' HTML, CSS, and JavaScript at the other end. **Pattern Lab takes source code – namely patterns – and compiles those patterns into a functional front-end UI inside a pattern library shell**.
 
-So what does Pattern Lab look like out of the box? Drumroll, please. 
+So what does Pattern Lab look like out of the box? Drumroll, please.
 
 {% include figure.html src="../images/content/pattern-lab-default.png" caption="The default Pattern Lab dashboard. What it lacks in good looks, it makes up for in utility." %}
 
 Not a terribly inspiring design, eh? Believe it or not, this minimal (one might even say _lack of_) design is deliberate. To avoid incorrect classification as a UI framework like Bootstrap, the design is deliberately stripped down so no one would mistakenly take Pattern Lab's demo UI for suggested styles. Pattern Lab doesn't give you any answers as to how to design or architect your front-end code—*you have to do all that work yourself*. The look and feel, naming conventions, syntax, structure, libraries, and scripts you choose to use to create your UI is entirely up to you. Heck, you can even use UI frameworks like Bootstrap _within_ Pattern Lab. Pattern Lab is just there to help stitch everything together.
 
-As a technical aside, Pattern Lab uses PHP as the engine that stitches patterns together and generates the pattern library. However, you don't need to be a PHP wizard to use Pattern Lab any more than you have to know how to build an internal combustion engine to drive a car. Moreover, your final website doesn't have to be built with PHP to use the tool, as Pattern Lab's output is backend-agnostic HTML, CSS, and JavaScript. But if you're one of those cool kids who thinks using a PHP-based tool will somehow ruin your reputation, there's also a [Node.js version](https://github.com/pattern-lab/patternlab-node) thanks to web developer [Brian Muenzenmeyer](http://www.brianmuenzenmeyer.com/). 
+As a technical aside, Pattern Lab uses PHP as the engine that stitches patterns together and generates the pattern library. However, you don't need to be a PHP wizard to use Pattern Lab any more than you have to know how to build an internal combustion engine to drive a car. Moreover, your final website doesn't have to be built with PHP to use the tool, as Pattern Lab's output is backend-agnostic HTML, CSS, and JavaScript. But if you're one of those cool kids who thinks using a PHP-based tool will somehow ruin your reputation, there's also a [Node.js version](https://github.com/pattern-lab/patternlab-node) thanks to web developer [Brian Muenzenmeyer](http://www.brianmuenzenmeyer.com/).
 
 If that all sounded like gibberish to you, don't worry. This chapter focuses on the overarching features and principles behind Pattern Lab rather than going too far down the technical rabbit hole. You can check out [Pattern Lab's documentation](http://patternlab.io/docs/index.html) to dive into the nitty-gritty.
 
@@ -51,7 +51,7 @@ To understand the core concept behind Pattern Lab, you need to understand <span 
 
 {% include figure.html src="../images/content/russian-nesting-dolls.jpg" caption="Russian nesting dolls. <a href='https://www.flickr.com/photos/tromal/6901848291/'>Via Flickr user Tromal</a>" %}
 
-Matryoshka dolls (also known as Russian nesting dolls) are beautifully carved hollow wooden dolls of increasing size that are placed inside one another. Patterns in Pattern Lab operate in a similar manner: the smallest patterns (atoms) are included inside bigger patterns (molecules), which are included in even bigger patterns (organisms), which are in turn included in even bigger patterns (templates). 
+Matryoshka dolls (also known as Russian nesting dolls) are beautifully carved hollow wooden dolls of increasing size that are placed inside one another. Patterns in Pattern Lab operate in a similar manner: the smallest patterns (atoms) are included inside bigger patterns (molecules), which are included in even bigger patterns (organisms), which are in turn included in even bigger patterns (templates).
 
 Constructing UIs in this manner helps keep things [DRY](https://en.wikipedia.org/wiki/Don't_repeat_yourself), which is a long-standing computer science principle that stands for "don't repeat yourself." Make a change to a pattern, and anywhere that pattern is employed will magically update with those changes. This saves an extraordinary amount of time and grief, and certainly beats the pants off sifting through hundreds of Photoshop documents for every instance of a pattern just to make a simple change.
 
@@ -152,7 +152,7 @@ I hope by now you can see the Russian nesting dolls in action. The smallest atom
 
 {% include figure.html src="../images/content/template-timeinc-homepage-long.png" caption="The Time Inc. homepage template consists of a few repeatable patterns: a global header, a hero area, a few sections (containing an image, headline, excerpt, and call to action), an area featuring four items, a factoid area, and a global footer." %}
 
-Take a quick stroll through the homepage template and you'll see some pretty standard patterns: a site header at the top, a site footer at the bottom, and a full-screen hero area. You'll also see a few other patterns repeating themselves throughout the template. 
+Take a quick stroll through the homepage template and you'll see some pretty standard patterns: a site header at the top, a site footer at the bottom, and a full-screen hero area. You'll also see a few other patterns repeating themselves throughout the template.
 
 So how does this look in code? As you might expect, it involves more includes!
 
@@ -214,7 +214,7 @@ To demonstrate how Pattern Lab dynamically swaps in real content into templates,
 
 {% include figure.html src="../images/content/timeinc-template-page.png" caption="A side-by-side comparison of Time Inc.'s home page template and page levels. The template articulates the content structure of the design system, while the page shows what the system looks like with real content displayed by it." %}
 
-On the left we have the template level, which articulates the content structure of the patterns making up the web page. And on the right we have the page level, where we're pouring in real representative content to demonstrate what the final UI might look like and test the effectiveness of the design system. 
+On the left we have the template level, which articulates the content structure of the patterns making up the web page. And on the right we have the page level, where we're pouring in real representative content to demonstrate what the final UI might look like and test the effectiveness of the design system.
 
 How do we swap dummy content for real content in Pattern Lab? Pattern Lab uses JSON (as well as YAML, Markdown, and other data formats) to define and swap out the dynamic bits of content in our designs.
 
@@ -250,7 +250,7 @@ Ed: Here I've changed italics (emphasis) to code ticks as you're referencing a c
 {{ m | markdownify }}
 </div>
 
-Once those objects are defined, we can then override their attributes at Pattern Lab's page level. This is accomplished by creating a new JSON file that matches the page pattern name (for Time Inc.'s home page, we'll call it _homepage.json_) inside the _/pages_ directory. 
+Once those objects are defined, we can then override their attributes at Pattern Lab's page level. This is accomplished by creating a new JSON file that matches the page pattern name (for Time Inc.'s home page, we'll call it _homepage.json_) inside the _/pages_ directory.
 
 {% include figure.html src="../images/content/timeinc-page-directory.png" caption="Inside the ‘pages’ directory we have the home page pattern as well as a JSON file that matches the name of the pattern. This is where we'll override the default content with page-specific content." %}
 
@@ -284,7 +284,7 @@ By overriding the default data, the `hero` headline now reads "Moving People" in
 Ed: Usually, abbreviations are placed in parens after what they abbreviate – for placement only (FPO) – not before. Should I have heard of FPO? I haven't. What might your readers expect? Also, you used a grave accent on Beyoncé, not acute. Shame on you, Brad!
 {% endcapture %}
 {{ m | markdownify }}
-</div> 
+</div>
 
 This process of establishing defaults for dynamic data then replacing it with page-specific content continues for each section of the website. In addition to replacing simple strings like headings, we can also dynamically set variables to `true` or `false`, loop through an array of items, and more. We can even dramatically alter the UI with just a few changes to a JSON file, which we'll talk about next.
 
@@ -381,7 +381,7 @@ The first few lines are pulling in the `img`, `name`, and `title` we defined in 
 
 Whew. If you've made it this far, congratulations! You now know how to add and manipulate dynamic data in Pattern Lab. Pattern Lab's ability to design with dynamic data provides some crucial benefits:
 
-- **Creates a clear separation between structure and content.** A pattern's structure and its content very much influence each other. However, resilient design systems strive to establish agnostic, flexible patterns that can contain a variety of content. Decoupling pattern structure and data allows us to keep things DRY (which, again, stands for don't repeat yourself) and make changes to content without affecting the pattern structure. Likewise, we're able to make changes to a pattern without having to update every instance of that pattern simply because each instance contains different data. This separation results in huge savings in both time and effort. 
+- **Creates a clear separation between structure and content.** A pattern's structure and its content very much influence each other. However, resilient design systems strive to establish agnostic, flexible patterns that can contain a variety of content. Decoupling pattern structure and data allows us to keep things DRY (which, again, stands for don't repeat yourself) and make changes to content without affecting the pattern structure. Likewise, we're able to make changes to a pattern without having to update every instance of that pattern simply because each instance contains different data. This separation results in huge savings in both time and effort.
 - **Establishes an ad hoc CMS.** Establishing default and page-specific data serves as an ad hoc content management system. As mentioned earlier, static design tools aren't well equipped to handle dynamic data, but it's also overkill to install WordPress, Drupal, or some other CMS just to demonstrate UI variations. Pattern Lab strikes a balance as it allows teams to work with dynamic data but doesn't require setting up any crazy MySQL databases.
 - **Serves as a blueprint for back-end developers** responsible for integrating the front-end UI into a real content management system. Back-end developers can look at the UI created in Pattern Lab, understand which bits are static and dynamic, then translate that into the back-end system.
 - **Allows writers, content people, designers, and other non-developers to contribute to the living, breathing design system.** As a front-end developer, I can't count the number of times I've had to fix typos, swap in new images, translate copy decks, and make other content-related edits to front-end code. It's death by a million paper cuts, and I'm sure most developers would agree that making minor copy changes isn't an effective use of their time. By separating structure and data, Pattern Lab enables non-developer team members to safely manage the content-related aspects of the design, freeing up developers to focus on building the design system's structure.
@@ -402,7 +402,7 @@ It's a no-brainer that we need to establish flexible UI patterns if we want to c
 
 Indeed, this is the promise of [container queries](http://alistapart.com/article/container-queries-once-more-unto-the-breach). Container queries let elements adapt based on their parent containers rather than the entire viewport, which is how we manipulate elements using media queries at the moment. While still being developed as a native browser capability, container queries will allow us pattern-crazed designers and developers to easily create and deploy fluid UI systems.
 
-Between responsive design, container queries, and good ol'-fashioned common sense, we now understand why it's imperative to create flexible UI patterns. But how do we do that? And how can our pattern library tools help us think and act flexibly? 
+Between responsive design, container queries, and good ol'-fashioned common sense, we now understand why it's imperative to create flexible UI patterns. But how do we do that? And how can our pattern library tools help us think and act flexibly?
 
 Many early responsive design testing tools focused on viewing designs on popular mobile device widths, such as 320px (an iPhone 4 in portrait mode), 480px (an iPhone 4 in landscape mode), 768px (an iPad in portrait mode), and so on. But, of course, the web is *much* more diverse than a mobile view, a tablet view, and a desktop view. To help designers better consider the entire resolution spectrum when testing their responsive designs, I created a tool called [ish.](http://bradfrost.com/demo/ish/)
 
@@ -468,7 +468,7 @@ Ultimately, whichever pattern library tool you decide to use should have some fo
 
 ## Living documentation and annotations
 In a traditional siloed design process, it's typical to see lengthy wireframe and spec documents created, debated, and approved. These documents usually take the form of gigantic PDFs, which is unfortunate considering they often contain all sorts of valuable insights, instructions, and documentation about the design system. Sadly, these bulky artifacts are often thrown into a (virtual) trash can by the time the project makes its way into production.
-  
+
 This shouldn't be the case. A UI's documentation should contain insights from every discipline involved in creating it, and—this is key—should be baked into the living, breathing design system. Effective pattern libraries carve out a space to define and describe UI components, articulating considerations ranging from accessibility to performance to aesthetics and beyond.
 
 Pattern Lab provides several ways to add pattern descriptions and annotations to a design system. Pattern descriptions can be added by creating a <span class="editor">Markdown</span> that corresponds to the name of a pattern (e.g. _pattern-name.md_), which will show the pattern description in the library list view.
@@ -509,5 +509,4 @@ When choosing tools to create your pattern library, you should keep your eyes op
 - The ability to dynamically add real representative content into the patterns' structures
 - Providing contextual information, like which patterns make up a particular component as well as where that component is used
 
-At the end of the day, it's not about the tools we use to create pattern libraries, but rather how we use them. Creating and maintaining an effective design system means dramatically changing your organization's culture, processes, and workflows. If that sounds hard to you, it's because it is. But fear not! The next chapter will detail the entire process of creating and maintaining a successful design system to set your organization up for long-term success. 
- 
+At the end of the day, it's not about the tools we use to create pattern libraries, but rather how we use them. Creating and maintaining an effective design system means dramatically changing your organization's culture, processes, and workflows. If that sounds hard to you, it's because it is. But fear not! The next chapter will detail the entire process of creating and maintaining a successful design system to set your organization up for long-term success.

@@ -340,8 +340,9 @@ Ed: And once the terms are under discussion, we can ditch italics on what the re
 {{ m | markdownify }}
 </div>
 
-That being said, naming things is hard and imperfect. The names I've chosen for the stages of atomic design have worked really well for me and the teams I've worked with. But maybe they don't work for you. That's more than OK. Here's one perspective from a designer at a digital agency:
+That being said, naming things is hard and imperfect. The names I've chosen for the stages of atomic design have worked really well for me and the teams I've worked with as we create UI design systems. But maybe they don't work for you and your organization. That's more than OK. Here's one perspective from the design team at GE:
 
+<<<<<<< HEAD
 > Even though they couldn’t pick up on all the terminology [of atomic design], they didn’t throw the concept out the door. Instead we rallied together to transform it to work for us. The way we made it work for us is by changing the 5 parts that make it up while still maintaining the overall concept. Our goal was to come up with terms that made sense to us and anyone we would on board in the future. <cite><a href="http://createstopbecreative.com/2015/03/04/how-we-adapted-atomic-design/">Jono Herrington</a></cite>
 
 The terms the team came up with were _foundations_, _materials_, _rooms_, _templates_, and _pages_. Does this make sense to you? It doesn't matter. By taking the time to establish an agreed on vocabulary, their team was able to get on board with the concept of atomic design and work together effectively by speaking the same language.
@@ -354,6 +355,13 @@ Ed: But as these are a new set of terms being introduced, it's back to the itali
 </div>
 
 _Atomic design_ as a term encapsulates the concepts of modular design and development, which becomes a useful shorthand for convincing stakeholders and talking with colleagues. But whatever names you choose to work with should help you and your organization craft an effective UI design system.
+=======
+> As we showed our initial design system concepts that used the Atomic Design taxonomy to our colleagues, we were met with the some confused looks. [...] The evidence was clear, for this to be successful within our organization we had to make the taxonomy more approachable. <cite><a href="https://medium.com/ge-design/ges-predix-design-system-8236d47b0891#.uo68yjo9g">Jeff Crossman, GE Design</a></cite>
+
+The taxonomy the team landed on were "Principles", "Basics", "Components", "Templates", "Features", and "Applications". Do these labels make sense to you? It doesn't matter. By establishing a taxonomy that made sense for their organization, everyone was able to get on board with atomic design principles and do effective work together.
+
+"Atomic design" as a buzzword encapsulates the concepts of modular design and development, which becomes a useful shorthand for convincing stakeholders and talking with colleagues. But **atomic design is not rigid dogma**. Ultimately whatever taxonomy you choose to work with should help you and your organization communicate more effectively in order to craft an amazing UI design system.
+>>>>>>> origin/master
 
 ## Atomic design is for user interfaces
 Atomic design is a concept born of the web. After all, your lowly author is a web designer, which is mainly the reason this book primarily focuses on web-based interfaces. But it's important to understand that **atomic design applies to all user interfaces, not just web-based ones.**
