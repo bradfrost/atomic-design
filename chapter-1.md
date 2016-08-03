@@ -12,89 +12,31 @@ Oh, wait…
 
 ## Our paginated past
 
-The page has been with us for a long time now. A few millennia, actually. The first books were thick slabs of clay created about <span class="editor">4,000 years ago</span>, soon replaced by scrolls as the preferred way to consume the written word. And while reading technology has come a long way – from papyrus to parchment to paperback to pixels – the concept of the page holds strong to this day.
+The page has been with us for a long time now. A few millennia, actually. The first books were thick slabs of clay created about 4,000 years ago, soon replaced by scrolls as the preferred way to consume the written word. And while reading technology has come a long way – from papyrus to parchment to paperback to pixels – the concept of the page holds strong to this day.
 
-<div class="editor">
-{% capture m %}
-Ed: Tablets have been found that date to around 2000BC, so I up(back?)dated your date. These were superseded by scrolls, not the other way around as you initially put it. Also, I couldn't resist adding papyrus before parchment to boost your alliteration. Feel free to push my elbow back out again.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-The page metaphor has been baked into the lexicon of the <span class="editor">web</span> since the very beginning. Tim Berners-Lee invented the World Wide Web so that he, his colleagues at CERN, and other academics could easily share and link together their world of *documents*. This document-based, academic genesis of the web is why the concept of the page is so deeply ingrained in the vocabulary of the internet.
-
-<div class="editor">
-{% capture m %}
-Ed: An uppercase W on web? I don't think so. It's a bit old-fashioned. You don't capitalize internet, I notice. World Wide Web is fine, though. I've changed Web to web throughout.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+The page metaphor has been baked into the lexicon of the web since the very beginning. Tim Berners-Lee invented the World Wide Web so that he, his colleagues at CERN, and other academics could easily share and link together their world of *documents*. This document-based, academic genesis of the web is why the concept of the page is so deeply ingrained in the vocabulary of the internet.
 
 So what?
 
-As we’ll discuss throughout this book, the way things are named very much impacts how they’re perceived and [utilized]. Thinking of the web as pages has real ramifications on how people interact with web experiences, and influences how we go about creating web interfaces.
-
-<div class="editor">
-{% capture m %}
-Ed: Normally, I'd change utilized to used, but here I think you can get away with it, if we stretch the meaning of utilized to be 'turned into useful tools'.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+As we’ll discuss throughout this book, the way things are named very much impacts how they’re perceived and utilized. Thinking of the web as pages has real ramifications on how people interact with web experiences, and influences how we go about creating web interfaces.
 
 From the beginning, the page metaphor provided users with a familiar language with which to navigate this brave new World Wide Web. Concepts like bookmarking and pagination helped new web users explore and eventually master an entirely new medium using conventions they were already comfortable with.
 
-<div class="editor">
-{% capture m %}
-Ed: (I tend to remove etc. (and e.g. and i.e.) from main narrative text. Often authors aren't really sure what they'd actually include behind an etc. and readers are often none the wiser as well. Such abbreviations can trip readers up, and at the very least interrupt the flow of reading. Sometimes I'll replace etc. with and so on, depending on the context. These abbreviations are useful, however, in lists and tables.)
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
 {% include figure.html src="../images/content/chrome-webpage.png" caption="Chrome browser displaying ‘This webpage is not available’ message." %}
 
-The page was—and continues to be—a very visible and helpful metaphor for the <span class="editor">users</span> of the web. It also has a profound influence on how web experiences are created.
-
-
-<div class="editor">
-{% capture m %}
-Ed: (It's more conventional in US English to use em dashes rather than en dashes in this way.)
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor">
-{% capture m %}
-Ed: I find end users to be a dead phrase. Are there start users and middle users?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+The page was—and continues to be—a very visible and helpful metaphor for the users of the web. It also has a profound influence on how web experiences are created.
 
 In the early days of the web, companies looking to get online simply translated their printed materials onto their websites. But even though these brochure websites offered a very one-dimensional perspective of what the web could offer, viewing websites as digital representations of the printed page was easy for creators to wrap their heads around.
 
-But we’re now 25 years into this new medium, and this once necessary figure of speech has overstayed its welcome. Unfortunately, the page metaphor continues to run deep with respect to how we scope and execute our web projects. Here are just a few examples I hear on a regular basis:
+But we’re now 25 years into this new medium, and this once necessary figure of speech has overstayed its welcome. Unfortunately, the **page metaphor continues to run deep with respect to how we scope and execute our web projects**. Here are just a few examples I hear on a regular basis:
 
-“We’re a <span class="editor">startup</span> looking to launch a five-*page* website this October…”
-
-<div class="editor">
-{% capture m %}
-Ed: Merriam-Webster (my go-to US English dictionary) has start-up, as do most current dictionaries, though startup without the hyphen is increasingly common. Up to you. A quick find-and-replace can change the lot, if necessary.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+“We’re a startup looking to launch a five-*page* website this October…”
 
 “Brad, how long will the home*page* take to build?”
 
 “How are we ever going to redesign this university website that contains over 30,000 *pages*?!”
 
-All of the statements above make the fundamental mistake of assuming a page is a uniform, isolated, quantifiable thing. The reality is that the web is a fluid, <span class="editor">bidirectional</span>, interdependent medium. As soon as we come to terms with this fact, the notion of the page quickly erodes as a useful means to scope and create web experiences.
-
-
-<div class="editor">
-{% capture m %}
-Ed: What do you mean by bidirectional? That there's communication between publisher and reader?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+All of the statements above make the fundamental mistake of assuming a page is a uniform, isolated, quantifiable thing. The reality is that the web is a fluid, interactive, interdependent medium. As soon as we come to terms with this fact, the notion of the page quickly erodes as a useful means to scope and create web experiences.
 
 How long will a homepage take to build? Well, that sort of depends on what’s on it, right? Maybe the homepage simply consists of a  tagline and a background image, which means it could be done by lunch. Or maybe it’s chock-full of carousels, dynamic forms, and third-party integrations. In that case, maybe the homepage will take several months to complete.
 
@@ -115,14 +57,7 @@ and Henry Ford’s assembly line forever transformed the automobile manufacturin
 As the machine age became the computer age, computer scientists began practicing object-oriented programming and establishing important modular concepts like *separation of concerns* and the *single responsibility principle*. It is from this world that the World Wide Web was born, so it’s no surprise that [modular design](http://www.w3.org/DesignIssues/Principles.html#Modular) quickly became a design principle for the architecture of the web.
 
 
-Slowly, but surely, these concepts found their way into web designers’ workflows. In the early 2000s we saw the introduction of libraries like [YUI](http://yuilibrary.com/) and [jQuery UI](http://jqueryui.com/) that provided developers with a toolkit of widgets and patterns <span class="editor">to better create</span> interactive interfaces.
-
-<div class="editor">
-{% capture m %}
-Ed: To better create or to create better?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+Slowly, but surely, these concepts found their way into web designers’ workflows. In the early 2000s we saw the introduction of libraries like [YUI](http://yuilibrary.com/) and [jQuery UI](http://jqueryui.com/) that provided developers with a toolkit of widgets and patterns to create more consistent user interfaces.
 
 If modularity has been around for such a long time, why are we talking about it now?
 
@@ -132,15 +67,7 @@ The short answer is that modularity matters more than ever. Right now, our entir
 
 {% include figure.html src="../images/content/devices.jpg" caption="These are just some of the connected devices we need to worry about." %}
 
-
-Like it or not, this multi-device universe is our reality. It was hard enough to get our web pages to display consistently in a handful of desktop browsers, but we’re now tasked with ensuring our web experiences look and function beautifully on a plethora of smartphones, tablets, phablets, netbooks, notebooks, desktops, TVs, game consoles, and more.
-
-<div class="editor">
-{% capture m %}
-Ed: Plethora plethora plethora. It's nice to say, it tastes good. But it's a word I dislike. Or rather a word whose use I dislike. It rubs me the wrong way. It feels self-conscious. A plethora is an excess of something, not just a large amount. As the vast number of devices often feels excessive, I'll let it stand. Medically it's a bodily condition characterized by an excess of blood and marked by swelling and a florid complexion. So there you go.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+Like it or not, this multi-device universe is our reality. It was hard enough to get our web pages to display consistently in a handful of desktop browsers, but we’re now tasked with ensuring our web experiences look and function beautifully on a dizzying array of smartphones, tablets, phablets, netbooks, notebooks, desktops, TVs, game consoles, and more.
 
 To address this reality while maintaining our sanity, it’s absolutely necessary for us to take a step back and break these giant responsibilities into smaller, more manageable chunks.
 
@@ -163,6 +90,13 @@ Moving away from <span class="editor">Ron Popeil</span>-esque, set-it-and-forget
 <div class="editor">
 {% capture m %}
 Ed: Will anyone outside the US have heard of Ron Popeil? I had to look him up.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+<div class="editor brad">
+{% capture m %}
+Brad: Was considering rewriting this to further explain Ron Popeil as a TV infomercial personality, or simply removing it from the text. But I like it as is because it adds a tasty bit of flavor. It's OK if everyone doesn't get the reference so long as they get the gist of the phrase "set it and forget it"
 {% endcapture %}
 {{ m | markdownify }}
 </div>
@@ -194,14 +128,7 @@ Thankfully, this future is starting to take shape. Organizations are recognizing
 ### Classy code
 Modularity has long been a staple principle in the world of computer science, as we discussed earlier. While this principle existed long before the web was invented, it has taken some time for modularity to become engrained in the minds and hearts of web developers.
 
-Despite being around since 1995, JavaScript, the programming language of the web, first had to endure some growing pains to mature into the capable, respected language it is today. Now that JavaScript <span class="editor">has grown up and the dust has settled</span>, developers can now apply those tried-and-true computer science principles to their web development workflows. As a result, we’re seeing folks develop sophisticated [JavaScript patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/) and architectures.
-
-<div class="editor">
-{% capture m %}
-Ed: Mixing metaphors? Grown up and swapped short pants for comfortable slacks, maybe?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+Despite being around since 1995, JavaScript, the programming language of the web, first had to endure some growing pains to mature into the capable, respected language it is today. Now that JavaScript has grown up, developers can now apply those tried-and-true computer science principles to their web development workflows. As a result, we’re seeing folks develop sophisticated [JavaScript patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/) and architectures.
 
 Applying modular programming principles to JavaScript is a bit of a no-brainer, since JavaScript is itself a programming language. But object-oriented thinking is weaving its way into other aspects of the web as well, including CSS, the styling language of the web. Methodologies like [OOCSS](http://oocss.org/), [SMACSS](https://smacss.com/), and [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax) have cropped up to help web designers create and maintain modular CSS architectures.
 
@@ -209,29 +136,15 @@ Applying modular programming principles to JavaScript is a bit of a no-brainer, 
 
 Not only is modularity infiltrating the code side of style on the web, it’s revolutionizing how visual designers approach modern web design.
 
-As the number of viewports and environments proliferate, it’s <span class="editor">quickly becoming</span> untenable to produce static mockups of every page of a web experience. As Stephen Hay quipped, presenting fully baked Photoshop comps “is the most effective way to show your clients what their website will never look like.”
+As the number of viewports and environments proliferate, it’s become untenable to produce static mockups of every page of a web experience. As Stephen Hay quipped, presenting fully baked Photoshop comps “is the most effective way to show your clients what their website will never look like.”
 
-<div class="editor">
-{% capture m %}
-Ed: I'd say by now it's become untenable.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+That’s not to say static design tools like Photoshop and Sketch aren’t important. Far from it. But it’s the way we use these tools that has changed dramatically. While creating hundreds of full-on comps isn’t realistic, these static tools excel at providing a playground to establish what Andy Clarke calls “design atmosphere”:
 
-That’s not to say static design tools like Photoshop and Sketch aren’t important. Far from it. But it’s the way we use these tools that has changed dramatically. While creating hundreds of full-on comps isn’t realistic, these static tools excel at providing a playground to establish what Andrew Clarke calls “design atmosphere”:
-
-> Atmosphere describes the feelings we get that are evoked by colour, texture and typography. You might already think of atmosphere in different terms. You might call it “feel”, “mood” or even “visual identity.” Whatever words you choose, the atmosphere of a design doesn’t depend on layout. It’s independent of arrangement and visual placement. It will be seen, or felt, at every screen size and on every device. <cite>[Andrew Clarke](http://stuffandnonsense.co.uk/blog/about/an-extract-from-designing-atoms-and-elements)</cite>
+> Atmosphere describes the feelings we get that are evoked by colour, texture and typography. You might already think of atmosphere in different terms. You might call it “feel”, “mood” or even “visual identity.” Whatever words you choose, the atmosphere of a design doesn’t depend on layout. It’s independent of arrangement and visual placement. It will be seen, or felt, at every screen size and on every device. <cite>[Andy Clarke](http://stuffandnonsense.co.uk/blog/about/an-extract-from-designing-atoms-and-elements)</cite>
 
 Establishing design atmosphere early is critical to a project’s success, which is why designers have found ways to facilitate these important conversations without having to generate full mockups. Designer Samantha Warren developed design artifacts called [style tiles](http://styletil.es/), which demonstrate color, type, and texture explorations in a nice encapsulated one-pager. Designer Dan Mall built on Samantha’s idea with a concept called [element collages](http://danielmall.com/articles/rif-element-collages/), which demonstrate design atmosphere explorations in an exploded collage of interface elements.
 
-<div class="editor">
-{% capture m %}
-Style Tiles and Element Collages()
-Ed:(Is there an image missing here?)
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
+{% include figure.html src="../images/content/style-tiles.jpg" caption="Style tiles, a concept created by designer Samantha Warren, allow designers to explore color, typography, and texture without having to develop fully-developed comps." %}
 
 By breaking visual explorations into smaller chunks, designers save time and effort while avoiding presenting unrealistic, premature layouts to clients. More importantly, these approaches shift stakeholders away from simply reacting to a pretty picture, and instead facilitate crucial conversations about overall design direction and how they relate to the project’s goals. We’ll discuss these concepts in more detail in chapter 4, but suffice it to say the visual design workflow is changing in a big way!
 
@@ -259,14 +172,7 @@ This need to address growing device diversity while still sanely getting project
 
 And boy are these things popular. As I’m writing this, Bootstrap is the most popular repository on the code-sharing site [GitHub](https://github.com/), with over 77,000 stars and 30,000 forks. These frameworks’ popularity is a testament to the fact that designers and developers are seeking solid ground to stand on in this ever-complex web landscape.
 
-One of the most attractive aspects of these frameworks is *speed*. Frameworks like Bootstrap allow designers to get ideas off the ground quickly, rapidly create prototypes, and launch sites sooner. Because the patterns provided by a tool kit are already cross-browser tested, <span class="editor">developers can spend their</span> time on more important tasks rather than beating their heads against a table testing some archaic version of Internet Explorer. And in case designers do get stuck, these frameworks’ communities can provide helpful support and advice.
-
-<div class="editor">
-{% capture m %}
-Ed: I've changed "a developer can spend her" to a plural form (and will do so throughout). This avoids any his/her preference or confusion and includes everyone.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+One of the most attractive aspects of these frameworks is *speed*. Frameworks like Bootstrap allow designers to get ideas off the ground quickly, rapidly create prototypes, and launch sites sooner. Because the patterns provided by a tool kit are already cross-browser tested, developers can spend their time on more important tasks rather than beating their heads against a table testing some archaic version of Internet Explorer. And in case designers do get stuck, these frameworks’ communities can provide helpful support and advice.
 
 For freelancers, this increase in speed might mean they can take on an extra project or three, yielding more financial stability for the year. And in the startup world — a place where Bootstrap is omnipresent — minimum viable products can launch sooner, leading to faster answers regarding the products’ viability.
 
@@ -278,7 +184,6 @@ When I was a kid, I’d watch sci-fi movies and TV shows with a strange fascinat
 {% include figure.html src="../images/content/sci-fi.jpg" caption="In the future, everyone dresses the same." %}
 
 I could only guess that given enough time, we *solve fashion*. “Say, these jumpsuits are pretty snazzy, and comfortable too! Let’s just all wear these from now on.” “Sounds good to me!”
-
 
 Of course, that’s not how human beings work. We all have different tastes, goals, and desires. Variety, as they say, is the spice of life, and fashion, music, and design reflect our diverse nature. Yet on the web we tend to fall into the trap of wanting everyone to do things the same way. “Why don’t all browsers just standardize on WebKit?” “Why can’t device manufacturers just use the same screen sizes?” “Always use jQuery!” “Never use jQuery!” “Just use frameworks!” “Never use frameworks!”
 
@@ -300,94 +205,47 @@ It’s not just about using a design system, it’s about creating *your* system
 
 ## Design systems save the day
 
-So what do <span class="editor">sound</span> design systems look like? What form do they take? How do you create, maintain, and enforce them?
-
-<div class="editor">
-{% capture m %}
-Ed: Consider changing sound to robust. Sound design (acoustics) is a thing. You're a musician so I'm sure you know.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+So what do robust design systems look like? What form do they take? How do you create, maintain, and enforce them?
 
 The cornerstones of good design systems are *style guides*, which document and organize design materials while providing guidelines, usage, and guardrails.
 
 As it happens, there are [many flavors of style guides](http://bradfrost.com/blog/post/style-guides/), including documentation for brand identity, writing, voice and tone, code, design language, and user interface patterns. This book won’t detail every category of style guide, but it’s important to take a look at each to better understand how each style guide influences the others, and how style guides for the web fit into a larger ecosystem.
 
-### Brand identity <span class="editor">guidelines</span>
+### Brand identity
 Brand identity guidelines define the assets and materials that make a company unique. Logos, typography, color palettes, messaging (such as mission statements and taglines), collateral (such as business card and PowerPoint templates), and more are aggregated and described in brand identity guidelines.
-
-<div class="editor">
-{% capture m %}
-Ed: You need to be consistent in the subheadings. Sometimes you include the "guide" or "guidelines" (Brand identity guidelines, Code style guides), sometimes you don't (Voice and tone, Writing). As you're talking about different kinds of style guide, you can probably drop the "guidelines" and just put the subject of those guidelines in the heading (Design language, Code, etc.).
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-<div class="editor">
-{% capture m %}
-Ed: I always advise against placing an image directly after a heading. It can cause confusion: Is the heading a caption? Does the text below relate to the image specifically? Where the hell am I? So I've placed a text paragraph first.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
 
 {% include figure.html src="../images/content/styleguide-wvu.png" caption="West Virginia University’s brand style guide." %}
 
-<span class="editor">Brand style guides</span> provide a <span class="editor">foundational center</span> for an organization. It’s essential for a brand to present itself in a cohesive manner across an increasing number of media, channels, and touchpoints. How can everyone within an organization speak in one voice and feel part of a singular entity? How do third parties know which Pantone colors to use and how to correctly use the brand’s logo? Brand identity guidelines provide answers to these fundamental questions.
-
-<div class="editor">
-{% capture m %}
-Ed: Is the term brand style guide interchangeable with brand identity guidelines (the subheading you use)?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor">
-{% capture m %}
-Ed: What does foundational center mean? Do you mean a foundation for an organization's brand-related activity?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+It’s essential for a brand to present itself in a cohesive manner across an increasing number of media, channels, and touchpoints. How can everyone within an organization speak in one voice and feel part of a singular entity? How do third parties know which Pantone colors to use and how to correctly use the brand’s logo? Brand identity guidelines provide answers to these fundamental questions in one centralized hub.
 
 Historically, brand identity guidelines were contained in hard-cover books (remember, those things with the pages?), but as with everything else, brand style guides are making their way online.
 
 ### Design language
 While brand identity guidelines are fairly tactile, design language guidelines are a bit harder to pin down. Design language style guides articulate a general design direction, philosophy, and approach to specific projects or products.
 
-To present itself in a cohesive way across a growing range of products and <span class="editor">media</span>, Google developed a design language called *material design*. The [material design style guide](http://www.google.com/design/spec/material-design/introduction.html) defines its overarching design philosophy, goals, and general principles, while also providing specific applications of the material design language.
+To present itself in a cohesive way across a growing range of products and media, Google developed a design language called *material design*. The [material design style guide](http://www.google.com/design/spec/material-design/introduction.html) defines its overarching design philosophy, goals, and general principles, while also providing specific applications of the material design language.
 
-<div class="editor">
-{% capture m %}
-Ed: Mediums refers to a group of clairvoyants, surely?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-{% include figure.html src="../images/content/styleguide-material.png" caption="Google’s material design language." %}
+{% include figure.html src="../images/content/styleguide-material.png" caption="Google’s Material Design language." %}
 
 Design language style guides can (and usually do) incorporate aspects of other style guide categories in order to make high-level concepts a bit more tangible.
 
-Design language guidelines aren’t set in stone the way brand guidelines are. For example, one day Google will likely develop a new design language to replace material design, so while Google’s overall brand will remain intact, the design vocabulary around its products will change.
+Design language guidelines aren’t set in stone the way brand guidelines are. For example, one day Google will likely develop a new design language to replace Material Design, so while Google’s overall brand will remain intact, the design vocabulary around its products will change.
 
 ### Voice and tone
-People interact with brands across a dizzying array of channels and media: <span class="editor">web, mobile, print, retail, outdoor, radio, TV, email, and much more</span>. Speaking in a <span class="editor">cohesive</span>, consistent manner across all of these touchpoints is critical to a brand’s success.  
+People interact with brands across a huge array of channels and media. In addition to the digital media we've been discussing so far in this book, brands also operate in print, retail, outdoor, radio, TV, and other channels. When a brand must communicate across so many varied touchpoints, speaking in a unified, consistent manner becomes critical to a brand’s success.  
 
 <div class="editor">
-{% capture m %}
-Ed: You list these different media a few times. I think readers can be expected to understand all this encompasses by now.
-{% endcapture %}
-{{ m | markdownify }}
+{% capture m %} Ed: You list these different media a few times. I think readers can be expected to understand all this encompasses by now. {% endcapture %} {{ m | markdownify }}
 </div>
 
-<div class="editor">
-{% capture m %}
-Ed: You use cohesive several times in this section. Consider alternatives: uniform, united, integrated, unified, congruent, joined up, etc.
-{% endcapture %}
-{{ m | markdownify }}
+<div class="editor brad">
+{% capture m %} Brad: It's true I've mentioned these several times, but this particular instance I'm folding in print, TV, radio, outdoor, and other media that a brand can communicate with. I've updated the copy to reflect this. {% endcapture %} {{ m | markdownify }}
 </div>
 
+> A brand’s voice stays the same from day to day, but its tone has to change all the time, depending on both the situation and the reader’s feelings. <cite>[Kate Kiefer Lee](http://www.slideshare.net/katekiefer/kkl-c-sforum)</cite>
 
-{% include figure.html src="../images/content/styleguide-voiceandtone.png" caption="Mailchimp’s Voice and Tone guidelines." %}
 
-<span class="editor">Voice is an elemental aspect of a brand’s identity, so typically brand identity guidelines include some reference to tone of voice.</span> However, these overarching guidelines usually aren’t very nuanced, which is why voice and tone guidelines are so important.
+<span class="editor">Voice is an elemental aspect of a brand’s identity, so typically brand identity guidelines include some reference to the brand's voice.</span> However, these guidelines usually aren’t very nuanced, which is why voice and tone guidelines are so important.
 
 <div class="editor">
 {% capture m %}
@@ -396,14 +254,16 @@ Ed: Is it worth noting the distinction between voice and tone? They are differen
 {{ m | markdownify }}
 </div>
 
-Voice and tone guidelines <span class="editor">get into the weeds</span> by articulating how the company’s voice and tone should shift across a variety of scenarios. [MailChimp’s brilliant voice and tone guidelines](http://voiceandtone.com/) define how the brand’s tone changes across content types, so that when a user’s credit card is declined, writers know to shift away from their generally cheeky and playful tone of voice and adopt a more serious tone instead.
-
-<div class="editor">
+<div class="editor brad">
 {% capture m %}
-Ed: Nice phrase. See, I do praise occasionally ;)
+Brad: It's definitely worth the distinction. I added a quote from Kate Kiefer Lee to drive home the difference, and reordered the content so that it flows in a more logical progression.
 {% endcapture %}
 {{ m | markdownify }}
 </div>
+
+Voice and tone guidelines get into the weeds by articulating how the company’s voice and tone should shift across a variety of scenarios. [MailChimp’s brilliant voice and tone guidelines](http://voiceandtone.com/) define how the brand’s tone changes across content types, so that when a user’s credit card is declined, writers know to shift away from their generally cheeky and playful tone of voice and adopt a more serious tone instead.
+
+{% include figure.html src="../images/content/styleguide-voiceandtone.png" caption="Mailchimp’s Voice and Tone guidelines" %}
 
 ### Writing
 The rise of the web and content-managed websites makes it easier than ever for many people within an organization to publish content. This, of course, can be a double-edged sword, as maintaining a consistent writing style for an organization with many voices can be challenging. Writing style guides provide every author some guidelines and guardrails for contributing content.
@@ -415,18 +275,9 @@ Writing style guides can be extremely granular, defining particulars around punc
 ### Code style guides
 It’s essential for teams to write legible, scalable, maintainable code. But without a way to promote and enforce code consistency, it’s easy for things to fall apart and leave every developer to fend for themselves.
 
-{% include figure.html src="../images/content/styleguide-github.png" caption="Github’s code style guide" %}
+{% include figure.html src="../images/content/styleguide-github.png" caption="Github’s code style guide provides best practices for writing HTML, CSS, JavaScript, and Ruby within their organization." %}
 
-
-Code style guides provide conventions, patterns, and examples for how teams should approach their code. These <span class="editor">guidelines and guardrails</span> help rein in the madness so that teams can focus on producing great work together rather than refactoring a bunch of sloppy, inconsistent code.
-
-
-<div class="editor">
-{% capture m %}
-Ed: Worth avoiding repetition? Though I love guardrails applied in this context. Sheesh! Praise again. Must cut that out.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+Code style guides provide conventions, patterns, and examples for how teams should approach their code. These guidelines and guardrails help rein in the madness so that teams can focus on producing great work together rather than refactoring a bunch of sloppy, inconsistent code.
 
 ## Pattern Libraries
 And now for the main event. Pattern libraries, also known as front-end style guides, UI libraries, or component libraries, are quickly becoming a cornerstone of modern interface design.
@@ -438,7 +289,7 @@ The rest of this book will concentrate on how to approach interface design in a 
 
 ## Style guide benefits
 
-<span class="editor">Web designers are now tasked with creating interfaces that look and function beautifully across a myriad of screen sizes, devices, browsers, and environments. That’s a tall order in and of itself.</span> But once you factor in other team members, clients, stakeholders, and organizational quirks, things start looking downright _intimidating_.
+<span class="editor">Getting UIs to work across a myriad of screen sizes, devices, browsers, and environments is a tall order in and of itself.</span> But once you factor in other team members, clients, stakeholders, and organizational quirks, things start looking downright _intimidating_.
 
 <div class="editor">
 {% capture m %}
@@ -447,14 +298,14 @@ Ed: I've read this before (lines 84, 165, 172). Yes, it's an important point, bu
 {{ m | markdownify }}
 </div>
 
-Style guides are important tools that help prevent chaos, both from a design and development standpoint and also from an organizational perspective. Here’s why style guides are <span class="editor">quickly becoming</span> essential tools for modern web design and development.
-
-<div class="editor">
+<div class="editor brad">
 {% capture m %}
-Ed: Are quickly becoming essential…? Or are _now_ essential…?
+Brad: Duly noted. Methinks this repetition is a result of multiple writing sessions. In this specific instance, I want to keep the concept there, but I've abbreviated it and combined it with the next sentence. I think it's important to note that the design and technical challenges are crazy hard as is, but my next point is that adding humans into the mix makes it even more daunting.
 {% endcapture %}
 {{ m | markdownify }}
 </div>
+
+Style guides are important tools that help prevent chaos, both from a design and development standpoint and also from an organizational perspective. Here’s why style guides are now essential tools for modern web design and development.
 
 ### Consistently awesome
 
@@ -462,16 +313,9 @@ Ed: Are quickly becoming essential…? Or are _now_ essential…?
 
 I recently visited my health insurance provider’s website to pay my bill. In the course of five clicks, I was hit with four distinct interface designs, some of which looked like they were last touched in 1999. This inconsistent experience put the burden on me, the user, to figure out what went where and how to interpret disparate interface elements. By the time I got to the payment form, I felt like I couldn’t trust the company to successfully and securely process my payment.
 
-Style guides help <span class="editor">rein in</span> these inconsistencies by encouraging reuse of interface elements. Designers and developers can refer back to existing patterns to ensure the work they’re producing is consistent with what’s already been established.
+Style guides help iron out these inconsistencies by encouraging reuse of interface elements. Designers and developers can refer back to existing patterns to ensure the work they’re producing is consistent with what’s already been established.
 
-<div class="editor">
-{% capture m %}
-Ed: Repetition. Consider: avoid, sidestep, iron out, prevent, etc.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-Even third parties responsible for matching their experiences with the branding and look and feel of a primary experience can make great use of a style guide. <span class="editor">Outside</span> experiences, such as payment portals or localized sites, can better match the look and feel of the primary experience by applying the patterns in the style guide.
+Even third parties responsible for matching their UIs with the look and feel of the company's internal UIs can make great use of a style guide. Externally-hosted experiences like payment portals or localized sites can better match the look and feel of the primary experience by applying the styles defined in the guide.
 
 <div class="editor">
 {% capture m %}
@@ -480,15 +324,14 @@ Ed: External? Subsidiary? Secondary?
 {{ m | markdownify }}
 </div>
 
-Making style guides central to your process results in user interfaces that feel more <span class="editor">cohesive</span> and trustworthy, which helps users accomplish their tasks faster and empowers them to master the interface.
-
-
 <div class="editor">
 {% capture m %}
-Ed: Hello!
+Brad: This whole paragraph needed some love, so I rewrote it to clarify things a bit.
 {% endcapture %}
 {{ m | markdownify }}
 </div>
+
+Making style guides central to your process results in user interfaces that feel more united and trustworthy, which helps users accomplish their tasks faster and empowers them to master the interface.
 
 ### A shared vocabulary
 What does “utility toolbar” mean? Does everyone understand what a “touch slider hero” is?
@@ -500,59 +343,36 @@ As the number of people working on a project increases, it becomes all too easy 
 **Style guides establish a consistent, shared vocabulary between everyone involved in a project**, encouraging collaboration between disciplines and reducing communication breakdowns.
 
 ### Education
-In <span class="editor">her book</span> [Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/), Anna Debenham deftly explains the <span class="editor">myriad</span> advantages of creating style guides, including one of the most crucial benefits: education.
-
-<div class="editor">
-{% capture m %}
-Ed: Can you put the title of books in HTML cite elements? Is that appropriate?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor">
-{% capture m %}
-Ed: myriad: see earlier note about plethora.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+In her book <cite>[Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/)</cite>, Anna Debenham deftly explains the many advantages of creating style guides, including one of the most crucial benefits: education.
 
 > Education is as important as documentation. A style guide can show clients that websites are systems rather than collections of pages. <cite>[Anna Debenham](http://maban.co.uk/projects/front-end-style-guides/)</cite>
 
-
 Style guides demonstrate to clients, stakeholders, and other disciplines that there's a lot of really thoughtful work going into a website's design and development beyond just "Hey, let's make a new website." **A pattern library communicates the design language in a very tangible way**, which helps stakeholders understand that an underlying system is determining the final interface.
 
-Style guides can help alleviate _special snowflake syndrome_, where certain departments in an organization think that they have unique problems and therefore demand unique solutions. By exposing the design system in the form of a style guide, these special snowflakes can better appreciate consistency and understand why their requests for custom designs receive pushback.
+Style guides can help alleviate what I call _special snowflake syndrome_, where certain departments in an organization think that they have unique problems and therefore demand unique solutions. By exposing the design system in the form of a style guide, these special snowflakes can better appreciate consistency and understand why their requests for custom designs receive pushback.
 
 ### An empathetic workflow
-Education isn't just important for clients and stakeholders. A good style guide helps inform designers and developers of the tools they have in their toolbox, and provides <span class="editor">guidelines and guardrails</span> for how to use them properly.
-
-<div class="editor">
-{% capture m %}
-Ed: Repetition can be a powerful rhetorical device, but has to be used sparingly and deliberately. I think here we need some elegant variation. Directions, rules, precepts, instructions, etc.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+Education isn't just important for clients and stakeholders. A good style guide helps inform designers and developers of the tools they have in their toolbox, and provides rules and best practices for how to use them properly.
 
 By making a style guide a cornerstone of your workflow (which we'll detail in chapter 4), **designers and developers are forced to think about how their decisions affect the broader design system**. It becomes harder to go rogue and becomes easier to think of the greater good. And this is exactly where you want team members to be.
 
-A style guide provides a <span class="editor">home</span> for each discipline to contribute their respective considerations and concerns for patterns. By collecting all these considerations under <span class="editor">one roof</span>, the style guide becomes a <span class="editor">watering hole</span> for everyone involved in the project, which helps each discipline better understand the design system from many perspectives.
-
-<div class="editor">
-{% capture m %}
-Ed: Another mixed metaphor. Home and roof work together; perhaps "watering hole" can become simply "place", though it does lose that community feeling. Hub?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+A style guide provides a <span class="editor">home</span> for each discipline to contribute their respective considerations and concerns for patterns. By collecting all these considerations under <span class="editor">one roof</span>, the style guide becomes a hub for everyone involved in the project, which helps each discipline better understand the design system from many perspectives.
 
 ### Testing, testing, 1-2-3
 The homepage is broken, you say? Well, what exactly is breaking it?  
 
-
-The ability to pull an interface apart into its component pieces makes testing a lot easier. A style guide allows you to view interface patterns in isolation, which lets developers <span class="editor">home in</span> on what's causing errors, browser inconsistencies, or performance issues.
+The ability to pull an interface apart into its component pieces makes testing a lot easier. A style guide allows you to view interface patterns in isolation, allowing developers to <span class="editor">zero in</span> on what's causing errors, browser inconsistencies, or performance issues.
 
 <div class="editor">
 {% capture m %}
 Ed: I'll pick this up, though your usage of "hone in" is gaining ground. We might expect someone to "home in" on a target, and to "hone" a blade or their skills. Your usage is what some would call an error, and they're usually the kind who write emails to authors. It's better to assuage their indignation before it arises.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+<div class="editor brad">
+{% capture m %}
+Brad: Hahahaha thanks for getting my back. Can't wait for the grammar police to strike in full force! I changed to "zero in" because it sounds cool and fits the bill.
 {% endcapture %}
 {{ m | markdownify }}
 </div>
@@ -569,14 +389,7 @@ Federico Holgado, lead UX developer at MailChimp, [explained](http://styleguides
 ### In it for the long haul
 There's no doubt style guides help teams effectively get things done in the here and now. But much like a fine wine, style guides increase in value over time. The beautiful thing about interface design systems is that they can and should be modified, extended, and refined for years to come.
 
-As previously mentioned, creating a custom pattern library requires a lot of hard work up front, but that hard work should provide a structural foundation for future iteration and refinement. <span class="editor">Lessons</span> learned from analytics, user testing, A/B testing, and experience should be incorporated into the style guide, making it a powerful hub for truth, knowledge, and best practices.
-
-<div class="editor">
-{% capture m %}
-Ed: I can't let "Learnings" go. "Lessons learned" is the way to go.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+As previously mentioned, creating a custom pattern library requires a lot of hard work up front, but that hard work should provide a structural foundation for future iteration and refinement. Lessons learned from analytics, user testing, A/B testing, and experience should be incorporated into the style guide, making it a powerful hub for truth, knowledge, and best practices.
 
 Better yet, even if you were to undertake a major redesign you'll find that many of the structural interface building blocks will remain the same. You'll still have forms, buttons, headings, other common interface patterns, so there's no need to throw the baby out with the bath water. A style guide provides a rock-solid foundation for all future work, even if that future work may look totally different.
 
@@ -586,18 +399,10 @@ By now the benefits of creating design systems should be abundantly clear, and h
 ### The hard sell
 In order to benefit from style guides, organizations must first appropriate the necessary time and budget to make them happen. **That requires organizations to overcome the short-term mentality that all too often creeps its way into company culture.
 
-The long-term benefits that style guides provide are obvious to those who are already thinking about the long game. The challenge, therefore, becomes convincing those stuck in a short-term, quarter-by-quarter mindset that establishing a <span class="editor">sound design</span> system is a smart investment in the future.
-
-<div class="editor">
-{% capture m %}
-Ed: See earlier note, but I'll leave this one up to you.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+The long-term benefits that style guides provide are obvious to those who are already thinking about the long game. The challenge, therefore, becomes convincing those stuck in a short-term, quarter-by-quarter mindset that establishing a thoughtful design system is a smart investment in the future.
 
 ### A matter of time
 > The hard part is building the machine that builds the product.” <cite>[Dennis Crowley](http://techcrunch.com/2011/03/03/founder-stories-foursquare-crowley-machine/) </cite>
-
 
 Perhaps the biggest, most unavoidable challenge is that **style guides are time-consuming to create**. I don't know about you, but I don't go into work every day twiddling my thumbs wondering what to do with my time. I've never met a person who isn't feeling pressure to get work out the door, and this pressure naturally leads to focusing on the primary web project. Unfortunately, aggressive timelines and finite budgets detract from the effort required to make style guides happen, even when teams are committed to the cause.
 
@@ -610,40 +415,24 @@ This auxiliary project conundrum reminds me of sentiments I often hear around fa
 ### Maintenance and governance
 Even if time and money are allocated to establish style guides, these valuable tools often die on the vine if they're not given the focus they need to reach their true potential.
 
-**Maintenance and governance strategy <span class="editor">is</span> critical to style guides' success**. Style guides will be thrown in the trash (right beside all those PSDs and wireframes) and abandoned without a proper strategy in place for who will manage, maintain, and enforce them.
+**A maintenance and governance strategy is critical to style guides' success**. Style guides will be thrown in the trash (right beside all those PSDs and wireframes) and abandoned without a proper strategy in place for who will manage, maintain, and enforce them.
 
-<div class="editor">
-{% capture m %}
-Ed: Is/Are maintenance and governance strategy one thing or two? That is, one strategy covering maintenance and governance, or one strategy for each?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-Style guide maintenance is a hugely important topic and deserves to be covered in detail, so we'll dive into how to create maintainable style guides in chapter 4.
+Style guide maintenance is a hugely important topic and deserves to be covered in detail, so we'll dive into how to create maintainable style guides in chapter 5.
 
 ### Audience confusion
-**Style guides can be misunderstood as tools useful only to designers or developers**, which leads to a lack of visibility that immediately limits their effectiveness. Instead of serving as <span class="editor">a watering hole</span> for everyone in the organization, a style guide can become a best-kept secret guarded by one discipline. Color me naive, but I don't think this helps foster a culture of collaboration.
-
-<div class="editor">
-{% capture m %}
-Ed: See the earlier note. If the previous instance of "a watering hole" is changed, this one can stay.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+**Style guides can be misunderstood as tools useful only to designers or developers**, which leads to a lack of visibility that immediately limits their effectiveness. Instead of serving as a watering hole for everyone in the organization, a style guide can become a best-kept secret guarded by one discipline. Color me naive, but I don't think this helps foster a culture of collaboration.
 
 Without thinking of broader audiences, style guides may come across as too vague or too technical, which can intimidate other disciplines and lead them to believe these resources aren't for them.
 
 ### Style guide structure
 For style guides to be useful resources for everyone in an organization, they should clearly convey what they are and why they matter. Style guides should be attractive, inviting, visible, clear, and easy to use. As mentioned above, they should be aware that a whole host of audiences will be viewing them, so should therefore aim to be welcoming and useful for as many people as possible.
 
-
 {% include figure.html src="../images/content/styleguide-yelp.png" caption="Yelp's style guide homepage sports a handsome design and important intro text explaining the purpose and audience for the guide." %}
 
 ### Lack of context
 Context is key to understanding a design system. Unfortunately, most pattern libraries out in the wild don't provide any hints as to when, how, and where their components get used. Without providing context, designers and developers don't know how global a particular pattern is, and as a result wouldn't know which pages of their app would need to be revisited, QA'd, and tested if changes were made.
 
-
-{% include figure.html src="../images/content/pattern-highlight-block.png" caption="'Highlight Block' looks like a useful and reusable pattern, but where is it being made used of?" %}
+{% include figure.html src="../images/content/pattern-highlight-block.png" caption="'Highlight Block' looks useful, but where is this pattern being used?" %}
 
 ### Lacking a clear methodology
 As much as I adore the pattern libraries [out there](http://styleguides.io/examples.html), I can't help but notice a lack of structure in many of them. Don't get me wrong, I think it's absolutely fantastic that teams are thinking systematically and are documenting their UI patterns. But I often feel like many pattern libraries are little more than loosely arranged sprays of modules. I think there's room for improvement.
@@ -651,6 +440,6 @@ As much as I adore the pattern libraries [out there](http://styleguides.io/examp
 ## In search of an interface design methodology
 For us to create experiences for this eclectic web landscape, we must evolve beyond the page metaphor that's been with us since the birth of the web. Thankfully, organizations are embracing modularity across every aspect of the web creation process, which is leading to smarter work and more sustainable systems.
 
-As the number of devices, browsers, and environments we must account for increases at a staggering rate, the need to create thoughtful, deliberate interface design systems is becoming more apparent than ever.
+As the number of devices, browsers, and environments continues to increase at a staggering rate, the need to create thoughtful, deliberate interface design systems is becoming more apparent than ever.
 
 Enter atomic design.
