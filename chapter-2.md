@@ -27,7 +27,7 @@ Ed: Is it necessary to repeat the image caption text?
 
 <div class="editor brad">
 {% capture m %}
-Brad: Short answer, yes. My rationale is that people like myself sometimes skim text for images w/ captions as landmarks, but other times stick to reading the primary text and gloss right over images, asides, captions, and footnotes. So this duplication is to address the fact that my potentially ADD-prone, skimmy (that's a word, right?) readership might not read everything in its entirety.
+Brad: Short answer: yes. My rationale is that people like myself sometimes skim text for images w/ captions as landmarks, but other times stick to reading the primary text and gloss right over images, asides, captions, and footnotes. So this duplication is to address the fact that my potentially ADD-prone, skimmy (that's a word, right?) readership might not read everything in its entirety.
 {% endcapture %}
 {{ m | markdownify }}
 </div>
@@ -61,7 +61,7 @@ Apparently Mr. Rae's strategy of having students mind-numbingly balance tons of 
 ## The atomic design methodology
 By now you may be wondering why we're talking about atomic theory, and maybe you're even a bit angry at me for forcing you to relive memories of high school chemistry class. But this is going somewhere, I promise.
 
-We discussed earlier how all matter in the universe can be broken down into a finite set of atomic elements. As it happens, our interfaces can be broken down into a similar finite set of elements. [Josh Duck's Periodic Table of HTML Elements](http://smm.zoomquiet.io/data/20110511083224/index.html) beautifully articulates how all of our websites, apps, intranets, hoobadyboop, and whatevers are all composed of the same HTML elements.
+We discussed earlier how all matter in the universe can be broken down into a finite set of atomic elements. As it happens, our interfaces can be broken down into a similar finite set of elements. [Josh Duck's Periodic Table of HTML Elements](http://smm.zoomquiet.io/data/20110511083224/index.html) beautifully articulates how all of our websites, apps, intranets, hoobadyboops, and whatevers are all composed of the same HTML elements.
 
 {% include figure.html src="../images/content/html-periodic-table.png" caption="The periodic table of HTML elements by Josh Duck." %}
 
@@ -79,7 +79,7 @@ Enter atomic design.
 
 {% include figure.html src="../images/content/atomic-design-process.png" caption="Atomic design is atoms, molecules, organisms, templates, and pages concurrently working together to create effective interface design systems." %}
 
-These five stages serve as a mental model to help us think of our user interfaces as both a cohesive whole and a collection of parts *at the same time*. Let's dive into each stage and discuss its role in crafting a thoughtful interface design system.
+<span class="editor brad" id="brad-note-1">**Atomic design is not a linear process**, but rather a mental model to help us think of our user interfaces as both a cohesive whole and a collection of parts *at the same time*. Each of the five stages plays a key role in the hierarchy of our interface design systems. Let's dive into each stage in a bit more detail.</span>
 
 ## Atoms
 {% include figure.html src="../images/content/atomic-design-atoms.png" caption="" %}
@@ -116,7 +116,7 @@ Now we have simple, functional, reusable components that we can put into a broad
 
 Let's revisit our search form molecule. A search form can often be found in the header of many web experiences, so let's put that search form molecule into the context of a header organism.
 
-{% include figure.html src="../images/content/organism-header.png" caption="The search form molecule placed in the context of the header organism, which also contains the logo atom and the primary navigation molecule." %}
+{% include figure.html src="../images/content/organism-header.png" caption="This header organism is composed of a search form molecule, logo atom, and primary navigation molecule." %}
 
 The header forms a standalone section of an interface, even though it contains several smaller pieces of interface with their own unique properties and functionality.
 
@@ -203,27 +203,20 @@ In his book <cite>The Shape of Design</cite>, Frank Chimero beautifully articula
 
 Atomic design lets us dance between contexts like the painter Frank so eloquently describes. The atoms, molecules, and organisms that comprise our interfaces do not live in a vacuum. And our interfaces' templates and pages are indeed composed of smaller parts. The parts of our designs influence the whole, and the whole influences the parts. The two are intertwined, and atomic design embraces this fact.
 
-When designers and developers are crafting a particular component, we are like the painter at the canvas creating detailed strokes. When we are viewing those components in the context of a layout with real representative content in place, we are like the painter several feet back from the canvas assessing how their detailed strokes affect the whole composition. It's necessary to <span class="editor">hone in</span> on one particular component to ensure it is functional, usable, and beautiful. But it's also necessary to ensure that component is functional, usable, and beautiful *in the context of the final UI*.
+When designers and developers are crafting a particular component, we are like the painter at the canvas creating detailed strokes. When we are viewing those components in the context of a layout with real representative content in place, we are like the painter several feet back from the canvas assessing how their detailed strokes affect the whole composition. It's necessary to home in on one particular component to ensure it is functional, usable, and beautiful. But it's also necessary to ensure that component is functional, usable, and beautiful *in the context of the final UI*.
 
-<div class="editor">
-{% capture m %}
-Ed: See note in chapter 1 about "home in* and "hone"
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-Atomic design provides us a structure to <span class="editor">traverse between</span> the parts and the whole of UIs, which is why it's crucial to <span class="editor">reiterate that **atomic design is not a linear process</span>**. It would be foolish to design buttons and other elements in isolation then cross our fingers and hope everything comes together to form a cohesive whole. So don't interpret the five stages of atomic design as "Step 1: atoms; Step 2: molecules; Step 3: organisms; Step 4: templates; Step 5: pages." Instead, **think of the stages of atomic design as a mental model that allows us to concurrently create final UIs and their underlying design systems**.
-
-<div class="editor">
-{% capture m %}
-Ed: See earlier note about traversing.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+Atomic design provides us a structure to navigate between the parts and the whole of our UIs, which is why it's crucial to <span class="editor">reiterate that **atomic design is not a linear process**</span>. It would be foolish to design buttons and other elements in isolation then cross our fingers and hope everything comes together to form a cohesive whole. So don't interpret the five stages of atomic design as "Step 1: atoms; Step 2: molecules; Step 3: organisms; Step 4: templates; Step 5: pages." Instead, **think of the stages of atomic design as a mental model that allows us to concurrently create final UIs and their underlying design systems**.
 
 <div class="editor">
 {% capture m %}
 Ed: Where did you first state this? I can't find it in chapter 1 or earlier in this chapter.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+<div class="editor brad">
+{% capture m %}
+Brad: Good catch! I think my original intention with the word "reiterate" was really to say "stress", but I realize I really _do_ need to reiterate this point. I've addressed this <a href="#brad-note-1">when I introduce the concept</a>.
 {% endcapture %}
 {{ m | markdownify }}
 </div>
@@ -246,21 +239,7 @@ The content we pour into our UIs at the page stage will influence the characteri
 ### What's in a name?
 Throughout this book I've mentioned that modular design and development is nothing new. So why are we introducing terms like _atoms_, _molecules_, and _organisms_ when we can just stick with established terms like _modules_, _components_, _elements_, _sections_, and _regions_?
 
-<div class="editor">
-{% capture m %}
-Ed: I've removed the quote marks around the terms and italicized them instead. While there's nothing wrong with using the marks to highlight words as words, when so many are used together, they make the text more difficult to read, tripping up the reader. Italics serve the same purpose but act more smoothly.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
 For as long as I've been talking about atomic design, I've had people proffer alternate names for the stages of the methodology. Person One would suggest, "Why not just name them elements, modules, and components?" while Person Two would suggest, "Why not just name them base, components, and modules?" The issue with terms like components and modules is that a sense of hierarchy can't be deduced from the names alone. **Atoms, molecules, and organisms imply a hierarchy** that anyone with a basic knowledge of chemistry can hopefully wrap their heads around.
-
-<div class="editor">
-{% capture m %}
-Ed: And once the terms are under discussion, we can ditch italics on what the reader should now recognize as terminology in this context.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
 
 That being said, naming things is hard and imperfect. The names I've chosen for the stages of atomic design have worked really well for me and the teams I've worked with as we create UI design systems. But maybe they don't work for you and your organization. That's more than OK. Here's one perspective from the design team at GE:
 
