@@ -136,23 +136,38 @@ It's worth pointing out that things may not shake out the way you hoped. Despite
 With the design system initiative approved, it's now time to put the right people and processes in place to ensure the system flourishes for your organization.
 
 #### Design system makers and users
-First things first. It's important to recognize that **there will inevitably be people at the organization that help <em>make and maintain</em> the design system, and there will be people who will be <em>users</em> of the design system**. There may be overlap between these two groups, but establishing the roles of makers and users is important nonetheless.
+First things first. It's important to recognize that **there will inevitably be people at the organization who help <em>make and maintain</em> the design system, and there will be people who will be <em>users</em> of the design system**. There may be overlap between these two groups, but establishing the roles of makers and users is important nonetheless.
 
-When I talk about establishing a more collaborative process like the one I detailed in the last chapter, I inevitably hear people who work at large organizations say, "but Brad, we have hundreds (or even thousands) of developers working on our products, so getting all those people to collaborate and contribute like that would be far too difficult."
+When I talk about establishing a more collaborative process like the one I detailed in the previous chapter, I inevitably hear people who work at large organizations say, "But Brad, we have hundreds (or even thousands) of developers working on our products. Getting all those people to collaborate and contribute like that would be far too difficult."
 
-They're likely right. It would be ideal if the entire organization adopted more nimble, collaborative processes, but the daunting logistics around such an effort makes it improbable. But here's the thing. Not *everyone* in the organization needs to directly contribute to the design system, but someone (or more likely, some people) must take ownership of it.
+They're likely right. It would be ideal if the entire organization adopted nimbler, more collaborative processes, but the daunting logistics around such an effort makes it improbable. But here's the thing: not *everyone* in the organization needs to contribute directly to the design system, but someone (or more likely, some people) must take ownership of it.
 
-**The design system <em>makers</em> are the ones who create, maintain, and govern the system**, and they need to work closely together to ensure that the system is smart, flexible, scalable, and addresses the needs of the users and business. **The design system <em>users</em> are the teams across the organization who will take the system and employ its interface patterns to specific applications**. 
+**The design system <em>makers</em> are the ones who create, maintain, and govern the system**, and they need to work closely together to ensure that the system is smart, flexible, scalable, and addresses the needs of the users and business. **The design system <em>users</em> are the teams across the organization who will take the system and employ its interface patterns to specific applications.** 
 
-{% include figure.html src="../images/content/makers-users.png" caption="Design system makers and users" %}
+{% include figure.html src="../images/content/makers-users.png" caption="Design system makers and users." %}
 
-**The design system <em>makers</em> and design system <em>users</em> need to maintain a close working relationship** to ensure the patterns defined within the system serve the needs of the applications and all documentation is clear. **Makers provide a birds-eye perspective of the entire ecosystem the design system serves, while users provide an on-the-ground perspective focused on specific applications of the system**. Jina Bolton of Salesforce sums the relationship between makers and users quite nicely:
+**The design system <em>makers</em> and design system <em>users</em> need to maintain a close working relationship** to ensure the patterns defined within the system serve the needs of the applications, and that all documentation is clear. **Makers provide a birds-eye perspective of the entire ecosystem the design system serves, while users provide an on-the-ground perspective focused on specific applications of the system.** Jina Bolton of Salesforce sums up the relationship between makers and users quite nicely:
 
 > The Design System informs our Product Design. Our Product Design informs the Design System. <cite><a href="https://medium.com/salesforce-ux/the-salesforce-team-model-for-scaling-a-design-system-d89c2a2d404b">Jina Bolton, Salesforce</a>
 
-Both perspectives are critical to the success of the design system, which is why it's so important for makers and users to have a healthy relationship that involves frequent communication and collaboration. 
+Both outlooks are critical to the success of the design system, which is why it's so important for makers and users to have a healthy relationship that involves frequent communication and collaboration. 
 
-#### Who are the design system makers?
+<div class="editor">
+{% capture m %}
+Ed: There’s a lot of bold – and even emphasis within bold – in the section above; indeed, in this whole chapter. Chances are, you don’t need to try so hard – it’s a typographic hammer to crack a semantic nut. You make your points effectively and eloquently enough without having to jab the reader in the eye. I’ve left it all in, however, as you may feel the points are important enough to warrant it. Up to you.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+#### <del>Who are the d</del>Design system makers<del>?</del>
+
+<div class="editor">
+{% capture m %}
+Ed: I’m not a fan of questions as headings. You can convey what's required in fewer words by what some people call front-loading; that is, remove the question signals (in this case, “Who are the”) that get in the way, and move the relevant content to the front of the heading. Boom. This is particularly effective here as you begin the following paragraph with more questions.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
 Who updates the design system? Who approves changes? Who interfaces with the users of the design system to make sure it's addressing their needs? Who gets to decide which patterns stay, go, or need tweaked? 
 
 The answers to these questions **will very much depend on the size and setup of your organization**.
