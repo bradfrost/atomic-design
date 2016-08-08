@@ -17,9 +17,9 @@ The cornerstone of pattern-based design and development is the pattern library, 
 - They **make cross-browser/device, performance, and accessibility testing easier**.
 - They **serve as a future-friendly foundation** for teams to modify, extend, and improve on over time.
 
-That all sounds wonderful, right? I can almost hear you saying, "I need this whole pattern library thing in my life." But how do we make pattern libraries happen? Well, you've come to the right place, friend, because the rest of this book is dedicated to exactly that. This chapter will introduce helpful tools for creating pattern libraries, and the next chapter will discuss how to make patterns a cornerstone of your design and development workflow.
+That all sounds wonderful, right? I can almost hear you saying, "I need this whole pattern library thing in my life." But how do we make pattern libraries happen? Well, you've come to the right place, friend, because the rest of this book is dedicated to exactly that. This chapter will introduce helpful tools for creating pattern libraries, the next chapter will discuss how to make patterns a cornerstone of your design and development workflow, and the fifth chapter will cover how to make your design system stand the test of time.
 
-I'll talk about the qualities of effective pattern libraries through the lens of a tool called [Pattern Lab](http://patternlab.io), an open source project created by me and [Dave Olsen](http://dmolsen.com) to execute atomic design systems. While I'll excitedly discuss Pattern Lab and its various features, I want to stress that the point of this chapter is to cover the characteristics of well-constructed pattern libraries, not sell any one specific tool to you. Hell, Pattern Lab isn't even for sale! No single tool will be a perfect fit for all readers, but be sure to keep the following principles in mind when deciding what tools to use to create your pattern libraries.
+This chapter will talk about the qualities of effective pattern libraries through the lens of a tool called [Pattern Lab](http://patternlab.io), an open source project maintained by web developers [Dave Olsen](http://dmolsen.com), [Brian Muenzenmeyer](http://www.brianmuenzenmeyer.com/), and me to execute atomic design systems. While I'll excitedly discuss Pattern Lab and its various features, I want to stress that the point of this chapter is to cover the characteristics of well-constructed pattern libraries, not sell any one specific tool to you. Hell, Pattern Lab isn't even for sale! No single tool will be a perfect fit for every setup and scenario, but be sure to keep the following principles in mind when deciding what tools to use to create your pattern libraries.
 
 ## Just what exactly is Pattern Lab?
 Before we dive into the nuts and bolts of how Pattern Lab works, it's important to take time to explain what the tool is and isn't.
@@ -34,26 +34,26 @@ Before we dive into the nuts and bolts of how Pattern Lab works, it's important 
 - language-, library-, or style-dependent.
 - a replacement for a content management system.
 
-Let's walk through these points, starting with the term *static site generator*. Static site generator tools take in some source code and assets, compile them, and spit out plain ol' HTML, CSS, and JavaScript at the other end. **Pattern Lab takes source code – namely patterns – and compiles those patterns into a functional front-end UI inside a pattern library shell**.
+Let's walk through these points, starting with the term *static site generator*. Static site generator tools take in some source code and assets, compile them, and spit out plain ol' HTML, CSS, and JavaScript at the other end. **Pattern Lab takes source code – namely patterns — and compiles those patterns into a functional front-end UI inside a pattern library shell**.
 
 So what does Pattern Lab look like out of the box? Drumroll, please.
 
-{% include figure.html src="../images/content/pattern-lab-default.png" caption="The default Pattern Lab dashboard. What it lacks in good looks, it makes up for in utility." %}
+{% include figure.html src="../images/content/pattern-lab-default.png" caption="One default Pattern Lab dashboard. What it lacks in good looks, it makes up for in utility." %}
 
-Not a terribly inspiring design, eh? Believe it or not, this minimal (one might even say _lack of_) design is deliberate. To avoid incorrect classification as a UI framework like Bootstrap, the design is deliberately stripped down so no one would mistakenly take Pattern Lab's demo UI for suggested styles. Pattern Lab doesn't give you any answers as to how to design or architect your front-end code—*you have to do all that work yourself*. The look and feel, naming conventions, syntax, structure, libraries, and scripts you choose to use to create your UI is entirely up to you. Heck, you can even use UI frameworks like Bootstrap _within_ Pattern Lab. Pattern Lab is just there to help stitch everything together.
+Not a terribly inspiring design, eh? Believe it or not, this minimal (one might even say _lack of_) design is deliberate. To avoid incorrect classification as a UI framework like Bootstrap, the design is deliberately stripped down so no one would mistakenly take Pattern Lab's demo UI for suggested styles. Pattern Lab doesn't give you any answers as to how to design or architect your front-end code—*you have to do all that work yourself*. The look and feel, naming conventions, syntax, structure, libraries, and scripts you choose to use to create your UI is entirely up to you and your team. Heck, you can even use UI frameworks like Bootstrap _within_ Pattern Lab. Pattern Lab is just there to help stitch everything together.
 
-As a technical aside, Pattern Lab uses PHP as the engine that stitches patterns together and generates the pattern library. However, you don't need to be a PHP wizard to use Pattern Lab any more than you have to know how to build an internal combustion engine to drive a car. Moreover, your final website doesn't have to be built with PHP to use the tool, as Pattern Lab's output is backend-agnostic HTML, CSS, and JavaScript. But if you're one of those cool kids who thinks using a PHP-based tool will somehow ruin your reputation, there's also a [Node.js version](https://github.com/pattern-lab/patternlab-node) thanks to web developer [Brian Muenzenmeyer](http://www.brianmuenzenmeyer.com/).
+As a technical aside, Pattern Lab uses either PHP or Node as the engine that stitches patterns together and generates the pattern library. However, you don't need to be a PHP wizard or Node guru to use Pattern Lab any more than you have to know how to build an internal combustion engine to drive a car. Moreover, your final website doesn't have to be built with PHP or Node to use the tool, as Pattern Lab's output is backend-agnostic HTML, CSS, and JavaScript. So like any technology decision, choose a pattern library tool that fits with your organization's infrastructure and jives with how your team works together.
 
-If that all sounded like gibberish to you, don't worry. This chapter focuses on the overarching features and principles behind Pattern Lab rather than going too far down the technical rabbit hole. You can check out [Pattern Lab's documentation](http://patternlab.io/docs/index.html) to dive into the nitty-gritty.
+If that all sounded like gibberish to you, don't worry. This chapter focuses on the overarching features of Pattern Lab and principles of effective pattern libraries rather than going too far down the technical rabbit hole. If interested, you can check out [Pattern Lab's documentation](http://patternlab.io/docs/) to dive into the nitty-gritty.
 
 ## Building atomic design systems with Pattern Lab
-To understand the core concept behind Pattern Lab, you need to understand <span class="editor">Russian nesting dolls</span>.
+To understand the core concept behind Pattern Lab, you need to understand Russian nesting dolls.
 
 {% include figure.html src="../images/content/russian-nesting-dolls.jpg" caption="Russian nesting dolls. <a href='https://www.flickr.com/photos/tromal/6901848291/'>Via Flickr user Tromal</a>" %}
 
 Matryoshka dolls (also known as Russian nesting dolls) are beautifully carved hollow wooden dolls of increasing size that are placed inside one another. Patterns in Pattern Lab operate in a similar manner: the smallest patterns (atoms) are included inside bigger patterns (molecules), which are included in even bigger patterns (organisms), which are in turn included in even bigger patterns (templates).
 
-Constructing UIs in this manner helps keep things [DRY](https://en.wikipedia.org/wiki/Don't_repeat_yourself), which is a long-standing computer science principle that stands for "don't repeat yourself." Make a change to a pattern, and anywhere that pattern is employed will magically update with those changes. This saves an extraordinary amount of time and grief, and certainly beats the pants off sifting through hundreds of Photoshop documents for every instance of a pattern just to make a simple change.
+Constructing UIs in this manner keeps things [DRY](https://en.wikipedia.org/wiki/Don't_repeat_yourself), which is a long-standing computer science principle that stands for "don't repeat yourself." What this means is that you can make a change to a pattern, and anywhere that pattern is employed will magically update with those changes. This Russian nesting doll approach considerably speeds up your workflow, and certainly beats the pants off sifting through hundreds of Photoshop documents for every instance of a pattern in order to make a simple change.
 
 To make this happen Pattern Lab uses the *include* feature of [Mustache](https://mustache.github.io/), a logicless templating language. Here's what a Mustache include looks like:
 
@@ -65,38 +65,25 @@ To make this happen Pattern Lab uses the *include* feature of [Mustache](https:/
 
 This is Mustache code, in case the double curly braces ({% raw %}`{{}}`{% endraw %}) that look like little mustaches didn't give it away. The greater-than symbol (`>`) is Mustache's way of telling Pattern Lab to include an atom pattern called "thumbnail". Pattern Lab will go searching through its folders of patterns to find an atom named "thumbnail".
 
-<div class="editor">
-{% capture m %}
-Ed: I've retained your use of full stops (periods) outside the quotation marks here, as you're referring to a code sample. Were the full stops within the quotation marks, they might be construed as being part of that code.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-{% include figure.html src="../images/content/pattern-lab-file-structure.png" caption="This is what Pattern Lab's default patterns folder structure looks like. You can name and categorize these folders however you'd like, even removing the labels “atoms”, “molecules”, and “organisms.” The most important consideration is to establish naming and categorization that is clearest for your team." %}
+{% include figure.html src="../images/content/pattern-lab-file-structure.png" caption="This is what Pattern Lab's patterns folder structure can look like. You can name and categorize these folders however you'd like, including changing the labels “atoms”, “molecules”, and “organisms”, “templates”, and ”pages”. The most important consideration is to establish naming and categorization that is most effective for your team." %}
 
 Now that we know what an include looks like, let's put it into practice and take a look at a few patterns from a website I helped make for Time Inc. Here's one reusable pattern we designed:
 
-{% include figure.html src="../images/content/pattern-lab-molecule.png" caption="For Time Inc.'s website, we created a basic block pattern consisting of a thumbnail image, headline, and excerpt." %}
+{% include figure.html src="../images/content/pattern-lab-molecule.png" caption="For Time Inc.'s website, we created a basic block molecule consisting of a thumbnail image, headline, and excerpt." %}
 
 This pattern should look fairly familiar. A thumbnail image, headline, and excerpt working together as a single unit is a common pattern found on countless websites. Let's take a peek behind the curtain to see how this pattern is constructed.
 
-<em>[<small>Note from Brad: Forgive the mess with the <span class="editor">markup formatting</span>. I need to look into how to properly escape characters and highlight syntax in a way that works for the site but also for the eventual ebook.</small>]</em>
+````````html
+<div class="block-post">
+    <a href="{% raw %}{{ url }}{% endraw %}">
+        {% raw %}{{> atoms-thumb }}{% endraw %}
+        <h3>{% raw %}{{ headline }}{% endraw %}</h3>
+       <p>{% raw %}{{ excerpt }}{% endraw %}</p>
+    </a>
+</div>
+````````
 
-<pre>
-<code>
-{% raw %}
-\<div class="block-post"\>
-    \<a href="{{ url }}"\>
-        {{> atoms-thumb }}
-        \<h3\>{{ headline }}\</h3\>
-       \<p\>{{ excerpt }}\</p\>
-    \</a\>
-\</div\>
-{% endraw %}
-</code>
-</pre>
-
-You can see we have: HTML markup consisting of a wrapper `div` with a class name of `block-post`; a link; a Mustache include for the thumbnail image; an `<h3>` <span class="editor">tag</span> for the headline; and a `<p>` tag for the excerpt. You'll notice there's more Mustache code for `url`, `headline`, and `excerpt`, which we'll use later to dynamically swap in actual content. More on that in a bit.
+You can see we have: HTML markup consisting of a wrapper `div` with a class name of `block-post`; a link; a Mustache include for the thumbnail image; an `<h3>` element for the headline; and a `<p>` tag for the excerpt. You'll notice there's more Mustache code for `url`, `headline`, and `excerpt`, which we'll use later to dynamically swap in actual content. More on that in a bit.
 
 <div class="editor">
 {% capture m %}
@@ -107,11 +94,9 @@ Ed: HTML tag or element? I tend to think of elements as having opening and closi
 
 Now that our pattern markup is established, we can include that chunk of code in bigger patterns using the same include method:
 
-<pre>
-<code>
+````````html
 {% raw %}{{> molecules-block-post }}{% endraw %}
-</code>
-</pre>
+````````
 
 Now let's move up to more complex organisms like the website's header, which looks a little something like this:
 
@@ -119,34 +104,21 @@ Now let's move up to more complex organisms like the website's header, which loo
 
 When we crack open the hood to look at the header's markup in Pattern Lab, we see the following:
 
-<pre>
-<code>
-{% raw %}
-\<header role="banner"\>
-    {{> atoms-logo }}
-    {{> molecules-primary-nav }}
-    {{> molecules-search }}
-\</header\>
-{% endraw %}
-</code>
-</pre>
+````````html
+<header role="banner">
+    {% raw %}{{> atoms-logo }}{% endraw %}
+    {% raw %}{{> molecules-primary-nav }}{% endraw %}
+    {% raw %}{{> molecules-search }}{% endraw %}
+</header>
+````````
 
-What's going on here? Well, we have a basic `<header>` <span class="editor">tag</span>, and inside that <span class="editor">tag</span> we're including the logo image atom, the primary navigation molecule, and the search form molecule.
-
-<div class="editor">
-{% capture m %}
-Ed: HTML tag or element?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+What's going on here? Well, we have a basic `<header>` element, and inside that element we're including the logo image atom, the primary navigation molecule, and the search form molecule.
 
 And now we can include that relatively complex pattern anywhere we need it.
 
-<pre>
-<code>
+````````html
 {% raw %}{{> organisms-header }}{% endraw %}
-</code>
-</pre>
+````````
 
 I hope by now you can see the Russian nesting dolls in action. The smallest atoms are included in bigger molecules, and those molecules get included in even bigger organisms. Now let's take these components and plug them into a layout. Take the homepage template, for instance:
 
@@ -156,52 +128,44 @@ Take a quick stroll through the homepage template and you'll see some pretty sta
 
 So how does this look in code? As you might expect, it involves more includes!
 
-<pre>
-<code>
-{% raw %}
-{{> organisms-header }}
-\<main role="main"\>
-    {{# hero }}
+````````html
+{% raw %}{{> organisms-header }}{% endraw %}
+<main role="main">
+    {% raw %}{{# hero }}
     {{> molecules-hero }}
-    {{/ hero }}
-    \<section\>
-        {{# experience-block }}
+    {{/ hero }}{% endraw %}
+    <section>
+        {% raw %}{{# experience-block }}
         {{> molecules-block-main }}
         {{/ experience-block }}
         {{# experience-feature }}
         {{> organisms-story-feature }}
-        {{/ experience-feature }}
-    \</section\>
-    \<section\>
-        {{# factoid-advertising }}
+        {{/ experience-feature }}{% endraw %}
+    </section>
+    <section>
+        {% raw %}{{# factoid-advertising }}
         {{> organisms-factoid }}
-        {{/ factoid-advertising }}
-    \</section\>
-    \<section\>
-        {{# advertising }}
+        {{/ factoid-advertising }}{% endraw %}
+    </section>
+    <section>
+        {% raw %}{{# advertising }}
         {{> molecules-block-main }}
-        {{/ advertising }}
-    \</section\>
+        {{/ advertising }}{% endraw %}
+    </section>
     …   
-\</main\>
-{{> organisms-footer }}
-{% endraw %}
-</code>
-</pre>
+</main>
+{% raw %}{{> organisms-footer }}{% endraw %}
+````````
 
 At this stage in the game the smaller patterns are already constructed, so all the template needs to do is pull them into the context of a page layout and give them unique names.
 
 Taking a closer look at the code, notice that certain patterns like `{% raw %}{{> organisms-header }}{% endraw %}` and `{% raw %}{{> organisms-footer }}{% endraw %}` are included the same way as the earlier examples. But there are also a few other includes patterns that are supplemented by some additional information, like the following:
 
-<pre>
-<code>
-{% raw %}
-{{# factoid-advertising }}
+````````html
+{% raw %}{{# factoid-advertising }}
 {{> organisms-factoid }}
-{{/ factoid-advertising }}
-{% endraw %}
-</code>
-</pre>
+{{/ factoid-advertising }}{% endraw %}
+````````
 
 We're including `organisms-factoid` in the same way as all the other patterns, but we're also naming it `factoid-advertising` by wrapping the include in a Mustache *section*, indicated by the Mustache code containing the `#` and `/` symbols. By giving the pattern instance a unique name, we can latch on to it and dynamically replace the content of the pattern. More on that in the next section!
 
@@ -227,9 +191,7 @@ Ed: File names aren't code (unless they appear in code), so shouldn't be marked 
 {{ m | markdownify }}
 </div>
 
-<pre>
-<code>
-{% raw %}
+````````json
 "hero" : {
   "headline": "Lorem Ipsum",
   "img": {
@@ -237,9 +199,7 @@ Ed: File names aren't code (unless they appear in code), so shouldn't be marked 
     "alt": "Hero Image"
   }
 }
-{% endraw %}
-</code>
-</pre>
+```````
 
 For developers, this type of format most likely looks familiar. If you're not a developer, don't freak out! Once you look beyond the curly braces and quotes, you'll see that we're defining a `hero` object (for the full-bleed hero area directly below the header) that has a `headline` value of "Lorem Ipsum" and an `img` with a `src` value of "/images/sample/fpo_hero.png". We're simply defining this object's attributes and providing values for those attributes.
 
@@ -263,9 +223,7 @@ Ed: The file and directory names in the image don't match the names referenced i
 
 When we open up _homepage.json_ we can override the placeholder data we established earlier. Here's what that might look like:
 
-<pre>
-<code>
-{% raw %}
+````````json
 "hero" : {
   "headline": "Moving People",
   "img": {
@@ -273,9 +231,7 @@ When we open up _homepage.json_ we can override the placeholder data we establis
     "alt": "Beyonce"
   }
 }
-{% endraw %}
-</code>
-</pre>
+````````
 
 By overriding the default data, the `hero` headline now reads "Moving People" instead of "Lorem Ipsum". And instead of pointing to a grayscale <span class="editor">FPO (for placement only)</span> hero image, we're now pointing to a picture of <span class="editor">Beyoncé</span> located at "/images/hero_beyonce.jpg".
 
@@ -307,9 +263,7 @@ Let's say we're making an app whose dashboard displays a list of project collabo
 
 To create the dynamic content inside each of these blocks, we'll define our list of collaborators as an array inside _dashboard.json_:
 
-<pre>
-<code>
-{% raw %}
+````````json
 "collaborators" : [
   {
     "img": "/images/sample/avatar1.jpg",
@@ -332,9 +286,7 @@ To create the dynamic content inside each of these blocks, we'll define our list
     "title" : "Short Title"
   }
 ]
-{% endraw %}
-</code>
-</pre>
+````````
 
 By default, our design assumes the user is a regular user and not an administrator, but what if we wanted to give administrators the ability to manage project collaborators from the dashboard? That UI might look something like this:
 
@@ -342,40 +294,28 @@ By default, our design assumes the user is a regular user and not an administrat
 
 To show additional admin edit and delete actions on the dashboard in Pattern Lab, we can create a pseudo-pattern, a new file in the _pages_ folder that looks like this:
 
-<pre>
-<code>
-{% raw %}
+````````json
 dashboard~admin.json
-{% endraw %}
-</code>
-</pre>
+````````
 
 The tilde (`~`) symbol indicates a pseudo-pattern. _dashboard~admin.json_ will inherit all the data contained in _dashboard.json_, but also gives us the opportunity to append or override additional data. That means the list of collaborators we defined earlier in _dashboard.json_ is still available, but we can add additional data inside _dashboard~admin.json_ like so:
 
-<pre>
-<code>
-{% raw %}
+````````json
 "isAdmin" : true
-{% endraw %}
-</code>
-</pre>
+````````
 
 We're defining a variable called `isAdmin` and setting it to `true`. We can now use that to conditionally include the additional actions inside the block pattern.
 
-<pre>
-<code>
-{% raw %}
-\<div class="block"\>
-  \<img src="{{ img }}" alt="{{ name }}" /\>
-  \<h3\>{{ name }}\</h3\>
-  \<h4\>{{ title }}\</h4>\
-  {{# isAdmin }}
+````````html
+<div class="block">
+  <img src="{% raw %}{{ img }}{% endraw %}" alt="{% raw %}{{ name }}{% endraw %}" />
+  <h3>{% raw %}{{ name }}{% endraw %}</h3>
+  <h4>{% raw %}{{ title }}{% endraw %}</h4>
+  {% raw %}{{# isAdmin }}
   {{> molecules-block-actions }}
-  {{/ isAdmin }}
-\</div\>
-{% endraw %}
-</code>
-</pre>
+  {{/ isAdmin }}{% endraw %}
+</div>
+````````
 
 The first few lines are pulling in the `img`, `name`, and `title` we defined in _dashboard.json_. But pay close attention to what's wrapped in the `isAdmin` Mustache section. What we're saying here is: if `isAdmin` is set to `true`, include a molecule pattern called `block-actions`. The `block-actions` pattern contains the edit and delete buttons, and will only display if `isAdmin` is set to `true` (or anything besides `false`). In our default _dashboard.json_, `isAdmin` isn't set, so the extra actions won't display. In _dashboard~admin.json_, we're setting `isAdmin` to `true` so the extra actions will display. You can extend this technique to dramatically alter the entire UI (like altering the primary navigation, showing additional panels on the dashboard, adding extra controls, and so on) just by changing a single variable. Powerful stuff, indeed.
 

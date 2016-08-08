@@ -60,9 +60,9 @@
   <li>They <strong>serve as a future-friendly foundation</strong> for teams to modify, extend, and improve on over time.</li>
 </ul>
 
-<p>That all sounds wonderful, right? I can almost hear you saying, “I need this whole pattern library thing in my life.” But how do we make pattern libraries happen? Well, you’ve come to the right place, friend, because the rest of this book is dedicated to exactly that. This chapter will introduce helpful tools for creating pattern libraries, and the next chapter will discuss how to make patterns a cornerstone of your design and development workflow.</p>
+<p>That all sounds wonderful, right? I can almost hear you saying, “I need this whole pattern library thing in my life.” But how do we make pattern libraries happen? Well, you’ve come to the right place, friend, because the rest of this book is dedicated to exactly that. This chapter will introduce helpful tools for creating pattern libraries, the next chapter will discuss how to make patterns a cornerstone of your design and development workflow, and the fifth chapter will cover how to make your design system stand the test of time.</p>
 
-<p>I’ll talk about the qualities of effective pattern libraries through the lens of a tool called <a href="http://patternlab.io">Pattern Lab</a>, an open source project created by me and <a href="http://dmolsen.com">Dave Olsen</a> to execute atomic design systems. While I’ll excitedly discuss Pattern Lab and its various features, I want to stress that the point of this chapter is to cover the characteristics of well-constructed pattern libraries, not sell any one specific tool to you. Hell, Pattern Lab isn’t even for sale! No single tool will be a perfect fit for all readers, but be sure to keep the following principles in mind when deciding what tools to use to create your pattern libraries.</p>
+<p>This chapter will talk about the qualities of effective pattern libraries through the lens of a tool called <a href="http://patternlab.io">Pattern Lab</a>, an open source project maintained by web developers <a href="http://dmolsen.com">Dave Olsen</a>, <a href="http://www.brianmuenzenmeyer.com/">Brian Muenzenmeyer</a>, and me to execute atomic design systems. While I’ll excitedly discuss Pattern Lab and its various features, I want to stress that the point of this chapter is to cover the characteristics of well-constructed pattern libraries, not sell any one specific tool to you. Hell, Pattern Lab isn’t even for sale! No single tool will be a perfect fit for every setup and scenario, but be sure to keep the following principles in mind when deciding what tools to use to create your pattern libraries.</p>
 
 <h2 id="just-what-exactly-is-pattern-lab">Just what exactly is Pattern Lab?</h2>
 <p>Before we dive into the nuts and bolts of how Pattern Lab works, it’s important to take time to explain what the tool is and isn’t.</p>
@@ -81,25 +81,25 @@
   <li>a replacement for a content management system.</li>
 </ul>
 
-<p>Let’s walk through these points, starting with the term <em>static site generator</em>. Static site generator tools take in some source code and assets, compile them, and spit out plain ol’ HTML, CSS, and JavaScript at the other end. <strong>Pattern Lab takes source code – namely patterns – and compiles those patterns into a functional front-end UI inside a pattern library shell</strong>.</p>
+<p>Let’s walk through these points, starting with the term <em>static site generator</em>. Static site generator tools take in some source code and assets, compile them, and spit out plain ol’ HTML, CSS, and JavaScript at the other end. <strong>Pattern Lab takes source code – namely patterns — and compiles those patterns into a functional front-end UI inside a pattern library shell</strong>.</p>
 
 <p>So what does Pattern Lab look like out of the box? Drumroll, please.</p>
 
 <figure>
-    <img src="../images/content/pattern-lab-default.png" alt="The default Pattern Lab dashboard. What it lacks in good looks, it makes up for in utility." />
+    <img src="../images/content/pattern-lab-default.png" alt="One default Pattern Lab dashboard. What it lacks in good looks, it makes up for in utility." />
 	<figcaption>
-	    The default Pattern Lab dashboard. What it lacks in good looks, it makes up for in utility.
+	    One default Pattern Lab dashboard. What it lacks in good looks, it makes up for in utility.
 	</figcaption>
 </figure>
 
-<p>Not a terribly inspiring design, eh? Believe it or not, this minimal (one might even say <em>lack of</em>) design is deliberate. To avoid incorrect classification as a UI framework like Bootstrap, the design is deliberately stripped down so no one would mistakenly take Pattern Lab’s demo UI for suggested styles. Pattern Lab doesn’t give you any answers as to how to design or architect your front-end code—<em>you have to do all that work yourself</em>. The look and feel, naming conventions, syntax, structure, libraries, and scripts you choose to use to create your UI is entirely up to you. Heck, you can even use UI frameworks like Bootstrap <em>within</em> Pattern Lab. Pattern Lab is just there to help stitch everything together.</p>
+<p>Not a terribly inspiring design, eh? Believe it or not, this minimal (one might even say <em>lack of</em>) design is deliberate. To avoid incorrect classification as a UI framework like Bootstrap, the design is deliberately stripped down so no one would mistakenly take Pattern Lab’s demo UI for suggested styles. Pattern Lab doesn’t give you any answers as to how to design or architect your front-end code—<em>you have to do all that work yourself</em>. The look and feel, naming conventions, syntax, structure, libraries, and scripts you choose to use to create your UI is entirely up to you and your team. Heck, you can even use UI frameworks like Bootstrap <em>within</em> Pattern Lab. Pattern Lab is just there to help stitch everything together.</p>
 
-<p>As a technical aside, Pattern Lab uses PHP as the engine that stitches patterns together and generates the pattern library. However, you don’t need to be a PHP wizard to use Pattern Lab any more than you have to know how to build an internal combustion engine to drive a car. Moreover, your final website doesn’t have to be built with PHP to use the tool, as Pattern Lab’s output is backend-agnostic HTML, CSS, and JavaScript. But if you’re one of those cool kids who thinks using a PHP-based tool will somehow ruin your reputation, there’s also a <a href="https://github.com/pattern-lab/patternlab-node">Node.js version</a> thanks to web developer <a href="http://www.brianmuenzenmeyer.com/">Brian Muenzenmeyer</a>.</p>
+<p>As a technical aside, Pattern Lab uses either PHP or Node as the engine that stitches patterns together and generates the pattern library. However, you don’t need to be a PHP wizard or Node guru to use Pattern Lab any more than you have to know how to build an internal combustion engine to drive a car. Moreover, your final website doesn’t have to be built with PHP or Node to use the tool, as Pattern Lab’s output is backend-agnostic HTML, CSS, and JavaScript. So like any technology decision, choose a pattern library tool that fits with your organization’s infrastructure and jives with how your team works together.</p>
 
-<p>If that all sounded like gibberish to you, don’t worry. This chapter focuses on the overarching features and principles behind Pattern Lab rather than going too far down the technical rabbit hole. You can check out <a href="http://patternlab.io/docs/index.html">Pattern Lab’s documentation</a> to dive into the nitty-gritty.</p>
+<p>If that all sounded like gibberish to you, don’t worry. This chapter focuses on the overarching features of Pattern Lab and principles of effective pattern libraries rather than going too far down the technical rabbit hole. If interested, you can check out <a href="http://patternlab.io/docs/">Pattern Lab’s documentation</a> to dive into the nitty-gritty.</p>
 
 <h2 id="building-atomic-design-systems-with-pattern-lab">Building atomic design systems with Pattern Lab</h2>
-<p>To understand the core concept behind Pattern Lab, you need to understand <span class="editor">Russian nesting dolls</span>.</p>
+<p>To understand the core concept behind Pattern Lab, you need to understand Russian nesting dolls.</p>
 
 <figure>
     <img src="../images/content/russian-nesting-dolls.jpg" alt="Russian nesting dolls. &lt;a href='https://www.flickr.com/photos/tromal/6901848291/'&gt;Via Flickr user Tromal&lt;/a&gt;" />
@@ -110,7 +110,7 @@
 
 <p>Matryoshka dolls (also known as Russian nesting dolls) are beautifully carved hollow wooden dolls of increasing size that are placed inside one another. Patterns in Pattern Lab operate in a similar manner: the smallest patterns (atoms) are included inside bigger patterns (molecules), which are included in even bigger patterns (organisms), which are in turn included in even bigger patterns (templates).</p>
 
-<p>Constructing UIs in this manner helps keep things <a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself">DRY</a>, which is a long-standing computer science principle that stands for “don’t repeat yourself.” Make a change to a pattern, and anywhere that pattern is employed will magically update with those changes. This saves an extraordinary amount of time and grief, and certainly beats the pants off sifting through hundreds of Photoshop documents for every instance of a pattern just to make a simple change.</p>
+<p>Constructing UIs in this manner keeps things <a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself">DRY</a>, which is a long-standing computer science principle that stands for “don’t repeat yourself.” What this means is that you can make a change to a pattern, and anywhere that pattern is employed will magically update with those changes. This Russian nesting doll approach considerably speeds up your workflow, and certainly beats the pants off sifting through hundreds of Photoshop documents for every instance of a pattern in order to make a simple change.</p>
 
 <p>To make this happen Pattern Lab uses the <em>include</em> feature of <a href="https://mustache.github.io/">Mustache</a>, a logicless templating language. Here’s what a Mustache include looks like:</p>
 
@@ -122,48 +122,35 @@
 
 <p>This is Mustache code, in case the double curly braces (<code class="highlighter-rouge"><span class="p">{</span><span class="err">{</span><span class="p">}</span><span class="err">}</span></code>) that look like little mustaches didn’t give it away. The greater-than symbol (<code class="highlighter-rouge">&gt;</code>) is Mustache’s way of telling Pattern Lab to include an atom pattern called “thumbnail”. Pattern Lab will go searching through its folders of patterns to find an atom named “thumbnail”.</p>
 
-<div class="editor">
-
-
-<p>Ed: I’ve retained your use of full stops (periods) outside the quotation marks here, as you’re referring to a code sample. Were the full stops within the quotation marks, they might be construed as being part of that code.</p>
-
-</div>
-
 <figure>
-    <img src="../images/content/pattern-lab-file-structure.png" alt="This is what Pattern Lab's default patterns folder structure looks like. You can name and categorize these folders however you'd like, even removing the labels “atoms”, “molecules”, and “organisms.” The most important consideration is to establish naming and categorization that is clearest for your team." />
+    <img src="../images/content/pattern-lab-file-structure.png" alt="This is what Pattern Lab's patterns folder structure can look like. You can name and categorize these folders however you'd like, including changing the labels “atoms”, “molecules”, and “organisms”, “templates”, and ”pages”. The most important consideration is to establish naming and categorization that is most effective for your team." />
 	<figcaption>
-	    This is what Pattern Lab's default patterns folder structure looks like. You can name and categorize these folders however you'd like, even removing the labels “atoms”, “molecules”, and “organisms.” The most important consideration is to establish naming and categorization that is clearest for your team.
+	    This is what Pattern Lab's patterns folder structure can look like. You can name and categorize these folders however you'd like, including changing the labels “atoms”, “molecules”, and “organisms”, “templates”, and ”pages”. The most important consideration is to establish naming and categorization that is most effective for your team.
 	</figcaption>
 </figure>
 
 <p>Now that we know what an include looks like, let’s put it into practice and take a look at a few patterns from a website I helped make for Time Inc. Here’s one reusable pattern we designed:</p>
 
 <figure>
-    <img src="../images/content/pattern-lab-molecule.png" alt="For Time Inc.'s website, we created a basic block pattern consisting of a thumbnail image, headline, and excerpt." />
+    <img src="../images/content/pattern-lab-molecule.png" alt="For Time Inc.'s website, we created a basic block molecule consisting of a thumbnail image, headline, and excerpt." />
 	<figcaption>
-	    For Time Inc.'s website, we created a basic block pattern consisting of a thumbnail image, headline, and excerpt.
+	    For Time Inc.'s website, we created a basic block molecule consisting of a thumbnail image, headline, and excerpt.
 	</figcaption>
 </figure>
 
 <p>This pattern should look fairly familiar. A thumbnail image, headline, and excerpt working together as a single unit is a common pattern found on countless websites. Let’s take a peek behind the curtain to see how this pattern is constructed.</p>
 
-<p><em>[<small>Note from Brad: Forgive the mess with the <span class="editor">markup formatting</span>. I need to look into how to properly escape characters and highlight syntax in a way that works for the site but also for the eventual ebook.</small>]</em></p>
-
-<pre>
-<code>
-
-\&lt;div class="block-post"\&gt;
-    \&lt;a href="{{ url }}"\&gt;
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"block-post"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ url }}"</span><span class="nt">&gt;</span>
         {{&gt; atoms-thumb }}
-        \&lt;h3\&gt;{{ headline }}\&lt;/h3\&gt;
-       \&lt;p\&gt;{{ excerpt }}\&lt;/p\&gt;
-    \&lt;/a\&gt;
-\&lt;/div\&gt;
+        <span class="nt">&lt;h3&gt;</span>{{ headline }}<span class="nt">&lt;/h3&gt;</span>
+       <span class="nt">&lt;p&gt;</span>{{ excerpt }}<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
 
-</code>
-</pre>
-
-<p>You can see we have: HTML markup consisting of a wrapper <code class="highlighter-rouge">div</code> with a class name of <code class="highlighter-rouge">block-post</code>; a link; a Mustache include for the thumbnail image; an <code class="highlighter-rouge">&lt;h3&gt;</code> <span class="editor">tag</span> for the headline; and a <code class="highlighter-rouge">&lt;p&gt;</code> tag for the excerpt. You’ll notice there’s more Mustache code for <code class="highlighter-rouge">url</code>, <code class="highlighter-rouge">headline</code>, and <code class="highlighter-rouge">excerpt</code>, which we’ll use later to dynamically swap in actual content. More on that in a bit.</p>
+<p>You can see we have: HTML markup consisting of a wrapper <code class="highlighter-rouge">div</code> with a class name of <code class="highlighter-rouge">block-post</code>; a link; a Mustache include for the thumbnail image; an <code class="highlighter-rouge">&lt;h3&gt;</code> element for the headline; and a <code class="highlighter-rouge">&lt;p&gt;</code> tag for the excerpt. You’ll notice there’s more Mustache code for <code class="highlighter-rouge">url</code>, <code class="highlighter-rouge">headline</code>, and <code class="highlighter-rouge">excerpt</code>, which we’ll use later to dynamically swap in actual content. More on that in a bit.</p>
 
 <div class="editor">
 
@@ -174,11 +161,9 @@
 
 <p>Now that our pattern markup is established, we can include that chunk of code in bigger patterns using the same include method:</p>
 
-<pre>
-<code>
-{{&gt; molecules-block-post }}
-</code>
-</pre>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>{{&gt; molecules-block-post }}
+</code></pre>
+</div>
 
 <p>Now let’s move up to more complex organisms like the website’s header, which looks a little something like this:</p>
 
@@ -191,34 +176,21 @@
 
 <p>When we crack open the hood to look at the header’s markup in Pattern Lab, we see the following:</p>
 
-<pre>
-<code>
-
-\&lt;header role="banner"\&gt;
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;header</span> <span class="na">role=</span><span class="s">"banner"</span><span class="nt">&gt;</span>
     {{&gt; atoms-logo }}
     {{&gt; molecules-primary-nav }}
     {{&gt; molecules-search }}
-\&lt;/header\&gt;
-
-</code>
-</pre>
-
-<p>What’s going on here? Well, we have a basic <code class="highlighter-rouge">&lt;header&gt;</code> <span class="editor">tag</span>, and inside that <span class="editor">tag</span> we’re including the logo image atom, the primary navigation molecule, and the search form molecule.</p>
-
-<div class="editor">
-
-
-<p>Ed: HTML tag or element?</p>
-
+<span class="nt">&lt;/header&gt;</span>
+</code></pre>
 </div>
+
+<p>What’s going on here? Well, we have a basic <code class="highlighter-rouge">&lt;header&gt;</code> element, and inside that element we’re including the logo image atom, the primary navigation molecule, and the search form molecule.</p>
 
 <p>And now we can include that relatively complex pattern anywhere we need it.</p>
 
-<pre>
-<code>
-{{&gt; organisms-header }}
-</code>
-</pre>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>{{&gt; organisms-header }}
+</code></pre>
+</div>
 
 <p>I hope by now you can see the Russian nesting dolls in action. The smallest atoms are included in bigger molecules, and those molecules get included in even bigger organisms. Now let’s take these components and plug them into a layout. Take the homepage template, for instance:</p>
 
@@ -233,52 +205,44 @@
 
 <p>So how does this look in code? As you might expect, it involves more includes!</p>
 
-<pre>
-<code>
-
-{{&gt; organisms-header }}
-\&lt;main role="main"\&gt;
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>{{&gt; organisms-header }}
+<span class="nt">&lt;main</span> <span class="na">role=</span><span class="s">"main"</span><span class="nt">&gt;</span>
     {{# hero }}
     {{&gt; molecules-hero }}
     {{/ hero }}
-    \&lt;section\&gt;
+    <span class="nt">&lt;section&gt;</span>
         {{# experience-block }}
         {{&gt; molecules-block-main }}
         {{/ experience-block }}
         {{# experience-feature }}
         {{&gt; organisms-story-feature }}
         {{/ experience-feature }}
-    \&lt;/section\&gt;
-    \&lt;section\&gt;
+    <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;section&gt;</span>
         {{# factoid-advertising }}
         {{&gt; organisms-factoid }}
         {{/ factoid-advertising }}
-    \&lt;/section\&gt;
-    \&lt;section\&gt;
+    <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;section&gt;</span>
         {{# advertising }}
         {{&gt; molecules-block-main }}
         {{/ advertising }}
-    \&lt;/section\&gt;
+    <span class="nt">&lt;/section&gt;</span>
     …   
-\&lt;/main\&gt;
+<span class="nt">&lt;/main&gt;</span>
 {{&gt; organisms-footer }}
-
-</code>
-</pre>
+</code></pre>
+</div>
 
 <p>At this stage in the game the smaller patterns are already constructed, so all the template needs to do is pull them into the context of a page layout and give them unique names.</p>
 
 <p>Taking a closer look at the code, notice that certain patterns like <code class="highlighter-rouge"><span class="p">{</span><span class="err">{&gt;</span><span class="w"> </span><span class="err">organisms-header</span><span class="w"> </span><span class="p">}</span><span class="err">}</span></code> and <code class="highlighter-rouge"><span class="p">{</span><span class="err">{&gt;</span><span class="w"> </span><span class="err">organisms-footer</span><span class="w"> </span><span class="p">}</span><span class="err">}</span></code> are included the same way as the earlier examples. But there are also a few other includes patterns that are supplemented by some additional information, like the following:</p>
 
-<pre>
-<code>
-
-{{# factoid-advertising }}
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>{{# factoid-advertising }}
 {{&gt; organisms-factoid }}
 {{/ factoid-advertising }}
-
-</code>
-</pre>
+</code></pre>
+</div>
 
 <p>We’re including <code class="highlighter-rouge">organisms-factoid</code> in the same way as all the other patterns, but we’re also naming it <code class="highlighter-rouge">factoid-advertising</code> by wrapping the include in a Mustache <em>section</em>, indicated by the Mustache code containing the <code class="highlighter-rouge">#</code> and <code class="highlighter-rouge">/</code> symbols. By giving the pattern instance a unique name, we can latch on to it and dynamically replace the content of the pattern. More on that in the next section!</p>
 
@@ -309,60 +273,52 @@
 
 </div>
 
-<pre>
-<code>
+<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="s2">"hero"</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nt">"headline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem Ipsum"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"img"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"src"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/images/sample/fpo_hero.png"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"alt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hero Image"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="err">```````</span><span class="w">
 
-"hero" : {
-  "headline": "Lorem Ipsum",
-  "img": {
-    "src": "/images/sample/fpo_hero.png",
-    "alt": "Hero Image"
-  }
-}
+</span><span class="err">For</span><span class="w"> </span><span class="err">developers,</span><span class="w"> </span><span class="err">this</span><span class="w"> </span><span class="err">type</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="err">format</span><span class="w"> </span><span class="err">most</span><span class="w"> </span><span class="err">likely</span><span class="w"> </span><span class="err">looks</span><span class="w"> </span><span class="err">familiar.</span><span class="w"> </span><span class="err">If</span><span class="w"> </span><span class="err">you're</span><span class="w"> </span><span class="err">not</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">developer,</span><span class="w"> </span><span class="err">don't</span><span class="w"> </span><span class="err">freak</span><span class="w"> </span><span class="err">out!</span><span class="w"> </span><span class="err">Once</span><span class="w"> </span><span class="err">you</span><span class="w"> </span><span class="err">look</span><span class="w"> </span><span class="err">beyond</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">curly</span><span class="w"> </span><span class="err">braces</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">quotes,</span><span class="w"> </span><span class="err">you'll</span><span class="w"> </span><span class="err">see</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">we're</span><span class="w"> </span><span class="err">defining</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">`hero`</span><span class="w"> </span><span class="err">object</span><span class="w"> </span><span class="err">(for</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">full-bleed</span><span class="w"> </span><span class="err">hero</span><span class="w"> </span><span class="err">area</span><span class="w"> </span><span class="err">directly</span><span class="w"> </span><span class="err">below</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">header)</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">has</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">`headline`</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="s2">"Lorem Ipsum"</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">an</span><span class="w"> </span><span class="err">`img`</span><span class="w"> </span><span class="err">with</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">`src`</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="s2">"/images/sample/fpo_hero.png"</span><span class="err">.</span><span class="w"> </span><span class="err">We're</span><span class="w"> </span><span class="err">simply</span><span class="w"> </span><span class="err">defining</span><span class="w"> </span><span class="err">this</span><span class="w"> </span><span class="err">object's</span><span class="w"> </span><span class="err">attributes</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">providing</span><span class="w"> </span><span class="err">values</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">those</span><span class="w"> </span><span class="err">attributes.</span><span class="w">
 
-</code>
-</pre>
-
-<p>For developers, this type of format most likely looks familiar. If you’re not a developer, don’t freak out! Once you look beyond the curly braces and quotes, you’ll see that we’re defining a <code class="highlighter-rouge">hero</code> object (for the full-bleed hero area directly below the header) that has a <code class="highlighter-rouge">headline</code> value of “Lorem Ipsum” and an <code class="highlighter-rouge">img</code> with a <code class="highlighter-rouge">src</code> value of “/images/sample/fpo_hero.png”. We’re simply defining this object’s attributes and providing values for those attributes.</p>
-
-<div class="editor">
+</span><span class="err">&lt;div</span><span class="w"> </span><span class="err">class=</span><span class="s2">"editor"</span><span class="err">&gt;</span><span class="w">
 
 
-<p>Ed: Here I’ve changed italics (emphasis) to code ticks as you’re referencing a code sample.</p>
+</span><span class="err">&lt;p&gt;Ed:</span><span class="w"> </span><span class="err">Here</span><span class="w"> </span><span class="err">I’ve</span><span class="w"> </span><span class="err">changed</span><span class="w"> </span><span class="err">italics</span><span class="w"> </span><span class="err">(emphasis)</span><span class="w"> </span><span class="err">to</span><span class="w"> </span><span class="err">code</span><span class="w"> </span><span class="err">ticks</span><span class="w"> </span><span class="err">as</span><span class="w"> </span><span class="err">you’re</span><span class="w"> </span><span class="err">referencing</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">code</span><span class="w"> </span><span class="err">sample.&lt;/p&gt;</span><span class="w">
 
+</span><span class="err">&lt;/div&gt;</span><span class="w">
+
+</span><span class="err">Once</span><span class="w"> </span><span class="err">those</span><span class="w"> </span><span class="err">objects</span><span class="w"> </span><span class="err">are</span><span class="w"> </span><span class="err">defined,</span><span class="w"> </span><span class="err">we</span><span class="w"> </span><span class="err">can</span><span class="w"> </span><span class="err">then</span><span class="w"> </span><span class="err">override</span><span class="w"> </span><span class="err">their</span><span class="w"> </span><span class="err">attributes</span><span class="w"> </span><span class="err">at</span><span class="w"> </span><span class="err">Pattern</span><span class="w"> </span><span class="err">Lab's</span><span class="w"> </span><span class="err">page</span><span class="w"> </span><span class="err">level.</span><span class="w"> </span><span class="err">This</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">accomplished</span><span class="w"> </span><span class="err">by</span><span class="w"> </span><span class="err">creating</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">new</span><span class="w"> </span><span class="err">JSON</span><span class="w"> </span><span class="err">file</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">matches</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">page</span><span class="w"> </span><span class="err">pattern</span><span class="w"> </span><span class="err">name</span><span class="w"> </span><span class="err">(for</span><span class="w"> </span><span class="err">Time</span><span class="w"> </span><span class="err">Inc.'s</span><span class="w"> </span><span class="err">home</span><span class="w"> </span><span class="err">page,</span><span class="w"> </span><span class="err">we'll</span><span class="w"> </span><span class="err">call</span><span class="w"> </span><span class="err">it</span><span class="w"> </span><span class="err">_homepage.json_)</span><span class="w"> </span><span class="err">inside</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">_/pages_</span><span class="w"> </span><span class="err">directory.</span><span class="w">
+
+</span><span class="err">&lt;figure&gt;</span><span class="w">
+    </span><span class="err">&lt;img</span><span class="w"> </span><span class="err">src=</span><span class="s2">"../images/content/timeinc-page-directory.png"</span><span class="w"> </span><span class="err">alt=</span><span class="s2">"Inside the ‘pages’ directory we have the home page pattern as well as a JSON file that matches the name of the pattern. This is where we'll override the default content with page-specific content."</span><span class="w"> </span><span class="err">/&gt;</span><span class="w">
+	</span><span class="err">&lt;figcaption&gt;</span><span class="w">
+	    </span><span class="err">Inside</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">‘pages’</span><span class="w"> </span><span class="err">directory</span><span class="w"> </span><span class="err">we</span><span class="w"> </span><span class="err">have</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">home</span><span class="w"> </span><span class="err">page</span><span class="w"> </span><span class="err">pattern</span><span class="w"> </span><span class="err">as</span><span class="w"> </span><span class="err">well</span><span class="w"> </span><span class="err">as</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">JSON</span><span class="w"> </span><span class="err">file</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">matches</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">name</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">pattern.</span><span class="w"> </span><span class="err">This</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">where</span><span class="w"> </span><span class="err">we'll</span><span class="w"> </span><span class="err">override</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">default</span><span class="w"> </span><span class="err">content</span><span class="w"> </span><span class="err">with</span><span class="w"> </span><span class="err">page-specific</span><span class="w"> </span><span class="err">content.</span><span class="w">
+	</span><span class="err">&lt;/figcaption&gt;</span><span class="w">
+</span><span class="err">&lt;/figure&gt;</span><span class="w">
+
+</span><span class="err">&lt;div</span><span class="w"> </span><span class="err">class=</span><span class="s2">"editor"</span><span class="err">&gt;</span><span class="w">
+
+
+</span><span class="err">&lt;p&gt;Ed:</span><span class="w"> </span><span class="err">The</span><span class="w"> </span><span class="err">file</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">directory</span><span class="w"> </span><span class="err">names</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">image</span><span class="w"> </span><span class="err">don’t</span><span class="w"> </span><span class="err">match</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">names</span><span class="w"> </span><span class="err">referenced</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">text.&lt;/p&gt;</span><span class="w">
+
+</span><span class="err">&lt;/div&gt;</span><span class="w">
+
+</span><span class="err">When</span><span class="w"> </span><span class="err">we</span><span class="w"> </span><span class="err">open</span><span class="w"> </span><span class="err">up</span><span class="w"> </span><span class="err">_homepage.json_</span><span class="w"> </span><span class="err">we</span><span class="w"> </span><span class="err">can</span><span class="w"> </span><span class="err">override</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">placeholder</span><span class="w"> </span><span class="err">data</span><span class="w"> </span><span class="err">we</span><span class="w"> </span><span class="err">established</span><span class="w"> </span><span class="err">earlier.</span><span class="w"> </span><span class="err">Here's</span><span class="w"> </span><span class="err">what</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">might</span><span class="w"> </span><span class="err">look</span><span class="w"> </span><span class="err">like:</span><span class="w">
+
+</span><span class="err">````````json</span><span class="w">
+</span><span class="s2">"hero"</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nt">"headline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Moving People"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"img"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"src"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/images/hero_beyonce.jpg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"alt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Beyonce"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 </div>
-
-<p>Once those objects are defined, we can then override their attributes at Pattern Lab’s page level. This is accomplished by creating a new JSON file that matches the page pattern name (for Time Inc.’s home page, we’ll call it <em>homepage.json</em>) inside the <em>/pages</em> directory.</p>
-
-<figure>
-    <img src="../images/content/timeinc-page-directory.png" alt="Inside the ‘pages’ directory we have the home page pattern as well as a JSON file that matches the name of the pattern. This is where we'll override the default content with page-specific content." />
-	<figcaption>
-	    Inside the ‘pages’ directory we have the home page pattern as well as a JSON file that matches the name of the pattern. This is where we'll override the default content with page-specific content.
-	</figcaption>
-</figure>
-
-<div class="editor">
-
-
-<p>Ed: The file and directory names in the image don’t match the names referenced in the text.</p>
-
-</div>
-
-<p>When we open up <em>homepage.json</em> we can override the placeholder data we established earlier. Here’s what that might look like:</p>
-
-<pre>
-<code>
-
-"hero" : {
-  "headline": "Moving People",
-  "img": {
-    "src": "/images/hero_beyonce.jpg",
-    "alt": "Beyonce"
-  }
-}
-
-</code>
-</pre>
 
 <p>By overriding the default data, the <code class="highlighter-rouge">hero</code> headline now reads “Moving People” instead of “Lorem Ipsum”. And instead of pointing to a grayscale <span class="editor">FPO (for placement only)</span> hero image, we’re now pointing to a picture of <span class="editor">Beyoncé</span> located at “/images/hero_beyonce.jpg”.</p>
 
@@ -399,34 +355,30 @@
 
 <p>To create the dynamic content inside each of these blocks, we’ll define our list of collaborators as an array inside <em>dashboard.json</em>:</p>
 
-<pre>
-<code>
-
-"collaborators" : [
-  {
-    "img": "/images/sample/avatar1.jpg",
-    "name" : "Steve Boomshakalaka",
-    "title" : "CIA"
-  },
-  {
-    "img": "/images/sample/avatar2.jpg",
-    "name" : "Gingersnap Jujubees-Daniels",
-    "title" : "President of the Longest Company Name in the World Corporation, Global Division"
-  },
-  {
-    "img": "/images/sample/avatar3.jpg",
-    "name" : "Sarunus Marciulionis",
-    "title" : "Golden State Warriors"
-  },
-  {
-    "img": "/images/sample/avatar4.jpg",
-    "name" : "Sara Smith",
-    "title" : "Short Title"
-  }
-]
-
-</code>
-</pre>
+<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="s2">"collaborators"</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"img"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/images/sample/avatar1.jpg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"name"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Steve Boomshakalaka"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"title"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"CIA"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"img"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/images/sample/avatar2.jpg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"name"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Gingersnap Jujubees-Daniels"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"title"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"President of the Longest Company Name in the World Corporation, Global Division"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"img"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/images/sample/avatar3.jpg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"name"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Sarunus Marciulionis"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"title"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Golden State Warriors"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"img"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/images/sample/avatar4.jpg"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"name"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Sara Smith"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"title"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Short Title"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+</div>
 
 <p>By default, our design assumes the user is a regular user and not an administrator, but what if we wanted to give administrators the ability to manage project collaborators from the dashboard? That UI might look something like this:</p>
 
@@ -439,40 +391,28 @@
 
 <p>To show additional admin edit and delete actions on the dashboard in Pattern Lab, we can create a pseudo-pattern, a new file in the <em>pages</em> folder that looks like this:</p>
 
-<pre>
-<code>
-
-dashboard~admin.json
-
-</code>
-</pre>
+<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="err">dashboard~admin.json</span><span class="w">
+</span></code></pre>
+</div>
 
 <p>The tilde (<code class="highlighter-rouge">~</code>) symbol indicates a pseudo-pattern. <em>dashboard~admin.json</em> will inherit all the data contained in <em>dashboard.json</em>, but also gives us the opportunity to append or override additional data. That means the list of collaborators we defined earlier in <em>dashboard.json</em> is still available, but we can add additional data inside <em>dashboard~admin.json</em> like so:</p>
 
-<pre>
-<code>
-
-"isAdmin" : true
-
-</code>
-</pre>
+<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="s2">"isAdmin"</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></code></pre>
+</div>
 
 <p>We’re defining a variable called <code class="highlighter-rouge">isAdmin</code> and setting it to <code class="highlighter-rouge">true</code>. We can now use that to conditionally include the additional actions inside the block pattern.</p>
 
-<pre>
-<code>
-
-\&lt;div class="block"\&gt;
-  \&lt;img src="{{ img }}" alt="{{ name }}" /\&gt;
-  \&lt;h3\&gt;{{ name }}\&lt;/h3\&gt;
-  \&lt;h4\&gt;{{ title }}\&lt;/h4&gt;\
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"block"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ img }}"</span> <span class="na">alt=</span><span class="s">"{{ name }}"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>{{ name }}<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;h4&gt;</span>{{ title }}<span class="nt">&lt;/h4&gt;</span>
   {{# isAdmin }}
   {{&gt; molecules-block-actions }}
   {{/ isAdmin }}
-\&lt;/div\&gt;
-
-</code>
-</pre>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
 
 <p>The first few lines are pulling in the <code class="highlighter-rouge">img</code>, <code class="highlighter-rouge">name</code>, and <code class="highlighter-rouge">title</code> we defined in <em>dashboard.json</em>. But pay close attention to what’s wrapped in the <code class="highlighter-rouge">isAdmin</code> Mustache section. What we’re saying here is: if <code class="highlighter-rouge">isAdmin</code> is set to <code class="highlighter-rouge">true</code>, include a molecule pattern called <code class="highlighter-rouge">block-actions</code>. The <code class="highlighter-rouge">block-actions</code> pattern contains the edit and delete buttons, and will only display if <code class="highlighter-rouge">isAdmin</code> is set to <code class="highlighter-rouge">true</code> (or anything besides <code class="highlighter-rouge">false</code>). In our default <em>dashboard.json</em>, <code class="highlighter-rouge">isAdmin</code> isn’t set, so the extra actions won’t display. In <em>dashboard~admin.json</em>, we’re setting <code class="highlighter-rouge">isAdmin</code> to <code class="highlighter-rouge">true</code> so the extra actions will display. You can extend this technique to dramatically alter the entire UI (like altering the primary navigation, showing additional panels on the dashboard, adding extra controls, and so on) just by changing a single variable. Powerful stuff, indeed.</p>
 
