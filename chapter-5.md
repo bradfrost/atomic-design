@@ -11,47 +11,47 @@ Not quite.
 
 {% include figure.html src="../images/content/trash-can.jpg" caption="" %}
 
-There's a very real risk that a pattern library will end up in the trashcan right alongside all the PSDs, PDFs and those other static artifacts of the design process. Despite everyone's best intentions, all that time and effort that went into into making a thoughtful design system and pattern library can go straight down the drain.
+There's a very real risk that a pattern library will end up in the trash can right alongside all the PSDs, PDFs and those other static artifacts of the design process. Despite everyone's best intentions, all the time and effort that went into making a thoughtful design system and pattern library can go straight down the drain.
 
 How can that be?
 
 > A style guide is an artifact of design process. A design system is a living, funded product with a roadmap & backlog, serving an ecosystem. <cite>[Nathan Curtis](https://twitter.com/nathanacurtis/status/656829204235972608)</cite>
 
-**An artifact is something you'd find in an archaeological dig or a museum, whereas a system is a living, breathing entity**. A pattern library can provide helpful documentation and serve as a ongoing resource, but the simple existence of a pattern library doesn't guarantee longterm success for the underlying design system. A design system needs ongoing maintenance, support, and tender loving care for it to truly thrive. 
+**An artifact is something you'd find on an archaeological dig or in a museum, whereas a system is a living, breathing entity.** A pattern library can provide documentation and serve as a helpful resource, but the simple existence of a pattern library doesn't guarantee long-term success for the underlying design system. A design system needs ongoing maintenance, support, and tender loving care for it to truly thrive. 
 
 ## Changing minds, once again
-We've already discussed the importance of resetting everyone's expectations in order to establish a more collaborative, pattern-driven workflow. In order to save our style guides from the bowels of a trash can, we must once again fundamentally rewire people's brains.
+We've already discussed the importance of resetting everyone's expectations to establish a more collaborative, pattern-driven workflow. To save our style guides from the bowels of a trash can, we must once again fundamentally rewire people's brains.
 
 ### What is it we're making again?
-We *think* we merely design and build websites and apps. And that's true for the most part. After all, that's what our clients pay us to do, and the products we create are the vehicles that generate money and success for an organization. So it seems natural to focus on the final implementations rather than the underlying system. With this mentality, the live products remain the primary focus of everyone's attention, while any pattern library exists as an offshoot that simply provides helpful documentation.
+We *think* we merely design and build websites and apps. And that's true for the most part. After all, that's what our clients pay us to do, and the products we create are the vehicles that generate money and success for an organization. It seems natural to focus on the final implementations rather than the underlying system. The live products remain the primary focus of everyone's attention, while any pattern library exists as an offshoot that simply provides helpful documentation.
 
 {% include figure.html src="../images/content/workflow-website-first.png" caption="" %}
 
-The problem with this mentality is that you can almost see that pattern library snapping off and sliding into the abyss.  **Once the pattern library ceases to reflect the current state of the products it serves, it becomes obsolete**. And when the pattern library managing the design system is no longer accurate, the website maintenance process devolves into a smattering of hotfixes and ad hoc changes, ruining all the thoughtfulness that went into creating the original design system.
+The problem with this mindset is that you can almost see that pattern library snapping off and sliding into the abyss. **Once the pattern library ceases to reflect the current state of the products it serves, it becomes obsolete.** And when the pattern library managing the design system is no longer accurate, the website maintenance process devolves into a smattering of hotfixes and ad hoc changes, ruining all the thoughtfulness that went into creating the original design system.
 
-In order to set ourselves up for longterm success, we must fundamentally shift our mentality around what we’re actually creating. Rather than thinking of final applications as our sole responsibility, we must recognize that the design system is what underpins our final products *and* pattern libraries.
+To set ourselves up for long-term success, we must fundamentally shift our outlook around what we’re actually creating. Rather than thinking of final applications as our sole responsibility, we must recognize that the design system is what underpins our final products *and* pattern libraries.
 
 {% include figure.html src="../images/content/workflow-system-first.png" caption="" %}
 
-This "design system first" mentality inserts a bit of friction into the maintenance process, and that **friction can be friendly**. It forces us to step back and consider how any improvements, client requests, feature additions, and iterations impact the overall system rather than only a sliver of the whole ecosystem. 
+This "design system first" mentality inserts a bit of friction into the maintenance process, and that **friction can be friendly**. It forces us to step back and consider how any improvements, client requests, feature additions, and iterations affect the overall system rather than only a sliver of the whole ecosystem. 
 
-Say for instance you're working on an e-commerce site, and you run a test to find a custom-styled dropdown menu on the product detail page isn't performing as well as the browser's default dropdown menu. One course of action is to simply remove the custom-styled dropdown from that particular page and call it a day. However, considering the entire design system rather than just the product detail page might cause you to take a step back and ask, "If this custom dropdown menu isn't performing well here, perhaps it's not performing well elsewhere?" After digging into the issue further, you find the best course of action is to globally modify the dropdown pattern in the design system to remove the custom styling. Now anywhere the dropdown pattern appears will reflect those changes and will likely see similar performance improvements.
+Say you're working on an e-commerce site, and you run a test that finds a custom-styled dropdown menu on the product detail page isn't performing as well as the browser's default dropdown menu. One course of action is to simply remove the custom-styled dropdown from that particular page and call it a day. However, considering the entire design system rather than just the product detail page might cause you to take a step back and wonder, "If this custom dropdown menu isn't performing well here, perhaps it's not performing well elsewhere." After digging into the issue further, you find the best course of action is to globally modify the dropdown pattern in the design system to remove the custom styling. Now, anywhere the dropdown pattern appears will reflect those changes and will likely see similar performance improvements.
 
-That is just one example of how design system thinking can lead to broader, more considered changes. **Broken behavior and opportunities to enhance the UI will often be realized at the *application* level, but those changes should often be acted on at the *system* level**. Adding this bit of friendly friction into your workflow ensures improvements are shared across the entire ecosystem and prevents the system from being eroded by a series of one-off changes.
+That is just one example of how design-system thinking can lead to broader, more considered changes. **Broken behavior and opportunities to enhance the UI will often be realized at the *application* level, but those changes should often be acted on at the *system* level.** Adding this bit of friendly friction into your workflow ensures improvements are shared across the entire ecosystem, and prevents the system from being eroded by a series of one-off changes.
 
 ### Done and done
-Another expectation we must revisit is our definition of *done*. Creating things for print and other physical mediums involve making permanent, tangible objects. That sense of finality simply doesn't exist in the digital world, which means change can happen with much less effort and friction than other mediums. **Clients, colleagues, and stakeholders should embrace the pliable nature of the digital world to create living design systems that adapt to the ever-shifting nature of the medium, user needs, and the needs of the business**. 
+Another expectation we must revisit is our definition of *done*. Creating things for print and other physical media involves making permanent, tangible objects. That sense of finality simply doesn't exist in the digital world, which means change can happen with much less effort and friction than other media. **Clients, colleagues, and stakeholders should embrace the pliable nature of the digital world to create living design systems that adapt to the ever-shifting nature of the medium, user needs, and the needs of the business**. 
 
-This shift in thinking fundamentally impacts the scope of our work. Folks working in the client services business are often used to delivering a project in a tidy package then riding off into the sunset. Internal teams don't fair much better, since they tend to float from one initiative to the next. Whether you're part of an internal team or are an external gun for hire, I'm guessing you've experienced the shortcomings of project-based work. We tend to talk about a future that never comes, and instead we set it, forget it, then move onto the next shiny project.
+This shift in thinking fundamentally affects the scope of our work. Folks working in the client services business are often used to delivering a project in a tidy package then riding off into the sunset. Internal teams don't fair much better, since they tend to float from one initiative to the next. Whether you're part of an internal team or you're an external gun for hire, I'm guessing you've experienced the shortcomings of project-based work. We tend to talk about a future that never comes, and instead we set it, forget it, then move on to the next shiny project.
 
 If we're committed to creating genuinely useful work that truly meets the needs of our clients and organizations, we must fundamentally redefine the scope of our work. As Nathan Curtis says, a design system shouldn't be a *project* with a finite scope, but rather a *product* meant to grow and evolve over time:
 
 > Focusing on style guide delivery as the climax is the wrong story to tell. A system isn’t a project with an end, it’s the origin story of a living and evolving product that’ll serve other products. <cite>[Nathan Curtis](https://medium.com/eightshapes-llc/a-design-system-isn-t-a-project-it-s-a-product-serving-products-74dcfffef935#.4umtnfxsx)</cite>
 
-The web is never done, and the creation of a design system is merely the first step in a long (and hopefully fruitful!) journey. A design system should be a longterm commitment with the ambitious goal of revolutionizing how your organization creates digital work. Exciting, eh?! So how do we make sure that happens?
+The web is never done, and the creation of a design system is merely the first step in a long (and hopefully fruitful!) journey. A design system should be a long-term commitment with the ambitious goal of revolutionizing how your organization creates digital work. Exciting, eh?! So how do we make sure that happens?
 
-## Creating Maintainable Design Systems
-As you embark on this pattern-paved journey, let's talk about things you can do to craft a design system that sets your organization up for longterm success. How do you create a design system that takes root and becomes an essential part of your organization's workflow? What pitfalls do you need to be on the lookout for? How do you ensure the design system yields big results? To set your design system up for longterm success, you need to:
+## Creating maintainable design systems
+As you embark on this pattern-paved journey, let's talk about things you can do to craft a design system that sets up your organization for long-term success. How do you create a design system that takes root and becomes an essential part of your organization's workflow? What pitfalls do you need to be on the lookout for? How do you ensure the design system yields big results? To set up your design system for long-term success, you need to:
 
 - Make it official.
 - Make it adaptable.
@@ -63,6 +63,13 @@ As you embark on this pattern-paved journey, let's talk about things you can do 
 - Make it agnostic.
 - Make it contextual.
 - Make it last.
+
+<div class="editor">
+{% capture m %}
+Ed: I wonder whether this list should be numbered. (I’ll leave it alone for now as it will impact matters below and you should choose what you prefer.) The rest of this chapter expands on each of these points, and some of these in turn contain further lists which are also then explained in more detail. It’s easy for a reader to lose track of where they are. If you decide to number this list, you can then add the corresponding number to the heading to help readers orient[ate] themselves.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 Let's dive into each one of these points in a bit more detail.
 
