@@ -168,15 +168,43 @@ Ed: I’m not a fan of questions as headings. You can convey what's required in 
 {{ m | markdownify }}
 </div>
 
-Who updates the design system? Who approves changes? Who interfaces with the users of the design system to make sure it's addressing their needs? Who gets to decide which patterns stay, go, or need tweaked? 
+Who updates the design system? Who approves changes? Who <span class="editor">interfaces</span> with the users of the design system to make sure it's addressing their needs? Who gets to decide which patterns stay, go, or need tweaked? 
 
-The answers to these questions **will very much depend on the size and setup of your organization**.
+<div class="editor">
+{% capture m %}
+Ed: Nope. I cannot accept ‘interfaces’ as a verb. It’s beyond ugly. What's wrong with ‘talks’?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-**Large organizations** like Salesforce maintain an official *design systems team*, which currently includes about a dozen full-time employees last I heard. That dedicated team is responsible for governing the design system and making sure it's meeting the needs of the myriad internal product teams, as well as external developers that build things on the company's platform. When a design system is serving literally thousands of  users, it's a smart idea to dedicate at least a few full-time employees to manage and grow the system.
+The answers to these questions will very much depend on the size and setup of your organization.
 
-**Smaller organizations** most likely don't have the luxury of building an entire team to service a design system. Team members in smaller organizations have to wear many (hopefully stylish!) hats out of necessity, so governing the design system will likely become another responsibility. This may sound like an added burden ("oh great, yet another thing I'm responsible for that doesn't involve a pay raise!"), but this particular hat should be a joy to wear as it improves the efficiency and quality of all other work. Hooray for design systems! 
+<div class="editor">
+{% capture m %}
+Ed: OK, so here I did remove the emphasis. You’ve already set this sentence apart to draw attention to it. There’s really no need to impress the thought even deeper into the reader’s eyes.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-Typically, design system makers at smaller organizations will be senior-level staff who have the experience to make thoughtful decisions and authority to enforce the design system.
+**Large organizations** <span class="editor">are able to dedicate serious resources to managing design systems.</span> Salesforce, for example, maintains an official *design systems team*, which currently includes about a dozen full-time employees, last I heard. That dedicated team is responsible for governing the design system and making sure it's meeting the needs of the <span class="editor">myriad</span> internal product teams, as well as external developers who build things on the company's platform. When a design system is serving literally thousands of users, it's a smart idea to dedicate at least a few full-time employees to manage and expand the system.
+
+<div class="editor">
+{% capture m %}
+Ed: I've inserted a new sentence to allow the Salesforce example to stand clear of your thought about large organizations.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+<div class="editor">
+{% capture m %}
+Ed: Myriad? We’ve been here before. Here, you could even just delete it.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+**Smaller organizations** most likely don't have the luxury of building an entire team to service a design system. Team members in smaller organizations have to wear many (hopefully stylish!) hats out of necessity, so governing the design system will likely become another responsibility. This may sound like an added burden ("Oh great, yet another thing I'm responsible for that doesn't involve a pay raise!"), but this particular hat should be a joy to wear as it improves the efficiency and quality of all other work. Hooray for design systems! 
+
+Typically, design system makers at smaller organizations will be senior-level staff who have the experience to make thoughtful decisions, and the authority to enforce the design system.
 
 And then there are **external agencies, contractors, and consultants**. What is the role of an external party when it comes to longterm maintenance of a client's design system? On one hand, external parties are at a bit of a disadvantage since they don't actually work for their client's organization. A successful design system needs to become a part of an organization's DNA, and since external parties exist outside the company's walls, their influence is intrinsically limited.
 
