@@ -74,34 +74,63 @@ Ed: I wonder whether this list should be numbered. (I’ll leave it alone for no
 Let's dive into each one of these points in a bit more detail.
 
 ## Make it official
-Your initial style guide may begin its life as a side project, result of a weekend hackathon, or as the brainchild of one or two ambitious team members. As we discussed in the last chapter, your client or boss doesn't even have to know that you're creating a thoughtful design system and accompanying pattern library. Remember: ask forgiveness, not permission!
+Your initial style guide may begin its life as a side project, the result of a weekend hackathon, or as the brainchild of one or two ambitious team members. As we discussed in the previous chapter, your client or boss doesn't even have to know that you're creating a thoughtful design system and accompanying pattern library. Remember: ask forgiveness, not permission!
 
-Organic beginnings are all well and good, but in order to establish a truly impactful design system that creates longterm success for your organization, **the design system needs to evolve into an officially-sanctioned endeavor**. That means thinking of it as a true product rather than a simple side project, and consequently allocating real time, budget, and people to it.
+Organic beginnings are all well and good, but in order to establish a truly <span class="editor">impactful</span> design system that creates long-term success for your organization, **the design system needs to evolve into an officially sanctioned endeavor**. That means thinking of it as a true product rather than a simple side project, and consequently allocating real time, budget, and people to it.
 
-Convincing stakeholders to commit a large chunk of money, time, and resources upfront for a design system can be extremely challenging. So what are we to do? Here's my advice:
+<div class="editor">
+{% capture m %}
+Ed: While I’m not going to change ‘impactful’, it’s one of those relatively new (1960s) coinages that annoys some readers. More impressive, effective, cogent, potent or motivating alternatives are available. That said, in this context and with your readership, it’s unlikely to cause much consternation and it makes sense.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+Convincing stakeholders to commit large chunks of money, time, and resources up front for a design system can be extremely challenging. So what are we to do? Here's my advice:
 
 1. Make a thing.
 2. Show that it's useful.
 3. Make it official.
 
+<div class="editor">
+{% capture m %}
+Ed: If the main list becomes numbered, then it’s probably best if this one uses something other than numbers, but still captures the sense of progress: lowercase Roman numerals (i, ii, iii); or letters (a, b, c).
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
 Let's break down these steps a bit further.
 
-### Step 1: make a thing
-You have to start somewhere, and having something started is better than nothing at all. Pick a project that would be a great pilot for establishing your design system, follow a process similar to the one discussed in [chapter 4](/chapter-4/), think about the atomic design mental model detailed in [chapter 2](/chapter-2/), and you'll end up with a solid foundation for a thoughtful design system and pattern library that helps your team work more effectively. 
+### 1: Make a thing
 
-Take the time to package your UI patterns in a pattern library and get it ready to shop around. I've talked to several ambitious team members who have built the basic gist of their pattern library over the course of a weekend. This effort makes all the difference in the world since it gives something tangible for stakeholders to react to. Again: *show, don't tell*.
+<div class="editor">
+{% capture m %}
+Ed: And obviously this subheading and the ones following should be updated to reflect the choice you make immediately above – but using uppercase versions as these mark subheadings: “I. Make a thing, II. Show that it’s useful”; “B. Show that it’s useful, C. Make it official”. Hope that’s clear. I know blethering on about numbering headings isn’t exciting but I’m thinking of your readers in this long chapter.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-### Step 2: show that it's useful 
-With a nascent-yet-tangible design system in place, you can have more meaningful conversations with the people who control money, scheduling, and resources. You can discuss exactly how the design system helped save time and money (see *[Pitching Patterns](/chapter-4/#pitching-patterns)* in the last chapter), then paint a picture for how those benefits would scale even further if the organization invested in an official, full-fledged design system. 
+You have to start somewhere, and having something started is better than nothing at all. Pick a project that would be a great pilot for establishing your design system; follow a process similar to the one discussed in [chapter 4](/chapter-4/); think about the atomic design mental model detailed in [chapter 2](/chapter-2/); and you'll end up with a solid foundation for a thoughtful design system and pattern library that helps your team work more effectively. 
 
-Get team members from different disciplines to back you up and discuss the initial success of the system, and also pull in others who are sympathetic to the cause that would stand to benefit from an expanded design system. 
+Take the time to package your UI patterns in a pattern library and get it ready to be shopped around. I've talked to several ambitious team members who have established the basic gist of their pattern library over the course of a weekend. This effort makes all the difference in the world since it provides something tangible for stakeholders to react to. Again: *show, don't tell*.
 
-### Step 3: make it official
-You've proven the value of your initial design system and presented a roadmap for how to make it even better. With any luck your organization will commit to making the design system an Official Thing. 
+### 2: Show that it's useful 
+With a nascent-yet-tangible design system in place, you can have more meaningful conversations with the people who control money, scheduling, and resources. You can discuss exactly how the design system helped save time and money (see “[Pitching Patterns](/chapter-4/#pitching-patterns)” in chapter 4), then paint a picture of how those benefits would scale even further if the organization invested in an official, full-fledged design system. 
 
-With approval from the highest levels, you're now able to put a plan into action that involves: allocating and/or hiring people to work on the design system, developing a plan to make the design system more comprehensive, establishing a clear governance strategy, and laying out a product roadmap for the design system.
+Get team members from different disciplines to back you up and discuss the initial success of the system, and also pull in others who are sympathetic to the cause who would stand to benefit from an expanded design system. 
 
-Now it's worth pointing out that (as with many things in life) things may not shake out the way you hoped. Despite demonstrating real value and presenting a concrete plan of action, higher ups still might shoot your initiative down. **Don't be discouraged**. You may have lost the battle, but you certainly haven't lost the war. Your team should continue to grow and extend the design system (in whatever capacity you can) until its value becomes undeniable. As more people benefit from the system, you'll end up with a grassroots support system that can help push the endeavor through.
+### 3: Make it official
+You've <span class="editor">prove<ins>d</ins><del>n</del></span> the value of your initial design system and presented a roadmap for how to make it even better. With any luck your organization will commit to making the design system an Official Thing. 
+
+<div class="editor">
+{% capture m %}
+Ed: The past tense of prove is proved, but proven has crept out of Scottish courtrooms (where ‘not proven’ is a verdict available alongside ‘guilty’ and ‘not guilty’) over the past three hundred years to become more widely used. I think your usage here harks back to an idiomatic use, ‘proven record’.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+With approval from the highest levels, you're now able to put a plan into action that involves: allocating or hiring people to work on the design system; developing a plan to make the design system more comprehensive; establishing a clear governance strategy; and laying out a product roadmap for the design system.
+
+It's worth pointing out that things may not shake out the way you hoped. Despite demonstrating real value and presenting a concrete plan of action, higher-ups still might shoot your initiative down. **Don't be discouraged.** You may have lost the battle, but you can certainly win the war. Your team should continue to grow and extend the design system in whatever capacity you can until its value becomes undeniable. As more people benefit from the system, you'll end up with a grassroots-supported system that can help push the endeavor through.
 
 ### Establishing a design system team
 With the design system initiative approved, it's now time to put the right people and processes in place to ensure the system flourishes for your organization.
