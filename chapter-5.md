@@ -278,9 +278,9 @@ Change is the only constant, as they say. **The <em>living</em> part of a living
 
 A misconception about design systems is that once they're established, they become an omnipotent and unchangeable source of truth. Thinking in such a rigid way is a surefire way to have your design system effort backfire. If users feel handcuffed and pigeonholed into using patterns that don't solve their problems, they'll perceive the design system as a unhelpful tool and start searching elsewhere for something that will better address their needs. 
 
-**Creating a clear governance plan is essential for making sure your design system can adapt and thrive even as time goes by**.  A solid governance strategy starts by answering some important questions about handling change. Consider the following questions:
+**Creating a clear governance plan is essential for making sure your design system can adapt and thrive as time passes. A solid governance strategy starts by answering some important questions about handling change. Consider the following questions:
 
-- What happens when an existing pattern doesn't quite work for a specific application? Does the pattern get modified? Do you recommend using a different pattern? Does a new pattern need created?
+- What happens when an existing pattern doesn't quite work for a specific application? Does the pattern get modified? Do you recommend using a different pattern? Does a new pattern need creating?
 - How are new pattern requests handled?
 - How do old patterns get retired? 
 - What happens when bugs are found?
@@ -292,44 +292,51 @@ A misconception about design systems is that once they're established, they beco
 
 There are likely many more specific questions to answer, but the point is your team should have answers and processes in place to address inevitable changes to the system. 
 
-As mentioned a few times already, frequent communication and collaboration between makers and users is key for successfully governing your design system. **Make it as easy as possible to users and makers to communicate**. Set up a design system Slack or Yammer channel, establish regular office hours, make sure your bug ticket software helps facilitate conversation, and keep the doors open for ad hoc chats and calls. If users are stuck on something, they should know exactly where and who to turn to for help.
+As mentioned a few times already, frequent communication and collaboration between makers and users is key for successfully governing your design system. **Make it as easy as possible to users and makers to communicate.** Set up a design system Slack or Yammer channel, establish regular office hours, make sure your bug ticket software helps facilitate conversation, and keep the doors open for ad hoc chats and calls. If users are stuck on something, they should know exactly where and who to turn to for help.
 
-In addition to informal day-to-day conversation between makers and users, **schedule regular "state of the union" meetings to review the design system** with makers, users, and other key stakeholders. Discuss what's working, be honest with what needs improved, and review priorities and the roadmap to make sure the   system is serving the needs of the business. These regular checkups are especially helpful for keeping stakeholders up to speed since they often aren't involved in the day to day of the design system's operations.
+In addition to informal day-to-day conversation between makers and users, **schedule regular "state of the union" meetings to review the design system** with makers, users, and other key stakeholders. Discuss what's working, be honest with what needs to be improved, and review priorities and the roadmap to make sure the system is serving the needs of the business. These regular checkups are especially helpful for keeping stakeholders up to speed, since they often aren't involved in the day-to-day of the design system's operations.
 
 ### Making changes to patterns
-A critical part of design system maintenance is ensuring that UI patterns stay up to date, embrace ever-evolving design & development best practices, and continue to address the real needs of the organization's products. 
+A critical part of design system maintenance is ensuring that UI patterns stay up to date, embrace evolving design and development best practices, and continue to address the real needs of the organization's products. 
 
-Developing a strategy for handling pattern changes is crucial, which is why Inayaili de León Persson and the Canonical Web team  spent time to map out that strategy as they created their [Vanilla frontend framework](http://ubuntudesign.github.io/vanilla-framework/). 
+Developing a strategy for handling pattern changes is crucial, which is why Inayaili de León Persson and the Canonical web team spent time to map out their strategy as they created the [Vanilla front-end framework](http://ubuntudesign.github.io/vanilla-framework/). 
 
 > We thought that it would be good to document the process that a pattern should follow in order to become a Vanilla pattern, so after a little bit of brainstorming, we created a diagram that shows the different steps that should be taken from before submitting a pattern proposal to its full acceptance as a Vanilla pattern. <cite><a href="http://design.canonical.com/2016/07/getting-vanilla-ready-for-v1-the-roadmap/">Inayaili de León Persson, Canonical</a>
 
-The result is a gorgeous decision tree that maps out exactly what process needs to happen in order to add a new pattern to the design system.
+The result is a gorgeous decision tree that maps out exactly what processes need to happen to add a new pattern to the design system.
 
-{% include figure.html src="../images/content/pattern-addition-flowchart.png" caption="The Canonical web team mapped out the decision process they use to manage updates and additions to patterns in their Vanilla frontend framework." %}
+{% include figure.html src="../images/content/pattern-addition-flowchart.png" caption="The Canonical web team mapped out the decision process used to manage updates and additions to patterns in the Vanilla front-end framework." %}
 
-The three types of change that can happen to patterns in a design system is modification, addition, and removal. 
+The three types of change that can happen to patterns in a design system are modification, addition, and removal. 
 
 #### Modifying patterns
 UI patterns can and should be modified for a number of reasons: bug fixes, subtle or major visual design tweaks, performance improvements, better accessibility, code refactoring, updating UX best practice, and so on. 
 
-The design system maintainers needs to understand why and when to tweak patterns, how to go about making those changes, and how to roll those improvements out into individual applications.
+The design system maintainers need to understand why and when to tweak patterns, how to go about making those changes, and how to roll out those improvements into individual applications.
 
-Keeping patterns fresh is essential for the longterm health of the design system. Nobody wants to use and maintain a Web 2.0-looking design system full of bevels and crusty code!
+Keeping patterns fresh is essential for the long-term health of the design system. Nobody wants to use and maintain a Web 2.0-looking design system full of bevels and crusty code!
 
 #### Adding patterns
-As smart as your team surely is, it's quite possible you won't think of every conceivable pattern to include in your design system right out of the gate. As the system gets applied to more products, gaps will inevitably emerge where the needs of the application aren't solved by existing patterns. In such cases, it will become clear that new patterns will need created to address these needs. 
+As smart as your team surely is, it's quite possible you won't think of every conceivable pattern to include in your design system right out of the gate. As the system is applied to more products, gaps will inevitably emerge where the needs of the application aren't solved by existing patterns. In such cases, it will become clear that new patterns will need created to address these needs. 
 
-Care should be taken when adding patterns to the library. **If every whim results in a brand new pattern, the design system will become a bloated and unwieldy wild west**. So it's worth asking, is this a one-off situation or is this something can be leveraged in other applications? 
+Care should be taken when adding patterns to the library. **If every whim results in a brand new pattern, the design system will become a bloated and unwieldy Wild West.** It's worth asking if this is a one-off situation or something that can be leveraged in other applications. 
 
-Perhaps you may want to assume a one-off until a different team encounters a similar use case. If the team working on Application 2 looks at Application 1 and says "I want that!" perhaps that's a good indicator that a one-off pattern should be added to the pattern library. 
+Perhaps you may want to assume a one-off until a different team encounters a similar use case. If the team working on Application 2 looks at Application 1 and says, "I want that!" perhaps that's a good indicator that a one-off pattern should be added to the pattern library. 
 
 #### Removing patterns
-Patterns should be retired/sunsetted/removed/deprecated for a number of reasons. Perhaps you discover through use that a particular pattern is a terrible idea. Hindsight is 20/20, my friend. Perhaps the industry has moved away from a pattern for UX or technical reasons. Maybe a pattern sat there unused by any application for ages. Maybe users reported back with a lot of negative feedback about working with a particular pattern.
+Patterns should be <span class="editor">retired/sunsetted/removed/deprecated</span> for a number of reasons. Perhaps you discover through use that a particular pattern is a terrible idea. Hindsight is 20/20, my friend. Maybe the industry has moved away from a pattern for UX or technical reasons. Perhaps a pattern sat there unused by any application for ages. Maybe users reported back with a lot of negative feedback about working with a particular pattern.
 
-Having a plan for deprecating patterns is a great idea. But how do you remove patterns from the design system without pulling the rug out from people relying on those patterns in their applications? To address this issue, Salesforce created a neat utility called [Sass Deprecate](https://github.com/salesforce-ux/sass-deprecate) that flags patterns that are heading to the chopping block in the near future. Through some clever use of Sass variable flags and styling, the maker team can give a heads-up to users that a particular pattern is being deprecated, and recommend an alternative pattern instead. 
+<div class="editor">
+{% capture m %}
+Ed: I understand that different teams will use different words to describe what happens when a pattern overstays its welcome, but the first three terms here effectively mean the same thing. I’m willing to let ‘deprecated’ stand as it implies that an old pattern has been superseded by a new one. But I’d stick to just one of the others.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+Having a plan for deprecating patterns is a great idea. But how do you remove patterns from the design system without pulling the rug out from under people relying on those patterns in their applications? To address this issue, Salesforce created a neat utility called [Sass Deprecate](https://github.com/salesforce-ux/sass-deprecate) that flags patterns that are heading to the chopping block in the near future. Through some clever use of Sass variable flags and styling, the maker team can give a heads-up to users that a particular pattern is being deprecated, and recommend an alternative pattern instead. 
 
 ## Make it maintainable
-With all this talk about modifying, adding, and removing patterns, you may be wondering "How the hell are our applications supposed to actually keep up with all these changes?!" And in asking that question, you will have stumbled onto one of the biggest challenges organizations face in successfully maintaining a design system. 
+With all this talk about modifying, adding, and removing patterns, you may be wondering, "How the hell are our applications supposed to actually keep up with all these changes?!" And in asking that question, you will have stumbled on to one of the biggest challenges organizations face in successfully maintaining a design system. 
 
 > The biggest existential threat to any system is neglect. <cite><a href="http://airbnb.design/the-way-we-build/">Alex Schleifer, Airbnb</a>
 
