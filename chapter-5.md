@@ -274,9 +274,9 @@ However, this does make that original list a little less punchy, so perhaps more
 </div>
 
 ## Make it adaptable 
-Change is the only constant, as they say. **The <em>living</em> part of a living design system means that it needs to roll with the punches, adapt to feedback, be iterated upon, and evolve alongside the products it serves**.  
+Change is the only constant, as they say. **The <em>living</em> part of a living design system means that it needs to roll with the punches, adapt to feedback, be iterated on, and evolve alongside the products it serves.**  
 
-A misconception about design systems is that once they're established, they become an omnipotent and unchangeable source of truth. Thinking in such a rigid way is a surefire way to have your design system effort backfire. If users feel handcuffed and pigeon-holed into using patterns that don't solve their problems, they'll perceive the design system as a unhelpful tool and start searching elsewhere for something that will better address their needs. 
+A misconception about design systems is that once they're established, they become an omnipotent and unchangeable source of truth. Thinking in such a rigid way is a surefire way to have your design system effort backfire. If users feel handcuffed and pigeonholed into using patterns that don't solve their problems, they'll perceive the design system as a unhelpful tool and start searching elsewhere for something that will better address their needs. 
 
 **Creating a clear governance plan is essential for making sure your design system can adapt and thrive even as time goes by**.  A solid governance strategy starts by answering some important questions about handling change. Consider the following questions:
 
