@@ -152,13 +152,6 @@
 
 <p>You can see we have: HTML markup consisting of a wrapper <code class="highlighter-rouge">div</code> with a class name of <code class="highlighter-rouge">block-post</code>; a link; a Mustache include for the thumbnail image; an <code class="highlighter-rouge">&lt;h3&gt;</code> element for the headline; and a <code class="highlighter-rouge">&lt;p&gt;</code> tag for the excerpt. You’ll notice there’s more Mustache code for <code class="highlighter-rouge">url</code>, <code class="highlighter-rouge">headline</code>, and <code class="highlighter-rouge">excerpt</code>, which we’ll use later to dynamically swap in actual content. More on that in a bit.</p>
 
-<div class="editor">
-
-
-<p>Ed: HTML tag or element? I tend to think of elements as having opening and closing tags (except when they don’t, of course…)</p>
-
-</div>
-
 <p>Now that our pattern markup is established, we can include that chunk of code in bigger patterns using the same include method:</p>
 
 <div class="language-html highlighter-rouge"><pre class="highlight"><code>{{&gt; molecules-block-post }}
@@ -266,13 +259,6 @@
 
 <p>The default placeholder data is defined in a file called <em>data.json</em> that lives in Pattern Lab’s <em>/source</em> directory. Inside this file we define all the text, image paths, and other dynamic data that will make up our UI. Here’s a small sample from Time Inc.’s <em>data.json</em> file:</p>
 
-<div class="editor">
-
-
-<p>Ed: File names aren’t code (unless they appear in code), so shouldn’t be marked up as such. Using italics is a better option. For convenience I’ve just used Markdown’s <em>underscore</em>, but this marks them up using <code class="highlighter-rouge">&lt;em&gt;</code>. In this case, <code class="highlighter-rouge">&lt;i&gt;</code> would be better. I’ve also added a slash to the directory name to clarify matters a little.</p>
-
-</div>
-
 <div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="s2">"hero"</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
   </span><span class="nt">"headline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem Ipsum"</span><span class="p">,</span><span class="w">
   </span><span class="nt">"img"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -280,37 +266,23 @@
     </span><span class="nt">"alt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hero Image"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span><span class="err">```````</span><span class="w">
+</span></code></pre>
+</div>
 
-</span><span class="err">For</span><span class="w"> </span><span class="err">developers,</span><span class="w"> </span><span class="err">this</span><span class="w"> </span><span class="err">type</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="err">format</span><span class="w"> </span><span class="err">most</span><span class="w"> </span><span class="err">likely</span><span class="w"> </span><span class="err">looks</span><span class="w"> </span><span class="err">familiar.</span><span class="w"> </span><span class="err">If</span><span class="w"> </span><span class="err">you're</span><span class="w"> </span><span class="err">not</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">developer,</span><span class="w"> </span><span class="err">don't</span><span class="w"> </span><span class="err">freak</span><span class="w"> </span><span class="err">out!</span><span class="w"> </span><span class="err">Once</span><span class="w"> </span><span class="err">you</span><span class="w"> </span><span class="err">look</span><span class="w"> </span><span class="err">beyond</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">curly</span><span class="w"> </span><span class="err">braces</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">quotes,</span><span class="w"> </span><span class="err">you'll</span><span class="w"> </span><span class="err">see</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">we're</span><span class="w"> </span><span class="err">defining</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">`hero`</span><span class="w"> </span><span class="err">object</span><span class="w"> </span><span class="err">(for</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">full-bleed</span><span class="w"> </span><span class="err">hero</span><span class="w"> </span><span class="err">area</span><span class="w"> </span><span class="err">directly</span><span class="w"> </span><span class="err">below</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">header)</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">has</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">`headline`</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="s2">"Lorem Ipsum"</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">an</span><span class="w"> </span><span class="err">`img`</span><span class="w"> </span><span class="err">with</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">`src`</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="s2">"/images/sample/fpo_hero.png"</span><span class="err">.</span><span class="w"> </span><span class="err">We're</span><span class="w"> </span><span class="err">simply</span><span class="w"> </span><span class="err">defining</span><span class="w"> </span><span class="err">this</span><span class="w"> </span><span class="err">object's</span><span class="w"> </span><span class="err">attributes</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">providing</span><span class="w"> </span><span class="err">values</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">those</span><span class="w"> </span><span class="err">attributes.</span><span class="w">
+<p>For developers, this type of format most likely looks familiar. If you’re not a developer, don’t freak out! Once you look beyond the curly braces and quotes, you’ll see that we’re defining a <code class="highlighter-rouge">hero</code> object (for the full-bleed hero area directly below the header) that has a <code class="highlighter-rouge">headline</code> value of “Lorem Ipsum” and an <code class="highlighter-rouge">img</code> with a <code class="highlighter-rouge">src</code> value of “/images/sample/fpo_hero.png”. We’re simply defining this object’s attributes and providing values for those attributes.</p>
 
-</span><span class="err">&lt;div</span><span class="w"> </span><span class="err">class=</span><span class="s2">"editor"</span><span class="err">&gt;</span><span class="w">
+<p>Once those objects are defined, we can then override their attributes at Pattern Lab’s page level. This is accomplished by creating a new JSON file that matches the page pattern name (for Time Inc.’s home page, we’ll call it <em>00-homepage.json</em>) inside the <em>/pages</em> directory.</p>
 
+<figure>
+    <img src="../images/content/timeinc-page-directory.png" alt="Inside the ‘pages’ directory we have the home page pattern as well as a JSON file that matches the name of the pattern. This is where we'll override the default content with page-specific content." />
+	<figcaption>
+	    Inside the ‘pages’ directory we have the home page pattern as well as a JSON file that matches the name of the pattern. This is where we'll override the default content with page-specific content.
+	</figcaption>
+</figure>
 
-</span><span class="err">&lt;p&gt;Ed:</span><span class="w"> </span><span class="err">Here</span><span class="w"> </span><span class="err">I’ve</span><span class="w"> </span><span class="err">changed</span><span class="w"> </span><span class="err">italics</span><span class="w"> </span><span class="err">(emphasis)</span><span class="w"> </span><span class="err">to</span><span class="w"> </span><span class="err">code</span><span class="w"> </span><span class="err">ticks</span><span class="w"> </span><span class="err">as</span><span class="w"> </span><span class="err">you’re</span><span class="w"> </span><span class="err">referencing</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">code</span><span class="w"> </span><span class="err">sample.&lt;/p&gt;</span><span class="w">
+<p>When we open up <em>00-homepage.json</em> we can override the placeholder data we established earlier. Here’s what that might look like:</p>
 
-</span><span class="err">&lt;/div&gt;</span><span class="w">
-
-</span><span class="err">Once</span><span class="w"> </span><span class="err">those</span><span class="w"> </span><span class="err">objects</span><span class="w"> </span><span class="err">are</span><span class="w"> </span><span class="err">defined,</span><span class="w"> </span><span class="err">we</span><span class="w"> </span><span class="err">can</span><span class="w"> </span><span class="err">then</span><span class="w"> </span><span class="err">override</span><span class="w"> </span><span class="err">their</span><span class="w"> </span><span class="err">attributes</span><span class="w"> </span><span class="err">at</span><span class="w"> </span><span class="err">Pattern</span><span class="w"> </span><span class="err">Lab's</span><span class="w"> </span><span class="err">page</span><span class="w"> </span><span class="err">level.</span><span class="w"> </span><span class="err">This</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">accomplished</span><span class="w"> </span><span class="err">by</span><span class="w"> </span><span class="err">creating</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">new</span><span class="w"> </span><span class="err">JSON</span><span class="w"> </span><span class="err">file</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">matches</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">page</span><span class="w"> </span><span class="err">pattern</span><span class="w"> </span><span class="err">name</span><span class="w"> </span><span class="err">(for</span><span class="w"> </span><span class="err">Time</span><span class="w"> </span><span class="err">Inc.'s</span><span class="w"> </span><span class="err">home</span><span class="w"> </span><span class="err">page,</span><span class="w"> </span><span class="err">we'll</span><span class="w"> </span><span class="err">call</span><span class="w"> </span><span class="err">it</span><span class="w"> </span><span class="err">_homepage.json_)</span><span class="w"> </span><span class="err">inside</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">_/pages_</span><span class="w"> </span><span class="err">directory.</span><span class="w">
-
-</span><span class="err">&lt;figure&gt;</span><span class="w">
-    </span><span class="err">&lt;img</span><span class="w"> </span><span class="err">src=</span><span class="s2">"../images/content/timeinc-page-directory.png"</span><span class="w"> </span><span class="err">alt=</span><span class="s2">"Inside the ‘pages’ directory we have the home page pattern as well as a JSON file that matches the name of the pattern. This is where we'll override the default content with page-specific content."</span><span class="w"> </span><span class="err">/&gt;</span><span class="w">
-	</span><span class="err">&lt;figcaption&gt;</span><span class="w">
-	    </span><span class="err">Inside</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">‘pages’</span><span class="w"> </span><span class="err">directory</span><span class="w"> </span><span class="err">we</span><span class="w"> </span><span class="err">have</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">home</span><span class="w"> </span><span class="err">page</span><span class="w"> </span><span class="err">pattern</span><span class="w"> </span><span class="err">as</span><span class="w"> </span><span class="err">well</span><span class="w"> </span><span class="err">as</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">JSON</span><span class="w"> </span><span class="err">file</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">matches</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">name</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">pattern.</span><span class="w"> </span><span class="err">This</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">where</span><span class="w"> </span><span class="err">we'll</span><span class="w"> </span><span class="err">override</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">default</span><span class="w"> </span><span class="err">content</span><span class="w"> </span><span class="err">with</span><span class="w"> </span><span class="err">page-specific</span><span class="w"> </span><span class="err">content.</span><span class="w">
-	</span><span class="err">&lt;/figcaption&gt;</span><span class="w">
-</span><span class="err">&lt;/figure&gt;</span><span class="w">
-
-</span><span class="err">&lt;div</span><span class="w"> </span><span class="err">class=</span><span class="s2">"editor"</span><span class="err">&gt;</span><span class="w">
-
-
-</span><span class="err">&lt;p&gt;Ed:</span><span class="w"> </span><span class="err">The</span><span class="w"> </span><span class="err">file</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">directory</span><span class="w"> </span><span class="err">names</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">image</span><span class="w"> </span><span class="err">don’t</span><span class="w"> </span><span class="err">match</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">names</span><span class="w"> </span><span class="err">referenced</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">text.&lt;/p&gt;</span><span class="w">
-
-</span><span class="err">&lt;/div&gt;</span><span class="w">
-
-</span><span class="err">When</span><span class="w"> </span><span class="err">we</span><span class="w"> </span><span class="err">open</span><span class="w"> </span><span class="err">up</span><span class="w"> </span><span class="err">_homepage.json_</span><span class="w"> </span><span class="err">we</span><span class="w"> </span><span class="err">can</span><span class="w"> </span><span class="err">override</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">placeholder</span><span class="w"> </span><span class="err">data</span><span class="w"> </span><span class="err">we</span><span class="w"> </span><span class="err">established</span><span class="w"> </span><span class="err">earlier.</span><span class="w"> </span><span class="err">Here's</span><span class="w"> </span><span class="err">what</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">might</span><span class="w"> </span><span class="err">look</span><span class="w"> </span><span class="err">like:</span><span class="w">
-
-</span><span class="err">````````json</span><span class="w">
-</span><span class="s2">"hero"</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="s2">"hero"</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
   </span><span class="nt">"headline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Moving People"</span><span class="p">,</span><span class="w">
   </span><span class="nt">"img"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nt">"src"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/images/hero_beyonce.jpg"</span><span class="p">,</span><span class="w">
@@ -320,14 +292,7 @@
 </span></code></pre>
 </div>
 
-<p>By overriding the default data, the <code class="highlighter-rouge">hero</code> headline now reads “Moving People” instead of “Lorem Ipsum”. And instead of pointing to a grayscale <span class="editor">FPO (for placement only)</span> hero image, we’re now pointing to a picture of <span class="editor">Beyoncé</span> located at “/images/hero_beyonce.jpg”.</p>
-
-<div class="editor">
-
-
-<p>Ed: Usually, abbreviations are placed in parens after what they abbreviate – for placement only (FPO) – not before. Should I have heard of FPO? I haven’t. What might your readers expect? Also, you used a grave accent on Beyoncé, not acute. Shame on you, Brad!</p>
-
-</div>
+<p>By overriding the default data, the <code class="highlighter-rouge">hero</code> headline now reads “Moving People” instead of “Lorem Ipsum”. And instead of pointing to a grayscale for placement only (FPO) hero image, we’re now pointing to a picture of Beyoncé located at “/images/hero_beyonce.jpg”.</p>
 
 <p>This process of establishing defaults for dynamic data then replacing it with page-specific content continues for each section of the website. In addition to replacing simple strings like headings, we can also dynamically set variables to <code class="highlighter-rouge">true</code> or <code class="highlighter-rouge">false</code>, loop through an array of items, and more. We can even dramatically alter the UI with just a few changes to a JSON file, which we’ll talk about next.</p>
 
@@ -428,14 +393,7 @@
 <p>We’ve now covered Pattern Lab’s core functionality, but we’re not done yet! Next we’ll cover a few additional features that should be considered, irrespective of the tool you use to create your pattern library.</p>
 
 <h2 id="viewport-tools-for-flexible-patterns">Viewport tools for flexible patterns</h2>
-<p>The <span class="editor">myriad</span> of devices now accessing the web has forced designers to re-embrace the intrinsic fluidity of the medium. Thankfully, techniques like <a href="http://alistapart.com/article/responsive-web-design">responsive web design</a> allow us to create layouts that look and function beautifully on any screen.</p>
-
-<div class="editor">
-
-
-<p>Ed: profusion, array, multitude, huge number, abundance…</p>
-
-</div>
+<p>The multitude of devices now accessing the web has forced designers to re-embrace the intrinsic fluidity of the medium. Thankfully, techniques like <a href="http://alistapart.com/article/responsive-web-design">responsive web design</a> allow us to create layouts that look and function beautifully on any screen.</p>
 
 <p>It’s a no-brainer that we need to establish flexible UI patterns if we want to create responsive designs, but creating fluid patterns has additional advantages. <strong>The more fluid a UI component is, the more resilient and versatile it becomes.</strong> Imagine being able to take a component — let’s say a photo gallery slider — and plunk it anywhere we need it. Sometimes we may need it to be a full-bleed element occupying the entire viewport. Other times we may need to include it in the context of an article. And still other times we may want to include it in the sidebar. The dream is to build our components fluidly and they’ll adapt their styles and functionality to fit whatever containers we put them into.</p>
 
@@ -444,13 +402,6 @@
 <p>Between responsive design, container queries, and good ol’-fashioned common sense, we now understand why it’s imperative to create flexible UI patterns. But how do we do that? And how can our pattern library tools help us think and act flexibly?</p>
 
 <p>Many early responsive design testing tools focused on viewing designs on popular mobile device widths, such as 320px (an iPhone 4 in portrait mode), 480px (an iPhone 4 in landscape mode), 768px (an iPad in portrait mode), and so on. But, of course, the web is <em>much</em> more diverse than a mobile view, a tablet view, and a desktop view. To help designers better consider the entire resolution spectrum when testing their responsive designs, I created a tool called <a href="http://bradfrost.com/demo/ish/">ish.</a></p>
-
-<div class="editor">
-
-
-<p>Ed: It’s odd to end a sentence with two full stops. I know you include one in ish.’s name, but I don’t think we then also need another to follow it.</p>
-
-</div>
 
 <p>The tool is called <em>ish.</em> because selecting the small button results in a small-ish viewport. Selecting it again provides a different small-ish viewport. Selecting the medium button gives you a medium-ish viewport. And the large button results in a—wait for it—large-ish viewport. These randomized values help designers and developers better consider the entire resolution spectrum rather than a handful of popular device dimensions.</p>
 
@@ -480,23 +431,9 @@
 <p>While ish. helps designers and developers uncover bugs along the viewport continuum, I’ve found it to be more helpful as a client and colleague education tool. By building a device-agnostic viewport resizing tool directly into the pattern library, clients and colleagues can come to appreciate the fact that their design system should look and function well no matter the viewport size.</p>
 
 <h2 id="a-look-under-the-hood-with-code-view">A look under the hood with code view</h2>
-<p>A common pattern library feature is the ability to peek under the hood and view the underlying code that makes up a particular component. Exposing a UI pattern’s code speeds up development time (I love copying and pasting as much as the next coder) and helps team leaders enforce code syntax and style conventions. This becomes especially rewarding when a ton of developers are <span class="editor">touching an organization’s codebase</span>.</p>
+<p>A common pattern library feature is the ability to peek under the hood and view the underlying code that makes up a particular component. Exposing a UI pattern’s code speeds up development time (I love copying and pasting as much as the next coder) and helps team leaders enforce code syntax and style conventions. This becomes especially rewarding when a ton of developers are working on an organization’s codebase.</p>
 
-<div class="editor">
-
-
-<p>Ed: Maybe it’s just me, but touching an organization’s codebase sounds… off. How about working on (or in), or similar?</p>
-
-</div>
-
-<p>The types of code to be highlighted in a pattern library naturally vary from organization to organization, in order to meet the requirements of the <span class="editor">myriad</span> environments, technologies, and conventions used. Most <a href="http://styleguides.io/examples.html">pattern libraries out there in the wild</a> demonstrate a pattern’s underlying HTML, while others also include pattern-specific CSS and JavaScript. Salesforce’s Lightning design system, for example, shows a pattern’s HTML as well as all the (S)CSS pertaining to that pattern.</p>
-
-<div class="editor">
-
-
-<p>Ed: Oh, I get to use another list: very many, countless, manifold, assorted, profuse, numerous, bazillion… (Yeah, OK. Not that last one.)</p>
-
-</div>
+<p>The types of code to be highlighted in a pattern library naturally vary from organization to organization, in order to meet the requirements of the vast array of environments, technologies, and conventions used. Most <a href="http://styleguides.io/examples.html">pattern libraries out there in the wild</a> demonstrate a pattern’s underlying HTML, while others also include pattern-specific CSS and JavaScript. Salesforce’s Lightning design system, for example, shows a pattern’s HTML as well as all the (S)CSS pertaining to that pattern.</p>
 
 <figure>
     <img src="../images/content/salesforce-code-example.png" alt="Salesforce's Lightning design system showcases the UI components' HTML and SCSS code." />
@@ -505,12 +442,19 @@
 	</figcaption>
 </figure>
 
-<p>Including front-end code leads to authors writing it more consistently, but that doesn’t guarantee perfection. There’s still room for developers to go rogue and write sloppy, incongruent code—which is why some organizations have gone above and beyond to establish incredibly sophisticated design systems. <span class="editor">Companies like</span> Lonely Planet have achieved the holy grail of pattern libraries, which is to say <strong>their pattern library and production environment are perfectly in sync</strong>. We’ll discuss the holy grail in more detail in the next chapter, but it’s worth bringing up in this section to demonstrate how that affects the code exposed in the context of a pattern library. Rather than offering HTML and CSS, Lonely Planet’s <a href="http://rizzo.lonelyplanet.com/">Rizzo style guide</a> surfaces the include code for teams to pull in the appropriate UI component.</p>
+<p>Including front-end code leads to authors writing it more consistently, but that doesn’t guarantee perfection. There’s still room for developers to go rogue and write sloppy, incongruent code—which is why some organizations have gone above and beyond to establish incredibly sophisticated design systems. <span class="editor">Companies like</span> Lonely Planet have achieved the holy grail of pattern libraries, which is to say <strong>their pattern library and production environment are perfectly in sync</strong>. We’ll discuss the holy grail in more detail in chapter 5, but it’s worth bringing up in this section to demonstrate how that affects the code exposed in the context of a pattern library. Rather than offering HTML and CSS, Lonely Planet’s <a href="http://rizzo.lonelyplanet.com/">Rizzo style guide</a> surfaces the include code for teams to pull in the appropriate UI component.</p>
 
 <div class="editor">
 
 
 <p>Ed: Do you know of other companies that have done this? Could you name some?</p>
+
+</div>
+
+<div class="editor brad">
+
+
+<p>Brad: I do! However, the other ones have been either shown to me in confidence or have been mentioned to me in passing. None of the other ones are as high profile or public as The Lonely Planet’s example. I think in this case it’s safe to keep “Companies like” since it implies there are others, even though I can’t explicitly mention them.</p>
 
 </div>
 
@@ -526,9 +470,9 @@
 <p>Pattern Lab provides the ability to view both a pattern’s underlying HTML as well as the template code used to generate the HTML. It can also be extended to showcase accompanying CSS and JavaScript code.</p>
 
 <figure>
-    <img src="../images/content/pattern-lab-code.png" alt="Pattern Lab's code view demonstrates any pattern's HTML code and [this caption is incomplete]." />
+    <img src="../images/content/pattern-lab-code.png" alt="Pattern Lab's code view demonstrates both a pattern's template code as well as the compiled HTML." />
 	<figcaption>
-	    Pattern Lab's code view demonstrates any pattern's HTML code and [this caption is incomplete].
+	    Pattern Lab's code view demonstrates both a pattern's template code as well as the compiled HTML.
 	</figcaption>
 </figure>
 
@@ -539,19 +483,12 @@
 
 <p>This shouldn’t be the case. A UI’s documentation should contain insights from every discipline involved in creating it, and—this is key—should be baked into the living, breathing design system. Effective pattern libraries carve out a space to define and describe UI components, articulating considerations ranging from accessibility to performance to aesthetics and beyond.</p>
 
-<p>Pattern Lab provides several ways to add pattern descriptions and annotations to a design system. Pattern descriptions can be added by creating a <span class="editor">Markdown</span> that corresponds to the name of a pattern (e.g. <em>pattern-name.md</em>), which will show the pattern description in the library list view.</p>
-
-<div class="editor">
-
-
-<p>Ed: Should this be more fully described as a “Markdown file” or is this a code snippet inside another kind of file? Will readers understand “create a Markdown”? I’ve capped up Markdown as it’s the name of a language, and I’ve italicized the file name (at least, I assume it’s a file name).</p>
-
-</div>
+<p>Pattern Lab provides several ways to add pattern descriptions and annotations to a design system. Pattern descriptions can be added by creating a Markdown file that corresponds to the name of a pattern (e.g. <em>pattern-name.md</em>), which will show the pattern description in the library list view.</p>
 
 <figure>
-    <img src="../images/content/pattern-lab-annotations-2.png" alt="Pattern Lab's annotation feature shows pattern descriptions alongside the patterns themselves." />
+    <img src="../images/content/pattern-lab-annotations-2.png" alt="Pattern Lab displays important pattern documentation right alongside the living pattern examples, which helps teams communicate definitions, usage, examples, outside resources, and more. All these " />
 	<figcaption>
-	    Pattern Lab's annotation feature shows pattern descriptions alongside the patterns themselves.
+	    Pattern Lab displays important pattern documentation right alongside the living pattern examples, which helps teams communicate definitions, usage, examples, outside resources, and more. All these 
 	</figcaption>
 </figure>
 
@@ -576,25 +513,25 @@
 	</figcaption>
 </figure>
 
-<p>In the example above, we have a molecule pattern called <code class="highlighter-rouge">block-media-link</code>, which contains an image, headline, and call to action. Looking at the pattern’s lineage, we can see it contains another pattern called <code class="highlighter-rouge">atoms-square</code>, which is the circular thumbnail-sized image (the naming is a bit confusing, but we’re using CSS to round the square image’s corners). We can also see where exactly this pattern gets used: the <code class="highlighter-rouge">profile-nav</code> molecule, the <code class="highlighter-rouge">section-media-list</code> organism, the <code class="highlighter-rouge">settings-account</code> template, and the <code class="highlighter-rouge">settings-account-edit</code> template.</p>
+<p>In the example above, we have a molecule pattern called <code class="highlighter-rouge">media-block</code>, which contains an image, headline, text, and a group of buttons. Looking at the pattern’s lineage, we can see it contains a pattern called <code class="highlighter-rouge">atoms-square</code>, which is the thumbnail-sized image, as well as <code class="highlighter-rouge">molecules-button-bar</code>, which is the group of buttons. We can also see where exactly this pattern gets used: the <code class="highlighter-rouge">media-block-list</code> organism.</p>
 
-<p>This contextual information is amazingly helpful for designers and developers; I know I use the lineage feature <em>all the time</em> in my own workflow. Let’s say we wanted to make changes to a particular pattern, like doubling the size of an image or adding an additional text element: <strong>we’d immediately know which patterns and templates would need to be retested and QA’d to ensure nothing breaks with the changes</strong>. The lineage feature also helps point out unused or underutilized patterns so that teams can weed them out of the pattern library.</p>
+<p>This contextual information is amazingly helpful for designers and developers; I know I use the lineage feature <em>all the time</em> in my own workflow. Let’s say we wanted to make changes to a particular pattern, like doubling the size of an image or adding an additional element: <strong>we’d immediately know which patterns and templates would need to be retested and QA’d to ensure nothing breaks with the changes</strong>. The lineage feature also helps point out unused or underutilized patterns so that teams can weed them out of the pattern library as the launch date gets closer.</p>
 
 <h2 id="to-each-their-own">To each their own</h2>
-<p>So there you have it. Pattern Lab provides several helpful features for teams to create deliberate, thoughtful design systems. But as I mentioned before, no single tool is going to be perfect for everyone and every situation. There are <a href="http://styleguides.io/tools.html">a ton of tools</a> out there to help you create effective pattern libraries, and the tools you decide on will undoubtedly be influenced by your organization’s environment, technologies, workflow, and personalities.</p>
+<p>So there you have it. Pattern Lab provides several helpful features for teams to create deliberate, thoughtful design systems. But as I mentioned before, no single tool is going to be perfect for everyone and every situation. There are <a href="http://styleguides.io/tools.html">a ton of great tools</a> out there to help you create effective pattern libraries, and the tools you decide on will undoubtedly be influenced by your organization’s environment, technologies, workflow, and culture.</p>
 
 <p>When choosing tools to create your pattern library, you should keep your eyes open for these qualities and features of effective pattern libraries:</p>
 
 <ul>
-  <li>Articulating pattern variations, such as active or disabled tabs</li>
-  <li>Viewing patterns across the entire resolution spectrum</li>
   <li>Providing pattern descriptions and annotations</li>
-  <li>Showcasing a pattern’s front-end and/or template code</li>
+  <li>Showcasing the relevant pattern html, templating, CSS, and/or JavaScript code.</li>
+  <li>Viewing patterns across the entire resolution spectrum</li>
+  <li>The ability to showcase pattern variations, such as active or disabled tabs</li>
   <li>The ability to dynamically add real representative content into the patterns’ structures</li>
   <li>Providing contextual information, like which patterns make up a particular component as well as where that component is used</li>
 </ul>
 
-<p>At the end of the day, it’s not about the tools we use to create pattern libraries, but rather how we use them. Creating and maintaining an effective design system means dramatically changing your organization’s culture, processes, and workflows. If that sounds hard to you, it’s because it is. But fear not! The next chapter will detail the entire process of creating and maintaining a successful design system to set your organization up for long-term success.</p>
+<p>At the end of the day, it’s not about the tools we use to create pattern libraries, but rather how we use them. Creating and maintaining an effective design system means dramatically changing your organization’s culture, processes, and workflows. If that sounds hard to you, it’s because it is. But fear not! The rest of the book will detail the entire process of creating and maintaining a successful design system to set your organization up for long-term success.</p>
 
     <nav role="navigaiton" class="pagination">
     <!-- <a href="#">Next Chapter</a>

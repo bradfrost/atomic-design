@@ -85,13 +85,6 @@ This pattern should look fairly familiar. A thumbnail image, headline, and excer
 
 You can see we have: HTML markup consisting of a wrapper `div` with a class name of `block-post`; a link; a Mustache include for the thumbnail image; an `<h3>` element for the headline; and a `<p>` tag for the excerpt. You'll notice there's more Mustache code for `url`, `headline`, and `excerpt`, which we'll use later to dynamically swap in actual content. More on that in a bit.
 
-<div class="editor">
-{% capture m %}
-Ed: HTML tag or element? I tend to think of elements as having opening and closing tags (except when they don't, of course…)
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
 Now that our pattern markup is established, we can include that chunk of code in bigger patterns using the same include method:
 
 ````````html
@@ -184,13 +177,6 @@ How do we swap dummy content for real content in Pattern Lab? Pattern Lab uses J
 
 The default placeholder data is defined in a file called _data.json_ that lives in Pattern Lab's _/source_ directory. Inside this file we define all the text, image paths, and other dynamic data that will make up our UI. Here's a small sample from Time Inc.'s _data.json_ file:
 
-<div class="editor">
-{% capture m %}
-Ed: File names aren't code (unless they appear in code), so shouldn't be marked up as such. Using italics is a better option. For convenience I've just used Markdown's _underscore_, but this marks them up using `<em>`. In this case, `<i>` would be better. I've also added a slash to the directory name to clarify matters a little.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
 ````````json
 "hero" : {
   "headline": "Lorem Ipsum",
@@ -199,29 +185,15 @@ Ed: File names aren't code (unless they appear in code), so shouldn't be marked 
     "alt": "Hero Image"
   }
 }
-```````
+````````
 
 For developers, this type of format most likely looks familiar. If you're not a developer, don't freak out! Once you look beyond the curly braces and quotes, you'll see that we're defining a `hero` object (for the full-bleed hero area directly below the header) that has a `headline` value of "Lorem Ipsum" and an `img` with a `src` value of "/images/sample/fpo_hero.png". We're simply defining this object's attributes and providing values for those attributes.
 
-<div class="editor">
-{% capture m %}
-Ed: Here I've changed italics (emphasis) to code ticks as you're referencing a code sample.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-Once those objects are defined, we can then override their attributes at Pattern Lab's page level. This is accomplished by creating a new JSON file that matches the page pattern name (for Time Inc.'s home page, we'll call it _homepage.json_) inside the _/pages_ directory.
+Once those objects are defined, we can then override their attributes at Pattern Lab's page level. This is accomplished by creating a new JSON file that matches the page pattern name (for Time Inc.'s home page, we'll call it _00-homepage.json_) inside the _/pages_ directory.
 
 {% include figure.html src="../images/content/timeinc-page-directory.png" caption="Inside the ‘pages’ directory we have the home page pattern as well as a JSON file that matches the name of the pattern. This is where we'll override the default content with page-specific content." %}
 
-<div class="editor">
-{% capture m %}
-Ed: The file and directory names in the image don't match the names referenced in the text.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-When we open up _homepage.json_ we can override the placeholder data we established earlier. Here's what that might look like:
+When we open up _00-homepage.json_ we can override the placeholder data we established earlier. Here's what that might look like:
 
 ````````json
 "hero" : {
@@ -233,14 +205,7 @@ When we open up _homepage.json_ we can override the placeholder data we establis
 }
 ````````
 
-By overriding the default data, the `hero` headline now reads "Moving People" instead of "Lorem Ipsum". And instead of pointing to a grayscale <span class="editor">FPO (for placement only)</span> hero image, we're now pointing to a picture of <span class="editor">Beyoncé</span> located at "/images/hero_beyonce.jpg".
-
-<div class="editor">
-{% capture m %}
-Ed: Usually, abbreviations are placed in parens after what they abbreviate – for placement only (FPO) – not before. Should I have heard of FPO? I haven't. What might your readers expect? Also, you used a grave accent on Beyoncé, not acute. Shame on you, Brad!
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+By overriding the default data, the `hero` headline now reads "Moving People" instead of "Lorem Ipsum". And instead of pointing to a grayscale for placement only (FPO) hero image, we're now pointing to a picture of Beyoncé located at "/images/hero_beyonce.jpg".
 
 This process of establishing defaults for dynamic data then replacing it with page-specific content continues for each section of the website. In addition to replacing simple strings like headings, we can also dynamically set variables to `true` or `false`, loop through an array of items, and more. We can even dramatically alter the UI with just a few changes to a JSON file, which we'll talk about next.
 
@@ -329,14 +294,7 @@ Whew. If you've made it this far, congratulations! You now know how to add and m
 We've now covered Pattern Lab's core functionality, but we're not done yet! Next we'll cover a few additional features that should be considered, irrespective of the tool you use to create your pattern library.
 
 ## Viewport tools for flexible patterns
-The <span class="editor">myriad</span> of devices now accessing the web has forced designers to re-embrace the intrinsic fluidity of the medium. Thankfully, techniques like [responsive web design](http://alistapart.com/article/responsive-web-design) allow us to create layouts that look and function beautifully on any screen.
-
-<div class="editor">
-{% capture m %}
-Ed: profusion, array, multitude, huge number, abundance…
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+The multitude of devices now accessing the web has forced designers to re-embrace the intrinsic fluidity of the medium. Thankfully, techniques like [responsive web design](http://alistapart.com/article/responsive-web-design) allow us to create layouts that look and function beautifully on any screen.
 
 It's a no-brainer that we need to establish flexible UI patterns if we want to create responsive designs, but creating fluid patterns has additional advantages. **The more fluid a UI component is, the more resilient and versatile it becomes.** Imagine being able to take a component — let's say a photo gallery slider — and plunk it anywhere we need it. Sometimes we may need it to be a full-bleed element occupying the entire viewport. Other times we may need to include it in the context of an article. And still other times we may want to include it in the sidebar. The dream is to build our components fluidly and they'll adapt their styles and functionality to fit whatever containers we put them into.
 
@@ -345,13 +303,6 @@ Indeed, this is the promise of [container queries](http://alistapart.com/article
 Between responsive design, container queries, and good ol'-fashioned common sense, we now understand why it's imperative to create flexible UI patterns. But how do we do that? And how can our pattern library tools help us think and act flexibly?
 
 Many early responsive design testing tools focused on viewing designs on popular mobile device widths, such as 320px (an iPhone 4 in portrait mode), 480px (an iPhone 4 in landscape mode), 768px (an iPad in portrait mode), and so on. But, of course, the web is *much* more diverse than a mobile view, a tablet view, and a desktop view. To help designers better consider the entire resolution spectrum when testing their responsive designs, I created a tool called [ish.](http://bradfrost.com/demo/ish/)
-
-<div class="editor">
-{% capture m %}
-Ed: It's odd to end a sentence with two full stops. I know you include one in ish.'s name, but I don't think we then also need another to follow it.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
 
 The tool is called *ish.* because selecting the small button results in a small-ish viewport. Selecting it again provides a different small-ish viewport. Selecting the medium button gives you a medium-ish viewport. And the large button results in a—wait for it—large-ish viewport. These randomized values help designers and developers better consider the entire resolution spectrum rather than a handful of popular device dimensions.
 
@@ -366,32 +317,24 @@ Ish. is baked into Pattern Lab, which means we can view our UIs and their underl
 While ish. helps designers and developers uncover bugs along the viewport continuum, I've found it to be more helpful as a client and colleague education tool. By building a device-agnostic viewport resizing tool directly into the pattern library, clients and colleagues can come to appreciate the fact that their design system should look and function well no matter the viewport size.
 
 ## A look under the hood with code view
-A common pattern library feature is the ability to peek under the hood and view the underlying code that makes up a particular component. Exposing a UI pattern's code speeds up development time (I love copying and pasting as much as the next coder) and helps team leaders enforce code syntax and style conventions. This becomes especially rewarding when a ton of developers are <span class="editor">touching an organization's codebase</span>.
+A common pattern library feature is the ability to peek under the hood and view the underlying code that makes up a particular component. Exposing a UI pattern's code speeds up development time (I love copying and pasting as much as the next coder) and helps team leaders enforce code syntax and style conventions. This becomes especially rewarding when a ton of developers are working on an organization's codebase.
 
-<div class="editor">
-{% capture m %}
-Ed: Maybe it's just me, but touching an organization's codebase sounds… off. How about working on (or in), or similar?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-The types of code to be highlighted in a pattern library naturally vary from organization to organization, in order to meet the requirements of the <span class="editor">myriad</span> environments, technologies, and conventions used. Most [pattern libraries out there in the wild](http://styleguides.io/examples.html) demonstrate a pattern's underlying HTML, while others also include pattern-specific CSS and JavaScript. Salesforce's Lightning design system, for example, shows a pattern's HTML as well as all the (S)CSS pertaining to that pattern.
-
-<div class="editor">
-{% capture m %}
-Ed: Oh, I get to use another list: very many, countless, manifold, assorted, profuse, numerous, bazillion… (Yeah, OK. Not that last one.)
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
+The types of code to be highlighted in a pattern library naturally vary from organization to organization, in order to meet the requirements of the vast array of environments, technologies, and conventions used. Most [pattern libraries out there in the wild](http://styleguides.io/examples.html) demonstrate a pattern's underlying HTML, while others also include pattern-specific CSS and JavaScript. Salesforce's Lightning design system, for example, shows a pattern's HTML as well as all the (S)CSS pertaining to that pattern.
 
 {% include figure.html src="../images/content/salesforce-code-example.png" caption="Salesforce's Lightning design system showcases the UI components' HTML and SCSS code." %}
 
-Including front-end code leads to authors writing it more consistently, but that doesn't guarantee perfection. There's still room for developers to go rogue and write sloppy, incongruent code—which is why some organizations have gone above and beyond to establish incredibly sophisticated design systems. <span class="editor">Companies like</span> Lonely Planet have achieved the holy grail of pattern libraries, which is to say **their pattern library and production environment are perfectly in sync**. We'll discuss the holy grail in more detail in the next chapter, but it's worth bringing up in this section to demonstrate how that affects the code exposed in the context of a pattern library. Rather than offering HTML and CSS, Lonely Planet's [Rizzo style guide](http://rizzo.lonelyplanet.com/) surfaces the include code for teams to pull in the appropriate UI component.
+Including front-end code leads to authors writing it more consistently, but that doesn't guarantee perfection. There's still room for developers to go rogue and write sloppy, incongruent code—which is why some organizations have gone above and beyond to establish incredibly sophisticated design systems. <span class="editor">Companies like</span> Lonely Planet have achieved the holy grail of pattern libraries, which is to say **their pattern library and production environment are perfectly in sync**. We'll discuss the holy grail in more detail in chapter 5, but it's worth bringing up in this section to demonstrate how that affects the code exposed in the context of a pattern library. Rather than offering HTML and CSS, Lonely Planet's [Rizzo style guide](http://rizzo.lonelyplanet.com/) surfaces the include code for teams to pull in the appropriate UI component.
 
 <div class="editor">
 {% capture m %}
 Ed: Do you know of other companies that have done this? Could you name some?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+<div class="editor brad">
+{% capture m %}
+Brad: I do! However, the other ones have been either shown to me in confidence or have been mentioned to me in passing. None of the other ones are as high profile or public as The Lonely Planet's example. I think in this case it's safe to keep "Companies like" since it implies there are others, even though I can't explicitly mention them.
 {% endcapture %}
 {{ m | markdownify }}
 </div>
@@ -402,7 +345,7 @@ This setup allows the core development team to maintain a single source of truth
 
 Pattern Lab provides the ability to view both a pattern's underlying HTML as well as the template code used to generate the HTML. It can also be extended to showcase accompanying CSS and JavaScript code.
 
-{% include figure.html src="../images/content/pattern-lab-code.png" caption="Pattern Lab's code view demonstrates any pattern's HTML code and [this caption is incomplete]." %}
+{% include figure.html src="../images/content/pattern-lab-code.png" caption="Pattern Lab's code view demonstrates both a pattern's template code as well as the compiled HTML." %}
 
 Ultimately, whichever pattern library tool you decide to use should have some form of code view. Perhaps more importantly, the pattern libraries you create should showcase the types of code that enable you and your development team to be as effective as possible.
 
@@ -411,16 +354,9 @@ In a traditional siloed design process, it's typical to see lengthy wireframe an
 
 This shouldn't be the case. A UI's documentation should contain insights from every discipline involved in creating it, and—this is key—should be baked into the living, breathing design system. Effective pattern libraries carve out a space to define and describe UI components, articulating considerations ranging from accessibility to performance to aesthetics and beyond.
 
-Pattern Lab provides several ways to add pattern descriptions and annotations to a design system. Pattern descriptions can be added by creating a <span class="editor">Markdown</span> that corresponds to the name of a pattern (e.g. _pattern-name.md_), which will show the pattern description in the library list view.
+Pattern Lab provides several ways to add pattern descriptions and annotations to a design system. Pattern descriptions can be added by creating a Markdown file that corresponds to the name of a pattern (e.g. _pattern-name.md_), which will show the pattern description in the library list view.
 
-<div class="editor">
-{% capture m %}
-Ed: Should this be more fully described as a "Markdown file" or is this a code snippet inside another kind of file? Will readers understand "create a Markdown"? I've capped up Markdown as it's the name of a language, and I've italicized the file name (at least, I assume it's a file name).
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-{% include figure.html src="../images/content/pattern-lab-annotations-2.png" caption="Pattern Lab's annotation feature shows pattern descriptions alongside the patterns themselves." %}
+{% include figure.html src="../images/content/pattern-lab-annotations-2.png" caption="Pattern Lab displays important pattern documentation right alongside the living pattern examples, which helps teams communicate definitions, usage, examples, outside resources, and more. All these " %}
 
 Pattern Lab also provides a (dare I say) cool feature that enables you to attach annotations to any UI element and view those annotations in the context of the living, breathing design. When annotations are switched on, each annotated element receives a number which, when clicked, jumps you to the corresponding annotation. This allows teams to view pattern considerations within the context of the full UI. Pretty neat!
 
@@ -433,20 +369,20 @@ Thanks to the Russian nesting doll include approach described earlier, Pattern L
 
 {% include figure.html src="../images/content/pattern-lab-lineage.png" caption="Pattern Lab's lineage feature displays what patterns make up any component, and also shows all the places that component is employed." %}
 
-In the example above, we have a molecule pattern called `block-media-link`, which contains an image, headline, and call to action. Looking at the pattern's lineage, we can see it contains another pattern called `atoms-square`, which is the circular thumbnail-sized image (the naming is a bit confusing, but we're using CSS to round the square image's corners). We can also see where exactly this pattern gets used: the `profile-nav` molecule, the `section-media-list` organism, the `settings-account` template, and the `settings-account-edit` template.
+In the example above, we have a molecule pattern called `media-block`, which contains an image, headline, text, and a group of buttons. Looking at the pattern's lineage, we can see it contains a pattern called `atoms-square`, which is the thumbnail-sized image, as well as `molecules-button-bar`, which is the group of buttons. We can also see where exactly this pattern gets used: the `media-block-list` organism.
 
-This contextual information is amazingly helpful for designers and developers; I know I use the lineage feature *all the time* in my own workflow. Let's say we wanted to make changes to a particular pattern, like doubling the size of an image or adding an additional text element: **we'd immediately know which patterns and templates would need to be retested and QA'd to ensure nothing breaks with the changes**. The lineage feature also helps point out unused or underutilized patterns so that teams can weed them out of the pattern library.
+This contextual information is amazingly helpful for designers and developers; I know I use the lineage feature *all the time* in my own workflow. Let's say we wanted to make changes to a particular pattern, like doubling the size of an image or adding an additional element: **we'd immediately know which patterns and templates would need to be retested and QA'd to ensure nothing breaks with the changes**. The lineage feature also helps point out unused or underutilized patterns so that teams can weed them out of the pattern library as the launch date gets closer.
 
 ## To each their own
-So there you have it. Pattern Lab provides several helpful features for teams to create deliberate, thoughtful design systems. But as I mentioned before, no single tool is going to be perfect for everyone and every situation. There are [a ton of tools](http://styleguides.io/tools.html) out there to help you create effective pattern libraries, and the tools you decide on will undoubtedly be influenced by your organization's environment, technologies, workflow, and personalities.
+So there you have it. Pattern Lab provides several helpful features for teams to create deliberate, thoughtful design systems. But as I mentioned before, no single tool is going to be perfect for everyone and every situation. There are [a ton of great tools](http://styleguides.io/tools.html) out there to help you create effective pattern libraries, and the tools you decide on will undoubtedly be influenced by your organization's environment, technologies, workflow, and culture.
 
 When choosing tools to create your pattern library, you should keep your eyes open for these qualities and features of effective pattern libraries:
 
-- Articulating pattern variations, such as active or disabled tabs
-- Viewing patterns across the entire resolution spectrum
 - Providing pattern descriptions and annotations
-- Showcasing a pattern's front-end and/or template code
+- Showcasing the relevant pattern html, templating, CSS, and/or JavaScript code. 
+- Viewing patterns across the entire resolution spectrum
+- The ability to showcase pattern variations, such as active or disabled tabs
 - The ability to dynamically add real representative content into the patterns' structures
 - Providing contextual information, like which patterns make up a particular component as well as where that component is used
 
-At the end of the day, it's not about the tools we use to create pattern libraries, but rather how we use them. Creating and maintaining an effective design system means dramatically changing your organization's culture, processes, and workflows. If that sounds hard to you, it's because it is. But fear not! The next chapter will detail the entire process of creating and maintaining a successful design system to set your organization up for long-term success.
+At the end of the day, it's not about the tools we use to create pattern libraries, but rather how we use them. Creating and maintaining an effective design system means dramatically changing your organization's culture, processes, and workflows. If that sounds hard to you, it's because it is. But fear not! The rest of the book will detail the entire process of creating and maintaining a successful design system to set your organization up for long-term success.
