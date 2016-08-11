@@ -340,25 +340,46 @@ With all this talk about modifying, adding, and removing patterns, you may be wo
 
 > The biggest existential threat to any system is neglect. <cite><a href="http://airbnb.design/the-way-we-build/">Alex Schleifer, Airbnb</a>
 
-Many systems fall into a state of disrepair because the effort required to make updates is far too high. If it's difficult and time consuming to update patterns, documentation, and applications, people will eventually get so frustrated that they stop making the effort and the design system will begin its drift into oblivion. **Making updates to UI patterns, documentation, and applications should be as frictionless as possible**, so reducing this friction should become a high priority for the design system team. This involves careful consideration from both a technological and workflow standpoint.
+Many systems fall into a state of disrepair because the effort required to make updates is far too high. If it's difficult and time-consuming to update patterns, documentation, and applications, people will eventually get so frustrated that they stop making the effort and the design system will begin its drift into oblivion. **Making updates to UI patterns, documentation, and applications should be as frictionless as possible**, so reducing this friction should become a high priority for the design system team. This involves careful consideration from both technological and workflow standpoints.
 
-### In search of the Holy Grail
-**The design system Holy Grail involves creating an environment where the pattern library and live applications are perfectly in sync**. The idea is that you should be able to make a change to a UI pattern and see those changes automatically reflected in both the pattern library and anywhere the pattern is included in production. 
+### In search of the holy grail
+<div class="editor">
+{% capture m %}
+Ed: I'm capping down holy grail here. This is neither Christian myth, Arthurian legend nor the adventures of Indiana Jones. You'd have an Easter egg at Easter, but hide easter eggs in software; so Christ's cup is the Holy Grail, but all other rare and perfect goals are holy grails. And while it makes for a catchy heading, in the content I'd consider ditching the metaphor altogether. Its repetition in the material below draws too much attention and does your theme a disservice. Perhaps you could consider using words like “ideal”, “perfect”, “model”, etc., depending on context. I’ll leave the grails in for now until such time as you decide to change them.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-{% include figure.html src="../images/content/workflow-system-first-holy-grail.png" caption="The Holy Grail of design systems is an environment where making changes to a UI pattern updates both the pattern library and production applications simultaneously." %}
+**The design system holy grail involves creating an environment where the pattern library and live applications are perfectly in sync.** The idea is that you should be able to make a change to a UI pattern and see that change automatically reflected in both the pattern library *and* anywhere the pattern is included in production. 
 
-The Holy Grail removes duplication of effort and ensures the pattern library and the applications using the patterns remain synchronized. Sounds like a dream, right?
+{% include figure.html src="../images/content/workflow-system-first-holy-grail.png" caption="The holy grail of design systems is an environment where making changes to a UI pattern updates both the pattern library and production applications simultaneously." %}
 
-As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, was one of the first to establish a Holy Grail-style design system they call [Rizzo](http://rizzo.lonelyplanet.com/). Through some smart architecture, they created an API for their UI patterns that feeds into both their production environment as well as their pattern library. The result is a centralized design system that ensures their live application and documentation remains perfectly in sync with one another.
+The holy grail removes any duplication of effort and ensures the pattern library and the applications using the patterns remain synchronized. Sounds like a dream, right?
 
-{% include figure.html src="../images/content/rizzo.png" caption="Lonely Planet created an API for their UI patterns that is consumed by both their pattern library and production environment. By architecting their design system in this manner, changes to UI patterns are automatically reflected in both the pattern library and production environment, keeping things in sync and thereby achieving the Holy Grail." %}
+As it turns out, this dream can be a reality. Lonely Planet, the travel guide company, was one of the first to establish a <span class="editor">holy grail-style design system</span> called [Rizzo](http://rizzo.lonelyplanet.com/). Through some smart architecture, they created an API for their UI patterns that feeds into their production environment as well as their pattern library. The result is a centralized design system that ensures their live application and documentation remain perfectly in sync.
 
-Achieving the design system Holy Grail is no easy task, as it requires sophisticated technical architecture, smart people to set it all up, and a relatively-centralized organizational culture. How you go about chasing the Holy Grail — or even if you can achieve it — is dependent on a whole load of factors, including your technical architecture and organizational makeup. 
+<div class="editor">
+{% capture m %}
+Ed: “holy grail-style”? So, not <u>the</u> Holy Grail, but something in that style? This feels very odd, another reason to ditch the metaphor and try other ways of describing a model design system – particularly as holy grail-style systems might come in different shapes and sizes, while there's only one Holy Grail?
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-### Jumping technical hurdles
-Keeping a pattern library in sync with production environments requires sharing code in a smart, scalable, and maintainable way. Detailing all the different technical strategies and considerations around the Holy Grail would necessitate its own book, but let's cover a few important areas around keeping frontend code in sync.
+{% include figure.html src="../images/content/rizzo.png" caption="Lonely Planet created an API for its UI patterns that is consumed by both their pattern library and production environment. By <span class='editor'>architecting</span> their design system in this manner, changes to UI patterns are automatically reflected in both the pattern library and production environment, keeping things in sync and thereby achieving the holy grail." %}
 
-#### The frontend of things
+<div class="editor">
+{% capture m %}
+Ed: Here’s ‘architect’ verbing like there’s no tomorrow. Some alternatives: configure, construct, assemble, organize, formulate.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+Achieving the design system holy grail is no easy task, as it requires sophisticated technical architecture, smart people to set it all up, and a relatively centralized organizational culture. How you go about chasing the holy grail – or even if you can achieve it – is dependent on a whole load of factors, including your technical architecture and organizational makeup. 
+
+### Clearing technical hurdles
+Keeping a pattern library in sync with production environments requires sharing code in a smart, scalable, and maintainable way. Detailing all the different technical strategies and considerations around the holy grail would necessitate its own book, but let's cover a few important areas around keeping front-end code in sync.
+
+#### The front-end of things
 A UI design system manifests itself as the frontend of a web experience, which is comprised of HTML, CSS, and JavaScript. How we get that frontend code into a production environment — with complex application logic and backend code — is the task at hand. 
 
 In his article [*Chasing the Holy Grail*](https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d), Web developer Marcelo Somers detailed various technical approaches to achieving the Holy Grail. He highlights the pros and cons of each strategy for feeding a design system into applications in order to keep both codebases in lock and step. While I won't detail each of Marcelo's strategies, it's worth noting there a spectrum of approaches to choose from: crude manual frontend code copying-and-pasting on one end, to baking the pattern library directly into the production environment on the other. 
