@@ -481,56 +481,92 @@
 <p>Keeping a pattern library in sync with production environments requires sharing code in a smart, scalable, and maintainable way. Detailing all the different technical strategies and considerations around the holy grail would necessitate its own book, but let’s cover a few important areas around keeping front-end code in sync.</p>
 
 <h4 id="the-front-end-of-things">The front-end of things</h4>
-<p>A UI design system manifests itself as the frontend of a web experience, which is comprised of HTML, CSS, and JavaScript. How we get that frontend code into a production environment — with complex application logic and backend code — is the task at hand.</p>
+<p>A UI design system manifests itself as the front-end of a web experience, which is comprised of HTML, CSS, and JavaScript. How we get that front-end code into a production environment, with complex application logic and back-end code, is the task at hand.</p>
 
-<p>In his article <a href="https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d"><em>Chasing the Holy Grail</em></a>, Web developer Marcelo Somers detailed various technical approaches to achieving the Holy Grail. He highlights the pros and cons of each strategy for feeding a design system into applications in order to keep both codebases in lock and step. While I won’t detail each of Marcelo’s strategies, it’s worth noting there a spectrum of approaches to choose from: crude manual frontend code copying-and-pasting on one end, to baking the pattern library directly into the production environment on the other.</p>
+<p>In his article “<a href="https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d">Chasing the Holy Grail*</a>,” web developer Marcelo Somers details various technical approaches to achieving the holy grail. He highlights the pros and cons of each strategy for feeding a design system into applications to keep both codebases in lockstep. While I won’t detail each of Marcelo’s strategies, it’s worth noting there is a spectrum of approaches to choose from: crude, manual front-end code copying-and-pasting on one end, to baking the pattern library directly into the production environment on the other.</p>
 
-<p>In my experience, I’ve found that sharing CSS and presentational JavaScript with production environments is relatively easy, while sharing markup is tough. Because CSS and JavaScript tend to get compiled into a single (or perhaps handful) of files, it becomes possible to throw them onto a CDN then simply link to those files in each application. Marcelo explains how to do this while keeping versioning in mind:</p>
+<p>In my experience, I’ve found that sharing CSS and presentational JavaScript with production environments is relatively easy, while sharing markup is tough. Because CSS and JavaScript tend to get compiled into a single file (or perhaps a handful), it becomes possible to throw them onto a CDNand then simply link to those files in each application. Marcelo explains how to do this while keeping versioning in mind:</p>
 
 <blockquote>
-  <p>You’d provide development teams with a versioned URL (e.g., <code class="highlighter-rouge">http://mycdn.com/1.3.5/styles.css</code>) and upgrading is as simple as bumping the version number in the URL. <cite><a href="https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d">Marcelo Somers</a></cite></p>
+  <p>You’d provide development teams with a versioned URL (e.g., http://mycdn.com/1.3.5/styles.css) and upgrading is as simple as bumping the version number in the URL. <cite><a href="https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d">Marcelo Somers</a></cite></p>
 </blockquote>
 
-<p>Sharing CSS and JavaScript is all well and good, but where things get tricky is when you want to share markup between environments. Why, you ask? Well, markup and backend logic are often intertwined in an application’s codebase, which tends to make it difficult to simply copy and paste markup between your pattern library and production environments. Thankfully, there are ways around this problem.</p>
+<p>Sharing CSS and JavaScript is all well and good, but where things get tricky is when you want to share markup between environments. Why? you ask. Well, markup and back-end logic are often intertwined in an application’s codebase, which tends to make it difficult to simply copy and paste markup between your pattern library and production environments. Thankfully, there are ways around this problem.</p>
 
 <h4 id="bridging-the-markup-gap-with-templating-languages">Bridging the markup gap with templating languages</h4>
-<p>Using HTML templating languages —such as Mustache, Handlebars, Twig, Underscore, Jade, Nunjucks, and a slew of others — makes markup more portable and dynamic. Templating languages provide us a separation between structure and data, and supercharge our HTML to keep us from having to write the same markup patterns over and over again. The good news is that many CMSes and application environments also make use of templating languages to serve up frontend markup.</p>
+<p>Using HTML templating languages (such as Mustache, Handlebars, Twig, Underscore, Jade, Nunjucks, and a slew of others) makes markup more portable and dynamic. Templating languages separate structure and data, and supercharge our HTML to keep us from having to write the same markup patterns over and over again. The good news is that many CMSes and application environments also make use of templating languages to serve up front-end markup.</p>
 
-<p><strong>The templating language can serve as the bridge between your pattern library and production environments</strong>. If you’re using a templating language to create the patterns in your design system (something we discussed at length in Chapters 3), you can share those patterns with production environments that utilize the same</p>
+<p><strong>The templating language can serve as the bridge between your pattern library and production environments.</strong> If you use a templating language to create the patterns in your design system (something we discussed at length in chapter 3), you can share those patterns with production environments that utilize <span class="editor">the same</span></p>
+
+<div class="editor">
+
+
+<p>Ed: This seems incomplete.</p>
+
+</div>
 
 <figure>
-    <img src="../images/content/templating-language-bridge.png" alt="Utilizing a templating language like Mustache, Handlebars, Underscore, Jade, and others can serve as a bridge that allows frontend code to be shared between the pattern library and production application." />
+    <img src="../images/content/templating-language-bridge.png" alt="A templating language like Mustache, Handlebars, Underscore, Jade, and others can serve as a bridge that allows front-end code to be shared between the pattern library and production application." />
 	<figcaption>
-	    Utilizing a templating language like Mustache, Handlebars, Underscore, Jade, and others can serve as a bridge that allows frontend code to be shared between the pattern library and production application.
+	    A templating language like Mustache, Handlebars, Underscore, Jade, and others can serve as a bridge that allows front-end code to be shared between the pattern library and production application.
 	</figcaption>
 </figure>
 
-<p>The team at Phase2 Technology achieved the Holy Grail by using Pattern Lab as their pattern library development tool and <a href="https://www.drupal.org">Drupal</a> as their content management system. Because both Pattern Lab and Drupal support the popular <a href="http://twig.sensiolabs.org">Twig</a> templating engine, Phase2 is able to easily share patterns between the two environments, ensuring their clients’ pattern libraries and production builds are always in step with one another.</p>
+<p>The team at Phase2 Technology achieved the holy grail by using Pattern Lab as their pattern library development tool and <a href="https://www.drupal.org">Drupal</a> as their content management system. Because both Pattern Lab and Drupal support the popular <a href="http://twig.sensiolabs.org">Twig</a> templating engine, Phase2 is able to easily share patterns between the two environments, ensuring their clients’ pattern libraries and production builds are always in step with each other.</p>
 
 <blockquote>
   <p>By using the same templating engine, along with the help of the Component Libraries Drupal Module, the tool gives Drupal the ability to directly include, extend, and embed the Twig templates that Pattern Lab uses for its components without any template duplication at all! <cite><a href="https://www.phase2technology.com/blog/introducing-pattern-lab-starter-8/">Evan Lovely, Phase2 Technology</a></cite></p>
 </blockquote>
 
-<h3 id="is-your-culture-holy-grail-compatible">Is your culture Holy Grail compatible?</h3>
-<p>You may have read that last section and thought, “That’s amazing! My company needs this now!” While Holy Grail-style systems are indeed great, there are reasons why you may <em>not</em> be able to achieve the Holy Grail. Perhaps your organization creates tons of digital products on many different platforms using wildly different technologies. Maybe you’re a giant multinational company scattered all over the world. Maybe you’re company has an extremely decentralized, autonomous culture. Or maybe you’re a gigantic federal government.</p>
+<h3 id="is-your-culture-span-classeditorholy-grail-compatiblespan">Is your culture <span class="editor">holy grail-compatible</span>?</h3>
+
+<div class="editor">
+
+
+<p>Ed: Goodness me. That’s odd.</p>
+
+</div>
+
+<p>You may have read that last section and thought, “That’s amazing! My company needs this now!” While <span class="editor">holy grail-style systems</span> are indeed great, there are reasons why you may <em>not</em> be able to achieve the holy grail. Perhaps your organization creates tons of digital products on many different platforms using wildly different technologies. Maybe you’re a giant multinational company scattered all over the world. Maybe your company has an extremely decentralized, autonomous culture. Or maybe you’re a gigantic federal government.</p>
+
+<div class="editor">
+
+
+<p>Ed: There are those ‘in the style of the holy grail systems’ again.</p>
+
+</div>
 
 <figure>
-    <img src="../images/content/styleguide-draft.png" alt="The Draft US Design System is the design system for the United States federal government." />
+    <img src="../images/content/styleguide-draft.png" alt="The Draft U.S. Web Design Standards are the design system for the United States federal government." />
 	<figcaption>
-	    The Draft US Design System is the design system for the United States federal government.
+	    The Draft U.S. Web Design Standards are the design system for the United States federal government.
 	</figcaption>
 </figure>
 
-<p>The U.S. government’s design system — called the <a href="https://standards.usa.gov/">Draft U.S. Web Digital Standards</a> — is a collection of UI components and visual styles created to help people making government websites build more consistent UIs. The design system provides markup and styles for users to download and weave into their applications. It would certainly be amazing to see a Holy Grail-style system implemented at such a gigantic scale, but as you might imagine that’s a pretty tall order. The vastness and decentralized nature of the organization means that the Holy Grail isn’t really achievable without some dramatic restructuring of how federal government websites get built.</p>
+<p>The U.S. government’s design system – called the <a href="https://standards.usa.gov/">Draft U.S. Web Digital Standards</a> – is a collection of UI components and visual styles created to help people making government websites build more consistent UIs. The design system provides markup and styles for users to download and weave into their applications. It would certainly be amazing to see a <span class="editor">holy grail-style system</span> implemented at such a gigantic scale, but as you might imagine, that’s a pretty tall order. The vastness and decentralized nature of the organization means that the holy grail isn’t really achievable without some dramatic restructuring of how federal government websites get built.</p>
 
-<p>If a relatively scattered, decentralized culture is your reality, don’t be disheartened! Even getting <em>some</em> design system in place — a handful of go-to UI patterns, some helpful documentation, or guiding principles — can show your organization the light towards the Grail. As we’ve discussed throughout this chapter, these efforts should be ongoing, and before you can run you must first learn to crawl.</p>
+<div class="editor">
+
+
+<p>Ed: Hello.</p>
+
+</div>
+
+<p>If a relatively scattered, decentralized culture is your reality, don’t be disheartened! Even getting <em>some</em> design system in place – a handful of go-to UI patterns, some helpful documentation, or guiding principles – can show your organization the light that points towards the grail. As we’ve discussed throughout this chapter, these efforts should be ongoing, and before you can run you must first learn to crawl.</p>
 
 <h2 id="make-it-cross-disciplinary">Make it cross-disciplinary</h2>
-<p>Style guides often jump straight into code snippets and pattern usage for the benefit of the design system users. Of course a pattern library needs to be helpful for the people actually making use of the patterns, but <strong>treating a style guide solely a developer resource limits its potential</strong>.</p>
+<p>Style guides often jump straight into code snippets and pattern usage for the benefit of the design system users. Of course, a pattern library needs to be helpful for the people actually making use of the patterns, but <strong>treating a style guide solely as a developer resource limits its potential</strong>.</p>
 
 <p><strong>A style guide has the opportunity to serve as a watering hole for the entire organization</strong>, helping establish a common vocabulary for every discipline invested in the success of the company’s digital products. Establishing this common vocabulary can lead to more efficient work, better communication, and more collaboration between disciplines across the organization. That’s why the style guide should be an inviting place for everybody, not just design system users.</p>
 
-<p>Take the carousel (please!). This component is amazingly complex from an organizational standpoint. A homepage carousel on an e-commerce website requires input from a myriad of disciplines across the organization. Business owners and editorial staff must choose products to be featured in the carousel. Copywriters must ensure the copy is effective and stays within the constraints of the design. Art directors must ensure the aesthetic design is pleasing and the product photography is legible across every screen size. UX designers need to ensure the functionality and controls are intuitive. Frontend people need to make sure the component is responsive, accessible, and performant. Backend developers need to make sure the component is properly wired up to the backend system. You get the idea.</p>
+<p>Take the carousel (please!). This component is amazingly complex from an organizational standpoint. A homepage carousel on an e-commerce website requires input from a <span class="editor">myriad</span> of disciplines across the organization. Business owners and editorial staff must choose products to be featured in the carousel. Copywriters must ensure the copy is effective and stays within the constraints of the design. Art directors need to make certain the aesthetic design is pleasing and the product photography is legible across every screen size. UX designers have to confirm the functionality and controls are intuitive. Front-end people must be sure the component is responsive, accessible, and performant. Back-end developers need to ensure the component is properly wired up to the back-end system. You get the idea.</p>
+
+<div class="editor">
+
+
+<p>Ed: Ah, ‘myriad’. My nemesis of old.</p>
+
+</div>
 
 <figure>
     <img src="../images/content/walmart-carousel.png" alt="A homepage carousel on a site like Walmart requires input from many different disciplines and stakeholders. A style guide can help gather those different perspectives under one roof." />
@@ -542,7 +578,7 @@
 <p>A well-crafted style guide can help manage all these moving parts and ensure the many perspectives that influence each pattern are properly documented in the style guide. Make the pattern library accessible to every discipline, and think about how to make it easy and inviting for different disciplines to contribute to the documentation.</p>
 
 <h2 id="make-it-approachable">Make it approachable</h2>
-<p>This should come as a surprise to no one, but people tend to gravitate towards attractive things. A big part of making a style guide a cross-disciplinary resource is ensuring the container that houses your pattern library and other documentation is good-looking, inviting, and easy to navigate.</p>
+<p>It should come as a surprise to no one that people tend to gravitate towards attractive things. A big part of making a style guide a cross-disciplinary resource is ensuring the container that houses your pattern library and other documentation is good-looking, inviting, and easy to navigate.</p>
 
 <figure>
     <img src="../images/content/styleguide-yelp.png" alt="Yelp's style guide has an attractive, friendly front page that explains what the resource is, who it's for, and how to use it." />
@@ -551,7 +587,7 @@
 	</figcaption>
 </figure>
 
-<p>Taking the time to craft an attractive home for your style guide and documentation can lead to more usage, help build awareness,    help create organizational investment, and help get non-developers’ eyeballs on the style guide. All of this contributes to that important shared vocabulary that leads to better cross-disciplinary collaboration.</p>
+<p>Taking the time to craft an attractive home for your style guide and documentation can lead to more usage, help build awareness, help create organizational investment, and help get non-developers’ eyeballs on the style guide. All of this contributes to that important shared vocabulary that leads to better cross-disciplinary collaboration.</p>
 
 <p>But creating a great-looking, intuitive style guide experience doesn’t just happen, and this can be problematic when getting a style guide off the ground. If teams think that making a useful style guide involves making some Big, Official Thing with custom branding and a glossy website, they might be deterred from ever starting the initiative. So remember:</p>
 
@@ -561,57 +597,71 @@
   <li>Make it official.</li>
 </ol>
 
-<p>Creating a useful design system should be the team’s first priority. A happy home to contain it all might not happen right out of the gate, but should become a bigger priority once the design system becomes official. Making a good-looking style guide isn’t just design for design’s sake; <strong>it reflects an organization’s commitment to making and maintaining a thoughtful, deliberate design system</strong>.</p>
+<div class="editor">
+
+
+<p>Ed: See previous comments about numbering and make sure the formatting of this list matches the initial list.</p>
+
+</div>
+
+<p>Creating a useful design system should be the team’s first priority. A happy home to contain it all might not be made straightaway, but should become a bigger priority once the design system becomes official. Making a good-looking style guide isn’t just design for design’s sake; <strong>it reflects an organization’s commitment to making and maintaining a thoughtful, deliberate design system</strong>.</p>
 
 <h2 id="make-it-visible">Make it visible</h2>
 <p>Visibility is critically important to the ongoing health of your design system. Such an important endeavor shouldn’t be tucked away in a dark corner of your intranet. What steps can you take to ensure the design system remains a cornerstone of your design and development workflows?</p>
 
 <h3 id="design-system-evangelism">Design system evangelism</h3>
-<p>You can create the best style guide in world, use the most sophisticated technology, have an amazing team in place, and have excited users, but if you don’t actively promote the design system and communicate changes, the entire effort will greatly suffer.</p>
+<p>You can create the best style guide in world, use the most sophisticated technology, have an amazing team in place, and have excited users, but if you don’t actively promote the design system and communicate changes, the entire effort will suffer greatly.</p>
 
-<p>Evangelizing your design system efforts can and should happen even before the system is off the ground. At the onset of your project, you can set up places to document progress of the project to help garner awareness and excitement for the design system endeavor. One client of mine set up an internal blog to publish updates to the project, as well as a design system Yammer channel where developers and other interested parties can share ideas, address concerns, give feedback, and ask questions. Establishing a culture of communication early in the process will increase the likelihood of the design system taking root.</p>
+<p>Evangelizing your design system efforts can and should happen even before the system is off the ground. At the onset of your project, you can set up places to document progress of the project to help garner awareness and excitement for the design system effort. One client of mine set up an internal blog to publish updates to the project, as well as a design system Yammer channel where developers and other interested parties can share ideas, address concerns, give feedback, and ask questions. Establishing a culture of communication early in the process will increase the likelihood of the design system taking root.</p>
 
 <h4 id="communicating-change">Communicating change</h4>
 <p>Once the design system is off the ground and is being used in real applications, it’s imperative to communicate changes, updates, and an ongoing vision to the entire organization.</p>
 
-<p>The tactics for this communication can vary from nuts-and-bolts utilities to more outward facing marketing efforts. Here are some materials that can help communicate change:</p>
+<p>The tactics for this communication can vary from nuts-and-bolts utilities to more outward-facing marketing efforts. Here are some materials that can help communicate change:</p>
 
 <ul>
-  <li><strong>Change logs</strong> - “Here’s what’s changed in the pattern library this month.”</li>
-  <li><strong>Roadmap</strong> - “Here’s what’s coming up over the next few months.”</li>
-  <li><strong>Success stories</strong> - “Team X launched this great new application using the design system; read more about how they did it.”</li>
-  <li><strong>Tips and tricks</strong> “Here’s a few best practices and considerations for using our system’s buttons throughout your application.”</li>
+  <li><strong>Change logs</strong>: “Here’s what’s changed in the pattern library this month.”</li>
+  <li><strong>Roadmap</strong>: “Here’s what’s coming up over the next few months.”</li>
+  <li><strong>Success stories</strong>: “Team X launched this great new application using the design system; read more about how they did it.”</li>
+  <li><strong>Tips and tricks</strong>: “Here are a few best practices and considerations for using our system’s buttons throughout your application.”</li>
 </ul>
 
-<p>Having a home base for all these materials is a great idea, and keeping them adjacent to (or even within) the style guide itself makes a lot of sense as well.</p>
+<p>Having a base for all these materials is a great idea, and keeping them adjacent to (or even within) the style guide itself makes a lot of sense as well.</p>
 
 <figure>
-    <img src="../images/content/material-design-changelog.png" alt="The Material Design team publishes a handy change log within their style guide so users can easily learn about the latest changes and improvements to the system." />
+    <img src="../images/content/material-design-changelog.png" alt="The material design team publishes a handy changelog within its style guide so users can easily learn about the latest updates and improvements to the system." />
 	<figcaption>
-	    The Material Design team publishes a handy change log within their style guide so users can easily learn about the latest changes and improvements to the system.
+	    The material design team publishes a handy changelog within its style guide so users can easily learn about the latest updates and improvements to the system.
 	</figcaption>
 </figure>
 
-<p><strong>Design system changes, updates, and requests should be communicated wherever your team hangs out</strong>. That may include Slack, BaseCamp, Github, wikis, Yammer, email lists, company blogs, intranets, and any other internal tools your team uses to communicate and collaborate. If that sounds like a lot of work to you, fear not! Keeping your team and users updated doesn’t have to require a huge manual effort. Thanks to the connected nature of our tools, teams can automatically get alerted to changes via software, as the team from Shyp explains:</p>
+<p><strong>Design system changes, updates, and requests should be communicated wherever your team hangs out.</strong> That may include Slack, Basecamp, GitHub, wikis, Yammer, email lists, company blogs, intranets, and any other internal tools your team uses to communicate and collaborate. If that sounds like a lot of work to you, fear not! Keeping your team and users updated doesn’t have to require a huge manual effort. Thanks to the connected nature of our tools, teams can automatically get alerted to changes via software, as Micah Sivitz from Shyp explains:</p>
 
 <blockquote>
   <p>Whenever someone makes a pull request, it sends a notification to our #Design slack channel, announcing to the team that there is a proposal change and feedback is required. <cite><a href="https://medium.com/shyp-design/managing-style-guides-at-shyp-c217116c8126">Micah Sivitz, Shyp</a></cite></p>
 </blockquote>
 
-<p>Baking this communication into the team’s everyday workflow keeps makers, users, and stakeholders engaged in the endeavor, and helps reassure users that the pattern library is being actively maintained and improved upon.</p>
+<p>Baking this communication into the team’s everyday workflow keeps makers, users, and stakeholders engaged, and helps reassure users that the pattern library is being actively maintained and improved.</p>
 
 <h4 id="training-and-support">Training and support</h4>
-<p>You wouldn’t hand someone a hammer, saw, and screwdriver then say, “Alright, you’ve got what you need; now go and build me a beautiful new house.” Knowing how to properly use a tool is often even more important than that tool’s availability. Documentation in the form of a style guide is no doubt helpful, but by itself it’s not enough. It’s essential to provide adequate training and offer ongoing support for your design system’s users to ensure they successfully get up and running with the toolkit and continue to create great work with it.</p>
+<p>You wouldn’t hand someone a hammer, saw, and screwdriver then say, “All right, you’ve got what you need; now go and build me a beautiful new house.” Knowing how to properly use a tool is often even more important than that tool’s availability. Documentation in the form of a style guide is no doubt helpful, but by itself it’s not enough. It’s essential to provide adequate training and offer ongoing support for your design system’s users to ensure they successfully get up and running with the tool kit and continue to create great work with it.</p>
 
-<p>Training users on how to work with the design system can take many forms, including:</p>
+<p>Training users how to work with the design system can take many forms, including:</p>
 
 <ul>
-  <li><strong>Pair sessions</strong> - Nothing beats pulling up a chair and working together on a project. While more time intensive than other training vehicles, it’s the best way to get makers and users collaborating together, learning how the system works, and exposing new opportunities and shortcomings.</li>
-  <li><strong>In-person workshops</strong> - From immersive full-day sessions to quick walkthroughs, it’s incredibly helpful to set up face-to-face training workshops involving both makers and users. These sessions can help smooth out any misconceptions about the system, help level up users with hands-on guidance, and create a healthy relationship between the people in charge of maintaining the system and the people in charge of utilizing it.</li>
-  <li><strong>Webinars</strong> - If in-person workshops or pair sessions aren’t possible or you need to train a lot of users at scale, webinars can be fantastic. Users can tune into online sessions to learn about how to properly use the system. When conducting webinars, be sure to build in plenty of Q&amp;A time to field both audio and typed questions, concerns, and comments.</li>
-  <li><strong>Tutorials</strong> - A series of blog posts and/or screencasts can neatly encapsulate core concepts of working with the design system. Not only do these help serve as a training tool, but they can serve as a great reference to keep coming back to.</li>
-  <li><strong>Onboarding</strong> - A great way of injecting your design system into your company culture is to bake design system training right into new employee onboarding process. New employees will understand the importance of modularity, reuse, and all the other benefits a design system brings.</li>
+  <li><strong>Pair sessions</strong>: Nothing beats pulling up a chair and working together on a project. While more time-intensive than other training vehicles, it’s the best way to get makers and users collaborating together, learning how the system works, and exposing new opportunities and shortcomings.</li>
+  <li><strong>Workshops</strong>: From immersive full-day sessions to quick walk-throughs, it’s incredibly helpful to set up face-to-face training workshops involving both makers and users. These sessions can help smooth out any misconceptions about the system, help level-up users with hands-on guidance, and create a healthy relationship between the people in charge of maintaining the system and the people in charge of working with it.</li>
+  <li><strong>Webinars</strong>: If workshops or pair sessions aren’t possible, or you need to train a lot of users at scale, webinars can be fantastic. Users can tune into online sessions to learn about how to properly use the system. When conducting webinars, be sure to build in plenty of Q&amp;A time to field both audio and typed questions, concerns, and comments.</li>
+  <li><strong>Tutorials</strong>: A series of blog posts and screencasts can neatly encapsulate core concepts of working with the design system. Not only do these help serve as a training tool, but they can serve as a great reference to keep coming back to.</li>
+  <li><strong><span class="editor">Onboarding</span></strong>: A great way of injecting your design system into your company culture is to bake design system training right into the onboarding process for new employees. New colleagues will understand the importance of modularity, reuse, and all the other benefits a design system brings.</li>
 </ul>
+
+<div class="editor">
+
+
+<p>Ed: An ugly new coinage that’s gaining traction. I’ll not change it, but (and maybe this is a UK thing) could ‘induction’ be a better choice? New employees are inducted into an organization here, rather than onboarded (listen to it: onboarded/onboarding sound ridiculous! To me, anyway). Up to you.</p>
+
+</div>
 
 <p>Users will undoubtedly have questions or encounter issues once they start cooking with grease and building things with the design system. They need to know there’s a vibrant support system in place to help answer any questions, listen to their needs, and address bugs. There are a host of mechanisms in place to provide support for users, including:</p>
 
