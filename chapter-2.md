@@ -137,7 +137,7 @@ Now that we've established our pages' skeletal system, let's put some meat on th
 
 {% include figure.html src="../images/content/page.png" caption="The page stage replaces placeholder content with real representative content to bring the design system to life." %}
 
-The page stage is most concrete stage of atomic design, and it's important for some rather obvious reasons. After all, this is what users will see when they visit your experience. This is what your stakeholders will sign off on. And this is where you see all those components coming together to form a beautiful and functional user interface. Exciting!
+The page stage is the most concrete stage of atomic design, and it's important for some rather obvious reasons. After all, this is what users will see when they visit your experience. This is what your stakeholders will sign off on. And this is where you see all those components coming together to form a beautiful and functional user interface. Exciting!
 
 In addition to demonstrating the final interface as your users will see it, **pages are essential for testing the effectiveness of the underlying design system**. It is at the page stage that we're able to take a look at how all those patterns hold up when real content is applied to the design system. Does everything look great and function as it should? If the answer is no, then we can loop back and modify our molecules, organisms, and templates to better address our content's needs.
 
