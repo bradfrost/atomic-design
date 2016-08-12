@@ -520,47 +520,61 @@ Training users how to work with the design system can take many forms, including
 
 <div class="editor">
 {% capture m %}
-Ed: An ugly new coinage that’s gaining traction. I’ll not change it, but (and maybe this is a UK thing) could ‘induction’ be a better choice? New employees are inducted into an organization here, rather than onboarded (listen to it: onboarded/onboarding sound ridiculous! To me, anyway). Up to you.
+Ed: An ugly coinage that’s gaining traction. Because of that, I’ll not change it, but (and maybe this is a UK thing) could ‘induction’ be a better choice? New employees are inducted into an organization here, rather than onboarded (listen to it: onboarded/onboarding sound ridiculous! To me, anyway). Up to you.
 {% endcapture %}
 {{ m | markdownify }}
 </div>
 
-Users will undoubtedly have questions or encounter issues once they start cooking with grease and building things with the design system. They need to know there's a vibrant support system in place to help answer any questions, listen to their needs, and address bugs. There are a host of mechanisms in place to provide support for users, including:
+Users will undoubtedly have questions or encounter issues once they start <span class="editor">cooking with grease</span> and building things with the design system. They need to know there's a robust support system in place to help answer any questions, listen to their requirements, and address bugs. There are a host of mechanisms in place to provide support for users, including:
 
-- **Issue trackers** - Tools like JIRA and Github Issues are great  for users and makers to report bugs and have technical conversations. Users should be aware the protocol for filing bugs and should feel empowered to contribute.
-- **Office hours** - Schedule regular times where the design system team is available to field questions, address issues, and talk about what's next for the design system.
-- **Slack and chat tools** - The real-time nature of many of our work collaboration tools presents a huge opportunity to keep the pattern-laden conversation going. Thanks to tools like Slack, Yammer, and HipChat, makers and users can engage each other whenever and wherever.
-- **Forums** - Communities like Stack Overflow and Github have proven to be extremely powerful for enabling grassroots, community-driven support. Rather than design system makers becoming a support bottleneck, it can be worthwhile to open up support to the entire user community. 
-- **Outreach** - Not everyone has the time or the personality to  ask questions and suggest changes. Design system makers should be proactive and reach out to developers using the design system to see if they have any issues or concerns. These kinds of actions can help build a genuine and positive relationship between makers and users.
+<div class="editor">
+{% capture m %}
+Ed: Oh, I remember this from chapter 4. The phrase is ‘cooking with gas’.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-{% include figure.html src="../images/content/draft-github.png" caption="The Draft US Design System tracks issues using Github, providing a place for users and makers to file bugs and have conversations about the nitty gritty details of their design system." %}
+- **Issue trackers**: Tools like JIRA and GitHub Issues are great for users and makers to report bugs and have technical conversations. Users should be aware of the protocol for filing bugs and feel empowered to contribute.
+- **Office hours**: Schedule regular times when the design system team is available to field questions, address issues, and talk about what's next for the design system.
+- **Slack and chat tools**: The real-time nature of many of our work collaboration tools presents a huge opportunity to keep the pattern-laden conversation going. Thanks to tools like Slack, Yammer, and HipChat, makers and users can engage one another whenever and wherever.
+- **Forums**: Communities like Stack Overflow and GitHub have proved to be extremely effective at enabling grassroots, community-driven support. Rather than design system makers becoming a support bottleneck, it can be worthwhile to open up support to the entire user community. 
+- **Outreach**: Not everyone has the time or the personality to ask questions and suggest changes. Design system makers should be proactive and reach out to developers using the design system to see if they have any issues or concerns. These kinds of actions can help build a genuine and positive relationship between makers and users.
 
-And thanks to tools like Github, design system users don't have to be relegated to the role of dumb consumer. The people who use the system day in and day out can be extremely valuable contributors to the design system if given the chance. Embrace the fact that users are eager to pitch in and make the system as great as it can be. Here are some tactics for encouraging user contributions:
+{% include figure.html src="../images/content/draft-github.png" caption="The Draft U.S. Web Digital Standards system tracks issues using GitHub, providing a place for users and makers to file bugs and have conversations about the nitty-gritty." %}
 
-- **Suggestions and pull requests** - Encourage anyone using the design system to suggest changes and new features. Better yet, encourage users to submit changes in the form of pull requests that can be merged directly back into the code base.
-- **Individual interviews and roundtable discussions** - It's always a good idea to talk to users, so regularly schedule time to chat with the people who are touching these patterns on a regular basis. Take it all in, listen to both the good and the bad, and collectively determine a plan of attack to address any issues and suggestions.
-- **Requests for feedback** - Managing a system that can potentially be deployed to hundreds of applications can be tricky. Before pulling the trigger on decisions that could impact a lot of people, reach out for people's opinions. "We're considering deprecating our carousel pattern and would like to hear what you think." 
-- **Surveys** - If in-person interviews aren't feasible, you can lean on quick surveys to get a feel for how effective UI patterns and the style guide are. Questions like, "On a scale from 1-5, how useful is the pattern documentation? Any suggestions?" can help point out any blind spots and get users to suggest features that would make their lives easier.
-- **Regular state of the union meetings** - Schedule regular meetings where the design system team discusses the product roadmap, lessons learned along the way, and suggestions & feedback. Encourage anyone to join the meeting, and be sure to record and distribute these sessions so everyone is aware of the Master Plan.
+Thanks to tools like GitHub, design system users don't have to be relegated to the role of dumb consumers. The people who use the system day in and day out can be extremely valuable contributors to the design system if given the chance. Embrace the fact that users are eager to pitch in and make the system as great as it can be. Here are some tactics for encouraging user contributions:
+
+- **Suggestions and pull requests**: Encourage anyone using the design system to suggest changes and new features. Better yet, invite users to submit changes in the form of pull requests that can be merged directly back into the codebase.
+- **Individual interviews and roundtable discussions**: It's always a good idea to talk to users, so regularly schedule time to chat with the people who are touching these patterns on a regular basis. Take it all in, listen to both the good and the bad, and collectively determine a plan of attack to address any issues and suggestions.
+- **Requests for feedback**: Managing a system that can potentially be deployed to hundreds of applications can be tricky. Before pulling the trigger on decisions that could impact a lot of people, ask for opinions: "We're considering deprecating our carousel pattern and would like to hear what you think." 
+- **Surveys**: If interviews aren't feasible, you can lean on quick surveys to get a feel for how effective UI patterns and the style guide are. Questions like "On a scale from one to five, how useful is the pattern documentation? Any suggestions?" can help identify blind spots and get users to suggest features that would make their lives easier.
+- **Regular “state of the union” meetings**: Schedule regular meetings where the design system team discusses the product roadmap, lessons learned along the way, and suggestions and feedback. Encourage anyone to join the meeting, and be sure to record and distribute these sessions so everyone is aware of the master plan.
 
 ### Make it public
-Communicating change, evangelizing, and setting up proper training & support are all great things to increase your system's visibility. But there's another big opportunity to take your communication strategy to another level by **making your style guide publicly accessible**.
+Communicating change, evangelizing, and setting up proper training and support are all great things to increase your system's visibility. But there's another big opportunity to take your communication strategy to another level: **making your style guide publicly accessible**.
 
-But why? After all, isn't a style guide merely an internal resource to help your organization work better together? What use is it to the outside world? And wouldn't publishing your style guide give away all your trade secrets?
+Why? Isn't a style guide merely an internal resource to help people in your organization work better together? What use is it to the outside world? And wouldn't publishing your style guide give away all your trade secrets?
 
-**Publishing your style guide for the world to see increases its visibility, increases accountability, and serves as an amazing recruitment tool**.
+**Publishing your style guide for the world to see increases its visibility, increases accountability, and serves as an amazing recruitment tool.**
 
-Putting your style guide behind a login or firewall reduces visibility and adds an unnecessary burden for your team and partners, which limits the resource's effectiveness and potential. And the fears about giving away your trade secrets are completely unfounded. These are UI patterns, not nuclear codes.
+Putting your style guide behind a login or firewall reduces visibility and adds an unnecessary burden to your team and partners, which limits the resource's effectiveness and potential. And the fears about giving away your trade secrets are completely unfounded. These are UI patterns, not nuclear codes.
 
-{% include figure.html src="../images/content/styleguides-examples.png" caption="Stlyeguides.io rounds up over 150 public-facing style guides from organizations across the world." %}
+{% include figure.html src="../images/content/styleguides-examples.png" caption="Styleguides.io rounds up over 150 public-facing style guides from organizations across the world." %}
 
 In addition to making important documentation easier to access, a public style guide **helps create organizational accountability**. Publishing your style guide demonstrates your organization's commitment to the design system, which creates a helpful bit of pressure to keep it an up-to-date and useful resource. 
 
-Public-facing style guides are also **hugely helpful for recruiting efforts**. Designers, developers, and other disciplines are looking to work at organizations that embrace modern digital best practices, and (as we've discussed throughout this book) design systems are quickly becoming an industry-wide best practice. Publishing your style guide sends out a strong bat signal that can attract passionate, pattern-minded people. For instance, style guide expert Jina Bolton went to work at Salesforce after seeing the company's style guide for their Salesforce1 product. 
+Public-facing style guides are also **hugely helpful for recruiting**. Designers, developers, and people working in other disciplines want to work for organizations that embrace modern digital best practices, and (as we've discussed throughout this book) design systems are quickly becoming an industry-wide best practice. Publishing your style guide sends out a strong <span class="editor">bat signal</span> that can attract passionate, pattern-minded people. For instance, style guide expert Jina Bolton went to work at Salesforce after seeing the company's style guide for their Salesforce1 product. 
 
-> When I saw Salesforce’s style guide I thought it was beautiful and it's why I wanted to join this team. <cite><a href="http://styleguides.io/podcast/jina-bolton">Jina Bolton</a>
+<div class="editor">
+{% capture m %}
+Ed: I reckon the ‘bat’ isn’t required. ;) If you really want to go with it, it’s ‘Bat-Signal’.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-Since joining Salesforce, she's helped create the ultra-successful Lightning Design System and helps manage their growing design system team. Jina's story is not an isolated one; almost every guest Anna Debenham and I interviewed on the [Styleguides Podcast](http://styleguides.io/podcast) discussed how helpful their public-facing pattern library was for attracting talent. All that means that your a public style guide makes your organization *more* competitive, not less.
+> When I saw [Salesforce’s style guide] I thought it was beautiful and it's why I wanted to join this team. <cite><a href="http://styleguides.io/podcast/jina-bolton">Jina Bolton</a>
+
+Since joining Salesforce, she's helped create the ultra-successful Lightning Design System and helps manage their growing design system team. Jina's story is not an isolated one; almost every guest Anna Debenham and I interviewed on the [Styleguides Podcast](http://styleguides.io/podcast) discussed how helpful their public-facing pattern library was for attracting talent. All that means your public style guide makes your organization *more* competitive, not less.
 
 ## Make it bigger
 A visible, cross-disciplinary, approachable pattern library is one that your team will come back to again and again. Use that to your advantage. Since the team's eyeballs are already fixated on that one resource, there's a big opportunity to extend it to include other helpful documentation like the voice and tone, brand, code, design principles and writing guidelines we discussed in [chapter 1](/chapter-1/). 
@@ -569,52 +583,81 @@ A visible, cross-disciplinary, approachable pattern library is one that your tea
 
 Now, your organization may not need to create every flavor of style guide out there, but the point is that **creating a centralized style guide hub builds more awareness of best practices, increasing the documentation's effectiveness**.
 
-Another way to make the extend the functionality of the pattern library is to include native mobile app patterns alongside any web-based patterns. Once again, Intuit's Harmony design system 
+Another way to extend the functionality of the pattern library is to include native mobile app patterns alongside any web-based patterns. Once again, Intuit's Harmony <span class="editor">design system</span> 
 
-{% include figure.html src="../images/content/styleguide-harmony-2.png" caption="Intuit's Harmony pattern library includes tabs to switch between web, iOS, and Android for each pattern. This allows the team to maintain a mostly consistent design system across platforms but also document pattern divergences when they occur." %}
+<div class="editor">
+{% capture m %}
+Ed: Another seemingly incomplete sentence.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-## Make it agnostic
-The way your UI patterns are named will undoubtedly shape how they are used. **The more agnostic pattern names are, the more versatile and reusable they become**.
+{% include figure.html src="../images/content/styleguide-harmony-2.png" caption="Intuit's Harmony pattern library includes <span class='editor'>tabs</span> to switch between web, iOS, and Android for each pattern. This allows the team to maintain a mostly consistent design system across platforms but also document pattern divergences when they occur." %}
 
-Because we establish UI patterns in the context of a broader page, it can be tempting to name components based on where they live. But rather than naming your component "homepage carousel" (forgive my morbid obsession with carousels), you can simply call it "carousel" instead, which means you can now put carousels everywhere! (But for the love of all that is holy, please don't.)
+<div class="editor">
+{% capture m %}
+Ed: Those look more like buttons to me.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-Another challenge for naming *display* patterns is that we tend to get distracted by the *content* patterns that live inside them. For instance, if working on an e-commerce site, you may be tempted to call a block containing a product image and title a "product card." But naming things in this manner immediately limits what type of content can live inside it. By naming the pattern simply "card," now you can put all sorts of content patterns inside it: products, promotions, store locations, etc.
+## Make it <span class="editor">agnostic</span>
 
-Fair warning: **naming things is really freaking hard**. But there are strategies to help you create sound names for your patterns. Conducting an interface inventory (as detailed in [chapter 4](/chapter-4/#show-dont-tell-the-power-of-interface-inventories)) helps remove patterns from the context of the page where they normally reside, meaning your team can create names that aren't distracted by their context. And I've conducted naming exercises with teams where we've blurred out the content residing inside a pattern so everyone can focus on the pattern's *structure* rather than the *content* that lives inside it.
+<div class="editor">
+{% capture m %}
+Ed: I’m not a fan of ‘agnostic’ used in this way, though I appreciate it’s widely used and well-understood in web dev circles; and etymologically it makes sense. My uncertainty here is based on it usually coming prefixed with whatever is under discussion: platform-agnostic, device-agnostic, etc. Here, I suppose it would content- or context-agnostic. (I prefer ‘-neutral’, by the way.)
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
-{% include figure.html src="../images/content/modal-blur.png" caption="A good exercise when naming patterns is to blur out the content so that your names reflect the patterns' structure rather than the content that lives inside them." %}
+The way your UI patterns are named will undoubtedly shape how they are used. **The more agnostic pattern names are, the more versatile and reusable they become.**
+
+Because we establish UI patterns in the context of a broader page, it can be tempting to name components based on where they live. But rather than naming your component "homepage carousel" (forgive my morbid obsession with carousels), you can simply call it "carousel," which means you can now put carousels everywhere! (But for the love of all that is holy, please don't.)
+
+Another challenge for naming *display* patterns is that we tend to get distracted by the *content* patterns that live inside them. For instance, if working on an e-commerce site, you may be tempted to call a block containing a product image and title a "product card." But naming things in this manner immediately limits what type of content can live inside it. By naming the pattern simply "card," you can put all sorts of content patterns inside it: products, promotions, store locations, and so on.
+
+Fair warning: **naming things is really freaking hard**. But there are strategies to help you create robust names for your patterns. Conducting an interface inventory ([as detailed in chapter 4](/chapter-4/#show-dont-tell-the-power-of-interface-inventories)) helps remove patterns from the context of the page where they normally reside, meaning your team can create names that aren't distracted by their context. I've conducted naming exercises with teams where we've blurred out the content residing inside a pattern so everyone can focus on the pattern's *structure* rather than the *content* that lives inside it.
+
+{% include figure.html src="../images/content/modal-blur.png" caption="A good exercise when naming patterns is to blur out the content so your names reflect the patterns' structures rather than the content living inside them." %}
 
 While naming things will always be a challenge, pattern names that are agnostic to context and content will be more portable, reusable, and versatile.
 
 ## Make it contextual
-Showcasing UI patterns in a pattern library is all well and good, but **you need to demonstrate context in order for design system users to understand how and where to properly use them**. Most pattern libraries show a demo of each UI pattern, but as we've discussed throughout this book, those patterns don't live in a vacuum. Where exactly are these patterns utilized?
+Showcasing UI patterns in a pattern library is all well and good, but **you need to demonstrate context for design system users to understand how and where to properly use them**. Most pattern libraries show a demo of each UI pattern, but as we've discussed, those patterns don't live in a vacuum. Where exactly are these patterns used?
 
-One way to demonstrate context might include showing screenshots or videos of a component in action. Material Design's documentation does a fantastic job at this; each component is rich with photos, videos, and usage details to give their users a clear understanding of what these patterns look like in the context of an application and demonstrate how each pattern should be used.
+One way to demonstrate context might include showing screenshots or videos of a component in action. Material design's documentation does a fantastic job at this; each component is rich with photos, videos, and usage details to give users a clear understanding of what these patterns look like in the context of an application, and demonstrate how each pattern should be used.
 
-{% include figure.html src="../images/content/material-design-bottom-nav.png" caption="Material Design's component library doesn't just contain an example of each component; it thoroughly documents the component's usage with plenty of images and videos to support it." %}
+{% include figure.html src="../images/content/material-design-bottom-nav.png" caption="Material design's component library doesn't just contain an example of each component; it thoroughly documents the component's usage with plenty of images and videos to support it." %}
 
-Another way to show context is to provide lineage information for each pattern. As we discussed in Chapter 3, tools like Pattern Lab automatically generate this information which lets you to see which patterns make up any given component, and also show where each component is employed. This provides a sort of pattern paper trail that helps immensely with QA efforts, as it highlights exactly which patterns and templates would need tested if changes were made to a particular pattern.
+Another way to show context is to provide lineage information for each pattern. As we discussed in Chapter 3, tools like Pattern Lab automatically generate this information which lets you see which patterns make up any given component, and also show where each component is employed. This provides a sort of pattern paper trail that helps immensely with QA efforts, as it highlights exactly which patterns and templates would need to be tested if changes were made to a particular pattern.
 
 {% include figure.html src="../images/content/pattern-lab-lineage.png" caption="Tools like Pattern Lab provide lineage information, allowing teams to see which smaller components are included in any given component, as well as where each pattern gets used." %}
 
 ## Make it last
-Making a design system is an incredibly and important endeavor. But without proper maintenance, the value of your design system will deprecate much like a car that's just been driven off the dealer's lot. Instead, your design system should be like a bottle of fine wine that increases value over time.
+Making a design system is an incredibly and important endeavor. But without proper maintenance, the value of your design system will depreciate much like a car that's just been driven off the dealer's lot. Instead, your design system should be like a bottle of fine wine that increases in value over time.
 
-{% include figure.html src="../images/content/wine-car-lot.jpg" caption="With proper maintenance, your design system should increase in value over time like a fine bottle of wine, rather than a used car that's just been driven off the lot. Image credit: [Sabin Paul Croce on Flickr](https://flic.kr/p/on4ffK) and [Ray Larabie on Flickr](https://flic.kr/p/e35AtD)" %}
+{% include figure.html src="../images/content/wine-car-lot.jpg" caption="With proper maintenance, your design system should increase in value over time like a bottle of fine wine, rather than a used car that's just been driven off the lot. Image credit: [Sabin Paul Croce on Flickr](https://flic.kr/p/on4ffK) and [Ray Larabie on Flickr](https://flic.kr/p/e35AtD)" %}
 
-So there you have it. In order to make a maintainable design system, you should:
+<div class="editor">
+{% capture m %}
+Ed: This last section feels a bit throwaway and insubstantial. To match the other sections, you probably need to say more about how to keep adding value to the design system. I suppose fulfilling the other points goes a long way to doing this, but perhaps you can make that explicit. You flesh out the point below with ‘creating a clear governance plan’ – perhaps that’s a way forward (though I notice that ‘making it adaptable’ also mentions this).
+{% endcapture %}
+{{ m | markdownify }}
+</div>
+
+So there you have it. To make a maintainable design system, you should:
 
 - **Make it official** by allocating real time, money, and resources to your design system.
 - **Make it adaptable** by counting on change and establishing a clear governance plan.
-- **Make it maintainable** by seeking the Holy Grail and making it easy to deploy and communicate changes to the design system.
-- **Make it cross-disciplinary** by making your pattern library become a watering hole the entire organization can gather around.
+- **Make it maintainable** by seeking the holy grail and making it easy to deploy and communicate changes to the design system.
+- **Make it cross-disciplinary** by making your pattern library a watering hole the entire organization can gather around.
 - **Make it approachable** by making an attractive, easy-to-use style guide with helpful accompanying documentation.
 - **Make it visible** by communicating change, evangelizing the design system, and making it public.
 - **Make it bigger** by including brand, voice and tone, code, design principles, and writing guidelines. 
 - **Make it agnostic** by naming patterns according to their structure rather than their context or content.
-- **Make it contextual** by demonstrating what patterns make up a particular pattern and showing where each pattern is utilized.
+- **Make it contextual** by demonstrating what patterns make up a particular pattern and showing where each pattern is used.
 - **Make it last** by creating a clear governance plan and communicating changes to the design system across the entire organization.
 
 ## Go forth and be atomic
-We're tasked with making a whole slew of products, sites, and applications work and look great across a dizzying array of different devices, screen sizes, form factors, and environments. I hope that the concepts covered in this book give you solid ground to stand on as you bravely tackle this increasingly diverse digital landscape. By creating design systems, being deliberate in how you construct user interfaces, establishing a collaborative & pattern-driven workflow, and setting up processes to successfully maintain your design system, I hope you and your team can create great things together. Go forth and be atomic!
+We're tasked with making a whole slew of products, sites, and applications work and look great across a dizzying array of different devices, screen sizes, form factors, and environments. I hope that the concepts covered in this book give you solid ground to stand on as you bravely tackle this increasingly diverse digital landscape. By creating design systems, being deliberate in how you construct user interfaces, establishing a collaborative and pattern-driven workflow, and setting up processes to successfully maintain your design system, I hope you and your team can create great things together. Go forth and be atomic!
 
