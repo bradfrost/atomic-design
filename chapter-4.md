@@ -149,7 +149,7 @@ Ed: What do you mean by 'owned' here? Owned by whom? The site owners?
 {{ m | markdownify }}
 </div>
 
-<div class="editor">
+<div class="editor brad">
 {% capture m %}
 Brad: Updated this text to make it clearer. Trying to convey the fact that certain pieces of UI are owned by the organization, but other pieces might be out of their jurisdiction. A good example is an ecommerce site whose checkout flow temporarily kicks people out to PayPal's site to finalize payment. The team can control the UI up until that point, but can't modify the third-party UI. Happy to hear suggestions if this still misses the mark. 
 {% endcapture %}
