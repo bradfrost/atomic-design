@@ -225,7 +225,7 @@ Voice and tone guidelines get into the weeds by articulating how the company’s
 ### Writing
 {% include figure.html src="../images/content/styleguide-economist.png" caption="The Economist’s writing style guide" %}
 
-The rise of the Web and content managed websites makes it easier than ever for many people within an organization to publish content. This of course can be a double-edged sword, as maintaining a consistent writing style for an organization with many voices can be challenging. Writing style guides provide every author some guidelines and guardrails for contributing content.
+The rise of the Web and content-managed websites makes it easier than ever for many people within an organization to publish content. This of course can be a double-edged sword, as maintaining a consistent writing style for an organization with many voices can be challenging. Writing style guides provide every author some guidelines and guardrails for contributing content.
 
 Writing style guides can be extremely granular, defining particulars around punctuation and grammar, but they don’t always have to be so detailed. [Dalhousie University’s writing style guide](http://www.dal.ca/webteam/web_style_guide/writing_for_the_web.html) provides a concise list of principles and best practices for content contributors to follow.
 
