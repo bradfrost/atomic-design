@@ -24,7 +24,7 @@ From the beginning, the page metaphor provided users with a familiar language wi
 
 {% include figure.html src="../images/content/chrome-webpage.png" caption="Chrome browser displaying ‘This webpage is not available’ message." %}
 
-The page was—and continues to be—a very visible and helpful metaphor for the users of the web. It also has a profound influence on how web experiences are created.
+The page was – and continues to be – a very visible and helpful metaphor for the users of the web. It also has a profound influence on how web experiences are created.
 
 In the early days of the web, companies looking to get online simply translated their printed materials onto their websites. But even though these brochure websites offered a very one-dimensional perspective of what the web could offer, viewing websites as digital representations of the printed page was easy for creators to wrap their heads around.
 
@@ -50,12 +50,9 @@ The page metaphor has served its purpose helping users familiarize themselves wi
 
 Thankfully, the web community is hard at work establishing principles and practices to help us effectively talk about and create for the web. And there’s one concept that keeps popping up in every conversation about how to make successful web experiences: **modularity**.
 
-Modularity predates the web by a long shot. The Industrial Revolution brought about interchangeable parts
-and Henry Ford’s assembly line forever transformed the automobile manufacturing process. The earliest cars and components were individually crafted, which led to many safety and maintainability nightmares. Ford broke the automobile down into its component parts and modularized the assembly process. The results spoke for themselves: more uniform, more reliable, safer cars rolled out of the factory, and in record time to boot.   
-
+Modularity predates the web by a long shot. The Industrial Revolution brought about interchangeable parts and Henry Ford’s assembly line forever transformed the automobile manufacturing process. The earliest cars and components were individually crafted, which led to many safety and maintainability nightmares. Ford broke the automobile down into its component parts and modularized the assembly process. The results spoke for themselves: more uniform, more reliable, safer cars rolled out of the factory, and in record time to boot.   
 
 As the machine age became the computer age, computer scientists began practicing object-oriented programming and establishing important modular concepts like *separation of concerns* and the *single responsibility principle*. It is from this world that the World Wide Web was born, so it’s no surprise that [modular design](http://www.w3.org/DesignIssues/Principles.html#Modular) quickly became a design principle for the architecture of the web.
-
 
 Slowly, but surely, these concepts found their way into web designers’ workflows. In the early 2000s we saw the introduction of libraries like [YUI](http://yuilibrary.com/) and [jQuery UI](http://jqueryui.com/) that provided developers with a toolkit of widgets and patterns to create more consistent user interfaces.
 
@@ -144,7 +141,7 @@ That’s not to say static design tools like Photoshop and Sketch aren’t impor
 
 Establishing design atmosphere early is critical to a project’s success, which is why designers have found ways to facilitate these important conversations without having to generate full mockups. Designer Samantha Warren developed design artifacts called [style tiles](http://styletil.es/), which demonstrate color, type, and texture explorations in a nice encapsulated one-pager. Designer Dan Mall built on Samantha’s idea with a concept called [element collages](http://danielmall.com/articles/rif-element-collages/), which demonstrate design atmosphere explorations in an exploded collage of interface elements.
 
-{% include figure.html src="../images/content/style-tiles.jpg" caption="Style tiles, a concept created by designer Samantha Warren, allow designers to explore color, typography, and texture without having to develop fully-developed comps." %}
+{% include figure.html src="../images/content/style-tiles.jpg" caption="Style tiles, a concept created by designer Samantha Warren, allow designers to explore color, typography, and texture without having to develop fully realized comps." %}
 
 By breaking visual explorations into smaller chunks, designers save time and effort while avoiding presenting unrealistic, premature layouts to clients. More importantly, these approaches shift stakeholders away from simply reacting to a pretty picture, and instead facilitate crucial conversations about overall design direction and how they relate to the project’s goals. We’ll discuss these concepts in more detail in chapter 4, but suffice it to say the visual design workflow is changing in a big way!
 
@@ -158,7 +155,7 @@ A few years ago Ethan Marcotte introduced us to the idea of [responsive web desi
 
 As designers quickly discovered, creating multi-device web experiences involves a lot more than creating squishy pages. Each individual piece of an interface contains its own unique challenges and opportunities in order for it to look and function beautifully across many screen sizes and environments.
 
-How can we present primary navigation — typically displayed as a horizontal list on large screens — in a thoughtful way on smaller screens? How do lightboxes, breadcrumbs, and carousels translate to smaller viewports and alternate input types? It’s these questions that led me to create [This Is Responsive](http://bradfrost.github.io/this-is-responsive/index.html), a showcase of responsive patterns that demonstrate the various ways a particular component could be executed in a responsive environment.
+How can we present primary navigation – typically displayed as a horizontal list on large screens – in a thoughtful way on smaller screens? How do lightboxes, breadcrumbs, and carousels translate to smaller viewports and alternate input types? It’s these questions that led me to create [This Is Responsive](http://bradfrost.github.io/this-is-responsive/index.html), a showcase of responsive patterns that demonstrate the various ways a particular component could be executed in a responsive environment.
 
 While This Is Responsive is successful at articulating how these interface patterns can scale across screen sizes and environments, it’s still up to designers and developers to put these patterns into action. And as it turns out, that’s a lot of work.
 
@@ -174,7 +171,7 @@ And boy are these things popular. As I’m writing this, Bootstrap is the most p
 
 One of the most attractive aspects of these frameworks is *speed*. Frameworks like Bootstrap allow designers to get ideas off the ground quickly, rapidly create prototypes, and launch sites sooner. Because the patterns provided by a tool kit are already cross-browser tested, developers can spend their time on more important tasks rather than beating their heads against a table testing some archaic version of Internet Explorer. And in case designers do get stuck, these frameworks’ communities can provide helpful support and advice.
 
-For freelancers, this increase in speed might mean they can take on an extra project or three, yielding more financial stability for the year. And in the startup world — a place where Bootstrap is omnipresent — minimum viable products can launch sooner, leading to faster answers regarding the products’ viability.
+For freelancers, this increase in speed might mean they can take on an extra project or three, yielding more financial stability for the year. And in the startup world – a place where Bootstrap is omnipresent – minimum viable products can launch sooner, leading to faster answers regarding the products’ viability.
 
 So frameworks like Bootstrap are insanely popular design systems that provide well-tested components, resulting in consistent designs and faster launches. What’s not to love? Well, like most everything in life, there are cons right there alongside the pros.
 
@@ -225,14 +222,21 @@ While brand identity guidelines are fairly tactile, design language guidelines a
 
 To present itself in a cohesive way across a growing range of products and media, Google developed a design language called *material design*. The [material design style guide](http://www.google.com/design/spec/material-design/introduction.html) defines its overarching design philosophy, goals, and general principles, while also providing specific applications of the material design language.
 
-{% include figure.html src="../images/content/styleguide-material.png" caption="Google’s Material Design language." %}
+{% include figure.html src="../images/content/styleguide-material.png" caption="Google’s material design language." %}
 
 Design language style guides can (and usually do) incorporate aspects of other style guide categories in order to make high-level concepts a bit more tangible.
 
-Design language guidelines aren’t set in stone the way brand guidelines are. For example, one day Google will likely develop a new design language to replace Material Design, so while Google’s overall brand will remain intact, the design vocabulary around its products will change.
+Design language guidelines aren’t set in stone the way brand guidelines are. For example, one day Google will likely develop a new design language to replace <span class="editor">material design</span>, so while Google’s overall brand will remain intact, the design vocabulary around its products will change.
+
+<div class="editor">
+{% capture m %}
+Ed: Google doesn't use caps on material design.
+{% endcapture %}
+{{ m | markdownify }}
+</div>
 
 ### Voice and tone
-People interact with brands across a huge array of channels and media. In addition to the digital media we've been discussing so far in this book, brands also operate in print, retail, outdoor, radio, TV, and other channels. When a brand must communicate across so many varied touchpoints, speaking in a unified, consistent manner becomes critical to a brand’s success.  
+People interact with brands across a huge array of channels and media. In addition to the digital media we've discussed so far, brands also operate in print, retail, outdoor, radio, TV, and other channels. When a brand must communicate across so many varied touchpoints, speaking in a unified, consistent manner becomes critical to a brand’s success.  
 
 <div class="editor">
 {% capture m %} Ed: You list these different media a few times. I think readers can be expected to understand all this encompasses by now. {% endcapture %} {{ m | markdownify }}
@@ -275,7 +279,7 @@ Writing style guides can be extremely granular, defining particulars around punc
 ### Code style guides
 It’s essential for teams to write legible, scalable, maintainable code. But without a way to promote and enforce code consistency, it’s easy for things to fall apart and leave every developer to fend for themselves.
 
-{% include figure.html src="../images/content/styleguide-github.png" caption="Github’s code style guide provides best practices for writing HTML, CSS, JavaScript, and Ruby within their organization." %}
+{% include figure.html src="../images/content/styleguide-github.png" caption="GitHub’s code style guide provides best practices for writing HTML, CSS, JavaScript, and Ruby within their organization." %}
 
 Code style guides provide conventions, patterns, and examples for how teams should approach their code. These guidelines and guardrails help rein in the madness so that teams can focus on producing great work together rather than refactoring a bunch of sloppy, inconsistent code.
 
@@ -315,7 +319,7 @@ I recently visited my health insurance provider’s website to pay my bill. In t
 
 Style guides help iron out these inconsistencies by encouraging reuse of interface elements. Designers and developers can refer back to existing patterns to ensure the work they’re producing is consistent with what’s already been established.
 
-Even third parties responsible for matching their UIs with the look and feel of the company's internal UIs can make great use of a style guide. Externally-hosted experiences like payment portals or localized sites can better match the look and feel of the primary experience by applying the styles defined in the guide.
+Even third parties responsible for matching their UIs with the look and feel of a company's internal UIs can make great use of a style guide. Externally hosted experiences like payment portals or localized sites can better match the look and feel of the primary experience by applying the styles defined in the guide.
 
 <div class="editor">
 {% capture m %}
@@ -338,12 +342,12 @@ What does “utility toolbar” mean? Does everyone understand what a “touch s
 
 As the number of people working on a project increases, it becomes all too easy for communication breakdowns to occur. It's not uncommon for different disciplines to have different names for the same module, and for individuals to go rogue and invent their own naming conventions. For true collaboration to occur, it's essential for teams to speak a common language. Style guides are there to help establish that shared vocabulary.
 
-{% include figure.html src="../images/content/starbucks-blocks-3up.png" caption="Giving names to patterns like 'Blocks 3-Up' in Starbucks' style guide helps team members speak the same language" %}
+{% include figure.html src="../images/content/starbucks-blocks-3up.png" caption="Giving names to patterns like 'Blocks 3-Up' in Starbucks' style guide helps team members speak the same language." %}
 
 **Style guides establish a consistent, shared vocabulary between everyone involved in a project**, encouraging collaboration between disciplines and reducing communication breakdowns.
 
 ### Education
-In her book <cite>[Front-end Style Guides](http://maban.co.uk/projects/front-end-style-guides/)</cite>, Anna Debenham deftly explains the many advantages of creating style guides, including one of the most crucial benefits: education.
+In her book <cite>[Front-End Style Guides](http://maban.co.uk/projects/front-end-style-guides/)</cite>, Anna Debenham deftly explains the many advantages of creating style guides, including one of the most crucial benefits: education.
 
 > Education is as important as documentation. A style guide can show clients that websites are systems rather than collections of pages. <cite>[Anna Debenham](http://maban.co.uk/projects/front-end-style-guides/)</cite>
 
@@ -356,12 +360,12 @@ Education isn't just important for clients and stakeholders. A good style guide 
 
 By making a style guide a cornerstone of your workflow (which we'll detail in chapter 4), **designers and developers are forced to think about how their decisions affect the broader design system**. It becomes harder to go rogue and becomes easier to think of the greater good. And this is exactly where you want team members to be.
 
-A style guide provides a <span class="editor">home</span> for each discipline to contribute their respective considerations and concerns for patterns. By collecting all these considerations under <span class="editor">one roof</span>, the style guide becomes a hub for everyone involved in the project, which helps each discipline better understand the design system from many perspectives.
+A style guide provides a home for each discipline to contribute their respective considerations and concerns for patterns. By collecting all these considerations under one roof, the style guide becomes a hub for everyone involved in the project, which helps each discipline better understand the design system from many perspectives.
 
 ### Testing, testing, 1-2-3
 The homepage is broken, you say? Well, what exactly is breaking it?  
 
-The ability to pull an interface apart into its component pieces makes testing a lot easier. A style guide allows you to view interface patterns in isolation, allowing developers to <span class="editor">zero in</span> on what's causing errors, browser inconsistencies, or performance issues.
+The ability to pull an interface apart into its component pieces makes testing a lot easier. A style guide allows you to view interface patterns in isolation, allowing developers to zero in on what's causing errors, browser inconsistencies, or performance issues.
 
 <div class="editor">
 {% capture m %}
@@ -397,7 +401,7 @@ Better yet, even if you were to undertake a major redesign you'll find that many
 By now the benefits of creating design systems should be abundantly clear, and hopefully visions of sugar plums and beautiful style guides are dancing through your head. But to reach style guide nirvana, you must first overcome the many treacherous challenges that come with the territory.
 
 ### The hard sell
-In order to benefit from style guides, organizations must first appropriate the necessary time and budget to make them happen. **That requires organizations to overcome the short-term mentality that all too often creeps its way into company culture.
+To benefit from style guides, organizations must first appropriate the necessary time and budget to make them happen. **That requires organizations to overcome the short-term mentality that all too often creeps its way into company culture.**
 
 The long-term benefits that style guides provide are obvious to those who are already thinking about the long game. The challenge, therefore, becomes convincing those stuck in a short-term, quarter-by-quarter mindset that establishing a thoughtful design system is a smart investment in the future.
 
@@ -415,7 +419,7 @@ This auxiliary project conundrum reminds me of sentiments I often hear around fa
 ### Maintenance and governance
 Even if time and money are allocated to establish style guides, these valuable tools often die on the vine if they're not given the focus they need to reach their true potential.
 
-**A maintenance and governance strategy is critical to style guides' success**. Style guides will be thrown in the trash (right beside all those PSDs and wireframes) and abandoned without a proper strategy in place for who will manage, maintain, and enforce them.
+**A maintenance and governance strategy is critical to style guides' success.** Style guides will be thrown in the trash (right beside all those PSDs and wireframes) and abandoned without a proper strategy in place for who will manage, maintain, and enforce them.
 
 Style guide maintenance is a hugely important topic and deserves to be covered in detail, so we'll dive into how to create maintainable style guides in chapter 5.
 
