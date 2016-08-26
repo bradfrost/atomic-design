@@ -14,7 +14,7 @@ My high school chemistry class was taught by a no-nonsense Vietnam vet with an e
 
 If you're like me, you may need a bit of a refresher to recall what a chemical equation looks like, so here you go:
 
-{% include figure.html src="../images/content/chemical-equation.png" caption="An example of a chemical equation showing hydrogen and oxygen atoms combining together to to form a water molecule." %}
+{% include figure.html src="../images/content/chemical-equation.png" caption="An example of a chemical equation showing hydrogen and oxygen atoms combining together to form a water molecule." %}
 
 Chemical reactions are represented by chemical equations, which often show how atomic elements combine together to form molecules. <span class="editor">In the example above, we see how hydrogen and oxygen combine together to form water molecules.</span>
 
@@ -32,12 +32,12 @@ Brad: Short answer: yes. My rationale is that people like myself sometimes skim 
 {{ m | markdownify }}
 </div>
 
-In the natural world, **atomic elements combine together to form molecules. These molecules can combine further to form relatively complex organisms**. To expound a bit further:
+In the natural world, **atomic elements combine together to form molecules. These molecules can combine further to form relatively complex organisms.** To expound a bit further:
 
 - **Atoms** are the basic building blocks of all matter. Each chemical element has distinct properties, and they can't be broken down further without losing their meaning. (Yes, it's true atoms are composed of even smaller bits like protons, electrons, and neutrons, but atoms are the smallest *functional* unit.)
 - **Molecules** are groups of two or more atoms held together by chemical bonds. These combinations of atoms take on their own unique properties, and become more tangible and operational than atoms.
 - **Organisms** are assemblies of molecules functioning together as a unit. These <span class="editor">relatively complex</span> structures can range from single-celled organisms all the way up to incredibly sophisticated organisms like human beings.
- 
+
 <div class="editor">
 {% capture m %}
 Ed: "Complex" and "relatively complex" appear a few times around here, so I've changed or removed at least a couple of them.
@@ -47,7 +47,7 @@ Ed: "Complex" and "relatively complex" appear a few times around here, so I've c
 
 <div class="editor brad">
 {% capture m %}
-Brad: Duly noted about overusing these phrases. However, I'm not sure how else to articulate the importance of hierarchy in this instance. "Multifarious" as you suggested means "of many and various kinds," which doesn't drive home the point that organisms are more complex than molecules. I'm going to stick with "relatively complex" for this as it's the first time I'm explaining this hierarchy. 
+Brad: Duly noted about overusing these phrases. However, I'm not sure how else to articulate the importance of hierarchy in this instance. "Multifarious" as you suggested means "of many and various kinds," which doesn't drive home the point that organisms are more complex than molecules. I'm going to stick with "relatively complex" for this as it's the first time I'm explaining this hierarchy.
 {% endcapture %}
 {{ m | markdownify }}
 </div>
@@ -69,7 +69,7 @@ Because we're starting with a similar finite set of building blocks, we can appl
 
 Enter atomic design.
 
-**Atomic design is a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner**. The five stages of atomic design are:
+**Atomic design is a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner.** The five stages of atomic design are:
 
 1. Atoms
 2. Molecules
@@ -203,9 +203,9 @@ In his book <cite>The Shape of Design</cite>, Frank Chimero beautifully articula
 
 Atomic design lets us dance between contexts like the painter Frank so eloquently describes. The atoms, molecules, and organisms that comprise our interfaces do not live in a vacuum. And our interfaces' templates and pages are indeed composed of smaller parts. The parts of our designs influence the whole, and the whole influences the parts. The two are intertwined, and atomic design embraces this fact.
 
-When designers and developers are crafting a particular component, we are like the painter at the canvas creating detailed strokes. When we are viewing those components in the context of a layout with real representative content in place, we are like the painter several feet back from the canvas assessing how their detailed strokes affect the whole composition. It's necessary to home in on one particular component to ensure it is functional, usable, and beautiful. But it's also necessary to ensure that component is functional, usable, and beautiful *in the context of the final UI*.
+When designers and developers are crafting a particular component, we are like the painter at the canvas creating detailed strokes. When we are viewing those components in the context of a layout with real representative content in place, we are like the painter several feet back from the canvas assessing how their detailed strokes affect the whole composition. It's necessary to zero in on one particular component to ensure it is functional, usable, and beautiful. But it's also necessary to ensure that component is functional, usable, and beautiful *in the context of the final UI*.
 
-Atomic design provides us a structure to navigate between the parts and the whole of our UIs, which is why it's crucial to <span class="editor">reiterate that **atomic design is not a linear process**</span>. It would be foolish to design buttons and other elements in isolation then cross our fingers and hope everything comes together to form a cohesive whole. So don't interpret the five stages of atomic design as "Step 1: atoms; Step 2: molecules; Step 3: organisms; Step 4: templates; Step 5: pages." Instead, **think of the stages of atomic design as a mental model that allows us to concurrently create final UIs and their underlying design systems**.
+Atomic design provides us a structure to navigate between the parts and the whole of our UIs, which is why it's crucial to reiterate that **atomic design is not a linear process**. It would be foolish to design buttons and other elements in isolation then cross our fingers and hope everything comes together to form a cohesive whole. So don't interpret the five stages of atomic design as "Step 1: atoms; Step 2: molecules; Step 3: organisms; Step 4: templates; Step 5: pages." Instead, **think of the stages of atomic design as a mental model that allows us to concurrently create final UIs and their underlying design systems**.
 
 <div class="editor">
 {% capture m %}
