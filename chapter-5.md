@@ -486,9 +486,9 @@ Making a design system is an incredibly and important endeavor. But without prop
 
 {% include figure.html src="../images/content/wine-car-lot.jpg" caption="With proper maintenance, your design system should increase in value over time like a bottle of fine wine, rather than a used car that's just been driven off the lot. Image credit: <a href='https://flic.kr/p/on4ffK'>Sabin Paul Croce on Flickr</a> and <a href='https://flic.kr/p/e35AtD'>Ray Larabie on Flickr</a>" %}
 
-As we've discussed throughout this chapter, making your design system stand the test of time requires a significant amount of time and effort. But isn't that the case with all living things? Animals need to eat, and plants need water and sunlight in order to survive. Creating a lasting design system means treating it as a living thing that needs attention and care.  
+As we've discussed throughout this chapter, making your design system stand the test of time requires a significant amount of time and effort. But isn't that the case with all living things? Animals need to eat, and plants need water and sunlight in order to survive. Creating a living design system means giving it attention and care in order for it to continue to thrive.  
 
-A clear governance plan, communicating class. Even if you were to redesign your entire website all over again, it's serves as a foundation to grow and extend. Don't throw the baby out with the bathwater.
+All that effort not only creates a better present for your organization, but sets you up for long-term success. Establishing a clear governance plan, communicating change, and implementing the other advice found in this chapter helps the design system take root and become an integral part of your organization's workflow. Creating the damn thing in the first place is the hard part, but once established, you have a solid foundation with which to build on for years to come. Even if you were to burn everything down and rebuild a new system from the ground up, you'll find your UIs will still need buttons, form fields, tabs, and other existing components. And you'll need a happy home to display and document the system. Don't throw the baby out with the bathwater! 
 
 So there you have it. To make a maintainable design system, you should:
 
@@ -501,7 +501,7 @@ So there you have it. To make a maintainable design system, you should:
 - **Make it bigger** by including brand, voice and tone, code, design principles, and writing guidelines. 
 - **Make it agnostic** by naming patterns according to their structure rather than their context or content.
 - **Make it contextual** by demonstrating what patterns make up a particular pattern and showing where each pattern is used.
-- **Make it last** by creating a clear governance plan and communicating changes to the design system across the entire organization.
+- **Make it last** by laying a solid foundation with which to build on for years to come.
 
 ## Go forth and be atomic
 We're tasked with making a whole slew of products, sites, and applications work and look great across a dizzying array of different devices, screen sizes, form factors, and environments. I hope that the concepts covered in this book give you solid ground to stand on as you bravely tackle this increasingly diverse digital landscape. By creating design systems, being deliberate in how you construct user interfaces, establishing a collaborative and pattern-driven workflow, and setting up processes to successfully maintain your design system, I hope you and your team can create great things together. Go forth and be atomic!
