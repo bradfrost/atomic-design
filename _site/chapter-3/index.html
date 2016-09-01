@@ -244,12 +244,12 @@
 <h2 id="working-with-dynamic-data">Working with dynamic data</h2>
 <p>It’s important to articulate the underlying content structure of UI patterns within the context of a pattern library. That’s why we’ve been looking at dimension-displaying grayscale images and placeholder text containing character limits. But while this information is helpful for creative teams, grayscale images and <em>Lorem ipsum</em> text are not what users interact with on your actual site. We need a way to replace our dummy content with real representative content to ensure our UI patterns match the reality of the content that lives inside them.</p>
 
-<p>To demonstrate how Pattern Lab dynamically swaps in real content into templates, let’s take a look at a side-by-side comparison of Time Inc.’s home page template and page levels:</p>
+<p>To demonstrate how Pattern Lab dynamically swaps in real content into templates, let’s take a look at a side-by-side comparison of Time Inc.’s homepage template and page levels:</p>
 
 <figure>
-    <img src="../images/content/timeinc-template-page.png" alt="A side-by-side comparison of Time Inc.'s home page template and page levels. The template articulates the content structure of the design system, while the page shows what the system looks like with real content displayed by it." />
+    <img src="../images/content/timeinc-template-page.png" alt="A side-by-side comparison of Time Inc.'s homepage template and page levels. The template articulates the content structure of the design system, while the page shows what the system looks like with real content displayed by it." />
 	<figcaption>
-	    A side-by-side comparison of Time Inc.'s home page template and page levels. The template articulates the content structure of the design system, while the page shows what the system looks like with real content displayed by it.
+	    A side-by-side comparison of Time Inc.'s homepage template and page levels. The template articulates the content structure of the design system, while the page shows what the system looks like with real content displayed by it.
 	</figcaption>
 </figure>
 
@@ -271,12 +271,12 @@
 
 <p>For developers, this type of format most likely looks familiar. If you’re not a developer, don’t freak out! Once you look beyond the curly braces and quotes, you’ll see that we’re defining a <code class="highlighter-rouge">hero</code> object (for the full-bleed hero area directly below the header) that has a <code class="highlighter-rouge">headline</code> value of “Lorem Ipsum” and an <code class="highlighter-rouge">img</code> with a <code class="highlighter-rouge">src</code> value of “/images/sample/fpo_hero.png”. We’re simply defining this object’s attributes and providing values for those attributes.</p>
 
-<p>Once those objects are defined, we can then override their attributes at Pattern Lab’s page level. This is accomplished by creating a new JSON file that matches the page pattern name (for Time Inc.’s home page, we’ll call it <em>00-homepage.json</em>) inside the <em>/pages</em> directory.</p>
+<p>Once those objects are defined, we can then override their attributes at Pattern Lab’s page level. This is accomplished by creating a new JSON file that matches the page pattern name (for Time Inc.’s homepage, we’ll call it <em>00-homepage.json</em>) inside the <em>/pages</em> directory.</p>
 
 <figure>
-    <img src="../images/content/timeinc-page-directory.png" alt="Inside the ‘pages’ directory we have the home page pattern as well as a JSON file that matches the name of the pattern. This is where we'll override the default content with page-specific content." />
+    <img src="../images/content/timeinc-page-directory.png" alt="Inside the ‘pages’ directory we have the homepage pattern as well as a JSON file that matches the name of the pattern. This is where we'll override the default content with page-specific content." />
 	<figcaption>
-	    Inside the ‘pages’ directory we have the home page pattern as well as a JSON file that matches the name of the pattern. This is where we'll override the default content with page-specific content.
+	    Inside the ‘pages’ directory we have the homepage pattern as well as a JSON file that matches the name of the pattern. This is where we'll override the default content with page-specific content.
 	</figcaption>
 </figure>
 
@@ -292,7 +292,7 @@
 </span></code></pre>
 </div>
 
-<p>By overriding the default data, the <code class="highlighter-rouge">hero</code> headline now reads “Moving People” instead of “Lorem Ipsum”. And instead of pointing to a grayscale for placement only (FPO) hero image, we’re now pointing to a picture of Beyoncé located at “/images/hero_beyonce.jpg”.</p>
+<p>By overriding the default data, the <code class="highlighter-rouge">hero</code> headline now reads “Moving People” instead of “Lorem Ipsum.” And instead of pointing to a grayscale for-placement-only (FPO) hero image, we’re now pointing to a picture of Beyoncé located at “/images/hero_beyonce.jpg”.</p>
 
 <p>This process of establishing defaults for dynamic data then replacing it with page-specific content continues for each section of the website. In addition to replacing simple strings like headings, we can also dynamically set variables to <code class="highlighter-rouge">true</code> or <code class="highlighter-rouge">false</code>, loop through an array of items, and more. We can even dramatically alter the UI with just a few changes to a JSON file, which we’ll talk about next.</p>
 
@@ -467,12 +467,12 @@
 
 <p>This setup allows the core development team to maintain a single source of truth for all patterns’ front-end code. For developers to get up and running, the pattern library needs only provide the code to include a particular pattern.</p>
 
-<p>Pattern Lab provides the ability to view both a pattern’s underlying HTML as well as the template code used to generate the HTML. It can also be extended to showcase accompanying CSS and JavaScript code.</p>
+<p>Pattern Lab provides the ability to view both a pattern’s underlying HTML and the template code used to generate the HTML. It can also be extended to showcase accompanying CSS and JavaScript code.</p>
 
 <figure>
-    <img src="../images/content/pattern-lab-code.png" alt="Pattern Lab's code view demonstrates both a pattern's template code as well as the compiled HTML." />
+    <img src="../images/content/pattern-lab-code.png" alt="Pattern Lab's code view demonstrates both a pattern's template code and the compiled HTML." />
 	<figcaption>
-	    Pattern Lab's code view demonstrates both a pattern's template code as well as the compiled HTML.
+	    Pattern Lab's code view demonstrates both a pattern's template code and the compiled HTML.
 	</figcaption>
 </figure>
 
@@ -486,9 +486,9 @@
 <p>Pattern Lab provides several ways to add pattern descriptions and annotations to a design system. Pattern descriptions can be added by creating a Markdown file that corresponds to the name of a pattern (e.g. <em>pattern-name.md</em>), which will show the pattern description in the library list view.</p>
 
 <figure>
-    <img src="../images/content/pattern-lab-annotations-2.png" alt="Pattern Lab displays important pattern documentation right alongside the living pattern examples, which helps teams communicate definitions, usage, examples, outside resources, and more. All these " />
+    <img src="../images/content/pattern-lab-annotations-2.png" alt="Pattern Lab displays important pattern documentation right alongside the living pattern examples, which helps teams communicate definitions, usage, examples, outside resources, and more." />
 	<figcaption>
-	    Pattern Lab displays important pattern documentation right alongside the living pattern examples, which helps teams communicate definitions, usage, examples, outside resources, and more. All these 
+	    Pattern Lab displays important pattern documentation right alongside the living pattern examples, which helps teams communicate definitions, usage, examples, outside resources, and more.
 	</figcaption>
 </figure>
 
@@ -515,7 +515,7 @@
 
 <p>In the example above, we have a molecule pattern called <code class="highlighter-rouge">media-block</code>, which contains an image, headline, text, and a group of buttons. Looking at the pattern’s lineage, we can see it contains a pattern called <code class="highlighter-rouge">atoms-square</code>, which is the thumbnail-sized image, as well as <code class="highlighter-rouge">molecules-button-bar</code>, which is the group of buttons. We can also see where exactly this pattern gets used: the <code class="highlighter-rouge">media-block-list</code> organism.</p>
 
-<p>This contextual information is amazingly helpful for designers and developers; I know I use the lineage feature <em>all the time</em> in my own workflow. Let’s say we wanted to make changes to a particular pattern, like doubling the size of an image or adding an additional element: <strong>we’d immediately know which patterns and templates would need to be retested and QA’d to ensure nothing breaks with the changes</strong>. The lineage feature also helps point out unused or underutilized patterns so that teams can weed them out of the pattern library as the launch date gets closer.</p>
+<p>This contextual information is amazingly helpful for designers and developers; I know I use the lineage feature <em>all the time</em> in my own workflow. Let’s say we wanted to make changes to a particular pattern, like doubling the size of an image or adding an additional element: <strong>we’d immediately know which patterns and templates would need to be retested and QA’d to ensure nothing breaks with the changes</strong>. The lineage feature also helps point out redundant and underused patterns so teams can weed them out of the pattern library as the launch date gets closer.</p>
 
 <h2 id="to-each-their-own">To each their own</h2>
 <p>So there you have it. Pattern Lab provides several helpful features for teams to create deliberate, thoughtful design systems. But as I mentioned before, no single tool is going to be perfect for everyone and every situation. There are <a href="http://styleguides.io/tools.html">a ton of great tools</a> out there to help you create effective pattern libraries, and the tools you decide on will undoubtedly be influenced by your organization’s environment, technologies, workflow, and culture.</p>
@@ -523,12 +523,12 @@
 <p>When choosing tools to create your pattern library, you should keep your eyes open for these qualities and features of effective pattern libraries:</p>
 
 <ul>
-  <li>Providing pattern descriptions and annotations</li>
-  <li>Showcasing the relevant pattern html, templating, CSS, and/or JavaScript code.</li>
-  <li>Viewing patterns across the entire resolution spectrum</li>
-  <li>The ability to showcase pattern variations, such as active or disabled tabs</li>
-  <li>The ability to dynamically add real representative content into the patterns’ structures</li>
-  <li>Providing contextual information, like which patterns make up a particular component as well as where that component is used</li>
+  <li>Providing pattern descriptions and annotations.</li>
+  <li>Showcasing the relevant pattern HTML, templating, CSS, and/or JavaScript code.</li>
+  <li>Viewing patterns across the entire resolution spectrum.</li>
+  <li>The ability to showcase pattern variations, such as active or disabled tabs.</li>
+  <li>The ability to dynamically add real representative content into the patterns’ structures.</li>
+  <li>Providing contextual information, like which patterns make up a particular component, as well as where that component is used.</li>
 </ul>
 
 <p>At the end of the day, it’s not about the tools we use to create pattern libraries, but rather how we use them. Creating and maintaining an effective design system means dramatically changing your organization’s culture, processes, and workflows. If that sounds hard to you, it’s because it is. But fear not! The rest of the book will detail the entire process of creating and maintaining a successful design system to set your organization up for long-term success.</p>
