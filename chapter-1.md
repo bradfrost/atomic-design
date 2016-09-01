@@ -328,7 +328,7 @@ Ed: External? Subsidiary? Secondary?
 {{ m | markdownify }}
 </div>
 
-<div class="editor">
+<div class="editor brad">
 {% capture m %}
 Brad: This whole paragraph needed some love, so I rewrote it to clarify things a bit.
 {% endcapture %}
