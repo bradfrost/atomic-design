@@ -43,7 +43,7 @@
         <div class="text">
     <h1><em>Chapter 4</em> The Atomic Workflow</h1>
     <div class="note">
-	<p>Greetings! <a href="https://twitter.com/fullcreammilk">Owen Gregory</a> has <a href="http://rewrites.atomicdesign.bradfrost.com/">proposed edits</a> to the <a href="http://atomicdesign.bradfrost.com/chapter-1/">original text</a>, and this is where I'm addressing those edits. Most of the changes have been implemented without comment, but I've provided some comments for areas that required an explanation. You can read my comments below and check out the changes on <a href="https://github.com/bradfrost/atomic-design/tree/edits">GitHub</a>.</p>
+	<p>Greetings, reader! The following text is a <a href="http://bradfrost.com/blog/post/atomic-design-book/">work in progress</a> so be warned you will encounter incomplete thoughts, grammar errors, and more. If you see something worth fixing, please <a href="https://github.com/bradfrost/atomic-design">submit an issue on Github</a>. Thanks and happy reading!</p>
 </div>
 
     <p>Talk is cheap. And up until now, we’ve been doing a whole lotta talkin’. That’s not to say it hasn’t been productive talk! After all, we’ve discussed the importance of modular thinking, we’ve learned a methodology for crafting deliberate UI design systems, and we’ve showcased tools for creating effective pattern libraries.</p>
@@ -83,24 +83,9 @@
   <li>Design systems <strong>lead to cohesive, consistent experiences</strong>. That means users master your UI faster, leading to more conversions and <strong>more money</strong> based on the metrics your stakeholders care about.</li>
   <li>Design systems <strong>speed up your team’s workflow</strong>. Rather than reinventing the wheel every time a new request comes through, teams can reuse already established UI puzzle pieces to roll out new pages and features faster than ever before.</li>
   <li>Centralizing UI components in a pattern library <strong>establishes a shared vocabulary</strong> for everyone in the organization, and <strong>creates a more collaborative workflow</strong> across all disciplines. With everyone speaking the same language, more time is spent getting work done and less time is spent dealing with superfluous back-and-forth communications and meetings.</li>
-  <li>Design systems <strong>make cross-browser/device, performance, and accessibility testing easier</strong>, vastly speeding up production time and allowing teams to launch higher-quality work faster. Also, baking things like accessibility into a living design system scales those best practices, <span class="editor">allowing your interfaces to reach more users while reducing the risk of you getting sued!</span>.</li>
-</ul>
-
-<div class="editor">
-
-
-<p>Ed: That’s true, but it might be better to emphasize the positive: that people using assistive technology will find it easier to use a site and become valued customers.</p>
-
-</div>
-
-<div class="editor brad">
-
-
-<p>Brad: Good point. I’ve adjusted the text to talk about the benefits. I still think it’s a good idea to bring up reducing liability, as many large organizations fret about that stuff and act on it. Reducing the risk of getting sued is a great way to get orgs to to hop on board the design system train!</p>
-
-</div>
-
-<ul>
+  <li>
+    <p>Design systems <strong>make cross-browser/device, performance, and accessibility testing easier</strong>, vastly speeding up production time and allowing teams to launch higher-quality work faster. Also, baking things like accessibility into a living design system scales those best practices, allowing your interfaces to reach more users while reducing the risk of you getting sued!</p>
+  </li>
   <li>Once a design system (with accompanying pattern library) is established, it <strong>serves as a future-friendly foundation</strong> for the organization to modify, tweak, extend, and improve on over time. Doing some A/B testing? Roll the lessons from those tests into the living design system. Made some big performance optimizations? Roll them into the living design system! The <em>living</em> part of living design systems means they can always adapt to meet the future needs of the organization, saving time and money all the while.</li>
 </ul>
 
@@ -140,20 +125,6 @@
   <li>Google Docs or Microsoft Word</li>
   <li>Google Slides (If you’re interested, I’ve created a <a href="https://docs.google.com/presentation/d/1GqFmiDV_NqKi36fXAwD3WTJL5-JV-gHL7XVD2fVeL0M/edit?usp=sharing">Google Slides interface inventory template</a>)</li>
 </ul>
-
-<div class="editor">
-
-
-<p>Ed: Worth mentioning the new Lingo app from the Noun Project? Can that be used in this way?</p>
-
-</div>
-
-<div class="editor brad">
-
-
-<p>Brad: Looked into it, and it feels more like a design asset manager for projects rather than a simple repository for storing miscellaneous screenshots. Thanks for the suggestion though!</p>
-
-</div>
 
 <figure>
     <img src="../images/content/interface-inventory-template.png" alt="It's important for all participants to capture screenshots using the same software so they can be combined later. I've created a Google Slides interface inventory template for teams to use as a starting point." />
@@ -211,21 +182,7 @@
 <p>It’s important to set time limits on the screenshotting exercise to avoid going down a rabbit hole that ends up lasting all day. The amount of time you allocate will vary depending on how many people are participating, but I find between <strong>30 and 90 minutes</strong> to be sufficient for a first pass of an interface inventory. Set a timer, throw on some Jeopardy! music (well, maybe not Jeopardy! music, but some other music that sets an upbeat mood for the exercise), and have the participants concentrate on screenshotting the unique UI patterns they encounter.</p>
 
 <h5 id="dig-deep">Dig deep</h5>
-<p>Which parts of the site should participants capture in the interface inventory? Short answer: <em>everything</em>. <span class="editor">Any piece of UI that is or could be managed by your organization should be documented</span>.</p>
-
-<div class="editor">
-
-
-<p>Ed: What do you mean by ‘owned’ here? Owned by whom? The site owners?</p>
-
-</div>
-
-<div class="editor brad">
-
-
-<p>Brad: Updated this text to make it clearer. Trying to convey the fact that certain pieces of UI are owned by the organization, but other pieces might be out of their jurisdiction. A good example is an ecommerce site whose checkout flow temporarily kicks people out to PayPal’s site to finalize payment. The team can control the UI up until that point, but can’t modify the third-party UI. Happy to hear suggestions if this still misses the mark.</p>
-
-</div>
+<p>Which parts of the site should participants capture in the interface inventory? Short answer: <em>everything</em>. Any piece of UI that is or could be managed by your organization should be documented.</p>
 
 <p>This is difficult as organizations tend to favor certain parts of the experience (<em>cough</em> homepage <em>cough</em>) over others. For example, people working on an e-commerce website tend to focus on the core shopping experience, even though areas like customer support, FAQs, sizing charts, 404 pages, and legal terms are also extremely important to the user experience. Remember, users perceive your brand as a singular entity and don’t care about your organizational structure, tech stack, or anything else that might cause disparities in the UI. Encourage interface audit participants to be as thorough as possible during the exercise.</p>
 
@@ -407,21 +364,7 @@
 
 <p>After plugging the front-end code into a CMS, frantically finalizing the site’s content, and doing some last-minute QA testing, the team finally launches the site. While no one says it out loud, there’s a tinge of disappointment in the air alongside the joy and relief of getting the project out the door. After all, the live site lacks the glossy polish that the comps promised to the stakeholders, and friction between disciplines has bruised some relationships.</p>
 
-<p>I hope this story reads as a work of fiction to you, but based on my own experiences and conversations with countless others, I’m guessing you’ve experienced this <span class="editor">tale of woe</span> at one point or another. It may even hit home like a punch in the gut. Whether you’ve endured this process firsthand or not, it’s important to recognize that the Henry Ford-esque <a href="https://en.wikipedia.org/wiki/Waterfall_model">waterfall process</a> increasingly isn’t likely to result in great digital work.</p>
-
-<div class="editor">
-
-
-<p>Ed: I interpolated ‘tale of woe’ as a progressive enhancement. It adds a certain frisson, but you can remove it if you like with no loss of meaning.</p>
-
-</div>
-
-<div class="editor brad">
-
-
-<p>Brad: Love it! I started trying to pluralize “tales” simply because that’s how I usually encounter that phrase, but I think it works as is!</p>
-
-</div>
+<p>I hope this story reads as a work of fiction to you, but based on my own experiences and conversations with countless others, I’m guessing you’ve experienced this tale of woe at one point or another. It may even hit home like a punch in the gut. Whether you’ve endured this process firsthand or not, it’s important to recognize that the Henry Ford-esque <a href="https://en.wikipedia.org/wiki/Waterfall_model">waterfall process</a> increasingly isn’t likely to result in great digital work.</p>
 
 <figure>
     <img src="../images/content/waterfall-1.png" alt="The waterfall process, where disciplines pass off work to each other in sequential order, isn't likely to result in great digital work." />
@@ -707,20 +650,6 @@
 <blockquote>
   <p>Let’s change the phrase “designing in the browser” to “deciding in the browser.” <cite><a href="https://the-pastry-box-project.net/dan-mall/2012-september-12">Dan Mall</a></cite></p>
 </blockquote>
-
-<div class="editor">
-
-
-<p>Ed: Hmmn. You use the exact same quotation earlier in the chapter. Is that deliberate?</p>
-
-</div>
-
-<div class="editor brad">
-
-
-<p>Brad: This is the result of writing this chapter of a long period of time! I removed the first instance and kept this one in place as it feels more at home here.</p>
-
-</div>
 
 <p><strong>Once the designs are in the browser, they should stay in the browser.</strong> At this stage in the process, the point of production shifts to team members adept at crafting HTML, CSS, and presentational JavaScript. Patterns should be created, styled, and plugged in wherever they’re needed. Designers can react to these in-browser implementations and can work in static tools to help iron out responsive wrinkles at the organism level. This back-and-forth between static and in-browser tools establishes a healthy loop between design and development, where the front-end code becomes stabler and more solid with each iterative loop.</p>
 

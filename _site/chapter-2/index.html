@@ -43,7 +43,7 @@
         <div class="text">
     <h1><em>Chapter 2</em> Atomic Design Methodology</h1>
     <div class="note">
-	<p>Greetings! <a href="https://twitter.com/fullcreammilk">Owen Gregory</a> has <a href="http://rewrites.atomicdesign.bradfrost.com/">proposed edits</a> to the <a href="http://atomicdesign.bradfrost.com/chapter-1/">original text</a>, and this is where I'm addressing those edits. Most of the changes have been implemented without comment, but I've provided some comments for areas that required an explanation. You can read my comments below and check out the changes on <a href="https://github.com/bradfrost/atomic-design/tree/edits">GitHub</a>.</p>
+	<p>Greetings, reader! The following text is a <a href="http://bradfrost.com/blog/post/atomic-design-book/">work in progress</a> so be warned you will encounter incomplete thoughts, grammar errors, and more. If you see something worth fixing, please <a href="https://github.com/bradfrost/atomic-design">submit an issue on Github</a>. Thanks and happy reading!</p>
 </div>
 
     <p>My search for a methodology to craft interface design systems led me to look for inspiration in other fields and industries. Given this amazingly complex world we’ve created, it seemed only natural that other fields would have tackled similar problems we could learn from and appropriate. As it turns out, loads of other fields <a href="http://us5.campaign-archive1.com/?u=7e093c5cf4&amp;id=ead8a72012&amp;e=ecb25a3f93">such as industrial design and architecture</a> have developed smart modular systems for manufacturing immensely complex objects like airplanes, ships, and skyscrapers.</p>
@@ -62,43 +62,15 @@
 	</figcaption>
 </figure>
 
-<p>Chemical reactions are represented by chemical equations, which often show how atomic elements combine together to form molecules. <span class="editor">In the example above, we see how hydrogen and oxygen combine together to form water molecules.</span></p>
-
-<div class="editor">
-
-
-<p>Ed: Is it necessary to repeat the image caption text?</p>
-
-</div>
-
-<div class="editor brad">
-
-
-<p>Brad: Short answer: yes. My rationale is that people like myself sometimes skim text for images w/ captions as landmarks, but other times stick to reading the primary text and gloss right over images, asides, captions, and footnotes. So this duplication is to address the fact that my potentially ADD-prone, skimmy (that’s a word, right?) readership might not read everything in its entirety.</p>
-
-</div>
+<p>Chemical reactions are represented by chemical equations, which often show how atomic elements combine together to form molecules. In the example above, we see how hydrogen and oxygen combine together to form water molecules.</p>
 
 <p>In the natural world, <strong>atomic elements combine together to form molecules. These molecules can combine further to form relatively complex organisms.</strong> To expound a bit further:</p>
 
 <ul>
   <li><strong>Atoms</strong> are the basic building blocks of all matter. Each chemical element has distinct properties, and they can’t be broken down further without losing their meaning. (Yes, it’s true atoms are composed of even smaller bits like protons, electrons, and neutrons, but atoms are the smallest <em>functional</em> unit.)</li>
   <li><strong>Molecules</strong> are groups of two or more atoms held together by chemical bonds. These combinations of atoms take on their own unique properties, and become more tangible and operational than atoms.</li>
-  <li><strong>Organisms</strong> are assemblies of molecules functioning together as a unit. These <span class="editor">relatively complex</span> structures can range from single-celled organisms all the way up to incredibly sophisticated organisms like human beings.</li>
+  <li><strong>Organisms</strong> are assemblies of molecules functioning together as a unit. These relatively complex structures can range from single-celled organisms all the way up to incredibly sophisticated organisms like human beings.</li>
 </ul>
-
-<div class="editor">
-
-
-<p>Ed: “Complex” and “relatively complex” appear a few times around here, so I’ve changed or removed at least a couple of them.</p>
-
-</div>
-
-<div class="editor brad">
-
-
-<p>Brad: Duly noted about overusing these phrases. However, I’m not sure how else to articulate the importance of hierarchy in this instance. “Multifarious” as you suggested means “of many and various kinds,” which doesn’t drive home the point that organisms are more complex than molecules. I’m going to stick with “relatively complex” for this as it’s the first time I’m explaining this hierarchy.</p>
-
-</div>
 
 <p>Of course, I’m simplifying the incredibly rich composition of the universe, but the basic gist remains: atoms combine together to form molecules, which further combine to form organisms. This atomic theory means that all matter in the known universe can be broken down into a finite set of atomic elements:</p>
 
@@ -144,7 +116,7 @@
 	</figcaption>
 </figure>
 
-<p><span class="editor brad" id="brad-note-1"><strong>Atomic design is not a linear process</strong>, but rather a mental model to help us think of our user interfaces as both a cohesive whole and a collection of parts <em>at the same time</em>. Each of the five stages plays a key role in the hierarchy of our interface design systems. Let’s dive into each stage in a bit more detail.</span></p>
+<p><strong>Atomic design is not a linear process</strong>, but rather a mental model to help us think of our user interfaces as both a cohesive whole and a collection of parts <em>at the same time</em>. Each of the five stages plays a key role in the hierarchy of our interface design systems. Let’s dive into each stage in a bit more detail.</p>
 
 <h2 id="atoms">Atoms</h2>
 <figure>
@@ -354,20 +326,6 @@
 <p>When designers and developers are crafting a particular component, we are like the painter at the canvas creating detailed strokes. When we are viewing those components in the context of a layout with real representative content in place, we are like the painter several feet back from the canvas assessing how their detailed strokes affect the whole composition. It’s necessary to zero in on one particular component to ensure it is functional, usable, and beautiful. But it’s also necessary to ensure that component is functional, usable, and beautiful <em>in the context of the final UI</em>.</p>
 
 <p>Atomic design provides us a structure to navigate between the parts and the whole of our UIs, which is why it’s crucial to reiterate that <strong>atomic design is not a linear process</strong>. It would be foolish to design buttons and other elements in isolation then cross our fingers and hope everything comes together to form a cohesive whole. So don’t interpret the five stages of atomic design as “Step 1: atoms; Step 2: molecules; Step 3: organisms; Step 4: templates; Step 5: pages.” Instead, <strong>think of the stages of atomic design as a mental model that allows us to concurrently create final UIs and their underlying design systems</strong>.</p>
-
-<div class="editor">
-
-
-<p>Ed: Where did you first state this? I can’t find it in chapter 1 or earlier in this chapter.</p>
-
-</div>
-
-<div class="editor brad">
-
-
-<p>Brad: Good catch! I think my original intention with the word “reiterate” was really to say “stress”, but I realize I really <em>do</em> need to reiterate this point. I’ve addressed this <a href="#brad-note-1">when I introduce the concept</a>.</p>
-
-</div>
 
 <h3 id="clean-separation-between-structure-and-content">Clean separation between structure and content</h3>
 <p>Discussing <em>design</em> and <em>content</em> is a bit like discussing the <em>chicken</em> and the <em>egg</em>. Mark Boulton explains:</p>

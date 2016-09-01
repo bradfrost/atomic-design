@@ -82,21 +82,7 @@ In addition to disorienting users, these monolithic redesigns don’t get to the
 
 Thankfully, even massive organizations are taking cues from the smaller, leaner startup world and striving to get things out the door quicker. By creating *minimum viable products* and shipping often to iteratively improve the experience, organizations are able to better address user feedback and keep up with the ever-shifting web landscape.
 
-Moving away from <span class="editor">Ron Popeil</span>-esque, set-it-and-forget-it redesigns requires deliberate changes in organizational structure and workflow. Which is a heck of a lot easier said than done.
-
-<div class="editor">
-{% capture m %}
-Ed: Will anyone outside the US have heard of Ron Popeil? I had to look him up.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: Was considering rewriting this to further explain Ron Popeil as a TV infomercial personality, or simply removing it from the text. But I like it as is because it adds a tasty bit of flavor. It's OK if everyone doesn't get the reference so long as they get the gist of the phrase "set it and forget it"
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+Moving away from Ron Popeil-esque, set-it-and-forget-it redesigns requires deliberate changes in organizational structure and workflow. Which is a heck of a lot easier said than done.
 
 ### An iterative process
 If I had a quarter for every time I heard some stakeholder declare “We’re trying to be more agile,” I’d be orbiting the earth in my private spacecraft instead of writing this book.
@@ -226,44 +212,15 @@ To present itself in a cohesive way across a growing range of products and media
 
 Design language style guides can (and usually do) incorporate aspects of other style guide categories in order to make high-level concepts a bit more tangible.
 
-Design language guidelines aren’t set in stone the way brand guidelines are. For example, one day Google will likely develop a new design language to replace <span class="editor">material design</span>, so while Google’s overall brand will remain intact, the design vocabulary around its products will change.
-
-<div class="editor">
-{% capture m %}
-Ed: Google doesn't use caps on material design.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+Design language guidelines aren’t set in stone the way brand guidelines are. For example, one day Google will likely develop a new design language to replace material design, so while Google’s overall brand will remain intact, the design vocabulary around its products will change.
 
 ### Voice and tone
 People interact with brands across a huge array of channels and media. In addition to the digital media we've discussed so far, brands also operate in print, retail, outdoor, radio, TV, and other channels. When a brand must communicate across so many varied touchpoints, speaking in a unified, consistent manner becomes critical to a brand’s success.  
 
-<div class="editor">
-{% capture m %} Ed: You list these different media a few times. I think readers can be expected to understand all this encompasses by now. {% endcapture %} {{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %} Brad: It's true I've mentioned these several times, but this particular instance I'm folding in print, TV, radio, outdoor, and other media that a brand can communicate with. I've updated the copy to reflect this. {% endcapture %} {{ m | markdownify }}
-</div>
-
 > A brand’s voice stays the same from day to day, but its tone has to change all the time, depending on both the situation and the reader’s feelings. <cite>[Kate Kiefer Lee](http://www.slideshare.net/katekiefer/kkl-c-sforum)</cite>
 
 
-<span class="editor">Voice is an elemental aspect of a brand’s identity, so typically brand identity guidelines include some reference to the brand's voice.</span> However, these guidelines usually aren’t very nuanced, which is why voice and tone guidelines are so important.
-
-<div class="editor">
-{% capture m %}
-Ed: Is it worth noting the distinction between voice and tone? They are different, though most style guides, like most of us, tend to use the terms interchangeably. Simply, tone is a matter for adjectives: playful, authoritative, excited, angry; voice is about identification and recognition, a reader knowing that something was written by someone in particular – and only that person could have written it. You know you're reading Jeffrey Zeldman or Mandy Brown (maybe even you, Brad), for example, because you recognize their voices and only they write like that.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: It's definitely worth the distinction. I added a quote from Kate Kiefer Lee to drive home the difference, and reordered the content so that it flows in a more logical progression.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+Voice is an elemental aspect of a brand’s identity, so typically brand identity guidelines include some reference to the brand's voice. However, these guidelines usually aren’t very nuanced, which is why voice and tone guidelines are so important.
 
 Voice and tone guidelines get into the weeds by articulating how the company’s voice and tone should shift across a variety of scenarios. [MailChimp’s brilliant voice and tone guidelines](http://voiceandtone.com/) define how the brand’s tone changes across content types, so that when a user’s credit card is declined, writers know to shift away from their generally cheeky and playful tone of voice and adopt a more serious tone instead.
 
@@ -293,21 +250,7 @@ The rest of this book will concentrate on how to approach interface design in a 
 
 ## Style guide benefits
 
-<span class="editor">Getting UIs to work across a myriad of screen sizes, devices, browsers, and environments is a tall order in and of itself.</span> But once you factor in other team members, clients, stakeholders, and organizational quirks, things start looking downright _intimidating_.
-
-<div class="editor">
-{% capture m %}
-Ed: I've read this before (lines 84, 165, 172). Yes, it's an important point, but perhaps it needs thinning out or reworking elsewhere.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: Duly noted. Methinks this repetition is a result of multiple writing sessions. In this specific instance, I want to keep the concept there, but I've abbreviated it and combined it with the next sentence. I think it's important to note that the design and technical challenges are crazy hard as is, but my next point is that adding humans into the mix makes it even more daunting.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+Getting UIs to work across a myriad of screen sizes, devices, browsers, and environments is a tall order in and of itself. But once you factor in other team members, clients, stakeholders, and organizational quirks, things start looking downright _intimidating_.
 
 Style guides are important tools that help prevent chaos, both from a design and development standpoint and also from an organizational perspective. Here’s why style guides are now essential tools for modern web design and development.
 
@@ -320,20 +263,6 @@ I recently visited my health insurance provider’s website to pay my bill. In t
 Style guides help iron out these inconsistencies by encouraging reuse of interface elements. Designers and developers can refer back to existing patterns to ensure the work they’re producing is consistent with what’s already been established.
 
 Even third parties responsible for matching their UIs with the look and feel of a company's internal UIs can make great use of a style guide. Externally hosted experiences like payment portals or localized sites can better match the look and feel of the primary experience by applying the styles defined in the guide.
-
-<div class="editor">
-{% capture m %}
-Ed: External? Subsidiary? Secondary?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: This whole paragraph needed some love, so I rewrote it to clarify things a bit.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
 
 Making style guides central to your process results in user interfaces that feel more united and trustworthy, which helps users accomplish their tasks faster and empowers them to master the interface.
 
@@ -366,20 +295,6 @@ A style guide provides a home for each discipline to contribute their respective
 The homepage is broken, you say? Well, what exactly is breaking it?  
 
 The ability to pull an interface apart into its component pieces makes testing a lot easier. A style guide allows you to view interface patterns in isolation, allowing developers to zero in on what's causing errors, browser inconsistencies, or performance issues.
-
-<div class="editor">
-{% capture m %}
-Ed: I'll pick this up, though your usage of "hone in" is gaining ground. We might expect someone to "home in" on a target, and to "hone" a blade or their skills. Your usage is what some would call an error, and they're usually the kind who write emails to authors. It's better to assuage their indignation before it arises.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: Hahahaha thanks for getting my back. Can't wait for the grammar police to strike in full force! I changed to "zero in" because it sounds cool and fits the bill.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
 
 ### Speed
 Earlier in the chapter we discussed how *faster design and development* is one of the main reasons why UI frameworks like Bootstrap are so popular. We're under pressure to get projects out the door as soon as humanly possible. By developing your own design system, you can reap those same speed rewards as the out-of-the-box UI tool kits.

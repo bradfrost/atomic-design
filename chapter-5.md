@@ -64,20 +64,6 @@ As you embark on this pattern-paved journey, let's talk about things you can do 
 - Make it contextual.
 - Make it last.
 
-<div class="editor">
-{% capture m %}
-Ed: I wonder whether this list should be numbered. (I’ll leave it alone for now as it will impact matters below and you should choose what you prefer.) The rest of this chapter expands on each of these points, and some of these in turn contain further lists which are also then explained in more detail. It’s easy for a reader to lose track of where they are. If you decide to number this list, you can then add the corresponding number to the heading to help readers orient[ate] themselves.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: I realize this is a long list, and while these concepts are related I don't think numbering is the right thing to do. Numbering implies a step-by-step process, which this isn't. Rather than serving as a table of contents, I think of this list as an at-a-glance overview of what's to come. I recap the list at the end of the chapter, which I think wraps everything up nicely.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
 Let's dive into each one of these points in a bit more detail.
 
 ## Make it official
@@ -130,20 +116,6 @@ They're likely right. It would be ideal if the entire organization adopted nimbl
 
 Both outlooks are critical to the success of the design system, which is why it's so important for makers and users to have a healthy relationship that involves frequent communication and collaboration. 
 
-<div class="editor">
-{% capture m %}
-Ed: There’s a lot of bold – and even emphasis within bold – in the section above; indeed, in this whole chapter. Chances are, you don’t need to try so hard – it’s a typographic hammer to crack a semantic nut. You make your points effectively and eloquently enough without having to jab the reader in the eye. I’ve left it all in, however, as you may feel the points are important enough to warrant it. Up to you.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: Duly noted. I'm thinking about bolded phrases as underscoring the key parts of a concept, helping readers who tend to skim to get the gist. That said, I can definitely lighten up (har har) on the bolded phrases.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
 #### Design system makers
 Who updates the design system? Who approves changes? Who communicates with the users of the design system to make sure it's addressing their needs? Who gets to decide which patterns stay, go, or need tweaked? 
 
@@ -178,31 +150,6 @@ One of the biggest advantages of establishing a thoughtful design system is that
 There will inevitably be disciplines that actively do the work, while others may take on more of an advisory role. **Those responsible for designing and building the user interface – UX designers, visual designers, front-end developers — will likely serve as the hands that do the work and make updates to the design system.** They should work collaboratively (as detailed in chapter 4) and coordinate with other disciplines to ensure that the system reflects the values and considerations of the entire business.
 
 **Other people may not be the ones actively doing the work, but must be consulted to make sure their perspectives are properly reflected in the system.** Back-end engineers need to make the team aware of any architectural decisions that would affect the front-end UI; executives need to make the team aware of important initiatives that will affect the role and utility of the system; and, of course, design system users need to coordinate with the makers to ensure the system serves the needs of individual applications. 
-
-<div class="editor">
-{% capture m %}
-Ed: This has been a very long section, illustrating only the first point in the nine-point list set out earlier. I’d almost forgotten what I was reading was an expansion of a list item. The remaining sections are much shorter. I wonder, then, if the first list should indicate a couple of the subsections:
-
-- Make it official.
-  * Establishing a design system team
-  * Design system team makeup
-- Make it adaptable.
-- etc.
-
-However, this does make that original list a little less punchy, so perhaps more thought about the structure here is required. Hmmn.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: I hear ya. Again, I wouldn't think of that original list as a table of contents, but as an at-a-glance intro. I think "getting lost" in the actual text is just fine so long as the points come across.
-
-And yep, this section is indeed longer than the others, but it covers some important concepts that need spelled out. I don't care too much about weighting passages equally (same thinking goes for chapter length) so long as the content is solid.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
 
 ## Make it adaptable 
 Change is the only constant, as they say. **The <em>living</em> part of a living design system means that it needs to roll with the punches, adapt to feedback, be iterated on, and evolve alongside the products it serves.**  
@@ -267,22 +214,6 @@ With all this talk about modifying, adding, and removing patterns, you may be wo
 Many systems fall into a state of disrepair because the effort required to make updates is far too high. If it's difficult and time-consuming to update patterns, documentation, and applications, people will eventually get so frustrated that they stop making the effort and the design system will begin its drift into oblivion. **Making updates to UI patterns, documentation, and applications should be as frictionless as possible**, so reducing this friction should become a high priority for the design system team. This involves careful consideration from both technological and workflow standpoints.
 
 ### In search of the holy grail
-<div class="editor">
-{% capture m %}
-Ed: I'm capping down holy grail here. This is neither Christian myth, Arthurian legend nor the adventures of Indiana Jones. You'd have an Easter egg at Easter, but hide easter eggs in software; so Christ's cup is the Holy Grail, but all other rare and perfect goals are holy grails. And while it makes for a catchy heading, in the content I'd consider ditching the metaphor altogether. Its repetition in the material below draws too much attention and does your theme a disservice. Perhaps you could consider using words like “ideal”, “perfect”, “model”, etc., depending on context. I’ll leave the grails in for now until such time as you decide to change them.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: "This is neither Christian myth, Arthurian legend nor the adventures of Indiana Jones." Dang, all those sound like way more exciting topics to write about!
-
-And point taken on the (over)use of the phrase. I'll add that "holy grail" has become a legit term in the design system community, so I'd like to follow suit. That being said, I'm happy to revisit the phrase in a few places to diversify things a bit.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
 **The design system holy grail involves creating an environment where the pattern library and live applications are perfectly in sync.** The idea is that you should be able to make a change to a UI pattern and see that change automatically reflected in both the pattern library *and* anywhere the pattern is included in production. 
 
 {% include figure.html src="../images/content/workflow-system-first-holy-grail.png" caption="The holy grail of design systems is an environment where making changes to a UI pattern updates both the pattern library and production applications simultaneously." %}
@@ -393,21 +324,7 @@ Training users how to work with the design system can take many forms, including
 - **Workshops**: From immersive full-day sessions to quick walk-throughs, it's incredibly helpful to set up face-to-face training workshops involving both makers and users. These sessions can help smooth out any misconceptions about the system, help level-up users with hands-on guidance, and create a healthy relationship between the people in charge of maintaining the system and the people in charge of working with it.
 - **Webinars**: If workshops or pair sessions aren't possible, or you need to train a lot of users at scale, webinars can be fantastic. Users can tune into online sessions to learn about how to properly use the system. When conducting webinars, be sure to build in plenty of Q&A time to field both audio and typed questions, concerns, and comments.
 - **Tutorials**: A series of blog posts and screencasts can neatly encapsulate core concepts of working with the design system. Not only do these help serve as a training tool, but they can serve as a great reference to keep coming back to.
-- **<span class="editor">Onboarding</span>**: A great way of injecting your design system into your company culture is to bake design system training right into the onboarding process for new employees. New colleagues will understand the importance of modularity, reuse, and all the other benefits a design system brings.
-
-<div class="editor">
-{% capture m %}
-Ed: An ugly coinage that’s gaining traction. Because of that, I’ll not change it, but (and maybe this is a UK thing) could ‘induction’ be a better choice? New employees are inducted into an organization here, rather than onboarded (listen to it: onboarded/onboarding sound ridiculous! To me, anyway). Up to you.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: No doubt it's a bit of corporate speak, but I'll say it's here to say. ‘Induction’ sounds grand though! Sounds like I'd need to rent a tuxedo.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+- **Onboarding**: A great way of injecting your design system into your company culture is to bake design system training right into the onboarding process for new employees. New colleagues will understand the importance of modularity, reuse, and all the other benefits a design system brings.
 
 Users will undoubtedly have questions or encounter issues once they start cooking with gas and building things with the design system. They need to know there's a robust support system in place to help answer any questions, listen to their requirements, and address bugs. There are a host of mechanisms in place to provide support for users, including:
 

@@ -39,21 +39,7 @@ Alas, I've found that I can hype design systems until I'm blue in the face, but 
 - Design systems **lead to cohesive, consistent experiences**. That means users master your UI faster, leading to more conversions and **more money** based on the metrics your stakeholders care about.
 - Design systems **speed up your team's workflow**. Rather than reinventing the wheel every time a new request comes through, teams can reuse already established UI puzzle pieces to roll out new pages and features faster than ever before.
 - Centralizing UI components in a pattern library **establishes a shared vocabulary** for everyone in the organization, and **creates a more collaborative workflow** across all disciplines. With everyone speaking the same language, more time is spent getting work done and less time is spent dealing with superfluous back-and-forth communications and meetings.
-- Design systems **make cross-browser/device, performance, and accessibility testing easier**, vastly speeding up production time and allowing teams to launch higher-quality work faster. Also, baking things like accessibility into a living design system scales those best practices, <span class="editor">allowing your interfaces to reach more users while reducing the risk of you getting sued!</span>.
-
-<div class="editor">
-{% capture m %}
-Ed: That's true, but it might be better to emphasize the positive: that people using assistive technology will find it easier to use a site and become valued customers.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: Good point. I've adjusted the text to talk about the benefits. I still think it's a good idea to bring up reducing liability, as many large organizations fret about that stuff and act on it. Reducing the risk of getting sued is a great way to get orgs to to hop on board the design system train!
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+- Design systems **make cross-browser/device, performance, and accessibility testing easier**, vastly speeding up production time and allowing teams to launch higher-quality work faster. Also, baking things like accessibility into a living design system scales those best practices, allowing your interfaces to reach more users while reducing the risk of you getting sued!
 
 - Once a design system (with accompanying pattern library) is established, it **serves as a future-friendly foundation** for the organization to modify, tweak, extend, and improve on over time. Doing some A/B testing? Roll the lessons from those tests into the living design system. Made some big performance optimizations? Roll them into the living design system! The *living* part of living design systems means they can always adapt to meet the future needs of the organization, saving time and money all the while.
 
@@ -86,20 +72,6 @@ The interface inventory exercise generates a ton of screenshots, so naturally yo
 - Evernote Web Clipper
 - Google Docs or Microsoft Word
 - Google Slides (If you're interested, I've created a [Google Slides interface inventory template](https://docs.google.com/presentation/d/1GqFmiDV_NqKi36fXAwD3WTJL5-JV-gHL7XVD2fVeL0M/edit?usp=sharing))
-
-<div class="editor">
-{% capture m %}
-Ed: Worth mentioning the new Lingo app from the Noun Project? Can that be used in this way?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: Looked into it, and it feels more like a design asset manager for projects rather than a simple repository for storing miscellaneous screenshots. Thanks for the suggestion though!
-{% endcapture %}
-{{ m | markdownify }}
-</div>
 
 {% include figure.html src="../images/content/interface-inventory-template.png" caption="It's important for all participants to capture screenshots using the same software so they can be combined later. I've created a Google Slides interface inventory template for teams to use as a starting point." %}
 
@@ -140,21 +112,7 @@ Again, these categories aren’t set in stone and will vary based on the nature 
 It's important to set time limits on the screenshotting exercise to avoid going down a rabbit hole that ends up lasting all day. The amount of time you allocate will vary depending on how many people are participating, but I find between **30 and 90 minutes** to be sufficient for a first pass of an interface inventory. Set a timer, throw on some Jeopardy! music (well, maybe not Jeopardy! music, but some other music that sets an upbeat mood for the exercise), and have the participants concentrate on screenshotting the unique UI patterns they encounter.
 
 ##### Dig deep
-Which parts of the site should participants capture in the interface inventory? Short answer: *everything*. <span class="editor">Any piece of UI that is or could be managed by your organization should be documented</span>.
-
-<div class="editor">
-{% capture m %}
-Ed: What do you mean by 'owned' here? Owned by whom? The site owners?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: Updated this text to make it clearer. Trying to convey the fact that certain pieces of UI are owned by the organization, but other pieces might be out of their jurisdiction. A good example is an ecommerce site whose checkout flow temporarily kicks people out to PayPal's site to finalize payment. The team can control the UI up until that point, but can't modify the third-party UI. Happy to hear suggestions if this still misses the mark. 
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+Which parts of the site should participants capture in the interface inventory? Short answer: *everything*. Any piece of UI that is or could be managed by your organization should be documented.
 
 This is difficult as organizations tend to favor certain parts of the experience (*cough* homepage *cough*) over others. For example, people working on an e-commerce website tend to focus on the core shopping experience, even though areas like customer support, FAQs, sizing charts, 404 pages, and legal terms are also extremely important to the user experience. Remember, users perceive your brand as a singular entity and don't care about your organizational structure, tech stack, or anything else that might cause disparities in the UI. Encourage interface audit participants to be as thorough as possible during the exercise.
 
@@ -298,21 +256,7 @@ So the developer tries their best to make lemonade out of the lemony static comp
 
 After plugging the front-end code into a CMS, frantically finalizing the site's content, and doing some last-minute QA testing, the team finally launches the site. While no one says it out loud, there's a tinge of disappointment in the air alongside the joy and relief of getting the project out the door. After all, the live site lacks the glossy polish that the comps promised to the stakeholders, and friction between disciplines has bruised some relationships.
 
-I hope this story reads as a work of fiction to you, but based on my own experiences and conversations with countless others, I'm guessing you've experienced this <span class="editor">tale of woe</span> at one point or another. It may even hit home like a punch in the gut. Whether you've endured this process firsthand or not, it's important to recognize that the Henry Ford-esque [waterfall process](https://en.wikipedia.org/wiki/Waterfall_model) increasingly isn't likely to result in great digital work.
-
-<div class="editor">
-{% capture m %}
-Ed: I interpolated ‘tale of woe’ as a progressive enhancement. It adds a certain frisson, but you can remove it if you like with no loss of meaning.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: Love it! I started trying to pluralize "tales" simply because that's how I usually encounter that phrase, but I think it works as is!
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+I hope this story reads as a work of fiction to you, but based on my own experiences and conversations with countless others, I'm guessing you've experienced this tale of woe at one point or another. It may even hit home like a punch in the gut. Whether you've endured this process firsthand or not, it's important to recognize that the Henry Ford-esque [waterfall process](https://en.wikipedia.org/wiki/Waterfall_model) increasingly isn't likely to result in great digital work.
 
 {% include figure.html src="../images/content/waterfall-1.png" caption="The waterfall process, where disciplines pass off work to each other in sequential order, isn't likely to result in great digital work." %}
 
@@ -522,20 +466,6 @@ Static comps can be great for shaping the overall aesthetic direction of a templ
 **Working in the browser allows teams to address layout issues across the entire resolution spectrum, design around dynamic data (such as variable character lengths, image sizes, and other dynamic content), demonstrate interaction and animation, gauge performance, factor in ergonomics, and confront technical considerations (such as pixel density, text rendering, scrolling performance, and browser quirks).** Static design comps cannot deal with all these considerations, so they should be treated merely as hypotheses rather than set-in-stone specifications. Only when transferred to the browser can any design hypothesis truly be confirmed or rejected.
 
 > Let’s change the phrase “designing in the browser” to “deciding in the browser.” <cite>[Dan Mall](https://the-pastry-box-project.net/dan-mall/2012-september-12)</cite>
-
-<div class="editor">
-{% capture m %}
-Ed: Hmmn. You use the exact same quotation earlier in the chapter. Is that deliberate?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: This is the result of writing this chapter of a long period of time! I removed the first instance and kept this one in place as it feels more at home here.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
 
 **Once the designs are in the browser, they should stay in the browser.** At this stage in the process, the point of production shifts to team members adept at crafting HTML, CSS, and presentational JavaScript. Patterns should be created, styled, and plugged in wherever they're needed. Designers can react to these in-browser implementations and can work in static tools to help iron out responsive wrinkles at the organism level. This back-and-forth between static and in-browser tools establishes a healthy loop between design and development, where the front-end code becomes stabler and more solid with each iterative loop.
 

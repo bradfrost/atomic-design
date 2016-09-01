@@ -323,21 +323,7 @@ The types of code to be highlighted in a pattern library naturally vary from org
 
 {% include figure.html src="../images/content/salesforce-code-example.png" caption="Salesforce's Lightning design system showcases the UI components' HTML and SCSS code." %}
 
-Including front-end code leads to authors writing it more consistently, but that doesn't guarantee perfection. There's still room for developers to go rogue and write sloppy, incongruent code—which is why some organizations have gone above and beyond to establish incredibly sophisticated design systems. <span class="editor">Companies like</span> Lonely Planet have achieved the holy grail of pattern libraries, which is to say **their pattern library and production environment are perfectly in sync**. We'll discuss the holy grail in more detail in chapter 5, but it's worth bringing up in this section to demonstrate how that affects the code exposed in the context of a pattern library. Rather than offering HTML and CSS, Lonely Planet's [Rizzo style guide](http://rizzo.lonelyplanet.com/) surfaces the include code for teams to pull in the appropriate UI component.
-
-<div class="editor">
-{% capture m %}
-Ed: Do you know of other companies that have done this? Could you name some?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: I do! However, the other ones have been either shown to me in confidence or have been mentioned to me in passing. None of the other ones are as high profile or public as The Lonely Planet's example. I think in this case it's safe to keep "Companies like" since it implies there are others, even though I can't explicitly mention them.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+Including front-end code leads to authors writing it more consistently, but that doesn't guarantee perfection. There's still room for developers to go rogue and write sloppy, incongruent code—which is why some organizations have gone above and beyond to establish incredibly sophisticated design systems. Companies like Lonely Planet have achieved the holy grail of pattern libraries, which is to say **their pattern library and production environment are perfectly in sync**. We'll discuss the holy grail in more detail in chapter 5, but it's worth bringing up in this section to demonstrate how that affects the code exposed in the context of a pattern library. Rather than offering HTML and CSS, Lonely Planet's [Rizzo style guide](http://rizzo.lonelyplanet.com/) surfaces the include code for teams to pull in the appropriate UI component.
 
 {% include figure.html src="../images/content/lonely-planet-code.png" caption="Lonely Planet's Rizzo design system pattern library showcases the template usage." %}
 

@@ -16,41 +16,13 @@ If you're like me, you may need a bit of a refresher to recall what a chemical e
 
 {% include figure.html src="../images/content/chemical-equation.png" caption="An example of a chemical equation showing hydrogen and oxygen atoms combining together to form a water molecule." %}
 
-Chemical reactions are represented by chemical equations, which often show how atomic elements combine together to form molecules. <span class="editor">In the example above, we see how hydrogen and oxygen combine together to form water molecules.</span>
-
-<div class="editor">
-{% capture m %}
-Ed: Is it necessary to repeat the image caption text?
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: Short answer: yes. My rationale is that people like myself sometimes skim text for images w/ captions as landmarks, but other times stick to reading the primary text and gloss right over images, asides, captions, and footnotes. So this duplication is to address the fact that my potentially ADD-prone, skimmy (that's a word, right?) readership might not read everything in its entirety.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+Chemical reactions are represented by chemical equations, which often show how atomic elements combine together to form molecules. In the example above, we see how hydrogen and oxygen combine together to form water molecules.
 
 In the natural world, **atomic elements combine together to form molecules. These molecules can combine further to form relatively complex organisms.** To expound a bit further:
 
 - **Atoms** are the basic building blocks of all matter. Each chemical element has distinct properties, and they can't be broken down further without losing their meaning. (Yes, it's true atoms are composed of even smaller bits like protons, electrons, and neutrons, but atoms are the smallest *functional* unit.)
 - **Molecules** are groups of two or more atoms held together by chemical bonds. These combinations of atoms take on their own unique properties, and become more tangible and operational than atoms.
-- **Organisms** are assemblies of molecules functioning together as a unit. These <span class="editor">relatively complex</span> structures can range from single-celled organisms all the way up to incredibly sophisticated organisms like human beings.
-
-<div class="editor">
-{% capture m %}
-Ed: "Complex" and "relatively complex" appear a few times around here, so I've changed or removed at least a couple of them.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: Duly noted about overusing these phrases. However, I'm not sure how else to articulate the importance of hierarchy in this instance. "Multifarious" as you suggested means "of many and various kinds," which doesn't drive home the point that organisms are more complex than molecules. I'm going to stick with "relatively complex" for this as it's the first time I'm explaining this hierarchy.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+- **Organisms** are assemblies of molecules functioning together as a unit. These relatively complex structures can range from single-celled organisms all the way up to incredibly sophisticated organisms like human beings.
 
 Of course, I'm simplifying the incredibly rich composition of the universe, but the basic gist remains: atoms combine together to form molecules, which further combine to form organisms. This atomic theory means that all matter in the known universe can be broken down into a finite set of atomic elements:
 
@@ -79,7 +51,7 @@ Enter atomic design.
 
 {% include figure.html src="../images/content/atomic-design-process.png" caption="Atomic design is atoms, molecules, organisms, templates, and pages concurrently working together to create effective interface design systems." %}
 
-<span class="editor brad" id="brad-note-1">**Atomic design is not a linear process**, but rather a mental model to help us think of our user interfaces as both a cohesive whole and a collection of parts *at the same time*. Each of the five stages plays a key role in the hierarchy of our interface design systems. Let's dive into each stage in a bit more detail.</span>
+**Atomic design is not a linear process**, but rather a mental model to help us think of our user interfaces as both a cohesive whole and a collection of parts *at the same time*. Each of the five stages plays a key role in the hierarchy of our interface design systems. Let's dive into each stage in a bit more detail.
 
 ## Atoms
 {% include figure.html src="../images/content/atomic-design-atoms.png" caption="" %}
@@ -206,20 +178,6 @@ Atomic design lets us dance between contexts like the painter Frank so eloquentl
 When designers and developers are crafting a particular component, we are like the painter at the canvas creating detailed strokes. When we are viewing those components in the context of a layout with real representative content in place, we are like the painter several feet back from the canvas assessing how their detailed strokes affect the whole composition. It's necessary to zero in on one particular component to ensure it is functional, usable, and beautiful. But it's also necessary to ensure that component is functional, usable, and beautiful *in the context of the final UI*.
 
 Atomic design provides us a structure to navigate between the parts and the whole of our UIs, which is why it's crucial to reiterate that **atomic design is not a linear process**. It would be foolish to design buttons and other elements in isolation then cross our fingers and hope everything comes together to form a cohesive whole. So don't interpret the five stages of atomic design as "Step 1: atoms; Step 2: molecules; Step 3: organisms; Step 4: templates; Step 5: pages." Instead, **think of the stages of atomic design as a mental model that allows us to concurrently create final UIs and their underlying design systems**.
-
-<div class="editor">
-{% capture m %}
-Ed: Where did you first state this? I can't find it in chapter 1 or earlier in this chapter.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-<div class="editor brad">
-{% capture m %}
-Brad: Good catch! I think my original intention with the word "reiterate" was really to say "stress", but I realize I really _do_ need to reiterate this point. I've addressed this <a href="#brad-note-1">when I introduce the concept</a>.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
 
 ### Clean separation between structure and content
 Discussing *design* and *content* is a bit like discussing the *chicken* and the *egg*. Mark Boulton explains:

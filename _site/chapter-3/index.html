@@ -43,7 +43,7 @@
         <div class="text">
     <h1><em>Chapter 3</em> Tools of the Trade</h1>
     <div class="note">
-	<p>Greetings! <a href="https://twitter.com/fullcreammilk">Owen Gregory</a> has <a href="http://rewrites.atomicdesign.bradfrost.com/">proposed edits</a> to the <a href="http://atomicdesign.bradfrost.com/chapter-1/">original text</a>, and this is where I'm addressing those edits. Most of the changes have been implemented without comment, but I've provided some comments for areas that required an explanation. You can read my comments below and check out the changes on <a href="https://github.com/bradfrost/atomic-design/tree/edits">GitHub</a>.</p>
+	<p>Greetings, reader! The following text is a <a href="http://bradfrost.com/blog/post/atomic-design-book/">work in progress</a> so be warned you will encounter incomplete thoughts, grammar errors, and more. If you see something worth fixing, please <a href="https://github.com/bradfrost/atomic-design">submit an issue on Github</a>. Thanks and happy reading!</p>
 </div>
 
     <p>In the previous chapter, I introduced the atomic design methodology for constructing user interfaces. I hope you’ll find atomic design to be a helpful mental model for constructing UI design systems, but now it’s time to climb down from the ivory tower and actually put atomic design into practice <em>in the real world</em>.</p>
@@ -442,21 +442,7 @@
 	</figcaption>
 </figure>
 
-<p>Including front-end code leads to authors writing it more consistently, but that doesn’t guarantee perfection. There’s still room for developers to go rogue and write sloppy, incongruent code—which is why some organizations have gone above and beyond to establish incredibly sophisticated design systems. <span class="editor">Companies like</span> Lonely Planet have achieved the holy grail of pattern libraries, which is to say <strong>their pattern library and production environment are perfectly in sync</strong>. We’ll discuss the holy grail in more detail in chapter 5, but it’s worth bringing up in this section to demonstrate how that affects the code exposed in the context of a pattern library. Rather than offering HTML and CSS, Lonely Planet’s <a href="http://rizzo.lonelyplanet.com/">Rizzo style guide</a> surfaces the include code for teams to pull in the appropriate UI component.</p>
-
-<div class="editor">
-
-
-<p>Ed: Do you know of other companies that have done this? Could you name some?</p>
-
-</div>
-
-<div class="editor brad">
-
-
-<p>Brad: I do! However, the other ones have been either shown to me in confidence or have been mentioned to me in passing. None of the other ones are as high profile or public as The Lonely Planet’s example. I think in this case it’s safe to keep “Companies like” since it implies there are others, even though I can’t explicitly mention them.</p>
-
-</div>
+<p>Including front-end code leads to authors writing it more consistently, but that doesn’t guarantee perfection. There’s still room for developers to go rogue and write sloppy, incongruent code—which is why some organizations have gone above and beyond to establish incredibly sophisticated design systems. Companies like Lonely Planet have achieved the holy grail of pattern libraries, which is to say <strong>their pattern library and production environment are perfectly in sync</strong>. We’ll discuss the holy grail in more detail in chapter 5, but it’s worth bringing up in this section to demonstrate how that affects the code exposed in the context of a pattern library. Rather than offering HTML and CSS, Lonely Planet’s <a href="http://rizzo.lonelyplanet.com/">Rizzo style guide</a> surfaces the include code for teams to pull in the appropriate UI component.</p>
 
 <figure>
     <img src="../images/content/lonely-planet-code.png" alt="Lonely Planet's Rizzo design system pattern library showcases the template usage." />
