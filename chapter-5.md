@@ -60,7 +60,7 @@ As you embark on this pattern-paved journey, let's talk about things you can do 
 - Make it approachable.
 - Make it visible.
 - Make it bigger.
-- Make it agnostic.
+- Make it context-agnostic.
 - Make it contextual.
 - Make it last.
 
@@ -320,50 +320,22 @@ The team at Phase2 Technology achieved the holy grail by using Pattern Lab as th
 
 > By using the same templating engine, along with the help of the Component Libraries Drupal Module, the tool gives Drupal the ability to directly include, extend, and embed the Twig templates that Pattern Lab uses for its components without any template duplication at all! <cite><a href="https://www.phase2technology.com/blog/introducing-pattern-lab-starter-8/">Evan Lovely, Phase2 Technology</a> 
 
-### Is your culture <span class="editor">holy grail-compatible</span>?
+### Is your culture holy grail compatible?
 
-<div class="editor">
-{% capture m %}
-Ed: Goodness me. That’s odd.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-You may have read that last section and thought, "That's amazing! My company needs this now!" While <span class="editor">holy grail-style systems</span> are indeed great, there are reasons why you may *not* be able to achieve the holy grail. Perhaps your organization creates tons of digital products on many different platforms using wildly different technologies. Maybe you're a giant multinational company scattered all over the world. Maybe your company has an extremely decentralized, autonomous culture. Or maybe you're a gigantic federal government.
-
-<div class="editor">
-{% capture m %}
-Ed: There are those ‘in the style of the holy grail systems’ again.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+You may have read that last section and thought, "That's amazing! My company needs this now!" While holy grail systems are indeed great, there are reasons why you may *not* be able to automagically keep your production environments and pattern library in sync. Perhaps your organization creates tons of digital products on many different platforms using wildly different technologies. Maybe you're a giant multinational company scattered all over the world. Maybe your company has an extremely decentralized, autonomous culture. Or maybe you're a gigantic federal government.
 
 {% include figure.html src="../images/content/styleguide-draft.png" caption="The Draft U.S. Web Design Standards are the design system for the United States federal government." %}
 
-The U.S. government's design system – called the [Draft U.S. Web Digital Standards](https://standards.usa.gov/) – is a collection of UI components and visual styles created to help people making government websites build more consistent UIs. The design system provides markup and styles for users to download and weave into their applications. It would certainly be amazing to see a <span class="editor">holy grail-style system</span> implemented at such a gigantic scale, but as you might imagine, that's a pretty tall order. The vastness and decentralized nature of the organization means that the holy grail isn't really achievable without some dramatic restructuring of how federal government websites get built.
+The U.S. government's design system – called the [Draft U.S. Web Digital Standards](https://standards.usa.gov/) – is a collection of UI components and visual styles created to help people making government websites build more consistent UIs. The design system provides markup and styles for users to download and weave into their applications. It would certainly be amazing to see a holy grail design system implemented at such a gigantic scale, but as you might imagine, that's a pretty tall order. The vastness and decentralized nature of the organization means that a synchronized pattern library isn't really achievable without some dramatic restructuring of how federal government websites get built.
 
-<div class="editor">
-{% capture m %}
-Ed: Hello.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-If a relatively scattered, decentralized culture is your reality, don't be disheartened! Even getting *some* design system in place – a handful of go-to UI patterns, some helpful documentation, or guiding principles – can show your organization the light that points towards the grail. As we've discussed throughout this chapter, these efforts should be ongoing, and before you can run you must first learn to crawl.
+If a relatively scattered, decentralized culture is your reality, don't be disheartened! Even getting *some* design system in place – a handful of go-to UI patterns, some helpful documentation, and guiding principles – can show your organization the light that points towards the grail. As we've discussed throughout this chapter, these efforts should be ongoing, and before you can run you must first learn to crawl.
 
 ## Make it cross-disciplinary
 Style guides often jump straight into code snippets and pattern usage for the benefit of the design system users. Of course, a pattern library needs to be helpful for the people actually making use of the patterns, but **treating a style guide solely as a developer resource limits its potential**.
 
 **A style guide has the opportunity to serve as a watering hole for the entire organization**, helping establish a common vocabulary for every discipline invested in the success of the company's digital products. Establishing this common vocabulary can lead to more efficient work, better communication, and more collaboration between disciplines across the organization. That's why the style guide should be an inviting place for everybody, not just design system users.
 
-Take the carousel (please!). This component is amazingly complex from an organizational standpoint. A homepage carousel on an e-commerce website requires input from a <span class="editor">myriad</span> of disciplines across the organization. Business owners and editorial staff must choose products to be featured in the carousel. Copywriters must ensure the copy is effective and stays within the constraints of the design. Art directors need to make certain the aesthetic design is pleasing and the product photography is legible across every screen size. UX designers have to confirm the functionality and controls are intuitive. Front-end people must be sure the component is responsive, accessible, and performant. Back-end developers need to ensure the component is properly wired up to the back-end system. You get the idea. 
-
-<div class="editor">
-{% capture m %}
-Ed: Ah, ‘myriad’. My nemesis of old.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+Take the carousel (please!). This component is amazingly complex from an organizational standpoint. A homepage carousel on an e-commerce website requires input from a host of disciplines across the organization. Business owners and editorial staff must choose products to be featured in the carousel. Copywriters must ensure the copy is effective and stays within the constraints of the design. Art directors need to make certain the aesthetic design is pleasing and the product photography is legible across every screen size. UX designers have to confirm the functionality and controls are intuitive. Front-end people must be sure the component is responsive, accessible, and performant. Back-end developers need to ensure the component is properly wired up to the back-end system. You get the idea. 
 
 {% include figure.html src="../images/content/walmart-carousel.png" caption="A homepage carousel on a site like Walmart requires input from many different disciplines and stakeholders. A style guide can help gather those different perspectives under one roof." %}
 
@@ -381,13 +353,6 @@ But creating a great-looking, intuitive style guide experience doesn't just happ
 1. Make a thing. 
 2. Show that it's useful. 
 3. Make it official. 
-
-<div class="editor">
-{% capture m %}
-Ed: See previous comments about numbering and make sure the formatting of this list matches the initial list.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
 
 Creating a useful design system should be the team's first priority. A happy home to contain it all might not be made straightaway, but should become a bigger priority once the design system becomes official. Making a good-looking style guide isn't just design for design's sake; **it reflects an organization’s commitment to making and maintaining a thoughtful, deliberate design system**.
 
@@ -437,14 +402,14 @@ Ed: An ugly coinage that’s gaining traction. Because of that, I’ll not chang
 {{ m | markdownify }}
 </div>
 
-Users will undoubtedly have questions or encounter issues once they start <span class="editor">cooking with grease</span> and building things with the design system. They need to know there's a robust support system in place to help answer any questions, listen to their requirements, and address bugs. There are a host of mechanisms in place to provide support for users, including:
-
-<div class="editor">
+<div class="editor brad">
 {% capture m %}
-Ed: Oh, I remember this from chapter 4. The phrase is ‘cooking with gas’.
+Brad: No doubt it's a bit of corporate speak, but I'll say it's here to say. ‘Induction’ sounds grand though! Sounds like I'd need to rent a tuxedo.
 {% endcapture %}
 {{ m | markdownify }}
 </div>
+
+Users will undoubtedly have questions or encounter issues once they start cooking with gas and building things with the design system. They need to know there's a robust support system in place to help answer any questions, listen to their requirements, and address bugs. There are a host of mechanisms in place to provide support for users, including:
 
 - **Issue trackers**: Tools like JIRA and GitHub Issues are great for users and makers to report bugs and have technical conversations. Users should be aware of the protocol for filing bugs and feel empowered to contribute.
 - **Office hours**: Schedule regular times when the design system team is available to field questions, address issues, and talk about what's next for the design system.
@@ -475,14 +440,7 @@ Putting your style guide behind a login or firewall reduces visibility and adds 
 
 In addition to making important documentation easier to access, a public style guide **helps create organizational accountability**. Publishing your style guide demonstrates your organization's commitment to the design system, which creates a helpful bit of pressure to keep it an up-to-date and useful resource. 
 
-Public-facing style guides are also **hugely helpful for recruiting**. Designers, developers, and people working in other disciplines want to work for organizations that embrace modern digital best practices, and (as we've discussed throughout this book) design systems are quickly becoming an industry-wide best practice. Publishing your style guide sends out a strong <span class="editor">bat signal</span> that can attract passionate, pattern-minded people. For instance, style guide expert Jina Bolton went to work at Salesforce after seeing the company's style guide for their Salesforce1 product. 
-
-<div class="editor">
-{% capture m %}
-Ed: I reckon the ‘bat’ isn’t required. ;) If you really want to go with it, it’s ‘Bat-Signal’.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+Public-facing style guides are also **hugely helpful for recruiting**. Designers, developers, and people working in other disciplines want to work for organizations that embrace modern digital best practices, and (as we've discussed throughout this book) design systems are quickly becoming an industry-wide best practice. Publishing your style guide sends out a strong Bat-Signal that can attract passionate, pattern-minded people. For instance, style guide expert Jina Bolton went to work at Salesforce after seeing the company's style guide for their Salesforce1 product. 
 
 > When I saw [Salesforce’s style guide] I thought it was beautiful and it's why I wanted to join this team. <cite><a href="http://styleguides.io/podcast/jina-bolton">Jina Bolton</a>
 
@@ -493,38 +451,16 @@ A visible, cross-disciplinary, approachable pattern library is one that your tea
 
 {% include figure.html src="../images/content/styleguide-harmony.png" caption="Intuit's Harmony design system includes a pattern library, design principles, voice and tone, marketing guidelines, and more. Housing this helpful documentation under one roof helps increase its visibility and effectiveness." %}
 
-Now, your organization may not need to create every flavor of style guide out there, but the point is that **creating a centralized style guide hub builds more awareness of best practices, increasing the documentation's effectiveness**.
+Now, your organization may not need to implement every flavor of style guide out there, but the point is that **creating a centralized style guide hub builds more awareness of best practices, increasing the documentation's effectiveness**.
 
-Another way to extend the functionality of the pattern library is to include native mobile app patterns alongside any web-based patterns. Once again, Intuit's Harmony <span class="editor">design system</span> 
+Another way to extend the functionality of the pattern library is to include guidelines for native platform patterns alongside web-based patterns. We can look to Intuit's Harmony design system once again for an example of how native mobile platform patterns for iOS and Android can live beside their web-based counterparts. 
 
-<div class="editor">
-{% capture m %}
-Ed: Another seemingly incomplete sentence.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+{% include figure.html src="../images/content/styleguide-harmony-2.png" caption="Intuit's Harmony pattern library includes buttons to switch between web, iOS, and Android for each pattern. This allows the team to maintain a mostly consistent design system across platforms but also document pattern divergences when they occur." %}
 
-{% include figure.html src="../images/content/styleguide-harmony-2.png" caption="Intuit's Harmony pattern library includes <span class='editor'>tabs</span> to switch between web, iOS, and Android for each pattern. This allows the team to maintain a mostly consistent design system across platforms but also document pattern divergences when they occur." %}
-
-<div class="editor">
-{% capture m %}
-Ed: Those look more like buttons to me.
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
-## Make it <span class="editor">agnostic</span>
-
-<div class="editor">
-{% capture m %}
-Ed: I’m not a fan of ‘agnostic’ used in this way, though I appreciate it’s widely used and well-understood in web dev circles; and etymologically it makes sense. My uncertainty here is based on it usually coming prefixed with whatever is under discussion: platform-agnostic, device-agnostic, etc. Here, I suppose it would content- or context-agnostic. (I prefer ‘-neutral’, by the way.)
-{% endcapture %}
-{{ m | markdownify }}
-</div>
-
+## Make it context-agnostic
 The way your UI patterns are named will undoubtedly shape how they are used. **The more agnostic pattern names are, the more versatile and reusable they become.**
 
-Because we establish UI patterns in the context of a broader page, it can be tempting to name components based on where they live. But rather than naming your component "homepage carousel" (forgive my morbid obsession with carousels), you can simply call it "carousel," which means you can now put carousels everywhere! (But for the love of all that is holy, please don't.)
+Because we tend to establish UI patterns in the context of a broader page, it can be tempting to name components based on where they live. But rather than naming your component "homepage carousel" (forgive my morbid obsession with carousels), you can simply call it "carousel," which means you can now put carousels everywhere! (But for the love of all that is holy, please don't.)
 
 Another challenge for naming *display* patterns is that we tend to get distracted by the *content* patterns that live inside them. For instance, if working on an e-commerce site, you may be tempted to call a block containing a product image and title a "product card." But naming things in this manner immediately limits what type of content can live inside it. By naming the pattern simply "card," you can put all sorts of content patterns inside it: products, promotions, store locations, and so on.
 
@@ -548,14 +484,11 @@ Another way to show context is to provide lineage information for each pattern. 
 ## Make it last
 Making a design system is an incredibly and important endeavor. But without proper maintenance, the value of your design system will depreciate much like a car that's just been driven off the dealer's lot. Instead, your design system should be like a bottle of fine wine that increases in value over time.
 
-{% include figure.html src="../images/content/wine-car-lot.jpg" caption="With proper maintenance, your design system should increase in value over time like a bottle of fine wine, rather than a used car that's just been driven off the lot. Image credit: [Sabin Paul Croce on Flickr](https://flic.kr/p/on4ffK) and [Ray Larabie on Flickr](https://flic.kr/p/e35AtD)" %}
+{% include figure.html src="../images/content/wine-car-lot.jpg" caption="With proper maintenance, your design system should increase in value over time like a bottle of fine wine, rather than a used car that's just been driven off the lot. Image credit: <a href='https://flic.kr/p/on4ffK'>Sabin Paul Croce on Flickr</a> and <a href='https://flic.kr/p/e35AtD'>Ray Larabie on Flickr</a>" %}
 
-<div class="editor">
-{% capture m %}
-Ed: This last section feels a bit throwaway and insubstantial. To match the other sections, you probably need to say more about how to keep adding value to the design system. I suppose fulfilling the other points goes a long way to doing this, but perhaps you can make that explicit. You flesh out the point below with ‘creating a clear governance plan’ – perhaps that’s a way forward (though I notice that ‘making it adaptable’ also mentions this).
-{% endcapture %}
-{{ m | markdownify }}
-</div>
+As we've discussed throughout this chapter, making your design system stand the test of time requires a significant amount of time and effort. But isn't that the case with all living things? Animals need to eat, and plants need water and sunlight in order to survive. Creating a lasting design system means treating it as a living thing that needs attention and care.  
+
+A clear governance plan, communicating class. Even if you were to redesign your entire website all over again, it's serves as a foundation to grow and extend. Don't throw the baby out with the bathwater.
 
 So there you have it. To make a maintainable design system, you should:
 
