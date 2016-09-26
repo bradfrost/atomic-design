@@ -1,37 +1,50 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
+
+<div class="page-header">
+    <div class="page-header-inner">
+        {% if page.chapterTitle %}<h3 class="page-kicker">{{ page.chapterTitle }}</h3>{% endif %}
+        <h1 class="page-title">{{ page.title }}</h1>
+    </div>
+</div>
+
+<div class="text">
+
 <nav role="navigation" class="toc">
     <ol class="toc-list">
         <li>
             <a href="/chapter-1">
-	            <span></span>
-                <h3>1. Designing Systems</h3>
+	            <span>1.</span>
+                <h3>Designing Systems</h3>
                 <p>Create design systems, not pages</p>
             </a>
         </li>
         <li>
             <a href="/chapter-2">
-                <h3>2. Atomic Design Methodology</h3>
+                <span>2.</span>
+                <h3> Atomic Design Methodology</h3>
                 <p>Atoms, Molecules, Organisms, Templates, and Pages</p>
             </a>
         </li>
         <li>
             <a href="/chapter-3">
-                <h3>3. Tools of the Trade</h3>
+                <span>3.</span>
+                <h3>Tools of the Trade</h3>
                 <p>Pattern Lab, style guides, and more</p>
             </a>
         </li>
         <li>
             <a href="/chapter-4">
-                <h3>4. The Atomic Workflow</h3>
+                <span>4.</span>
+                <h3>The Atomic Workflow</h3>
                 <p>People, process, and making it all happen</p>
             </a>
         </li>
         <li>
             <a href="/chapter-5">
-                <h3>5. Maintaining Design Systems</h3>
+                <span>5.</span>
+                <h3>Maintaining Design Systems</h3>
                 <p>Managing living design systems</p>
             </a>
         </li>
@@ -58,6 +71,6 @@ layout: default
     </ol>
 </nav>
 
-<div class="text">
 {{ content }}
+
 </div>

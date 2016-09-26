@@ -7,7 +7,9 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
-  
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Oswald" rel="stylesheet">
+
 <!-- Schema.org markup for Google+ -->
 <meta itemprop="name" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
 <meta itemprop="image" content="http://atomicdesign.bradfrost.com/images/book-cover-thumb.png">

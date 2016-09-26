@@ -18,6 +18,18 @@ html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, 
 header, footer, nav, section, article, hgroup, figure, main {
   display: block; }
 
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("webfont.eot?#iefix") format("embedded-opentype"), url("webfont.woff2") format("woff2"), url("webfont.woff") format("woff"), url("webfont.ttf") format("truetype"), url("webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("webfont.eot?#iefix") format("embedded-opentype"), url("webfont.woff2") format("woff2"), url("webfont.woff") format("woff"), url("webfont.ttf") format("truetype"), url("webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
 /*------------------------------------*\
     $BODY
 \*------------------------------------*/
@@ -25,8 +37,8 @@ html {
   height: 100%; }
 
 body {
-  background: #f6f5de;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  background: #fff;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.5;
   color: #100;
   padding: 0;
@@ -34,26 +46,18 @@ body {
   min-height: 100%; }
 
 /*------------------------------------*\
-    $MAIN CONTENT AREA
-\*------------------------------------*/
-main {
-  max-width: 37em;
-  padding: 0 1em;
-  margin: 0 auto 2em; }
-
-/*------------------------------------*\
     $FORM GLOBAL STYLES
 \*------------------------------------*/
 label {
   display: block;
   font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, sans-serif; }
+  font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif; }
 
 input, select, textarea {
   border: 6px solid #dedcb9;
   background: rgba(205, 202, 162, 0.4);
   color: #100;
-  font: 1em/1 "Helvetica Neue", Helvetica, sans-serif;
+  font: 1em/1 "Oswald", "Helvetica Neue", Helvetica, sans-serif;
   padding: 0.5em;
   width: 100%;
   -webkit-appearance: none;
@@ -73,19 +77,6 @@ input[type=submit] {
 /*------------------------------------*\
     $GLOBAL CLASSES
 \*------------------------------------*/
-/* Clearfix */
-.cf {
-  *zoom: 1; }
-
-.cf:before, .cf:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
-
-.cf:after {
-  clear: both; }
-
 /* Completely remove from the flow and screen readers. */
 .is-hidden {
   display: none !important;
@@ -105,14 +96,14 @@ input[type=submit] {
     $HEADINGS
 \*------------------------------------*/
 h1 {
-  font-size: 2.5em;
-  line-height: 1.1;
-  margin: 0 0 0.68em;
-  text-align: center; }
+  font-size: 4.5rem;
+  line-height: 1;
+  margin: 0;
+  font-weight: normal; }
   h1 cite {
     font-style: normal; }
   h1 em {
-    font-family: Georgia, serif;
+    font-family: "Merriweather", Georgia, serif;
     display: block;
     color: #a29e5e;
     font-size: 40%;
@@ -121,25 +112,31 @@ h1 {
 
 h2 {
   font-size: 1.8em;
+  font-weight: normal;
   line-height: 1.2; }
 
 h3 {
   font-size: 1.4em;
+  font-weight: normal;
   line-height: 1.2; }
 
 h4 {
   font-size: 1.1em;
+  font-weight: normal;
   line-height: 1.2; }
 
 h5 {
   color: #a29e5e;
+  font-weight: normal;
   font-size: 1.1em; }
 
 /*------------------------------------*\
     $LINKS
 \*------------------------------------*/
 a {
-  color: #100; }
+  color: #be6700; }
+  a:hover, a:focus {
+    color: #100; }
 
 /*------------------------------------*\
     $MEDIA ELEMENTS
@@ -154,11 +151,11 @@ figure {
   figure img {
     display: inline-block;
     margin-bottom: 0.1em;
-    border: 1px solid #a29e5e; }
+    border: 1px solid #ddd; }
   @media all and (min-width: 37em) {
     figure {
       width: 100vw;
-      margin-left: calc((100vw - 29em) / -2);
+      margin-left: calc((100vw - 31em) / -2);
       padding: 0 1em;
       text-align: center; } }
   @media all and (min-width: 88em) {
@@ -168,26 +165,28 @@ figure {
 figcaption {
   font-size: 0.75em;
   font-style: italic;
-  color: #a29e5e;
-  max-width: 38em;
-  margin: 0 auto; }
+  color: #808080;
+  max-width: 37rem;
+  margin: 0 auto;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem; }
 
 p {
   margin: 0 0 1em; }
 
 blockquote {
-  font-size: 1.2em;
   font-style: italic;
-  color: #a29e5e;
-  padding-left: 0.8em;
-  border-left: 1px solid #be6700; }
+  color: #333;
+  padding-left: 1em;
+  border-left: 3px solid #be6700; }
   blockquote cite {
     display: block;
     color: #be6700;
     font-size: 0.75em;
-    margin-top: 0.5em; }
+    margin-top: 1rem; }
     blockquote cite a {
-      color: #be6700; }
+      text-decoration: none; }
     blockquote cite:before {
       content: "–"; }
 
@@ -208,11 +207,10 @@ pre {
   width: 100%;
   background: #100;
   color: #f6f5de;
-  z-index: 2;
-  font-weight: bold; }
+  z-index: 2; }
 
 .banner-content {
-  max-width: 37em;
+  max-width: 40rem;
   background: #100;
   margin: 0 auto;
   padding: 0.6em 1em;
@@ -254,7 +252,6 @@ pre {
     @media all and (min-width: 30em) {
       .banner-content .btn {
         border: 0;
-        border-radius: 8px 8px 0 0;
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -275,15 +272,42 @@ pre {
       align-items: middle; } }
 
 /*------------------------------------*\
+    $PAGE HEADER
+\*------------------------------------*/
+.page-header {
+  background: #be6700;
+  color: #f6f5de;
+  padding: 2rem 1rem 0;
+  margin-bottom: 2rem; }
+
+.page-header-inner {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+  @media all and (min-height: 30em) {
+    .page-header-inner {
+      height: 50vh; } }
+
+.page-kicker {
+  font-size: 1rem;
+  color: #f6f5de; }
+
+.atomic-icon-links {
+  display: block;
+  width: 20rem;
+  margin: 0 auto 2rem; }
+
+/*------------------------------------*\
     $BUTTONS
 \*------------------------------------*/
 .btn {
-  font-weight: bold;
   background: #be6700;
   color: #f6f5de;
-  border-radius: 5px;
   display: inline-block;
-  padding: 0.65em 1.2em;
+  padding: 1.2em 2em;
   margin-bottom: 0.5em;
   text-decoration: none;
   text-transform: lowercase; }
@@ -295,29 +319,14 @@ pre {
   color: #f6f5de; }
 
 .btn-group .btn {
-  margin-right: 0.5em; }
-
-.star {
-  background: yellow;
-  padding: 1em;
-  display: inline-block;
-  margin: 0 0 1em;
-  border-radius: 5px;
-  text-decoration: none; }
-  .star.star-given {
-    background: red; }
-    .star.star-given:hover {
-      background: blue; }
-  .star.disabled {
-    background: #f0f0f0;
-    color: gray; }
+  margin-right: 1em; }
 
 /*------------------------------------*\
     $FOOTER
 \*------------------------------------*/
 footer {
   text-align: center;
-  color: #a29e5e;
+  color: #808080;
   font-size: 80%;
   padding: 1em;
   margin-bottom: 8em; }
@@ -339,12 +348,12 @@ header {
 \*------------------------------------*/
 .note {
   font-style: italic;
-  color: #a29e5e;
+  color: #808080;
   font-size: 0.75em;
   line-height: 1.5;
   margin-bottom: 1.2em; }
   .note a {
-    color: #a29e5e; }
+    color: #333; }
     .note a:hover, .note a:focus {
       color: #be6700; }
 
@@ -352,24 +361,31 @@ header {
     $TEXT PASSAGE STYLES
 \*------------------------------------*/
 .text {
-  font-family: Georgia, serif;
+  max-width: 40rem;
+  padding: 0 1em;
+  margin: 0 auto 2em;
+  font-family: "Merriweather", Georgia, serif;
   font-size: 120%; }
   .text h1 {
-    font-family: "Helvetica Neue", Helvetica, sans-serif; }
+    font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif; }
   .text h2 {
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 1.8em;
+    color: #be6700;
+    font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 2em;
     line-height: 1.2;
     position: relative;
     padding-left: 20px;
-    margin: 2em 0 0.5em; }
+    margin: 2em 0 0.5em;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #100; }
     @media all and (min-width: 40em) {
       .text h2 {
         padding-left: 0; } }
   .text h3 {
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 1.4em;
+    font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.5em;
     line-height: 1.2;
+    color: #100;
     position: relative;
     padding-left: 20px;
     margin: 2em 0 0.5em; }
@@ -377,37 +393,50 @@ header {
       .text h3 {
         padding-left: 0; } }
   .text h4 {
-    font-size: 1.3em;
+    font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: #be6700;
     line-height: 1.2;
     position: relative;
-    padding-left: 20px; }
+    padding-left: 20px;
+    margin: 2em 0 0.5em; }
     @media all and (min-width: 40em) {
       .text h4 {
         padding-left: 0; } }
   .text h5 {
-    color: #a29e5e;
+    color: #808080;
     font-size: 1.1em;
     position: relative;
-    padding-left: 20px; }
+    padding-left: 20px;
+    margin: 2em 0 0.5em; }
     @media all and (min-width: 40em) {
       .text h5 {
         padding-left: 0; } }
-  .text h2 a, .text h3 a, .text h4 a, .text h5 a {
-    text-decoration: none;
-    color: rgba(205, 202, 162, 0.7);
-    padding-right: 6px;
-    transition: all 0.12s ease-out;
-    width: 20px;
-    position: absolute;
-    left: 0;
-    text-align: right; }
-    .text h2 a:hover, .text h2 a:focus, .text h3 a:hover, .text h3 a:focus, .text h4 a:hover, .text h4 a:focus, .text h5 a:hover, .text h5 a:focus {
-      color: #be6700; }
-    @media all and (min-width: 40em) {
-      .text h2 a, .text h3 a, .text h4 a, .text h5 a {
-        left: -24px; } }
   .text ul, .text ol {
     margin: 0 0 1em 1em; }
+  .text a {
+    transition: all 0.2s ease; }
+    .text a:hover, .text a:focus {
+      color: #be6700;
+      outline: 1px dotted #be6700;
+      background: #fbfaee; }
+
+.title-link {
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  color: #ddd;
+  padding-right: 6px;
+  transition: all 0.12s ease-out;
+  width: 20px;
+  position: absolute;
+  left: 0;
+  text-align: right; }
+  .title-link:hover, .title-link:focus {
+    color: #808080; }
+  @media all and (min-width: 40em) {
+    .title-link {
+      left: -24px; } }
 
 /*------------------------------------*\
     $TIMELINE
@@ -504,7 +533,9 @@ header {
         margin: 0;
         max-width: 50%; } }
   .title h1 {
-    text-align: left; }
+    text-align: left;
+    margin-bottom: 3rem;
+    line-height: 1.2; }
   @media all and (min-width: 44em) {
     .title {
       display: -webkit-box;
@@ -549,13 +580,12 @@ header {
     $TABLE OF CONTENTS=
 \*------------------------------------*/
 .toc-list {
-  border-top: 1px solid rgba(205, 202, 162, 0.4);
-  text-align: center;
   list-style: none;
-  margin: 0 0 2em;
+  margin: 0 0 2em !important;
   padding: 0; }
   .toc-list li {
-    border-bottom: 1px solid rgba(205, 202, 162, 0.4); }
+    border-bottom: 1px solid #ddd;
+    overflow: hidden; }
   .toc-list a {
     display: block;
     padding: 1em 0;
@@ -564,6 +594,13 @@ header {
     .toc-list a:hover, .toc-list a:focus {
       background: rgba(205, 202, 162, 0.07);
       color: #be6700; }
+  .toc-list span {
+    font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif;
+    display: block;
+    float: left;
+    font-size: 3rem;
+    line-height: 1.15;
+    margin-right: 0.5rem; }
   .toc-list h3 {
     font-size: 1.4em;
     margin: 0; }
@@ -575,9 +612,22 @@ header {
 .toc-li-minor h3 {
   font-size: 1em; }
 
-/*------------------------
-EDITOR'S NOTES
-------------------------*/
+/*------------------------------------*\
+    $PAGINATION
+\*------------------------------------*/
+.pagination {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif; }
+  .pagination a {
+    text-decoration: none; }
+
+/*------------------------------------*\
+    $EDITOR'S NOTES
+\*------------------------------------*/
 .editor {
   font-size: 1rem;
   font-style: italic;

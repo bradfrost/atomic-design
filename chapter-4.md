@@ -3,6 +3,7 @@ layout: page
 title: The Atomic Workflow
 chapterTitle: Chapter 4
 permalink: /chapter-4/
+nextChapter: /chapter-5/
 ---
 
 Talk is cheap. And up until now, we've been doing a whole lotta talkin'. That's not to say it hasn't been productive talk! After all, we've discussed the importance of modular thinking, we've learned a methodology for crafting deliberate UI design systems, and we've showcased tools for creating effective pattern libraries.

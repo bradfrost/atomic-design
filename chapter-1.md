@@ -3,6 +3,7 @@ layout: page
 title: Designing Systems
 chapterTitle: Chapter 1
 permalink: /chapter-1/
+nextChapter: /chapter-2/
 ---
 A long, long time ago, there were these things called _books_. Remember them? These contraptions were heavy and bulky and made from the pulp of dead trees. Inside these books were things called _pages_. You turned them, and they cut your fingers.
 
@@ -182,7 +183,7 @@ And then there’s the issue with naming. Using a framework means subscribing to
 
 Now that we’ve put frameworks through the wringer, it’s important to take a step back and recognize that conceptually these frameworks are very much on point. It’s an excellent idea to work with a design tool kit that promotes consistency and speeds up development time. While discussing the redesign of Microsoft’s homepage by Austin-based web shop Paravel, developer Dave Rupert stressed the importance of creating and delivering a design system to their client. Dave wonderfully articulated that it’s not necessarily about using Bootstrap for every client, but rather creating “tiny Bootstraps for every client.”
 
-> Responsive deliverables should look a lot like fully-functioning Twitter Bootstrap-style systems custom tailored for your clients’ needs. These living code samples are self-documenting style guides that extend to accommodate a client’s needs as well as the needs of the ever-evolving multi-device web. <cite>[Dave Rupert](http://daverupert.com/2013/04/responsive-deliverables/)<cite>
+> Responsive deliverables should look a lot like fully-functioning Twitter Bootstrap-style systems custom tailored for your clients’ needs. These living code samples are self-documenting style guides that extend to accommodate a client’s needs as well as the needs of the ever-evolving multi-device web. <cite>[Dave Rupert](http://daverupert.com/2013/04/responsive-deliverables/)</cite>
 
 It’s not just about using a design system, it’s about creating *your* system.
 

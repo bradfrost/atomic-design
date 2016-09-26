@@ -3,6 +3,7 @@ layout: page
 title: Atomic Design Methodology
 chapterTitle: Chapter 2
 permalink: /chapter-2/
+nextChapter: /chapter-3/
 ---
 
 My search for a methodology to craft interface design systems led me to look for inspiration in other fields and industries. Given this amazingly complex world we've created, it seemed only natural that other fields would have tackled similar problems we could learn from and appropriate. As it turns out, loads of other fields [such as industrial design and architecture](http://us5.campaign-archive1.com/?u=7e093c5cf4&id=ead8a72012&e=ecb25a3f93) have developed smart modular systems for manufacturing immensely complex objects like airplanes, ships, and skyscrapers.

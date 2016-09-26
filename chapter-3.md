@@ -3,6 +3,7 @@ layout: page
 title: Tools of the Trade
 chapterTitle: Chapter 3
 permalink: /chapter-3/
+nextChapter: /chapter-4/
 ---
 
 In the previous chapter, I introduced the atomic design methodology for constructing user interfaces. I hope you'll find atomic design to be a helpful mental model for constructing UI design systems, but now it's time to climb down from the ivory tower and actually put atomic design into practice *in the real world*.

@@ -1,5 +1,4 @@
 <nav role="navigaiton" class="pagination">
-    <!-- <a href="#">Next Chapter</a>
-    <a href="#">Previous Chapter</a> -->
+    {% if page.nextChapter %}<a href="{{ page.nextChapter }}">Next Chapter</a>{% endif %}
     <a href="/table-of-contents/">Table of Contents</a>
 </nav>

@@ -1,9 +1,20 @@
 ---
 layout: default
 ---
+
+<div class="page-header">
+    <div class="page-header-inner">
+        <!-- <a href="/" rel="home" class="atomic-icon-links"><img src="/images/atomic-design.svg" alt="" /></a> -->
+
+        {% if page.chapterTitle %}<h3 class="page-kicker">{{ page.chapterTitle }}</h3>{% endif %}
+        <h1 class="page-title">{{ page.title }}</h1>
+    </div>
+</div>
+
 <div class="text">
-    <h1>{% if page.chapterTitle %}<em>{{ page.chapterTitle }}</em>{% endif %} {{ page.title }}</h1>
+    {% if page.chapterTitle %}
     {% include note.html %}
+    {% endif %}
     {{ content }}
     {% include pagination.html %}
 </div>
