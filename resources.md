@@ -29,6 +29,7 @@ And this is a list of helpful resources people have brought to my attention duri
 - [Sitepoint Liveupdate](https://learnable.com/liveupdate)
 - [ConvertKit](http://convertkit.com/)
 - [Coding a Book](http://larahogan.me/blog/coding-a-book/)
+- [Scrivener](https://www.literatureandlatte.com/scrivener.php)
 
 
 ## Chapter 1
