@@ -420,7 +420,6 @@ header {
   position: absolute;
   left: -14px;
   top: 4px;
-  position: relative;
   transition: all 0.12s ease-out; }
   .title-link:hover, .title-link:focus {
     color: #be6700;
