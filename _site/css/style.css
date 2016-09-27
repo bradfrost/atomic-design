@@ -283,7 +283,7 @@ pre {
 .page-header-inner {
   max-width: 38rem;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 2rem 0 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
@@ -294,6 +294,11 @@ pre {
 .page-kicker {
   font-size: 1rem;
   color: #f6f5de; }
+
+.page-title {
+  position: relative;
+  bottom: -3px;
+  text-shadow: 1px 1px 0 #be6700, -1px -1px 0 #be6700, 1px -1px 0 #be6700, -1px 1px 0 #be6700, 1px 1px 0 #be6700; }
 
 .atomic-icon-links {
   display: block;
@@ -374,44 +379,28 @@ header {
     font-size: 2em;
     line-height: 1.2;
     position: relative;
-    padding-left: 20px;
     margin: 2em 0 0.5em;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid #100; }
-    @media all and (min-width: 40em) {
-      .text h2 {
-        padding-left: 0; } }
   .text h3 {
     font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1.5em;
     line-height: 1.2;
     color: #100;
     position: relative;
-    padding-left: 20px;
     margin: 2em 0 0.5em; }
-    @media all and (min-width: 40em) {
-      .text h3 {
-        padding-left: 0; } }
   .text h4 {
     font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1.2em;
     color: #be6700;
     line-height: 1.2;
     position: relative;
-    padding-left: 20px;
     margin: 2em 0 0.5em; }
-    @media all and (min-width: 40em) {
-      .text h4 {
-        padding-left: 0; } }
   .text h5 {
     color: #808080;
     font-size: 1.1em;
     position: relative;
-    padding-left: 20px;
     margin: 2em 0 0.5em; }
-    @media all and (min-width: 40em) {
-      .text h5 {
-        padding-left: 0; } }
   .text ul, .text ol {
     margin: 0 0 1em 1em; }
   .text a {
@@ -422,21 +411,30 @@ header {
       background: #fbfaee; }
 
 .title-link {
+  display: block;
   font-family: "Merriweather", Georgia, serif;
   font-weight: normal;
+  font-size: 14px;
   text-decoration: none;
   color: #ddd;
-  padding-right: 6px;
-  transition: all 0.12s ease-out;
-  width: 20px;
   position: absolute;
-  left: 0;
-  text-align: right; }
+  left: -14px;
+  top: 4px;
+  transition: all 0.12s ease-out; }
   .title-link:hover, .title-link:focus {
-    color: #808080; }
-  @media all and (min-width: 40em) {
+    color: #be6700;
+    background: none !important;
+    outline: 0 !important; }
+  @media all and (min-width: 41.25em) {
     .title-link {
-      left: -24px; } }
+      font-size: inherit;
+      top: 0;
+      left: -24px;
+      width: 20px; } }
+
+@media all and (min-width: 41.25em) {
+  h2 .title-link {
+    left: -30px; } }
 
 /*------------------------------------*\
     $TIMELINE

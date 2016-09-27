@@ -400,7 +400,7 @@ pre {
 .page-header-inner {
     max-width: 38rem;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2rem 0 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -414,6 +414,12 @@ pre {
 .page-kicker {
     font-size: 1rem;
     color: $tan;
+}
+
+.page-title {
+    position: relative;
+    bottom: -3px;
+    text-shadow: 1px 1px 0 $orange, -1px -1px 0 $orange, 1px -1px 0 $orange, -1px 1px 0 $orange, 1px 1px 0 $orange;
 }
 
 .atomic-icon-links {
@@ -523,14 +529,9 @@ header {
     	font-size: 2em;
     	line-height: 1.2;
         position: relative;
-        padding-left: 20px;
         margin: 2em 0 0.5em;
         padding-bottom: 0.5rem;
         border-bottom: 3px solid $brown;
-
-        @media all and (min-width: 40em) {
-            padding-left: 0;
-        }
     }
 
     h3 {
@@ -539,12 +540,7 @@ header {
         line-height: 1.2;
         color: $brown;
         position: relative;
-        padding-left: 20px;
         margin: 2em 0 0.5em;
-
-        @media all and (min-width: 40em) {
-            padding-left: 0;
-        }
     }
 
     h4 {
@@ -553,24 +549,14 @@ header {
         color: $orange;
         line-height: 1.2;
         position: relative;
-        padding-left: 20px;
         margin: 2em 0 0.5em;
-
-        @media all and (min-width: 40em) {
-            padding-left: 0;
-        }
     }
 
     h5 {
     	color: $gray;
     	font-size: 1.1em;
         position: relative;
-        padding-left: 20px;
         margin: 2em 0 0.5em;
-
-        @media all and (min-width: 40em) {
-            padding-left: 0;
-        }
     }
 
 	ul, ol {
@@ -590,23 +576,35 @@ header {
 
 //Title link
 .title-link {
+    display: block;
     font-family: $font-secondary;
     font-weight: normal;
+    font-size: 14px;
     text-decoration: none;
     color: $gray-light;
-    padding-right: 6px;
-    transition: all $speed-fast ease-out;
-    width: 20px;
     position: absolute;
-    left: 0;
-    text-align: right;
+    left: -14px;
+    top: 4px;
+    transition: all $speed-fast ease-out;
+
 
     &:hover, &:focus {
-        color: $gray;
+        color: $orange;
+        background: none !important;
+        outline: 0 !important;
     }
 
-    @media all and (min-width: 40em) {
+    @media all and (min-width: 41.25em) {
+        font-size: inherit;
+        top: 0;
         left: -24px;
+        width: 20px;
+    }
+}
+
+h2 .title-link {
+    @media all and (min-width: 41.25em) {
+        left: -30px;
     }
 }
 
