@@ -331,13 +331,21 @@ Rather than jumping straight into such high-fidelity documents, it's better to *
 
 No one in their right mind would mistake this blocked out grayscale page as complete, but it provides more than enough information to have important conversations about the page structure and hierarchy.
 
-Making lo-fi wireframes *[mobile-first](http://www.lukew.com/ff/entry.asp?933)* means using the constraints of small screens to force the team to focus on the core content and hierarchy. You can now ask, "Do we have the right things on this screen?" "Are they in the right general order?" These are critical questions to ask, and can and should be answered without any layout or technical functionality.
+Making lo-fi wireframes *[mobile-first](http://www.lukew.com/ff/entry.asp?933)* means using the constraints of small screens to force the team to focus on the core content and hierarchy. You can now ask, "Do we have the right things on this screen?" "Are they in the right general order?"
 
 These blocky grayscale wireframes help establish the necessary [content patterns](http://danielmall.com/articles/content-display-patterns/) for the screen, but UX designers can also articulate some site-wide UI patterns they anticipate using to ultimately display those content patterns. For the redesign of TechCrunch, designer [Jennifer Brook](http://jenniferbrook.co/about) defined a few site-wide UI patterns that could be used anywhere:
 
 {% include figure.html src="../images/content/techcrunch-wireframe.png" caption="For the TechCrunch website redesign, Jennifer Brook defined site-wide, gestural display patterns, which don't make assumptions about aesthetics or functionality." %}
 
 From the image above, you can gather that the "featured island" component will show content in some fashion. Note the gestural nature of this sketch and how it doesn't make any specific assumptions about layout or functionality. The details of how this pattern will look and function will come later, but at the beginning of the project it's useful simply to define it and articulate where it might get used.
+
+As I've discovered from subsequent projects, content and display patterns can be effectively communicated in an even simpler format: the lowly spreadsheet.
+
+{% include figure.html src="../images/content/verywell-wireframe.png" caption="A simple spreadsheet can articulate what  content and display patterns go on a given page while describing their order and purpose." %}
+
+With a few simple spreadsheet columns, we can articulate which display patters should be included in a given template, and what content patterns they'll contain. More importantly, we're able to articulate each pattern's relative hierarchy and the role it plays on the screen. If you read the leftmost column vertically, you're effectively looking at the mobile-first view of what the UI could be. 
+
+"What content and display patterns go on this page? And in what general order?" are crucial questions to ask, and the techniques we just discussed can help designers discuss them effectively without making any layout or technical assumptions.
 
 ### Establishing visual direction
 A visual designer's job is to create an aesthetic language and apply it to the user interface in a way that aligns with the project's goals. To do this, it's essential for a visual designer to unearth the stakeholders' aesthetic values.
