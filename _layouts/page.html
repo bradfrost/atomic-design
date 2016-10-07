@@ -15,6 +15,10 @@ layout: default
     {% if page.chapterTitle %}
     {% include note.html %}
     {% endif %}
+    
     {{ content }}
+
+    {% if page.chapterTitle %}
     {% include pagination.html %}
+    {% endif %}
 </div>
