@@ -5,25 +5,25 @@ chapterTitle: Chapter 5
 permalink: /chapter-5/
 ---
 
-And they made a design system, delivered a pattern library, and lived happily ever after. Right? 
+And they made a design system, delivered a style guide, and lived happily ever after. Right? 
 
 Not quite.
 
 {% include figure.html src="../images/content/trash-can.jpg" caption="" %}
 
-There's a very real risk that a pattern library will end up in the trash can right alongside all the PSDs, PDFs and those other static artifacts of the design process. Despite everyone's best intentions, all the time and effort that went into making a thoughtful design system and pattern library can go straight down the drain.
+There's a very real risk that a style guide will end up in the trash can right alongside all the PSDs, PDFs and those other static artifacts of the design process. Despite everyone's best intentions, all the time and effort that went into making a thoughtful design system and style guide can go straight down the drain.
 
 How can that be?
 
 > A style guide is an artifact of design process. A design system is a living, funded product with a roadmap & backlog, serving an ecosystem. <cite>[Nathan Curtis](https://twitter.com/nathanacurtis/status/656829204235972608)</cite>
 
-**An artifact is something you'd find on an archaeological dig or in a museum, whereas a system is a living, breathing entity.** A pattern library can provide documentation and serve as a helpful resource, but the simple existence of a pattern library doesn't guarantee long-term success for the underlying design system. A design system needs ongoing maintenance, support, and tender loving care for it to truly thrive. 
+**An artifact is something you'd find on an archaeological dig or in a museum, whereas a system is a living, breathing entity.** A style guide can provide documentation and serve as a helpful resource, but the simple existence of a style guide doesn't guarantee long-term success for the underlying design system. A design system needs ongoing maintenance, support, and tender loving care for it to truly thrive. 
 
 ## Changing minds, once again
 We've already discussed the importance of resetting everyone's expectations to establish a more collaborative, pattern-driven workflow. To save our style guides from the bowels of a trash can, we must once again fundamentally rewire people's brains.
 
 ### What is it we're making again?
-We *think* we merely design and build websites and apps. And that's true for the most part. After all, that's what our clients pay us to do, and the products we create are the vehicles that generate money and success for an organization. It seems natural to focus on the final implementations rather than the underlying system. The live products remain the primary focus of everyone's attention, while any pattern library exists as an offshoot that simply provides helpful documentation.
+We *think* we merely design and build websites and apps. And that's true for the most part. After all, that's what our clients pay us to do, and the products we create are the vehicles that generate money and success for our organizations. It seems natural to focus on the final implementations rather than the underlying system. The live products remain the primary focus of everyone's attention, while any pattern library exists as an offshoot that simply provides helpful documentation.
 
 {% include figure.html src="../images/content/workflow-website-first.png" caption="" %}
 
@@ -92,7 +92,7 @@ Get team members from different disciplines to back you up and discuss the initi
 ### 3: Make it official
 You've proved the value of your initial design system and presented a roadmap for how to make it even better. With any luck your organization will commit to making the design system an Official Thing. 
 
-With approval from the highest levels, you're now able to put a plan into action that involves: allocating or hiring people to work on the design system; developing a plan to make the design system more comprehensive; establishing a clear governance strategy; and laying out a product roadmap for the design system.
+With approval from the highest levels, you're now able to put a plan into action that involves: allocating or hiring people to work on the design system; developing a plan to make it more robust; establishing a clear governance strategy; and laying out a product roadmap.
 
 It's worth pointing out that things may not shake out the way you hoped. Despite demonstrating real value and presenting a concrete plan of action, higher-ups still might shoot your initiative down. **Don't be discouraged.** You may have lost the battle, but you can certainly win the war. Your team should continue to grow and extend the design system in whatever capacity you can until its value becomes undeniable. As more people benefit from the system, you'll end up with a grassroots-supported system that can help push the endeavor through.
 
@@ -156,11 +156,11 @@ Change is the only constant, as they say. **The <em>living</em> part of a living
 
 A misconception about design systems is that once they're established, they become an omnipotent and unchangeable source of truth. Thinking in such a rigid way is a surefire way to have your design system effort backfire. If users feel handcuffed and pigeonholed into using patterns that don't solve their problems, they'll perceive the design system as a unhelpful tool and start searching elsewhere for something that will better address their needs. 
 
-**Creating a clear governance plan is essential for making sure your design system can adapt and thrive as time passes. A solid governance strategy starts by answering some important questions about handling change. Consider the following questions:
+Creating a clear governance plan is essential for making sure your design system can adapt and thrive as time goes on. A solid governance strategy starts by answering some important questions about handling change. Consider the following:
 
 - What happens when an existing pattern doesn't quite work for a specific application? Does the pattern get modified? Do you recommend using a different pattern? Does a new pattern need creating?
 - How are new pattern requests handled?
-- How do old patterns get retired? 
+- How are old patterns retired? 
 - What happens when bugs are found?
 - Who approves changes to the design system?
 - Who is responsible for keeping documentation up to date?
@@ -175,7 +175,7 @@ As mentioned a few times already, frequent communication and collaboration betwe
 In addition to informal day-to-day conversation between makers and users, **schedule regular "state of the union" meetings to review the design system** with makers, users, and other key stakeholders. Discuss what's working, be honest with what needs to be improved, and review priorities and the roadmap to make sure the system is serving the needs of the business. These regular checkups are especially helpful for keeping stakeholders up to speed, since they often aren't involved in the day-to-day of the design system's operations.
 
 ### Making changes to patterns
-A critical part of design system maintenance is ensuring that UI patterns stay up to date, embrace evolving design and development best practices, and continue to address the real needs of the organization's products. 
+A critical part of design system maintenance is ensuring that UI patterns stay up to date, embrace evolving design and development best practices, and continue to address the real needs of the organization. 
 
 Developing a strategy for handling pattern changes is crucial, which is why Inayaili de León Persson and the Canonical web team spent time to map out their strategy as they created the [Vanilla front-end framework](http://ubuntudesign.github.io/vanilla-framework/). 
 
@@ -188,7 +188,7 @@ The result is a gorgeous decision tree that maps out exactly what processes need
 The three types of change that can happen to patterns in a design system are modification, addition, and removal. 
 
 #### Modifying patterns
-UI patterns can and should be modified for a number of reasons: bug fixes, subtle or major visual design tweaks, performance improvements, better accessibility, code refactoring, updating UX best practice, and so on. 
+UI patterns can and should be modified for a number of reasons: feature additions, bug fixes, subtle or major visual design tweaks, performance improvements, accessibility enhancements, code refactoring, UX best practice updates, and so on. 
 
 The design system maintainers need to understand why and when to tweak patterns, how to go about making those changes, and how to roll out those improvements into individual applications.
 
@@ -234,7 +234,7 @@ A UI design system manifests itself as the front-end of a web experience, which 
 
 In his article “[Chasing the Holy Grail*](https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d),” web developer Marcelo Somers details various technical approaches to achieving the holy grail. He highlights the pros and cons of each strategy for feeding a design system into applications to keep both codebases in lockstep. While I won't detail each of Marcelo's strategies, it's worth noting there is a spectrum of approaches to choose from: crude, manual front-end code copying-and-pasting on one end, to baking the pattern library directly into the production environment on the other. 
 
-In my experience, I've found that sharing CSS and presentational JavaScript with production environments is relatively easy, while sharing markup is tough. Because CSS and JavaScript tend to get compiled into a single file (or perhaps a handful), it becomes possible to throw them onto a CDN and then simply link to those files in each application. Marcelo explains how to do this while keeping versioning in mind:
+In my experience, I've found that sharing CSS and presentational JavaScript with production environments is relatively easy, while sharing markup is tough. Because CSS and JavaScript tend to get compiled into a single file (or perhaps a handful of files), it becomes possible to throw them onto a CDN and then simply link to those files in each application. Marcelo explains how to do this while keeping versioning in mind:
 
 > You’d provide development teams with a versioned URL (e.g., http://mycdn.com/1.3.5/styles.css) and upgrading is as simple as bumping the version number in the URL. <cite><a href="https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365#.ay1xeej7d">Marcelo Somers</a>
 
@@ -285,7 +285,7 @@ But creating a great-looking, intuitive style guide experience doesn't just happ
 2. Show that it's useful. 
 3. Make it official. 
 
-Creating a useful design system should be the team's first priority. A happy home to contain it all might not be made straightaway, but should become a bigger priority once the design system becomes official. Making a good-looking style guide isn't just design for design's sake; **it reflects an organization’s commitment to making and maintaining a thoughtful, deliberate design system**.
+Creating a useful design system should be the team's first priority. Building a happy home to contain it all might not happen straightaway, but should become a bigger priority once the design system becomes official. Making a good-looking style guide isn't just design for design's sake; **it reflects an organization’s commitment to making and maintaining a thoughtful, deliberate design system**.
 
 ## Make it visible
 Visibility is critically important to the ongoing health of your design system. Such an important endeavor shouldn't be tucked away in a dark corner of your intranet. What steps can you take to ensure the design system remains a cornerstone of your design and development workflows?
@@ -326,7 +326,7 @@ Training users how to work with the design system can take many forms, including
 - **Tutorials**: A series of blog posts and screencasts can neatly encapsulate core concepts of working with the design system. Not only do these help serve as a training tool, but they can serve as a great reference to keep coming back to.
 - **Onboarding**: A great way of injecting your design system into your company culture is to bake design system training right into the onboarding process for new employees. New colleagues will understand the importance of modularity, reuse, and all the other benefits a design system brings.
 
-Users will undoubtedly have questions or encounter issues once they start cooking with gas and building things with the design system. They need to know there's a robust support system in place to help answer any questions, listen to their requirements, and address bugs. There are a host of mechanisms in place to provide support for users, including:
+Users will undoubtedly have questions or encounter issues once they get up and running and start building things with the design system. They need to know there's a robust support system in place to help answer any questions, listen to their requirements, and address bugs. There are a host of mechanisms in place to provide support for users, including:
 
 - **Issue trackers**: Tools like JIRA and GitHub Issues are great for users and makers to report bugs and have technical conversations. Users should be aware of the protocol for filing bugs and feel empowered to contribute.
 - **Office hours**: Schedule regular times when the design system team is available to field questions, address issues, and talk about what's next for the design system.
@@ -394,7 +394,7 @@ One way to demonstrate context might include showing screenshots or videos of a 
 
 {% include figure.html src="../images/content/material-design-bottom-nav.png" caption="Material design's component library doesn't just contain an example of each component; it thoroughly documents the component's usage with plenty of images and videos to support it." %}
 
-Another way to show context is to provide lineage information for each pattern. As we discussed in Chapter 3, tools like Pattern Lab automatically generate this information which lets you see which patterns make up any given component, and also show where each component is employed. This provides a sort of pattern paper trail that helps immensely with QA efforts, as it highlights exactly which patterns and templates would need to be tested if changes were made to a particular pattern.
+Another way to show context is to provide lineage information for each pattern. As we discussed in Chapter 3, a tool like Pattern Lab automatically generates this information, letting you see which patterns make up any given component in addition to showing where each component is employed. This provides a sort of pattern paper trail that helps immensely with QA efforts, as it highlights exactly which patterns and templates would need to be tested if changes were made to a particular pattern.
 
 {% include figure.html src="../images/content/pattern-lab-lineage.png" caption="Tools like Pattern Lab provide lineage information, allowing teams to see which smaller components are included in any given component, as well as where each pattern gets used." %}
 
