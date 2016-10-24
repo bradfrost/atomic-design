@@ -111,21 +111,18 @@ permalink: /resources/
 
 ------
 
-## Writing
+## Tools used to make this book
+
+### Writing
 - [IA Writer](http://www.iawriter.com/mac/)
 
-## Website
+### Website
 - [Jekyll](http://jekyllrb.com/)
 - [Pattern Lab](http://patternlab.io/)
-- [Dploy.io](http://dploy.io/)
+- [DeployBot](https://deploybot.com/)
 - [Github](http://github.com)
 
-http://yourls.org/
-
-## Pattern Lab
-- [Using Pattern Lab to Design, Build and Maintain a Website](http://www.brianmuenzenmeyer.com/using-patternlab-to-design-build-and-maintain-a-website/)
-
-And this is a list of helpful resources people have brought to my attention during the creation of this book:
+And this is a list of resources people have brought to my attention during the creation of this book:
 
 ## Book Making and Marketing Resources
 - [Bitbooks](http://bitbooks.cc/)
@@ -135,6 +132,4 @@ And this is a list of helpful resources people have brought to my attention duri
 - [ConvertKit](http://convertkit.com/)
 - [Coding a Book](http://larahogan.me/blog/coding-a-book/)
 - [Scrivener](https://www.literatureandlatte.com/scrivener.php)
-
-### Frameworks
-- [What Is A CSS Framework Anyway?](https://speakerdeck.com/csswizardry/what-is-a-css-framework-anyway) by Harry Roberts
+- [YOURLS](http://yourls.org/)
