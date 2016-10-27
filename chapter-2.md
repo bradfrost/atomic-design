@@ -2,6 +2,7 @@
 layout: page
 title: Atomic Design Methodology
 chapterTitle: Chapter 2
+chapterSubtitle: Atoms, Molecules, Organisms, Templates, and Pages
 permalink: /chapter-2/
 nextChapter: /chapter-3/
 ---

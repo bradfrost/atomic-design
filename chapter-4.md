@@ -2,6 +2,7 @@
 layout: page
 title: The Atomic Workflow
 chapterTitle: Chapter 4
+chapterSubtitle: People, process, and making it all happen
 permalink: /chapter-4/
 nextChapter: /chapter-5/
 ---
@@ -343,7 +344,7 @@ As I've discovered from subsequent projects, content and display patterns can be
 
 {% include figure.html src="../images/content/verywell-wireframe.png" caption="A simple spreadsheet can articulate what  content and display patterns go on a given page while describing their order and purpose." %}
 
-With a few simple spreadsheet columns, we can articulate which display patterns should be included in a given template, and what content patterns they'll contain. More importantly, we're able to articulate each pattern's relative hierarchy and the role it plays on the screen. If you read the leftmost column vertically, you're effectively looking at the mobile-first view of what the UI could be. 
+With a few simple spreadsheet columns, we can articulate which display patterns should be included in a given template, and what content patterns they'll contain. More importantly, we're able to articulate each pattern's relative hierarchy and the role it plays on the screen. If you read the leftmost column vertically, you're effectively looking at the mobile-first view of what the UI could be.
 
 "What content and display patterns go on this page? And in what general order?" are crucial questions to ask, and the techniques we just described can help designers discuss them effectively without making any layout or technical assumptions.
 

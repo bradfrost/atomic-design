@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Thanks & Acknowledgements
+chapterSubtitle: A special thank you to these special people
 permalink: /thanks/
 ---
 

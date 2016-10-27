@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Outline
+chapterSubtitle: Broad summary of each chapter
 permalink: /outline/
 ---
 
@@ -64,14 +65,14 @@ Discuss the advantages of atomic design, especially the ability to traverse betw
 - Shared vocabulary - stakeholders can get on board with the concept
 - The Part and the Whole - Not a linear process
 - What's in a name? Discussing the importance of naming, and the
-- Atomic Design in Practice 
+- Atomic Design in Practice
 - What atomic design isn't - CSS or JS methodology
 - Recap of the the atomic design methodology
 
 ## 3. [Tools of the Trade](/chapter-3)
 This chapter will discuss tools and techniques to create atomic design systems. I'll introduce Pattern Lab, a tool Dave Olsen and I created in order to execute atomic design systems. I'll explain the gist of using Pattern Lab and its various features, but I want to be cognizant of not focusing too much on this specific tool. While I know it's an effective tool for me and others, I understand that it might not be a perfect fit for all readers. The book is more about promoting the idea of atomic design rather than any specific tool.
 
-- Style guides, what are they, and the many flavors of 
+- Style guides, what are they, and the many flavors of
 - Front-end style guides
 - Pattern Lab, what and how
 - Getting started
@@ -86,10 +87,10 @@ Everyone's design process is different, so I'll also discuss how to introduce an
 - Getting buy-in from clients and colleagues
 - What interface inventories are and why they're effective
 - How to conduct an interface inventory
-- 
+-
 
 ## 5. [Maintaining Design Systems](/chapter-5)
-- 
+-
 
 
 ## [Conclusion](/conclusion)

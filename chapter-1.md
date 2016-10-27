@@ -2,6 +2,7 @@
 layout: page
 title: Designing Systems
 chapterTitle: Chapter 1
+chapterSubtitle: Create design systems, not pages
 permalink: /chapter-1/
 nextChapter: /chapter-2/
 ---

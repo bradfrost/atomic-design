@@ -2,6 +2,7 @@
 layout: page
 title: Tools of the Trade
 chapterTitle: Chapter 3
+chapterSubtitle: Pattern Lab, style guides, and more
 permalink: /chapter-3/
 nextChapter: /chapter-4/
 ---

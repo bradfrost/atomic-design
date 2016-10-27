@@ -8,6 +8,7 @@ layout: default
 
         {% if page.chapterTitle %}<h3 class="page-kicker">{{ page.chapterTitle }}</h3>{% endif %}
         <h1 class="page-title">{{ page.title }}</h1>
+        {% if page.chapterSubtitle %}<p class="page-subtitle">{{ page.chapterSubtitle }}</p>{% endif %}
     </div>
 </div>
 
@@ -15,7 +16,7 @@ layout: default
     {% if page.chapterTitle %}
     {% include note.html %}
     {% endif %}
-    
+
     {{ content }}
 
     {% if page.chapterTitle %}
