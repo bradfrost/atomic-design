@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resources
-chapterSubtitle: List of references used throughout the chapters
+chapterSubtitle: A list of all the resources referenced in the book
 permalink: /resources/
 ---
 

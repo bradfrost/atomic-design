@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Foreword
+chapterSubtitle: By Josh Clark and Dan Mall
 permalink: /foreword/
 ---
 

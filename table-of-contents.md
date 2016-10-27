@@ -1,7 +1,7 @@
 ---
 layout: toc
-title: Table of Contents
-chapterSubtitle: Navigate your way through Atomic Design
+title: Atomic Design
+chapterSubtitle: Table of Contents
 permalink: /table-of-contents/
 ---
 

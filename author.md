@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About the Author
-chapterSubtitle: A closer look at Brad Frost
+chapterSubtitle: About Brad Frost
 permalink: /author/
 ---
 
