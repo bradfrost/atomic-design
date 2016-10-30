@@ -298,14 +298,21 @@ pre {
 
 .page-title {
   margin-bottom: 2rem;
-  color: #fff; }
+  color: #fff;
+  font-size: 3rem; }
+  @media all and (min-width: 32em) {
+    .page-title {
+      font-size: 4.5rem; } }
 
 .page-subtitle {
   font-weight: normal;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   padding-top: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   opacity: 0.5; }
+  @media all and (min-width: 32em) {
+    .page-subtitle {
+      font-size: 1.8rem; } }
 
 .atomic-icon-links {
   display: block;
@@ -610,7 +617,7 @@ header {
     font-size: 1.4em;
     margin: 0; }
   .toc-list p {
-    color: #a29e5e;
+    color: #808080;
     margin: 0;
     font-size: 85%; }
 

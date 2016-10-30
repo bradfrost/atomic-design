@@ -420,14 +420,23 @@ pre {
 .page-title {
 	margin-bottom: 2rem;
 	color: $white;
+    font-size: 3rem;
+
+    @media all and (min-width: 32em) {
+        font-size: 4.5rem;
+    }
 }
 
 .page-subtitle {
 	font-weight: normal;
 	border-top: 1px solid rgba(255,255,255,0.5);
 	padding-top: 1rem;
-	font-size: 1.8rem;
+	font-size: 1.3rem;
 	opacity: 0.5;
+
+    @media all and (min-width: 32em) {
+        font-size: 1.8rem;
+    }
 }
 
 .atomic-icon-links {
@@ -831,7 +840,7 @@ h2 .title-link {
 	}
 
 	p {
-		color: $tan-dark;
+		color: $gray;
 		margin: 0;
 		font-size: 85%;
 	}
