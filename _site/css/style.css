@@ -288,25 +288,24 @@ pre {
   justify-content: center; }
   @media all and (min-height: 30em) {
     .page-header-inner {
-      height: 50vh; } }
+      height: 70vh; } }
 
 .page-kicker {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 1rem;
-  color: #f6f5de; }
+  color: #fff;
+  opacity: 0.5; }
 
 .page-title {
   margin-bottom: 2rem;
-  color: #fff;
-  text-shadow: 1px 1px 0 #be6700, -1px -1px 0 #be6700, 1px -1px 0 #be6700, -1px 1px 0 #be6700, 1px 1px 0 #be6700; }
+  color: #fff; }
 
 .page-subtitle {
   font-weight: normal;
-  border-top: 1px solid #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
   padding-top: 1rem;
   font-size: 1.8rem;
-  letter-spacing: 1px;
-  opacity: 0.55; }
+  opacity: 0.5; }
 
 .atomic-icon-links {
   display: block;

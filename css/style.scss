@@ -406,29 +406,28 @@ pre {
 
 
     @media all and (min-height: 30em) {
-        height: 50vh;
+        height: 70vh;
     }
 }
 
 .page-kicker {
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
     font-size: 1rem;
-    color: $tan;
+    color: $white;
+    opacity: 0.5;
 }
 
 .page-title {
 	margin-bottom: 2rem;
 	color: $white;
-    text-shadow: 1px 1px 0 $orange, -1px -1px 0 $orange, 1px -1px 0 $orange, -1px 1px 0 $orange, 1px 1px 0 $orange;
 }
 
 .page-subtitle {
 	font-weight: normal;
-	border-top: 1px solid $white;
+	border-top: 1px solid rgba(255,255,255,0.5);
 	padding-top: 1rem;
 	font-size: 1.8rem;
-	letter-spacing: 1px;
-	opacity: 0.55;
+	opacity: 0.5;
 }
 
 .atomic-icon-links {
