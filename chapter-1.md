@@ -166,7 +166,7 @@ So frameworks like Bootstrap are insanely popular design systems that provide we
 ### Trouble in framework paradise
 When I was a kid, I’d watch sci-fi movies and TV shows with a strange fascination. There was one question I could never quite shake: *why are they all dressed the same*?
 
-{% include figure.html src="../images/content/sci-fi.jpg" caption="In the future, everyone dresses the same." %}
+{% include figure.html src="../images/content/sci-fi.jpg" caption="In the future, everyone dresses the same. Illustration by Melissa Frost" %}
 
 I could only guess that given enough time, we *solve fashion*. “Say, these jumpsuits are pretty snazzy, and comfortable too! Let’s just all wear these from now on.” “Sounds good to me!”
 
