@@ -632,7 +632,7 @@ h2 .title-link {
 //Timeline
 .timeline {
 	padding-left: 2em;
-	max-width: 32em;
+	max-width: $max-width;
 	margin: 0 auto;
 
 	ol {
@@ -688,7 +688,7 @@ h2 .title-link {
 	}
 
 	h3 {
-		margin: 0;
+		margin: 0 0 0.2rem;
 	}
 
 	a {
@@ -701,9 +701,10 @@ h2 .title-link {
 	}
 
 	em {
-		font-size: 80%;
-		color: $tan-dark;
+		font-size: 60%;
+		color: $gray;
 		display: block;
+        margin-bottom: 0.2rem;
 		font-style: normal;
 	}
 }
@@ -732,6 +733,7 @@ h2 .title-link {
 
 	img {
 		display: block;
+        width: 100%;
 		max-height: 100%;
 		margin-bottom: 2em;
 
@@ -743,7 +745,7 @@ h2 .title-link {
 
 	h1 {
 		text-align: left;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
         line-height: 1.2;
 	}
 

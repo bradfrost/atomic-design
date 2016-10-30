@@ -1,6 +1,7 @@
 ---
 layout: timeline
-title: Atomic Design Progress
+title: Timeline
+chapterSubtitle: The progression of the Atomic Design book project
 permalink: /timeline/
 ---
 
@@ -12,7 +13,7 @@ permalink: /timeline/
    [View store](http://shop.bradfrost.com/products/atomic-design-ebook)
 4. ### *12/18/14* Set up Github repository
    [View repository](https://github.com/bradfrost/atomic-design/)
-5. ### *12/23/14* Set up automatic deployments with Dploy.io
+5. ### *12/23/14* Set up automatic deployments with DeployBot
    [Visit DeployBot](https://deploybot.com/)
 6. ### *01/08/15* Set up Mailchimp newsletter
    [View signup form](http://atomicdesign.bradfrost.com/signup/)
