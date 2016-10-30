@@ -2,7 +2,7 @@
 layout: page
 title: Maintaining Design Systems
 chapterTitle: Chapter 5
-chapterSubtitle: Managing living design systems
+chapterSubtitle: Making design systems stand the test of time
 permalink: /chapter-5/
 ---
 

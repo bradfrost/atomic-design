@@ -2,7 +2,7 @@
 layout: page
 title: Tools of the Trade
 chapterTitle: Chapter 3
-chapterSubtitle: Pattern Lab, style guides, and more
+chapterSubtitle: Pattern Lab and the qualities of effective style guides
 permalink: /chapter-3/
 nextChapter: /chapter-4/
 ---

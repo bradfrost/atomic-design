@@ -2,7 +2,7 @@
 layout: page
 title: The Atomic Workflow
 chapterTitle: Chapter 4
-chapterSubtitle: People, process, and making it all happen
+chapterSubtitle: People, process, and making design systems happen
 permalink: /chapter-4/
 nextChapter: /chapter-5/
 ---
