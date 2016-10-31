@@ -75,7 +75,7 @@ Now that we know what an include looks like, let's put it into practice and take
 
 This pattern should look fairly familiar. A thumbnail image, headline, and excerpt working together as a single unit is a common pattern found on countless websites. Let's take a peek behind the curtain to see how this pattern is constructed.
 
-````````html
+````````handlebars
 <div class="block-post">
     <a href="{% raw %}{{ url }}{% endraw %}">
         {% raw %}{{> atoms-thumb }}{% endraw %}

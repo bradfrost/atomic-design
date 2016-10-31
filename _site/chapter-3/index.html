@@ -10,6 +10,7 @@
 ">
 
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/prism.css">
 
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Oswald" rel="stylesheet">
 
@@ -141,11 +142,11 @@
 
 <p>This pattern should look fairly familiar. A thumbnail image, headline, and excerpt working together as a single unit is a common pattern found on countless websites. Let’s take a peek behind the curtain to see how this pattern is constructed.</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"block-post"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ url }}"</span><span class="nt">&gt;</span>
-        {{&gt; atoms-thumb }}
-        <span class="nt">&lt;h3&gt;</span>{{ headline }}<span class="nt">&lt;/h3&gt;</span>
-       <span class="nt">&lt;p&gt;</span>{{ excerpt }}<span class="nt">&lt;/p&gt;</span>
+<div class="language-handlebars highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"block-post"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"</span><span class="k">{{</span> <span class="nv">url</span> <span class="k">}}</span><span class="s">"</span><span class="nt">&gt;</span>
+        <span class="k">{{&gt;</span> <span class="nv">atoms-thumb</span> <span class="k">}}</span>
+        <span class="nt">&lt;h3&gt;</span><span class="k">{{</span> <span class="nv">headline</span> <span class="k">}}</span><span class="nt">&lt;/h3&gt;</span>
+       <span class="nt">&lt;p&gt;</span><span class="k">{{</span> <span class="nv">excerpt</span> <span class="k">}}</span><span class="nt">&lt;/p&gt;</span>
     <span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
@@ -545,6 +546,7 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="/../js/link-headings.js"></script>
+<script src="/../js/prism.js"></script>
 
   </body>
 </html>
