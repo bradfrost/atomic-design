@@ -305,7 +305,7 @@ The sculptor starts with a giant slab of rock and starts chipping away. A crude 
 
 With the general shape of the sculpture roughed out, the artist then begins homing in on specific sections of the piece. For instance, they may begin with the face, moving up close to carve the shape of the eyes, nose, and mouth. After several passes, they then move on to the arms, and then begin detailing the legs. At regular intervals the artist steps back to see how their detailed work affects the overall sculpture. This process continues until the sculpture is complete and everyone is pleased with the results.
 
-{% include figure.html src="../images/content/stone-sculptor.jpg" caption="An iterative digital process is similar to subtractive stone sculpture, where fidelity is built up over many iterations. <a href='http://flickr.com/photos/15609463@N03/7854373494/'>Image credit</a>" %}
+{% include figure.html src="../images/content/stone-sculptor.jpg" caption="An iterative digital process is similar to subtractive stone sculpture, where fidelity is built up over many iterations. Image credit: <a href='https://flic.kr/p/dLrf6w'>Mike Beauregard on Flickr</a>" %}
 
 Again, I think subtractive stone sculpture is a great analogy for a successful digital process, although unlike sculpture we have the power of *undo*!
 
