@@ -83,9 +83,15 @@ permalink: /timeline/
     [Read Chapter 3 edits](http://atomicdesign.bradfrost.com/chapter-3/)
 39. ### *08/26/16* Chapter 4 edits, round 2
     [Read Chapter 4 edits](http://atomicdesign.bradfrost.com/chapter-4/)
-36. ### *09/01/16* Chapter 5 rewrites
+40. ### *09/01/16* Chapter 5 rewrites
     [Read Chapter 5 rewrites](http://rewrites.atomicdesign.bradfrost.com/chapter-5/)
-36. ### *09/04/16* Chapter 5 edits, round 2
+41. ### *09/04/16* Chapter 5 edits, round 2
     [Read Chapter 5 edits](http://atomicdesign.bradfrost.com/chapter-5/)
-32. ### *10/07/16* Send Email Newsletter #8
+42. ### *10/07/16* Send Email Newsletter #8
     [View newsletter](http://us5.campaign-archive1.com/?u=6c0c3f4dcd40d88bc1cedb3fa&id=f3bafb7857)
+43. ### *10/24/16* Finalize book resources
+    [View resources](http://atomicdesign.bradfrost.com/resources/)
+44. ### *10/24/16* Finalize thank yous and acknowledgements
+    [View thank you page](http://atomicdesign.bradfrost.com/resources/)
+45. ### *10/26/16* Update book cover image
+    [View book cover](http://atomicdesign.bradfrost.com)
