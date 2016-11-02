@@ -24,7 +24,12 @@ As we’ll discuss throughout this book, the way things are named very much impa
 
 From the beginning, the page metaphor provided users with a familiar language with which to navigate this brave new World Wide Web. Concepts like bookmarking and pagination helped new web users explore and eventually master an entirely new medium using conventions they were already comfortable with.
 
-{% include figure.html src="../images/content/chrome-webpage.png" caption="Chrome browser displaying ‘This webpage is not available’ message." %}
+<figure>
+    <img src="../images/content/chrome-webpage.png" alt="Chrome browser displaying ‘This webpage is not available" />
+	<figcaption>
+	    Chrome browser displaying ‘This webpage is not available
+	</figcaption>
+</figure>
 
 The page was – and continues to be – a very visible and helpful metaphor for the users of the web. It also has a profound influence on how web experiences are created.
 
@@ -64,7 +69,12 @@ The short answer is that modularity matters more than ever. Right now, our entir
 
 > Disruption will only accelerate. The quantity and diversity of connected devices — many of which we haven't imagined yet — will explode, as will the quantity and diversity of the people around the world who use them. Our existing standards, workflows, and infrastructure won't hold up. Today's onslaught of devices is already pushing them to the breaking point. They can't withstand what's ahead. <cite>[The Future-Friendly manifesto](http://futurefriendlyweb.com/)</cite>
 
-{% include figure.html src="../images/content/devices.jpg" caption="These are just some of the connected devices we need to worry about." %}
+<figure>
+    <img src="../images/content/devices.jpg" alt="These are just some of the connected devices we need to worry about." />
+	<figcaption>
+	    These are just some of the connected devices we need to worry about.
+	</figcaption>
+</figure>
 
 Like it or not, this multi-device universe is our reality. It was hard enough to get our web pages to display consistently in a handful of desktop browsers, but we’re now tasked with ensuring our web experiences look and function beautifully on a dizzying array of smartphones, tablets, phablets, netbooks, notebooks, desktops, TVs, game consoles, and more.
 
@@ -129,7 +139,12 @@ That’s not to say static design tools like Photoshop and Sketch aren’t impor
 
 Establishing design atmosphere early is critical to a project’s success, which is why designers have found ways to facilitate these important conversations without having to generate full mockups. Designer Samantha Warren developed design artifacts called [style tiles](http://styletil.es/), which demonstrate color, type, and texture explorations in a nice encapsulated one-pager. Designer Dan Mall built on Samantha’s idea with a concept called [element collages](http://danielmall.com/articles/rif-element-collages/), which demonstrate design atmosphere explorations in an exploded collage of interface elements.
 
-{% include figure.html src="../images/content/style-tiles.jpg" caption="Style tiles, a concept created by designer Samantha Warren, allow designers to explore color, typography, and texture without having to develop fully realized comps." %}
+<figure>
+    <img src="../images/content/style-tiles.jpg" alt="Style tiles, a concept created by designer Samantha Warren, allow designers to explore color, typography, and texture without having to develop fully realized comps." />
+	<figcaption>
+	    Style tiles, a concept created by designer Samantha Warren, allow designers to explore color, typography, and texture without having to develop fully realized comps.
+	</figcaption>
+</figure>
 
 By breaking visual explorations into smaller chunks, designers save time and effort while avoiding presenting unrealistic, premature layouts to clients. More importantly, these approaches shift stakeholders away from simply reacting to a pretty picture, and instead facilitate crucial conversations about overall design direction and how they relate to the project’s goals. We’ll discuss these concepts in more detail in chapter 4, but suffice it to say the visual design workflow is changing in a big way!
 
@@ -153,7 +168,12 @@ Designers and developers are already strapped for time and resources, and they�
 
 This need to address growing device diversity while still sanely getting projects out the door has given rise to front-end frameworks like [Foundation by Zurb](http://foundation.zurb.com/) and [Bootstrap](http://getbootstrap.com/). These user interface frameworks provide designers with a collection of preassembled HTML patterns, CSS styles, and JavaScript to add functionality to interactive components like dropdowns and carousels. In essence, these frameworks are handy tool kits for quickly assembling interfaces.
 
-{% include figure.html src="../images/content/bootstrap-components.png" caption="Bootstrap provides a collection of UI components to speed up development."  %}
+<figure>
+    <img src="../images/content/bootstrap-components.png" alt="Bootstrap provides a collection of UI components to speed up development." />
+	<figcaption>
+	    Bootstrap provides a collection of UI components to speed up development.
+	</figcaption>
+</figure>
 
 And boy are these things popular. As I’m writing this, Bootstrap is the most popular repository on the code-sharing site [GitHub](https://github.com/), with over 77,000 stars and 30,000 forks. These frameworks’ popularity is a testament to the fact that designers and developers are seeking solid ground to stand on in this ever-complex web landscape.
 
@@ -166,7 +186,13 @@ So frameworks like Bootstrap are insanely popular design systems that provide we
 ### Trouble in framework paradise
 When I was a kid, I’d watch sci-fi movies and TV shows with a strange fascination. There was one question I could never quite shake: *why are they all dressed the same*?
 
-{% include figure.html src="../images/content/sci-fi.jpg" caption="In the future, everyone dresses the same. Illustration by Melissa Frost" %}
+<figure>
+    <img src="../images/content/sci-fi.jpg" alt="In the future, everyone dresses the same. Illustration by Melissa Frost" />
+	<figcaption>
+	    In the future, everyone dresses the same. Illustration by Melissa Frost
+	</figcaption>
+</figure>
+
 
 I could only guess that given enough time, we *solve fashion*. “Say, these jumpsuits are pretty snazzy, and comfortable too! Let’s just all wear these from now on.” “Sounds good to me!”
 
@@ -199,7 +225,12 @@ As it happens, there are [many flavors of style guides](http://bradfrost.com/blo
 ### Brand identity
 Brand identity guidelines define the assets and materials that make a company unique. Logos, typography, color palettes, messaging (such as mission statements and taglines), collateral (such as business card and PowerPoint templates), and more are aggregated and described in brand identity guidelines.
 
-{% include figure.html src="../images/content/styleguide-wvu.png" caption="West Virginia University’s brand style guide." %}
+<figure>
+    <img src="../images/content/styleguide-wvu.png" alt="West Virginia University’s brand style guide." />
+	<figcaption>
+	    West Virginia University’s brand style guide.
+	</figcaption>
+</figure>
 
 It’s essential for a brand to present itself in a cohesive manner across an increasing number of media, channels, and touchpoints. How can everyone within an organization speak in one voice and feel part of a singular entity? How do third parties know which Pantone colors to use and how to correctly use the brand’s logo? Brand identity guidelines provide answers to these fundamental questions in one centralized hub.
 
@@ -210,7 +241,12 @@ While brand identity guidelines are fairly tactile, design language guidelines a
 
 To present itself in a cohesive way across a growing range of products and media, Google developed a design language called *material design*. The [material design style guide](http://www.google.com/design/spec/material-design/introduction.html) defines its overarching design philosophy, goals, and general principles, while also providing specific applications of the material design language.
 
-{% include figure.html src="../images/content/styleguide-material.png" caption="Google’s material design language." %}
+<figure>
+    <img src="../images/content/styleguide-material.png" alt="Google’s material design language." />
+	<figcaption>
+	    Google’s material design language.
+	</figcaption>
+</figure>
 
 Design language style guides can (and usually do) incorporate aspects of other style guide categories in order to make high-level concepts a bit more tangible.
 
@@ -226,26 +262,46 @@ Voice is an elemental aspect of a brand’s identity, so typically brand identit
 
 Voice and tone guidelines get into the weeds by articulating how the company’s voice and tone should shift across a variety of scenarios. [MailChimp’s brilliant voice and tone guidelines](http://voiceandtone.com/) define how the brand’s tone changes across content types, so that when a user’s credit card is declined, writers know to shift away from their generally cheeky and playful tone of voice and adopt a more serious tone instead.
 
-{% include figure.html src="../images/content/styleguide-voiceandtone.png" caption="Mailchimp’s Voice and Tone guidelines" %}
+<figure>
+    <img src="../images/content/styleguide-voiceandtone.png" alt="Mailchimp’s Voice and Tone guidelines" />
+	<figcaption>
+	    Mailchimp’s Voice and Tone guidelines
+	</figcaption>
+</figure>
 
 ### Writing
 The rise of the web and content-managed websites makes it easier than ever for many people within an organization to publish content. This, of course, can be a double-edged sword, as maintaining a consistent writing style for an organization with many voices can be challenging. Writing style guides provide every author some guidelines and guardrails for contributing content.
 
-{% include figure.html src="../images/content/styleguide-economist.png" caption="The Economist’s writing style guide." %}
+<figure>
+    <img src="../images/content/styleguide-economist.png" alt="The Economist’s writing style guide." />
+	<figcaption>
+	    Mailchimp’s Voice and Tone guidelines
+	</figcaption>
+</figure>
 
 Writing style guides can be extremely granular, defining particulars around punctuation and grammar, but they don’t always have to be so detailed. [Dalhousie University’s writing style guide](http://www.dal.ca/webteam/web_style_guide/writing_for_the_web.html) provides a concise list of principles and best practices for content contributors to follow.
 
 ### Code style guides
 It’s essential for teams to write legible, scalable, maintainable code. But without a way to promote and enforce code consistency, it’s easy for things to fall apart and leave every developer to fend for themselves.
 
-{% include figure.html src="../images/content/styleguide-github.png" caption="GitHub’s code style guide provides best practices for writing HTML, CSS, JavaScript, and Ruby within their organization." %}
+<figure>
+    <img src="../images/content/styleguide-github.png" alt="GitHub’s code style guide provides best practices for writing HTML, CSS, JavaScript, and Ruby within their organization." />
+	<figcaption>
+	    GitHub’s code style guide provides best practices for writing HTML, CSS, JavaScript, and Ruby within their organization.
+	</figcaption>
+</figure>
 
 Code style guides provide conventions, patterns, and examples for how teams should approach their code. These guidelines and guardrails help rein in the madness so that teams can focus on producing great work together rather than refactoring a bunch of sloppy, inconsistent code.
 
 ## Pattern Libraries
 And now for the main event. Pattern libraries, also known as front-end style guides, UI libraries, or component libraries, are quickly becoming a cornerstone of modern interface design.
 
-{% include figure.html src="../images/content/styleguide-codeforamerica.png" caption="Code for America’s pattern library" %}
+<figure>
+    <img src="../images/content/styleguide-codeforamerica.png" alt="Code for America’s pattern library" />
+	<figcaption>
+	    Code for America’s pattern library
+	</figcaption>
+</figure>
 
 The rest of this book will concentrate on how to approach interface design in a systematic manner, and detail how to establish and maintain pattern libraries.
 
@@ -273,7 +329,12 @@ What does “utility toolbar” mean? Does everyone understand what a “touch s
 
 As the number of people working on a project increases, it becomes all too easy for communication breakdowns to occur. It's not uncommon for different disciplines to have different names for the same module, and for individuals to go rogue and invent their own naming conventions. For true collaboration to occur, it's essential for teams to speak a common language. Style guides are there to help establish that shared vocabulary.
 
-{% include figure.html src="../images/content/starbucks-blocks-3up.png" caption="Giving names to patterns like 'Blocks 3-Up' in Starbucks' style guide helps team members speak the same language." %}
+<figure>
+    <img src="../images/content/starbucks-blocks-3up.png" alt="Giving names to patterns like 'Blocks 3-Up' in Starbucks' style guide helps team members speak the same language." />
+	<figcaption>
+	    Giving names to patterns like 'Blocks 3-Up' in Starbucks' style guide helps team members speak the same language.
+	</figcaption>
+</figure>
 
 **Style guides establish a consistent, shared vocabulary between everyone involved in a project**, encouraging collaboration between disciplines and reducing communication breakdowns.
 
@@ -348,12 +409,22 @@ Without thinking of broader audiences, style guides may come across as too vague
 ### Style guide structure
 For style guides to be useful resources for everyone in an organization, they should clearly convey what they are and why they matter. Style guides should be attractive, inviting, visible, clear, and easy to use. As mentioned above, they should be aware that a whole host of audiences will be viewing them, so should therefore aim to be welcoming and useful for as many people as possible.
 
-{% include figure.html src="../images/content/styleguide-yelp.png" caption="Yelp's style guide homepage sports a handsome design and important intro text explaining the purpose and audience for the guide." %}
+<figure>
+    <img src="../images/content/styleguide-yelp.png" alt="Yelp's style guide homepage sports a handsome design and important intro text explaining the purpose and audience for the guide." />
+	<figcaption>
+	    Yelp's style guide homepage sports a handsome design and important intro text explaining the purpose and audience for the guide.
+	</figcaption>
+</figure>
 
 ### Lack of context
 Context is key to understanding a design system. Unfortunately, most pattern libraries out in the wild don't provide any hints as to when, how, and where their components get used. Without providing context, designers and developers don't know how global a particular pattern is, and as a result wouldn't know which pages of their app would need to be revisited, QA'd, and tested if changes were made.
 
-{% include figure.html src="../images/content/pattern-highlight-block.png" caption="'Highlight Block' looks useful, but where is this pattern being used?" %}
+<figure>
+    <img src="../images/content/pattern-highlight-block.png" alt="'Highlight Block' looks useful, but where is this pattern being used?" />
+	<figcaption>
+	    'Highlight Block' looks useful, but where is this pattern being used?
+	</figcaption>
+</figure>
 
 ### Lacking a clear methodology
 As much as I adore the pattern libraries [out there](http://styleguides.io/examples.html), I can't help but notice a lack of structure in many of them. Don't get me wrong, I think it's absolutely fantastic that teams are thinking systematically and are documenting their UI patterns. But I often feel like many pattern libraries are little more than loosely arranged sprays of modules. I think there's room for improvement.

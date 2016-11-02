@@ -16,7 +16,12 @@ My high school chemistry class was taught by a no-nonsense Vietnam vet with an e
 
 If you're like me, you may need a bit of a refresher to recall what a chemical equation looks like, so here you go:
 
-{% include figure.html src="../images/content/chemical-equation.png" caption="An example of a chemical equation showing hydrogen and oxygen atoms combining together to form a water molecule." %}
+<figure>
+    <img src="../images/content/chemical-equation.png" alt="An example of a chemical equation showing hydrogen and oxygen atoms combining together to form a water molecule." />
+	<figcaption>
+	    An example of a chemical equation showing hydrogen and oxygen atoms combining together to form a water molecule.
+	</figcaption>
+</figure>
 
 Chemical reactions are represented by chemical equations, which often show how atomic elements combine together to form molecules. In the example above, we see how hydrogen and oxygen combine together to form water molecules.
 
@@ -28,7 +33,12 @@ In the natural world, **atomic elements combine together to form molecules. Thes
 
 Of course, I'm simplifying the incredibly rich composition of the universe, but the basic gist remains: atoms combine together to form molecules, which further combine to form organisms. This atomic theory means that all matter in the known universe can be broken down into a finite set of atomic elements:
 
-{% include figure.html src="../images/content/periodic-table.png" caption="The periodic table of chemical elements." %}
+<figure>
+    <img src="../images/content/periodic-table.png" alt="The periodic table of chemical elements." />
+	<figcaption>
+	    The periodic table of chemical elements.
+	</figcaption>
+</figure>
 
 Apparently Mr. Rae's strategy of having students mind-numbingly balance tons of chemical equations worked, because I'm coming back to it all these years later for inspiration on how to approach interface design.
 
@@ -37,7 +47,12 @@ By now you may be wondering why we're talking about atomic theory, and maybe you
 
 We discussed earlier how all matter in the universe can be broken down into a finite set of atomic elements. As it happens, our interfaces can be broken down into a similar finite set of elements. [Josh Duck's Periodic Table of HTML Elements](http://smm.zoomquiet.io/data/20110511083224/index.html) beautifully articulates how all of our websites, apps, intranets, hoobadyboops, and whatevers are all composed of the same HTML elements.
 
-{% include figure.html src="../images/content/html-periodic-table.png" caption="The periodic table of HTML elements by Josh Duck." %}
+<figure>
+    <img src="../images/content/html-periodic-table.png" alt="The periodic table of HTML elements by Josh Duck." />
+	<figcaption>
+	    The periodic table of HTML elements by Josh Duck.
+	</figcaption>
+</figure>
 
 Because we're starting with a similar finite set of building blocks, we can apply that same process that happens in the natural world to design and develop our user interfaces.
 
@@ -51,29 +66,50 @@ Enter atomic design.
 4. Templates
 5. Pages
 
-{% include figure.html src="../images/content/atomic-design-process.png" caption="Atomic design is atoms, molecules, organisms, templates, and pages concurrently working together to create effective interface design systems." %}
+<figure>
+    <img src="../images/content/atomic-design-process.png" alt="Atomic design is atoms, molecules, organisms, templates, and pages concurrently working together to create effective interface design systems." />
+	<figcaption>
+	    Atomic design is atoms, molecules, organisms, templates, and pages concurrently working together to create effective interface design systems.
+	</figcaption>
+</figure>
 
 **Atomic design is not a linear process**, but rather a mental model to help us think of our user interfaces as both a cohesive whole and a collection of parts *at the same time*. Each of the five stages plays a key role in the hierarchy of our interface design systems. Let's dive into each stage in a bit more detail.
 
 ## Atoms
-{% include figure.html src="../images/content/atomic-design-atoms.png" caption="" %}
+
+<figure>
+    <img src="../images/content/atomic-design-atoms.png" alt="Atomic Design Atoms" />
+</figure>
 
 If atoms are the basic building blocks of matter, then the **atoms of our interfaces serve as the foundational building blocks that comprise all our user interfaces**. These atoms include [basic HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) like form labels, inputs, buttons, and others that can't be broken down any further without ceasing to be functional.
 
-{% include figure.html src="../images/content/atoms-form-elements.png" caption="Atoms include basic HTML tags like inputs, labels, and buttons." %}
+<figure>
+    <img src="../images/content/atoms-form-elements.png" alt="Atoms include basic HTML tags like inputs, labels, and buttons." />
+	<figcaption>
+	    Atoms include basic HTML tags like inputs, labels, and buttons.
+	</figcaption>
+</figure>
 
 Each atom in the natural world has its own unique properties. A hydrogen atom contains one electron, while a helium atom contains two. These intrinsic chemical properties have profound effects on their application (for example, the Hindenburg explosion was so catastrophic because the airship was filled with extremely flammable hydrogen gas versus inert helium gas). In the same manner, each interface atom has its own unique properties, such as the dimensions of a hero image, or the font size of a primary heading. These innate properties influence how each atom should be applied to the broader user interface system.
 
 In the context of a pattern library, atoms demonstrate all your base styles at a glance, which can be a helpful reference to keep coming back to as you develop and maintain your design system. But like atoms in the natural world, interface atoms don't exist in a vacuum and only really come to life with application.
 
 ## Molecules
-{% include figure.html src="../images/content/atomic-design-molecules.png" caption="" %}
+
+<figure>
+    <img src="../images/content/atomic-design-molecules.png" alt="Atomic Design molecules" />
+</figure>
 
 In chemistry, molecules are groups of atoms bonded together that take on distinct new properties. For instance, water molecules and hydrogen peroxide molecules have their own unique properties and behave quite differently, even though they're made up of the same atomic elements (hydrogen and oxygen).
 
 In interfaces, **molecules are relatively simple groups of UI elements functioning together as a unit**. For example, a form label, search input, and button can join together to create a search form molecule.
 
-{% include figure.html src="../images/content/molecule-search-form.png" caption="A search form molecule is composed of a label atom, input atom, and button atom." %}
+<figure>
+    <img src="../images/content/molecule-search-form.png" alt="A search form molecule is composed of a label atom, input atom, and button atom." />
+	<figcaption>
+	    A search form molecule is composed of a label atom, input atom, and button atom.
+	</figcaption>
+</figure>
 
 When combined, these abstract atoms suddenly have purpose. The label atom now defines the input atom. Clicking the button atom now submits the form. The result is a simple, portable, reusable component that can be dropped in anywhere search functionality is needed.
 
@@ -84,36 +120,62 @@ Creating simple components helps UI designers and developers adhere to the [sing
 Now we have simple, functional, reusable components that we can put into a broader context. Enter organisms!
 
 ## Organisms
-{% include figure.html src="../images/content/atomic-design-organisms.png" caption="" %}
+
+<figure>
+    <img src="../images/content/atomic-design-organisms.png" alt="Atomic Design organisms" />
+</figure>
 
 **Organisms are relatively complex UI components composed of groups of molecules and/or atoms and/or other organisms**. These organisms form distinct sections of an interface.
 
 Let's revisit our search form molecule. A search form can often be found in the header of many web experiences, so let's put that search form molecule into the context of a header organism.
 
-{% include figure.html src="../images/content/organism-header.png" caption="This header organism is composed of a search form molecule, logo atom, and primary navigation molecule." %}
+<figure>
+    <img src="../images/content/organism-header.png" alt="This header organism is composed of a search form molecule, logo atom, and primary navigation molecule." />
+	<figcaption>
+	    This header organism is composed of a search form molecule, logo atom, and primary navigation molecule.
+	</figcaption>
+</figure>
 
 The header forms a standalone section of an interface, even though it contains several smaller pieces of interface with their own unique properties and functionality.
 
 Organisms can consist of similar or different molecule types. A header organism might consist of dissimilar elements such as a logo image, primary navigation list, and search form. We see these types of organisms on almost every website we visit.
 
-{% include figure.html src="../images/content/organisms-headers.png" caption="Organisms like website headers consist of smaller molecules like primary navigation, search forms, utility navigation, and logos." %}
+<figure>
+    <img src="../images/content/organisms-headers.png" alt="Organisms like website headers consist of smaller molecules like primary navigation, search forms, utility navigation, and logos." />
+	<figcaption>
+	    Organisms like website headers consist of smaller molecules like primary navigation, search forms, utility navigation, and logos.
+	</figcaption>
+</figure>
 
 While some organisms might consist of different types of molecules, other organisms might consist of the same molecule repeated over and over again. For instance, visit a category page of almost any e-commerce website and you'll see a listing of products displayed in some form of grid.
 
-{% include figure.html src="../images/content/organisms-product-grid.png" caption="A product grid organism on Gap's e-commerce website consists of the same product item molecule repeated again and again." %}
+<figure>
+    <img src="../images/content/organisms-product-grid.png" alt="A product grid organism on Gap's e-commerce website consists of the same product item molecule repeated again and again." />
+	<figcaption>
+	    A product grid organism on Gap's e-commerce website consists of the same product item molecule repeated again and again.
+	</figcaption>
+</figure>
 
 Building up from molecules to more elaborate organisms provides designers and developers with an important sense of context. Organisms demonstrate those smaller, simpler components in action and serve as distinct patterns that can be used again and again. The product grid organism can be employed anywhere a group of products needs to be displayed, from category listings to search results to related products.
 
 Now that we have organisms defined in our design system, we can break our chemistry analogy and apply all these components to something that resembles a web page!
 
 ## Templates
-{% include figure.html src="../images/content/atomic-design-templates.png" caption="" %}
+
+<figure>
+    <img src="../images/content/atomic-design-templates.png" alt="Atomic Design templates" />
+</figure>
 
 Now, friends, it's time to say goodbye to our chemistry analogy. The language of atoms, molecules, and organisms carries with it a helpful hierarchy for us to deliberately construct the components of our design systems. But ultimately we must step into language that is more appropriate for our final output and makes more sense to our clients, bosses, and colleagues. Trying to carry the chemistry analogy too far might confuse your stakeholders and cause them to think you're a bit crazy. Trust me.
 
 **Templates are page-level objects that place components into a layout and articulate the design's underlying content structure.** To build on our previous example, we can take the header organism and apply it to a homepage template.
 
-{% include figure.html src="../images/content/template.png" caption="The homepage template consists of organisms and molecules applied to a layout." %}
+<figure>
+    <img src="../images/content/template.png" alt="The homepage template consists of organisms and molecules applied to a layout." />
+	<figcaption>
+	    The homepage template consists of organisms and molecules applied to a layout.
+	</figcaption>
+</figure>
 
 This homepage template displays all the necessary page components functioning together, which **provides context for these relatively abstract molecules and organisms**. When crafting an effective design system, it's critical to demonstrate how components look and function together in the context of a layout to prove the parts add up to a well-functioning whole. We'll discuss this more in a bit.
 
@@ -125,16 +187,29 @@ Mark Boulton discusses the importance of defining the underlying content structu
 
 By defining a page's skeleton we're able to create a system that can account for a variety of dynamic content, all while providing needed guardrails for the types of content that populates certain design patterns. For example, the homepage template for Time Inc. shows a few key components in action while also demonstrating content structure regarding image sizes and character lengths:
 
-{% include figure.html src="../images/content/template-timeinc-homepage.png" caption="Time Inc.'s homepage template demonstrates the content's underlying content structure." %}
+<figure>
+    <img src="../images/content/template-timeinc-homepage.png" alt="Time Inc.'s homepage template demonstrates the content's underlying content structure." />
+	<figcaption>
+	    Time Inc.'s homepage template demonstrates the content's underlying content structure.
+	</figcaption>
+</figure>
 
 Now that we've established our pages' skeletal system, let's put some meat on them bones!
 
 ## Pages
-{% include figure.html src="../images/content/atomic-design-pages.png" caption="" %}
+
+<figure>
+    <img src="../images/content/atomic-design-pages.png" alt="Atomic design pages" />
+</figure>
 
 **Pages are specific instances of templates that show what a UI looks like with real representative content in place**. Building on our previous example, we can take the homepage template and pour representative text, images, and media into the template to show real content in action.
 
-{% include figure.html src="../images/content/page.png" caption="The page stage replaces placeholder content with real representative content to bring the design system to life." %}
+<figure>
+    <img src="../images/content/page.png" alt="The page stage replaces placeholder content with real representative content to bring the design system to life." />
+	<figcaption>
+	    The page stage replaces placeholder content with real representative content to bring the design system to life.
+	</figcaption>
+</figure>
 
 The page stage is the most concrete stage of atomic design, and it's important for some rather obvious reasons. After all, this is what users will see and interact with when they visit your experience. This is what your stakeholders will sign off. And this is where you see all those components coming together to form a beautiful and functional user interface. Exciting!
 
@@ -142,7 +217,12 @@ In addition to demonstrating the final interface as your users will see it, **pa
 
 When we pour real representative content into Time Inc.'s homepage template, we're able to see how all those underlying design patterns hold up.
 
-{% include figure.html src="../images/content/page-timeinc-homepage.png" caption="At the page stage, we're able to see what Time Inc.'s homepage looks like with real representative content in place. With actual content in place, we're able to see if the UI components making up the page properly serve the content being poured into them." %}
+<figure>
+    <img src="../images/content/page-timeinc-homepage.png" alt="At the page stage, we're able to see what Time Inc.'s homepage looks like with real representative content in place. With actual content in place, we're able to see if the UI components making up the page properly serve the content being poured into them." />
+	<figcaption>
+	    At the page stage, we're able to see what Time Inc.'s homepage looks like with real representative content in place. With actual content in place, we're able to see if the UI components making up the page properly serve the content being poured into them.
+	</figcaption>
+</figure>
 
 We must create systems that establish reusable design patterns and also accurately reflect the reality of the content we're putting inside of those patterns.
 
@@ -169,7 +249,12 @@ So why go through all this rigamarole? What's atomic design good for? These are 
 ### The part and the whole
 **One of the biggest advantages atomic design provides is the ability to quickly shift between abstract and concrete.** We can simultaneously see our interfaces broken down to their atomic elements and also see how those elements combine together to form our final experiences.
 
-{% include figure.html src="../images/content/atomic-design-abstract-concrete.png" caption="Atomic design allows designers to traverse between abstract and concrete." %}
+<figure>
+    <img src="../images/content/atomic-design-abstract-concrete.png" alt="Atomic design allows designers to traverse between abstract and concrete." />
+	<figcaption>
+	    Atomic design allows designers to traverse between abstract and concrete.
+	</figcaption>
+</figure>
 
 In his book <cite>The Shape of Design</cite>, Frank Chimero beautifully articulates the power this traversal provides:
 
@@ -190,7 +275,9 @@ A well-crafted design system caters to the content that lives inside it, and wel
 
 Atomic design gives us a language for discussing the structure of our UI patterns and also the content that goes inside those patterns. While there is a clean separation between the content structure skeleton (templates) and the final content (pages), atomic design recognizes the two very much influence each other. For instance, take the following example:
 
-{% include figure.html src="../images/content/templates-pages-users-example.png" caption="" %}
+<figure>
+    <img src="../images/content/templates-pages-users-example.png" alt="" />
+</figure>
 
 On the left we see the UI's content skeleton, which consists of the same *person block molecule* repeated again and again. On the right we see what happens when we populate each instance of the person block molecule with representative content. Visualizing the content skeleton and the representative final content allows us to create patterns that accurately reflect the content that lives inside them. If a person's name were to wrap onto five lines within the pattern, we would need to address that broken behavior at a more atomic level.
 
@@ -214,7 +301,12 @@ Atomic design is a concept born of the web. After all, your lowly author is a we
 
 You can apply the atomic design methodology to the user interface of any software: Microsoft Word, Keynote, Photoshop, your bank's ATM, whatever. To demonstrate, let's apply atomic design to the native mobile app Instagram.
 
-{% include figure.html src="../images/content/instagram-atomic.png" caption="Atomic design applied to the native mobile app Instagram." %}
+<figure>
+    <img src="../images/content/instagram-atomic.png" alt="Atomic design applied to the native mobile app Instagram." />
+	<figcaption>
+	    Atomic design applied to the native mobile app Instagram.
+	</figcaption>
+</figure>
 
 Let's walk through this atomized Instagram interface:
 

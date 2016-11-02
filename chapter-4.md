@@ -56,7 +56,12 @@ Many are familiar with the concept of a [content inventory](https://en.wikipedia
 
 An interface inventory is similar to a content inventory, only instead of sifting through and categorizing content, you’re taking stock of and categorizing all the components that make up your user interface. **An interface inventory is a comprehensive collection of the bits and pieces that make up your user interface.**
 
-{% include figure.html src="../images/content/united-buttons.jpg" caption="Here's a collection of all the unique button styles found on the homepage of United.com. An interface inventory rounds up and categorizes all the unique patterns that make up an interface." %}
+<figure>
+    <img src="../images/content/united-buttons.jpg" alt="Here's a collection of all the unique button styles found on the homepage of United.com. An interface inventory rounds up and categorizes all the unique patterns that make up an interface." />
+	<figcaption>
+	    Here's a collection of all the unique button styles found on the homepage of United.com. An interface inventory rounds up and categorizes all the unique patterns that make up an interface.
+	</figcaption>
+</figure>
 
 ### Conducting an interface audit
 How do you go about conducting an interface audit? How do you round up all the components that make up your UI? The simple answer is *screenshots*. Lots of them! Creating an interface inventory requires screenshotting and loosely categorizing all the unique components that make up your user interfaces. While that's a relatively straightforward endeavor, there are some important considerations to keep in mind to make the inventory as useful as possible. Let's go through the process for creating a successful interface inventory.
@@ -75,7 +80,12 @@ The interface inventory exercise generates a ton of screenshots, so naturally yo
 - Google Docs or Microsoft Word
 - Google Slides (If you're interested, I've created a [Google Slides interface inventory template](https://docs.google.com/presentation/d/1GqFmiDV_NqKi36fXAwD3WTJL5-JV-gHL7XVD2fVeL0M/edit?usp=sharing))
 
-{% include figure.html src="../images/content/interface-inventory-template.png" caption="It's important for all participants to capture screenshots using the same software so they can be combined later. I've created a Google Slides interface inventory template for teams to use as a starting point." %}
+<figure>
+    <img src="../images/content/interface-inventory-template.png" alt="It's important for all participants to capture screenshots using the same software so they can be combined later. I've created a Google Slides interface inventory template for teams to use as a starting point." />
+	<figcaption>
+	    It's important for all participants to capture screenshots using the same software so they can be combined later. I've created a Google Slides interface inventory template for teams to use as a starting point.
+	</figcaption>
+</figure>
 
 Ultimately, it doesn’t really matter what tool you use, but everyone should agree on a single tool to make it easier to combine at the end of the exercise. I’ve found online slide-building software like Google Slides to be very effective as it provides a canvas for free-form image positioning, they're chunked out into slides for easier categorization, and they're web-based so can be shared with ease.
 
@@ -104,9 +114,19 @@ What interface element categories should be captured? Obviously, the categories 
 - **Colors**: capture all unique colors presented in the interface. This category can be aided by fantastic style guide bootstrapping tools like [CSS Stats](http://cssstats.com/) and [Stylify Me](http://stylifyme.com/).
 - **Animation**: animation is an elemental aspect of user interfaces, and should therefore be documented. This requires using screen recording software such as QuickTime to capture any UI element that moves, fades, shakes, transitions, or shimmies across the screen.
 
-{% include figure.html src="../images/content/pnc-forms.png" caption="An example of various form elements captured in an interface inventory for a major bank's website." %}
+<figure>
+    <img src="../images/content/pnc-forms.png" alt="An example of various form elements captured in an interface inventory for a major bank's website." />
+	<figcaption>
+	    An example of various form elements captured in an interface inventory for a major bank's website.
+	</figcaption>
+</figure>
 
-{% include figure.html src="../images/content/pnc-buttons.png" caption="An example of unique button patterns captured in an interface inventory for a major bank's website." %}
+<figure>
+    <img src="../images/content/pnc-buttons.png" alt="An example of unique button patterns captured in an interface inventory for a major bank's website." />
+	<figcaption>
+	    An example of unique button patterns captured in an interface inventory for a major bank's website.
+	</figcaption>
+</figure>
 
 Again, these categories aren’t set in stone and will vary based on the nature of the user interface you're dealing with. Of course, it's important to add, subtract, or modify these categories to best fit your organizational needs.
 
@@ -163,7 +183,12 @@ You have a decision to make: focus solely on creating the whole while ignoring t
 
 One way to approach a LEGO project is to simply dump the pieces out of the box onto a table, roll up your sleeves, then start building your creation.
 
-{% include figure.html src="../images/content/lego-2.png" caption="One way to approach a LEGO project is to simply dump the pieces out onto a table, and rummage through the pile to find the pieces you need. Image adapted from *Multiscreen UX Design* by Wolfram Nagel." %}
+<figure>
+    <img src="../images/content/lego-2.png" alt="One way to approach a LEGO project is to simply dump the pieces out onto a table, and rummage through the pile to find the pieces you need. Image adapted from *Multiscreen UX Design* by Wolfram Nagel." />
+	<figcaption>
+	    One way to approach a LEGO project is to simply dump the pieces out onto a table, and rummage through the pile to find the pieces you need. Image adapted from *Multiscreen UX Design* by Wolfram Nagel.
+	</figcaption>
+</figure>
 
 This approach to a LEGO project is certainly a viable strategy, even if it is unapologetically haphazard. The only time you'd pay attention to the pile of bricks is when you're sifting through it to find the specific piece you need.
 
@@ -171,13 +196,23 @@ This is not dissimilar to how many digital projects are approached. The client n
 
 Of course, there is another way to approach your LEGO and digital projects. Rather than diving headfirst into constructing the final work, you can take the time to take stock of the available pieces and organize them in such a way that they become more useful.
 
-{% include figure.html src="../images/content/lego-3.png" caption="Taking the time to organize the pieces that make up your final creations allows you to approach the work in a more deliberate and efficient manner. Image adapted from *Multiscreen UX Design* by Wolfram Nagel." %}
+<figure>
+    <img src="../images/content/lego-3.png" alt="Taking the time to organize the pieces that make up your final creations allows you to approach the work in a more deliberate and efficient manner. Image adapted from *Multiscreen UX Design* by Wolfram Nagel." />
+	<figcaption>
+	    Taking the time to organize the pieces that make up your final creations allows you to approach the work in a more deliberate and efficient manner. Image adapted from *Multiscreen UX Design* by Wolfram Nagel.
+	</figcaption>
+</figure>
 
 No doubt organizing takes time, planning, and effort. It doesn't come for free. The fact that this configuring isn't visibly represented in the final product may tempt us to say it serves as a distraction to the real work that needs to be done. Why bother?
 
 **By taking the time to organize the parts, you can now create the whole in a more realistic, deliberate, and efficient manner.** Creating a library of your available materials allows you to approach the project in a more methodical way, and saves immense amounts of time in the process. Rather than rummaging through a haphazard pile of bricks and burning time reinventing patterns, you can create an organized system of components that will help produce better work in a shorter amount of time.
 
-{% include figure.html src="../images/content/lego-4.png" caption="Taking the time to organize the pieces that make up your final creations allows you to work in a more deliberate and efficient manner. Rather than sifting through a haphazard pile of bricks, an organized inventory of components can produce better, faster work. Image adapted from *Multiscreen UX Design* by Wolfram Nagel." %}
+<figure>
+    <img src="../images/content/lego-4.png" alt="Taking the time to organize the pieces that make up your final creations allows you to work in a more deliberate and efficient manner. Rather than sifting through a haphazard pile of bricks, an organized inventory of components can produce better, faster work. Image adapted from *Multiscreen UX Design* by Wolfram Nagel." />
+	<figcaption>
+	    Taking the time to organize the pieces that make up your final creations allows you to work in a more deliberate and efficient manner. Rather than sifting through a haphazard pile of bricks, an organized inventory of components can produce better, faster work. Image adapted from *Multiscreen UX Design* by Wolfram Nagel.
+	</figcaption>
+</figure>
 
 As far as your clients and stakeholders are concerned, the final product is still being produced. So long as you're showing progress on the final work, you can decide how much of your internal process you're willing to expose. The fact that you're creating a design system to produce the final product is really of no concern to them; it's simply a decision your team is making to create better work.
 
@@ -203,19 +238,34 @@ These additional design considerations are vital for creating great digital work
 
 How did we get to the point where we sell and design websites like they're static images? During the formative years of the web we created experiences meant to be consumed solely by desktop computers, which is understandable since desktops were really the only game in town. The real estate provided by desktop screens made the idea of simply translating a PDF onto the web feasible and enticing. So that's what we did—and for a while it actually worked!
 
-{% include figure.html src="../images/content/this-is-the-web-1.png" caption="Once upon a time, the web was primarily consumed on desktop screens, hence this crusty-looking, old machine." %}
+<figure>
+    <img src="../images/content/this-is-the-web-1.png" alt="Once upon a time, the web was primarily consumed on desktop screens, hence this crusty-looking, old machine." />
+	<figcaption>
+	    Once upon a time, the web was primarily consumed on desktop screens, hence this crusty-looking, old machine.
+	</figcaption>
+</figure>
 
 However, this didn't come without consequences. This print-like perspective of the web reinforced the notion that web designs, like their offline counterparts, could and should look the same in every environment. It also kept the focus on how a web design *looked* rather than how it *worked*, ignoring all the unique characteristics of this rich new medium. Moreover, it strengthened the belief that we could apply the same linear processes used to create print work to our digital work.
 
 Time went by, of course, and mobile exploded, technology improved, and the web become the incredibly large and diverse landscape we know today. Gone are the desktop-only days of yore, and in their place is a time of smartphones, dumb phones, tablets, phablets, netbooks, notebooks, e-readers, wearables, TVs, game consoles, car dashboards, and so much more.
 
-{% include figure.html src="../images/content/this-is-the-web-2.png" caption="This is the web: a potpourri of devices, screen sizes, capabilities, form factors, network speeds, input types, and more." %}
+<figure>
+    <img src="../images/content/this-is-the-web-2.png" alt="This is the web: a potpourri of devices, screen sizes, capabilities, form factors, network speeds, input types, and more." />
+	<figcaption>
+	    This is the web: a potpourri of devices, screen sizes, capabilities, form factors, network speeds, input types, and more.
+	</figcaption>
+</figure>
 
 The diversity of today's web landscape has shattered the [consensual hallucination](https://adactio.com/journal/4443) of the desktop Web, where we could simply bolt on the mentalities and processes of print to this new medium. Simply looking at a smartphone, tablet, and desktop machine next to one another quickly erodes the assumption that a web design should look the same in every environment.
 
 We're still at the very beginning of the Big Bang of connected devices. The device and web landscape of tomorrow will undoubtedly be even bigger and diverse than today's. In addition to current devices and the nascent technologies already on the horizon, the future web will involve technologies and ideas that haven't yet been conceived.
 
-{% include figure.html src="../images/content/this-is-the-web-3.png" caption="In addition to all the web-capable devices we concern ourselves with today, we must understand that the device and web landscape is becoming bigger and more diverse all the time." %}
+<figure>
+    <img src="../images/content/this-is-the-web-3.png" alt="In addition to all the web-capable devices we concern ourselves with today, we must understand that the device and web landscape is becoming bigger and more diverse all the time." />
+	<figcaption>
+	    In addition to all the web-capable devices we concern ourselves with today, we must understand that the device and web landscape is becoming bigger and more diverse all the time.
+	</figcaption>
+</figure>
 
 **I've found the three previous images to be a tremendously helpful shorthand for helping clients, colleagues, and stakeholders understand the reality of the web landscape.** With this newfound understanding, everyone becomes a whole lot more receptive to updating their processes and workflows to create great work for this unique medium.
 
@@ -260,7 +310,12 @@ After plugging the front-end code into a CMS, frantically finalizing the site's 
 
 I hope this story reads as a work of fiction to you, but based on my own experiences and conversations with countless others, I'm guessing you've experienced this tale of woe at one point or another. It may even hit home like a punch in the gut. Whether you've endured this process firsthand or not, it's important to recognize that the Henry Ford-esque [waterfall process](https://en.wikipedia.org/wiki/Waterfall_model) increasingly isn't likely to result in great digital work.
 
-{% include figure.html src="../images/content/waterfall-1.png" caption="The waterfall process, where disciplines pass off work to each other in sequential order, isn't likely to result in great digital work." %}
+<figure>
+    <img src="../images/content/waterfall-1.png" alt="The waterfall process, where disciplines pass off work to each other in sequential order, isn't likely to result in great digital work." />
+	<figcaption>
+	    The waterfall process, where disciplines pass off work to each other in sequential order, isn't likely to result in great digital work.
+	</figcaption>
+</figure>
 
 The waterfall process may make sense for print, architecture, manufacturing, and other physical media since mistakes and changes are extraordinarily costly. If a team overlooks an error made early in the process, they'll pay dearly for it later. However, **the digital world isn't constrained by the same limitations as the physical one. Pixels are cheap.** Changes can happen in an instant, hypotheses can be quickly tested out, and designs and code can be iterated on again and again.
 
@@ -268,7 +323,12 @@ The waterfall process hinges on the premise that work must flow in a sequential 
 
 That work will happen in parallel doesn't imply that everyone will be guns blazing throughout the entire process. Of course, the bulk of research, information architecture, and other elemental aspects of UX design will tend to happen earlier in the process, but that work shouldn't delay the other disciplines from starting their jobs. And even when the bulk of a person's *active* work is done, they should never simply fade away from the project. It's crucial for every discipline to continue to consult with the others to ensure their vision makes it into the final product. So rather than a rigid, sequential waterfall process, a more collaborative process over time looks something like this:
 
-{% include figure.html src="../images/content/waterfall-2.png" caption="A more collaborative workflow involves a cross-disciplinary team working together throughout the entire process. While active work will wax and wane, each discipline continues to consult with the other team members to ensure their insights are present in the final work." %}
+<figure>
+    <img src="../images/content/waterfall-2.png" alt="A more collaborative workflow involves a cross-disciplinary team working together throughout the entire process. While active work will wax and wane, each discipline continues to consult with the other team members to ensure their insights are present in the final work." />
+	<figcaption>
+	    A more collaborative workflow involves a cross-disciplinary team working together throughout the entire process. While active work will wax and wane, each discipline continues to consult with the other team members to ensure their insights are present in the final work.
+	</figcaption>
+</figure>
 
 #### Development is design
 When a previous employer discovered I wrote HTML, CSS, and presentational JavaScript, they moved me to sit with the engineers and back-end developers. Before too long I was being asked, "Hey, Brad. How long is that middleware going to take to build?" and "Can you normalize this database real quick?"
@@ -305,7 +365,12 @@ The sculptor starts with a giant slab of rock and starts chipping away. A crude 
 
 With the general shape of the sculpture roughed out, the artist then begins homing in on specific sections of the piece. For instance, they may begin with the face, moving up close to carve the shape of the eyes, nose, and mouth. After several passes, they then move on to the arms, and then begin detailing the legs. At regular intervals the artist steps back to see how their detailed work affects the overall sculpture. This process continues until the sculpture is complete and everyone is pleased with the results.
 
-{% include figure.html src="../images/content/stone-sculptor.jpg" caption="An iterative digital process is similar to subtractive stone sculpture, where fidelity is built up over many iterations. Image credit: <a href='https://flic.kr/p/dLrf6w'>Mike Beauregard on Flickr</a>" %}
+<figure>
+    <img src="../images/content/stone-sculptor.jpg" alt="An iterative digital process is similar to subtractive stone sculpture, where fidelity is built up over many iterations." />
+	<figcaption>
+	    An iterative digital process is similar to subtractive stone sculpture, where fidelity is built up over many iterations. Image credit: <a href='https://flic.kr/p/dLrf6w'>Mike Beauregard on Flickr</a>
+	</figcaption>
+</figure>
 
 Again, I think subtractive stone sculpture is a great analogy for a successful digital process, although unlike sculpture we have the power of *undo*!
 
@@ -328,7 +393,12 @@ In a traditional waterfall process, many UX designers have gone about this task 
 
 Rather than jumping straight into such high-fidelity documents, it's better to **start with lo-fi sketches that establish what appears on a particular screen and in what general order**. Establishing the experience's basic information architecture can be accomplished with a simple bulleted list and a conversation. For a project I did for the Greater Pittsburgh Community Food Bank, I started by stubbing out the basic information architecture for a page on a site.
 
-{% include figure.html src="../images/content/food-bank-wireframe.png" caption="Basic HTML wireframes for the Greater Pittsburgh Community Food Bank homepage." %}
+<figure>
+    <img src="../images/content/food-bank-wireframe.png" alt="Basic HTML wireframes for the Greater Pittsburgh Community Food Bank homepage." />
+	<figcaption>
+	    Basic HTML wireframes for the Greater Pittsburgh Community Food Bank homepage.
+	</figcaption>
+</figure>
 
 No one in their right mind would mistake this blocked out grayscale page as complete, but it provides more than enough information to have important conversations about the page structure and hierarchy.
 
@@ -336,13 +406,23 @@ Making lo-fi wireframes *[mobile-first](http://www.lukew.com/ff/entry.asp?933)* 
 
 These blocky grayscale wireframes help establish the necessary [content patterns](http://danielmall.com/articles/content-display-patterns/) for the screen, but UX designers can also articulate some site-wide UI patterns they anticipate using to ultimately display those content patterns. For the redesign of TechCrunch, designer [Jennifer Brook](http://jenniferbrook.co/about) defined a few site-wide UI patterns that could be used anywhere:
 
-{% include figure.html src="../images/content/techcrunch-wireframe.png" caption="For the TechCrunch website redesign, Jennifer Brook defined site-wide, gestural display patterns, which don't make assumptions about aesthetics or functionality." %}
+<figure>
+    <img src="../images/content/techcrunch-wireframe.png" alt="For the TechCrunch website redesign, Jennifer Brook defined site-wide, gestural display patterns, which don't make assumptions about aesthetics or functionality." />
+	<figcaption>
+	    For the TechCrunch website redesign, Jennifer Brook defined site-wide, gestural display patterns, which don't make assumptions about aesthetics or functionality.
+	</figcaption>
+</figure>
 
 From the image above, you can gather that the "featured island" component will show content in some fashion. Note the gestural nature of this sketch and how it doesn't make any specific assumptions about layout or functionality. The details of how this pattern will look and function will come later, but at the beginning of the project it's useful simply to define it and articulate where it might get used.
 
 As I've discovered from subsequent projects, content and display patterns can be effectively communicated in an even simpler format: the lowly spreadsheet.
 
-{% include figure.html src="../images/content/verywell-wireframe.png" caption="A simple spreadsheet can articulate what  content and display patterns go on a given page while describing their order and purpose." %}
+<figure>
+    <img src="../images/content/verywell-wireframe.png" alt="A simple spreadsheet can articulate what  content and display patterns go on a given page while describing their order and purpose." />
+	<figcaption>
+	    A simple spreadsheet can articulate what  content and display patterns go on a given page while describing their order and purpose.
+	</figcaption>
+</figure>
 
 With a few simple spreadsheet columns, we can articulate which display patterns should be included in a given template, and what content patterns they'll contain. More importantly, we're able to articulate each pattern's relative hierarchy and the role it plays on the screen. If you read the leftmost column vertically, you're effectively looking at the mobile-first view of what the UI could be.
 
@@ -360,7 +440,12 @@ A fantastic exercise for quickly establishing aesthetic values is the [20-second
 
 For each site presented, each person votes on a scale from 1 to 10, where a score of 1 means "If this were our site I would quit my job and cry myself to sleep," while a score of 10 means "If this were our site I would be absolutely ecstatic!" Instruct participants to consider visual properties they find interesting, such as typography, color, density, layout, illustration style, and general vibe.
 
-{% include figure.html src="../images/content/foodbank-20-second.jpg" caption="For the Pittsburgh Food Bank website redesign kick-off, we showed stakeholders a variety of relevant websites for twenty seconds each. The participants voted on how happy they would be if the particular site was theirs. Then we discussed the results." %}
+<figure>
+    <img src="../images/content/foodbank-20-second.jpg" alt="For the Pittsburgh Food Bank website redesign kick-off, we showed stakeholders a variety of relevant websites for twenty seconds each. The participants voted on how happy they would be if the particular site was theirs. Then we discussed the results." />
+	<figcaption>
+	    For the Pittsburgh Food Bank website redesign kick-off, we showed stakeholders a variety of relevant websites for twenty seconds each. The participants voted on how happy they would be if the particular site was theirs. Then we discussed the results.
+	</figcaption>
+</figure>
 
 When the exercise is complete, quickly tally up the scores and come back to the group to discuss the results. Have a conversation about the sites that received the five lowest scores, the five highest scores, and the most contentious scores (sites which some people ranked very high and others ranked very low). The participants should explain why they were attracted or repulsed by a particular site, and work through differences in opinions with the group.
 
@@ -371,7 +456,12 @@ Once again, visual designers' first instinct is often to jump right into creatin
 
 It's essential to establish a solid visual direction for the project, so how does a visual designer do that without burning a ton of time on up-front high-fidelity comps? That's the question that designer Samantha Warren answered when she created [style tiles](http://styletil.es/), a deliverable that's more tangible than a mood board but not as high-fidelity as a fully baked comp.
 
-{% include figure.html src="../images/content/ew-style-tile.png" caption="For the Entertainment Weekly website redesign project,  visual designers used style tiles to explore color, type, texture, and more." %}
+<figure>
+    <img src="../images/content/ew-style-tile.png" alt="For the Entertainment Weekly website redesign project,  visual designers used style tiles to explore color, type, texture, and more." />
+	<figcaption>
+	    For the Entertainment Weekly website redesign project,  visual designers used style tiles to explore color, type, texture, and more.
+	</figcaption>
+</figure>
 
 Style tiles (along with their in-browser counterparts, [style prototypes](http://sparkbox.github.io/style-prototype/)) allow designers to explore color, typography, texture, icons, and other aspects of design atmosphere without making assumptions about layout or worrying about polish. They can be designed much faster because they're not encumbered by the expectations of high-fidelity comps, which means feedback and discussion can happen sooner.
 
@@ -384,7 +474,12 @@ While style tiles are great for exploring design atmosphere, they're still a bit
 
 Somewhere in between style tiles and full comps live [*element collages*](http://danielmall.com/articles/rif-element-collages/), which are collections of UI component design explorations. Element collages provide a playground for designers to apply design atmosphere to actual interface elements, yet still be free from layout and highly polished presentation.
 
-{% include figure.html src="../images/content/ew-element-collage.jpg" caption="An element collage for the Entertainment Weekly redesign applied color, typography, and texture to actual interface elements. These collages enabled important conversations about the aesthetic direction of the project." %}
+<figure>
+    <img src="../images/content/ew-element-collage.jpg" alt="An element collage for the Entertainment Weekly redesign." />
+	<figcaption>
+	    An element collage for the Entertainment Weekly redesign applied color, typography, and texture to actual interface elements. These collages enabled important conversations about the aesthetic direction of the project.
+	</figcaption>
+</figure>
 
 Like style tiles, element collages are meant to facilitate discussion about the aesthetic direction of the project. It's very clear these collages aren't an actual website, but stakeholders can still get a sense of what the site *could* look like. Conversation about these element collages can give visual designers more ideas and direction about where to take the design next, and because of their lo-fi nature, designers can quickly iterate and evolve ideas.
 
@@ -395,7 +490,12 @@ As we discussed earlier, front-end developers are often relegated to crude produ
 
 In the restaurant business, an important yet unsung role is that of the prep chef. A prep chef chops vegetables, marinades meat, and makes salads in preparation for the following day's work. By having ingredients prepared ahead of time, the kitchen staff can focus on collaboration and cooking rather than menial tasks. Without the up-front work of the prep chef, the flow of the main chefs would be interrupted and the fast pace of the kitchen would grind to a halt.
 
-{% include figure.html src="../images/content/food-prep.jpg" caption="A prep chef chops vegetables, marinades meat, makes salads, and prepares other ingredients so that the main kitchen staff can focus on cooking meals and collaboration." %}
+<figure>
+    <img src="../images/content/food-prep.jpg" alt="A prep chef chops vegetables, marinades meat, makes salads, and prepares other ingredients so that the main kitchen staff can focus on cooking meals and collaboration." />
+	<figcaption>
+	    A prep chef chops vegetables, marinades meat, makes salads, and prepares other ingredients so that the main kitchen staff can focus on cooking meals and collaboration.
+	</figcaption>
+</figure>
 
 Front-end developers need to be the prep chefs of the web design process. **If developers aren't coding from day one of the project, there's something wrong with the process.** "But Brad," I can hear you saying, "how can I start coding if I don't know what I'm supposed to code?"
 
@@ -427,19 +527,34 @@ Turning explorations into finished patterns is a blurry, imperfect process. This
 
 For the TechCrunch project, Dan Mall riffed on the team's initial design conversations to create a visual exploration for the site's header. This piece of interface was a logical place to start since the header is one of the most prominent and branded elements on the page. After a little bit of work, we hopped on a call to discuss the exploration with the client.
 
-{% include figure.html src="../images/content/techcrunch-header-element-collage.png" caption="Dan Mall created an element collage to explore an aesthetic direction for the global header." %}
+<figure>
+    <img src="../images/content/techcrunch-header-element-collage.png" alt="Dan Mall created an element collage to explore an aesthetic direction for the global header." />
+	<figcaption>
+	    Dan Mall created an element collage to explore an aesthetic direction for the global header.
+	</figcaption>
+</figure>
 
 Even though this design artifact was a simple in-progress exploration, we were able to have important conversations about the header's aesthetics, hierarchy, and suggested functionality. Because the header was presented sans context, we were able to discuss the issues pertaining to the header without stakeholders' focus wandering to other page elements.
 
 Though the client didn't know it, I had been building out a working HTML version of the header behind the scenes in Pattern Lab.
 
-{% include figure.html src="../images/content/techcrunch-header-prototype.png" caption="Using Dan's exploration as a reference, I created an HTML version of the global header in Pattern Lab. This grayscale prototype helped us demonstrate interactivity and how the header would adapt across the resolution spectrum." %}
+<figure>
+    <img src="../images/content/techcrunch-header-prototype.png" alt="Using Dan's exploration as a reference, I created an HTML version of the global header in Pattern Lab. This grayscale prototype helped us demonstrate interactivity and how the header would adapt across the resolution spectrum." />
+	<figcaption>
+	    Using Dan's exploration as a reference, I created an HTML version of the global header in Pattern Lab. This grayscale prototype helped us demonstrate interactivity and how the header would adapt across the resolution spectrum.
+	</figcaption>
+</figure>
 
 This grayscale prototype allowed us to demonstrate interactivity and responsiveness, which led to even more discussion. Collectively we proposed changes to the header's layout and functionality, and I was able to make changes using the browser's development tools during the call. Suddenly, the entire team and stakeholders were actively participating in the design process!
 
 With input from the stakeholders and team, we iterated over the header pattern to massage the layout, IA, aesthetic details, and functionality to arrive at the solution we ultimately launched with.
 
-{% include figure.html src="../images/content/techcrunch-header-complete.png" caption="The header we launched with was the culmination of plenty of conversations and decisions around the pattern's content, design, and functionality." %}
+<figure>
+    <img src="../images/content/techcrunch-header-complete.png" alt="The header we launched with was the culmination of plenty of conversations and decisions around the pattern's content, design, and functionality." />
+	<figcaption>
+	    The header we launched with was the culmination of plenty of conversations and decisions around the pattern's content, design, and functionality.
+	</figcaption>
+</figure>
 
 Obviously the header pattern doesn't exist in a vacuum. Within Pattern Lab, the header was included in every template using Mustache's include pattern that we discussed in chapter 3.
 
@@ -449,7 +564,12 @@ Obviously the header pattern doesn't exist in a vacuum. Within Pattern Lab, the 
 
 This allowed us to view the header within the context of the rest of the pages, sketchy as they initially were. So while we were focusing on designing one specific pattern, we were simultaneously taking into account the context of where that pattern would be employed.
 
-{% include figure.html src="../images/content/techcrunch-incomplete-template.png" caption="In a more iterative process, there will be instances where some patterns are further developed than others. Seeing a partially done page might look unusual out of context, but communication between the team and stakeholders should alleviate confusion." %}
+<figure>
+    <img src="../images/content/techcrunch-incomplete-template.png" alt="In a more iterative process, there will be instances where some patterns are further developed than others. Seeing a partially done page might look unusual out of context, but communication between the team and stakeholders should alleviate confusion." />
+	<figcaption>
+	    In a more iterative process, there will be instances where some patterns are further developed than others. Seeing a partially done page might look unusual out of context, but communication between the team and stakeholders should alleviate confusion.
+	</figcaption>
+</figure>
 
 Initially, in-browser designs tend to look crude at best, which is A-OK. The intention is to stub out the template's basic information architecture in the browser, define patterns, wire up those patterns using includes, and begin the patterns' general markup. With that work in place, the team can collectively begin styling specific patterns and refining the overall structure.
 
@@ -462,9 +582,14 @@ But I'll never forget this client feedback we received on the first pattern-driv
 
 If you've gotten to this point in your process, congratulations! Feedback like this means they're salivating for more, so now that you've captured a general aesthetic direction you can safely put those explorations into context. That likely involves creating full static comps.
 
-Listen to the chatter around "designing in the browser" and you'll undoubtedly hear that *Photoshop comps are the devil incarnate*. Which, of course, isn't true. Throughout this book we've discussed the importance of breaking things down into their atomic elements while simultaneously building up a cohesive whole. **Static comps are effective at painting a full picture of what the UI could look like.** The trick is knowing *when* to paint those full pictures, and knowing how long to dwell in static design documents.
+Listen to the chatter around "designing in the browser" and you'll undoubtedly hear that *Photoshop comps are the devil incarnate*. Which, of course, isn't true. Throughout this book we've discussed the importance of breaking things down into their atomic elements while simultaneously building up a cohesive whole. **Static comps are effective at painting a full picture of what the UI could look like.** The trick is knowing *when* to paint those full pictures, and knowing how long to dwell in static design documents
 
-{% include figure.html src="../images/content/techcrunch-article-comp.png" caption="Dan Mall created a full comp to demonstrate what a featured article template for TechCrunch might look like. This artifact was used to show the design system in context and get approval for the overarching design. Subsequent design revisions would be handled in the browser." %}
+<figure>
+    <img src="../images/content/techcrunch-article-comp.png" alt="Dan Mall created a full comp to demonstrate what a featured article template for TechCrunch might look like. This artifact was used to show the design system in context and get approval for the overarching design. Subsequent design revisions would be handled in the browser." />
+	<figcaption>
+	    Dan Mall created a full comp to demonstrate what a featured article template for TechCrunch might look like. This artifact was used to show the design system in context and get approval for the overarching design. Subsequent design revisions would be handled in the browser.
+	</figcaption>
+</figure>
 
 For the TechCrunch project, we created a comp for the article template only *after* the client was feeling good about our element collage explorations. Creating full comps requires a lot of effort, which is why we established the design direction first to mitigate the risk of all that full-comp effort going straight into the trash if we got it totally wrong.
 
@@ -479,7 +604,12 @@ Static comps can be great for shaping the overall aesthetic direction of a templ
 
 **Once the designs are in the browser, they should stay in the browser.** At this stage in the process, the point of production shifts to team members adept at crafting HTML, CSS, and presentational JavaScript. Patterns should be created, styled, and plugged in wherever they're needed. Designers can react to these in-browser implementations and can create spot comps in static tools to help iron out responsive wrinkles at the organism level. This back-and-forth between static and in-browser tools establishes a healthy loop between design and development, where the front-end code becomes more solid and stable with each iterative loop.
 
-{% include figure.html src="../images/content/trent-loop.jpg" caption="This illustration by Trent Walton of Paravel perfectly articulates a more iterative design and development process. By getting designs into the browser sooner, teams can iterate over the design and address the many considerations that can only be dealt with once the design is in the browser." %}
+<figure>
+    <img src="../images/content/trent-loop.jpg" alt="This illustration by Trent Walton of Paravel perfectly articulates a more iterative design and development process. By getting designs into the browser sooner, teams can iterate over the design and address the many considerations that can only be dealt with once the design is in the browser." />
+	<figcaption>
+	    This illustration by Trent Walton of Paravel perfectly articulates a more iterative design and development process. By getting designs into the browser sooner, teams can iterate over the design and address the many considerations that can only be dealt with once the design is in the browser.
+	</figcaption>
+</figure>
 
 **The beautiful thing about a pattern-based workflow is that as each pattern becomes more fully baked, any template that includes the pattern will become more fully baked as well.** That means the level of effort to create new templates decreases dramatically over the course of the project, until eventually creating a new template mostly involves stitching together existing patterns.
 
