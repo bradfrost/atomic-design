@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Style Guide
+chapterTitle: Optional kicker
 chapterSubtitle: Formatting guidelines for Atomic Design
 permalink: /style-guide/
 ---
