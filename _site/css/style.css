@@ -126,9 +126,12 @@ h4 {
   line-height: 1.2; }
 
 h5 {
-  color: #a29e5e;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: normal;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  color: #808080;
+  position: relative;
+  margin: 2em 0 0.5em; }
 
 /*------------------------------------*\
     $LINKS
@@ -408,11 +411,6 @@ header {
     font-size: 1.2em;
     color: #be6700;
     line-height: 1.2;
-    position: relative;
-    margin: 2em 0 0.5em; }
-  .text h5 {
-    color: #808080;
-    font-size: 1.1em;
     position: relative;
     margin: 2em 0 0.5em; }
   .text ul, .text ol {

@@ -192,9 +192,12 @@ h4 {
 }
 
 h5 {
-	color: $tan-dark;
+    font-family: $font-primary;
     font-weight: normal;
 	font-size: 1.1em;
+    color: $gray;
+    position: relative;
+    margin: 2em 0 0.5em;
 }
 
 /*------------------------------------*\
@@ -565,13 +568,6 @@ header {
     	font-size: 1.2em;
         color: $orange;
         line-height: 1.2;
-        position: relative;
-        margin: 2em 0 0.5em;
-    }
-
-    h5 {
-    	color: $gray;
-    	font-size: 1.1em;
         position: relative;
         margin: 2em 0 0.5em;
     }

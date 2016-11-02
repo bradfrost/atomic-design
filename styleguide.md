@@ -35,7 +35,7 @@ Let's take a look at ordered lists now.
 
 ##### This is a fifth-level heading
 
-Are you ready for code? How about `inline code` blocks? Want to see a code block?! Yeah!?
+Are you ready for code? How about showing what `inline code` looks like? Want to see a code block?! Yeah!?
 
 ````````html
 <coooooodddddeee>
@@ -44,4 +44,4 @@ Are you ready for code? How about `inline code` blocks? Want to see a code block
 </coooooodddddeee>
 ````````
 
-And that's the style guide. Fun fun fun.
+And that's the style guide for the book. Fun fun fun.
