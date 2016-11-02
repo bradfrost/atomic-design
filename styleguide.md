@@ -1,8 +1,7 @@
 ---
 layout: page
 title: Style Guide
-chapterTitle: Style Guide
-chapterSubtitle: Typography and formatting guidelines
+chapterSubtitle: Formatting guidelines for Atomic Design
 permalink: /style-guide/
 ---
 
@@ -21,7 +20,9 @@ Hey! Here comes a blockquote!
 
 > A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation. <cite>[Wikipedia](https://en.wikipedia.org/wiki/Block_quotation)</cite>
 
-Profound, eh?
+Profound, eh? How about an image?
+
+{% include figure.html src="../images/content/devices.jpg" caption="This is an image with a caption. A caption describes what the image is all about." %}
 
 #### This is a fourth-level heading
 
