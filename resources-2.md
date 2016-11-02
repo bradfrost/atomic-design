@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Process Resources
-chapterSubtitle: A list of all the resources used make this book
-permalink: /resources/
+title: Book Resources
+chapterSubtitle: A list of tools I used to make this book as well as other helpful book-making links.
+permalink: /other-resources/
 ---
 
 ------
