@@ -728,7 +728,7 @@ h2 .title-link {
 \*------------------------------------*/
 
 .title {
-	max-width: 65em;
+	max-width: 72em;
 	margin: 0 auto;
 	padding: 1em;
 
@@ -748,7 +748,16 @@ h2 .title-link {
 		text-align: left;
         margin-bottom: 1rem;
         line-height: 1.2;
+
+        a {
+            text-decoration: none;
+        }
 	}
+
+    p {
+        font-family: $font-secondary;
+        color: $gray-dark;
+    }
 
 	@media all and (min-width: 44em) {
 		display: -webkit-box;

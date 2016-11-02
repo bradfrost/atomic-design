@@ -535,7 +535,7 @@ header {
     $TITLE SCREEN STYLES
 \*------------------------------------*/
 .title {
-  max-width: 65em;
+  max-width: 72em;
   margin: 0 auto;
   padding: 1em; }
   .title img {
@@ -551,6 +551,11 @@ header {
     text-align: left;
     margin-bottom: 1rem;
     line-height: 1.2; }
+    .title h1 a {
+      text-decoration: none; }
+  .title p {
+    font-family: "Merriweather", Georgia, serif;
+    color: #333; }
   @media all and (min-width: 44em) {
     .title {
       display: -webkit-box;
