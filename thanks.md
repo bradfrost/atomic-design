@@ -11,7 +11,7 @@ I'd like to give a massive thank you to __Dave Olsen__ who took my nascent, poor
 
 To __Josh Clark__ and __Dan Mall__ for helping solidify atomic design as a methodology and for writing the foreword to this book. You trusted me enough to run with this approach and somehow convinced our clients it wasn't totally insane. Without your input and the crazy-smart brains of early collaborators like __Jennifer Brook__, __Jonathan Stark__, __Robert Gorrell__, __Kelly Shaver__, and __Melissa Frost__, this book wouldn't have existed.
 
-Thanks to __Owen Gregory__ for copy editing the book's manuscript and taking on the herculean task of making me sound reasonably coherent. Thanks to __Rachel Andrew__ for wrangling all the technical stuff that goes into making eBooks. And a big thanks to __Rachel Sager__ for all your work getting the print version of the book laid out and ready for the printer.
+Thanks to __Owen Gregory__ for copy editing the book's manuscript and taking on the herculean task of making me sound reasonably coherent. Thanks to __Rachel Andrew__ for wrangling all the technical stuff that goes into making eBooks. And a big thanks to __Rachel Arnold Sager__ for all your work getting the print version of the book laid out and ready for the printer.
 
 To __Anna Debenham__ for all your amazing thinking about front end style guides, your [book](http://maban.co.uk/projects/front-end-style-guides/) on the topic, and your willingness to co-host a podcast all about style guides with me. I'm proud of the work we've done on [Styleguides.io](http://styleguides.io/) and am so happy we got to work together.
 
