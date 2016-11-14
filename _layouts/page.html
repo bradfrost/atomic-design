@@ -13,7 +13,7 @@ layout: default
 <div class="text">
     {{ content }}
 
-    {% if page.chapterTitle %}
+    {% if page.chapterTitle or page.title == "Foreword" %}
     {% include pagination.html %}
     {% endif %}
 </div>
