@@ -94,9 +94,9 @@
 	</figcaption>
 </figure>
 
-<p>Not a terribly inspiring design, eh? Believe it or not, this minimal (one might even say <em>lack of</em>) design is deliberate. To avoid incorrect classification as a UI framework like Bootstrap, the design is deliberately stripped down so no one would mistakenly take Pattern Lab’s demo UI for suggested styles. Pattern Lab doesn’t give you any answers as to how to design or architect your front-end code—<em>you have to do all that work yourself</em>. The look and feel, naming conventions, syntax, structure, libraries, and scripts you choose to use to create your UI is entirely up to you and your team. Heck, you can even use UI frameworks like Bootstrap <em>within</em> Pattern Lab. Pattern Lab is just there to help stitch everything together.</p>
+<p>Not a terribly inspiring design, eh? Believe it or not, this minimal (one might even say <em>lack of</em>) design is deliberate. To avoid incorrect classification as a UI framework like Bootstrap, the design is deliberately stripped down so no one would mistakenly take Pattern Lab’s demo UI for suggested styles. Pattern Lab doesn’t give you any answers as to how to design or architect your front-end code—<em>you have to do all that work yourself</em>. The look and feel, naming conventions, syntax, structure, libraries, and scripts you choose to use to create your UI are entirely up to you and your team. Heck, you can even use UI frameworks like Bootstrap <em>within</em> Pattern Lab. Pattern Lab is just there to help stitch everything together.</p>
 
-<p>As a technical aside, Pattern Lab uses either PHP or Node as the engine that stitches patterns together and generates the pattern library. However, you don’t need to be a PHP wizard or Node guru to use Pattern Lab any more than you have to know how to build an internal combustion engine to drive a car. Moreover, your final website doesn’t have to be built with PHP or Node to use the tool, as Pattern Lab’s output is backend-agnostic HTML, CSS, and JavaScript. So like any technology decision, choose a pattern library tool that fits with your organization’s infrastructure and jives with how your team works together.</p>
+<p>As a technical aside, Pattern Lab uses either PHP or Node.js as the engine that stitches patterns together and generates the pattern library. However, you don’t need to be a PHP wizard or Node guru to use Pattern Lab any more than you have to know how to build an internal combustion engine to drive a car. Moreover, your final website doesn’t have to be built with PHP or Node to use the tool, as Pattern Lab’s output is backend-agnostic HTML, CSS, and JavaScript. So like any technology decision, choose a pattern library tool that fits with your organization’s infrastructure and jives with how your team works together.</p>
 
 <p>If that all sounded like gibberish to you, don’t worry. This chapter focuses on the overarching features of Pattern Lab and principles of effective pattern libraries rather than going too far down the technical rabbit hole. If interested, you can check out <a href="http://patternlab.io/docs/">Pattern Lab’s documentation</a> to dive into the nitty-gritty.</p>
 
@@ -114,7 +114,7 @@
 
 <p>Constructing UIs in this manner keeps things <a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself">DRY</a>, which is a long-standing computer science principle that stands for “don’t repeat yourself.” What this means is that you can make a change to a pattern, and anywhere that pattern is employed will magically update with those changes. This Russian nesting doll approach considerably speeds up your workflow, and certainly beats the pants off sifting through hundreds of Photoshop documents for every instance of a pattern in order to make a simple change.</p>
 
-<p>To make this happen Pattern Lab uses the <em>include</em> feature of <a href="https://mustache.github.io/">Mustache</a>, a logicless templating language. Here’s what a Mustache include looks like:</p>
+<p>To make this happen, Pattern Lab uses the <em>include</em> feature of <a href="https://mustache.github.io/">Mustache</a>, a logicless templating language. Here’s what a Mustache include looks like:</p>
 
 <pre>
 <code>
@@ -271,7 +271,7 @@
 </span></code></pre>
 </div>
 
-<p>For developers, this type of format most likely looks familiar. If you’re not a developer, don’t freak out! Once you look beyond the curly braces and quotes, you’ll see that we’re defining a <code class="highlighter-rouge">hero</code> object (for the full-bleed hero area directly below the header) that has a <code class="highlighter-rouge">headline</code> value of “Lorem Ipsum” and an <code class="highlighter-rouge">img</code> with a <code class="highlighter-rouge">src</code> value of “/images/sample/fpo_hero.png”. We’re simply defining this object’s attributes and providing values for those attributes.</p>
+<p>For developers, this type of format most likely looks familiar. If you’re not a developer, don’t freak out! Once you look beyond the curly braces and quotes, you’ll see that we’re defining a <code class="highlighter-rouge">hero</code> object (for the full-bleed hero area directly below the header) that has a <code class="highlighter-rouge">headline</code> value of “Lorem Ipsum”, and an <code class="highlighter-rouge">img</code> with a <code class="highlighter-rouge">src</code> value of “/images/sample/fpo_hero.png”. We’re simply defining this object’s attributes and providing values for those attributes.</p>
 
 <p>Once those objects are defined, we can then override their attributes at Pattern Lab’s page level. This is accomplished by creating a new JSON file that matches the page pattern name (for Time Inc.’s homepage, we’ll call it <em>00-homepage.json</em>) inside the <em>/pages</em> directory.</p>
 
@@ -296,7 +296,7 @@
 
 <p>By overriding the default data, the <code class="highlighter-rouge">hero</code> headline now reads “Moving People” instead of “Lorem Ipsum.” And instead of pointing to a grayscale for-placement-only (FPO) hero image, we’re now pointing to a picture of Beyoncé located at “/images/hero_beyonce.jpg”.</p>
 
-<p>This process of establishing defaults for dynamic data then replacing it with page-specific content continues for each section of the website. In addition to replacing simple strings like headings, we can also dynamically set variables to <code class="highlighter-rouge">true</code> or <code class="highlighter-rouge">false</code>, loop through an array of items, and more. We can even dramatically alter the UI with just a few changes to a JSON file, which we’ll talk about next.</p>
+<p>This process of establishing defaults for dynamic data then replacing them with page-specific content continues for each section of the website. In addition to replacing simple strings like headings, we can also dynamically set variables to <code class="highlighter-rouge">true</code> or <code class="highlighter-rouge">false</code>, loop through an array of items, and more. We can even dramatically alter the UI with just a few changes to a JSON file, which we’ll talk about next.</p>
 
 <h2 id="articulating-pattern-variations-with-pseudo-patterns">Articulating pattern variations with pseudo-patterns</h2>
 <p>Historically, designers working with static tools have had a tendency to only design best-case scenarios. You know what I’m talking about: the user’s name is Sara Smith and always fits neatly on one line; her profile picture looks like it was clipped out of a magazine; her profile is completely filled out; the two columns of her profile content are exactly the same height.</p>

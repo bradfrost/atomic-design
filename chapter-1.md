@@ -123,7 +123,7 @@ Thankfully, this future is starting to take shape. Organizations are recognizing
 ### Classy code
 Modularity has long been a staple principle in the world of computer science, as we discussed earlier. While this principle existed long before the web was invented, it has taken some time for modularity to become engrained in the minds and hearts of web developers.
 
-Despite being around since 1995, JavaScript, the programming language of the web, first had to endure some growing pains to mature into the capable, respected language it is today. Now that JavaScript has grown up, developers can now apply those tried-and-true computer science principles to their web development workflows. As a result, we’re seeing folks develop sophisticated [JavaScript patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/) and architectures.
+Despite being around since 1995, JavaScript, the programming language of the web, first had to endure some growing pains to mature into the capable, respected language it is today. Now that JavaScript has grown up, developers can apply those tried-and-true computer science principles to their web development workflows. As a result, we’re seeing folks develop sophisticated [JavaScript patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/) and architectures.
 
 Applying modular programming principles to JavaScript is a bit of a no-brainer, since JavaScript is itself a programming language. But object-oriented thinking is weaving its way into other aspects of the web as well, including CSS, the styling language of the web. Methodologies like [OOCSS](http://oocss.org/), [SMACSS](https://smacss.com/), and [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax) have cropped up to help web designers create and maintain modular CSS architectures.
 
@@ -153,7 +153,7 @@ By breaking visual explorations into smaller chunks, designers save time and eff
 
 What is an interface made of? What are our Lego bricks? What are our Subway sandwich pieces that we combine into millions of delicious combinations? It’s these questions that we’ve been asking ourselves more and more now that we’re sending our interfaces to more and more places.
 
-A few years ago Ethan Marcotte introduced us to the idea of [responsive web design](http://alistapart.com/article/responsive-web-design) and its three core tenets: fluid grids, flexible media, and CSS media queries. These three ingredients provided a much needed foundation for designers to create flexible layouts that smartly adapt to any screen size. Perhaps more importantly, responsive design helped get designers excited about creating thoughtful, adaptable, multi-device web experiences.
+A few years ago Ethan Marcotte introduced us to the idea of [responsive web design](http://alistapart.com/article/responsive-web-design) and its three core tenets: fluid grids, flexible media, and CSS media queries. These three ingredients provided a much-needed foundation for designers to create flexible layouts that smartly adapt to any screen size. Perhaps more importantly, responsive design helped get designers excited about creating thoughtful, adaptable, multi-device web experiences.
 
 
 As designers quickly discovered, creating multi-device web experiences involves a lot more than creating squishy pages. Each individual piece of an interface contains its own unique challenges and opportunities in order for it to look and function beautifully across many screen sizes and environments.
@@ -263,9 +263,9 @@ Voice is an elemental aspect of a brand’s identity, so typically brand identit
 Voice and tone guidelines get into the weeds by articulating how the company’s voice and tone should shift across a variety of scenarios. [MailChimp’s brilliant voice and tone guidelines](http://voiceandtone.com/) define how the brand’s tone changes across content types, so that when a user’s credit card is declined, writers know to shift away from their generally cheeky and playful tone of voice and adopt a more serious tone instead.
 
 <figure>
-    <img src="../images/content/styleguide-voiceandtone.png" alt="Mailchimp’s Voice and Tone guidelines" />
+    <img src="../images/content/styleguide-voiceandtone.png" alt="MailChimp’s Voice and Tone guidelines" />
 	<figcaption>
-	    Mailchimp’s Voice and Tone guidelines
+	    MailChimp’s Voice and Tone guidelines
 	</figcaption>
 </figure>
 
@@ -273,9 +273,9 @@ Voice and tone guidelines get into the weeds by articulating how the company’s
 The rise of the web and content-managed websites makes it easier than ever for many people within an organization to publish content. This, of course, can be a double-edged sword, as maintaining a consistent writing style for an organization with many voices can be challenging. Writing style guides provide every author some guidelines and guardrails for contributing content.
 
 <figure>
-    <img src="../images/content/styleguide-economist.png" alt="The Economist’s writing style guide." />
+    <img src="../images/content/styleguide-economist.png" alt="The Economist’s writing style guide" />
 	<figcaption>
-	    Mailchimp’s Voice and Tone guidelines
+	    The Economist’s writing style guide
 	</figcaption>
 </figure>
 
@@ -314,7 +314,7 @@ Style guides are important tools that help prevent chaos, both from a design and
 
 ### Consistently awesome
 
-**Web style guides promote consistency and cohesion** across a user interface. This consistency benefits both the people who create these interfaces but also their users.
+**Web style guides promote consistency and cohesion** across a user interface. This consistency benefits both the people who create these interfaces and also their users.
 
 I recently visited my health insurance provider’s website to pay my bill. In the course of five clicks, I was hit with four distinct interface designs, some of which looked like they were last touched in 1999. This inconsistent experience put the burden on me, the user, to figure out what went where and how to interpret disparate interface elements. By the time I got to the payment form, I felt like I couldn’t trust the company to successfully and securely process my payment.
 
@@ -330,9 +330,9 @@ What does “utility toolbar” mean? Does everyone understand what a “touch s
 As the number of people working on a project increases, it becomes all too easy for communication breakdowns to occur. It's not uncommon for different disciplines to have different names for the same module, and for individuals to go rogue and invent their own naming conventions. For true collaboration to occur, it's essential for teams to speak a common language. Style guides are there to help establish that shared vocabulary.
 
 <figure>
-    <img src="../images/content/starbucks-blocks-3up.png" alt="Giving names to patterns like 'Blocks 3-Up' in Starbucks' style guide helps team members speak the same language." />
+    <img src="../images/content/starbucks-blocks-3up.png" alt="Giving names to patterns like 'Blocks Three-Up' in Starbucks' style guide helps team members speak the same language." />
 	<figcaption>
-	    Giving names to patterns like 'Blocks 3-Up' in Starbucks' style guide helps team members speak the same language.
+	    Giving names to patterns like 'Blocks Three-Up' in Starbucks' style guide helps team members speak the same language.
 	</figcaption>
 </figure>
 
@@ -350,7 +350,7 @@ Style guides can help alleviate what I call _special snowflake syndrome_, where 
 ### An empathetic workflow
 Education isn't just important for clients and stakeholders. A good style guide helps inform designers and developers of the tools they have in their toolbox, and provides rules and best practices for how to use them properly.
 
-By making a style guide a cornerstone of your workflow (which we'll detail in chapter 4), **designers and developers are forced to think about how their decisions affect the broader design system**. It becomes harder to go rogue and becomes easier to think of the greater good. And this is exactly where you want team members to be.
+By making a style guide a cornerstone of your workflow (which we'll detail in chapter 4), **designers and developers are forced to think about how their decisions affect the broader design system**. It becomes harder to go rogue and easier to think of the greater good. And this is exactly where you want team members to be.
 
 A style guide provides a home for each discipline to contribute their respective considerations and concerns for patterns. By collecting all these considerations under one roof, the style guide becomes a hub for everyone involved in the project, which helps each discipline better understand the design system from many perspectives.
 

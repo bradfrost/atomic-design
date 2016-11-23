@@ -159,7 +159,7 @@ It's very likely the initial exercise didn't capture every unique UI pattern, so
 Once the gaps in the interface inventory have been filled, the working group can have some important conversations about next steps for the design system project. Some key questions for this group to cover include:
 
 - Which patterns should stay, which should go, and which can be merged together?
-- What pattern names should we settled on?
+- What pattern names should we settle on?
 - What are the next steps to translate the interface inventory into a living pattern library?
 
 ### Benefits of an interface inventory
@@ -179,27 +179,27 @@ Just how we build things like performance, accessibility, and responsiveness int
 
 In fact, **to create the whole, you need to create the parts of that whole**. Our interfaces consist of smaller pieces, whether you pay those smaller pieces any mind or not.
 
-You have a decision to make: focus solely on creating the whole while ignoring the parts, or spend some time organizing the parts to help you more efficiently create the whole. In his book <cite>*[Multiscreen UX Design](http://store.elsevier.com/Multiscreen-UX-Design/Wolfram-Nagel/isbn-9780128027295/)*</cite>, Wolfram Nagel wonderfully articulates these approaches using LEGO bricks as an analogy.
+You have a decision to make: focus solely on creating the whole while ignoring the parts, or spend some time organizing the parts to help you more efficiently create the whole. In his book <cite>*[Multiscreen UX Design](http://store.elsevier.com/Multiscreen-UX-Design/Wolfram-Nagel/isbn-9780128027295/)*</cite>, Wolfram Nagel wonderfully articulates these approaches using Lego bricks as an analogy.
 
-One way to approach a LEGO project is to simply dump the pieces out of the box onto a table, roll up your sleeves, then start building your creation.
+One way to approach a Lego project is to simply dump the pieces out of the box onto a table, roll up your sleeves, then start building your creation.
 
 <figure>
-    <img src="../images/content/lego-2.png" alt="One way to approach a LEGO project is to simply dump the pieces out onto a table, and rummage through the pile to find the pieces you need. Image adapted from *Multiscreen UX Design* by Wolfram Nagel." />
+    <img src="../images/content/lego-2.png" alt="One way to approach a Lego project is to simply dump the pieces out onto a table, and rummage through the pile to find the pieces you need. Image adapted from *Multiscreen UX Design* by Wolfram Nagel." />
 	<figcaption>
-	    One way to approach a LEGO project is to simply dump the pieces out onto a table, and rummage through the pile to find the pieces you need. Image adapted from *Multiscreen UX Design* by Wolfram Nagel.
+	    One way to approach a LEGO project is to simply dump the pieces out onto a table, and rummage through the pile to find the pieces you need. Image adapted from &quot;Multiscreen UX Design&quot; by Wolfram Nagel.
 	</figcaption>
 </figure>
 
-This approach to a LEGO project is certainly a viable strategy, even if it is unapologetically haphazard. The only time you'd pay attention to the pile of bricks is when you're sifting through it to find the specific piece you need.
+This approach to a Lego project is certainly a viable strategy, even if it is unapologetically haphazard. The only time you'd pay attention to the pile of bricks is when you're sifting through it to find the specific piece you need.
 
-This is not dissimilar to how many digital projects are approached. The client needs a website, so we jump in to designing and building it. The client needs a mobile app, so we immediately start building the screens of the app. Our gaze remains transfixed on the final product, and we rarely if ever glance at the underlying patterns that comprise our final UIs.
+This is not dissimilar to how many digital projects are approached. The client needs a website, so we jump in to designing and building it. The client needs a mobile app, so we immediately start building the screens of the app. Our gaze remains transfixed on the final product, and we rarely, if ever, glance at the underlying patterns that comprise our final UIs.
 
-Of course, there is another way to approach your LEGO and digital projects. Rather than diving headfirst into constructing the final work, you can take the time to take stock of the available pieces and organize them in such a way that they become more useful.
+Of course, there is another way to approach your Lego and digital projects. Rather than diving headfirst into constructing the final work, you can take the time to take stock of the available pieces and organize them in such a way that they become more useful.
 
 <figure>
-    <img src="../images/content/lego-3.png" alt="Taking the time to organize the pieces that make up your final creations allows you to approach the work in a more deliberate and efficient manner. Image adapted from *Multiscreen UX Design* by Wolfram Nagel." />
+    <img src="../images/content/lego-3.png" alt="Taking the time to organize the pieces that make up your final creations allows you to approach the work in a more deliberate and efficient manner. Image adapted from &quot;Multiscreen UX Design&quot; by Wolfram Nagel." />
 	<figcaption>
-	    Taking the time to organize the pieces that make up your final creations allows you to approach the work in a more deliberate and efficient manner. Image adapted from *Multiscreen UX Design* by Wolfram Nagel.
+	    Taking the time to organize the pieces that make up your final creations allows you to approach the work in a more deliberate and efficient manner. Image adapted from &quot;Multiscreen UX Design&quot; by Wolfram Nagel.
 	</figcaption>
 </figure>
 
@@ -208,15 +208,15 @@ No doubt organizing takes time, planning, and effort. It doesn't come for free. 
 **By taking the time to organize the parts, you can now create the whole in a more realistic, deliberate, and efficient manner.** Creating a library of your available materials allows you to approach the project in a more methodical way, and saves immense amounts of time in the process. Rather than rummaging through a haphazard pile of bricks and burning time reinventing patterns, you can create an organized system of components that will help produce better work in a shorter amount of time.
 
 <figure>
-    <img src="../images/content/lego-4.png" alt="Taking the time to organize the pieces that make up your final creations allows you to work in a more deliberate and efficient manner. Rather than sifting through a haphazard pile of bricks, an organized inventory of components can produce better, faster work. Image adapted from *Multiscreen UX Design* by Wolfram Nagel." />
+    <img src="../images/content/lego-4.png" alt="Taking the time to organize the pieces that make up your final creations allows you to work in a more deliberate and efficient manner. Rather than sifting through a haphazard pile of bricks, an organized inventory of components can produce better, faster work. Image adapted from &quot;Multiscreen UX Design&quot; by Wolfram Nagel." />
 	<figcaption>
-	    Taking the time to organize the pieces that make up your final creations allows you to work in a more deliberate and efficient manner. Rather than sifting through a haphazard pile of bricks, an organized inventory of components can produce better, faster work. Image adapted from *Multiscreen UX Design* by Wolfram Nagel.
+	    Taking the time to organize the pieces that make up your final creations allows you to work in a more deliberate and efficient manner. Rather than sifting through a haphazard pile of bricks, an organized inventory of components can produce better, faster work. Image adapted from &quot;Multiscreen UX Design&quot; by Wolfram Nagel.
 	</figcaption>
 </figure>
 
 As far as your clients and stakeholders are concerned, the final product is still being produced. So long as you're showing progress on the final work, you can decide how much of your internal process you're willing to expose. The fact that you're creating a design system to produce the final product is really of no concern to them; it's simply a decision your team is making to create better work.
 
-If you're dealing with change-adverse stakeholders, I say do what you need to do and tell them to pay no attention to what's happening behind the scenes. Once you've successfully launched the project and the champagne has been poured, you can pull back the curtain and say, "Oh, by the way, we established a design system and pattern library so the team could collaborate and work more efficiently together." It would be extremely difficult for them to argue against you now, especially if the project came in on time and on budget. If you're really lucky, you can parlay the initial project's success into a more official initiative within the organization to evolve your design system.
+If you're dealing with change-averse stakeholders, I say do what you need to do and tell them to pay no attention to what's happening behind the scenes. Once you've successfully launched the project and the champagne has been poured, you can pull back the curtain and say, "Oh, by the way, we established a design system and pattern library so the team could collaborate and work more efficiently together." It would be extremely difficult for them to argue against you now, especially if the project came in on time and on budget. If you're really lucky, you can parlay the initial project's success into a more official initiative within the organization to evolve your design system.
 
 Of course, it's preferable to get your clients, colleagues, and stakeholders excited about creating an interface design system, or at the very least get their blessing to pursue the project in a modular fashion. But I think it's important to find ways to follow your craft's best practices even when you're faced with extreme organizational resistance.
 
@@ -225,7 +225,7 @@ You've put in a lot of hard work to sell the concept of a design system, but you
 
 When I say "set expectations" I'm really saying "*re*set expectations." You see, we all bring our own experiences, opinions, and biases to a project. Our industry is still incredibly young, so many people working on web projects are coming from other industries with their own established Ways Of Doing Things™. Even people who have worked exclusively in the digital world have felt the baggage of industries past. Moreover, the guiding principles, best practices, and tactics of digital design are still very much being codified.
 
-**It's ludicrous for anyone to utter the phrase, "This is how we've always done things" in an industry that's only 25 years old.** Unfortunately, we humans are creatures of habit, and stepping outside familiarity's warm embrace is uncomfortable. We don't like being uncomfortable. We must overcome our existing predispositions if we're going to embrace our ever shifting industry's best practices and create successful digital work.
+**It's ludicrous for anyone to utter the phrase, "This is how we've always done things" in an industry that's only 25 years old.** Unfortunately, we humans are creatures of habit, and stepping outside familiarity's warm embrace is uncomfortable. We don't like being uncomfortable. We must overcome our existing predispositions if we're going to embrace our ever-shifting industry's best practices and create successful digital work.
 
 ### Redefining design
 We've come a long way from simply transplanting print PDFs to the World Wide Web, but **print design still casts a long shadow and continues to influence how things get done online**.
@@ -256,7 +256,7 @@ Time went by, of course, and mobile exploded, technology improved, and the web b
 	</figcaption>
 </figure>
 
-The diversity of today's web landscape has shattered the [consensual hallucination](https://adactio.com/journal/4443) of the desktop Web, where we could simply bolt on the mentalities and processes of print to this new medium. Simply looking at a smartphone, tablet, and desktop machine next to one another quickly erodes the assumption that a web design should look the same in every environment.
+The diversity of today's web landscape has shattered the [consensual hallucination](https://adactio.com/journal/4443) of the desktop web, where we could simply bolt on the mentalities and processes of print to this new medium. Simply looking at a smartphone, tablet, and desktop machine next to one another quickly erodes the assumption that a web design should look the same in every environment.
 
 We're still at the very beginning of the Big Bang of connected devices. The device and web landscape of tomorrow will undoubtedly be even bigger and diverse than today's. In addition to current devices and the nascent technologies already on the horizon, the future web will involve technologies and ideas that haven't yet been conceived.
 
@@ -302,7 +302,7 @@ The visual designer, relieved they've finally completed their job, tiptoes oh-so
 
 The visual designer has already disappeared into the night by the time the front-end developer picks the design off the floor. With one glance at the composition, a strange feeling—some combination of bewilderment, rage, and dread—washes over them. What's wrong with the design, exactly? Maybe it's the seven typefaces and nine unique button styles peppered throughout the comps. Maybe it's the desktop-centric, impossible-to-actually-execute layout. Maybe it's the perfect-yet-improbable user-generated content.
 
-The frontend developer tries in vain to raise their concerns to the broader group, but is quickly dismissed as being either inept or curmudgeonly. Alas, it's too late in the game to make significant changes to the design, especially since it's already been approved by the stakeholders.
+The front-end developer tries in vain to raise their concerns to the broader group, but is quickly dismissed as being either inept or curmudgeonly. Alas, it's too late in the game to make significant changes to the design, especially since it's already been approved by the stakeholders.
 
 So the developer tries their best to make lemonade out of the lemony static comps. They bend over backwards to create responsive layouts that still retain the integrity of the static comps, normalize some of the more blatant component inconsistencies, establish pattern states (like button hover, active, and disabled states) that weren't articulated in the designs, and make some on-the-fly decisions regarding the interactive aspects of the experience. Discussions with designers are strained, but everyone realizes that they need to work through these issues to get the project done.
 
@@ -356,7 +356,7 @@ When you show stakeholders only static pictures of websites, they can naturally 
 
 Crucially, jumping into the browser faster also kick-starts the creation of the patterns that will make up the living, breathing design system. More on this in a bit.
 
-This is not to say teams must design *entirely* in the browser. As with anything, it's about using the right tools at the right time to articulate the right things. Having the design represented in the browser *in addition to* other design artifacts gives teams the ability to paint a richer, more realistic picture of the UI they're crafting. Teams may demonstrate an aesthetically focused design idea as a static image and simultaneously demonstrate a working prototype of that same idea in the browser.
+This is not to say teams must design *entirely* in the browser. As with anything, it's about using the right tools at the right time to articulate the right things. Having the design represented in the browser *in addition to* other design artifacts gives teams the ability to paint a richer, more realistic picture of the UI they're crafting. Teams may demonstrate an aesthetically focused design idea as a static image, and simultaneously demonstrate a working prototype of that same idea in the browser.
 
 #### An iterative iterative iterative iterative process
 I believe a successful digital design process is quite similar to subtractive stone sculpture. At the beginning of the sculpting process, the artist and their patron have a general idea of what's being created, but that vision won't be fully realized until the sculpture is complete.
@@ -381,7 +381,7 @@ If this all sounds a bit messy, that's because it is! To the dismay of some proj
 Are everyone's expectations properly set? Good! Now let's roll up our sleeves and get to work establishing our design system.
 
 ## Establishing direction
-Teams are often eager to jump right into fun high-fidelity design and development work, and clients are eager to see and react to that detailed work. However, this leads to distractions, assumptions, and all the aforementioned misguided expectations. **It's essential to agree on an overall design direction and paint the broad strokes first** before moving into high-fidelity design and development. This requires restraint and expectation management, but results in more focused decision making and more realistic work.
+Teams are often eager to jump right into fun high-fidelity design and development work, and clients are eager to see and react to that detailed work. However, this leads to distractions, assumptions, and all the aforementioned misguided expectations. **It's essential to agree on an overall design direction and paint the broad strokes first** before moving into high-fidelity design and development. This requires restraint and expectation management, but results in more focused decision-making and more realistic work.
 
 
 What does this lo-fi work look like? Let's take a look at some techniques UX designers, visual designers, and front-end developers can use to begin crafting a strong overall direction for a UI design system.
@@ -452,7 +452,7 @@ When the exercise is complete, quickly tally up the scores and come back to the 
 This exercise exposes stakeholders to a variety of aesthetic directions early in the process, allows them to work through differences in taste, and (with any luck) helps arrive at some shared aesthetic values. The visual designer can then latch on to these insights and begin to translate those aesthetic values into a visual direction for the project.
 
 #### Style tiles
-Once again, visual designers' first instinct is often to jump right into creating full comps to articulate an aesthetic direction for the project. This high-fidelity work is certainly tangible, but also wastes a ton of time and effort if the comps don't resonate with the stakeholders. Also, creating high-fidelity comps often makes big assumptions about technical feasibility, which leads to unrealistic expectations and antagonistic relationships with frontend developers.
+Once again, visual designers' first instinct is often to jump right into creating full comps to articulate an aesthetic direction for the project. This high-fidelity work is certainly tangible, but also wastes a ton of time and effort if the comps don't resonate with the stakeholders. Also, creating high-fidelity comps often makes big assumptions about technical feasibility, which leads to unrealistic expectations and antagonistic relationships with front-end developers.
 
 It's essential to establish a solid visual direction for the project, so how does a visual designer do that without burning a ton of time on up-front high-fidelity comps? That's the question that designer Samantha Warren answered when she created [style tiles](http://styletil.es/), a deliverable that's more tangible than a mood board but not as high-fidelity as a fully baked comp.
 
@@ -510,9 +510,9 @@ Let's quickly review what establishing design direction looks like across discip
 
 - **UX designers** can create lo-fi sketches to establish basic information architecture and some anticipated UI patterns.
 - **Visual designers** can gather the teams' aesthetic values by conducting a 20-second gut test exercise, then create style tiles and element collages to explore initial design directions.
-- **Frontend developers** can set up project dependencies, stub out basic templates, and write structural markup for patterns the team anticipates using in the project.
+- **Front-end developers** can set up project dependencies, stub out basic templates, and write structural markup for patterns the team anticipates using in the project.
 
-This work can happen concurrently but shouldn't happen in isolation. Sure, there will need to be some initial head-down time for each discipline to get set up, but all team members should be fully aware of each disciplines' explorations in anticipation of working together to evolve these ideas.
+This work can happen concurrently but shouldn't happen in isolation. Sure, there will need to be some initial head-down time for each discipline to get set up, but all team members should be fully aware of each discipline's explorations in anticipation of working together to evolve these ideas.
 
 > Ideas are meant to be ugly. <cite>[Jason Santa Maria](http://jasonsantamaria.com/articles/piles-of-ideas)</cite>
 
@@ -573,7 +573,7 @@ This allowed us to view the header within the context of the rest of the pages, 
 
 Initially, in-browser designs tend to look crude at best, which is A-OK. The intention is to stub out the template's basic information architecture in the browser, define patterns, wire up those patterns using includes, and begin the patterns' general markup. With that work in place, the team can collectively begin styling specific patterns and refining the overall structure.
 
-Seeing these partially designed prototypes might look unusual to those used more traditional, pixel-perfect design deliverables. But it's far more important to communicate progress than a false sense of perfection, which is why rolling updates are preferable to big reveals.
+Seeing these partially designed prototypes might look unusual to those used to more traditional, pixel-perfect design deliverables. But it's far more important to communicate progress than a false sense of perfection, which is why rolling updates are preferable to big reveals.
 
 ### The role of comps in a post-PSD era
 Up until this point we've been talking about establishing a general aesthetic direction and then designing some patterns to experiment with the application of that aesthetic direction. These relatively lo-fi tactics allow teams to explore freely, iterate quickly, and get feedback sooner.
@@ -616,7 +616,7 @@ Static comps can be great for shaping the overall aesthetic direction of a templ
 ## Bring it on home
 The design system is taking shape and the team is cooking with gas to bring the project home. At this stage, UI patterns are well established, the team is taking some final steps to tighten everything up and prepare for launch.
 
-UX designers are hitting the prototype hard to make sure the flows and interactions are all logical and intuitive. Visual designers are combing over the interface and proposing design tweaks to the UI to polish up the design. Front-end developers are testing the experience in a slew of browsers and devices while also addressing design feedback. Back-end developers are hard at work integrating the front-end UI into the CMS (we'll talk more about the relationship between front-end and back-end in chapter 5). And of course the clients and stakeholders are making last-minute demands—I mean suggestions—about the design and content. The whole team is contributing documentation for the style guide, cleaning up the patterns in the pattern library, and working hard to get the website off the ground.
+UX designers are hitting the prototype hard to make sure the flows and interactions are all logical and intuitive. Visual designers are combing over the interface and proposing design tweaks to the UI to polish up the design. Front-end developers are testing the experience in a slew of browsers and devices while also addressing design feedback. Back-end developers are hard at work integrating the front-end UI into the CMS (we'll talk more about the relationship between front-end and back-end in chapter 5). And, of course, the clients and stakeholders are making last-minute demands—I mean suggestions—about the design and content. The whole team is contributing documentation for the style guide, cleaning up the patterns in the pattern library, and working hard to get the website off the ground.
 
 Then—seemingly in the blink of an eye—the website and accompanying design system launch. Champagne is poured, high-fives are exchanged and, of course, post-launch bugs are squashed. Users visit the new site to find a beautiful, functional, consistent, and cohesive experience that undoubtedly makes them weep tears of joy. Mission accomplished.
 
