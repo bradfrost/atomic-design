@@ -21,10 +21,10 @@ And then Brad Frost the front-end developer started talking like Brad Frost the 
 Brad’s new idea was atomic design, and it changed the way we work in this astonishingly multi-device world. By thinking about interfaces simultaneously at both the large (page) level as well as the small (atomic) level, we streamlined our process: we introduced more rigorous thought into the role of every element; we fell into habits that improved the consistency of our UX; and crucially, we started working much faster and more collaboratively. Atomic design was our superpower.
 
 
-In early stages of the TechCrunch redesign, there was this moment where we talked about what we wanted the article page to be. Within an hour, Brad had a fully responsive version wired up from his kit of parts. That was the moment we realized just how quickly we were going to be able move, a powerful case for investing in this clever, modular approach.
+In the early stages of the TechCrunch redesign, there was this moment where we talked about what we wanted the article page to be. Within an hour, Brad had a fully responsive version wired up from his kit of parts. That was the moment we realized just how quickly we were going to be able to move, a powerful case for investing in this clever, modular approach.
 
 
-Almost four years later, we haven’t looked back. Brad continued to refine his techniques and tools over the projects that followed, including blockbuster sites for Entertainment Weekly and Time, Inc. We’ve used these learnings to help in-house product teams make sites faster and with higher quality, build massive design systems for organizations looking to centralize their design and development work across international offices, and much more.
+Almost four years later, we haven’t looked back. Brad continued to refine his techniques and tools over the projects that followed, including blockbuster sites for Entertainment Weekly and Time, Inc. We’ve used these lessons to help in-house product teams make sites faster and with higher quality, build massive design systems for organizations looking to centralize their design and development work across international offices, and much more.
 
 
 Atomic design gave us speed, creative freedom, and flexibility. It changed everything. We think it will do the same for you, too.
@@ -33,7 +33,7 @@ Atomic design gave us speed, creative freedom, and flexibility. It changed every
 This wonderful book explains the philosophy, practice, and maintenance of atomic design systems. And it does so with the cheerful, helpful generosity that so describes Brad himself.
 
 
-Brad’s energy and big-hearted enthusiasm for the web and its makers are boundless. For years, Brad has worked at the forefront of responsive-design technique—and he’s shared everything along the way. His This Is Responsive site is the go-to resource for finding responsive solutions to any UX problem. His blog and Twitter feeds share his roadblocks and his solutions. When designers and developers follow Brad Frost, they get a fast and dense stream of practical, passionate insight for building beautiful and resilient websites. This book doubles down on all of that.
+Brad’s energy and big-hearted enthusiasm for the web and its makers are boundless. For years, Brad has worked at the forefront of responsive design technique—and he’s shared everything along the way. His This Is Responsive site is the go-to resource for finding responsive solutions to any UX problem. His blog and Twitter feeds share his roadblocks and his solutions. When designers and developers follow Brad Frost, they get a fast and dense stream of practical, passionate insight for building beautiful and resilient websites. This book doubles down on all of that.
 
 
 Given the chance, Brad would knock on the door of every designer and developer to personally deliver his message. We’ve watched with astonishment (and mild envy) as this whirling dervish has barnstormed around the globe to share his advice with hundreds of teams and organizations across six continents. (_Atomic design, coming soon to Antarctica!_) But even Brad Frost can’t be everywhere at once, and we’re delighted that he’s detailed his ideas with such depth and good humor in this book.
