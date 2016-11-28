@@ -2,7 +2,7 @@
 layout: page
 title: Testimonials
 chapterSubtitle: What others are saying about Atomic Design
-permalink: /author/
+permalink: /testimonials/
 ---
 
 <blockquote>
