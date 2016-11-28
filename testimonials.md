@@ -17,7 +17,7 @@ To boldly go beyond “pages.” That’s the universe of modern design, and the
 <p>
 <blockquote>
 "This book is itself an excellent example of Atomic Design. Brad takes on a big intimidating topic—design systems the web—and breaks it down into its constituent parts, making it easy to understand and implement."
-<cite>Jeremy Keith, author <em>HTML5 for Web Designers</em></cite>
+<cite>Jeremy Keith, author of <em>HTML5 for Web Designers</em></cite>
 </blockquote>
 </p>
 
@@ -35,7 +35,7 @@ Brad describes not only the atomic design methodology, but also the process invo
 <p>
 <blockquote>
 Brad is suggesting that we'd be better web designers if we thought of what we're building as a system. A hierarchical system that fits together to form larger parts. Because, spoiler alert, it is and we would be.
-<cite>Chris Coyier, CSS Tricks, Codepen, and Shop Talk Show</cite>
+<cite>Chris Coyier, CSS Tricks and Codepen and Shop Talk Show</cite>
 </blockquote>
 </p>
 
