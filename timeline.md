@@ -95,3 +95,7 @@ permalink: /timeline/
     [View thank you page](http://atomicdesign.bradfrost.com/resources/)
 45. ### *10/26/16* Update book cover image
     [View book cover](http://atomicdesign.bradfrost.com)
+46. ### *11/22/16* Send Email Newsletter #9
+    [View newsletter](http://us5.campaign-archive1.com/?u=6c0c3f4dcd40d88bc1cedb3fa&id=64435d1fb3)
+47. ### *11/28/16* Send Email Newsletter #10 - Announce Book Launch
+    [View newsletter](http://us5.campaign-archive2.com/?u=6c0c3f4dcd40d88bc1cedb3fa&id=61f90665c9)
