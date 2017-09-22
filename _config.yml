@@ -2,7 +2,7 @@
 title: Atomic Design by Brad Frost
 email: brad@bradfrost.com
 description: > # this means to ignore newlines until "baseurl:"
-  Learn how to create and maintain digital design systems, allowing you to roll out higher quality, more consistent UIs faster than ever before.
+  Learn how to create and maintain digital design systems, allowing your team to roll out higher quality, more consistent UIs faster than ever before.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://bradfrost.com" # the base hostname & protocol for your site
 twitter_username: brad_frost
