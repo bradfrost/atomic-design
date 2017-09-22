@@ -2,7 +2,7 @@
 title: Atomic Design by Brad Frost
 email: brad@bradfrost.com
 description: > # this means to ignore newlines until "baseurl:"
-  Atomic design is a methodology for crafting effective design systems
+  Atomic Design details all that goes into creating and maintaining robust design systems, allowing you to roll out higher quality, more consistent UIs faster than ever before.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://bradfrost.com" # the base hostname & protocol for your site
 twitter_username: brad_frost
