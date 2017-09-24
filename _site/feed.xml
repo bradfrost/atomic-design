@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Atomic Design by Brad Frost</title>
-    <description>Atomic Design details all that goes into creating and maintaining robust design systems, allowing you to roll out higher quality, more consistent UIs faster than ever before.
+    <description>Learn how to create and maintain digital design systems, allowing your team to roll out higher quality, more consistent UIs faster than ever before.
 </description>
     <link>http://localhost:4200/</link>
     <atom:link href="http://localhost:4200/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 22 Sep 2017 11:17:57 -0400</pubDate>
-    <lastBuildDate>Fri, 22 Sep 2017 11:17:57 -0400</lastBuildDate>
+    <pubDate>Sun, 24 Sep 2017 17:09:54 -0400</pubDate>
+    <lastBuildDate>Sun, 24 Sep 2017 17:09:54 -0400</lastBuildDate>
     <generator>Jekyll v3.5.0</generator>
     
   </channel>
