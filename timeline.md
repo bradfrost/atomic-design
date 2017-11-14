@@ -106,9 +106,9 @@ permalink: /timeline/
 52. ### *11/26/16* Rachel Andrew completes ebook production
 53. ### *11/26/16* Rachel Arnold Sager completes print design
 54. ### *11/28/16* Launch book! [Paperback](https://shop.bradfrost.com/collections/frontpage/products/atomic-design), [ebook](https://shop.bradfrost.com/collections/frontpage/products/atomic-design-ebook), and [combo](https://shop.bradfrost.com/collections/frontpage/products/atomic-design-print-ebook) go on sale at [shop.bradfrost.com](https://shop.bradfrost.com/)
-55. ### *11/28/16* Blog post: Atomic Design Out Now
+55. ### *11/28/16* Send email newsletter #10
     [View newsletter](http://us5.campaign-archive2.com/?u=6c0c3f4dcd40d88bc1cedb3fa&id=61f90665c9)
-56. ### *11/28/16* Send email newsletter #10
+56. ### *11/28/16* Blog post: Atomic Design Out Now
     [View blog post](http://bradfrost.com/blog/post/atomic-design-out-now/)
 57. ### *12/05/16* Receive stickers
     [Check out the stickers](https://www.instagram.com/p/BNp94_JBUko/?taken-by=brad_frost)
