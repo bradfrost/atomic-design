@@ -1,54 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width initial-scale=1">
-
-  <title>Tools of the Trade | Atomic Design by Brad Frost</title>
-  <meta name="description" content="Learn how to create and maintain digital design systems, allowing your team to roll out higher quality, more consistent UIs faster than ever before.
-">
-
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/prism.css">
-
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Oswald" rel="stylesheet">
-
-<!-- Schema.org markup for Google+ -->
-<meta itemprop="name" content="Tools of the Trade | Atomic Design by Brad Frost">
-<meta itemprop="image" content="http://atomicdesign.bradfrost.com/images/social-card.jpg">
-<meta itemprop="description" content="Learn how to create and maintain digital design systems, allowing your team to roll out higher quality, more consistent UIs faster than ever before.
-">
-
-<!-- Twitter Card data -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tools of the Trade | Atomic Design by Brad Frost">
-<meta name="twitter:description" content="Learn how to create and maintain digital design systems, allowing your team to roll out higher quality, more consistent UIs faster than ever before.
-">
-<meta name="twitter:creator" content="@brad_frost">
-<!-- Twitter summary card with large image must be at least 280x150px -->
-<meta name="twitter:image:src" content="http://atomicdesign.bradfrost.com/images/social-card.jpg">
-
-<!-- Open Graph data -->
-<meta property="og:title" content="Tools of the Trade | Atomic Design by Brad Frost" />
-<meta property="og:url" content="http://atomicdesign.bradfrost.com/chapter-3/" />
-<meta property="og:image" content="http://atomicdesign.bradfrost.com/images/social-card.jpg" />
-<meta property="og:description" content="Learn how to create and maintain digital design systems, allowing your team to roll out higher quality, more consistent UIs faster than ever before.
-" />
-</head>
-
-  <body>
-    <main role="main">
-        <div class="page-header">
-    <div class="page-header-inner">
-        <h3 class="page-kicker">Chapter 3</h3>
-        <h1 class="page-title">Tools of the Trade</h1>
-        <p class="page-subtitle">Pattern Lab and the qualities of effective style guides</p>
-    </div>
-</div>
-
-<div class="text">
-    <p>In the previous chapter, I introduced the atomic design methodology for constructing user interfaces. I hope you’ll find atomic design to be a helpful mental model for constructing UI design systems, but now it’s time to climb down from the ivory tower and actually put atomic design into practice <em>in the real world</em>.</p>
+I"��<p>In the previous chapter, I introduced the atomic design methodology for constructing user interfaces. I hope you’ll find atomic design to be a helpful mental model for constructing UI design systems, but now it’s time to climb down from the ivory tower and actually put atomic design into practice <em>in the real world</em>.</p>
 
 <p>The cornerstone of pattern-based design and development is the pattern library, which serves as a centralized hub of all the UI components that comprise your user interface. As we discussed in chapter 1, the benefits of pattern libraries are many:</p>
 
@@ -508,33 +458,4 @@
 </ul>
 
 <p>At the end of the day, it’s not about the tools we use to create pattern libraries, but rather how we use them. Creating and maintaining an effective design system means dramatically changing your organization’s culture, processes, and workflows. If that sounds hard to you, it’s because it is. But fear not! The rest of the book will detail the entire process of creating and maintaining a successful design system to set your organization up for long-term success.</p>
-
-
-    
-    <nav role="navigation" class="pagination">
-    <a href="/chapter-4/">Next Chapter</a>
-    <a href="/table-of-contents/">Table of Contents</a>
-</nav>
-
-    
-</div>
-
-        <div class="banner">
-	<div class="banner-content">
-		<h3><a href="/" rel="home">Atomic Design</a></h3>
-		<p>by <a href="http://bradfrost.com" rel="me">Brad Frost</a></p>
-		<a href="http://shop.bradfrost.com" class="btn" rel="external">Order the Book</a>
-	</div>
-</div>
-
-
-    </main>
-    <footer role="contentinfo">
-    &copy; 2016 Brad Frost
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="/../js/link-headings.js"></script>
-<script src="/../js/prism.js"></script>
-
-  </body>
-</html>
+:ET
