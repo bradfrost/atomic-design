@@ -4,10 +4,10 @@
     <title>Atomic Design by Brad Frost</title>
     <description>Learn how to create and maintain digital design systems, allowing your team to roll out higher quality, more consistent UIs faster than ever before.
 </description>
-    <link>http://bradfrost.com/</link>
-    <atom:link href="http://bradfrost.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 20 Dec 2019 16:47:14 -0500</pubDate>
-    <lastBuildDate>Fri, 20 Dec 2019 16:47:14 -0500</lastBuildDate>
+    <link>http://localhost:4200/</link>
+    <atom:link href="http://localhost:4200/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 02 Feb 2020 15:36:44 -0500</pubDate>
+    <lastBuildDate>Sun, 02 Feb 2020 15:36:44 -0500</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
   </channel>

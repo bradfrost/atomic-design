@@ -1,2 +1,262 @@
-﻿*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,label,table,header,footer,nav,section,figure,main{margin:0;padding:0}header,footer,nav,section,article,hgroup,figure,main{display:block}.cf{*zoom:1}.cf:before,.cf:after{content:" ";display:table}.cf:after{clear:both}.is-hidden{display:none !important;visibility:hidden !important}.is-vishidden{position:absolute !important;overflow:hidden;width:1px;height:1px;padding:0;border:0;clip:rect(1px, 1px, 1px, 1px)}html{height:100%}body{background:#f6f5de;font-family:"Helvetica Neue",Helvetica,sans-serif;line-height:1.5;color:#100;padding:0;margin:0;min-height:100%}a{color:#100}h1{font-size:2.5em;line-height:1.2;margin:0 0 0.68em;text-align:center}h1 cite{font-style:normal}h1 em{font-family:Georgia,serif;display:block;color:#a29e5e;font-size:40%;font-weight:normal;text-transform:lowercase}h2{font-size:1.8em;line-height:1.2}h3{font-size:1.4em}h4{font-size:1.1em}h5{color:#a29e5e;font-size:1.1em}p{margin:0 0 1em}blockquote{font-size:1.2em;font-style:italic;color:#a29e5e;padding-left:0.8em;border-left:1px solid #be6700}blockquote cite{display:block;color:#be6700;font-size:0.75em;margin-top:0.5em}blockquote cite a{color:#be6700}blockquote cite:before{content:"–"}pre{background:#100;color:#f6f5de;padding:1em;word-wrap:break-word;overflow-x:hidden}img,video,object{max-width:100%;height:auto}figure{margin-bottom:1em;text-align:center}figure img{display:inline-block;margin-bottom:0.1em;border:1px solid #a29e5e}@media all and (min-width: 37em){figure{width:100vw;margin-left:calc((100vw - 29em) / -2);padding:0 1em;text-align:center}}@media all and (min-width: 88em){figure img{max-width:1400px}}figcaption{font-size:0.75em;font-style:italic;color:#a29e5e;max-width:38em;margin:0 auto}label{display:block;font-weight:bold;font-family:"Helvetica Neue",Helvetica,sans-serif}input,select,textarea{border:6px solid #dedcb9;background:rgba(205,202,162,0.4);color:#100;font:1em/1 "Helvetica Neue",Helvetica,sans-serif;padding:0.5em;width:100%;-webkit-appearance:none;-webkit-border-radius:0;border-radius:0;margin-bottom:0.5em}input:focus,select:focus,textarea:focus{background-color:#fbfaee;outline:0}input[type=submit]{border:0;display:inline-block;width:auto}header{text-align:center;padding:2em 1em;max-width:26em;margin:0 auto}@media all and (min-height: 30em){header{padding:6em 1em}}main{max-width:37em;padding:0 1em;margin:0 auto 2em}footer{text-align:center;color:#a29e5e;font-size:80%;padding:1em;margin-bottom:8em}.banner{position:fixed;bottom:0;left:0;width:100%;background:#100;color:#f6f5de;z-index:2;font-weight:bold}.banner-content{max-width:37em;background:#100;margin:0 auto;padding:0.6em 1em;position:relative;z-index:2;text-align:center;text-transform:lowercase}.banner-content a{color:#f6f5de;text-decoration:none;transition:color 0.12s ease-out}.banner-content a:hover,.banner-content a:focus{color:#be6700}.banner-content h3{font-size:1em;margin:0;display:inline;-webkit-align-self:flex-start;-ms-flex-item-align:start;align-self:flex-start}.banner-content p{margin:0;display:inline;-webkit-order:3;-ms-flex-order:3;order:3}@media all and (min-width: 30em){.banner-content p{position:absolute;right:1em}}.banner-content .btn{background:#be6700;display:block;line-height:1;padding:1.05em;margin-top:0.5em}.banner-content .btn:hover,.banner-content .btn:focus{color:#fff}@media all and (min-width: 30em){.banner-content .btn{border:0;border-radius:8px 8px 0 0;position:absolute;bottom:0;left:50%;margin-left:-5.375em;margin-bottom:0;z-index:1;transition:all 0.12s ease-out}.banner-content .btn:hover,.banner-content .btn:focus{padding-bottom:1.5em}}@media all and (min-width: 30em){.banner-content{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;justify-content:space-between;align-items:middle}}.btn{font-weight:bold;background:#be6700;color:#f6f5de;border-radius:5px;display:inline-block;padding:0.65em 1.2em;margin-bottom:0.5em;text-decoration:none;text-transform:lowercase}.btn:hover,.btn:focus{color:#fff}.btn-alt{border-color:#f6f5de;color:#f6f5de}.btn-group .btn{margin-right:0.5em}.star{background:yellow;padding:1em;display:inline-block;margin:0 0 1em;border-radius:5px;text-decoration:none}.star.star-given{background:red}.star.star-given:hover{background:blue}.star.disabled{background:#f0f0f0;color:gray}.note{font-style:italic;color:#a29e5e;font-size:0.75em;line-height:1.5;margin-bottom:1.2em}.note a{color:#a29e5e}.note a:hover,.note a:focus{color:#be6700}.text{font-family:Georgia,serif;font-size:120%}.text h1{font-family:"Helvetica Neue",Helvetica,sans-serif}.text h2,.text h3{font-family:"Helvetica Neue",Helvetica,sans-serif;margin:2em 0 0.5em}.text ul,.text ol{margin-bottom:1em}.title{max-width:65em;margin:0 auto;padding:1em}.title img{display:block;max-height:100%;margin-bottom:2em}@media all and (min-width: 44em){.title img{margin:0;max-width:50%}}.title h1{text-align:left}@media all and (min-width: 44em){.title{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center;-webkit-box-align:center;justify-content:center;width:100%;height:100%}}.title-col-2{-webkit-box-flex:1;-moz-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1}@media all and (min-width: 44em){.title-col-2{padding-left:2em}}.title-content{align-self:center;text-align:center;max-width:65em}.title-content img{margin-bottom:2em}.title-content h1{line-height:1}.title-content p{color:#a29e5e;margin-bottom:2em}.title-content p a{color:#a29e5e}.toc-list{border-top:1px solid rgba(205,202,162,0.4);text-align:center;list-style:none;margin:0 0 2em;padding:0}.toc-list li{border-bottom:1px solid rgba(205,202,162,0.4)}.toc-list a{display:block;padding:1em 0;text-decoration:none;transition:all 0.12s ease-out}.toc-list a:hover,.toc-list a:focus{background:rgba(205,202,162,0.07);color:#be6700}.toc-list h3{font-size:1.4em;margin:0}.toc-list p{color:#a29e5e;margin:0;font-size:85%}.toc-li-minor h3{font-size:1em}.timeline{padding-left:2em;max-width:32em;margin:0 auto}.timeline ol{border-left:3px solid #100;padding:0 0 3em;position:relative;margin:0;list-style:none;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-direction:column-reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}.timeline ol:before{content:"";position:absolute;bottom:0;left:-1.78em;width:50px;height:50px;background:url(../images/icon-atom.svg) no-repeat;background-size:100% 100%;-webkit-animation:spin 10s linear infinite;-moz-animation:spin 10s linear infinite;-o-animation:spin 10s linear infinite;animation:spin 10s linear infinite}.timeline li{padding-left:1.2em;margin:0 0 3em;position:relative}.timeline li:before{content:"";position:absolute;top:0;left:-0.95em;width:25px;height:25px;background:url(../images/icon-atom.svg) no-repeat;background-size:100% 100%;-webkit-animation:spin 10s linear infinite;-moz-animation:spin 10s linear infinite;-o-animation:spin 10s linear infinite;animation:spin 10s linear infinite}.timeline h3{margin:0}.timeline a{border-bottom:1px solid #be6700;text-decoration:none}.timeline a:hover,.timeline a:focus{color:#be6700}.timeline em{font-size:80%;color:#a29e5e;display:block;font-style:normal}@-moz-keyframes spin{from{-moz-transform:rotate(0deg)}to{-moz-transform:rotate(360deg)}}@-webkit-keyframes spin{from{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg)}}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@charset "UTF-8";
+/*------------------------------------*\ $SASS VARIABLES \*------------------------------------*/
+/*------------------------------------*\ $RESET \*------------------------------------*/
+/* Border-Box http:/paulirish.com/2012/box-sizing-border-box-ftw/ */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, legend, label, table, header, footer, nav, section, figure, main { margin: 0; padding: 0; }
+
+header, footer, nav, section, article, hgroup, figure, main { display: block; }
+
+@font-face { font-family: "MyWebFont"; src: url("webfont.eot"); /* IE9 Compat Modes */ src: url("webfont.eot?#iefix") format("embedded-opentype"), url("webfont.woff2") format("woff2"), url("webfont.woff") format("woff"), url("webfont.ttf") format("truetype"), url("webfont.svg#svgFontName") format("svg"); /* Legacy iOS */ }
+
+@font-face { font-family: "MyWebFont"; src: url("webfont.eot"); /* IE9 Compat Modes */ src: url("webfont.eot?#iefix") format("embedded-opentype"), url("webfont.woff2") format("woff2"), url("webfont.woff") format("woff"), url("webfont.ttf") format("truetype"), url("webfont.svg#svgFontName") format("svg"); /* Legacy iOS */ }
+
+/*------------------------------------*\ $BODY \*------------------------------------*/
+html { height: 100%; }
+
+body { background: #fff; font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif; line-height: 1.5; color: #100; padding: 0; margin: 0; min-height: 100%; }
+
+/*------------------------------------*\ $FORM GLOBAL STYLES \*------------------------------------*/
+label { display: block; font-weight: bold; font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif; }
+
+input, select, textarea { border: 6px solid #dedcb9; background: rgba(205, 202, 162, 0.4); color: #100; font: 1em/1 "Oswald", "Helvetica Neue", Helvetica, sans-serif; padding: 0.5em; width: 100%; -webkit-appearance: none; -webkit-border-radius: 0; border-radius: 0; margin-bottom: 0.5em; }
+
+input:focus, select:focus, textarea:focus { background-color: #fbfaee; outline: 0; }
+
+input[type="submit"] { border: 0; display: inline-block; width: auto; }
+
+/*------------------------------------*\ $GLOBAL CLASSES \*------------------------------------*/
+/* Completely remove from the flow and screen readers. */
+.is-hidden { display: none !important; visibility: hidden !important; }
+
+/* Completely remove from the flow but leave available to screen readers. */
+.is-vishidden { position: absolute !important; overflow: hidden; width: 1px; height: 1px; padding: 0; border: 0; clip: rect(1px, 1px, 1px, 1px); }
+
+/*------------------------------------*\ $HEADINGS \*------------------------------------*/
+h1 { font-size: 4.5rem; line-height: 1; margin: 0; font-weight: normal; }
+
+h1 cite { font-style: normal; }
+
+h1 em { font-family: "Merriweather", Georgia, serif; display: block; color: #a29e5e; font-size: 40%; font-weight: normal; text-transform: lowercase; }
+
+h2 { font-size: 1.8em; font-weight: normal; line-height: 1.2; }
+
+h3 { font-size: 1.4em; font-weight: normal; line-height: 1.2; }
+
+h4 { font-size: 1.1em; font-weight: normal; line-height: 1.2; }
+
+h5 { font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif; font-weight: normal; font-size: 1.1em; color: #808080; position: relative; margin: 2em 0 0.5em; }
+
+/*------------------------------------*\ $LINKS \*------------------------------------*/
+a { color: #be6700; }
+
+a:hover, a:focus { color: #100; }
+
+/*------------------------------------*\ $MEDIA ELEMENTS \*------------------------------------*/
+img, video, object { max-width: 100%; height: auto; }
+
+figure { margin-bottom: 1em; text-align: center; }
+
+figure img { display: inline-block; margin-bottom: 0.1em; border: 1px solid #ddd; }
+
+@media all and (min-width: 37em) { figure { width: 100vw; margin-left: calc((100vw - 31em) / -2); padding: 0 1em; text-align: center; } }
+
+@media all and (min-width: 88em) { figure img { max-width: 1400px; } }
+
+figcaption { font-size: 0.75em; font-style: italic; color: #808080; max-width: 37rem; margin: 0 auto; text-align: left; border-bottom: 1px solid #ddd; padding-bottom: 0.5rem; }
+
+p { margin: 0 0 1em; }
+
+blockquote { font-style: italic; color: #333; padding-left: 1em; border-left: 3px solid #be6700; }
+
+blockquote cite { display: block; color: #be6700; font-size: 0.75em; margin-top: 1rem; }
+
+blockquote cite a { text-decoration: none; }
+
+blockquote cite:before { content: "–"; }
+
+pre { background: #272822; color: #f6f5de; padding: 1em; word-wrap: break-word; overflow-x: hidden; }
+
+/*------------------------------------*\ $BANNER STYLES \*------------------------------------*/
+.banner { position: fixed; bottom: 0; left: 0; width: 100%; background: #100; color: #f6f5de; z-index: 2; }
+
+.banner-content { max-width: 40rem; background: #100; margin: 0 auto; padding: 0.6em 1em; position: relative; z-index: 2; text-align: center; text-transform: lowercase; }
+
+.banner-content a { color: #f6f5de; text-decoration: none; transition: color 0.12s ease-out; }
+
+.banner-content a:hover, .banner-content a:focus { color: #be6700; }
+
+.banner-content h3 { font-size: 1em; margin: 0; display: inline; -webkit-align-self: flex-start; -ms-flex-item-align: start; align-self: flex-start; }
+
+.banner-content p { margin: 0; display: inline; -webkit-order: 3; -ms-flex-order: 3; order: 3; }
+
+@media all and (min-width: 30em) { .banner-content p { position: absolute; right: 1em; } }
+
+.banner-content .btn { background: #be6700; display: block; line-height: 1; padding: 1.05em; margin-top: 0.5em; }
+
+.banner-content .btn:hover, .banner-content .btn:focus { color: #fff; }
+
+@media all and (min-width: 30em) { .banner-content .btn { border: 0; position: absolute; bottom: 0; left: 50%; margin-left: -5.375em; margin-bottom: 0; z-index: 1; transition: all 0.12s ease-out; }
+  .banner-content .btn:hover, .banner-content .btn:focus { padding-bottom: 1.5em; } }
+
+@media all and (min-width: 30em) { .banner-content { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; justify-content: space-between; align-items: middle; } }
+
+/*------------------------------------*\ $PAGE HEADER \*------------------------------------*/
+.page-header { background: #be6700; color: #f6f5de; padding: 2rem 1rem 0; margin-bottom: 2rem; }
+
+.page-header-inner { max-width: 38rem; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; }
+
+@media all and (min-height: 30em) { .page-header-inner { height: 70vh; } }
+
+.page-kicker { margin-bottom: 0.5rem; font-size: 1rem; color: #fff; opacity: 0.5; }
+
+.page-title { margin-bottom: 2rem; color: #fff; font-size: 3rem; }
+
+@media all and (min-width: 32em) { .page-title { font-size: 4.5rem; } }
+
+.page-subtitle { font-weight: normal; border-top: 1px solid rgba(255, 255, 255, 0.5); padding-top: 1rem; font-size: 1.3rem; opacity: 0.5; }
+
+@media all and (min-width: 32em) { .page-subtitle { font-size: 1.8rem; } }
+
+.atomic-icon-links { display: block; width: 20rem; margin: 0 auto 2rem; }
+
+/*------------------------------------*\ $BUTTONS \*------------------------------------*/
+.btn { background: #be6700; color: #f6f5de; display: inline-block; padding: 1.2em 2em; margin-bottom: 0.5em; text-decoration: none; text-transform: lowercase; }
+
+.btn:hover, .btn:focus { color: #fff; }
+
+.btn-alt { border-color: #f6f5de; color: #f6f5de; }
+
+.btn-group .btn { margin-right: 1em; }
+
+/*------------------------------------*\ $FOOTER \*------------------------------------*/
+footer { text-align: center; color: #808080; font-size: 80%; padding: 1em; margin-bottom: 8em; }
+
+/*------------------------------------*\ $HEADER \*------------------------------------*/
+header { text-align: center; padding: 2em 1em; max-width: 26em; margin: 0 auto; }
+
+@media all and (min-height: 30em) { header { padding: 6em 1em; } }
+
+/*------------------------------------*\ $NOTE \*------------------------------------*/
+.note { font-style: italic; color: #808080; font-size: 0.75em; line-height: 1.5; margin-bottom: 1.2em; }
+
+.note a { color: #333; }
+
+.note a:hover, .note a:focus { color: #be6700; }
+
+/*------------------------------------*\ $TEXT PASSAGE STYLES \*------------------------------------*/
+.text { max-width: 40rem; padding: 0 1em; margin: 0 auto 2em; font-family: "Merriweather", Georgia, serif; font-size: 120%; }
+
+.text h1 { font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif; }
+
+.text h2 { color: #be6700; font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif; font-size: 2em; line-height: 1.2; position: relative; margin: 2em 0 0.5em; padding-bottom: 0.5rem; border-bottom: 3px solid #100; }
+
+.text h3 { font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif; font-size: 1.5em; line-height: 1.2; color: #100; position: relative; margin: 2em 0 0.5em; }
+
+.text h4 { font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif; font-size: 1.2em; color: #be6700; line-height: 1.2; position: relative; margin: 2em 0 0.5em; }
+
+.text ul, .text ol { margin: 0 0 1em 1em; }
+
+.text a { transition: all 0.2s ease; }
+
+.text a:hover, .text a:focus { color: #be6700; outline: 1px dotted #be6700; background: #fbfaee; }
+
+.title-link { display: block; font-family: "Merriweather", Georgia, serif; font-weight: normal; font-size: 14px; text-decoration: none; color: #ddd; position: absolute; left: -14px; top: 4px; transition: all 0.12s ease-out; }
+
+.title-link:hover, .title-link:focus { color: #be6700; background: none !important; outline: 0 !important; }
+
+@media all and (min-width: 41.25em) { .title-link { font-size: inherit; top: 0; left: -24px; width: 20px; } }
+
+@media all and (min-width: 41.25em) { h2 .title-link { left: -30px; } }
+
+/*------------------------------------*\ $TIMELINE \*------------------------------------*/
+.timeline { padding-left: 2em; max-width: 40rem; margin: 0 auto; }
+
+.timeline ol { border-left: 3px solid #100; padding: 0 0 3em; position: relative; margin: 0; list-style: none; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-direction: column-reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+
+.timeline ol:before { content: ""; position: absolute; bottom: 0; left: -1.78em; width: 50px; height: 50px; background: url(../images/icon-atom.svg) no-repeat; background-size: 100% 100%; -webkit-animation: spin 10s linear infinite; -moz-animation: spin 10s linear infinite; -o-animation: spin 10s linear infinite; animation: spin 10s linear infinite; }
+
+.timeline li { padding-left: 1.2em; margin: 0 0 3em; position: relative; }
+
+.timeline li:before { content: ""; position: absolute; top: 0; left: -0.95em; width: 25px; height: 25px; background: url(../images/icon-atom.svg) no-repeat; background-size: 100% 100%; -webkit-animation: spin 10s linear infinite; -moz-animation: spin 10s linear infinite; -o-animation: spin 10s linear infinite; animation: spin 10s linear infinite; }
+
+.timeline h3 { margin: 0 0 0.2rem; }
+
+.timeline a { border-bottom: 1px solid #be6700; text-decoration: none; }
+
+.timeline a:hover, .timeline a:focus { color: #be6700; }
+
+.timeline em { font-size: 60%; color: #808080; display: block; margin-top: 0.3rem; margin-bottom: 0.2rem; font-style: normal; }
+
+@-moz-keyframes spin { from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin { from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); } }
+
+@keyframes spin { from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); } }
+
+/*------------------------------------*\ $TITLE SCREEN STYLES \*------------------------------------*/
+.title { max-width: 72em; margin: 0 auto; padding: 1em; }
+
+.title img { display: block; width: 100%; max-height: 100%; margin-bottom: 2em; }
+
+@media all and (min-width: 44em) { .title img { margin: 0; max-width: 50%; } }
+
+.title h1 { text-align: left; margin-bottom: 1rem; line-height: 1.2; }
+
+.title h1 a { text-decoration: none; }
+
+.title p { font-family: "Merriweather", Georgia, serif; color: #333; }
+
+@media all and (min-width: 44em) { .title { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-align: center; justify-content: center; width: 100%; height: 100%; } }
+
+.title-col-2 { -webkit-box-flex: 1; -moz-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
+
+@media all and (min-width: 44em) { .title-col-2 { padding-left: 2em; } }
+
+.title-content { align-self: center; text-align: center; max-width: 65em; }
+
+.title-content img { margin-bottom: 2em; }
+
+.title-content h1 { line-height: 1; }
+
+.title-content p { color: #a29e5e; margin-bottom: 2em; }
+
+.title-content p a { color: #a29e5e; }
+
+/*------------------------------------*\ $TABLE OF CONTENTS= \*------------------------------------*/
+.toc-list { list-style: none; margin: 0 0 2em !important; padding: 0; border-top: 1px solid #ddd; }
+
+.toc-list li { border-bottom: 1px solid #ddd; overflow: hidden; }
+
+.toc-list a { display: block; padding: 1em 0; text-decoration: none; transition: all 0.12s ease-out; }
+
+.toc-list a:hover, .toc-list a:focus { background: rgba(205, 202, 162, 0.07); color: #be6700; }
+
+.toc-list span { font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif; display: block; float: left; font-size: 3rem; line-height: 1.15; margin-right: 0.5rem; }
+
+.toc-list h3 { font-size: 1.4em; margin: 0; }
+
+.toc-list p { color: #808080; margin: 0; font-size: 85%; }
+
+.toc-li-minor h3 { font-size: 1em; }
+
+/*------------------------------------*\ $PAGINATION \*------------------------------------*/
+.pagination { border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; display: flex; justify-content: space-between; padding: 1rem 0; font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif; }
+
+.pagination a { text-decoration: none; }
+
+/*------------------------------------*\ $EDITOR'S NOTES \*------------------------------------*/
+.editor { font-size: 1rem; font-style: italic; background: rgba(255, 255, 0, 0.3); padding: 0.3em; margin: 1em 0; }
+
+.editor p { margin: 0; }
+
+.brad { background: rgba(193, 97, 0, 0.6); }
+
+/*------------------------------------*\ $RESOURCES \*------------------------------------*/
+.resource-link { display: block; font-size: 0.85rem; }
+
 /*# sourceMappingURL=style.css.map */

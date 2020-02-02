@@ -1,38 +1,32 @@
 ---
-
 ---
 
 /*------------------------------------*\
     $SASS VARIABLES
 \*------------------------------------*/
 
-$white : #fff;
-$tan : #f6f5de;
-$tan-light : #fbfaee;
-$tan-dark : #a29e5e;
-$tan-dim-max : rgba(205,202,162,0.7);
-$tan-dim : rgba(205,202,162,0.4);
-$tan-dim-min : rgba(205,202,162,0.07);
-$brown : #100;
-$orange : #be6700; 
+$white: #fff;
+$tan: #f6f5de;
+$tan-light: #fbfaee;
+$tan-dark: #a29e5e;
+$tan-dim-max: rgba(205, 202, 162, 0.7);
+$tan-dim: rgba(205, 202, 162, 0.4);
+$tan-dim-min: rgba(205, 202, 162, 0.07);
+$brown: #100;
+$orange: #be6700;
 $gray-light: #ddd;
 $gray: #808080;
 $gray-dark: #333;
 
-$font-primary: 'Oswald', 'Helvetica Neue', Helvetica, sans-serif;
-$font-secondary: 'Merriweather', Georgia, serif;
+$font-primary: "Oswald", "Helvetica Neue", Helvetica, sans-serif;
+$font-secondary: "Merriweather", Georgia, serif;
 
-$font-size-sm : 0.75em;
-$font-size-large : 1.2em;
+$font-size-sm: 0.75em;
+$font-size-large: 1.2em;
 
-$max-width : 40rem;
+$max-width: 40rem;
 
-$speed-fast : 0.12s;
-
-
-
-
-
+$speed-fast: 0.12s;
 
 /*------------------------------------*\
     $RESET
@@ -40,40 +34,68 @@ $speed-fast : 0.12s;
 
 /* Border-Box http:/paulirish.com/2012/box-sizing-border-box-ftw/ */
 * {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, legend, label, table, header, footer, nav, section, figure, main {
-	margin: 0;
-	padding: 0;
+html,
+body,
+div,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+ol,
+ul,
+li,
+form,
+legend,
+label,
+table,
+header,
+footer,
+nav,
+section,
+figure,
+main {
+  margin: 0;
+  padding: 0;
 }
-header, footer, nav, section, article, hgroup, figure, main {
-	display: block;
+header,
+footer,
+nav,
+section,
+article,
+hgroup,
+figure,
+main {
+  display: block;
 }
-
-
-
-
 
 @font-face {
-  font-family: 'MyWebFont';
-  src: url('webfont.eot'); /* IE9 Compat Modes */
-  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-family: "MyWebFont";
+  src: url("webfont.eot"); /* IE9 Compat Modes */
+  src: url("webfont.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("webfont.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("webfont.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("webfont.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("webfont.svg#svgFontName") format("svg"); /* Legacy iOS */
 }
 
 @font-face {
-  font-family: 'MyWebFont';
-  src: url('webfont.eot'); /* IE9 Compat Modes */
-  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-family: "MyWebFont";
+  src: url("webfont.eot"); /* IE9 Compat Modes */
+  src: url("webfont.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("webfont.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("webfont.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("webfont.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("webfont.svg#svgFontName") format("svg"); /* Legacy iOS */
 }
 
 /*------------------------------------*\
@@ -81,17 +103,17 @@ header, footer, nav, section, article, hgroup, figure, main {
 \*------------------------------------*/
 
 html {
-	height: 100%;
+  height: 100%;
 }
 
 body {
-	background: $white;
-	font-family: $font-primary;
-	line-height: 1.5;
-	color: $brown;
-	padding: 0;
-	margin: 0;
-	min-height: 100%;
+  background: $white;
+  font-family: $font-primary;
+  line-height: 1.5;
+  color: $brown;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
 }
 
 /*------------------------------------*\
@@ -99,33 +121,37 @@ body {
 \*------------------------------------*/
 
 label {
-	display: block;
-	font-weight: bold;
-	font-family: $font-primary;
+  display: block;
+  font-weight: bold;
+  font-family: $font-primary;
 }
 
-input, select, textarea {
-	border: 6px solid #dedcb9;
-	background: $tan-dim;
-	color: $brown;
-	font: 1em/1 $font-primary;
-	padding: 0.5em;
-	width: 100%;
-	-webkit-appearance: none;
-	-webkit-border-radius: 0;
-	border-radius: 0;
-	margin-bottom: 0.5em;
+input,
+select,
+textarea {
+  border: 6px solid #dedcb9;
+  background: $tan-dim;
+  color: $brown;
+  font: 1em/1 $font-primary;
+  padding: 0.5em;
+  width: 100%;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  margin-bottom: 0.5em;
 }
 
-input:focus, select:focus, textarea:focus {
-	background-color: $tan-light;
-	outline: 0;
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: $tan-light;
+  outline: 0;
 }
 
-input[type=submit] {
-	border: 0;
-	display: inline-block;
-	width: auto;
+input[type="submit"] {
+  border: 0;
+  display: inline-block;
+  width: auto;
 }
 
 /*------------------------------------*\
@@ -134,19 +160,19 @@ input[type=submit] {
 
 /* Completely remove from the flow and screen readers. */
 .is-hidden {
-    display: none !important;
-    visibility: hidden !important;
+  display: none !important;
+  visibility: hidden !important;
 }
 
 /* Completely remove from the flow but leave available to screen readers. */
 .is-vishidden {
-    position: absolute !important;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    border: 0;
-    clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 /*------------------------------------*\
@@ -154,50 +180,50 @@ input[type=submit] {
 \*------------------------------------*/
 
 h1 {
-	font-size: 4.5rem;
-	line-height: 1;
-	margin: 0;
+  font-size: 4.5rem;
+  line-height: 1;
+  margin: 0;
+  font-weight: normal;
+
+  cite {
+    font-style: normal;
+  }
+
+  em {
+    font-family: $font-secondary;
+    display: block;
+    color: $tan-dark;
+    font-size: 40%;
     font-weight: normal;
-
-	cite {
-		font-style: normal;
-	}
-
-	em {
-		font-family: $font-secondary;
-		display: block;
-		color: $tan-dark;
-		font-size: 40%;
-		font-weight: normal;
-		text-transform: lowercase;
-	}
+    text-transform: lowercase;
+  }
 }
 
 h2 {
-	font-size: 1.8em;
-    font-weight: normal;
-	line-height: 1.2;
+  font-size: 1.8em;
+  font-weight: normal;
+  line-height: 1.2;
 }
 
 h3 {
-	font-size: 1.4em;
-    font-weight: normal;
-    line-height: 1.2;
+  font-size: 1.4em;
+  font-weight: normal;
+  line-height: 1.2;
 }
 
 h4 {
-	font-size: 1.1em;
-    font-weight: normal;
-    line-height: 1.2;
+  font-size: 1.1em;
+  font-weight: normal;
+  line-height: 1.2;
 }
 
 h5 {
-    font-family: $font-primary;
-    font-weight: normal;
-	font-size: 1.1em;
-    color: $gray;
-    position: relative;
-    margin: 2em 0 0.5em;
+  font-family: $font-primary;
+  font-weight: normal;
+  font-size: 1.1em;
+  color: $gray;
+  position: relative;
+  margin: 2em 0 0.5em;
 }
 
 /*------------------------------------*\
@@ -205,93 +231,94 @@ h5 {
 \*------------------------------------*/
 
 a {
-	color: $orange;
+  color: $orange;
 
-    &:hover, &:focus {
-        color: $brown;
-    }
+  &:hover,
+  &:focus {
+    color: $brown;
+  }
 }
 
 /*------------------------------------*\
     $MEDIA ELEMENTS
 \*------------------------------------*/
 
-img, video, object {
-	max-width: 100%;
-	height: auto;
+img,
+video,
+object {
+  max-width: 100%;
+  height: auto;
 }
 
 figure {
-	margin-bottom: 1em;
-	text-align: center;
+  margin-bottom: 1em;
+  text-align: center;
 
-	img {
-		display: inline-block;
-		margin-bottom: 0.1em;
-		border: 1px solid $gray-light;
-	}
+  img {
+    display: inline-block;
+    margin-bottom: 0.1em;
+    border: 1px solid $gray-light;
+  }
 
-	@media all and (min-width: 37em) {
-		width: 100vw;
-		margin-left: calc((100vw - 31em) / -2);
-		padding: 0 1em;
-		text-align: center;
+  @media all and (min-width: 37em) {
+    width: 100vw;
+    margin-left: calc((100vw - 31em) / -2);
+    padding: 0 1em;
+    text-align: center;
+  }
 
-
-	}
-
-	@media all and (min-width: 88em) {
-		img {
-			max-width: 1400px;
-		}
-	}
+  @media all and (min-width: 88em) {
+    img {
+      max-width: 1400px;
+    }
+  }
 }
 
 figcaption {
-	font-size: $font-size-sm;
-	font-style: italic;
-	color: $gray;
-	max-width: 37rem;
-	margin: 0 auto;
-    text-align: left;
-    border-bottom: 1px solid $gray-light;
-    padding-bottom: 0.5rem;
+  font-size: $font-size-sm;
+  font-style: italic;
+  color: $gray;
+  max-width: 37rem;
+  margin: 0 auto;
+  text-align: left;
+  border-bottom: 1px solid $gray-light;
+  padding-bottom: 0.5rem;
 }
 
 @charset "UTF-8";
 
 p {
-	margin: 0 0 1em;
+  margin: 0 0 1em;
 }
 
 blockquote {
-	font-style: italic;
-	color: $gray-dark;
-	padding-left: 1em;
-	border-left: 3px solid $orange;
+  font-style: italic;
+  color: $gray-dark;
+  padding-left: 1em;
+  border-left: 3px solid $orange;
 
-	cite {
-		display: block;
-		color: $orange;
-		font-size: $font-size-sm;
-		margin-top: 1rem;
+  cite {
+    display: block;
+    color: $orange;
+    font-size: $font-size-sm;
+    margin-top: 1rem;
 
-		a {
-            text-decoration: none;
-		}
+    a {
+      text-decoration: none;
+    }
 
-		&:before {
-			content: "–";
-		}
-	}
+    &:before {
+      content: "–";
+    }
+  }
 }
 
 pre {
-	background: #272822;
-	color: $tan;
-	padding: 1em;
-	word-wrap: break-word;
-	overflow-x: hidden;
+  background: #272822;
+  color: $tan;
+  padding: 1em;
+  word-wrap: break-word;
+  overflow-x: hidden;
 }
 
 /*------------------------------------*\
@@ -299,155 +326,155 @@ pre {
 \*------------------------------------*/
 
 .banner {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	background: $brown;
-	color: $tan;
-	z-index: 2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: $brown;
+  color: $tan;
+  z-index: 2;
 }
 
 .banner-content {
-	max-width: $max-width;
-	background: $brown;
-	margin: 0 auto;
-	padding: 0.6em 1em;
-	position: relative;
-	z-index: 2;
-	text-align: center;
-	text-transform: lowercase;
+  max-width: $max-width;
+  background: $brown;
+  margin: 0 auto;
+  padding: 0.6em 1em;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  text-transform: lowercase;
 
-	a {
-		color: $tan;
-		text-decoration: none;
-		transition: color $speed-fast ease-out;
+  a {
+    color: $tan;
+    text-decoration: none;
+    transition: color $speed-fast ease-out;
 
-		&:hover, &:focus {
-			color: $orange;
-		}
-	}
+    &:hover,
+    &:focus {
+      color: $orange;
+    }
+  }
 
-	h3 {
-		font-size: 1em;
-		margin: 0;
-		display: inline;
-		-webkit-align-self: flex-start;
-		-ms-flex-item-align: start;
-		align-self: flex-start;
-	}
+  h3 {
+    font-size: 1em;
+    margin: 0;
+    display: inline;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
 
-	p {
-		margin: 0;
-		display: inline;
-		-webkit-order: 3;
-		-ms-flex-order: 3;
-		order: 3;
+  p {
+    margin: 0;
+    display: inline;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
 
-		@media all and (min-width: 30em) {
-			position: absolute;
-			right: 1em;
-		}
-	}
+    @media all and (min-width: 30em) {
+      position: absolute;
+      right: 1em;
+    }
+  }
 
-	.btn {
-		background: $orange;
-		display: block;
-		line-height: 1;
-		padding: 1.05em;
-		margin-top: 0.5em;
+  .btn {
+    background: $orange;
+    display: block;
+    line-height: 1;
+    padding: 1.05em;
+    margin-top: 0.5em;
 
-		&:hover, &:focus {
-			color: $white;
-		}
+    &:hover,
+    &:focus {
+      color: $white;
+    }
 
-		@media all and (min-width: 30em) {
-			border: 0;
-			position: absolute;
-			bottom: 0;
-			left: 50%;
-			margin-left: -5.375em;
-			margin-bottom: 0;
-			z-index: 1;
-			transition: all $speed-fast ease-out;
+    @media all and (min-width: 30em) {
+      border: 0;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -5.375em;
+      margin-bottom: 0;
+      z-index: 1;
+      transition: all $speed-fast ease-out;
 
-			&:hover, &:focus {
-				padding-bottom: 1.5em;
-			}
-		}
-	}
+      &:hover,
+      &:focus {
+        padding-bottom: 1.5em;
+      }
+    }
+  }
 
-	@media all and (min-width: 30em) {
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		justify-content: space-between;
-		align-items: middle;
-	}
+  @media all and (min-width: 30em) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: middle;
+  }
 }
-
 
 /*------------------------------------*\
     $PAGE HEADER
 \*------------------------------------*/
 
 .page-header {
-    background: $orange;
-    color: $tan;
-    padding: 2rem 1rem 0;
-    margin-bottom: 2rem;
+  background: $orange;
+  color: $tan;
+  padding: 2rem 1rem 0;
+  margin-bottom: 2rem;
 }
 
 .page-header-inner {
-    max-width: 38rem;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  max-width: 38rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-
-    @media all and (min-height: 30em) {
-        height: 70vh;
-    }
+  @media all and (min-height: 30em) {
+    height: 70vh;
+  }
 }
 
 .page-kicker {
-	margin-bottom: 0.5rem;
-    font-size: 1rem;
-    color: $white;
-    opacity: 0.5;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: $white;
+  opacity: 0.5;
 }
 
 .page-title {
-	margin-bottom: 2rem;
-	color: $white;
-    font-size: 3rem;
+  margin-bottom: 2rem;
+  color: $white;
+  font-size: 3rem;
 
-    @media all and (min-width: 32em) {
-        font-size: 4.5rem;
-    }
+  @media all and (min-width: 32em) {
+    font-size: 4.5rem;
+  }
 }
 
 .page-subtitle {
-	font-weight: normal;
-	border-top: 1px solid rgba(255,255,255,0.5);
-	padding-top: 1rem;
-	font-size: 1.3rem;
-	opacity: 0.5;
+  font-weight: normal;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 1rem;
+  font-size: 1.3rem;
+  opacity: 0.5;
 
-    @media all and (min-width: 32em) {
-        font-size: 1.8rem;
-    }
+  @media all and (min-width: 32em) {
+    font-size: 1.8rem;
+  }
 }
 
 .atomic-icon-links {
-    display: block;
-    width: 20rem;
-    margin: 0 auto 2rem;
+  display: block;
+  width: 20rem;
+  margin: 0 auto 2rem;
 }
-
 
 /*------------------------------------*\
     $BUTTONS
@@ -457,28 +484,29 @@ pre {
 // Styleguide atoms-buttons
 
 .btn {
-	background: $orange;
-	color: $tan;
-	display: inline-block;
-	padding: 1.2em 2em;
-	margin-bottom: 0.5em;
-	text-decoration: none;
-	text-transform: lowercase;
+  background: $orange;
+  color: $tan;
+  display: inline-block;
+  padding: 1.2em 2em;
+  margin-bottom: 0.5em;
+  text-decoration: none;
+  text-transform: lowercase;
 
-	&:hover, &:focus {
-		color: $white;
-	}
+  &:hover,
+  &:focus {
+    color: $white;
+  }
 }
 
 .btn-alt {
-	border-color: $tan;
-	color: $tan;
+  border-color: $tan;
+  color: $tan;
 }
 
 .btn-group {
-	.btn {
-		margin-right: 1em;
-	}
+  .btn {
+    margin-right: 1em;
+  }
 }
 
 /*------------------------------------*\
@@ -486,11 +514,11 @@ pre {
 \*------------------------------------*/
 
 footer {
-	text-align: center;
-	color: $gray;
-	font-size: 80%;
-	padding: 1em;
-	margin-bottom: 8em;
+  text-align: center;
+  color: $gray;
+  font-size: 80%;
+  padding: 1em;
+  margin-bottom: 8em;
 }
 
 /*------------------------------------*\
@@ -498,14 +526,14 @@ footer {
 \*------------------------------------*/
 
 header {
-	text-align: center;
-	padding: 2em 1em;
-	max-width: 26em;
-	margin: 0 auto;
+  text-align: center;
+  padding: 2em 1em;
+  max-width: 26em;
+  margin: 0 auto;
 
-	@media all and (min-height: 30em) {
-		padding: 6em 1em;
-	}
+  @media all and (min-height: 30em) {
+    padding: 6em 1em;
+  }
 }
 
 /*------------------------------------*\
@@ -513,19 +541,20 @@ header {
 \*------------------------------------*/
 
 .note {
-	font-style: italic;
-	color: $gray;
-	font-size: $font-size-sm;
-	line-height: 1.5;
-	margin-bottom: 1.2em;
+  font-style: italic;
+  color: $gray;
+  font-size: $font-size-sm;
+  line-height: 1.5;
+  margin-bottom: 1.2em;
 
-	a {
-		color: $gray-dark;
+  a {
+    color: $gray-dark;
 
-		&:hover, &:focus {
-			color: $orange;
-		}
-	}
+    &:hover,
+    &:focus {
+      color: $orange;
+    }
+  }
 }
 
 /*------------------------------------*\
@@ -533,92 +562,94 @@ header {
 \*------------------------------------*/
 
 .text {
-    max-width: $max-width;
-	padding: 0 1em;
-	margin: 0 auto 2em;
-	font-family: $font-secondary;
-	font-size: 120%;
+  max-width: $max-width;
+  padding: 0 1em;
+  margin: 0 auto 2em;
+  font-family: $font-secondary;
+  font-size: 120%;
 
-	h1 {
-		font-family: $font-primary;
-	}
+  h1 {
+    font-family: $font-primary;
+  }
 
-    h2 {
-        color: $orange;
-        font-family: $font-primary;
-    	font-size: 2em;
-    	line-height: 1.2;
-        position: relative;
-        margin: 2em 0 0.5em;
-        padding-bottom: 0.5rem;
-        border-bottom: 3px solid $brown;
+  h2 {
+    color: $orange;
+    font-family: $font-primary;
+    font-size: 2em;
+    line-height: 1.2;
+    position: relative;
+    margin: 2em 0 0.5em;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid $brown;
+  }
+
+  h3 {
+    font-family: $font-primary;
+    font-size: 1.5em;
+    line-height: 1.2;
+    color: $brown;
+    position: relative;
+    margin: 2em 0 0.5em;
+  }
+
+  h4 {
+    font-family: $font-primary;
+    font-size: 1.2em;
+    color: $orange;
+    line-height: 1.2;
+    position: relative;
+    margin: 2em 0 0.5em;
+  }
+
+  ul,
+  ol {
+    margin: 0 0 1em 1em;
+  }
+
+  a {
+    transition: all 0.2s ease;
+
+    &:hover,
+    &:focus {
+      color: $orange;
+      outline: 1px dotted $orange;
+      background: $tan-light;
     }
-
-    h3 {
-        font-family: $font-primary;
-    	font-size: 1.5em;
-        line-height: 1.2;
-        color: $brown;
-        position: relative;
-        margin: 2em 0 0.5em;
-    }
-
-    h4 {
-        font-family: $font-primary;
-    	font-size: 1.2em;
-        color: $orange;
-        line-height: 1.2;
-        position: relative;
-        margin: 2em 0 0.5em;
-    }
-
-	ul, ol {
-		margin: 0 0 1em 1em;
-	}
-
-    a {
-        transition: all 0.2s ease;
-
-        &:hover, &:focus {
-            color: $orange;
-            outline: 1px dotted $orange;
-            background: $tan-light;
-        }
-    }
+  }
 }
 
 //Title link
 .title-link {
-    display: block;
-    font-family: $font-secondary;
-    font-weight: normal;
-    font-size: 14px;
-    text-decoration: none;
-    color: $gray-light;
-    position: absolute;
-    left: -14px;
-    top: 4px;
-    transition: all $speed-fast ease-out;
+  display: block;
+  font-family: $font-secondary;
+  font-weight: normal;
+  font-size: 14px;
+  text-decoration: none;
+  color: $gray-light;
+  position: absolute;
+  left: -14px;
+  top: 4px;
+  transition: all $speed-fast ease-out;
 
+  &:hover,
+  &:focus {
+    color: $orange;
+    background: none !important;
+    outline: 0 !important;
+  }
 
-    &:hover, &:focus {
-        color: $orange;
-        background: none !important;
-        outline: 0 !important;
-    }
-
-    @media all and (min-width: 41.25em) {
-        font-size: inherit;
-        top: 0;
-        left: -24px;
-        width: 20px;
-    }
+  @media all and (min-width: 41.25em) {
+    font-size: inherit;
+    top: 0;
+    left: -24px;
+    width: 20px;
+  }
 }
 
 h2 .title-link {
-    @media all and (min-width: 41.25em) {
-        left: -30px;
-    }
+  @media all and (min-width: 41.25em) {
+    left: -30px;
+  }
 }
 
 /*------------------------------------*\
@@ -627,96 +658,109 @@ h2 .title-link {
 
 //Timeline
 .timeline {
-	padding-left: 2em;
-	max-width: $max-width;
-	margin: 0 auto;
+  padding-left: 2em;
+  max-width: $max-width;
+  margin: 0 auto;
 
-	ol {
-		border-left: 3px solid $brown;
-		padding: 0 0 3em;
-		position: relative;
-		margin: 0;
-		list-style: none;
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-direction: column-reverse;
-        -ms-flex-direction: column-reverse;
-		flex-direction: column-reverse;
+  ol {
+    border-left: 3px solid $brown;
+    padding: 0 0 3em;
+    position: relative;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
 
-		&:before {
-			content: "";
-			position: absolute;
-			bottom: 0;
-			left: -1.78em;
-			width: 50px;
-			height: 50px;
-			background: url(../images/icon-atom.svg) no-repeat;
-			background-size: 100% 100%;
-			-webkit-animation: spin 10s linear infinite;
-			-moz-animation: spin 10s linear infinite;
-			-o-animation: spin 10s linear infinite;
-			animation: spin 10s linear infinite;
-		}
-	}
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -1.78em;
+      width: 50px;
+      height: 50px;
+      background: url(../images/icon-atom.svg) no-repeat;
+      background-size: 100% 100%;
+      -webkit-animation: spin 10s linear infinite;
+      -moz-animation: spin 10s linear infinite;
+      -o-animation: spin 10s linear infinite;
+      animation: spin 10s linear infinite;
+    }
+  }
 
-	li {
-		padding-left: 1.2em;
-		margin: 0 0 3em;
-		position: relative;
+  li {
+    padding-left: 1.2em;
+    margin: 0 0 3em;
+    position: relative;
 
-		&:before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: -0.95em;
-			width: 25px;
-			height: 25px;
-			background: url(../images/icon-atom.svg) no-repeat;
-			background-size: 100% 100%;
-			-webkit-animation: spin 10s linear infinite;
-			-moz-animation: spin 10s linear infinite;
-			-o-animation: spin 10s linear infinite;
-			animation: spin 10s linear infinite;
-		}
-	}
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -0.95em;
+      width: 25px;
+      height: 25px;
+      background: url(../images/icon-atom.svg) no-repeat;
+      background-size: 100% 100%;
+      -webkit-animation: spin 10s linear infinite;
+      -moz-animation: spin 10s linear infinite;
+      -o-animation: spin 10s linear infinite;
+      animation: spin 10s linear infinite;
+    }
+  }
 
-	h3 {
-		margin: 0 0 0.2rem;
-	}
+  h3 {
+    margin: 0 0 0.2rem;
+  }
 
-	a {
-		border-bottom: 1px solid $orange;
-		text-decoration: none;
+  a {
+    border-bottom: 1px solid $orange;
+    text-decoration: none;
 
-		&:hover, &:focus {
-			color: $orange;
-		}
-	}
+    &:hover,
+    &:focus {
+      color: $orange;
+    }
+  }
 
-	em {
-		font-size: 60%;
-		color: $gray;
-		display: block;
-        margin-top: 0.3rem;
-        margin-bottom: 0.2rem;
-		font-style: normal;
-	}
+  em {
+    font-size: 60%;
+    color: $gray;
+    display: block;
+    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
+    font-style: normal;
+  }
 }
 
 @-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
 }
 @-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
 @keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*------------------------------------*\
@@ -724,87 +768,87 @@ h2 .title-link {
 \*------------------------------------*/
 
 .title {
-	max-width: 72em;
-	margin: 0 auto;
-	padding: 1em;
+  max-width: 72em;
+  margin: 0 auto;
+  padding: 1em;
 
-	img {
-		display: block;
-        width: 100%;
-		max-height: 100%;
-		margin-bottom: 2em;
+  img {
+    display: block;
+    width: 100%;
+    max-height: 100%;
+    margin-bottom: 2em;
 
-		@media all and (min-width: 44em) {
-			margin: 0;
-			max-width: 50%;
-		}
-	}
-
-	h1 {
-		text-align: left;
-        margin-bottom: 1rem;
-        line-height: 1.2;
-
-        a {
-            text-decoration: none;
-        }
-	}
-
-    p {
-        font-family: $font-secondary;
-        color: $gray-dark;
+    @media all and (min-width: 44em) {
+      margin: 0;
+      max-width: 50%;
     }
+  }
 
-	@media all and (min-width: 44em) {
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-align: center;
-		-ms-flex-align: center;
-		-webkit-align-items: center;
-		align-items: center;
-		-webkit-box-align: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
+  h1 {
+    text-align: left;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  p {
+    font-family: $font-secondary;
+    color: $gray-dark;
+  }
+
+  @media all and (min-width: 44em) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .title-col-2 {
-	-webkit-box-flex: 1;
-	-moz-box-flex: 1;
-	-webkit-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 
-	@media all and (min-width: 44em) {
-		padding-left: 2em;
-	}
+  @media all and (min-width: 44em) {
+    padding-left: 2em;
+  }
 }
 
 .title-content {
-	align-self: center;
-	text-align: center;
-	max-width: 65em;
+  align-self: center;
+  text-align: center;
+  max-width: 65em;
 
-	img {
-		margin-bottom: 2em;
-	}
+  img {
+    margin-bottom: 2em;
+  }
 
-	h1 {
-		line-height: 1;
-	}
+  h1 {
+    line-height: 1;
+  }
 
-	p {
-		color: $tan-dark;
-		margin-bottom: 2em;
+  p {
+    color: $tan-dark;
+    margin-bottom: 2em;
 
-		a {
-			color: $tan-dark;
-		}
-	}
+    a {
+      color: $tan-dark;
+    }
+  }
 }
 
 /*------------------------------------*\
@@ -812,94 +856,88 @@ h2 .title-link {
 \*------------------------------------*/
 
 .toc-list {
-	list-style: none;
-	margin: 0 0 2em !important;
-	padding: 0;
-    border-top: 1px solid $gray-light;
+  list-style: none;
+  margin: 0 0 2em !important;
+  padding: 0;
+  border-top: 1px solid $gray-light;
 
-	li {
-		border-bottom: 1px solid $gray-light;
-        overflow: hidden;
-	}
+  li {
+    border-bottom: 1px solid $gray-light;
+    overflow: hidden;
+  }
 
-	a {
-		display: block;
-		padding: 1em 0;
-		text-decoration: none;
-		transition: all $speed-fast ease-out;
+  a {
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+    transition: all $speed-fast ease-out;
 
-		&:hover, &:focus {
-			background: $tan-dim-min;
-			color: $orange;
-		}
-	}
-
-    span {
-        font-family: $font-primary;
-        display: block;
-        float: left;
-        font-size: 3rem;
-        line-height: 1.15;
-        margin-right: 0.5rem;
+    &:hover,
+    &:focus {
+      background: $tan-dim-min;
+      color: $orange;
     }
+  }
 
-	h3 {
-		font-size: 1.4em;
-		margin: 0;
-	}
+  span {
+    font-family: $font-primary;
+    display: block;
+    float: left;
+    font-size: 3rem;
+    line-height: 1.15;
+    margin-right: 0.5rem;
+  }
 
-	p {
-		color: $gray;
-		margin: 0;
-		font-size: 85%;
-	}
+  h3 {
+    font-size: 1.4em;
+    margin: 0;
+  }
+
+  p {
+    color: $gray;
+    margin: 0;
+    font-size: 85%;
+  }
 }
 
 .toc-li-minor h3 {
-	font-size: 1em;
+  font-size: 1em;
 }
-
-
-
-
 
 /*------------------------------------*\
     $PAGINATION
 \*------------------------------------*/
 .pagination {
-    border-top: 1px solid $gray-light;
-    border-bottom: 1px solid $gray-light;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 0;
-    font-family: $font-primary;
+  border-top: 1px solid $gray-light;
+  border-bottom: 1px solid $gray-light;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-family: $font-primary;
 
-    a {
-        text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 }
-
-
-
 
 /*------------------------------------*\
     $EDITOR'S NOTES
 \*------------------------------------*/
 
 .editor {
-	font-size: 1rem;
-	font-style: italic;
-	background: rgba(255,255,0, 0.3);
-    padding: 0.3em;
-    margin: 1em 0;
+  font-size: 1rem;
+  font-style: italic;
+  background: rgba(255, 255, 0, 0.3);
+  padding: 0.3em;
+  margin: 1em 0;
 
-    p {
-	    margin: 0;
-    }
+  p {
+    margin: 0;
+  }
 }
 
 .brad {
-    background: rgba(193,97,0, 0.6);
+  background: rgba(193, 97, 0, 0.6);
 }
 
 /*------------------------------------*\
@@ -907,10 +945,9 @@ h2 .title-link {
 \*------------------------------------*/
 
 .resource-link {
-	display: block;
-	font-size: 0.85rem;
+  display: block;
+  font-size: 0.85rem;
 }
 
 .resource-link {
-	
 }
