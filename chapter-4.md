@@ -151,7 +151,7 @@ Ed: What do you mean by 'owned' here? Owned by whom? The site owners?
 
 <div class="editor brad">
 {% capture m %}
-Brad: Updated this text to make it clearer. Trying to convey the fact that certain pieces of UI are owned by the organization, but other pieces might be out of their jurisdiction. A good example is an ecommerce site whose checkout flow temporarily kicks people out to PayPal's site to finalize payment. The team can control the UI up until that point, but can't modify the third-party UI. Happy to hear suggestions if this still misses the mark. 
+Brad: Updated this text to make it clearer. Trying to convey the fact that certain pieces of UI are owned by the organization, but other pieces might be out of their jurisdiction. A good example is an ecommerce site whose checkout flow temporarily kicks people out to PayPal's site to finalize payment. The team can control the UI up until that point, but can't modify the third-party UI. Happy to hear suggestions if this still misses the mark.
 {% endcapture %}
 {{ m | markdownify }}
 </div>
@@ -199,7 +199,7 @@ Just how we build things like performance, accessibility, and responsiveness int
 
 In fact, **to create the whole, you need to create the parts of that whole**. Our interfaces consist of smaller pieces, whether you pay those smaller pieces any mind or not.
 
-You have a decision to make: focus solely on creating the whole while ignoring the parts, or spend some time organizing the parts to help you more efficiently create the whole. In his book <cite>*[Multiscreen UX Design](http://store.elsevier.com/Multiscreen-UX-Design/Wolfram-Nagel/isbn-9780128027295/)*</cite>, Wolfram Nagel wonderfully articulates these approaches using LEGO bricks as an analogy.
+You have a decision to make: focus solely on creating the whole while ignoring the parts, or spend some time organizing the parts to help you more efficiently create the whole. In his book <cite>[Multiscreen UX Design](http://store.elsevier.com/Multiscreen-UX-Design/Wolfram-Nagel/isbn-9780128027295/)</cite>, Wolfram Nagel wonderfully articulates these approaches using LEGO bricks as an analogy.
 
 One way to approach a LEGO project is to simply dump the pieces out of the box onto a table, roll up your sleeves, then start building your creation.
 
@@ -333,7 +333,7 @@ There's a fundamental misunderstanding that all coding is ultra-geeky programmin
 
 Organizationally, there is often a massive divide between designers and developers (or marketing and IT, or creative and engineering, or some other divisive labels). Designers and developers often sit on different floors, in different buildings altogether, in different cities, and sometimes even in different countries on different continents. While some of this organizational separation may be justified, **creating a division between designers and front-end developers is an absolutely terrible idea**.
 
-The fact remains that HTML, CSS, and presentational JavaScript build user interfaces—yes, the same user interfaces that those designers are meticulously crafting in tools like Photoshop and Sketch. For teams to build successful user interface design systems together, **it's crucial to treat [front-end development as a core part of the design process](http://bradfrost.com/blog/post/development-is-design)**.
+The fact remains that HTML, CSS, and presentational JavaScript build user interfaces – yes, the same user interfaces that those designers are meticulously crafting in tools like Photoshop and Sketch. For teams to build successful user interface design systems together, **it's crucial to treat [front-end development as a core part of the design process](http://bradfrost.com/blog/post/development-is-design)**.
 
 When you show stakeholders only static pictures of websites, they can naturally only comment and sign off on pictures of websites. This [sets the wrong expectations](https://stuffandnonsense.co.uk/blog/about/time_to_stop_showing_clients_static_design_visuals). But by **getting the design into the browser as fast as possible**, you confront stakeholders with the realities of the final medium much sooner in the process. Working in HTML, CSS, and presentational JavaScript allows teams to not only create aesthetically beautiful designs, but demonstrates those uniquely digital design considerations like:
 
@@ -363,15 +363,14 @@ With the general shape of the sculpture roughed out, the artist then begins homi
 
 Again, I think subtractive stone sculpture is a great analogy for a successful digital process, although unlike sculpture we have the power of *undo*!
 
-It's essential to get stakeholders comfortable with reviewing works in progress rather than fully baked designs and code. As I mentioned in chapter 1, every organization these days wants to become more agile, and iteration is a key part of being agile. **It's more important to make steps in the right direction** than exhaust a ton of effort painting unrealistic pictures of what you want the final piece to be. **A sound design system doesn't roll off an assembly line, but is rather sculpted in iterative loops, building up fidelity as the project progresses.**
+It's essential to get stakeholders comfortable with reviewing works in progress rather than fully baked designs and code. As I mentioned in chapter 1, every organization these days wants to become more agile, and iteration is a key part of being agile. **It's more important to make steps in the right direction** than exhaust a ton of effort painting unrealistic pictures of what you want the final piece to be. **A robust design system doesn't roll off an assembly line, but rather is sculpted in iterative loops, building up fidelity as the project progresses.**
 
-If this all sounds a bit messy, that's because it is! To the dismay of some project managers, the design process doesn't fit neatly into the rigid borders of Excel spreadsheets and Gantt charts. True collaboration between disciplines is fuzzy and chaotic, and that's not a bad thing. **Constant communication, tight feedback loops, and true collaboration therefore become the glue that holds the process together**. Get your entire team to commit to honest conversation and genuine collaboration, and the details of your process will fall into place.
+If this all sounds a bit messy, that's because it is! To the dismay of some project managers, the design process doesn't fit neatly into the rigid borders of Excel spreadsheets and Gantt charts. True collaboration between disciplines is fuzzy and chaotic, and that's not a bad thing. **Constant communication, tight feedback loops, and true collaboration therefore become the glue that holds the process together.** Get your entire team to commit to honest conversation and genuine collaboration, and the details of your process will fall into place.
 
 Are everyone's expectations properly set? Good! Now let's roll up our sleeves and get to work establishing our design system.
 
 ## Establishing direction
 Teams are often eager to jump right into fun high-fidelity design and development work, and clients are eager to see and react to that detailed work. However, this leads to distractions, assumptions, and all the aforementioned misguided expectations. **It's essential to agree on an overall design direction and paint the broad strokes first** before moving into high-fidelity design and development. This requires restraint and expectation management, but results in more focused decision making and more realistic work.
-
 
 What does this lo-fi work look like? Let's take a look at some techniques UX designers, visual designers, and front-end developers can use to begin crafting a strong overall direction for a UI design system.
 
@@ -546,9 +545,9 @@ Brad: This is the result of writing this chapter of a long period of time! I rem
 ## Bring it on home
 The website is taking shape and the team is cooking with gas to bring the project home. At this stage, UI patterns are well established, the team is taking some final steps to tighten everything up and prepare for launch.
 
-UX designers are hitting the prototype hard to make sure the flows and interactions are all logical and intuitive. Visual designers are combing over the interface and proposing design tweaks to the UI to polish up the design. Front-end developers are testing the experience in a slew of browsers and devices while also addressing design feedback. Back-end developers are hard at work integrating the front-end UI into the CMS (we'll talk more about the relationship between front-end and back-end in chapter 5). And of course the clients and stakeholders are making last-minute demands—I mean suggestions—about the design and content. The whole team is tightening up documentation, cleaning up the pattern library, and working hard to get the site off the ground.
+UX designers are hitting the prototype hard to make sure the flows and interactions are all logical and intuitive. Visual designers are combing over the interface and proposing design tweaks to the UI to polish up the design. Front-end developers are testing the experience in a slew of browsers and devices while also addressing design feedback. Back-end developers are hard at work integrating the front-end UI into the CMS (we'll talk more about the relationship between front-end and back-end in chapter 5). And of course the clients and stakeholders are making last-minute demands – I mean suggestions – about the design and content. The whole team is tightening up documentation, cleaning up the pattern library, and working hard to get the site off the ground.
 
-Then—seemingly in the blink of an eye—the website launches. Champagne is poured, high-fives are exchanged and, of course, post-launch bugs are squashed. Users visit the new site to find a beautiful, functional, consistent, and cohesive experience that undoubtedly makes them weep tears of joy. Mission accomplished.
+Then – seemingly in the blink of an eye – the website launches. Champagne is poured, high-fives are exchanged and, of course, post-launch bugs are squashed. Users visit the new site to find a beautiful, functional, consistent, and cohesive experience that undoubtedly makes them weep tears of joy. Mission accomplished.
 
 What began as a giant slab of rock is now a finely polished sculpture, thanks to a ton of hard work, genuine collaboration, constant communication, and plenty of iteration. Moreover, in addition to a brand-spanking-new website, the team leaves behind a flexible, deliberate UI design system bundled up in a beautiful pattern library.
 
