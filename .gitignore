@@ -1,4 +1,5 @@
 .sass-cache
+.jekyll-cache
 .DS_Store
 node_modules
 _patternlab
