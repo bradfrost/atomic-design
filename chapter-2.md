@@ -45,7 +45,7 @@ Apparently Mr. Rae's strategy of having students mind-numbingly balance tons of 
 ## The atomic design methodology
 By now you may be wondering why we're talking about atomic theory, and maybe you're even a bit angry at me for forcing you to relive memories of high school chemistry class. But this is going somewhere, I promise.
 
-We discussed earlier how all matter in the universe can be broken down into a finite set of atomic elements. As it happens, our interfaces can be broken down into a similar finite set of elements. [Josh Duck's Periodic Table of HTML Elements](http://smm.zoomquiet.io/data/20110511083224/index.html) beautifully articulates how all of our websites, apps, intranets, hoobadyboops, and whatevers are all composed of the same HTML elements.
+We discussed earlier how all matter in the universe can be broken down into a finite set of atomic elements. As it happens, our interfaces can be broken down into a similar finite set of elements. [Josh Duck's Periodic Table of HTML Elements](https://joshduck.com/periodic-table.html) beautifully articulates how all of our websites, apps, intranets, hoobadyboops, and whatevers are all composed of the same HTML elements.
 
 <figure>
     <img src="../images/content/html-periodic-table.png" alt="The periodic table of HTML elements by Josh Duck." />
@@ -230,7 +230,7 @@ We must create systems that establish reusable design patterns and also accurate
 
 - A user has one item in their shopping cart and another user has ten items in their cart.
 - A web app's dashboard typically shows recent activity, but that section is suppressed for first-time users.
-- One article headline might be 40 characters long, while another article headline might be 340 characters long.  
+- One article headline might be 40 characters long, while another article headline might be 340 characters long.
 - Users with administrative privileges might see additional buttons and options on their dashboard compared to users who aren't admins.
 
 In all of these examples, the underlying templates are the same, but the user interfaces change to reflect the dynamic nature of the content. These variations directly influence how the underlying molecules, organisms, and templates are constructed. Therefore, creating pages that account for these variations helps us create more resilient design systems.
