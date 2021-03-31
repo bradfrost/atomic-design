@@ -71,7 +71,7 @@ To make this happen, Pattern Lab uses the *include* feature of [Mustache](https:
 
 <pre>
 <code>
-{% raw %}{{> atom-thumbnail }}{% endraw %}
+{% raw %}{{> atoms-thumbnail }}{% endraw %}
 </code>
 </pre>
 
@@ -98,7 +98,7 @@ This pattern should look fairly familiar. A thumbnail image, headline, and excer
 ````````handlebars
 <div class="block-post">
     <a href="{% raw %}{{ url }}{% endraw %}">
-        {% raw %}{{> atoms-thumb }}{% endraw %}
+        {% raw %}{{> atoms-thumbnail }}{% endraw %}
         <h3>{% raw %}{{ headline }}{% endraw %}</h3>
        <p>{% raw %}{{ excerpt }}{% endraw %}</p>
     </a>
