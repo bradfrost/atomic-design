@@ -262,7 +262,7 @@ What if the user doesn’t upload a profile picture? What if the user has 87 ite
 
 Articulating these UI variations in a static design tool is an exercise in tediousness and redundancy, which may explain why they're rarely designed. But if we want to create systems that address all the variables and realities of our content, we must take those ‘what if’ questions into account.
 
-How do we address all manner of UI variation without exhausting ourselves in the process? Pattern Lab's *[pseudo-pattern](https://patternlab.io/docs/using-pseudo-patterns)* feature allows us to articulate sometimes wildly different scenarios with just a few changes to our data.
+How do we address all manner of UI variation without exhausting ourselves in the process? Pattern Lab's *[pseudo-pattern](http://patternlab.io/docs/pattern-pseudo-patterns.html)* feature allows us to articulate sometimes wildly different scenarios with just a few changes to our data.
 
 Let's say we're making an app whose dashboard displays a list of project collaborators. The UI might look something like this:
 
