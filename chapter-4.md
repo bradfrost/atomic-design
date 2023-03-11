@@ -247,7 +247,7 @@ How did we get to the point where we sell and design websites like they're stati
 
 However, this didn't come without consequences. This print-like perspective of the web reinforced the notion that web designs, like their offline counterparts, could and should look the same in every environment. It also kept the focus on how a web design *looked* rather than how it *worked*, ignoring all the unique characteristics of this rich new medium. Moreover, it strengthened the belief that we could apply the same linear processes used to create print work to our digital work.
 
-Time went by, of course, and mobile exploded, technology improved, and the web become the incredibly large and diverse landscape we know today. Gone are the desktop-only days of yore, and in their place is a time of smartphones, dumb phones, tablets, phablets, netbooks, notebooks, e-readers, wearables, TVs, game consoles, car dashboards, and so much more.
+Time went by, of course, and mobile exploded, technology improved, and the web became the incredibly large and diverse landscape we know today. Gone are the desktop-only days of yore, and in their place is a time of smartphones, dumb phones, tablets, phablets, netbooks, notebooks, e-readers, wearables, TVs, game consoles, car dashboards, and so much more.
 
 <figure>
     <img src="../images/content/this-is-the-web-2.png" alt="This is the web: a potpourri of devices, screen sizes, capabilities, form factors, network speeds, input types, and more." />
