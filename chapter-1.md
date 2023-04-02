@@ -99,7 +99,7 @@ Moving away from Ron Popeil-esque, set-it-and-forget-it redesigns requires delib
 ### An iterative process
 If I had a quarter for every time I heard some stakeholder declare “We’re trying to be more agile,” I’d be orbiting the earth in my private spacecraft instead of writing this book.
 
-Wanting to be more agile is commendable. But _agile_ is a loaded term, with big differences between capital-A Agile and lowercase-a agile. Capital-A Agile is a specific methodology for software development, equipped with a [manifesto](http://www.agilemanifesto.org/) and accompanying frameworks like [Scrum](http://en.wikipedia.org/wiki/Scrum_%28software_development%29) and [Lean](http://en.wikipedia.org/wiki/Lean_software_development).
+Wanting to be more agile is commendable. But _agile_ is a loaded term, with big differences between capital-A Agile and lowercase-a agile. Capital-A Agile is a specific methodology for software development, equipped with a [manifesto](https://agilemanifesto.org/) and accompanying frameworks like [Scrum](http://en.wikipedia.org/wiki/Scrum_%28software_development%29) and [Lean](http://en.wikipedia.org/wiki/Lean_software_development).
 
 Lowercase-a agile is more of an informal desire to create an efficient process. This desire may certainly involve adopting general [principles](http://www.agilemanifesto.org/principles.html) from capital-A Agile, but it may not involve adopting the Agile process in its entirety. Project manager Brett Harned explains:
 
