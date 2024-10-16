@@ -234,7 +234,7 @@ Design in the print world focuses heavily on visual aesthetics. After all, you c
 
 These additional design considerations are vital for creating great digital work, yet they are too often absent from our processes and workflows. Designer Dan Mall explains:
 
-> As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](http://danielmall.com/articles/the-post-psd-era/)</cite>
+> As an industry, we sell websites like paintings. Instead, we should be selling beautiful and easy access to content, agnostic of device, screen size, or context. <cite>[Dan Mall](https://v3.danmall.com/articles/the-post-psd-era/)</cite>
 
 How did we get to the point where we sell and design websites like they're static images? During the formative years of the web we created experiences meant to be consumed solely by desktop computers, which is understandable since desktops were really the only game in town. The real estate provided by desktop screens made the idea of simply translating a PDF onto the web feasible and enticing. So that's what we did—and for a while it actually worked!
 
@@ -404,7 +404,7 @@ No one in their right mind would mistake this blocked out grayscale page as comp
 
 Making lo-fi wireframes *[mobile-first](http://www.lukew.com/ff/entry.asp?933)* means using the constraints of small screens to force the team to focus on the core content and hierarchy. You can now ask, "Do we have the right things on this screen?" "Are they in the right general order?"
 
-These blocky grayscale wireframes help establish the necessary [content patterns](http://danielmall.com/articles/content-display-patterns/) for the screen, but UX designers can also articulate some site-wide UI patterns they anticipate using to ultimately display those content patterns. For the redesign of TechCrunch, designer [Jennifer Brook](http://jenniferbrook.co/about) defined a few site-wide UI patterns that could be used anywhere:
+These blocky grayscale wireframes help establish the necessary [content patterns](https://danmall.com/posts/content-display-patterns/) for the screen, but UX designers can also articulate some site-wide UI patterns they anticipate using to ultimately display those content patterns. For the redesign of TechCrunch, designer [Jennifer Brook](http://jenniferbrook.co/about) defined a few site-wide UI patterns that could be used anywhere:
 
 <figure>
     <img src="../images/content/techcrunch-wireframe.png" alt="For the TechCrunch website redesign, Jennifer Brook defined site-wide, gestural display patterns, which don't make assumptions about aesthetics or functionality." />
@@ -472,7 +472,7 @@ Crucially, style tiles also reinforce pattern-based thinking by educating stakeh
 #### Element collages
 While style tiles are great for exploring design atmosphere, they're still a bit abstract. To get a sense of how those design ingredients will be applied to an interface, it's important to quickly move into something a bit more tangible than a style tile. But does that mean visual designers need to jump from style tiles straight into full comps? Not necessarily.
 
-Somewhere in between style tiles and full comps live [*element collages*](http://danielmall.com/articles/rif-element-collages/), which are collections of UI component design explorations. Element collages provide a playground for designers to apply design atmosphere to actual interface elements, yet still be free from layout and highly polished presentation.
+Somewhere in between style tiles and full comps live [*element collages*](https://v3.danmall.com/articles/rif-element-collages/), which are collections of UI component design explorations. Element collages provide a playground for designers to apply design atmosphere to actual interface elements, yet still be free from layout and highly polished presentation.
 
 <figure>
     <img src="../images/content/ew-element-collage.jpg" alt="An element collage for the Entertainment Weekly redesign." />
