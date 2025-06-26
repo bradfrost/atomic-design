@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative '../ext/sass/cli'
+
+module Sass
+  # The `sass` command line interface
+  module CLI
+    Kernel.exec(*COMMAND, *ARGV)
+  end
+
+  private_constant :CLI
+end
