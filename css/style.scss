@@ -1005,6 +1005,12 @@ h2 .title-link {
 	padding: 1rem;
 	z-index: 2;
 	cursor: pointer;
+
+	@media all and (min-width: 40em) {
+		position: absolute;
+		inset-block-start: 0;
+		inset-inline-end: 0;
+	}
 }
 
 .modal__open-button {
@@ -1115,4 +1121,13 @@ h2 .title-link {
 	@media all and (min-width: 40em) {
 		grid-template-columns: repeat(2, 1fr);
 	}
+}
+
+/*------------------------------------*\
+    $LAYOUT CONTAINER
+\*------------------------------------*/
+.layout-container {
+	padding: 0 1rem;
+	margin: 0 auto;
+	max-width: 70rem;
 }
