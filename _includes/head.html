@@ -29,4 +29,6 @@
 <meta property="og:url" content="http://atomicdesign.bradfrost.com{{ page.url }}" />
 <meta property="og:image" content="http://atomicdesign.bradfrost.com/images/social-card.jpg" />
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+
+<script src="{{ "/js/modal.js" | prepend: site.baseurl }}"></script>
 </head>
