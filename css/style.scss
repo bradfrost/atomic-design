@@ -508,6 +508,20 @@ pre {
 }
 
 /*------------------------------------*\
+    $CARD
+\*------------------------------------*/
+
+.card {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.card__body {
+	flex: 1;
+}
+
+/*------------------------------------*\
     $FOOTER
 \*------------------------------------*/
 
@@ -961,13 +975,12 @@ h2 .title-link {
 	padding: 0;
 	overflow: hidden;
 	position: fixed;
-	inset-block-start: unset;
-	inset-inline-start: unset;
 	max-width: none;
 	max-height: none;
-	inset-block-end: 0;
+	inset-block-start: 0;
 	inset-inline-end: 0;
-	background: white;
+	background: $brown;
+	color: $white;
 	border: none;
 	z-index: 1;
 	transition: height 0.2s ease;
@@ -981,8 +994,12 @@ h2 .title-link {
 		overflow: auto;
 
 		@media all and (min-width: 40em) {
-			// height: auto;
+			height: auto;
 		}
+	}
+
+	p {
+		color: $white;
 	}
 }
 
@@ -991,6 +1008,7 @@ h2 .title-link {
 	justify-content: space-between;
 	align-items: baseline;
 	gap: 1rem;
+	margin-block-end: 2rem;
 }
 
 .modal__title {
@@ -1120,6 +1138,12 @@ h2 .title-link {
 .grid--2up {
 	@media all and (min-width: 40em) {
 		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.grid--1-3up {
+	@media all and (min-width: 40em) {
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
 

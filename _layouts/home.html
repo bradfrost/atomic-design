@@ -27,125 +27,161 @@
 				<a href="http://shop.bradfrost.com" class="btn">Order the e-book</a>
 				<a href="/table-of-contents" class="btn">Read Now</a>
 			</div>
-      <button class="modal__open-button">
-        <img class="modal__open-button-image" src="/images/brad-frost.jpg" alt="Brad Frost" />
-      </button>
-      <div class="speech-bubble">
-        <span class="typewriter-text">We're cooking with the newsletter, teaching courses, and more! Click my face to learn more!</span>
-        <span class="cursor">|</span>
-      </div>
-			<dialog class="modal">
-        <div class="layout-container">
-          <div class="modal__header">
-            <div class="modal__header-content">
-              <h3 class="modal__title">
-              New things are here and on the way!
-            </h3>
-          <p>
-            We hope that you've appreciated this book being online for free. We've
-              been working on some things that we want to share with you!
-            </p>
-          </div>
-				<button class="modal__close-button">
-					<svg width="24" height="24" viewBox="0 0 24 24">
-						<path
-							fill="currentColor"
-							d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-						/>
-					</svg>
-					<span class="is-vishidden">Close</span>
-				</button>
-      </div>
-				<div class="grid grid--2up">
-          <div class="grid__item">
-            <h4 style="margin-block-end: 1rem;">Newsletter</h4>
-            <p>
-              Want to receive updates on what we're working on, what we're interested in,
-              and any discounts or promotions? Sign up below!
-            </p>
-            <div id="mc_embed_shell">
-              <div id="mc_embed_signup">
-                <form
-                  action="https://bradfrost.us5.list-manage.com/subscribe/post?u=6c0c3f4dcd40d88bc1cedb3fa&amp;id=7540015453&amp;f_id=007046edf0"
-                  method="post"
-                  id="mc-embedded-subscribe-form"
-                  name="mc-embedded-subscribe-form"
-                  class="validate"
-                  target="_self"
-                  novalidate=""
-                >
-                  <div id="mc_embed_signup_scroll">
-                    <div class="indicates-required is-vishidden">
-                      <span class="asterisk">*</span> indicates required
-                    </div>
-                    <div class="mc-field-group">
-                      <label for="mce-EMAIL"
-                        >Email Address <span class="asterisk">*</span></label
-                      ><input
-                        type="email"
-                        name="EMAIL"
-                        class="required email"
-                        id="mce-EMAIL"
-                        required=""
-                        value=""
-                      />
-                    </div>
-                    <div hidden="">
-                      <input type="hidden" name="tags" value="4555265" />
-                    </div>
-                    <div id="mce-responses" class="clear">
-                      <div
-                        class="response"
-                        id="mce-error-response"
-                        style="display: none"
-                      ></div>
-                      <div
-                        class="response"
-                        id="mce-success-response"
-                        style="display: none"
-                      ></div>
-                    </div>
-                    <div
-                      aria-hidden="true"
-                      style="position: absolute; left: -5000px"
-                    >
-                      <input
-                        type="text"
-                        name="b_6c0c3f4dcd40d88bc1cedb3fa_7540015453"
-                        tabindex="-1"
-                        value=""
-                      />
-                    </div>
-                    <div class="clear">
-                      <input
-                        type="submit"
-                        name="subscribe"
-                        id="mc-embedded-subscribe"
-                        class="btn"
-                        value="Subscribe"
-                      />
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-					<div class="grid__item">
-            <h4 style="margin-block-end: 1rem;">Courses</h4>
-						<p>
-							Design tokens are an important foundation of Atomic Design. Want to learn how to create, use, and manage them? We've created an in-depth course on just that!
-						</p>
-						<a style="display: block" href="https://designtokenscourse.com/"
-							><img
-								style="display: block; width: 100%"
-								src="/images/subatomic-course.png"
-								alt="Subatomic: The Complete Guide to Design Tokens"
-						/></a>
-          </a>  
+			<dialog class="modal" open>
+				<div class="layout-container">
+					<div class="modal__header">
+						<div class="modal__header-content">
+							<h3 class="modal__title">New things are here and on the way!</h3>
+							<p>
+								We hope that you've appreciated this book being online for free.
+								We've been working on some things that we want to share with
+								you!
+							</p>
+						</div>
+						<button class="modal__close-button">
+							<svg width="24" height="24" viewBox="0 0 24 24">
+								<path
+									fill="currentColor"
+									d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+								/>
+							</svg>
+							<span class="is-vishidden">Close</span>
+						</button>
 					</div>
-        </div>
-      </div>
-	  </dialog>
+					<div class="grid grid--1-3up">
+						<div class="grid__item">
+							<div class="card">
+								<div class="card__body">
+									<h4 style="margin-block-end: 1rem">
+										Atomic Design Certification Course
+									</h4>
+									<p>
+										Did you read the book? Now learn from Brad Frost himself on
+										how to wield Atomic Design in your own work and now to
+										expand on the concepts taught in the book many years ago
+										now!
+									</p>
+								</div>
+								<div class="card__footer">
+									<a
+										style="display: block"
+										href="https://designtokenscourse.com/"
+										><img
+											style="display: block; width: 100%"
+											src="/images/atomic-design-course.png"
+											alt="Atomic Design Certification Course"
+									/></a>
+								</div>
+							</div>
+						</div>
+						<div class="grid__item">
+							<div class="card">
+								<div class="card__body">
+									<h4 style="margin-block-end: 1rem">
+										Subatomic: The Complete Guide to Design Tokens
+									</h4>
+									<p>
+										Design tokens are an important foundation of Atomic Design.
+										Want to learn how to create, use, and manage them? We've
+										created an in-depth course on just that!
+									</p>
+								</div>
+								<div class="card__footer">
+									<a
+										style="display: block"
+										href="https://designtokenscourse.com/"
+										><img
+											style="display: block; width: 100%"
+											src="/images/subatomic-course.png"
+											alt="Subatomic: The Complete Guide to Design Tokens"
+									/></a>
+								</div>
+							</div>
+						</div>
+						<div class="grid__item">
+							<div class="card">
+								<div class="card__body">
+									<h4 style="margin-block-end: 1rem">Newsletter</h4>
+									<p>
+										Want to receive updates on what we're working on, what we're
+										interested in, and any discounts or promotions? Sign up
+										below!
+									</p>
+								</div>
+								<div class="card__footer">
+									<div id="mc_embed_shell">
+										<div id="mc_embed_signup">
+											<form
+												action="https://bradfrost.us5.list-manage.com/subscribe/post?u=6c0c3f4dcd40d88bc1cedb3fa&amp;id=7540015453&amp;f_id=007046edf0"
+												method="post"
+												id="mc-embedded-subscribe-form"
+												name="mc-embedded-subscribe-form"
+												class="validate"
+												target="_self"
+												novalidate=""
+											>
+												<div id="mc_embed_signup_scroll">
+													<div class="indicates-required is-vishidden">
+														<span class="asterisk">*</span> indicates required
+													</div>
+													<div class="mc-field-group">
+														<label for="mce-EMAIL"
+															>Email Address
+															<span class="asterisk">*</span></label
+														><input
+															type="email"
+															name="EMAIL"
+															class="required email"
+															id="mce-EMAIL"
+															required=""
+															value=""
+														/>
+													</div>
+													<div hidden="">
+														<input type="hidden" name="tags" value="4555265" />
+													</div>
+													<div id="mce-responses" class="clear">
+														<div
+															class="response"
+															id="mce-error-response"
+															style="display: none"
+														></div>
+														<div
+															class="response"
+															id="mce-success-response"
+															style="display: none"
+														></div>
+													</div>
+													<div
+														aria-hidden="true"
+														style="position: absolute; left: -5000px"
+													>
+														<input
+															type="text"
+															name="b_6c0c3f4dcd40d88bc1cedb3fa_7540015453"
+															tabindex="-1"
+															value=""
+														/>
+													</div>
+													<div class="clear">
+														<input
+															type="submit"
+															name="subscribe"
+															id="mc-embedded-subscribe"
+															class="btn"
+															value="Subscribe"
+														/>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</dialog>
 		</div>
 	</body>
 </html>
