@@ -1077,12 +1077,19 @@ h2 .title-link {
 	padding: 1rem;
 	z-index: 2;
 	cursor: pointer;
+	color: $white;
 
 	@media all and (min-width: 40em) {
 		position: absolute;
 		inset-block-start: 0;
 		inset-inline-end: 0;
 	}
+}
+
+.modal__close-icon {
+	fill: currentColor;
+	height: 2rem;
+	width: 2rem;
 }
 
 .modal__open-button {
