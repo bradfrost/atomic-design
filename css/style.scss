@@ -525,6 +525,11 @@ pre {
 	display: block;
 	overflow: hidden;
 	margin-block-end: 1rem;
+
+	&:focus-visible {
+		outline: 2px solid $white;
+		outline-offset: 2px;
+	}
 }
 
 .card__image {
@@ -616,6 +621,11 @@ header {
 	&:focus {
 		color: $white;
 		transform: scale(1.2);
+	}
+
+	&:focus-visible {
+		outline: 2px solid $white;
+		outline-offset: 2px;
 	}
 }
 
@@ -1082,6 +1092,11 @@ h2 .title-link {
 	cursor: pointer;
 	color: $white;
 
+	&:focus-visible {
+		outline: 2px solid $white;
+		outline-offset: 2px;
+	}
+
 	@media all and (min-width: 60em) {
 		position: absolute;
 		inset-block-start: 0;
@@ -1093,101 +1108,6 @@ h2 .title-link {
 	fill: currentColor;
 	height: 2rem;
 	width: 2rem;
-}
-
-.drawer__open-button {
-	appearance: none;
-	background: none;
-	outline: none;
-	border: none;
-	height: 10rem;
-	width: 10rem;
-	border-radius: 50%;
-	overflow: hidden;
-	position: fixed;
-	inset-block-end: 0;
-	inset-inline-end: 0;
-	cursor: pointer;
-}
-
-.drawer__open-button-image {
-	height: 100%;
-	width: 100%;
-	border-radius: 50%;
-	object-fit: cover;
-	transition: transform 0.2s ease-out;
-	.drawer__open-button:hover & {
-		transform: rotate(-22.5deg);
-	}
-}
-
-/*------------------------------------*\
-    $SPEECH BUBBLE
-\*------------------------------------*/
-
-.speech-bubble {
-	position: fixed;
-	inset-block-end: 10rem;
-	inset-inline-end: 5rem;
-	background: $white;
-	color: $brown;
-	padding: 0.75rem 1rem;
-	border-radius: 1rem;
-	border: 2px solid $brown;
-	font-family: $font-primary;
-	font-size: 0.9rem;
-	z-index: 3;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-	min-width: 5rem;
-	max-width: 15rem;
-	text-align: center;
-
-	&::after {
-		content: "";
-		position: absolute;
-		bottom: -0.5rem;
-		right: 2rem;
-		width: 0;
-		height: 0;
-		border-left: 0.5rem solid transparent;
-		border-right: 0.5rem solid transparent;
-		border-top: 0.5rem solid $white;
-	}
-
-	&::before {
-		content: "";
-		position: absolute;
-		bottom: -11px;
-		right: 31px;
-		width: 0;
-		height: 0;
-		border-left: 9px solid transparent;
-		border-right: 9px solid transparent;
-		border-top: 9px solid #100;
-		z-index: -1;
-	}
-
-	.cursor {
-		animation: blink 1s infinite;
-		font-weight: bold;
-		color: $orange;
-		opacity: 0;
-	}
-
-	.js .cursor {
-		opacity: 1;
-	}
-}
-
-@keyframes blink {
-	0%,
-	50% {
-		opacity: 1;
-	}
-	51%,
-	100% {
-		opacity: 0;
-	}
 }
 
 /*------------------------------------*\

@@ -3,17 +3,18 @@ document.addEventListener("DOMContentLoaded", function () {
 	const drawer = document.querySelector(".drawer");
 	const closeButton = document.querySelector(".drawer__close-button");
 
-	if (drawer && localStorage.getItem("bfwDrawerClosed")) {
+	if (drawer && localStorage.getItem("bradDrawerClosed")) {
 		drawer.close();
 	} else {
 		drawer.showModal();
+		closeButton.focus();
 	}
 
 	if (closeButton && drawer) {
 		closeButton.addEventListener("click", function () {
 			drawer.close();
 			// Set the flag in local storage
-			localStorage.setItem("bfwDrawerClosed", "true");
+			localStorage.setItem("bradDrawerClosed", "true");
 		});
 	}
 });
