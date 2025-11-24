@@ -1,32 +1,86 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width initial-scale=1">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width initial-scale=1" />
 
-  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<title>
+		{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{
+		site.title }}{% endif %}
+	</title>
+	<meta
+		name="description"
+		content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+	/>
 
-  <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/css/prism.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/css/prism.css" | prepend: site.baseurl }}">
 
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Oswald" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Merriweather|Oswald"
+		rel="stylesheet"
+	/>
 
-<!-- Schema.org markup for Google+ -->
-<meta itemprop="name" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-<meta itemprop="image" content="http://atomicdesign.bradfrost.com/images/social-card.jpg">
-<meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<!-- Schema.org markup for Google+ -->
+	<meta
+		itemprop="name"
+		content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}"
+	/>
+	<meta
+		itemprop="image"
+		content="http://atomicdesign.bradfrost.com/images/social-card.jpg"
+	/>
+	<meta
+		itemprop="description"
+		content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+	/>
 
-<!-- Twitter Card data -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:creator" content="@brad_frost">
-<!-- Twitter summary card with large image must be at least 280x150px -->
-<meta name="twitter:image:src" content="http://atomicdesign.bradfrost.com/images/social-card.jpg">
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}"
+	/>
+	<meta
+		name="twitter:description"
+		content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+	/>
+	<meta name="twitter:creator" content="@brad_frost" />
+	<!-- Twitter summary card with large image must be at least 280x150px -->
+	<meta
+		name="twitter:image:src"
+		content="http://atomicdesign.bradfrost.com/images/social-card.jpg"
+	/>
 
-<!-- Open Graph data -->
-<meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
-<meta property="og:url" content="http://atomicdesign.bradfrost.com{{ page.url }}" />
-<meta property="og:image" content="http://atomicdesign.bradfrost.com/images/social-card.jpg" />
-<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+	<!-- Open Graph data -->
+	<meta
+		property="og:title"
+		content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}"
+	/>
+	<meta
+		property="og:url"
+		content="http://atomicdesign.bradfrost.com{{ page.url }}"
+	/>
+	<meta
+		property="og:image"
+		content="http://atomicdesign.bradfrost.com/images/social-card.jpg"
+	/>
+	<meta
+		property="og:description"
+		content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+	/>
+
+	<!-- Google tag (gtag.js) -->
+	<script
+		async
+		src="https://www.googletagmanager.com/gtag/js?id=G-PQWZSNBP90"
+	></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+
+		gtag("config", "G-PQWZSNBP90");
+	</script>
 </head>
