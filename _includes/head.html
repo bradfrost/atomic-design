@@ -30,6 +30,14 @@
 <meta property="og:image" content="http://atomicdesign.bradfrost.com/images/social-card.jpg" />
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 
-<script src="{{ "/js/drawer.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/typewriter.js" | prepend: site.baseurl }}"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PQWZSNBP90"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PQWZSNBP90');
+</script>
 </head>
