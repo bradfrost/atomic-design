@@ -177,14 +177,14 @@ var y = class extends HTMLElement {
     }
   }
   static getPropertyDescriptor(t4, s4, i9) {
-    const { get: e6, set: r6 } = h(this.prototype, t4) ?? { get() {
+    const { get: e6, set: r7 } = h(this.prototype, t4) ?? { get() {
       return this[s4];
     }, set(t5) {
       this[s4] = t5;
     } };
     return { get: e6, set(s5) {
       const h4 = e6?.call(this);
-      r6?.call(this, s5), this.requestUpdate(t4, h4, i9);
+      r7?.call(this, s5), this.requestUpdate(t4, h4, i9);
     }, configurable: true, enumerable: true };
   }
   static getPropertyOptions(t4) {
@@ -269,8 +269,8 @@ var y = class extends HTMLElement {
     if (void 0 !== e6 && this._$Em !== e6) {
       const t5 = i9.getPropertyOptions(e6), h4 = "function" == typeof t5.converter ? { fromAttribute: t5.converter } : void 0 !== t5.converter?.fromAttribute ? t5.converter : u;
       this._$Em = e6;
-      const r6 = h4.fromAttribute(s4, t5.type);
-      this[e6] = r6 ?? this._$Ej?.get(e6) ?? r6, this._$Em = null;
+      const r7 = h4.fromAttribute(s4, t5.type);
+      this[e6] = r7 ?? this._$Ej?.get(e6) ?? r7, this._$Em = null;
     }
   }
   requestUpdate(t4, s4, i9) {
@@ -281,8 +281,8 @@ var y = class extends HTMLElement {
     }
     false === this.isUpdatePending && (this._$ES = this._$EP());
   }
-  C(t4, s4, { useDefault: i9, reflect: e6, wrapped: h4 }, r6) {
-    i9 && !(this._$Ej ??= /* @__PURE__ */ new Map()).has(t4) && (this._$Ej.set(t4, r6 ?? s4 ?? this[t4]), true !== h4 || void 0 !== r6) || (this._$AL.has(t4) || (this.hasUpdated || i9 || (s4 = void 0), this._$AL.set(t4, s4)), true === e6 && this._$Em !== t4 && (this._$Eq ??= /* @__PURE__ */ new Set()).add(t4));
+  C(t4, s4, { useDefault: i9, reflect: e6, wrapped: h4 }, r7) {
+    i9 && !(this._$Ej ??= /* @__PURE__ */ new Map()).has(t4) && (this._$Ej.set(t4, r7 ?? s4 ?? this[t4]), true !== h4 || void 0 !== r7) || (this._$AL.has(t4) || (this.hasUpdated || i9 || (s4 = void 0), this._$AL.set(t4, s4)), true === e6 && this._$Em !== t4 && (this._$Eq ??= /* @__PURE__ */ new Set()).add(t4));
   }
   async _$EP() {
     this.isUpdatePending = true;
@@ -382,44 +382,44 @@ function P(t4, i9) {
 }
 var V = (t4, i9) => {
   const s4 = t4.length - 1, o12 = [];
-  let r6, l8 = 2 === i9 ? "<svg>" : 3 === i9 ? "<math>" : "", c8 = f2;
+  let r7, l8 = 2 === i9 ? "<svg>" : 3 === i9 ? "<math>" : "", c8 = f2;
   for (let i10 = 0; i10 < s4; i10++) {
     const s5 = t4[i10];
-    let a4, u6, d4 = -1, y6 = 0;
-    for (; y6 < s5.length && (c8.lastIndex = y6, u6 = c8.exec(s5), null !== u6); ) y6 = c8.lastIndex, c8 === f2 ? "!--" === u6[1] ? c8 = v : void 0 !== u6[1] ? c8 = _ : void 0 !== u6[2] ? ($.test(u6[2]) && (r6 = RegExp("</" + u6[2], "g")), c8 = m) : void 0 !== u6[3] && (c8 = m) : c8 === m ? ">" === u6[0] ? (c8 = r6 ?? f2, d4 = -1) : void 0 === u6[1] ? d4 = -2 : (d4 = c8.lastIndex - u6[2].length, a4 = u6[1], c8 = void 0 === u6[3] ? m : '"' === u6[3] ? g : p2) : c8 === g || c8 === p2 ? c8 = m : c8 === v || c8 === _ ? c8 = f2 : (c8 = m, r6 = void 0);
+    let a5, u6, d4 = -1, y6 = 0;
+    for (; y6 < s5.length && (c8.lastIndex = y6, u6 = c8.exec(s5), null !== u6); ) y6 = c8.lastIndex, c8 === f2 ? "!--" === u6[1] ? c8 = v : void 0 !== u6[1] ? c8 = _ : void 0 !== u6[2] ? ($.test(u6[2]) && (r7 = RegExp("</" + u6[2], "g")), c8 = m) : void 0 !== u6[3] && (c8 = m) : c8 === m ? ">" === u6[0] ? (c8 = r7 ?? f2, d4 = -1) : void 0 === u6[1] ? d4 = -2 : (d4 = c8.lastIndex - u6[2].length, a5 = u6[1], c8 = void 0 === u6[3] ? m : '"' === u6[3] ? g : p2) : c8 === g || c8 === p2 ? c8 = m : c8 === v || c8 === _ ? c8 = f2 : (c8 = m, r7 = void 0);
     const x3 = c8 === m && t4[i10 + 1].startsWith("/>") ? " " : "";
-    l8 += c8 === f2 ? s5 + n3 : d4 >= 0 ? (o12.push(a4), s5.slice(0, d4) + e3 + s5.slice(d4) + h2 + x3) : s5 + h2 + (-2 === d4 ? i10 : x3);
+    l8 += c8 === f2 ? s5 + n3 : d4 >= 0 ? (o12.push(a5), s5.slice(0, d4) + e3 + s5.slice(d4) + h2 + x3) : s5 + h2 + (-2 === d4 ? i10 : x3);
   }
   return [P(t4, l8 + (t4[s4] || "<?>") + (2 === i9 ? "</svg>" : 3 === i9 ? "</math>" : "")), o12];
 };
 var N = class _N {
   constructor({ strings: t4, _$litType$: s4 }, n6) {
-    let r6;
+    let r7;
     this.parts = [];
-    let c8 = 0, a4 = 0;
-    const u6 = t4.length - 1, d4 = this.parts, [f4, v2] = V(t4, s4);
+    let c8 = 0, a5 = 0;
+    const u6 = t4.length - 1, d4 = this.parts, [f4, v3] = V(t4, s4);
     if (this.el = _N.createElement(f4, n6), C.currentNode = this.el.content, 2 === s4 || 3 === s4) {
       const t5 = this.el.content.firstChild;
       t5.replaceWith(...t5.childNodes);
     }
-    for (; null !== (r6 = C.nextNode()) && d4.length < u6; ) {
-      if (1 === r6.nodeType) {
-        if (r6.hasAttributes()) for (const t5 of r6.getAttributeNames()) if (t5.endsWith(e3)) {
-          const i9 = v2[a4++], s5 = r6.getAttribute(t5).split(h2), e6 = /([.?@])?(.*)/.exec(i9);
-          d4.push({ type: 1, index: c8, name: e6[2], strings: s5, ctor: "." === e6[1] ? H : "?" === e6[1] ? I : "@" === e6[1] ? L : k }), r6.removeAttribute(t5);
-        } else t5.startsWith(h2) && (d4.push({ type: 6, index: c8 }), r6.removeAttribute(t5));
-        if ($.test(r6.tagName)) {
-          const t5 = r6.textContent.split(h2), s5 = t5.length - 1;
+    for (; null !== (r7 = C.nextNode()) && d4.length < u6; ) {
+      if (1 === r7.nodeType) {
+        if (r7.hasAttributes()) for (const t5 of r7.getAttributeNames()) if (t5.endsWith(e3)) {
+          const i9 = v3[a5++], s5 = r7.getAttribute(t5).split(h2), e6 = /([.?@])?(.*)/.exec(i9);
+          d4.push({ type: 1, index: c8, name: e6[2], strings: s5, ctor: "." === e6[1] ? H : "?" === e6[1] ? I : "@" === e6[1] ? L : k }), r7.removeAttribute(t5);
+        } else t5.startsWith(h2) && (d4.push({ type: 6, index: c8 }), r7.removeAttribute(t5));
+        if ($.test(r7.tagName)) {
+          const t5 = r7.textContent.split(h2), s5 = t5.length - 1;
           if (s5 > 0) {
-            r6.textContent = i3 ? i3.emptyScript : "";
-            for (let i9 = 0; i9 < s5; i9++) r6.append(t5[i9], l2()), C.nextNode(), d4.push({ type: 2, index: ++c8 });
-            r6.append(t5[s5], l2());
+            r7.textContent = i3 ? i3.emptyScript : "";
+            for (let i9 = 0; i9 < s5; i9++) r7.append(t5[i9], l2()), C.nextNode(), d4.push({ type: 2, index: ++c8 });
+            r7.append(t5[s5], l2());
           }
         }
-      } else if (8 === r6.nodeType) if (r6.data === o3) d4.push({ type: 2, index: c8 });
+      } else if (8 === r7.nodeType) if (r7.data === o3) d4.push({ type: 2, index: c8 });
       else {
         let t5 = -1;
-        for (; -1 !== (t5 = r6.data.indexOf(h2, t5 + 1)); ) d4.push({ type: 7, index: c8 }), t5 += h2.length - 1;
+        for (; -1 !== (t5 = r7.data.indexOf(h2, t5 + 1)); ) d4.push({ type: 7, index: c8 }), t5 += h2.length - 1;
       }
       c8++;
     }
@@ -538,8 +538,8 @@ var k = class {
     if (void 0 === h4) t4 = S2(this, t4, i9, 0), o12 = !c3(t4) || t4 !== this._$AH && t4 !== T, o12 && (this._$AH = t4);
     else {
       const e7 = t4;
-      let n6, r6;
-      for (t4 = h4[0], n6 = 0; n6 < h4.length - 1; n6++) r6 = S2(this, e7[s4 + n6], i9, n6), r6 === T && (r6 = this._$AH[n6]), o12 ||= !c3(r6) || r6 !== this._$AH[n6], r6 === E ? t4 = E : t4 !== E && (t4 += (r6 ?? "") + h4[n6 + 1]), this._$AH[n6] = r6;
+      let n6, r7;
+      for (t4 = h4[0], n6 = 0; n6 < h4.length - 1; n6++) r7 = S2(this, e7[s4 + n6], i9, n6), r7 === T && (r7 = this._$AH[n6]), o12 ||= !c3(r7) || r7 !== this._$AH[n6], r7 === E ? t4 = E : t4 !== E && (t4 += (r7 ?? "") + h4[n6 + 1]), this._$AH[n6] = r7;
     }
     o12 && !e6 && this.j(t4);
   }
@@ -610,8 +610,8 @@ var i4 = class extends y {
     return this.renderOptions.renderBefore ??= t4.firstChild, t4;
   }
   update(t4) {
-    const r6 = this.render();
-    this.hasUpdated || (this.renderOptions.isConnected = this.isConnected), super.update(t4), this._$Do = B(r6, this.renderRoot, this.renderOptions);
+    const r7 = this.render();
+    this.hasUpdated || (this.renderOptions.isConnected = this.isConnected), super.update(t4), this._$Do = B(r7, this.renderRoot, this.renderOptions);
   }
   connectedCallback() {
     super.connectedCallback(), this._$Do?.setConnected(true);
@@ -630,31 +630,31 @@ o4?.({ LitElement: i4 });
 
 // node_modules/@lit/reactive-element/decorators/property.js
 var o5 = { attribute: true, type: String, converter: u, reflect: false, hasChanged: f };
-var r4 = (t4 = o5, e6, r6) => {
-  const { kind: n6, metadata: i9 } = r6;
+var r4 = (t4 = o5, e6, r7) => {
+  const { kind: n6, metadata: i9 } = r7;
   let s4 = globalThis.litPropertyMetadata.get(i9);
-  if (void 0 === s4 && globalThis.litPropertyMetadata.set(i9, s4 = /* @__PURE__ */ new Map()), "setter" === n6 && ((t4 = Object.create(t4)).wrapped = true), s4.set(r6.name, t4), "accessor" === n6) {
-    const { name: o12 } = r6;
-    return { set(r7) {
+  if (void 0 === s4 && globalThis.litPropertyMetadata.set(i9, s4 = /* @__PURE__ */ new Map()), "setter" === n6 && ((t4 = Object.create(t4)).wrapped = true), s4.set(r7.name, t4), "accessor" === n6) {
+    const { name: o12 } = r7;
+    return { set(r8) {
       const n7 = e6.get.call(this);
-      e6.set.call(this, r7), this.requestUpdate(o12, n7, t4);
+      e6.set.call(this, r8), this.requestUpdate(o12, n7, t4);
     }, init(e7) {
       return void 0 !== e7 && this.C(o12, void 0, t4, e7), e7;
     } };
   }
   if ("setter" === n6) {
-    const { name: o12 } = r6;
-    return function(r7) {
+    const { name: o12 } = r7;
+    return function(r8) {
       const n7 = this[o12];
-      e6.call(this, r7), this.requestUpdate(o12, n7, t4);
+      e6.call(this, r8), this.requestUpdate(o12, n7, t4);
     };
   }
   throw Error("Unsupported decorator location: " + n6);
 };
 function n4(t4) {
   return (e6, o12) => "object" == typeof o12 ? r4(t4, e6, o12) : ((t5, e7, o13) => {
-    const r6 = e7.hasOwnProperty(o13);
-    return e7.constructor.createProperty(o13, t5), r6 ? Object.getOwnPropertyDescriptor(e7, o13) : void 0;
+    const r7 = e7.hasOwnProperty(o13);
+    return e7.constructor.createProperty(o13, t5), r7 ? Object.getOwnPropertyDescriptor(e7, o13) : void 0;
   })(t4, e6, o12);
 }
 
@@ -662,11 +662,11 @@ function n4(t4) {
 var e4 = (e6, t4, c8) => (c8.configurable = true, c8.enumerable = true, Reflect.decorate && "object" != typeof t4 && Object.defineProperty(e6, t4, c8), c8);
 
 // node_modules/@lit/reactive-element/decorators/query.js
-function e5(e6, r6) {
+function e5(e6, r7) {
   return (n6, s4, i9) => {
     const o12 = (t4) => t4.renderRoot?.querySelector(e6) ?? null;
-    if (r6) {
-      const { get: e7, set: r7 } = "object" == typeof s4 ? n6 : i9 ?? (() => {
+    if (r7) {
+      const { get: e7, set: r8 } = "object" == typeof s4 ? n6 : i9 ?? (() => {
         const t4 = Symbol();
         return { get() {
           return this[t4];
@@ -676,7 +676,7 @@ function e5(e6, r6) {
       })();
       return e4(n6, s4, { get() {
         let t4 = e7.call(this);
-        return void 0 === t4 && (t4 = o12(this), (null !== t4 || this.hasUpdated) && r7.call(this, t4)), t4;
+        return void 0 === t4 && (t4 = o12(this), (null !== t4 || this.hasUpdated) && r8.call(this, t4)), t4;
       } });
     }
     return e4(n6, s4, { get() {
@@ -687,10 +687,10 @@ function e5(e6, r6) {
 
 // node_modules/@brad-frost-web/eddie-web-components/components/EdElement.js
 var u3 = Object.defineProperty;
-var d3 = (n6, t4, r6, l8) => {
+var d3 = (n6, t4, r7, l8) => {
   for (var e6 = void 0, s4 = n6.length - 1, o12; s4 >= 0; s4--)
-    (o12 = n6[s4]) && (e6 = o12(t4, r6, e6) || e6);
-  return e6 && u3(t4, r6, e6), e6;
+    (o12 = n6[s4]) && (e6 = o12(t4, r7, e6) || e6);
+  return e6 && u3(t4, r7, e6), e6;
 };
 var f3 = class extends i4 {
   /**
@@ -702,8 +702,8 @@ var f3 = class extends i4 {
    *
    * @param baseClassName
    */
-  componentClassNames(t4, r6 = {}) {
-    return (0, import_classnames.default)(t4, r6);
+  componentClassNames(t4, r7 = {}) {
+    return (0, import_classnames.default)(t4, r7);
   }
   /**
    * Check if a slot is empty
@@ -725,13 +725,13 @@ var f3 = class extends i4 {
   /**
    * Dispatch a custom event.
    */
-  dispatch({ e: t4, eventName: r6, detailObj: l8 = {}, optionsObj: e6 = {} }) {
+  dispatch({ e: t4, eventName: r7, detailObj: l8 = {}, optionsObj: e6 = {} }) {
     const s4 = {
       bubbles: true,
       composed: true,
       ...e6,
       detail: { ...t4 && { originalEvent: t4 }, ...l8 }
-    }, o12 = new CustomEvent(r6, s4);
+    }, o12 = new CustomEvent(r7, s4);
     return this.dispatchEvent(o12), o12;
   }
   /**
@@ -748,9 +748,9 @@ d3([
 // node_modules/@brad-frost-web/eddie-web-components/components/EdFormElement.js
 var p3 = Object.defineProperty;
 var o6 = Object.getOwnPropertyDescriptor;
-var n5 = (r6, t4, i9, f4) => {
-  for (var e6 = o6(t4, i9), s4 = r6.length - 1, u6; s4 >= 0; s4--)
-    (u6 = r6[s4]) && (e6 = u6(t4, i9, e6) || e6);
+var n5 = (r7, t4, i9, f4) => {
+  for (var e6 = o6(t4, i9), s4 = r7.length - 1, u6; s4 >= 0; s4--)
+    (u6 = r7[s4]) && (e6 = u6(t4, i9, e6) || e6);
   return e6 && p3(t4, i9, e6), e6;
 };
 var l3 = class l4 extends f3 {
@@ -973,9 +973,9 @@ customElements.get("ed-button") === void 0 && customElements.define("ed-button",
 // node_modules/@brad-frost-web/eddie-web-components/components/grid/grid.js
 var c6 = ":root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-c-grid{display:flex;flex-direction:column;flex-wrap:wrap;margin:-.75rem}.ed-c-grid--gap-none{margin:0}.ed-c-grid--gap-sm{margin:-.25rem}.ed-c-grid--gap-lg{margin:-1rem}.ed-c-grid--side-by-side{flex-direction:row}@media all and (min-width:48rem){.ed-c-grid--2up{flex-direction:row}}@media all and (min-width:23.4375rem){.ed-c-grid--2up.ed-c-grid--break-faster{flex-direction:row}}@media all and (min-width:48rem){.ed-c-grid--2up.ed-c-grid--break-slower{flex-direction:column}}@media all and (min-width:87.5rem){.ed-c-grid--2up.ed-c-grid--break-slower{flex-direction:row}}@media all and (min-width:48rem){.ed-c-grid--3up{flex-direction:row}}@media all and (min-width:60rem){.ed-c-grid--1-3up{flex-direction:row}}@media all and (min-width:48rem){.ed-c-grid--1-3up.ed-c-grid--break-faster{flex-direction:row}}@media all and (min-width:60rem){.ed-c-grid--1-3up.ed-c-grid--break-slower{flex-direction:column}}@media all and (min-width:75rem){.ed-c-grid--1-3up.ed-c-grid--break-slower{flex-direction:row}}@media all and (min-width:23.4375rem){.ed-c-grid--1-2-4up{flex-direction:row}}@media all and (min-width:48rem){.ed-c-grid--1-4up{flex-direction:row}}@media all and (min-width:23.4375rem){.ed-c-grid--4up{flex-direction:row}}.ed-c-grid--2-4-6up{flex-direction:row}::slotted(ed-grid-item){display:block;padding:.75rem}.ed-c-grid--gap-none>::slotted(ed-grid-item){padding:0}.ed-c-grid--gap-sm>::slotted(ed-grid-item){padding:.25rem}.ed-c-grid--gap-lg>::slotted(ed-grid-item){padding:1rem}.ed-c-grid--side-by-side>::slotted(ed-grid-item){width:50%}@media all and (min-width:48rem){.ed-c-grid--2up>::slotted(ed-grid-item){width:50%}}@media all and (min-width:23.4375rem){.ed-c-grid--2up.ed-c-grid--break-faster>::slotted(ed-grid-item){width:50%}}@media all and (min-width:48rem){.ed-c-grid--2up.ed-c-grid--break-slower>::slotted(ed-grid-item){width:100%}}@media all and (min-width:87.5rem){.ed-c-grid--2up.ed-c-grid--break-slower>::slotted(ed-grid-item){width:50%}}@media all and (min-width:48rem){.ed-c-grid--3up>::slotted(ed-grid-item){width:50%}}@media all and (min-width:60rem){.ed-c-grid--3up>::slotted(ed-grid-item){width:33.3333%}}@media all and (min-width:60rem){.ed-c-grid--1-3up>::slotted(ed-grid-item){width:33.3333%}}@media all and (min-width:48rem){.ed-c-grid--1-3up.ed-c-grid--break-faster>::slotted(ed-grid-item){width:33.33%}}@media all and (min-width:60rem){.ed-c-grid--1-3up.ed-c-grid--break-slower>::slotted(ed-grid-item){width:100%}}@media all and (min-width:75rem){.ed-c-grid--1-3up.ed-c-grid--break-slower>::slotted(ed-grid-item){width:33.33%}}@media all and (min-width:23.4375rem){.ed-c-grid--1-2-4up>::slotted(ed-grid-item){width:50%}}@media all and (min-width:60rem){.ed-c-grid--1-2-4up>::slotted(ed-grid-item){width:25%}}@media all and (min-width:48rem){.ed-c-grid--1-4up>::slotted(ed-grid-item){width:25%}}@media all and (min-width:23.4375rem){.ed-c-grid--4up>::slotted(ed-grid-item){width:50%}}@media all and (min-width:48rem){.ed-c-grid--4up>::slotted(ed-grid-item){width:33.3333%}}@media all and (min-width:60rem){.ed-c-grid--4up>::slotted(ed-grid-item){width:25%}}.ed-c-grid--2-4-6up>::slotted(ed-grid-item){width:50%}@media all and (min-width:60rem){.ed-c-grid--2-4-6up>::slotted(ed-grid-item){width:25%}}@media all and (min-width:75rem){.ed-c-grid--2-4-6up>::slotted(ed-grid-item){width:16.66%}}";
 var p5 = Object.defineProperty;
-var m3 = (r6, e6, l8, w3) => {
-  for (var d4 = void 0, t4 = r6.length - 1, n6; t4 >= 0; t4--)
-    (n6 = r6[t4]) && (d4 = n6(e6, l8, d4) || d4);
+var m3 = (r7, e6, l8, w3) => {
+  for (var d4 = void 0, t4 = r7.length - 1, n6; t4 >= 0; t4--)
+    (n6 = r7[t4]) && (d4 = n6(e6, l8, d4) || d4);
   return d4 && p5(e6, l8, d4), d4;
 };
 var i6 = class extends f3 {
@@ -1033,92 +1033,234 @@ var r5 = class extends f3 {
 };
 customElements.get("ed-grid-item") === void 0 && customElements.define("ed-grid-item", r5);
 
+// node_modules/@brad-frost-web/eddie-web-components/components/layout-container/layout-container.js
+var c7 = '@charset "UTF-8";:root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-l-layout-container{width:100%;max-width:var(--ed-layout-container-max-width, 70rem);padding-right:1rem;padding-left:1rem;margin:0 auto}.ed-l-layout-container--narrow{max-width:50rem}';
+var h3 = Object.defineProperty;
+var u4 = (r7, e6, a5, f4) => {
+  for (var t4 = void 0, o12 = r7.length - 1, n6; o12 >= 0; o12--)
+    (n6 = r7[o12]) && (t4 = n6(e6, a5, t4) || t4);
+  return t4 && h3(e6, a5, t4), t4;
+};
+var i7 = class extends f3 {
+  static get styles() {
+    return r(c7);
+  }
+  render() {
+    const e6 = this.componentClassNames("ed-l-layout-container", {
+      "ed-l-layout-container--narrow": this.variant === "narrow"
+    });
+    return x`
+      <div class="${e6}">
+        <slot></slot>
+      </div>
+    `;
+  }
+};
+u4([
+  n4()
+], i7.prototype, "variant");
+customElements.get("ed-layout-container") === void 0 && customElements.define("ed-layout-container", i7);
+
+// node_modules/@brad-frost-web/eddie-web-components/components/heading/heading.js
+var p6 = '@charset "UTF-8";:root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6,.ed-c-heading{margin:0}.ed-c-heading--display-xl{font-family:var(--ed-theme-typography-display-xl-mobile-font-family);font-weight:var(--ed-theme-typography-display-xl-mobile-font-weight);font-size:var(--ed-theme-typography-display-xl-mobile-font-size);line-height:var(--ed-theme-typography-display-xl-mobile-line-height);letter-spacing:var(--ed-theme-typography-display-xl-mobile-letter-spacing);text-transform:var(--ed-theme-typography-display-xl-mobile-text-transform)}@media all and (min-width:48rem){.ed-c-heading--display-xl{font-family:var(--ed-theme-typography-display-xl-tablet-font-family);font-weight:var(--ed-theme-typography-display-xl-tablet-font-weight);font-size:var(--ed-theme-typography-display-xl-tablet-font-size);line-height:var(--ed-theme-typography-display-xl-tablet-line-height);letter-spacing:var(--ed-theme-typography-display-xl-tablet-letter-spacing);text-transform:var(--ed-theme-typography-display-xl-tablet-text-transform)}}@media all and (min-width:75rem){.ed-c-heading--display-xl{font-family:var(--ed-theme-typography-display-xl-font-family);font-weight:var(--ed-theme-typography-display-xl-font-weight);font-size:var(--ed-theme-typography-display-xl-font-size);line-height:var(--ed-theme-typography-display-xl-line-height);letter-spacing:var(--ed-theme-typography-display-xl-letter-spacing);text-transform:var(--ed-theme-typography-display-xl-text-transform)}}.ed-c-heading--display-lg{font-family:var(--ed-theme-typography-display-lg-mobile-font-family);font-weight:var(--ed-theme-typography-display-lg-mobile-font-weight);font-size:var(--ed-theme-typography-display-lg-mobile-font-size);line-height:var(--ed-theme-typography-display-lg-mobile-line-height);letter-spacing:var(--ed-theme-typography-display-lg-mobile-letter-spacing);text-transform:var(--ed-theme-typography-display-lg-mobile-text-transform)}@media all and (min-width:48rem){.ed-c-heading--display-lg{font-family:var(--ed-theme-typography-display-lg-font-family);font-weight:var(--ed-theme-typography-display-lg-font-weight);font-size:var(--ed-theme-typography-display-lg-font-size);line-height:var(--ed-theme-typography-display-lg-line-height);letter-spacing:var(--ed-theme-typography-display-lg-letter-spacing);text-transform:var(--ed-theme-typography-display-lg-text-transform)}}.ed-c-heading--display-default{font-family:var(--ed-theme-typography-display-default-mobile-font-family);font-weight:var(--ed-theme-typography-display-default-mobile-font-weight);font-size:var(--ed-theme-typography-display-default-mobile-font-size);line-height:var(--ed-theme-typography-display-default-mobile-line-height);letter-spacing:var(--ed-theme-typography-display-default-mobile-letter-spacing);text-transform:var(--ed-theme-typography-display-default-mobile-text-transform)}@media all and (min-width:48rem){.ed-c-heading--display-default{font-family:var(--ed-theme-typography-display-default-font-family);font-weight:var(--ed-theme-typography-display-default-font-weight);font-size:var(--ed-theme-typography-display-default-font-size);line-height:var(--ed-theme-typography-display-default-line-height);letter-spacing:var(--ed-theme-typography-display-default-letter-spacing);text-transform:var(--ed-theme-typography-display-default-text-transform)}}.ed-c-heading--headline-lg{font-family:var(--ed-theme-typography-headline-lg-mobile-font-family);font-weight:var(--ed-theme-typography-headline-lg-mobile-font-weight);font-size:var(--ed-theme-typography-headline-lg-mobile-font-size);line-height:var(--ed-theme-typography-headline-lg-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-lg-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-lg-mobile-text-transform)}@media all and (min-width:48rem){.ed-c-heading--headline-lg{font-family:var(--ed-theme-typography-headline-lg-font-family);font-weight:var(--ed-theme-typography-headline-lg-font-weight);font-size:var(--ed-theme-typography-headline-lg-font-size);line-height:var(--ed-theme-typography-headline-lg-line-height);letter-spacing:var(--ed-theme-typography-headline-lg-letter-spacing);text-transform:var(--ed-theme-typography-headline-lg-text-transform)}}.ed-c-heading--headline-default{font-family:var(--ed-theme-typography-headline-default-mobile-font-family);font-weight:var(--ed-theme-typography-headline-default-mobile-font-weight);font-size:var(--ed-theme-typography-headline-default-mobile-font-size);line-height:var(--ed-theme-typography-headline-default-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-default-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-default-mobile-text-transform)}@media all and (min-width:48rem){.ed-c-heading--headline-default{font-family:var(--ed-theme-typography-headline-default-font-family);font-weight:var(--ed-theme-typography-headline-default-font-weight);font-size:var(--ed-theme-typography-headline-default-font-size);line-height:var(--ed-theme-typography-headline-default-line-height);letter-spacing:var(--ed-theme-typography-headline-default-letter-spacing);text-transform:var(--ed-theme-typography-headline-default-text-transform)}}.ed-c-heading--headline-sm{font-family:var(--ed-theme-typography-headline-sm-mobile-font-family);font-weight:var(--ed-theme-typography-headline-sm-mobile-font-weight);font-size:var(--ed-theme-typography-headline-sm-mobile-font-size);line-height:var(--ed-theme-typography-headline-sm-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-sm-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-sm-mobile-text-transform)}@media all and (min-width:48rem){.ed-c-heading--headline-sm{font-family:var(--ed-theme-typography-headline-sm-font-family);font-weight:var(--ed-theme-typography-headline-sm-font-weight);font-size:var(--ed-theme-typography-headline-sm-font-size);line-height:var(--ed-theme-typography-headline-sm-line-height);letter-spacing:var(--ed-theme-typography-headline-sm-letter-spacing);text-transform:var(--ed-theme-typography-headline-sm-text-transform)}}.ed-c-heading--title-lg{font-family:var(--ed-theme-typography-title-lg-mobile-font-family);font-weight:var(--ed-theme-typography-title-lg-mobile-font-weight);font-size:var(--ed-theme-typography-title-lg-mobile-font-size);line-height:var(--ed-theme-typography-title-lg-mobile-line-height);letter-spacing:var(--ed-theme-typography-title-lg-mobile-letter-spacing);text-transform:var(--ed-theme-typography-title-lg-mobile-text-transform)}@media all and (min-width:48rem){.ed-c-heading--title-lg{font-family:var(--ed-theme-typography-title-lg-font-family);font-weight:var(--ed-theme-typography-title-lg-font-weight);font-size:var(--ed-theme-typography-title-lg-font-size);line-height:var(--ed-theme-typography-title-lg-line-height);letter-spacing:var(--ed-theme-typography-title-lg-letter-spacing);text-transform:var(--ed-theme-typography-title-lg-text-transform)}}.ed-c-heading--title-default{font-family:var(--ed-theme-typography-title-default-font-family);font-weight:var(--ed-theme-typography-title-default-font-weight);font-size:var(--ed-theme-typography-title-default-font-size);line-height:var(--ed-theme-typography-title-default-line-height);letter-spacing:var(--ed-theme-typography-title-default-letter-spacing);text-transform:var(--ed-theme-typography-title-default-text-transform)}.ed-c-heading--title-sm{font-family:var(--ed-theme-typography-title-sm-font-family);font-weight:var(--ed-theme-typography-title-sm-font-weight);font-size:var(--ed-theme-typography-title-sm-font-size);line-height:var(--ed-theme-typography-title-sm-line-height);letter-spacing:var(--ed-theme-typography-title-sm-letter-spacing);text-transform:var(--ed-theme-typography-title-sm-text-transform)}.ed-c-heading--label-lg{font-family:var(--ed-theme-typography-label-lg-font-family);font-weight:var(--ed-theme-typography-label-lg-font-weight);font-size:var(--ed-theme-typography-label-lg-font-size);line-height:var(--ed-theme-typography-label-lg-line-height);letter-spacing:var(--ed-theme-typography-label-lg-letter-spacing);text-transform:var(--ed-theme-typography-label-lg-text-transform)}.ed-c-heading--label-default{font-family:var(--ed-theme-typography-label-default-font-family);font-weight:var(--ed-theme-typography-label-default-font-weight);font-size:var(--ed-theme-typography-label-default-font-size);line-height:var(--ed-theme-typography-label-default-line-height);letter-spacing:var(--ed-theme-typography-label-default-letter-spacing);text-transform:var(--ed-theme-typography-label-default-text-transform)}.ed-c-heading--label-sm{font-family:var(--ed-theme-typography-label-sm-font-family);font-weight:var(--ed-theme-typography-label-sm-font-weight);font-size:var(--ed-theme-typography-label-sm-font-size);line-height:var(--ed-theme-typography-label-sm-line-height);letter-spacing:var(--ed-theme-typography-label-sm-letter-spacing);text-transform:var(--ed-theme-typography-label-sm-text-transform)}.ed-c-heading--body-lg{font-family:var(--ed-theme-typography-body-lg-font-family);font-weight:var(--ed-theme-typography-body-lg-font-weight);font-size:var(--ed-theme-typography-body-lg-font-size);line-height:var(--ed-theme-typography-body-lg-line-height);letter-spacing:var(--ed-theme-typography-body-lg-letter-spacing);text-transform:var(--ed-theme-typography-body-lg-text-transform)}.ed-c-heading--body-default{font-family:var(--ed-theme-typography-body-default-font-family);font-weight:var(--ed-theme-typography-body-default-font-weight);font-size:var(--ed-theme-typography-body-default-font-size);line-height:var(--ed-theme-typography-body-default-line-height);letter-spacing:var(--ed-theme-typography-body-default-letter-spacing);text-transform:var(--ed-theme-typography-body-default-text-transform)}.ed-c-heading--body-sm{font-family:var(--ed-theme-typography-body-sm-font-family);font-weight:var(--ed-theme-typography-body-sm-font-weight);font-size:var(--ed-theme-typography-body-sm-font-size);line-height:var(--ed-theme-typography-body-sm-line-height);letter-spacing:var(--ed-theme-typography-body-sm-letter-spacing);text-transform:var(--ed-theme-typography-body-sm-text-transform)}.ed-c-heading--meta-default{font-family:var(--ed-theme-typography-meta-default-font-family);font-weight:var(--ed-theme-typography-meta-default-font-weight);font-size:var(--ed-theme-typography-meta-default-font-size);line-height:var(--ed-theme-typography-meta-default-line-height);letter-spacing:var(--ed-theme-typography-meta-default-letter-spacing);text-transform:var(--ed-theme-typography-meta-default-text-transform)}.ed-c-heading--meta-sm{font-family:var(--ed-theme-typography-meta-sm-font-family);font-weight:var(--ed-theme-typography-meta-sm-font-weight);font-size:var(--ed-theme-typography-meta-sm-font-size);line-height:var(--ed-theme-typography-meta-sm-line-height);letter-spacing:var(--ed-theme-typography-meta-sm-letter-spacing);text-transform:var(--ed-theme-typography-meta-sm-text-transform)}';
+var m4 = Object.defineProperty;
+var o11 = (i9, e6, r7, s4) => {
+  for (var t4 = void 0, h4 = i9.length - 1, d4; h4 >= 0; h4--)
+    (d4 = i9[h4]) && (t4 = d4(e6, r7, t4) || t4);
+  return t4 && m4(e6, r7, t4), t4;
+};
+var l5 = class extends f3 {
+  constructor() {
+    super(...arguments), this.tagName = "h2";
+  }
+  static get styles() {
+    return r(p6);
+  }
+  render() {
+    const e6 = this.componentClassNames("ed-c-heading", {
+      "ed-c-heading--display-xl": this.variant === "display-xl",
+      "ed-c-heading--display-lg": this.variant === "display-lg",
+      "ed-c-heading--display-default": this.variant === "display-default",
+      "ed-c-heading--headline-lg": this.variant ? this.variant === "headline-lg" : this.tagName === "h1",
+      "ed-c-heading--headline-default": this.variant ? this.variant === "headline-default" : this.tagName === "h2",
+      "ed-c-heading--headline-sm": this.variant ? this.variant === "headline-sm" : this.tagName === "h3",
+      "ed-c-heading--title-lg": this.variant ? this.variant === "title-lg" : this.tagName === "h4",
+      "ed-c-heading--title-default": this.variant ? this.variant === "title-default" : this.tagName === "h5",
+      "ed-c-heading--title-sm": this.variant ? this.variant === "title-sm" : this.tagName === "h6",
+      "ed-c-heading--label-lg": this.variant === "label-lg",
+      "ed-c-heading--label-default": this.variant === "label-default",
+      "ed-c-heading--label-sm": this.variant === "label-sm",
+      "ed-c-heading--body-lg": this.variant === "body-lg",
+      "ed-c-heading--body-default": this.variant === "body-default",
+      "ed-c-heading--body-sm": this.variant === "body-sm",
+      "ed-c-heading--meta-default": this.variant === "meta-default",
+      "ed-c-heading--meta-sm": this.variant === "meta-sm"
+    });
+    switch (this.tagName) {
+      case "h1":
+        return x` <h1 class="${e6}"><slot></slot></h1> `;
+      case "h2":
+        return x` <h2 class="${e6}"><slot></slot></h2> `;
+      case "h3":
+        return x` <h3 class="${e6}"><slot></slot></h3> `;
+      case "h4":
+        return x` <h4 class="${e6}"><slot></slot></h4> `;
+      case "h5":
+        return x` <h5 class="${e6}"><slot></slot></h5> `;
+      case "h6":
+        return x` <h6 class="${e6}"><slot></slot></h6> `;
+    }
+  }
+};
+o11([
+  n4()
+], l5.prototype, "variant");
+o11([
+  n4()
+], l5.prototype, "tagName");
+customElements.get("ed-heading") === void 0 && customElements.define("ed-heading", l5);
+
+// node_modules/@brad-frost-web/eddie-web-components/components/text-passage/text-passage.js
+var g3 = ":root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}ed-text-passage{font-family:var(--ed-theme-typography-body-default-font-family);font-weight:var(--ed-theme-typography-body-default-font-weight);font-size:var(--ed-theme-typography-body-default-font-size);line-height:var(--ed-theme-typography-body-default-line-height);letter-spacing:var(--ed-theme-typography-body-default-letter-spacing);text-transform:var(--ed-theme-typography-body-default-text-transform)}ed-text-passage h1{font-family:var(--ed-theme-typography-headline-lg-mobile-font-family);font-weight:var(--ed-theme-typography-headline-lg-mobile-font-weight);font-size:var(--ed-theme-typography-headline-lg-mobile-font-size);line-height:var(--ed-theme-typography-headline-lg-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-lg-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-lg-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage h1{font-family:var(--ed-theme-typography-headline-lg-font-family);font-weight:var(--ed-theme-typography-headline-lg-font-weight);font-size:var(--ed-theme-typography-headline-lg-font-size);line-height:var(--ed-theme-typography-headline-lg-line-height);letter-spacing:var(--ed-theme-typography-headline-lg-letter-spacing);text-transform:var(--ed-theme-typography-headline-lg-text-transform)}}ed-text-passage h1{margin-bottom:.75rem}ed-text-passage h2{font-family:var(--ed-theme-typography-headline-default-mobile-font-family);font-weight:var(--ed-theme-typography-headline-default-mobile-font-weight);font-size:var(--ed-theme-typography-headline-default-mobile-font-size);line-height:var(--ed-theme-typography-headline-default-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-default-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-default-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage h2{font-family:var(--ed-theme-typography-headline-default-font-family);font-weight:var(--ed-theme-typography-headline-default-font-weight);font-size:var(--ed-theme-typography-headline-default-font-size);line-height:var(--ed-theme-typography-headline-default-line-height);letter-spacing:var(--ed-theme-typography-headline-default-letter-spacing);text-transform:var(--ed-theme-typography-headline-default-text-transform)}}ed-text-passage h2{margin-bottom:.75rem}ed-text-passage h3{font-family:var(--ed-theme-typography-headline-sm-mobile-font-family);font-weight:var(--ed-theme-typography-headline-sm-mobile-font-weight);font-size:var(--ed-theme-typography-headline-sm-mobile-font-size);line-height:var(--ed-theme-typography-headline-sm-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-sm-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-sm-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage h3{font-family:var(--ed-theme-typography-headline-sm-font-family);font-weight:var(--ed-theme-typography-headline-sm-font-weight);font-size:var(--ed-theme-typography-headline-sm-font-size);line-height:var(--ed-theme-typography-headline-sm-line-height);letter-spacing:var(--ed-theme-typography-headline-sm-letter-spacing);text-transform:var(--ed-theme-typography-headline-sm-text-transform)}}ed-text-passage h3{margin-bottom:.75rem}ed-text-passage h4{font-family:var(--ed-theme-typography-title-lg-mobile-font-family);font-weight:var(--ed-theme-typography-title-lg-mobile-font-weight);font-size:var(--ed-theme-typography-title-lg-mobile-font-size);line-height:var(--ed-theme-typography-title-lg-mobile-line-height);letter-spacing:var(--ed-theme-typography-title-lg-mobile-letter-spacing);text-transform:var(--ed-theme-typography-title-lg-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage h4{font-family:var(--ed-theme-typography-title-lg-font-family);font-weight:var(--ed-theme-typography-title-lg-font-weight);font-size:var(--ed-theme-typography-title-lg-font-size);line-height:var(--ed-theme-typography-title-lg-line-height);letter-spacing:var(--ed-theme-typography-title-lg-letter-spacing);text-transform:var(--ed-theme-typography-title-lg-text-transform)}}ed-text-passage h4{margin-bottom:.75rem}ed-text-passage h5{font-family:var(--ed-theme-typography-title-default-font-family);font-weight:var(--ed-theme-typography-title-default-font-weight);font-size:var(--ed-theme-typography-title-default-font-size);line-height:var(--ed-theme-typography-title-default-line-height);letter-spacing:var(--ed-theme-typography-title-default-letter-spacing);text-transform:var(--ed-theme-typography-title-default-text-transform);margin-bottom:.75rem}ed-text-passage h6{font-family:var(--ed-theme-typography-title-sm-font-family);font-weight:var(--ed-theme-typography-title-sm-font-weight);font-size:var(--ed-theme-typography-title-sm-font-size);line-height:var(--ed-theme-typography-title-sm-line-height);letter-spacing:var(--ed-theme-typography-title-sm-letter-spacing);text-transform:var(--ed-theme-typography-title-sm-text-transform);margin-bottom:.75rem}ed-text-passage ul,ed-text-passage ol{margin-top:0}ed-text-passage ul{margin-left:1.25rem;padding-left:0}ed-text-passage ol{margin-left:1.125rem;padding-left:0}ed-text-passage a{color:var(--ed-theme-color-link-default);text-decoration:none}ed-text-passage a:hover,ed-text-passage a:focus{text-decoration:underline;color:var(--ed-theme-color-link-hover)}ed-text-passage p{margin-top:0;margin-bottom:1.5rem}ed-text-passage blockquote{font-style:italic;border-left:var(--ed-theme-border-width-sm) solid var(--ed-theme-color-border-subtle);color:var(--ed-theme-color-content-subtle);padding-left:1rem;margin-left:0;margin-bottom:1rem}ed-text-passage :last-child{margin-bottom:0}ed-text-passage[size=sm]{font-family:var(--ed-theme-typography-body-sm-font-family);font-weight:var(--ed-theme-typography-body-sm-font-weight);font-size:var(--ed-theme-typography-body-sm-font-size);line-height:var(--ed-theme-typography-body-sm-line-height);letter-spacing:var(--ed-theme-typography-body-sm-letter-spacing);text-transform:var(--ed-theme-typography-body-sm-text-transform)}ed-text-passage[size=sm] ul{margin-left:1.125rem;padding-left:0}ed-text-passage[size=sm] ol{margin-left:1rem;padding-left:0}ed-text-passage[size=sm] p{margin-bottom:1rem}ed-text-passage[size=sm] h1{font-family:var(--ed-theme-typography-headline-default-mobile-font-family);font-weight:var(--ed-theme-typography-headline-default-mobile-font-weight);font-size:var(--ed-theme-typography-headline-default-mobile-font-size);line-height:var(--ed-theme-typography-headline-default-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-default-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-default-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage[size=sm] h1{font-family:var(--ed-theme-typography-headline-default-font-family);font-weight:var(--ed-theme-typography-headline-default-font-weight);font-size:var(--ed-theme-typography-headline-default-font-size);line-height:var(--ed-theme-typography-headline-default-line-height);letter-spacing:var(--ed-theme-typography-headline-default-letter-spacing);text-transform:var(--ed-theme-typography-headline-default-text-transform)}}ed-text-passage[size=sm] h1{margin-bottom:.75rem}ed-text-passage[size=sm] h2{font-family:var(--ed-theme-typography-headline-sm-mobile-font-family);font-weight:var(--ed-theme-typography-headline-sm-mobile-font-weight);font-size:var(--ed-theme-typography-headline-sm-mobile-font-size);line-height:var(--ed-theme-typography-headline-sm-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-sm-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-sm-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage[size=sm] h2{font-family:var(--ed-theme-typography-headline-sm-font-family);font-weight:var(--ed-theme-typography-headline-sm-font-weight);font-size:var(--ed-theme-typography-headline-sm-font-size);line-height:var(--ed-theme-typography-headline-sm-line-height);letter-spacing:var(--ed-theme-typography-headline-sm-letter-spacing);text-transform:var(--ed-theme-typography-headline-sm-text-transform)}}ed-text-passage[size=sm] h2{margin-bottom:.75rem}ed-text-passage[size=sm] h3{font-family:var(--ed-theme-typography-title-lg-mobile-font-family);font-weight:var(--ed-theme-typography-title-lg-mobile-font-weight);font-size:var(--ed-theme-typography-title-lg-mobile-font-size);line-height:var(--ed-theme-typography-title-lg-mobile-line-height);letter-spacing:var(--ed-theme-typography-title-lg-mobile-letter-spacing);text-transform:var(--ed-theme-typography-title-lg-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage[size=sm] h3{font-family:var(--ed-theme-typography-title-lg-font-family);font-weight:var(--ed-theme-typography-title-lg-font-weight);font-size:var(--ed-theme-typography-title-lg-font-size);line-height:var(--ed-theme-typography-title-lg-line-height);letter-spacing:var(--ed-theme-typography-title-lg-letter-spacing);text-transform:var(--ed-theme-typography-title-lg-text-transform)}}ed-text-passage[size=sm] h3{margin-bottom:.75rem}ed-text-passage[size=sm] h4{font-family:var(--ed-theme-typography-title-sm-font-family);font-weight:var(--ed-theme-typography-title-sm-font-weight);font-size:var(--ed-theme-typography-title-sm-font-size);line-height:var(--ed-theme-typography-title-sm-line-height);letter-spacing:var(--ed-theme-typography-title-sm-letter-spacing);text-transform:var(--ed-theme-typography-title-sm-text-transform);margin-bottom:.75rem}ed-text-passage[inverted]{color:var(--ed-theme-color-content-knockout)}ed-text-passage[inverted] blockquote{border-left-color:var(--ed-theme-color-border-knockout);color:var(--ed-theme-color-content-knockout)}";
+var p7 = ":root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}";
+var y4 = Object.defineProperty;
+var l6 = (r7, e6, t4, f4) => {
+  for (var a5 = void 0, h4 = r7.length - 1, n6; h4 >= 0; h4--)
+    (n6 = r7[h4]) && (a5 = n6(e6, t4, a5) || a5);
+  return a5 && y4(e6, t4, a5), a5;
+};
+var i8 = class extends f3 {
+  constructor() {
+    super(...arguments), this.size = void 0;
+  }
+  static get styles() {
+    return r(p7);
+  }
+  /**
+   * Add the light dom styles when this component is connected to a page
+   */
+  connectedCallback() {
+    if (super.connectedCallback(), !document.head.querySelector("#ed-text-passage-styles")) {
+      const t4 = document.createElement("style");
+      t4.id = "ed-text-passage-styles", t4.innerHTML = g3, document.head.appendChild(t4);
+    }
+  }
+  render() {
+    const e6 = this.componentClassNames("ed-c-text-passage", {
+      "ed-c-text-passage--inverted": this.inverted,
+      "ed-c-text-passage--sm": this.size === "sm",
+      "ed-c-text-passage--xs": this.size === "xs"
+    });
+    return this.capLinelength ? x`
+        <div class="${e6}">
+          <ed-linelength-container>
+            <slot></slot>
+          </ed-linelength-container>
+        </div>
+      ` : x`
+        <div class="${e6}">
+          <slot></slot>
+        </div>
+      `;
+  }
+};
+l6([
+  n4({ type: Boolean })
+], i8.prototype, "inverted");
+l6([
+  n4()
+], i8.prototype, "size");
+l6([
+  n4({ type: Boolean })
+], i8.prototype, "capLinelength");
+customElements.get("ed-text-passage") === void 0 && customElements.define("ed-text-passage", i8);
+
 // node_modules/@brad-frost-web/eddie-web-components/components/black-friday-modal/black-friday-modal.js
-var X = ':root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-c-black-friday-modal{display:block;height:0;width:0;padding:0;overflow:hidden;position:fixed;max-width:none;max-height:none;inset-block-start:unset;inset-block-end:0;inset-inline-end:0;background:var(--ed-theme-color-background-knockout);color:var(--ed-theme-color-content-knockout);border:none;z-index:1000;transition:height var(--ed-theme-animation-fade-quick) var(--ed-theme-animation-ease)}.ed-c-black-friday-modal[open]{visibility:visible;width:100%;height:100vh;box-shadow:0 -5px 10px #0006;overflow:auto}.ed-c-black-friday-modal__header{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-block-end:4rem;box-shadow:0 10px 0 -5px var(--ed-theme-color-background-accent-1),0 20px 0 -10px var(--ed-theme-color-background-accent-2),0 30px 0 -16px var(--ed-theme-color-background-accent-4)}.ed-c-black-friday-modal__header-media{min-height:10rem;max-height:20rem;overflow:hidden}.ed-c-black-friday-modal__header-media:after{content:"";position:absolute;inset:0;background:#0009;z-index:1}.ed-c-black-friday-modal__header-media-image{position:relative;display:block;width:100%}@media all and (min-width:48rem){.ed-c-black-friday-modal__header-media-image{inset-block-end:10rem}}.ed-c-black-friday-modal__header-content{position:relative;width:100%}.ed-c-black-friday-modal__header-content-text{position:absolute;inset-block-start:50%;inset-inline-start:50%;transform:translate(-50%,-50%);width:100%;text-align:center;z-index:3}.ed-c-black-friday-modal__header-content-description{font-family:var(--ed-theme-typography-body-lg-font-family);font-weight:var(--ed-theme-typography-body-lg-font-weight);font-size:var(--ed-theme-typography-body-lg-font-size);line-height:var(--ed-theme-typography-body-lg-line-height);letter-spacing:var(--ed-theme-typography-body-lg-letter-spacing);text-transform:var(--ed-theme-typography-body-lg-text-transform)}.ed-c-black-friday-modal__title{margin-block-end:1rem}.ed-c-black-friday-modal__description{max-width:35rem}.ed-c-black-friday-modal__close-button{position:absolute;inset-block-start:.5rem;inset-inline-end:.5rem;appearance:none;background:none;outline:none;border:none;padding:.5rem;z-index:2;cursor:pointer;color:var(--ed-theme-color-content-knockout)}.ed-c-black-friday-modal__close-button:focus-visible{outline:var(--ed-theme-border-width-lg) solid var(--ed-theme-focus-ring-color-border-knockout);outline-offset:var(--ed-theme-offset-focus-ring, .25rem )}@media all and (min-width:60rem){.ed-c-black-friday-modal__close-button{padding:1rem}}.ed-c-black-friday-modal__close-icon{fill:currentColor;height:2rem;width:2rem}.ed-c-black-friday-modal__promos{display:block;margin-block-end:4rem}.ed-c-black-friday-modal__image{display:block;width:100%}.ed-c-black-friday-modal__section-title{display:block;margin-block-end:1rem;text-align:center}.ed-c-black-friday-modal__card{display:flex;flex-direction:column;height:100%}.ed-c-black-friday-modal__card-body{flex:1}.ed-c-black-friday-modal__card-footer{padding:.5rem 1rem 1rem;text-align:center}.ed-c-black-friday-modal__card-media{display:block;overflow:hidden;margin-block-end:1rem;border:1px solid var(--ed-theme-color-border-knockout);border-radius:.5rem}.ed-c-black-friday-modal__card-media:focus-visible{outline:var(--ed-theme-border-width-lg) solid var(--ed-theme-focus-ring-color-border-knockout);outline-offset:var(--ed-theme-offset-focus-ring, .25rem )}.ed-c-black-friday-modal__card-image{display:block;width:100%}.ed-c-black-friday-modal__card-title{display:block;margin-block-end:1rem;text-align:center}.ed-c-black-friday-modal__header-content-title{text-shadow:2px 0 0 var(--ed-theme-color-background-accent-2),4px 0 0 var(--ed-theme-color-background-accent-1);letter-spacing:1.5px}.ed-c-black-friday-modal__card-paragraph{text-align:center}.ed-c-black-friday-modal__card-list-container{display:flex;flex-direction:column;align-items:center}.ed-c-black-friday-modal__card-list{padding:0;margin:0}';
-var I2 = globalThis;
-var H2 = I2.trustedTypes;
-var z2 = H2 ? H2.createPolicy("lit-html", { createHTML: (o12) => o12 }) : void 0;
+var X = ':root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-c-black-friday-modal{display:block;height:0;width:0;padding:0 0 4rem;overflow:hidden;position:fixed;max-width:none;max-height:none;inset-block-start:unset;inset-block-end:0;inset-inline-end:0;background:var(--ed-theme-color-background-knockout);color:var(--ed-theme-color-content-knockout);border:none;z-index:1000;transition:height var(--ed-theme-animation-fade-quick) var(--ed-theme-animation-ease)}.ed-c-black-friday-modal[open]{visibility:visible;width:100%;height:100vh;box-shadow:0 -5px 10px #0006;overflow:auto}.ed-c-black-friday-modal__header{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-block-end:4rem;box-shadow:0 10px 0 -5px var(--ed-theme-color-background-accent-1),0 20px 0 -10px var(--ed-theme-color-background-accent-2),0 30px 0 -16px var(--ed-theme-color-background-accent-4)}.ed-c-black-friday-modal__header-media{min-height:10rem;max-height:20rem;overflow:hidden}.ed-c-black-friday-modal__header-media:after{content:"";position:absolute;inset:0;background:#0009;z-index:1}.ed-c-black-friday-modal__header-media-image{position:relative;display:block;width:100%}@media all and (min-width:48rem){.ed-c-black-friday-modal__header-media-image{inset-block-end:10rem}}.ed-c-black-friday-modal__header-content{position:relative;width:100%}.ed-c-black-friday-modal__header-content-text{position:absolute;inset-block-start:50%;inset-inline-start:50%;transform:translate(-50%,-50%);width:100%;text-align:center;z-index:3}.ed-c-black-friday-modal__header-content-description{font-family:var(--ed-theme-typography-body-lg-font-family);font-weight:var(--ed-theme-typography-body-lg-font-weight);font-size:var(--ed-theme-typography-body-lg-font-size);line-height:var(--ed-theme-typography-body-lg-line-height);letter-spacing:var(--ed-theme-typography-body-lg-letter-spacing);text-transform:var(--ed-theme-typography-body-lg-text-transform)}.ed-c-black-friday-modal__title{margin-block-end:1rem}.ed-c-black-friday-modal__description{max-width:35rem}.ed-c-black-friday-modal__close-button{position:absolute;inset-block-start:.5rem;inset-inline-end:.5rem;appearance:none;background:none;outline:none;border:none;padding:.5rem;z-index:2;cursor:pointer;color:var(--ed-theme-color-content-knockout)}.ed-c-black-friday-modal__close-button:focus-visible{outline:var(--ed-theme-border-width-lg) solid var(--ed-theme-focus-ring-color-border-knockout);outline-offset:var(--ed-theme-offset-focus-ring, .25rem )}@media all and (min-width:60rem){.ed-c-black-friday-modal__close-button{padding:1rem}}.ed-c-black-friday-modal__close-icon{fill:currentColor;height:2rem;width:2rem}.ed-c-black-friday-modal__promos{display:block;margin-block-end:4rem}.ed-c-black-friday-modal__image{display:block;width:100%}.ed-c-black-friday-modal__section-title{display:block;margin-block-end:1rem;text-align:center}.ed-c-black-friday-modal__card{display:flex;flex-direction:column;height:100%}.ed-c-black-friday-modal__card-body{flex:1}.ed-c-black-friday-modal__card-footer{padding:.5rem 1rem 1rem;text-align:center}.ed-c-black-friday-modal__card-media{display:block;overflow:hidden;margin-block-end:1rem;border:1px solid var(--ed-theme-color-border-knockout);border-radius:.5rem}.ed-c-black-friday-modal__card-media:focus-visible{outline:var(--ed-theme-border-width-lg) solid var(--ed-theme-focus-ring-color-border-knockout);outline-offset:var(--ed-theme-offset-focus-ring, .25rem )}.ed-c-black-friday-modal__card-image{display:block;width:100%}.ed-c-black-friday-modal__card-title{display:block;margin-block-end:1rem;text-align:center}.ed-c-black-friday-modal__card-description p{margin-block-end:1rem;text-align:center}.ed-c-black-friday-modal__header-content-title{text-shadow:2px 0 0 var(--ed-theme-color-background-accent-2),4px 0 0 var(--ed-theme-color-background-accent-1);letter-spacing:1.5px}.ed-c-black-friday-modal__card-paragraph{text-align:center}.ed-c-black-friday-modal__card-list-container{display:flex;flex-direction:column;align-items:center}.ed-c-black-friday-modal__card-list{padding:0;margin:0}.strikethrough{font-family:var(--ed-theme-typography-button-default-font-family);font-weight:var(--ed-theme-typography-button-default-font-weight);font-size:var(--ed-theme-typography-button-default-font-size);line-height:var(--ed-theme-typography-button-default-line-height);letter-spacing:var(--ed-theme-typography-button-default-letter-spacing);text-transform:var(--ed-theme-typography-button-default-text-transform);text-decoration:line-through;color:var(--ed-theme-color-content-subtle)}.ed-c-black-friday-modal__cta{margin-block-start:2rem;text-align:center}';
+var O = globalThis;
+var H2 = O.trustedTypes;
+var L3 = H2 ? H2.createPolicy("lit-html", { createHTML: (s4) => s4 }) : void 0;
 var W = "$lit$";
-var b3 = `lit$${Math.random().toFixed(9).slice(2)}$`;
-var F = "?" + b3;
+var y5 = `lit$${Math.random().toFixed(9).slice(2)}$`;
+var F = "?" + y5;
 var Y = `<${F}>`;
-var A2 = document;
-var N2 = () => A2.createComment("");
-var C3 = (o12) => o12 === null || typeof o12 != "object" && typeof o12 != "function";
-var O = Array.isArray;
-var ee = (o12) => O(o12) || typeof o12?.[Symbol.iterator] == "function";
+var v2 = document;
+var N2 = () => v2.createComment("");
+var C3 = (s4) => s4 === null || typeof s4 != "object" && typeof s4 != "function";
+var z2 = Array.isArray;
+var ee = (s4) => z2(s4) || typeof s4?.[Symbol.iterator] == "function";
 var D = `[ 	
 \f\r]`;
 var w2 = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g;
-var L3 = /-->/g;
-var U = />/g;
-var y4 = RegExp(`>|${D}(?:([^\\s"'>=/]+)(${D}*=${D}*(?:[^ 	
+var U = /-->/g;
+var j2 = />/g;
+var b3 = RegExp(`>|${D}(?:([^\\s"'>=/]+)(${D}*=${D}*(?:[^ 	
 \f\r"'\`<>=]|("|')|))|$)`, "g");
-var j2 = /'/g;
-var R2 = /"/g;
+var R2 = /'/g;
+var G = /"/g;
 var V2 = /^(?:script|style|textarea|title)$/i;
 var k2 = Symbol.for("lit-noChange");
-var l5 = Symbol.for("lit-nothing");
-var G = /* @__PURE__ */ new WeakMap();
-var $2 = A2.createTreeWalker(A2, 129);
-function q(o12, e6) {
-  if (!O(o12) || !o12.hasOwnProperty("raw")) throw Error("invalid template strings array");
-  return z2 !== void 0 ? z2.createHTML(e6) : e6;
+var l7 = Symbol.for("lit-nothing");
+var P2 = /* @__PURE__ */ new WeakMap();
+var $2 = v2.createTreeWalker(v2, 129);
+function q(s4, e6) {
+  if (!z2(s4) || !s4.hasOwnProperty("raw")) throw Error("invalid template strings array");
+  return L3 !== void 0 ? L3.createHTML(e6) : e6;
 }
-var te = (o12, e6) => {
-  const t4 = o12.length - 1, i9 = [];
-  let s4, a4 = e6 === 2 ? "<svg>" : e6 === 3 ? "<math>" : "", d4 = w2;
+var te = (s4, e6) => {
+  const t4 = s4.length - 1, i9 = [];
+  let a5, o12 = e6 === 2 ? "<svg>" : e6 === 3 ? "<math>" : "", d4 = w2;
   for (let g4 = 0; g4 < t4; g4++) {
-    const r6 = o12[g4];
-    let c8, h4, n6 = -1, _2 = 0;
-    for (; _2 < r6.length && (d4.lastIndex = _2, h4 = d4.exec(r6), h4 !== null); ) _2 = d4.lastIndex, d4 === w2 ? h4[1] === "!--" ? d4 = L3 : h4[1] !== void 0 ? d4 = U : h4[2] !== void 0 ? (V2.test(h4[2]) && (s4 = RegExp("</" + h4[2], "g")), d4 = y4) : h4[3] !== void 0 && (d4 = y4) : d4 === y4 ? h4[0] === ">" ? (d4 = s4 ?? w2, n6 = -1) : h4[1] === void 0 ? n6 = -2 : (n6 = d4.lastIndex - h4[2].length, c8 = h4[1], d4 = h4[3] === void 0 ? y4 : h4[3] === '"' ? R2 : j2) : d4 === R2 || d4 === j2 ? d4 = y4 : d4 === L3 || d4 === U ? d4 = w2 : (d4 = y4, s4 = void 0);
-    const f4 = d4 === y4 && o12[g4 + 1].startsWith("/>") ? " " : "";
-    a4 += d4 === w2 ? r6 + Y : n6 >= 0 ? (i9.push(c8), r6.slice(0, n6) + W + r6.slice(n6) + b3 + f4) : r6 + b3 + (n6 === -2 ? g4 : f4);
+    const r7 = s4[g4];
+    let c8, h4, n6 = -1, f4 = 0;
+    for (; f4 < r7.length && (d4.lastIndex = f4, h4 = d4.exec(r7), h4 !== null); ) f4 = d4.lastIndex, d4 === w2 ? h4[1] === "!--" ? d4 = U : h4[1] !== void 0 ? d4 = j2 : h4[2] !== void 0 ? (V2.test(h4[2]) && (a5 = RegExp("</" + h4[2], "g")), d4 = b3) : h4[3] !== void 0 && (d4 = b3) : d4 === b3 ? h4[0] === ">" ? (d4 = a5 ?? w2, n6 = -1) : h4[1] === void 0 ? n6 = -2 : (n6 = d4.lastIndex - h4[2].length, c8 = h4[1], d4 = h4[3] === void 0 ? b3 : h4[3] === '"' ? G : R2) : d4 === G || d4 === R2 ? d4 = b3 : d4 === U || d4 === j2 ? d4 = w2 : (d4 = b3, a5 = void 0);
+    const _2 = d4 === b3 && s4[g4 + 1].startsWith("/>") ? " " : "";
+    o12 += d4 === w2 ? r7 + Y : n6 >= 0 ? (i9.push(c8), r7.slice(0, n6) + W + r7.slice(n6) + y5 + _2) : r7 + y5 + (n6 === -2 ? g4 : _2);
   }
-  return [q(o12, a4 + (o12[t4] || "<?>") + (e6 === 2 ? "</svg>" : e6 === 3 ? "</math>" : "")), i9];
+  return [q(s4, o12 + (s4[t4] || "<?>") + (e6 === 2 ? "</svg>" : e6 === 3 ? "</math>" : "")), i9];
 };
 var T2 = class _T {
   constructor({ strings: e6, _$litType$: t4 }, i9) {
-    let s4;
+    let a5;
     this.parts = [];
-    let a4 = 0, d4 = 0;
-    const g4 = e6.length - 1, r6 = this.parts, [c8, h4] = te(e6, t4);
+    let o12 = 0, d4 = 0;
+    const g4 = e6.length - 1, r7 = this.parts, [c8, h4] = te(e6, t4);
     if (this.el = _T.createElement(c8, i9), $2.currentNode = this.el.content, t4 === 2 || t4 === 3) {
       const n6 = this.el.content.firstChild;
       n6.replaceWith(...n6.childNodes);
     }
-    for (; (s4 = $2.nextNode()) !== null && r6.length < g4; ) {
-      if (s4.nodeType === 1) {
-        if (s4.hasAttributes()) for (const n6 of s4.getAttributeNames()) if (n6.endsWith(W)) {
-          const _2 = h4[d4++], f4 = s4.getAttribute(n6).split(b3), S3 = /([.?@])?(.*)/.exec(_2);
-          r6.push({ type: 1, index: a4, name: S3[2], strings: f4, ctor: S3[1] === "." ? se : S3[1] === "?" ? ae : S3[1] === "@" ? oe : M2 }), s4.removeAttribute(n6);
-        } else n6.startsWith(b3) && (r6.push({ type: 6, index: a4 }), s4.removeAttribute(n6));
-        if (V2.test(s4.tagName)) {
-          const n6 = s4.textContent.split(b3), _2 = n6.length - 1;
-          if (_2 > 0) {
-            s4.textContent = H2 ? H2.emptyScript : "";
-            for (let f4 = 0; f4 < _2; f4++) s4.append(n6[f4], N2()), $2.nextNode(), r6.push({ type: 2, index: ++a4 });
-            s4.append(n6[_2], N2());
+    for (; (a5 = $2.nextNode()) !== null && r7.length < g4; ) {
+      if (a5.nodeType === 1) {
+        if (a5.hasAttributes()) for (const n6 of a5.getAttributeNames()) if (n6.endsWith(W)) {
+          const f4 = h4[d4++], _2 = a5.getAttribute(n6).split(y5), S3 = /([.?@])?(.*)/.exec(f4);
+          r7.push({ type: 1, index: o12, name: S3[2], strings: _2, ctor: S3[1] === "." ? ae : S3[1] === "?" ? oe : S3[1] === "@" ? se : E2 }), a5.removeAttribute(n6);
+        } else n6.startsWith(y5) && (r7.push({ type: 6, index: o12 }), a5.removeAttribute(n6));
+        if (V2.test(a5.tagName)) {
+          const n6 = a5.textContent.split(y5), f4 = n6.length - 1;
+          if (f4 > 0) {
+            a5.textContent = H2 ? H2.emptyScript : "";
+            for (let _2 = 0; _2 < f4; _2++) a5.append(n6[_2], N2()), $2.nextNode(), r7.push({ type: 2, index: ++o12 });
+            a5.append(n6[f4], N2());
           }
         }
-      } else if (s4.nodeType === 8) if (s4.data === F) r6.push({ type: 2, index: a4 });
+      } else if (a5.nodeType === 8) if (a5.data === F) r7.push({ type: 2, index: o12 });
       else {
         let n6 = -1;
-        for (; (n6 = s4.data.indexOf(b3, n6 + 1)) !== -1; ) r6.push({ type: 7, index: a4 }), n6 += b3.length - 1;
+        for (; (n6 = a5.data.indexOf(y5, n6 + 1)) !== -1; ) r7.push({ type: 7, index: o12 }), n6 += y5.length - 1;
       }
-      a4++;
+      o12++;
     }
   }
   static createElement(e6, t4) {
-    const i9 = A2.createElement("template");
+    const i9 = v2.createElement("template");
     return i9.innerHTML = e6, i9;
   }
 };
-function x2(o12, e6, t4 = o12, i9) {
+function x2(s4, e6, t4 = s4, i9) {
   if (e6 === k2) return e6;
-  let s4 = i9 !== void 0 ? t4._$Co?.[i9] : t4._$Cl;
-  const a4 = C3(e6) ? void 0 : e6._$litDirective$;
-  return s4?.constructor !== a4 && (s4?._$AO?.(false), a4 === void 0 ? s4 = void 0 : (s4 = new a4(o12), s4._$AT(o12, t4, i9)), i9 !== void 0 ? (t4._$Co ??= [])[i9] = s4 : t4._$Cl = s4), s4 !== void 0 && (e6 = x2(o12, s4._$AS(o12, e6.values), s4, i9)), e6;
+  let a5 = i9 !== void 0 ? t4._$Co?.[i9] : t4._$Cl;
+  const o12 = C3(e6) ? void 0 : e6._$litDirective$;
+  return a5?.constructor !== o12 && (a5?._$AO?.(false), o12 === void 0 ? a5 = void 0 : (a5 = new o12(s4), a5._$AT(s4, t4, i9)), i9 !== void 0 ? (t4._$Co ??= [])[i9] = a5 : t4._$Cl = a5), a5 !== void 0 && (e6 = x2(s4, a5._$AS(s4, e6.values), a5, i9)), e6;
 }
 var ie = class {
   constructor(e6, t4) {
@@ -1131,29 +1273,29 @@ var ie = class {
     return this._$AM._$AU;
   }
   u(e6) {
-    const { el: { content: t4 }, parts: i9 } = this._$AD, s4 = (e6?.creationScope ?? A2).importNode(t4, true);
-    $2.currentNode = s4;
-    let a4 = $2.nextNode(), d4 = 0, g4 = 0, r6 = i9[0];
-    for (; r6 !== void 0; ) {
-      if (d4 === r6.index) {
+    const { el: { content: t4 }, parts: i9 } = this._$AD, a5 = (e6?.creationScope ?? v2).importNode(t4, true);
+    $2.currentNode = a5;
+    let o12 = $2.nextNode(), d4 = 0, g4 = 0, r7 = i9[0];
+    for (; r7 !== void 0; ) {
+      if (d4 === r7.index) {
         let c8;
-        r6.type === 2 ? c8 = new E2(a4, a4.nextSibling, this, e6) : r6.type === 1 ? c8 = new r6.ctor(a4, r6.name, r6.strings, this, e6) : r6.type === 6 && (c8 = new de(a4, this, e6)), this._$AV.push(c8), r6 = i9[++g4];
+        r7.type === 2 ? c8 = new M2(o12, o12.nextSibling, this, e6) : r7.type === 1 ? c8 = new r7.ctor(o12, r7.name, r7.strings, this, e6) : r7.type === 6 && (c8 = new de(o12, this, e6)), this._$AV.push(c8), r7 = i9[++g4];
       }
-      d4 !== r6?.index && (a4 = $2.nextNode(), d4++);
+      d4 !== r7?.index && (o12 = $2.nextNode(), d4++);
     }
-    return $2.currentNode = A2, s4;
+    return $2.currentNode = v2, a5;
   }
   p(e6) {
     let t4 = 0;
     for (const i9 of this._$AV) i9 !== void 0 && (i9.strings !== void 0 ? (i9._$AI(e6, i9, t4), t4 += i9.strings.length - 2) : i9._$AI(e6[t4])), t4++;
   }
 };
-var E2 = class _E {
+var M2 = class _M {
   get _$AU() {
     return this._$AM?._$AU ?? this._$Cv;
   }
-  constructor(e6, t4, i9, s4) {
-    this.type = 2, this._$AH = l5, this._$AN = void 0, this._$AA = e6, this._$AB = t4, this._$AM = i9, this.options = s4, this._$Cv = s4?.isConnected ?? true;
+  constructor(e6, t4, i9, a5) {
+    this.type = 2, this._$AH = l7, this._$AN = void 0, this._$AA = e6, this._$AB = t4, this._$AM = i9, this.options = a5, this._$Cv = a5?.isConnected ?? true;
   }
   get parentNode() {
     let e6 = this._$AA.parentNode;
@@ -1167,7 +1309,7 @@ var E2 = class _E {
     return this._$AB;
   }
   _$AI(e6, t4 = this) {
-    e6 = x2(this, e6, t4), C3(e6) ? e6 === l5 || e6 == null || e6 === "" ? (this._$AH !== l5 && this._$AR(), this._$AH = l5) : e6 !== this._$AH && e6 !== k2 && this._(e6) : e6._$litType$ !== void 0 ? this.$(e6) : e6.nodeType !== void 0 ? this.T(e6) : ee(e6) ? this.k(e6) : this._(e6);
+    e6 = x2(this, e6, t4), C3(e6) ? e6 === l7 || e6 == null || e6 === "" ? (this._$AH !== l7 && this._$AR(), this._$AH = l7) : e6 !== this._$AH && e6 !== k2 && this._(e6) : e6._$litType$ !== void 0 ? this.$(e6) : e6.nodeType !== void 0 ? this.T(e6) : ee(e6) ? this.k(e6) : this._(e6);
   }
   O(e6) {
     return this._$AA.parentNode.insertBefore(e6, this._$AB);
@@ -1176,26 +1318,26 @@ var E2 = class _E {
     this._$AH !== e6 && (this._$AR(), this._$AH = this.O(e6));
   }
   _(e6) {
-    this._$AH !== l5 && C3(this._$AH) ? this._$AA.nextSibling.data = e6 : this.T(A2.createTextNode(e6)), this._$AH = e6;
+    this._$AH !== l7 && C3(this._$AH) ? this._$AA.nextSibling.data = e6 : this.T(v2.createTextNode(e6)), this._$AH = e6;
   }
   $(e6) {
-    const { values: t4, _$litType$: i9 } = e6, s4 = typeof i9 == "number" ? this._$AC(e6) : (i9.el === void 0 && (i9.el = T2.createElement(q(i9.h, i9.h[0]), this.options)), i9);
-    if (this._$AH?._$AD === s4) this._$AH.p(t4);
+    const { values: t4, _$litType$: i9 } = e6, a5 = typeof i9 == "number" ? this._$AC(e6) : (i9.el === void 0 && (i9.el = T2.createElement(q(i9.h, i9.h[0]), this.options)), i9);
+    if (this._$AH?._$AD === a5) this._$AH.p(t4);
     else {
-      const a4 = new ie(s4, this), d4 = a4.u(this.options);
-      a4.p(t4), this.T(d4), this._$AH = a4;
+      const o12 = new ie(a5, this), d4 = o12.u(this.options);
+      o12.p(t4), this.T(d4), this._$AH = o12;
     }
   }
   _$AC(e6) {
-    let t4 = G.get(e6.strings);
-    return t4 === void 0 && G.set(e6.strings, t4 = new T2(e6)), t4;
+    let t4 = P2.get(e6.strings);
+    return t4 === void 0 && P2.set(e6.strings, t4 = new T2(e6)), t4;
   }
   k(e6) {
-    O(this._$AH) || (this._$AH = [], this._$AR());
+    z2(this._$AH) || (this._$AH = [], this._$AR());
     const t4 = this._$AH;
-    let i9, s4 = 0;
-    for (const a4 of e6) s4 === t4.length ? t4.push(i9 = new _E(this.O(N2()), this.O(N2()), this, this.options)) : i9 = t4[s4], i9._$AI(a4), s4++;
-    s4 < t4.length && (this._$AR(i9 && i9._$AB.nextSibling, s4), t4.length = s4);
+    let i9, a5 = 0;
+    for (const o12 of e6) a5 === t4.length ? t4.push(i9 = new _M(this.O(N2()), this.O(N2()), this, this.options)) : i9 = t4[a5], i9._$AI(o12), a5++;
+    a5 < t4.length && (this._$AR(i9 && i9._$AB.nextSibling, a5), t4.length = a5);
   }
   _$AR(e6 = this._$AA.nextSibling, t4) {
     for (this._$AP?.(false, true, t4); e6 !== this._$AB; ) {
@@ -1207,55 +1349,55 @@ var E2 = class _E {
     this._$AM === void 0 && (this._$Cv = e6, this._$AP?.(e6));
   }
 };
-var M2 = class {
+var E2 = class {
   get tagName() {
     return this.element.tagName;
   }
   get _$AU() {
     return this._$AM._$AU;
   }
-  constructor(e6, t4, i9, s4, a4) {
-    this.type = 1, this._$AH = l5, this._$AN = void 0, this.element = e6, this.name = t4, this._$AM = s4, this.options = a4, i9.length > 2 || i9[0] !== "" || i9[1] !== "" ? (this._$AH = Array(i9.length - 1).fill(new String()), this.strings = i9) : this._$AH = l5;
+  constructor(e6, t4, i9, a5, o12) {
+    this.type = 1, this._$AH = l7, this._$AN = void 0, this.element = e6, this.name = t4, this._$AM = a5, this.options = o12, i9.length > 2 || i9[0] !== "" || i9[1] !== "" ? (this._$AH = Array(i9.length - 1).fill(new String()), this.strings = i9) : this._$AH = l7;
   }
-  _$AI(e6, t4 = this, i9, s4) {
-    const a4 = this.strings;
+  _$AI(e6, t4 = this, i9, a5) {
+    const o12 = this.strings;
     let d4 = false;
-    if (a4 === void 0) e6 = x2(this, e6, t4, 0), d4 = !C3(e6) || e6 !== this._$AH && e6 !== k2, d4 && (this._$AH = e6);
+    if (o12 === void 0) e6 = x2(this, e6, t4, 0), d4 = !C3(e6) || e6 !== this._$AH && e6 !== k2, d4 && (this._$AH = e6);
     else {
       const g4 = e6;
-      let r6, c8;
-      for (e6 = a4[0], r6 = 0; r6 < a4.length - 1; r6++) c8 = x2(this, g4[i9 + r6], t4, r6), c8 === k2 && (c8 = this._$AH[r6]), d4 ||= !C3(c8) || c8 !== this._$AH[r6], c8 === l5 ? e6 = l5 : e6 !== l5 && (e6 += (c8 ?? "") + a4[r6 + 1]), this._$AH[r6] = c8;
+      let r7, c8;
+      for (e6 = o12[0], r7 = 0; r7 < o12.length - 1; r7++) c8 = x2(this, g4[i9 + r7], t4, r7), c8 === k2 && (c8 = this._$AH[r7]), d4 ||= !C3(c8) || c8 !== this._$AH[r7], c8 === l7 ? e6 = l7 : e6 !== l7 && (e6 += (c8 ?? "") + o12[r7 + 1]), this._$AH[r7] = c8;
     }
-    d4 && !s4 && this.j(e6);
+    d4 && !a5 && this.j(e6);
   }
   j(e6) {
-    e6 === l5 ? this.element.removeAttribute(this.name) : this.element.setAttribute(this.name, e6 ?? "");
+    e6 === l7 ? this.element.removeAttribute(this.name) : this.element.setAttribute(this.name, e6 ?? "");
   }
 };
-var se = class extends M2 {
+var ae = class extends E2 {
   constructor() {
     super(...arguments), this.type = 3;
   }
   j(e6) {
-    this.element[this.name] = e6 === l5 ? void 0 : e6;
+    this.element[this.name] = e6 === l7 ? void 0 : e6;
   }
 };
-var ae = class extends M2 {
+var oe = class extends E2 {
   constructor() {
     super(...arguments), this.type = 4;
   }
   j(e6) {
-    this.element.toggleAttribute(this.name, !!e6 && e6 !== l5);
+    this.element.toggleAttribute(this.name, !!e6 && e6 !== l7);
   }
 };
-var oe = class extends M2 {
-  constructor(e6, t4, i9, s4, a4) {
-    super(e6, t4, i9, s4, a4), this.type = 5;
+var se = class extends E2 {
+  constructor(e6, t4, i9, a5, o12) {
+    super(e6, t4, i9, a5, o12), this.type = 5;
   }
   _$AI(e6, t4 = this) {
-    if ((e6 = x2(this, e6, t4, 0) ?? l5) === k2) return;
-    const i9 = this._$AH, s4 = e6 === l5 && i9 !== l5 || e6.capture !== i9.capture || e6.once !== i9.once || e6.passive !== i9.passive, a4 = e6 !== l5 && (i9 === l5 || s4);
-    s4 && this.element.removeEventListener(this.name, this, i9), a4 && this.element.addEventListener(this.name, this, e6), this._$AH = e6;
+    if ((e6 = x2(this, e6, t4, 0) ?? l7) === k2) return;
+    const i9 = this._$AH, a5 = e6 === l7 && i9 !== l7 || e6.capture !== i9.capture || e6.once !== i9.once || e6.passive !== i9.passive, o12 = e6 !== l7 && (i9 === l7 || a5);
+    a5 && this.element.removeEventListener(this.name, this, i9), o12 && this.element.addEventListener(this.name, this, e6), this._$AH = e6;
   }
   handleEvent(e6) {
     typeof this._$AH == "function" ? this._$AH.call(this.options?.host ?? this.element, e6) : this._$AH.handleEvent(e6);
@@ -1272,10 +1414,10 @@ var de = class {
     x2(this, e6);
   }
 };
-var re = I2.litHtmlPolyfillSupport;
-re?.(T2, E2), (I2.litHtmlVersions ??= []).push("3.3.1");
+var re = O.litHtmlPolyfillSupport;
+re?.(T2, M2), (O.litHtmlVersions ??= []).push("3.3.1");
 var ne = { CHILD: 2 };
-var le = (o12) => (...e6) => ({ _$litDirective$: o12, values: e6 });
+var le = (s4) => (...e6) => ({ _$litDirective$: s4, values: e6 });
 var ce = class {
   constructor(e6) {
   }
@@ -1292,12 +1434,12 @@ var ce = class {
     return this.render(...t4);
   }
 };
-var B2 = class extends ce {
+var I2 = class extends ce {
   constructor(e6) {
-    if (super(e6), this.it = l5, e6.type !== ne.CHILD) throw Error(this.constructor.directiveName + "() can only be used in child bindings");
+    if (super(e6), this.it = l7, e6.type !== ne.CHILD) throw Error(this.constructor.directiveName + "() can only be used in child bindings");
   }
   render(e6) {
-    if (e6 === l5 || e6 == null) return this._t = void 0, this.it = e6;
+    if (e6 === l7 || e6 == null) return this._t = void 0, this.it = e6;
     if (e6 === k2) return e6;
     if (typeof e6 != "string") throw Error(this.constructor.directiveName + "() called with a non-string value");
     if (e6 === this.it) return this._t;
@@ -1306,15 +1448,15 @@ var B2 = class extends ce {
     return t4.raw = t4, this._t = { _$litType$: this.constructor.resultType, strings: t4, values: [] };
   }
 };
-B2.directiveName = "unsafeHTML", B2.resultType = 1;
-var P2 = le(B2);
+I2.directiveName = "unsafeHTML", I2.resultType = 1;
+var B2 = le(I2);
 var he = Object.defineProperty;
-var u4 = (o12, e6, t4, i9) => {
-  for (var s4 = void 0, a4 = o12.length - 1, d4; a4 >= 0; a4--)
-    (d4 = o12[a4]) && (s4 = d4(e6, t4, s4) || s4);
-  return s4 && he(e6, t4, s4), s4;
+var u5 = (s4, e6, t4, i9) => {
+  for (var a5 = void 0, o12 = s4.length - 1, d4; o12 >= 0; o12--)
+    (d4 = s4[o12]) && (a5 = d4(e6, t4, a5) || a5);
+  return a5 && he(e6, t4, a5), a5;
 };
-var m4 = class extends f3 {
+var m5 = class extends f3 {
   /**
    * Initialize functions
    */
@@ -1338,7 +1480,7 @@ var m4 = class extends f3 {
         </div>
       `,
         href: "https://courses.bradfrost.com/enroll/3584706?price_id=4519547",
-        buttonText: "buy now"
+        buttonText: "buy for $1000"
       },
       {
         imgSrc: "/images/subatomic-atomic-bundle.png",
@@ -1351,7 +1493,7 @@ var m4 = class extends f3 {
         </p>
       `,
         href: "https://courses.bradfrost.com/enroll/3449097?price_id=4366498",
-        buttonText: "buy now"
+        buttonText: "buy for $500"
       }
     ], this.courses = [
       {
@@ -1476,7 +1618,7 @@ var m4 = class extends f3 {
                 <ed-heading id="black-friday-modal-heading" tagName="h2" variant="display-lg" class="ed-u-display-block ed-u-margin-bottom-sm"
                   ><span class="ed-c-black-friday-modal__header-content-title">${this.heading}</span></ed-heading
                 >
-                <div class="ed-c-black-friday-modal__header-content-description">${P2(this.description)}</div>
+                <div class="ed-c-black-friday-modal__header-content-description">${B2(this.description)}</div>
               </ed-layout-container>
             </div>
           </div>
@@ -1500,11 +1642,11 @@ var m4 = class extends f3 {
                             ` : x` <img class="ed-c-black-friday-modal__card-image" src="${t4.imgSrc}" alt="${t4.imgAlt}" /> `}
                         <ed-heading tagName="h4" variant="title-lg" class="ed-c-black-friday-modal__card-title">${t4.heading}</ed-heading>
 
-                        <ed-text-passage class="ed-u-display-block ed-u-margin-bottom-md"> ${P2(t4.description)} </ed-text-passage>
+                        <ed-text-passage class="ed-c-black-friday-modal__card-description"> ${B2(t4.description)} </ed-text-passage>
                       </div>
                       ${t4.href && t4.buttonText ? x`
                             <footer class="ed-c-black-friday-modal__card-footer">
-                              <ed-button href="${t4.href}" size="lg">${t4.buttonText}</ed-button>
+                              <ed-button href="${t4.href}" size="lg">${B2(t4.buttonText)}</ed-button>
                             </footer>
                           ` : ""}
                     </div>
@@ -1529,191 +1671,71 @@ var m4 = class extends f3 {
                 `
     )}
             </ed-grid>
+            <div class="ed-c-black-friday-modal__cta">
+              <ed-button @click=${this.closeModal} size="lg">close this window</ed-button>
+            </div>
           </ed-layout-container>
         </div>
       </dialog>
     `;
   }
 };
-u4([
+u5([
   n4()
-], m4.prototype, "align");
-u4([
+], m5.prototype, "align");
+u5([
   n4()
-], m4.prototype, "closeButtonText");
-u4([
+], m5.prototype, "closeButtonText");
+u5([
   n4()
-], m4.prototype, "hasBackdrop");
-u4([
+], m5.prototype, "hasBackdrop");
+u5([
   n4({ type: Boolean })
-], m4.prototype, "isActive");
-u4([
+], m5.prototype, "isActive");
+u5([
   n4()
-], m4.prototype, "imgSrc");
-u4([
+], m5.prototype, "imgSrc");
+u5([
   n4()
-], m4.prototype, "imgAlt");
-u4([
+], m5.prototype, "imgAlt");
+u5([
   n4()
-], m4.prototype, "heading");
-u4([
+], m5.prototype, "heading");
+u5([
   n4()
-], m4.prototype, "description");
-u4([
+], m5.prototype, "description");
+u5([
   n4()
-], m4.prototype, "secondaryHeading");
-u4([
+], m5.prototype, "secondaryHeading");
+u5([
   n4({ type: Array })
-], m4.prototype, "promos");
-u4([
+], m5.prototype, "promos");
+u5([
   n4({ type: Array })
-], m4.prototype, "courses");
-u4([
+], m5.prototype, "courses");
+u5([
   e5(".ed-c-black-friday-modal__close-button")
-], m4.prototype, "closeButton");
-customElements.get("ed-black-friday-modal") === void 0 && customElements.define("ed-black-friday-modal", m4);
+], m5.prototype, "closeButton");
+customElements.get("ed-black-friday-modal") === void 0 && customElements.define("ed-black-friday-modal", m5);
 
-// node_modules/@brad-frost-web/eddie-web-components/components/heading/heading.js
-var p6 = '@charset "UTF-8";:root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6,.ed-c-heading{margin:0}.ed-c-heading--display-xl{font-family:var(--ed-theme-typography-display-xl-mobile-font-family);font-weight:var(--ed-theme-typography-display-xl-mobile-font-weight);font-size:var(--ed-theme-typography-display-xl-mobile-font-size);line-height:var(--ed-theme-typography-display-xl-mobile-line-height);letter-spacing:var(--ed-theme-typography-display-xl-mobile-letter-spacing);text-transform:var(--ed-theme-typography-display-xl-mobile-text-transform)}@media all and (min-width:48rem){.ed-c-heading--display-xl{font-family:var(--ed-theme-typography-display-xl-tablet-font-family);font-weight:var(--ed-theme-typography-display-xl-tablet-font-weight);font-size:var(--ed-theme-typography-display-xl-tablet-font-size);line-height:var(--ed-theme-typography-display-xl-tablet-line-height);letter-spacing:var(--ed-theme-typography-display-xl-tablet-letter-spacing);text-transform:var(--ed-theme-typography-display-xl-tablet-text-transform)}}@media all and (min-width:75rem){.ed-c-heading--display-xl{font-family:var(--ed-theme-typography-display-xl-font-family);font-weight:var(--ed-theme-typography-display-xl-font-weight);font-size:var(--ed-theme-typography-display-xl-font-size);line-height:var(--ed-theme-typography-display-xl-line-height);letter-spacing:var(--ed-theme-typography-display-xl-letter-spacing);text-transform:var(--ed-theme-typography-display-xl-text-transform)}}.ed-c-heading--display-lg{font-family:var(--ed-theme-typography-display-lg-mobile-font-family);font-weight:var(--ed-theme-typography-display-lg-mobile-font-weight);font-size:var(--ed-theme-typography-display-lg-mobile-font-size);line-height:var(--ed-theme-typography-display-lg-mobile-line-height);letter-spacing:var(--ed-theme-typography-display-lg-mobile-letter-spacing);text-transform:var(--ed-theme-typography-display-lg-mobile-text-transform)}@media all and (min-width:48rem){.ed-c-heading--display-lg{font-family:var(--ed-theme-typography-display-lg-font-family);font-weight:var(--ed-theme-typography-display-lg-font-weight);font-size:var(--ed-theme-typography-display-lg-font-size);line-height:var(--ed-theme-typography-display-lg-line-height);letter-spacing:var(--ed-theme-typography-display-lg-letter-spacing);text-transform:var(--ed-theme-typography-display-lg-text-transform)}}.ed-c-heading--display-default{font-family:var(--ed-theme-typography-display-default-mobile-font-family);font-weight:var(--ed-theme-typography-display-default-mobile-font-weight);font-size:var(--ed-theme-typography-display-default-mobile-font-size);line-height:var(--ed-theme-typography-display-default-mobile-line-height);letter-spacing:var(--ed-theme-typography-display-default-mobile-letter-spacing);text-transform:var(--ed-theme-typography-display-default-mobile-text-transform)}@media all and (min-width:48rem){.ed-c-heading--display-default{font-family:var(--ed-theme-typography-display-default-font-family);font-weight:var(--ed-theme-typography-display-default-font-weight);font-size:var(--ed-theme-typography-display-default-font-size);line-height:var(--ed-theme-typography-display-default-line-height);letter-spacing:var(--ed-theme-typography-display-default-letter-spacing);text-transform:var(--ed-theme-typography-display-default-text-transform)}}.ed-c-heading--headline-lg{font-family:var(--ed-theme-typography-headline-lg-mobile-font-family);font-weight:var(--ed-theme-typography-headline-lg-mobile-font-weight);font-size:var(--ed-theme-typography-headline-lg-mobile-font-size);line-height:var(--ed-theme-typography-headline-lg-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-lg-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-lg-mobile-text-transform)}@media all and (min-width:48rem){.ed-c-heading--headline-lg{font-family:var(--ed-theme-typography-headline-lg-font-family);font-weight:var(--ed-theme-typography-headline-lg-font-weight);font-size:var(--ed-theme-typography-headline-lg-font-size);line-height:var(--ed-theme-typography-headline-lg-line-height);letter-spacing:var(--ed-theme-typography-headline-lg-letter-spacing);text-transform:var(--ed-theme-typography-headline-lg-text-transform)}}.ed-c-heading--headline-default{font-family:var(--ed-theme-typography-headline-default-mobile-font-family);font-weight:var(--ed-theme-typography-headline-default-mobile-font-weight);font-size:var(--ed-theme-typography-headline-default-mobile-font-size);line-height:var(--ed-theme-typography-headline-default-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-default-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-default-mobile-text-transform)}@media all and (min-width:48rem){.ed-c-heading--headline-default{font-family:var(--ed-theme-typography-headline-default-font-family);font-weight:var(--ed-theme-typography-headline-default-font-weight);font-size:var(--ed-theme-typography-headline-default-font-size);line-height:var(--ed-theme-typography-headline-default-line-height);letter-spacing:var(--ed-theme-typography-headline-default-letter-spacing);text-transform:var(--ed-theme-typography-headline-default-text-transform)}}.ed-c-heading--headline-sm{font-family:var(--ed-theme-typography-headline-sm-mobile-font-family);font-weight:var(--ed-theme-typography-headline-sm-mobile-font-weight);font-size:var(--ed-theme-typography-headline-sm-mobile-font-size);line-height:var(--ed-theme-typography-headline-sm-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-sm-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-sm-mobile-text-transform)}@media all and (min-width:48rem){.ed-c-heading--headline-sm{font-family:var(--ed-theme-typography-headline-sm-font-family);font-weight:var(--ed-theme-typography-headline-sm-font-weight);font-size:var(--ed-theme-typography-headline-sm-font-size);line-height:var(--ed-theme-typography-headline-sm-line-height);letter-spacing:var(--ed-theme-typography-headline-sm-letter-spacing);text-transform:var(--ed-theme-typography-headline-sm-text-transform)}}.ed-c-heading--title-lg{font-family:var(--ed-theme-typography-title-lg-mobile-font-family);font-weight:var(--ed-theme-typography-title-lg-mobile-font-weight);font-size:var(--ed-theme-typography-title-lg-mobile-font-size);line-height:var(--ed-theme-typography-title-lg-mobile-line-height);letter-spacing:var(--ed-theme-typography-title-lg-mobile-letter-spacing);text-transform:var(--ed-theme-typography-title-lg-mobile-text-transform)}@media all and (min-width:48rem){.ed-c-heading--title-lg{font-family:var(--ed-theme-typography-title-lg-font-family);font-weight:var(--ed-theme-typography-title-lg-font-weight);font-size:var(--ed-theme-typography-title-lg-font-size);line-height:var(--ed-theme-typography-title-lg-line-height);letter-spacing:var(--ed-theme-typography-title-lg-letter-spacing);text-transform:var(--ed-theme-typography-title-lg-text-transform)}}.ed-c-heading--title-default{font-family:var(--ed-theme-typography-title-default-font-family);font-weight:var(--ed-theme-typography-title-default-font-weight);font-size:var(--ed-theme-typography-title-default-font-size);line-height:var(--ed-theme-typography-title-default-line-height);letter-spacing:var(--ed-theme-typography-title-default-letter-spacing);text-transform:var(--ed-theme-typography-title-default-text-transform)}.ed-c-heading--title-sm{font-family:var(--ed-theme-typography-title-sm-font-family);font-weight:var(--ed-theme-typography-title-sm-font-weight);font-size:var(--ed-theme-typography-title-sm-font-size);line-height:var(--ed-theme-typography-title-sm-line-height);letter-spacing:var(--ed-theme-typography-title-sm-letter-spacing);text-transform:var(--ed-theme-typography-title-sm-text-transform)}.ed-c-heading--label-lg{font-family:var(--ed-theme-typography-label-lg-font-family);font-weight:var(--ed-theme-typography-label-lg-font-weight);font-size:var(--ed-theme-typography-label-lg-font-size);line-height:var(--ed-theme-typography-label-lg-line-height);letter-spacing:var(--ed-theme-typography-label-lg-letter-spacing);text-transform:var(--ed-theme-typography-label-lg-text-transform)}.ed-c-heading--label-default{font-family:var(--ed-theme-typography-label-default-font-family);font-weight:var(--ed-theme-typography-label-default-font-weight);font-size:var(--ed-theme-typography-label-default-font-size);line-height:var(--ed-theme-typography-label-default-line-height);letter-spacing:var(--ed-theme-typography-label-default-letter-spacing);text-transform:var(--ed-theme-typography-label-default-text-transform)}.ed-c-heading--label-sm{font-family:var(--ed-theme-typography-label-sm-font-family);font-weight:var(--ed-theme-typography-label-sm-font-weight);font-size:var(--ed-theme-typography-label-sm-font-size);line-height:var(--ed-theme-typography-label-sm-line-height);letter-spacing:var(--ed-theme-typography-label-sm-letter-spacing);text-transform:var(--ed-theme-typography-label-sm-text-transform)}.ed-c-heading--body-lg{font-family:var(--ed-theme-typography-body-lg-font-family);font-weight:var(--ed-theme-typography-body-lg-font-weight);font-size:var(--ed-theme-typography-body-lg-font-size);line-height:var(--ed-theme-typography-body-lg-line-height);letter-spacing:var(--ed-theme-typography-body-lg-letter-spacing);text-transform:var(--ed-theme-typography-body-lg-text-transform)}.ed-c-heading--body-default{font-family:var(--ed-theme-typography-body-default-font-family);font-weight:var(--ed-theme-typography-body-default-font-weight);font-size:var(--ed-theme-typography-body-default-font-size);line-height:var(--ed-theme-typography-body-default-line-height);letter-spacing:var(--ed-theme-typography-body-default-letter-spacing);text-transform:var(--ed-theme-typography-body-default-text-transform)}.ed-c-heading--body-sm{font-family:var(--ed-theme-typography-body-sm-font-family);font-weight:var(--ed-theme-typography-body-sm-font-weight);font-size:var(--ed-theme-typography-body-sm-font-size);line-height:var(--ed-theme-typography-body-sm-line-height);letter-spacing:var(--ed-theme-typography-body-sm-letter-spacing);text-transform:var(--ed-theme-typography-body-sm-text-transform)}.ed-c-heading--meta-default{font-family:var(--ed-theme-typography-meta-default-font-family);font-weight:var(--ed-theme-typography-meta-default-font-weight);font-size:var(--ed-theme-typography-meta-default-font-size);line-height:var(--ed-theme-typography-meta-default-line-height);letter-spacing:var(--ed-theme-typography-meta-default-letter-spacing);text-transform:var(--ed-theme-typography-meta-default-text-transform)}.ed-c-heading--meta-sm{font-family:var(--ed-theme-typography-meta-sm-font-family);font-weight:var(--ed-theme-typography-meta-sm-font-weight);font-size:var(--ed-theme-typography-meta-sm-font-size);line-height:var(--ed-theme-typography-meta-sm-line-height);letter-spacing:var(--ed-theme-typography-meta-sm-letter-spacing);text-transform:var(--ed-theme-typography-meta-sm-text-transform)}';
-var m5 = Object.defineProperty;
-var o11 = (i9, e6, r6, s4) => {
-  for (var t4 = void 0, h4 = i9.length - 1, d4; h4 >= 0; h4--)
-    (d4 = i9[h4]) && (t4 = d4(e6, r6, t4) || t4);
-  return t4 && m5(e6, r6, t4), t4;
-};
-var l6 = class extends f3 {
-  constructor() {
-    super(...arguments), this.tagName = "h2";
-  }
+// node_modules/@brad-frost-web/eddie-web-components/components/black-friday-banner/black-friday-banner.js
+var r6 = ":root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-c-black-friday-banner{width:100%;padding:1rem 0;background:var(--ed-theme-color-background-brand-knockout);color:var(--ed-theme-color-content-knockout)}::slotted(a){color:var(--ed-theme-color-content-knockout)}::slotted(a):hover,::slotted(a):focus{text-decoration:none}";
+var a4 = class extends f3 {
   static get styles() {
-    return r(p6);
+    return r(r6.toString());
   }
   render() {
-    const e6 = this.componentClassNames("ed-c-heading", {
-      "ed-c-heading--display-xl": this.variant === "display-xl",
-      "ed-c-heading--display-lg": this.variant === "display-lg",
-      "ed-c-heading--display-default": this.variant === "display-default",
-      "ed-c-heading--headline-lg": this.variant ? this.variant === "headline-lg" : this.tagName === "h1",
-      "ed-c-heading--headline-default": this.variant ? this.variant === "headline-default" : this.tagName === "h2",
-      "ed-c-heading--headline-sm": this.variant ? this.variant === "headline-sm" : this.tagName === "h3",
-      "ed-c-heading--title-lg": this.variant ? this.variant === "title-lg" : this.tagName === "h4",
-      "ed-c-heading--title-default": this.variant ? this.variant === "title-default" : this.tagName === "h5",
-      "ed-c-heading--title-sm": this.variant ? this.variant === "title-sm" : this.tagName === "h6",
-      "ed-c-heading--label-lg": this.variant === "label-lg",
-      "ed-c-heading--label-default": this.variant === "label-default",
-      "ed-c-heading--label-sm": this.variant === "label-sm",
-      "ed-c-heading--body-lg": this.variant === "body-lg",
-      "ed-c-heading--body-default": this.variant === "body-default",
-      "ed-c-heading--body-sm": this.variant === "body-sm",
-      "ed-c-heading--meta-default": this.variant === "meta-default",
-      "ed-c-heading--meta-sm": this.variant === "meta-sm"
-    });
-    switch (this.tagName) {
-      case "h1":
-        return x` <h1 class="${e6}"><slot></slot></h1> `;
-      case "h2":
-        return x` <h2 class="${e6}"><slot></slot></h2> `;
-      case "h3":
-        return x` <h3 class="${e6}"><slot></slot></h3> `;
-      case "h4":
-        return x` <h4 class="${e6}"><slot></slot></h4> `;
-      case "h5":
-        return x` <h5 class="${e6}"><slot></slot></h5> `;
-      case "h6":
-        return x` <h6 class="${e6}"><slot></slot></h6> `;
-    }
-  }
-};
-o11([
-  n4()
-], l6.prototype, "variant");
-o11([
-  n4()
-], l6.prototype, "tagName");
-customElements.get("ed-heading") === void 0 && customElements.define("ed-heading", l6);
-
-// node_modules/@brad-frost-web/eddie-web-components/components/text-passage/text-passage.js
-var g3 = ":root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}ed-text-passage{font-family:var(--ed-theme-typography-body-default-font-family);font-weight:var(--ed-theme-typography-body-default-font-weight);font-size:var(--ed-theme-typography-body-default-font-size);line-height:var(--ed-theme-typography-body-default-line-height);letter-spacing:var(--ed-theme-typography-body-default-letter-spacing);text-transform:var(--ed-theme-typography-body-default-text-transform)}ed-text-passage h1{font-family:var(--ed-theme-typography-headline-lg-mobile-font-family);font-weight:var(--ed-theme-typography-headline-lg-mobile-font-weight);font-size:var(--ed-theme-typography-headline-lg-mobile-font-size);line-height:var(--ed-theme-typography-headline-lg-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-lg-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-lg-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage h1{font-family:var(--ed-theme-typography-headline-lg-font-family);font-weight:var(--ed-theme-typography-headline-lg-font-weight);font-size:var(--ed-theme-typography-headline-lg-font-size);line-height:var(--ed-theme-typography-headline-lg-line-height);letter-spacing:var(--ed-theme-typography-headline-lg-letter-spacing);text-transform:var(--ed-theme-typography-headline-lg-text-transform)}}ed-text-passage h1{margin-bottom:.75rem}ed-text-passage h2{font-family:var(--ed-theme-typography-headline-default-mobile-font-family);font-weight:var(--ed-theme-typography-headline-default-mobile-font-weight);font-size:var(--ed-theme-typography-headline-default-mobile-font-size);line-height:var(--ed-theme-typography-headline-default-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-default-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-default-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage h2{font-family:var(--ed-theme-typography-headline-default-font-family);font-weight:var(--ed-theme-typography-headline-default-font-weight);font-size:var(--ed-theme-typography-headline-default-font-size);line-height:var(--ed-theme-typography-headline-default-line-height);letter-spacing:var(--ed-theme-typography-headline-default-letter-spacing);text-transform:var(--ed-theme-typography-headline-default-text-transform)}}ed-text-passage h2{margin-bottom:.75rem}ed-text-passage h3{font-family:var(--ed-theme-typography-headline-sm-mobile-font-family);font-weight:var(--ed-theme-typography-headline-sm-mobile-font-weight);font-size:var(--ed-theme-typography-headline-sm-mobile-font-size);line-height:var(--ed-theme-typography-headline-sm-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-sm-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-sm-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage h3{font-family:var(--ed-theme-typography-headline-sm-font-family);font-weight:var(--ed-theme-typography-headline-sm-font-weight);font-size:var(--ed-theme-typography-headline-sm-font-size);line-height:var(--ed-theme-typography-headline-sm-line-height);letter-spacing:var(--ed-theme-typography-headline-sm-letter-spacing);text-transform:var(--ed-theme-typography-headline-sm-text-transform)}}ed-text-passage h3{margin-bottom:.75rem}ed-text-passage h4{font-family:var(--ed-theme-typography-title-lg-mobile-font-family);font-weight:var(--ed-theme-typography-title-lg-mobile-font-weight);font-size:var(--ed-theme-typography-title-lg-mobile-font-size);line-height:var(--ed-theme-typography-title-lg-mobile-line-height);letter-spacing:var(--ed-theme-typography-title-lg-mobile-letter-spacing);text-transform:var(--ed-theme-typography-title-lg-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage h4{font-family:var(--ed-theme-typography-title-lg-font-family);font-weight:var(--ed-theme-typography-title-lg-font-weight);font-size:var(--ed-theme-typography-title-lg-font-size);line-height:var(--ed-theme-typography-title-lg-line-height);letter-spacing:var(--ed-theme-typography-title-lg-letter-spacing);text-transform:var(--ed-theme-typography-title-lg-text-transform)}}ed-text-passage h4{margin-bottom:.75rem}ed-text-passage h5{font-family:var(--ed-theme-typography-title-default-font-family);font-weight:var(--ed-theme-typography-title-default-font-weight);font-size:var(--ed-theme-typography-title-default-font-size);line-height:var(--ed-theme-typography-title-default-line-height);letter-spacing:var(--ed-theme-typography-title-default-letter-spacing);text-transform:var(--ed-theme-typography-title-default-text-transform);margin-bottom:.75rem}ed-text-passage h6{font-family:var(--ed-theme-typography-title-sm-font-family);font-weight:var(--ed-theme-typography-title-sm-font-weight);font-size:var(--ed-theme-typography-title-sm-font-size);line-height:var(--ed-theme-typography-title-sm-line-height);letter-spacing:var(--ed-theme-typography-title-sm-letter-spacing);text-transform:var(--ed-theme-typography-title-sm-text-transform);margin-bottom:.75rem}ed-text-passage ul,ed-text-passage ol{margin-top:0}ed-text-passage ul{margin-left:1.25rem;padding-left:0}ed-text-passage ol{margin-left:1.125rem;padding-left:0}ed-text-passage a{color:var(--ed-theme-color-link-default);text-decoration:none}ed-text-passage a:hover,ed-text-passage a:focus{text-decoration:underline;color:var(--ed-theme-color-link-hover)}ed-text-passage p{margin-top:0;margin-bottom:1.5rem}ed-text-passage blockquote{font-style:italic;border-left:var(--ed-theme-border-width-sm) solid var(--ed-theme-color-border-subtle);color:var(--ed-theme-color-content-subtle);padding-left:1rem;margin-left:0;margin-bottom:1rem}ed-text-passage :last-child{margin-bottom:0}ed-text-passage[size=sm]{font-family:var(--ed-theme-typography-body-sm-font-family);font-weight:var(--ed-theme-typography-body-sm-font-weight);font-size:var(--ed-theme-typography-body-sm-font-size);line-height:var(--ed-theme-typography-body-sm-line-height);letter-spacing:var(--ed-theme-typography-body-sm-letter-spacing);text-transform:var(--ed-theme-typography-body-sm-text-transform)}ed-text-passage[size=sm] ul{margin-left:1.125rem;padding-left:0}ed-text-passage[size=sm] ol{margin-left:1rem;padding-left:0}ed-text-passage[size=sm] p{margin-bottom:1rem}ed-text-passage[size=sm] h1{font-family:var(--ed-theme-typography-headline-default-mobile-font-family);font-weight:var(--ed-theme-typography-headline-default-mobile-font-weight);font-size:var(--ed-theme-typography-headline-default-mobile-font-size);line-height:var(--ed-theme-typography-headline-default-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-default-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-default-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage[size=sm] h1{font-family:var(--ed-theme-typography-headline-default-font-family);font-weight:var(--ed-theme-typography-headline-default-font-weight);font-size:var(--ed-theme-typography-headline-default-font-size);line-height:var(--ed-theme-typography-headline-default-line-height);letter-spacing:var(--ed-theme-typography-headline-default-letter-spacing);text-transform:var(--ed-theme-typography-headline-default-text-transform)}}ed-text-passage[size=sm] h1{margin-bottom:.75rem}ed-text-passage[size=sm] h2{font-family:var(--ed-theme-typography-headline-sm-mobile-font-family);font-weight:var(--ed-theme-typography-headline-sm-mobile-font-weight);font-size:var(--ed-theme-typography-headline-sm-mobile-font-size);line-height:var(--ed-theme-typography-headline-sm-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-sm-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-sm-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage[size=sm] h2{font-family:var(--ed-theme-typography-headline-sm-font-family);font-weight:var(--ed-theme-typography-headline-sm-font-weight);font-size:var(--ed-theme-typography-headline-sm-font-size);line-height:var(--ed-theme-typography-headline-sm-line-height);letter-spacing:var(--ed-theme-typography-headline-sm-letter-spacing);text-transform:var(--ed-theme-typography-headline-sm-text-transform)}}ed-text-passage[size=sm] h2{margin-bottom:.75rem}ed-text-passage[size=sm] h3{font-family:var(--ed-theme-typography-title-lg-mobile-font-family);font-weight:var(--ed-theme-typography-title-lg-mobile-font-weight);font-size:var(--ed-theme-typography-title-lg-mobile-font-size);line-height:var(--ed-theme-typography-title-lg-mobile-line-height);letter-spacing:var(--ed-theme-typography-title-lg-mobile-letter-spacing);text-transform:var(--ed-theme-typography-title-lg-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage[size=sm] h3{font-family:var(--ed-theme-typography-title-lg-font-family);font-weight:var(--ed-theme-typography-title-lg-font-weight);font-size:var(--ed-theme-typography-title-lg-font-size);line-height:var(--ed-theme-typography-title-lg-line-height);letter-spacing:var(--ed-theme-typography-title-lg-letter-spacing);text-transform:var(--ed-theme-typography-title-lg-text-transform)}}ed-text-passage[size=sm] h3{margin-bottom:.75rem}ed-text-passage[size=sm] h4{font-family:var(--ed-theme-typography-title-sm-font-family);font-weight:var(--ed-theme-typography-title-sm-font-weight);font-size:var(--ed-theme-typography-title-sm-font-size);line-height:var(--ed-theme-typography-title-sm-line-height);letter-spacing:var(--ed-theme-typography-title-sm-letter-spacing);text-transform:var(--ed-theme-typography-title-sm-text-transform);margin-bottom:.75rem}ed-text-passage[inverted]{color:var(--ed-theme-color-content-knockout)}ed-text-passage[inverted] blockquote{border-left-color:var(--ed-theme-color-border-knockout);color:var(--ed-theme-color-content-knockout)}";
-var p7 = ":root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}";
-var y5 = Object.defineProperty;
-var l7 = (r6, e6, t4, f4) => {
-  for (var a4 = void 0, h4 = r6.length - 1, n6; h4 >= 0; h4--)
-    (n6 = r6[h4]) && (a4 = n6(e6, t4, a4) || a4);
-  return a4 && y5(e6, t4, a4), a4;
-};
-var i7 = class extends f3 {
-  constructor() {
-    super(...arguments), this.size = void 0;
-  }
-  static get styles() {
-    return r(p7);
-  }
-  /**
-   * Add the light dom styles when this component is connected to a page
-   */
-  connectedCallback() {
-    if (super.connectedCallback(), !document.head.querySelector("#ed-text-passage-styles")) {
-      const t4 = document.createElement("style");
-      t4.id = "ed-text-passage-styles", t4.innerHTML = g3, document.head.appendChild(t4);
-    }
-  }
-  render() {
-    const e6 = this.componentClassNames("ed-c-text-passage", {
-      "ed-c-text-passage--inverted": this.inverted,
-      "ed-c-text-passage--sm": this.size === "sm",
-      "ed-c-text-passage--xs": this.size === "xs"
-    });
-    return this.capLinelength ? x`
-        <div class="${e6}">
-          <ed-linelength-container>
-            <slot></slot>
-          </ed-linelength-container>
-        </div>
-      ` : x`
-        <div class="${e6}">
-          <slot></slot>
-        </div>
-      `;
-  }
-};
-l7([
-  n4({ type: Boolean })
-], i7.prototype, "inverted");
-l7([
-  n4()
-], i7.prototype, "size");
-l7([
-  n4({ type: Boolean })
-], i7.prototype, "capLinelength");
-customElements.get("ed-text-passage") === void 0 && customElements.define("ed-text-passage", i7);
-
-// node_modules/@brad-frost-web/eddie-web-components/components/layout-container/layout-container.js
-var c7 = '@charset "UTF-8";:root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-l-layout-container{width:100%;max-width:var(--ed-layout-container-max-width, 70rem);padding-right:1rem;padding-left:1rem;margin:0 auto}.ed-l-layout-container--narrow{max-width:50rem}';
-var h3 = Object.defineProperty;
-var u5 = (r6, e6, a4, f4) => {
-  for (var t4 = void 0, o12 = r6.length - 1, n6; o12 >= 0; o12--)
-    (n6 = r6[o12]) && (t4 = n6(e6, a4, t4) || t4);
-  return t4 && h3(e6, a4, t4), t4;
-};
-var i8 = class extends f3 {
-  static get styles() {
-    return r(c7);
-  }
-  render() {
-    const e6 = this.componentClassNames("ed-l-layout-container", {
-      "ed-l-layout-container--narrow": this.variant === "narrow"
-    });
+    const e6 = this.componentClassNames("ed-c-black-friday-banner", {});
     return x`
-      <div class="${e6}">
-        <slot></slot>
+      <div class="${e6}" role="banner">
+        <ed-layout-container>
+          <slot></slot>
+        </ed-layout-container>
       </div>
     `;
   }
 };
-u5([
-  n4()
-], i8.prototype, "variant");
-customElements.get("ed-layout-container") === void 0 && customElements.define("ed-layout-container", i8);
+customElements.get("ed-black-friday-banner") === void 0 && customElements.define("ed-black-friday-banner", a4);
 /*! Bundled license information:
 
 classnames/index.js:
