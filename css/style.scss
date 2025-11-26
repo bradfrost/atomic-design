@@ -1,6 +1,8 @@
 ---
 ---
 
+@use "@brad-frost-web/eddie-design-tokens/core/scss/typography-usage.scss" as *;
+@use "@brad-frost-web/eddie-design-tokens/bfw/css/fonts";
 @use "@brad-frost-web/eddie-design-tokens/bfw/build/css/tokens" as tokens;
 
 /*------------------------------------*\
@@ -1026,4 +1028,12 @@ h2 .title-link {
 .resource-link {
 	display: block;
 	font-size: 0.85rem;
+}
+
+/*------------------------------------*\
+    $BLACK FRIDAY MODAL
+\*------------------------------------*/
+
+.black-friday-modal {
+	@include ed-theme-typography-body-default;
 }
