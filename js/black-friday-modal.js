@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
 	if (blackFridayModal) {
 		// Only set isActive to true if the modal hasn't been closed before
 		const modalClosed = localStorage.getItem(
-			"atomicDesignBookBlackFridayModalClosed"
+			"atomicDesignBookBlackFriModalClosed"
 		);
 		if (!modalClosed || modalClosed === "false") {
 			blackFridayModal.setAttribute("isActive", "true");
 		}
 
 		blackFridayModal.addEventListener("ed-black-friday-modal-close", () => {
-			localStorage.setItem("atomicDesignBookBlackFridayModalClosed", "true");
+			localStorage.setItem("atomicDesignBookBlackFriModalClosed", "true");
 		});
 	}
 });
