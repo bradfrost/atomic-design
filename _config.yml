@@ -6,10 +6,25 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://bradfrost.com" # the base hostname & protocol for your site
 twitter_username: brad_frost
-github_username:  bradfrost
+github_username: bradfrost
 product_link: http://shop.bradfrost.com
 
 # Build settings
 markdown: kramdown
-exclude: ["node_modules", "Gruntfile.js", "package.json", "_sass", ".sass-cache", ".DS_Store"]
+exclude:
+  [
+    "node_modules",
+    "Gruntfile.js",
+    "package.json",
+    "package-lock.json",
+    "_sass",
+    ".sass-cache",
+    ".DS_Store",
+    "js/src",
+  ]
 port: 4200
+
+# Sass configuration
+sass:
+  load_paths:
+    - node_modules
