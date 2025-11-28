@@ -1,6 +1,11 @@
 ---
 ---
 
+@use "@brad-frost-web/eddie-design-tokens/core/scss/typography-usage.scss" as *;
+@use "@brad-frost-web/eddie-design-tokens/core/scss/abstracts/mixins.scss" as *;
+@use "@brad-frost-web/eddie-design-tokens/bfw/css/fonts";
+@use "@brad-frost-web/eddie-design-tokens/bfw/build/css/tokens" as tokens;
+
 /*------------------------------------*\
     $SASS VARIABLES
 \*------------------------------------*/
@@ -848,6 +853,7 @@ h2 .title-link {
 	max-width: 72em;
 	margin: 0 auto;
 	padding: 1em;
+	min-height: 100vh;
 
 	> img {
 		display: block;
@@ -1024,4 +1030,28 @@ h2 .title-link {
 .resource-link {
 	display: block;
 	font-size: 0.85rem;
+}
+
+/*------------------------------------*\
+    $BLACK FRIDAY MODAL
+\*------------------------------------*/
+
+.black-friday-modal {
+	@include ed-theme-typography-body-default;
+}
+
+.black-friday-banner {
+	@include ed-theme-typography-body-default;
+	a {
+		color: var(--ed-theme-color-content-knockout);
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+
+		&:focus-visible {
+			@include focusInverted();
+		}
+	}
 }

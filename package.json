@@ -1,0 +1,23 @@
+{
+	"name": "atomic-design",
+	"version": "0.1.0",
+	"description": "Atomic Design book website",
+	"scripts": {
+		"build:components": "esbuild js/src/components.js --bundle --format=esm --outfile=js/components.bundle.js",
+		"watch:components": "esbuild js/src/components.js --bundle --format=esm --outfile=js/components.bundle.js --watch",
+		"build:css": "sass --load-path=node_modules css/style.scss _site/css/style.css --style=compressed",
+		"watch:css": "sass --load-path=node_modules css/style.scss _site/css/style.css --watch",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@brad-frost-web/eddie-design-tokens": "*",
+		"@brad-frost-web/eddie-web-components": "*"
+	},
+	"devDependencies": {
+		"esbuild": "^0.24.0",
+		"sass": "^1.81.0"
+	}
+}
