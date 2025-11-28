@@ -1657,7 +1657,7 @@ var m5 = class extends f3 {
     )}
             </ed-grid>
             <ed-heading tagName="h3" variant="headline-default" class="ed-c-black-friday-modal__section-title">${this.secondaryHeading}</ed-heading>
-            <ed-grid variant="${this.courses.length >= 3 ? "1-3up" : this.courses.length > 2 ? "2up" : "side-by-side"}">
+            <ed-grid variant="${this.courses.length >= 3 ? "1-3up" : this.courses.length === 2 ? "2up" : ""}">
               ${this.courses.map(
       (t4) => x`
                   <ed-grid-item>
