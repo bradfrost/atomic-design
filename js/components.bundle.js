@@ -1176,13 +1176,13 @@ l6([
 customElements.get("ed-text-passage") === void 0 && customElements.define("ed-text-passage", i8);
 
 // node_modules/@brad-frost-web/eddie-web-components/components/black-friday-modal/black-friday-modal.js
-var X = ':root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-c-black-friday-modal{display:block;height:0;width:0;padding:0 0 4rem;overflow:hidden;position:fixed;max-width:none;max-height:none;inset-block-start:unset;inset-block-end:0;inset-inline-end:0;background:var(--ed-theme-color-background-knockout);color:var(--ed-theme-color-content-knockout);border:none;z-index:1000;transition:height var(--ed-theme-animation-fade-quick) var(--ed-theme-animation-ease)}.ed-c-black-friday-modal[open]{visibility:visible;width:100%;height:100vh;box-shadow:0 -5px 10px #0006;overflow:auto}.ed-c-black-friday-modal__header{display:flex;justify-content:space-between;position:relative;align-items:baseline;gap:1rem;margin-block-end:4rem;box-shadow:0 10px 0 -5px var(--ed-theme-color-background-accent-1),0 20px 0 -10px var(--ed-theme-color-background-accent-2),0 30px 0 -16px var(--ed-theme-color-background-accent-4)}.ed-c-black-friday-modal__header-media{position:absolute;overflow:hidden;height:100%;width:100%}.ed-c-black-friday-modal__header-media:after{content:"";position:absolute;inset:0;background:#0009;z-index:1}.ed-c-black-friday-modal__header-media-image{position:relative;display:block;width:100%;height:100%;object-fit:cover}.ed-c-black-friday-modal__header-content{position:relative;width:100%}.ed-c-black-friday-modal__header-content-text{position:relative;width:100%;text-align:center;padding:2rem 0;z-index:3}.ed-c-black-friday-modal__header-content-description{font-family:var(--ed-theme-typography-body-lg-font-family);font-weight:var(--ed-theme-typography-body-lg-font-weight);font-size:var(--ed-theme-typography-body-lg-font-size);line-height:var(--ed-theme-typography-body-lg-line-height);letter-spacing:var(--ed-theme-typography-body-lg-letter-spacing);text-transform:var(--ed-theme-typography-body-lg-text-transform)}.ed-c-black-friday-modal__title{margin-block-end:1rem}.ed-c-black-friday-modal__description{max-width:35rem}.ed-c-black-friday-modal__close-button{position:absolute;inset-block-start:.5rem;inset-inline-end:.5rem;appearance:none;background:none;outline:none;border:none;padding:.5rem;z-index:4;cursor:pointer;color:var(--ed-theme-color-content-knockout)}.ed-c-black-friday-modal__close-button:focus-visible{outline:var(--ed-theme-border-width-lg) solid var(--ed-theme-focus-ring-color-border-knockout);outline-offset:var(--ed-theme-offset-focus-ring, .25rem )}@media all and (min-width:60rem){.ed-c-black-friday-modal__close-button{padding:1rem}}.ed-c-black-friday-modal__close-icon{fill:currentColor;height:2rem;width:2rem}.ed-c-black-friday-modal__promos{display:block;margin-block-end:4rem}.ed-c-black-friday-modal__image{display:block;width:100%}.ed-c-black-friday-modal__section-title{display:block;margin-block-end:1rem;text-align:center}.ed-c-black-friday-modal__card{display:flex;flex-direction:column;height:100%}.ed-c-black-friday-modal__card-body{flex:1}.ed-c-black-friday-modal__card-footer{padding:.5rem 1rem 1rem;text-align:center}.ed-c-black-friday-modal__card-media{display:block;overflow:hidden;margin-block-end:1rem;border:1px solid var(--ed-theme-color-border-knockout);border-radius:.5rem}.ed-c-black-friday-modal__card-media:focus-visible{outline:var(--ed-theme-border-width-lg) solid var(--ed-theme-focus-ring-color-border-knockout);outline-offset:var(--ed-theme-offset-focus-ring, .25rem )}.ed-c-black-friday-modal__card-image{display:block;width:100%}.ed-c-black-friday-modal__card-title-anchor{display:block;text-decoration:none;color:var(--ed-theme-color-content-knockout)}.ed-c-black-friday-modal__card-title-anchor:focus-visible{outline:var(--ed-theme-border-width-lg) solid var(--ed-theme-focus-ring-color-border-knockout);outline-offset:var(--ed-theme-offset-focus-ring, .25rem )}.ed-c-black-friday-modal__card-title{display:block;margin-block-end:1rem;text-align:center}.ed-c-black-friday-modal__card-description{display:block;margin-block-end:1rem}.ed-c-black-friday-modal__card-description p{text-align:center}.ed-c-black-friday-modal__header-content-title{text-shadow:2px 0 0 var(--ed-theme-color-background-accent-2),4px 0 0 var(--ed-theme-color-background-accent-1);letter-spacing:1.5px}.ed-c-black-friday-modal__card-paragraph{text-align:center}.ed-c-black-friday-modal__card-list-container{display:flex;flex-direction:column;align-items:center}.ed-c-black-friday-modal__card-list{padding:0;margin:0}.strikethrough{font-family:var(--ed-theme-typography-button-default-font-family);font-weight:var(--ed-theme-typography-button-default-font-weight);font-size:var(--ed-theme-typography-button-default-font-size);line-height:var(--ed-theme-typography-button-default-line-height);letter-spacing:var(--ed-theme-typography-button-default-letter-spacing);text-transform:var(--ed-theme-typography-button-default-text-transform);text-decoration:line-through;color:var(--ed-theme-color-content-subtle)}.ed-c-black-friday-modal__cta{margin-block-start:2rem;text-align:center}';
+var X = ':root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-c-black-friday-modal{display:block;height:0;width:0;padding:0 0 4rem;overflow:hidden;position:fixed;max-width:none;max-height:none;inset-block-start:unset;inset-block-end:0;inset-inline-end:0;background:var(--ed-theme-color-background-knockout);color:var(--ed-theme-color-content-knockout);border:none;z-index:1000;transition:height var(--ed-theme-animation-fade-quick) var(--ed-theme-animation-ease)}.ed-c-black-friday-modal[open]{visibility:visible;width:100%;height:100vh;box-shadow:0 -5px 10px #0006;overflow:auto}.ed-c-black-friday-modal__header{display:flex;justify-content:space-between;position:relative;align-items:baseline;gap:1rem;margin-block-end:4rem;box-shadow:0 10px 0 -5px var(--ed-theme-color-background-accent-1),0 20px 0 -10px var(--ed-theme-color-background-accent-2),0 30px 0 -16px var(--ed-theme-color-background-accent-4)}.ed-c-black-friday-modal__header-media{position:absolute;overflow:hidden;height:100%;width:100%}.ed-c-black-friday-modal__header-media:after{content:"";position:absolute;inset:0;background:#0009;z-index:1}.ed-c-black-friday-modal__header-media-image{position:relative;display:block;width:100%;height:100%;object-fit:cover}.ed-c-black-friday-modal__header-content{position:relative;width:100%}.ed-c-black-friday-modal__header-content-text{position:relative;width:100%;text-align:center;padding:7rem 0 2rem;z-index:3}@media all and (min-width:48rem){.ed-c-black-friday-modal__header-content-text{padding:2rem 0}}.ed-c-black-friday-modal__header-content-description{font-family:var(--ed-theme-typography-body-lg-font-family);font-weight:var(--ed-theme-typography-body-lg-font-weight);font-size:var(--ed-theme-typography-body-lg-font-size);line-height:var(--ed-theme-typography-body-lg-line-height);letter-spacing:var(--ed-theme-typography-body-lg-letter-spacing);text-transform:var(--ed-theme-typography-body-lg-text-transform)}.ed-c-black-friday-modal__title{margin-block-end:1rem}.ed-c-black-friday-modal__description{max-width:35rem}.ed-c-black-friday-modal__close-button{position:absolute;inset-block-start:5.5rem;inset-inline-end:.5rem;appearance:none;background:none;outline:none;border:none;padding:.5rem;z-index:4;cursor:pointer;color:var(--ed-theme-color-content-knockout)}.ed-c-black-friday-modal__close-button:focus-visible{outline:var(--ed-theme-border-width-lg) solid var(--ed-theme-focus-ring-color-border-knockout);outline-offset:var(--ed-theme-offset-focus-ring, .25rem )}@media all and (min-width:48rem){.ed-c-black-friday-modal__close-button{inset-block-start:.5rem;inset-inline-end:.5rem}}@media all and (min-width:60rem){.ed-c-black-friday-modal__close-button{padding:1rem}}.ed-c-black-friday-modal__close-icon{fill:currentColor;height:2rem;width:2rem}.ed-c-black-friday-modal__promos{display:block;margin-block-end:4rem}.ed-c-black-friday-modal__image{display:block;width:100%}.ed-c-black-friday-modal__section-title{display:block;margin-block-end:1rem;text-align:center}.ed-c-black-friday-modal__card{display:flex;flex-direction:column;height:100%}.ed-c-black-friday-modal__card-body{flex:1}.ed-c-black-friday-modal__card-footer{padding:.5rem 1rem 1rem;text-align:center}.ed-c-black-friday-modal__card-media{display:block;overflow:hidden;margin-block-end:1rem;border:1px solid var(--ed-theme-color-border-knockout);border-radius:.5rem}.ed-c-black-friday-modal__card-media:focus-visible{outline:var(--ed-theme-border-width-lg) solid var(--ed-theme-focus-ring-color-border-knockout);outline-offset:var(--ed-theme-offset-focus-ring, .25rem )}.ed-c-black-friday-modal__card-image{display:block;width:100%}.ed-c-black-friday-modal__card-title-anchor{display:block;text-decoration:none;color:var(--ed-theme-color-content-knockout)}.ed-c-black-friday-modal__card-title-anchor:focus-visible{outline:var(--ed-theme-border-width-lg) solid var(--ed-theme-focus-ring-color-border-knockout);outline-offset:var(--ed-theme-offset-focus-ring, .25rem )}.ed-c-black-friday-modal__card-title{display:block;margin-block-end:1rem;text-align:center}.ed-c-black-friday-modal__card-description{display:block;margin-block-end:1rem}.ed-c-black-friday-modal__card-description p{text-align:center}.ed-c-black-friday-modal__header-content-title{text-shadow:2px 0 0 var(--ed-theme-color-background-accent-2),4px 0 0 var(--ed-theme-color-background-accent-1);letter-spacing:1.5px}.ed-c-black-friday-modal__card-paragraph{text-align:center}.ed-c-black-friday-modal__card-list-container{display:flex;flex-direction:column;align-items:center}.ed-c-black-friday-modal__card-list{padding:0;margin:0}.strikethrough{font-family:var(--ed-theme-typography-button-default-font-family);font-weight:var(--ed-theme-typography-button-default-font-weight);font-size:var(--ed-theme-typography-button-default-font-size);line-height:var(--ed-theme-typography-button-default-line-height);letter-spacing:var(--ed-theme-typography-button-default-letter-spacing);text-transform:var(--ed-theme-typography-button-default-text-transform);text-decoration:line-through;color:var(--ed-theme-color-content-subtle)}.ed-c-black-friday-modal__cta{margin-block-start:2rem;text-align:center}';
 var O = globalThis;
 var H2 = O.trustedTypes;
 var L3 = H2 ? H2.createPolicy("lit-html", { createHTML: (s4) => s4 }) : void 0;
 var W = "$lit$";
-var y5 = `lit$${Math.random().toFixed(9).slice(2)}$`;
-var F = "?" + y5;
+var b3 = `lit$${Math.random().toFixed(9).slice(2)}$`;
+var F = "?" + b3;
 var Y = `<${F}>`;
 var $2 = document;
 var N2 = () => $2.createComment("");
@@ -1194,12 +1194,12 @@ var D = `[
 var w2 = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g;
 var U = /-->/g;
 var j2 = />/g;
-var b3 = RegExp(`>|${D}(?:([^\\s"'>=/]+)(${D}*=${D}*(?:[^ 	
+var y5 = RegExp(`>|${D}(?:([^\\s"'>=/]+)(${D}*=${D}*(?:[^ 	
 \f\r"'\`<>=]|("|')|))|$)`, "g");
 var R2 = /'/g;
 var G = /"/g;
 var V2 = /^(?:script|style|textarea|title)$/i;
-var k2 = Symbol.for("lit-noChange");
+var A2 = Symbol.for("lit-noChange");
 var l7 = Symbol.for("lit-nothing");
 var P2 = /* @__PURE__ */ new WeakMap();
 var v2 = $2.createTreeWalker($2, 129);
@@ -1213,9 +1213,9 @@ var te = (s4, e6) => {
   for (let g4 = 0; g4 < t4; g4++) {
     const r7 = s4[g4];
     let c8, h4, n6 = -1, f4 = 0;
-    for (; f4 < r7.length && (d4.lastIndex = f4, h4 = d4.exec(r7), h4 !== null); ) f4 = d4.lastIndex, d4 === w2 ? h4[1] === "!--" ? d4 = U : h4[1] !== void 0 ? d4 = j2 : h4[2] !== void 0 ? (V2.test(h4[2]) && (o12 = RegExp("</" + h4[2], "g")), d4 = b3) : h4[3] !== void 0 && (d4 = b3) : d4 === b3 ? h4[0] === ">" ? (d4 = o12 ?? w2, n6 = -1) : h4[1] === void 0 ? n6 = -2 : (n6 = d4.lastIndex - h4[2].length, c8 = h4[1], d4 = h4[3] === void 0 ? b3 : h4[3] === '"' ? G : R2) : d4 === G || d4 === R2 ? d4 = b3 : d4 === U || d4 === j2 ? d4 = w2 : (d4 = b3, o12 = void 0);
-    const _2 = d4 === b3 && s4[g4 + 1].startsWith("/>") ? " " : "";
-    a5 += d4 === w2 ? r7 + Y : n6 >= 0 ? (i9.push(c8), r7.slice(0, n6) + W + r7.slice(n6) + y5 + _2) : r7 + y5 + (n6 === -2 ? g4 : _2);
+    for (; f4 < r7.length && (d4.lastIndex = f4, h4 = d4.exec(r7), h4 !== null); ) f4 = d4.lastIndex, d4 === w2 ? h4[1] === "!--" ? d4 = U : h4[1] !== void 0 ? d4 = j2 : h4[2] !== void 0 ? (V2.test(h4[2]) && (o12 = RegExp("</" + h4[2], "g")), d4 = y5) : h4[3] !== void 0 && (d4 = y5) : d4 === y5 ? h4[0] === ">" ? (d4 = o12 ?? w2, n6 = -1) : h4[1] === void 0 ? n6 = -2 : (n6 = d4.lastIndex - h4[2].length, c8 = h4[1], d4 = h4[3] === void 0 ? y5 : h4[3] === '"' ? G : R2) : d4 === G || d4 === R2 ? d4 = y5 : d4 === U || d4 === j2 ? d4 = w2 : (d4 = y5, o12 = void 0);
+    const _2 = d4 === y5 && s4[g4 + 1].startsWith("/>") ? " " : "";
+    a5 += d4 === w2 ? r7 + Y : n6 >= 0 ? (i9.push(c8), r7.slice(0, n6) + W + r7.slice(n6) + b3 + _2) : r7 + b3 + (n6 === -2 ? g4 : _2);
   }
   return [q(s4, a5 + (s4[t4] || "<?>") + (e6 === 2 ? "</svg>" : e6 === 3 ? "</math>" : "")), i9];
 };
@@ -1232,11 +1232,11 @@ var T2 = class _T {
     for (; (o12 = v2.nextNode()) !== null && r7.length < g4; ) {
       if (o12.nodeType === 1) {
         if (o12.hasAttributes()) for (const n6 of o12.getAttributeNames()) if (n6.endsWith(W)) {
-          const f4 = h4[d4++], _2 = o12.getAttribute(n6).split(y5), S3 = /([.?@])?(.*)/.exec(f4);
+          const f4 = h4[d4++], _2 = o12.getAttribute(n6).split(b3), S3 = /([.?@])?(.*)/.exec(f4);
           r7.push({ type: 1, index: a5, name: S3[2], strings: _2, ctor: S3[1] === "." ? oe : S3[1] === "?" ? ae : S3[1] === "@" ? se : E2 }), o12.removeAttribute(n6);
-        } else n6.startsWith(y5) && (r7.push({ type: 6, index: a5 }), o12.removeAttribute(n6));
+        } else n6.startsWith(b3) && (r7.push({ type: 6, index: a5 }), o12.removeAttribute(n6));
         if (V2.test(o12.tagName)) {
-          const n6 = o12.textContent.split(y5), f4 = n6.length - 1;
+          const n6 = o12.textContent.split(b3), f4 = n6.length - 1;
           if (f4 > 0) {
             o12.textContent = H2 ? H2.emptyScript : "";
             for (let _2 = 0; _2 < f4; _2++) o12.append(n6[_2], N2()), v2.nextNode(), r7.push({ type: 2, index: ++a5 });
@@ -1246,7 +1246,7 @@ var T2 = class _T {
       } else if (o12.nodeType === 8) if (o12.data === F) r7.push({ type: 2, index: a5 });
       else {
         let n6 = -1;
-        for (; (n6 = o12.data.indexOf(y5, n6 + 1)) !== -1; ) r7.push({ type: 7, index: a5 }), n6 += y5.length - 1;
+        for (; (n6 = o12.data.indexOf(b3, n6 + 1)) !== -1; ) r7.push({ type: 7, index: a5 }), n6 += b3.length - 1;
       }
       a5++;
     }
@@ -1257,7 +1257,7 @@ var T2 = class _T {
   }
 };
 function x2(s4, e6, t4 = s4, i9) {
-  if (e6 === k2) return e6;
+  if (e6 === A2) return e6;
   let o12 = i9 !== void 0 ? t4._$Co?.[i9] : t4._$Cl;
   const a5 = C3(e6) ? void 0 : e6._$litDirective$;
   return o12?.constructor !== a5 && (o12?._$AO?.(false), a5 === void 0 ? o12 = void 0 : (o12 = new a5(s4), o12._$AT(s4, t4, i9)), i9 !== void 0 ? (t4._$Co ??= [])[i9] = o12 : t4._$Cl = o12), o12 !== void 0 && (e6 = x2(s4, o12._$AS(s4, e6.values), o12, i9)), e6;
@@ -1309,7 +1309,7 @@ var M2 = class _M {
     return this._$AB;
   }
   _$AI(e6, t4 = this) {
-    e6 = x2(this, e6, t4), C3(e6) ? e6 === l7 || e6 == null || e6 === "" ? (this._$AH !== l7 && this._$AR(), this._$AH = l7) : e6 !== this._$AH && e6 !== k2 && this._(e6) : e6._$litType$ !== void 0 ? this.$(e6) : e6.nodeType !== void 0 ? this.T(e6) : ee(e6) ? this.k(e6) : this._(e6);
+    e6 = x2(this, e6, t4), C3(e6) ? e6 === l7 || e6 == null || e6 === "" ? (this._$AH !== l7 && this._$AR(), this._$AH = l7) : e6 !== this._$AH && e6 !== A2 && this._(e6) : e6._$litType$ !== void 0 ? this.$(e6) : e6.nodeType !== void 0 ? this.T(e6) : ee(e6) ? this.k(e6) : this._(e6);
   }
   O(e6) {
     return this._$AA.parentNode.insertBefore(e6, this._$AB);
@@ -1362,11 +1362,11 @@ var E2 = class {
   _$AI(e6, t4 = this, i9, o12) {
     const a5 = this.strings;
     let d4 = false;
-    if (a5 === void 0) e6 = x2(this, e6, t4, 0), d4 = !C3(e6) || e6 !== this._$AH && e6 !== k2, d4 && (this._$AH = e6);
+    if (a5 === void 0) e6 = x2(this, e6, t4, 0), d4 = !C3(e6) || e6 !== this._$AH && e6 !== A2, d4 && (this._$AH = e6);
     else {
       const g4 = e6;
       let r7, c8;
-      for (e6 = a5[0], r7 = 0; r7 < a5.length - 1; r7++) c8 = x2(this, g4[i9 + r7], t4, r7), c8 === k2 && (c8 = this._$AH[r7]), d4 ||= !C3(c8) || c8 !== this._$AH[r7], c8 === l7 ? e6 = l7 : e6 !== l7 && (e6 += (c8 ?? "") + a5[r7 + 1]), this._$AH[r7] = c8;
+      for (e6 = a5[0], r7 = 0; r7 < a5.length - 1; r7++) c8 = x2(this, g4[i9 + r7], t4, r7), c8 === A2 && (c8 = this._$AH[r7]), d4 ||= !C3(c8) || c8 !== this._$AH[r7], c8 === l7 ? e6 = l7 : e6 !== l7 && (e6 += (c8 ?? "") + a5[r7 + 1]), this._$AH[r7] = c8;
     }
     d4 && !o12 && this.j(e6);
   }
@@ -1395,7 +1395,7 @@ var se = class extends E2 {
     super(e6, t4, i9, o12, a5), this.type = 5;
   }
   _$AI(e6, t4 = this) {
-    if ((e6 = x2(this, e6, t4, 0) ?? l7) === k2) return;
+    if ((e6 = x2(this, e6, t4, 0) ?? l7) === A2) return;
     const i9 = this._$AH, o12 = e6 === l7 && i9 !== l7 || e6.capture !== i9.capture || e6.once !== i9.once || e6.passive !== i9.passive, a5 = e6 !== l7 && (i9 === l7 || o12);
     o12 && this.element.removeEventListener(this.name, this, i9), a5 && this.element.addEventListener(this.name, this, e6), this._$AH = e6;
   }
@@ -1440,7 +1440,7 @@ var I2 = class extends ce {
   }
   render(e6) {
     if (e6 === l7 || e6 == null) return this._t = void 0, this.it = e6;
-    if (e6 === k2) return e6;
+    if (e6 === A2) return e6;
     if (typeof e6 != "string") throw Error(this.constructor.directiveName + "() called with a non-string value");
     if (e6 === this.it) return this._t;
     this.it = e6;
