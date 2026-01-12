@@ -17,7 +17,7 @@
 		"@brad-frost-web/eddie-web-components": "*"
 	},
 	"devDependencies": {
-		"esbuild": "^0.24.0",
+		"esbuild": "^0.25.0",
 		"sass": "^1.81.0"
 	}
 }
