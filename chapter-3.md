@@ -354,7 +354,7 @@ Indeed, this is the promise of [container queries](http://alistapart.com/article
 
 Between responsive design, container queries, and good ol'-fashioned common sense, we now understand why it's imperative to create flexible UI patterns. But how do we do that? And how can our pattern library tools help us think and act flexibly?
 
-Many early responsive design testing tools focused on viewing designs on popular mobile device widths, such as 320px (an iPhone 4 in portrait mode), 480px (an iPhone 4 in landscape mode), 768px (an iPad in portrait mode), and so on. But, of course, the web is *much* more diverse than a mobile view, a tablet view, and a desktop view. To help designers better consider the entire resolution spectrum when testing their responsive designs, I created a tool called [ish.](http://bradfrost.com/demo/ish/)
+Many early responsive design testing tools focused on viewing designs on popular mobile device widths, such as 320px (an iPhone 4 in portrait mode), 480px (an iPhone 4 in landscape mode), 768px (an iPad in portrait mode), and so on. But, of course, the web is *much* more diverse than a mobile view, a tablet view, and a desktop view. To help designers better consider the entire resolution spectrum when testing their responsive designs, I created a tool called [ish.](https://github.com/bradfrost/ish.)
 
 The tool is called *ish.* because selecting the small button results in a small-ish viewport. Selecting it again provides a different small-ish viewport. Selecting the medium button gives you a medium-ish viewport. And the large button results in a—wait for it—large-ish viewport. These randomized values help designers and developers better consider the entire resolution spectrum rather than a handful of popular device dimensions.
 
