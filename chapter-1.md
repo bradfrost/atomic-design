@@ -239,7 +239,7 @@ Historically, brand identity guidelines were contained in hard-cover books (reme
 ### Design language
 While brand identity guidelines are fairly tactile, design language guidelines are a bit harder to pin down. Design language style guides articulate a general design direction, philosophy, and approach to specific projects or products.
 
-To present itself in a cohesive way across a growing range of products and media, Google developed a design language called *material design*. The [material design style guide](http://www.google.com/design/spec/material-design/introduction.html) defines its overarching design philosophy, goals, and general principles, while also providing specific applications of the material design language.
+To present itself in a cohesive way across a growing range of products and media, Google developed a design language called *material design*. The [material design style guide](https://material.io/design/introduction) defines its overarching design philosophy, goals, and general principles, while also providing specific applications of the material design language.
 
 <figure>
     <img src="../images/content/styleguide-material.png" alt="Google’s material design language." />
