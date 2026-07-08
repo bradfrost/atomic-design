@@ -10,7 +10,7 @@
 
 	var MODAL_KEY = "adc-modal-seen";
 	var SCROLL_THRESHOLD = 0.5; // 50% of the scrollable page
-	var TIME_DELAY = 15000; // 15s fallback
+	var TIME_DELAY = 10000; // 10s fallback
 
 	function store(key) {
 		try {
