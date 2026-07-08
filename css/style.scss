@@ -1055,3 +1055,139 @@ h2 .title-link {
 		}
 	}
 }
+
+/*------------------------------------*\
+    $COURSE CALL-OUT (banner + modal)
+\*------------------------------------*/
+
+// The fixed .banner is the course footer; its course CTA reuses .btn.
+// These just style the secondary ebook link that sits next to the author.
+.banner-content {
+
+	.banner-ebook {
+		text-decoration: underline;
+	}
+
+	.banner-sep {
+		margin: 0 0.25em;
+		opacity: 0.5;
+	}
+}
+
+// Engagement-triggered marketing modal on interior (chapter) pages.
+// Native <dialog> so we get a backdrop, focus trapping and Esc-to-close for
+// free. Centered on the screen; shown once per reader (see js/course-cta.js).
+.course-modal {
+	width: min(34rem, 100%);
+	max-width: calc(100% - 2rem);
+	max-height: calc(100% - 2rem);
+	// The global reset zeroes the UA margin:auto that centers a modal <dialog>.
+	margin: auto;
+	padding: 0;
+	border: 0;
+	border-top: 4px solid $orange;
+	border-radius: 0.5rem;
+	background: $tan-light;
+	color: $brown;
+	box-shadow: 0 16px 48px rgba(0, 0, 0, 0.28);
+
+	// fade + scale in on open; falls back to an instant open where unsupported
+	opacity: 0;
+	transform: scale(0.96);
+	transition: opacity 0.2s ease, transform 0.2s ease;
+
+	&[open] {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	@starting-style {
+		&[open] {
+			opacity: 0;
+			transform: scale(0.96);
+		}
+	}
+
+	&::backdrop {
+		background: rgba(17, 0, 0, 0.5);
+	}
+}
+
+.course-modal__inner {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1.25rem;
+	padding: 3rem 2rem 2rem;
+}
+
+.course-modal__title {
+	margin: 0;
+	font-family: $font-primary;
+	text-transform: none;
+	color: $brown;
+}
+
+.course-modal__lead {
+	margin: 0;
+	font-size: 1.05rem;
+	line-height: 1.5;
+}
+
+.course-modal__list {
+	margin: 0;
+	padding-left: 1.25rem;
+	font-size: 0.95rem;
+	line-height: 1.5;
+
+	li + li {
+		margin-top: 0.4rem;
+	}
+}
+
+.course-modal__cta {
+	align-self: stretch;
+	text-align: center;
+}
+
+.course-modal__secondary {
+	margin: 0;
+	font-size: 0.9rem;
+	line-height: 1.5;
+
+	a {
+		color: $orange;
+	}
+}
+
+.course-modal__dismiss {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	background: transparent;
+	border: 0;
+	color: $brown;
+	font-size: 1.75rem;
+	line-height: 1;
+	cursor: pointer;
+	opacity: 0.7;
+	transition: opacity 0.2s ease;
+
+	&:hover,
+	&:focus {
+		opacity: 1;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.course-modal {
+		transition: none;
+	}
+}
+
