@@ -32,8 +32,8 @@ var require_classnames = __commonJS({
       var hasOwn = {}.hasOwnProperty;
       function classNames() {
         var classes = "";
-        for (var i12 = 0; i12 < arguments.length; i12++) {
-          var arg = arguments[i12];
+        for (var i11 = 0; i11 < arguments.length; i11++) {
+          var arg = arguments[i11];
           if (arg) {
             classes = appendClass(classes, parseValue(arg));
           }
@@ -139,23 +139,23 @@ var u = { toAttribute(t4, s6) {
   }
   return t4;
 }, fromAttribute(t4, s6) {
-  let i12 = t4;
+  let i11 = t4;
   switch (s6) {
     case Boolean:
-      i12 = null !== t4;
+      i11 = null !== t4;
       break;
     case Number:
-      i12 = null === t4 ? null : Number(t4);
+      i11 = null === t4 ? null : Number(t4);
       break;
     case Object:
     case Array:
       try {
-        i12 = JSON.parse(t4);
+        i11 = JSON.parse(t4);
       } catch (t5) {
-        i12 = null;
+        i11 = null;
       }
   }
-  return i12;
+  return i11;
 } };
 var f = (t4, s6) => !i2(t4, s6);
 var b = { attribute: true, type: String, converter: u, reflect: false, useDefault: false, hasChanged: f };
@@ -169,11 +169,11 @@ var y = class extends HTMLElement {
   }
   static createProperty(t4, s6 = b) {
     if (s6.state && (s6.attribute = false), this._$Ei(), this.prototype.hasOwnProperty(t4) && ((s6 = Object.create(s6)).wrapped = true), this.elementProperties.set(t4, s6), !s6.noAccessor) {
-      const i12 = Symbol(), h6 = this.getPropertyDescriptor(t4, i12, s6);
+      const i11 = Symbol(), h6 = this.getPropertyDescriptor(t4, i11, s6);
       void 0 !== h6 && e2(this.prototype, t4, h6);
     }
   }
-  static getPropertyDescriptor(t4, s6, i12) {
+  static getPropertyDescriptor(t4, s6, i11) {
     const { get: e7, set: r9 } = h(this.prototype, t4) ?? { get() {
       return this[s6];
     }, set(t5) {
@@ -181,7 +181,7 @@ var y = class extends HTMLElement {
     } };
     return { get: e7, set(s7) {
       const h6 = e7?.call(this);
-      r9?.call(this, s7), this.requestUpdate(t4, h6, i12);
+      r9?.call(this, s7), this.requestUpdate(t4, h6, i11);
     }, configurable: true, enumerable: true };
   }
   static getPropertyOptions(t4) {
@@ -196,31 +196,31 @@ var y = class extends HTMLElement {
     if (this.hasOwnProperty(d("finalized"))) return;
     if (this.finalized = true, this._$Ei(), this.hasOwnProperty(d("properties"))) {
       const t5 = this.properties, s6 = [...r2(t5), ...o2(t5)];
-      for (const i12 of s6) this.createProperty(i12, t5[i12]);
+      for (const i11 of s6) this.createProperty(i11, t5[i11]);
     }
     const t4 = this[Symbol.metadata];
     if (null !== t4) {
       const s6 = litPropertyMetadata.get(t4);
-      if (void 0 !== s6) for (const [t5, i12] of s6) this.elementProperties.set(t5, i12);
+      if (void 0 !== s6) for (const [t5, i11] of s6) this.elementProperties.set(t5, i11);
     }
     this._$Eh = /* @__PURE__ */ new Map();
     for (const [t5, s6] of this.elementProperties) {
-      const i12 = this._$Eu(t5, s6);
-      void 0 !== i12 && this._$Eh.set(i12, t5);
+      const i11 = this._$Eu(t5, s6);
+      void 0 !== i11 && this._$Eh.set(i11, t5);
     }
     this.elementStyles = this.finalizeStyles(this.styles);
   }
   static finalizeStyles(s6) {
-    const i12 = [];
+    const i11 = [];
     if (Array.isArray(s6)) {
       const e7 = new Set(s6.flat(1 / 0).reverse());
-      for (const s7 of e7) i12.unshift(c(s7));
-    } else void 0 !== s6 && i12.push(c(s6));
-    return i12;
+      for (const s7 of e7) i11.unshift(c(s7));
+    } else void 0 !== s6 && i11.push(c(s6));
+    return i11;
   }
   static _$Eu(t4, s6) {
-    const i12 = s6.attribute;
-    return false === i12 ? void 0 : "string" == typeof i12 ? i12 : "string" == typeof t4 ? t4.toLowerCase() : void 0;
+    const i11 = s6.attribute;
+    return false === i11 ? void 0 : "string" == typeof i11 ? i11 : "string" == typeof t4 ? t4.toLowerCase() : void 0;
   }
   constructor() {
     super(), this._$Ep = void 0, this.isUpdatePending = false, this.hasUpdated = false, this._$Em = null, this._$Ev();
@@ -236,7 +236,7 @@ var y = class extends HTMLElement {
   }
   _$E_() {
     const t4 = /* @__PURE__ */ new Map(), s6 = this.constructor.elementProperties;
-    for (const i12 of s6.keys()) this.hasOwnProperty(i12) && (t4.set(i12, this[i12]), delete this[i12]);
+    for (const i11 of s6.keys()) this.hasOwnProperty(i11) && (t4.set(i11, this[i11]), delete this[i11]);
     t4.size > 0 && (this._$Ep = t4);
   }
   createRenderRoot() {
@@ -251,35 +251,35 @@ var y = class extends HTMLElement {
   disconnectedCallback() {
     this._$EO?.forEach((t4) => t4.hostDisconnected?.());
   }
-  attributeChangedCallback(t4, s6, i12) {
-    this._$AK(t4, i12);
+  attributeChangedCallback(t4, s6, i11) {
+    this._$AK(t4, i11);
   }
   _$ET(t4, s6) {
-    const i12 = this.constructor.elementProperties.get(t4), e7 = this.constructor._$Eu(t4, i12);
-    if (void 0 !== e7 && true === i12.reflect) {
-      const h6 = (void 0 !== i12.converter?.toAttribute ? i12.converter : u).toAttribute(s6, i12.type);
+    const i11 = this.constructor.elementProperties.get(t4), e7 = this.constructor._$Eu(t4, i11);
+    if (void 0 !== e7 && true === i11.reflect) {
+      const h6 = (void 0 !== i11.converter?.toAttribute ? i11.converter : u).toAttribute(s6, i11.type);
       this._$Em = t4, null == h6 ? this.removeAttribute(e7) : this.setAttribute(e7, h6), this._$Em = null;
     }
   }
   _$AK(t4, s6) {
-    const i12 = this.constructor, e7 = i12._$Eh.get(t4);
+    const i11 = this.constructor, e7 = i11._$Eh.get(t4);
     if (void 0 !== e7 && this._$Em !== e7) {
-      const t5 = i12.getPropertyOptions(e7), h6 = "function" == typeof t5.converter ? { fromAttribute: t5.converter } : void 0 !== t5.converter?.fromAttribute ? t5.converter : u;
+      const t5 = i11.getPropertyOptions(e7), h6 = "function" == typeof t5.converter ? { fromAttribute: t5.converter } : void 0 !== t5.converter?.fromAttribute ? t5.converter : u;
       this._$Em = e7;
       const r9 = h6.fromAttribute(s6, t5.type);
       this[e7] = r9 ?? this._$Ej?.get(e7) ?? r9, this._$Em = null;
     }
   }
-  requestUpdate(t4, s6, i12) {
+  requestUpdate(t4, s6, i11) {
     if (void 0 !== t4) {
       const e7 = this.constructor, h6 = this[t4];
-      if (i12 ??= e7.getPropertyOptions(t4), !((i12.hasChanged ?? f)(h6, s6) || i12.useDefault && i12.reflect && h6 === this._$Ej?.get(t4) && !this.hasAttribute(e7._$Eu(t4, i12)))) return;
-      this.C(t4, s6, i12);
+      if (i11 ??= e7.getPropertyOptions(t4), !((i11.hasChanged ?? f)(h6, s6) || i11.useDefault && i11.reflect && h6 === this._$Ej?.get(t4) && !this.hasAttribute(e7._$Eu(t4, i11)))) return;
+      this.C(t4, s6, i11);
     }
     false === this.isUpdatePending && (this._$ES = this._$EP());
   }
-  C(t4, s6, { useDefault: i12, reflect: e7, wrapped: h6 }, r9) {
-    i12 && !(this._$Ej ??= /* @__PURE__ */ new Map()).has(t4) && (this._$Ej.set(t4, r9 ?? s6 ?? this[t4]), true !== h6 || void 0 !== r9) || (this._$AL.has(t4) || (this.hasUpdated || i12 || (s6 = void 0), this._$AL.set(t4, s6)), true === e7 && this._$Em !== t4 && (this._$Eq ??= /* @__PURE__ */ new Set()).add(t4));
+  C(t4, s6, { useDefault: i11, reflect: e7, wrapped: h6 }, r9) {
+    i11 && !(this._$Ej ??= /* @__PURE__ */ new Map()).has(t4) && (this._$Ej.set(t4, r9 ?? s6 ?? this[t4]), true !== h6 || void 0 !== r9) || (this._$AL.has(t4) || (this.hasUpdated || i11 || (s6 = void 0), this._$AL.set(t4, s6)), true === e7 && this._$Em !== t4 && (this._$Eq ??= /* @__PURE__ */ new Set()).add(t4));
   }
   async _$EP() {
     this.isUpdatePending = true;
@@ -302,9 +302,9 @@ var y = class extends HTMLElement {
         this._$Ep = void 0;
       }
       const t5 = this.constructor.elementProperties;
-      if (t5.size > 0) for (const [s7, i12] of t5) {
-        const { wrapped: t6 } = i12, e7 = this[s7];
-        true !== t6 || this._$AL.has(s7) || void 0 === e7 || this.C(s7, void 0, i12, e7);
+      if (t5.size > 0) for (const [s7, i11] of t5) {
+        const { wrapped: t6 } = i11, e7 = this[s7];
+        true !== t6 || this._$AL.has(s7) || void 0 === e7 || this.C(s7, void 0, i11, e7);
       }
     }
     let t4 = false;
@@ -365,7 +365,7 @@ var m = RegExp(`>|${d2}(?:([^\\s"'>=/]+)(${d2}*=${d2}*(?:[^
 var p2 = /'/g;
 var g = /"/g;
 var $ = /^(?:script|style|textarea|title)$/i;
-var y2 = (t4) => (i12, ...s6) => ({ _$litType$: t4, strings: i12, values: s6 });
+var y2 = (t4) => (i11, ...s6) => ({ _$litType$: t4, strings: i11, values: s6 });
 var x = y2(1);
 var b2 = y2(2);
 var w = y2(3);
@@ -373,68 +373,68 @@ var T = Symbol.for("lit-noChange");
 var E = Symbol.for("lit-nothing");
 var A = /* @__PURE__ */ new WeakMap();
 var C = r3.createTreeWalker(r3, 129);
-function P(t4, i12) {
+function P(t4, i11) {
   if (!a2(t4) || !t4.hasOwnProperty("raw")) throw Error("invalid template strings array");
-  return void 0 !== s2 ? s2.createHTML(i12) : i12;
+  return void 0 !== s2 ? s2.createHTML(i11) : i11;
 }
-var V = (t4, i12) => {
+var V = (t4, i11) => {
   const s6 = t4.length - 1, o12 = [];
-  let r9, l8 = 2 === i12 ? "<svg>" : 3 === i12 ? "<math>" : "", c7 = f2;
-  for (let i13 = 0; i13 < s6; i13++) {
-    const s7 = t4[i13];
-    let a6, u5, d6 = -1, y6 = 0;
-    for (; y6 < s7.length && (c7.lastIndex = y6, u5 = c7.exec(s7), null !== u5); ) y6 = c7.lastIndex, c7 === f2 ? "!--" === u5[1] ? c7 = v : void 0 !== u5[1] ? c7 = _ : void 0 !== u5[2] ? ($.test(u5[2]) && (r9 = RegExp("</" + u5[2], "g")), c7 = m) : void 0 !== u5[3] && (c7 = m) : c7 === m ? ">" === u5[0] ? (c7 = r9 ?? f2, d6 = -1) : void 0 === u5[1] ? d6 = -2 : (d6 = c7.lastIndex - u5[2].length, a6 = u5[1], c7 = void 0 === u5[3] ? m : '"' === u5[3] ? g : p2) : c7 === g || c7 === p2 ? c7 = m : c7 === v || c7 === _ ? c7 = f2 : (c7 = m, r9 = void 0);
-    const x3 = c7 === m && t4[i13 + 1].startsWith("/>") ? " " : "";
-    l8 += c7 === f2 ? s7 + n3 : d6 >= 0 ? (o12.push(a6), s7.slice(0, d6) + e3 + s7.slice(d6) + h2 + x3) : s7 + h2 + (-2 === d6 ? i13 : x3);
+  let r9, l8 = 2 === i11 ? "<svg>" : 3 === i11 ? "<math>" : "", c7 = f2;
+  for (let i12 = 0; i12 < s6; i12++) {
+    const s7 = t4[i12];
+    let a6, u5, d7 = -1, y6 = 0;
+    for (; y6 < s7.length && (c7.lastIndex = y6, u5 = c7.exec(s7), null !== u5); ) y6 = c7.lastIndex, c7 === f2 ? "!--" === u5[1] ? c7 = v : void 0 !== u5[1] ? c7 = _ : void 0 !== u5[2] ? ($.test(u5[2]) && (r9 = RegExp("</" + u5[2], "g")), c7 = m) : void 0 !== u5[3] && (c7 = m) : c7 === m ? ">" === u5[0] ? (c7 = r9 ?? f2, d7 = -1) : void 0 === u5[1] ? d7 = -2 : (d7 = c7.lastIndex - u5[2].length, a6 = u5[1], c7 = void 0 === u5[3] ? m : '"' === u5[3] ? g : p2) : c7 === g || c7 === p2 ? c7 = m : c7 === v || c7 === _ ? c7 = f2 : (c7 = m, r9 = void 0);
+    const x3 = c7 === m && t4[i12 + 1].startsWith("/>") ? " " : "";
+    l8 += c7 === f2 ? s7 + n3 : d7 >= 0 ? (o12.push(a6), s7.slice(0, d7) + e3 + s7.slice(d7) + h2 + x3) : s7 + h2 + (-2 === d7 ? i12 : x3);
   }
-  return [P(t4, l8 + (t4[s6] || "<?>") + (2 === i12 ? "</svg>" : 3 === i12 ? "</math>" : "")), o12];
+  return [P(t4, l8 + (t4[s6] || "<?>") + (2 === i11 ? "</svg>" : 3 === i11 ? "</math>" : "")), o12];
 };
 var N = class _N {
   constructor({ strings: t4, _$litType$: s6 }, n8) {
     let r9;
     this.parts = [];
     let c7 = 0, a6 = 0;
-    const u5 = t4.length - 1, d6 = this.parts, [f6, v5] = V(t4, s6);
-    if (this.el = _N.createElement(f6, n8), C.currentNode = this.el.content, 2 === s6 || 3 === s6) {
+    const u5 = t4.length - 1, d7 = this.parts, [f7, v5] = V(t4, s6);
+    if (this.el = _N.createElement(f7, n8), C.currentNode = this.el.content, 2 === s6 || 3 === s6) {
       const t5 = this.el.content.firstChild;
       t5.replaceWith(...t5.childNodes);
     }
-    for (; null !== (r9 = C.nextNode()) && d6.length < u5; ) {
+    for (; null !== (r9 = C.nextNode()) && d7.length < u5; ) {
       if (1 === r9.nodeType) {
         if (r9.hasAttributes()) for (const t5 of r9.getAttributeNames()) if (t5.endsWith(e3)) {
-          const i12 = v5[a6++], s7 = r9.getAttribute(t5).split(h2), e7 = /([.?@])?(.*)/.exec(i12);
-          d6.push({ type: 1, index: c7, name: e7[2], strings: s7, ctor: "." === e7[1] ? H : "?" === e7[1] ? I : "@" === e7[1] ? L : k }), r9.removeAttribute(t5);
-        } else t5.startsWith(h2) && (d6.push({ type: 6, index: c7 }), r9.removeAttribute(t5));
+          const i11 = v5[a6++], s7 = r9.getAttribute(t5).split(h2), e7 = /([.?@])?(.*)/.exec(i11);
+          d7.push({ type: 1, index: c7, name: e7[2], strings: s7, ctor: "." === e7[1] ? H : "?" === e7[1] ? I : "@" === e7[1] ? L : k }), r9.removeAttribute(t5);
+        } else t5.startsWith(h2) && (d7.push({ type: 6, index: c7 }), r9.removeAttribute(t5));
         if ($.test(r9.tagName)) {
           const t5 = r9.textContent.split(h2), s7 = t5.length - 1;
           if (s7 > 0) {
             r9.textContent = i3 ? i3.emptyScript : "";
-            for (let i12 = 0; i12 < s7; i12++) r9.append(t5[i12], l2()), C.nextNode(), d6.push({ type: 2, index: ++c7 });
+            for (let i11 = 0; i11 < s7; i11++) r9.append(t5[i11], l2()), C.nextNode(), d7.push({ type: 2, index: ++c7 });
             r9.append(t5[s7], l2());
           }
         }
-      } else if (8 === r9.nodeType) if (r9.data === o3) d6.push({ type: 2, index: c7 });
+      } else if (8 === r9.nodeType) if (r9.data === o3) d7.push({ type: 2, index: c7 });
       else {
         let t5 = -1;
-        for (; -1 !== (t5 = r9.data.indexOf(h2, t5 + 1)); ) d6.push({ type: 7, index: c7 }), t5 += h2.length - 1;
+        for (; -1 !== (t5 = r9.data.indexOf(h2, t5 + 1)); ) d7.push({ type: 7, index: c7 }), t5 += h2.length - 1;
       }
       c7++;
     }
   }
-  static createElement(t4, i12) {
+  static createElement(t4, i11) {
     const s6 = r3.createElement("template");
     return s6.innerHTML = t4, s6;
   }
 };
-function S2(t4, i12, s6 = t4, e7) {
-  if (i12 === T) return i12;
+function S2(t4, i11, s6 = t4, e7) {
+  if (i11 === T) return i11;
   let h6 = void 0 !== e7 ? s6._$Co?.[e7] : s6._$Cl;
-  const o12 = c3(i12) ? void 0 : i12._$litDirective$;
-  return h6?.constructor !== o12 && (h6?._$AO?.(false), void 0 === o12 ? h6 = void 0 : (h6 = new o12(t4), h6._$AT(t4, s6, e7)), void 0 !== e7 ? (s6._$Co ??= [])[e7] = h6 : s6._$Cl = h6), void 0 !== h6 && (i12 = S2(t4, h6._$AS(t4, i12.values), h6, e7)), i12;
+  const o12 = c3(i11) ? void 0 : i11._$litDirective$;
+  return h6?.constructor !== o12 && (h6?._$AO?.(false), void 0 === o12 ? h6 = void 0 : (h6 = new o12(t4), h6._$AT(t4, s6, e7)), void 0 !== e7 ? (s6._$Co ??= [])[e7] = h6 : s6._$Cl = h6), void 0 !== h6 && (i11 = S2(t4, h6._$AS(t4, i11.values), h6, e7)), i11;
 }
 var M = class {
-  constructor(t4, i12) {
-    this._$AV = [], this._$AN = void 0, this._$AD = t4, this._$AM = i12;
+  constructor(t4, i11) {
+    this._$AV = [], this._$AN = void 0, this._$AD = t4, this._$AM = i11;
   }
   get parentNode() {
     return this._$AM.parentNode;
@@ -443,34 +443,34 @@ var M = class {
     return this._$AM._$AU;
   }
   u(t4) {
-    const { el: { content: i12 }, parts: s6 } = this._$AD, e7 = (t4?.creationScope ?? r3).importNode(i12, true);
+    const { el: { content: i11 }, parts: s6 } = this._$AD, e7 = (t4?.creationScope ?? r3).importNode(i11, true);
     C.currentNode = e7;
     let h6 = C.nextNode(), o12 = 0, n8 = 0, l8 = s6[0];
     for (; void 0 !== l8; ) {
       if (o12 === l8.index) {
-        let i13;
-        2 === l8.type ? i13 = new R(h6, h6.nextSibling, this, t4) : 1 === l8.type ? i13 = new l8.ctor(h6, l8.name, l8.strings, this, t4) : 6 === l8.type && (i13 = new z(h6, this, t4)), this._$AV.push(i13), l8 = s6[++n8];
+        let i12;
+        2 === l8.type ? i12 = new R(h6, h6.nextSibling, this, t4) : 1 === l8.type ? i12 = new l8.ctor(h6, l8.name, l8.strings, this, t4) : 6 === l8.type && (i12 = new z(h6, this, t4)), this._$AV.push(i12), l8 = s6[++n8];
       }
       o12 !== l8?.index && (h6 = C.nextNode(), o12++);
     }
     return C.currentNode = r3, e7;
   }
   p(t4) {
-    let i12 = 0;
-    for (const s6 of this._$AV) void 0 !== s6 && (void 0 !== s6.strings ? (s6._$AI(t4, s6, i12), i12 += s6.strings.length - 2) : s6._$AI(t4[i12])), i12++;
+    let i11 = 0;
+    for (const s6 of this._$AV) void 0 !== s6 && (void 0 !== s6.strings ? (s6._$AI(t4, s6, i11), i11 += s6.strings.length - 2) : s6._$AI(t4[i11])), i11++;
   }
 };
 var R = class _R {
   get _$AU() {
     return this._$AM?._$AU ?? this._$Cv;
   }
-  constructor(t4, i12, s6, e7) {
-    this.type = 2, this._$AH = E, this._$AN = void 0, this._$AA = t4, this._$AB = i12, this._$AM = s6, this.options = e7, this._$Cv = e7?.isConnected ?? true;
+  constructor(t4, i11, s6, e7) {
+    this.type = 2, this._$AH = E, this._$AN = void 0, this._$AA = t4, this._$AB = i11, this._$AM = s6, this.options = e7, this._$Cv = e7?.isConnected ?? true;
   }
   get parentNode() {
     let t4 = this._$AA.parentNode;
-    const i12 = this._$AM;
-    return void 0 !== i12 && 11 === t4?.nodeType && (t4 = i12.parentNode), t4;
+    const i11 = this._$AM;
+    return void 0 !== i11 && 11 === t4?.nodeType && (t4 = i11.parentNode), t4;
   }
   get startNode() {
     return this._$AA;
@@ -478,8 +478,8 @@ var R = class _R {
   get endNode() {
     return this._$AB;
   }
-  _$AI(t4, i12 = this) {
-    t4 = S2(this, t4, i12), c3(t4) ? t4 === E || null == t4 || "" === t4 ? (this._$AH !== E && this._$AR(), this._$AH = E) : t4 !== this._$AH && t4 !== T && this._(t4) : void 0 !== t4._$litType$ ? this.$(t4) : void 0 !== t4.nodeType ? this.T(t4) : u2(t4) ? this.k(t4) : this._(t4);
+  _$AI(t4, i11 = this) {
+    t4 = S2(this, t4, i11), c3(t4) ? t4 === E || null == t4 || "" === t4 ? (this._$AH !== E && this._$AR(), this._$AH = E) : t4 !== this._$AH && t4 !== T && this._(t4) : void 0 !== t4._$litType$ ? this.$(t4) : void 0 !== t4.nodeType ? this.T(t4) : u2(t4) ? this.k(t4) : this._(t4);
   }
   O(t4) {
     return this._$AA.parentNode.insertBefore(t4, this._$AB);
@@ -491,28 +491,28 @@ var R = class _R {
     this._$AH !== E && c3(this._$AH) ? this._$AA.nextSibling.data = t4 : this.T(r3.createTextNode(t4)), this._$AH = t4;
   }
   $(t4) {
-    const { values: i12, _$litType$: s6 } = t4, e7 = "number" == typeof s6 ? this._$AC(t4) : (void 0 === s6.el && (s6.el = N.createElement(P(s6.h, s6.h[0]), this.options)), s6);
-    if (this._$AH?._$AD === e7) this._$AH.p(i12);
+    const { values: i11, _$litType$: s6 } = t4, e7 = "number" == typeof s6 ? this._$AC(t4) : (void 0 === s6.el && (s6.el = N.createElement(P(s6.h, s6.h[0]), this.options)), s6);
+    if (this._$AH?._$AD === e7) this._$AH.p(i11);
     else {
       const t5 = new M(e7, this), s7 = t5.u(this.options);
-      t5.p(i12), this.T(s7), this._$AH = t5;
+      t5.p(i11), this.T(s7), this._$AH = t5;
     }
   }
   _$AC(t4) {
-    let i12 = A.get(t4.strings);
-    return void 0 === i12 && A.set(t4.strings, i12 = new N(t4)), i12;
+    let i11 = A.get(t4.strings);
+    return void 0 === i11 && A.set(t4.strings, i11 = new N(t4)), i11;
   }
   k(t4) {
     a2(this._$AH) || (this._$AH = [], this._$AR());
-    const i12 = this._$AH;
+    const i11 = this._$AH;
     let s6, e7 = 0;
-    for (const h6 of t4) e7 === i12.length ? i12.push(s6 = new _R(this.O(l2()), this.O(l2()), this, this.options)) : s6 = i12[e7], s6._$AI(h6), e7++;
-    e7 < i12.length && (this._$AR(s6 && s6._$AB.nextSibling, e7), i12.length = e7);
+    for (const h6 of t4) e7 === i11.length ? i11.push(s6 = new _R(this.O(l2()), this.O(l2()), this, this.options)) : s6 = i11[e7], s6._$AI(h6), e7++;
+    e7 < i11.length && (this._$AR(s6 && s6._$AB.nextSibling, e7), i11.length = e7);
   }
-  _$AR(t4 = this._$AA.nextSibling, i12) {
-    for (this._$AP?.(false, true, i12); t4 !== this._$AB; ) {
-      const i13 = t4.nextSibling;
-      t4.remove(), t4 = i13;
+  _$AR(t4 = this._$AA.nextSibling, i11) {
+    for (this._$AP?.(false, true, i11); t4 !== this._$AB; ) {
+      const i12 = t4.nextSibling;
+      t4.remove(), t4 = i12;
     }
   }
   setConnected(t4) {
@@ -526,17 +526,17 @@ var k = class {
   get _$AU() {
     return this._$AM._$AU;
   }
-  constructor(t4, i12, s6, e7, h6) {
-    this.type = 1, this._$AH = E, this._$AN = void 0, this.element = t4, this.name = i12, this._$AM = e7, this.options = h6, s6.length > 2 || "" !== s6[0] || "" !== s6[1] ? (this._$AH = Array(s6.length - 1).fill(new String()), this.strings = s6) : this._$AH = E;
+  constructor(t4, i11, s6, e7, h6) {
+    this.type = 1, this._$AH = E, this._$AN = void 0, this.element = t4, this.name = i11, this._$AM = e7, this.options = h6, s6.length > 2 || "" !== s6[0] || "" !== s6[1] ? (this._$AH = Array(s6.length - 1).fill(new String()), this.strings = s6) : this._$AH = E;
   }
-  _$AI(t4, i12 = this, s6, e7) {
+  _$AI(t4, i11 = this, s6, e7) {
     const h6 = this.strings;
     let o12 = false;
-    if (void 0 === h6) t4 = S2(this, t4, i12, 0), o12 = !c3(t4) || t4 !== this._$AH && t4 !== T, o12 && (this._$AH = t4);
+    if (void 0 === h6) t4 = S2(this, t4, i11, 0), o12 = !c3(t4) || t4 !== this._$AH && t4 !== T, o12 && (this._$AH = t4);
     else {
       const e8 = t4;
       let n8, r9;
-      for (t4 = h6[0], n8 = 0; n8 < h6.length - 1; n8++) r9 = S2(this, e8[s6 + n8], i12, n8), r9 === T && (r9 = this._$AH[n8]), o12 ||= !c3(r9) || r9 !== this._$AH[n8], r9 === E ? t4 = E : t4 !== E && (t4 += (r9 ?? "") + h6[n8 + 1]), this._$AH[n8] = r9;
+      for (t4 = h6[0], n8 = 0; n8 < h6.length - 1; n8++) r9 = S2(this, e8[s6 + n8], i11, n8), r9 === T && (r9 = this._$AH[n8]), o12 ||= !c3(r9) || r9 !== this._$AH[n8], r9 === E ? t4 = E : t4 !== E && (t4 += (r9 ?? "") + h6[n8 + 1]), this._$AH[n8] = r9;
     }
     o12 && !e7 && this.j(t4);
   }
@@ -561,11 +561,11 @@ var I = class extends k {
   }
 };
 var L = class extends k {
-  constructor(t4, i12, s6, e7, h6) {
-    super(t4, i12, s6, e7, h6), this.type = 5;
+  constructor(t4, i11, s6, e7, h6) {
+    super(t4, i11, s6, e7, h6), this.type = 5;
   }
-  _$AI(t4, i12 = this) {
-    if ((t4 = S2(this, t4, i12, 0) ?? E) === T) return;
+  _$AI(t4, i11 = this) {
+    if ((t4 = S2(this, t4, i11, 0) ?? E) === T) return;
     const s6 = this._$AH, e7 = t4 === E && s6 !== E || t4.capture !== s6.capture || t4.once !== s6.once || t4.passive !== s6.passive, h6 = t4 !== E && (s6 === E || e7);
     e7 && this.element.removeEventListener(this.name, this, s6), h6 && this.element.addEventListener(this.name, this, t4), this._$AH = t4;
   }
@@ -574,8 +574,8 @@ var L = class extends k {
   }
 };
 var z = class {
-  constructor(t4, i12, s6) {
-    this.element = t4, this.type = 6, this._$AN = void 0, this._$AM = i12, this.options = s6;
+  constructor(t4, i11, s6) {
+    this.element = t4, this.type = 6, this._$AN = void 0, this._$AM = i11, this.options = s6;
   }
   get _$AU() {
     return this._$AM._$AU;
@@ -586,12 +586,12 @@ var z = class {
 };
 var j = t2.litHtmlPolyfillSupport;
 j?.(N, R), (t2.litHtmlVersions ??= []).push("3.3.1");
-var B = (t4, i12, s6) => {
-  const e7 = s6?.renderBefore ?? i12;
+var B = (t4, i11, s6) => {
+  const e7 = s6?.renderBefore ?? i11;
   let h6 = e7._$litPart$;
   if (void 0 === h6) {
     const t5 = s6?.renderBefore ?? null;
-    e7._$litPart$ = h6 = new R(i12.insertBefore(l2(), t5), t5, void 0, s6 ?? {});
+    e7._$litPart$ = h6 = new R(i11.insertBefore(l2(), t5), t5, void 0, s6 ?? {});
   }
   return h6._$AI(t4), h6;
 };
@@ -628,9 +628,9 @@ o4?.({ LitElement: i4 });
 // node_modules/@lit/reactive-element/decorators/property.js
 var o5 = { attribute: true, type: String, converter: u, reflect: false, hasChanged: f };
 var r4 = (t4 = o5, e7, r9) => {
-  const { kind: n8, metadata: i12 } = r9;
-  let s6 = globalThis.litPropertyMetadata.get(i12);
-  if (void 0 === s6 && globalThis.litPropertyMetadata.set(i12, s6 = /* @__PURE__ */ new Map()), "setter" === n8 && ((t4 = Object.create(t4)).wrapped = true), s6.set(r9.name, t4), "accessor" === n8) {
+  const { kind: n8, metadata: i11 } = r9;
+  let s6 = globalThis.litPropertyMetadata.get(i11);
+  if (void 0 === s6 && globalThis.litPropertyMetadata.set(i11, s6 = /* @__PURE__ */ new Map()), "setter" === n8 && ((t4 = Object.create(t4)).wrapped = true), s6.set(r9.name, t4), "accessor" === n8) {
     const { name: o12 } = r9;
     return { set(r10) {
       const n9 = e7.get.call(this);
@@ -660,10 +660,10 @@ var e4 = (e7, t4, c7) => (c7.configurable = true, c7.enumerable = true, Reflect.
 
 // node_modules/@lit/reactive-element/decorators/query.js
 function e5(e7, r9) {
-  return (n8, s6, i12) => {
+  return (n8, s6, i11) => {
     const o12 = (t4) => t4.renderRoot?.querySelector(e7) ?? null;
     if (r9) {
-      const { get: e8, set: r10 } = "object" == typeof s6 ? n8 : i12 ?? (() => {
+      const { get: e8, set: r10 } = "object" == typeof s6 ? n8 : i11 ?? (() => {
         const t4 = Symbol();
         return { get() {
           return this[t4];
@@ -746,10 +746,10 @@ d3([
 // node_modules/@brad-frost-web/eddie-web-components/components/band/band.js
 var s4 = ":root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-c-band{background:var(--ed-theme-color-background-subtle);padding:1.5rem 0}@media all and (min-width:75rem){.ed-c-band{padding:2rem 0}}.ed-c-band--brand{background:var(--ed-theme-color-background-brand)}.ed-c-band--brand-knockout{color:var(--ed-theme-color-content-knockout);background:var(--ed-theme-color-background-brand-knockout)}.ed-c-band--contained{position:relative;border-radius:var(--ed-theme-border-radius-lg);overflow:hidden;padding-inline:1.5rem;box-shadow:var(--ed-theme-box-shadow-md)}@media all and (min-width:75rem){.ed-c-band--contained{padding-inline:2rem}}.ed-c-band--roomy{padding-block:2.5rem}@media all and (min-width:75rem){.ed-c-band--roomy{padding-block:3.5rem}}.ed-c-band--roomy.ed-c-band--contained{padding-inline:2.5rem}@media all and (min-width:75rem){.ed-c-band--roomy.ed-c-band--contained{padding-inline:3.5rem}}.ed-c-band--compact{padding-block:1rem}@media all and (min-width:75rem){.ed-c-band--compact{padding-block:1.5rem}}";
 var p3 = Object.defineProperty;
-var t3 = (a6, e7, i12, h6) => {
-  for (var d6 = void 0, o12 = a6.length - 1, c7; o12 >= 0; o12--)
-    (c7 = a6[o12]) && (d6 = c7(e7, i12, d6) || d6);
-  return d6 && p3(e7, i12, d6), d6;
+var t3 = (a6, e7, i11, h6) => {
+  for (var d7 = void 0, o12 = a6.length - 1, c7; o12 >= 0; o12--)
+    (c7 = a6[o12]) && (d7 = c7(e7, i11, d7) || d7);
+  return d7 && p3(e7, i11, d7), d7;
 };
 var n5 = class extends f3 {
   static get styles() {
@@ -784,10 +784,10 @@ customElements.get("ed-band") === void 0 && customElements.define("ed-band", n5)
 // node_modules/@brad-frost-web/eddie-web-components/components/EdFormElement.js
 var p4 = Object.defineProperty;
 var o6 = Object.getOwnPropertyDescriptor;
-var n6 = (r9, t4, i12, f6) => {
-  for (var e7 = o6(t4, i12), s6 = r9.length - 1, u5; s6 >= 0; s6--)
-    (u5 = r9[s6]) && (e7 = u5(t4, i12, e7) || e7);
-  return e7 && p4(t4, i12, e7), e7;
+var n6 = (r9, t4, i11, f7) => {
+  for (var e7 = o6(t4, i11), s6 = r9.length - 1, u5; s6 >= 0; s6--)
+    (u5 = r9[s6]) && (e7 = u5(t4, i11, e7) || e7);
+  return e7 && p4(t4, i11, e7), e7;
 };
 var l3 = class l4 extends f3 {
   get value() {
@@ -801,8 +801,8 @@ var l3 = class l4 extends f3 {
    * 4. Rerenders the component.
    */
   set value(t4) {
-    const i12 = this.value;
-    this.internalValue = t4, this.type !== "checkbox" && this.type !== "radio" && this.internals.setFormValue(t4), this.updateField(), this.requestUpdate("value", i12);
+    const i11 = this.value;
+    this.internalValue = t4, this.type !== "checkbox" && this.type !== "radio" && this.internals.setFormValue(t4), this.updateField(), this.requestUpdate("value", i11);
   }
   /**
    * update the actual field's value
@@ -881,19 +881,19 @@ function k2(r9, t4) {
 }
 var J = (r9, t4) => {
   const e7 = r9.length - 1, s6 = [];
-  let i12, n8 = t4 === 2 ? "<svg>" : t4 === 3 ? "<math>" : "", o12 = y3;
+  let i11, n8 = t4 === 2 ? "<svg>" : t4 === 3 ? "<math>" : "", o12 = y3;
   for (let A2 = 0; A2 < e7; A2++) {
     const h6 = r9[A2];
     let a6, c7, l8 = -1, _2 = 0;
-    for (; _2 < h6.length && (o12.lastIndex = _2, c7 = o12.exec(h6), c7 !== null); ) _2 = o12.lastIndex, o12 === y3 ? c7[1] === "!--" ? o12 = R2 : c7[1] !== void 0 ? o12 = B2 : c7[2] !== void 0 ? (V2.test(c7[2]) && (i12 = RegExp("</" + c7[2], "g")), o12 = p5) : c7[3] !== void 0 && (o12 = p5) : o12 === p5 ? c7[0] === ">" ? (o12 = i12 ?? y3, l8 = -1) : c7[1] === void 0 ? l8 = -2 : (l8 = o12.lastIndex - c7[2].length, a6 = c7[1], o12 = c7[3] === void 0 ? p5 : c7[3] === '"' ? O : D) : o12 === O || o12 === D ? o12 = p5 : o12 === R2 || o12 === B2 ? o12 = y3 : (o12 = p5, i12 = void 0);
-    const d6 = o12 === p5 && r9[A2 + 1].startsWith("/>") ? " " : "";
-    n8 += o12 === y3 ? h6 + q : l8 >= 0 ? (s6.push(a6), h6.slice(0, l8) + W + h6.slice(l8) + u3 + d6) : h6 + u3 + (l8 === -2 ? A2 : d6);
+    for (; _2 < h6.length && (o12.lastIndex = _2, c7 = o12.exec(h6), c7 !== null); ) _2 = o12.lastIndex, o12 === y3 ? c7[1] === "!--" ? o12 = R2 : c7[1] !== void 0 ? o12 = B2 : c7[2] !== void 0 ? (V2.test(c7[2]) && (i11 = RegExp("</" + c7[2], "g")), o12 = p5) : c7[3] !== void 0 && (o12 = p5) : o12 === p5 ? c7[0] === ">" ? (o12 = i11 ?? y3, l8 = -1) : c7[1] === void 0 ? l8 = -2 : (l8 = o12.lastIndex - c7[2].length, a6 = c7[1], o12 = c7[3] === void 0 ? p5 : c7[3] === '"' ? O : D) : o12 === O || o12 === D ? o12 = p5 : o12 === R2 || o12 === B2 ? o12 = y3 : (o12 = p5, i11 = void 0);
+    const d7 = o12 === p5 && r9[A2 + 1].startsWith("/>") ? " " : "";
+    n8 += o12 === y3 ? h6 + q : l8 >= 0 ? (s6.push(a6), h6.slice(0, l8) + W + h6.slice(l8) + u3 + d7) : h6 + u3 + (l8 === -2 ? A2 : d7);
   }
   return [k2(r9, n8 + (r9[e7] || "<?>") + (t4 === 2 ? "</svg>" : t4 === 3 ? "</math>" : "")), s6];
 };
 var x2 = class _x {
   constructor({ strings: t4, _$litType$: e7 }, s6) {
-    let i12;
+    let i11;
     this.parts = [];
     let n8 = 0, o12 = 0;
     const A2 = t4.length - 1, h6 = this.parts, [a6, c7] = J(t4, e7);
@@ -901,24 +901,24 @@ var x2 = class _x {
       const l8 = this.el.content.firstChild;
       l8.replaceWith(...l8.childNodes);
     }
-    for (; (i12 = g2.nextNode()) !== null && h6.length < A2; ) {
-      if (i12.nodeType === 1) {
-        if (i12.hasAttributes()) for (const l8 of i12.getAttributeNames()) if (l8.endsWith(W)) {
-          const _2 = c7[o12++], d6 = i12.getAttribute(l8).split(u3), N2 = /([.?@])?(.*)/.exec(_2);
-          h6.push({ type: 1, index: n8, name: N2[2], strings: d6, ctor: N2[1] === "." ? Q : N2[1] === "?" ? X : N2[1] === "@" ? Y : M2 }), i12.removeAttribute(l8);
-        } else l8.startsWith(u3) && (h6.push({ type: 6, index: n8 }), i12.removeAttribute(l8));
-        if (V2.test(i12.tagName)) {
-          const l8 = i12.textContent.split(u3), _2 = l8.length - 1;
+    for (; (i11 = g2.nextNode()) !== null && h6.length < A2; ) {
+      if (i11.nodeType === 1) {
+        if (i11.hasAttributes()) for (const l8 of i11.getAttributeNames()) if (l8.endsWith(W)) {
+          const _2 = c7[o12++], d7 = i11.getAttribute(l8).split(u3), N2 = /([.?@])?(.*)/.exec(_2);
+          h6.push({ type: 1, index: n8, name: N2[2], strings: d7, ctor: N2[1] === "." ? Q : N2[1] === "?" ? X : N2[1] === "@" ? Y : M2 }), i11.removeAttribute(l8);
+        } else l8.startsWith(u3) && (h6.push({ type: 6, index: n8 }), i11.removeAttribute(l8));
+        if (V2.test(i11.tagName)) {
+          const l8 = i11.textContent.split(u3), _2 = l8.length - 1;
           if (_2 > 0) {
-            i12.textContent = T2 ? T2.emptyScript : "";
-            for (let d6 = 0; d6 < _2; d6++) i12.append(l8[d6], b3()), g2.nextNode(), h6.push({ type: 2, index: ++n8 });
-            i12.append(l8[_2], b3());
+            i11.textContent = T2 ? T2.emptyScript : "";
+            for (let d7 = 0; d7 < _2; d7++) i11.append(l8[d7], b3()), g2.nextNode(), h6.push({ type: 2, index: ++n8 });
+            i11.append(l8[_2], b3());
           }
         }
-      } else if (i12.nodeType === 8) if (i12.data === j2) h6.push({ type: 2, index: n8 });
+      } else if (i11.nodeType === 8) if (i11.data === j2) h6.push({ type: 2, index: n8 });
       else {
         let l8 = -1;
-        for (; (l8 = i12.data.indexOf(u3, l8 + 1)) !== -1; ) h6.push({ type: 7, index: n8 }), l8 += u3.length - 1;
+        for (; (l8 = i11.data.indexOf(u3, l8 + 1)) !== -1; ) h6.push({ type: 7, index: n8 }), l8 += u3.length - 1;
       }
       n8++;
     }
@@ -930,9 +930,9 @@ var x2 = class _x {
 };
 function m2(r9, t4, e7 = r9, s6) {
   if (t4 === v2) return t4;
-  let i12 = s6 !== void 0 ? e7._$Co?.[s6] : e7._$Cl;
+  let i11 = s6 !== void 0 ? e7._$Co?.[s6] : e7._$Cl;
   const n8 = H2(t4) ? void 0 : t4._$litDirective$;
-  return i12?.constructor !== n8 && (i12?._$AO?.(false), n8 === void 0 ? i12 = void 0 : (i12 = new n8(r9), i12._$AT(r9, e7, s6)), s6 !== void 0 ? (e7._$Co ??= [])[s6] = i12 : e7._$Cl = i12), i12 !== void 0 && (t4 = m2(r9, i12._$AS(r9, t4.values), i12, s6)), t4;
+  return i11?.constructor !== n8 && (i11?._$AO?.(false), n8 === void 0 ? i11 = void 0 : (i11 = new n8(r9), i11._$AT(r9, e7, s6)), s6 !== void 0 ? (e7._$Co ??= [])[s6] = i11 : e7._$Cl = i11), i11 !== void 0 && (t4 = m2(r9, i11._$AS(r9, t4.values), i11, s6)), t4;
 }
 var K = class {
   constructor(t4, e7) {
@@ -945,8 +945,8 @@ var K = class {
     return this._$AM._$AU;
   }
   u(t4) {
-    const { el: { content: e7 }, parts: s6 } = this._$AD, i12 = (t4?.creationScope ?? f4).importNode(e7, true);
-    g2.currentNode = i12;
+    const { el: { content: e7 }, parts: s6 } = this._$AD, i11 = (t4?.creationScope ?? f4).importNode(e7, true);
+    g2.currentNode = i11;
     let n8 = g2.nextNode(), o12 = 0, A2 = 0, h6 = s6[0];
     for (; h6 !== void 0; ) {
       if (o12 === h6.index) {
@@ -955,7 +955,7 @@ var K = class {
       }
       o12 !== h6?.index && (n8 = g2.nextNode(), o12++);
     }
-    return g2.currentNode = f4, i12;
+    return g2.currentNode = f4, i11;
   }
   p(t4) {
     let e7 = 0;
@@ -966,8 +966,8 @@ var C2 = class _C {
   get _$AU() {
     return this._$AM?._$AU ?? this._$Cv;
   }
-  constructor(t4, e7, s6, i12) {
-    this.type = 2, this._$AH = $2, this._$AN = void 0, this._$AA = t4, this._$AB = e7, this._$AM = s6, this.options = i12, this._$Cv = i12?.isConnected ?? true;
+  constructor(t4, e7, s6, i11) {
+    this.type = 2, this._$AH = $2, this._$AN = void 0, this._$AA = t4, this._$AB = e7, this._$AM = s6, this.options = i11, this._$Cv = i11?.isConnected ?? true;
   }
   get parentNode() {
     let t4 = this._$AA.parentNode;
@@ -993,10 +993,10 @@ var C2 = class _C {
     this._$AH !== $2 && H2(this._$AH) ? this._$AA.nextSibling.data = t4 : this.T(f4.createTextNode(t4)), this._$AH = t4;
   }
   $(t4) {
-    const { values: e7, _$litType$: s6 } = t4, i12 = typeof s6 == "number" ? this._$AC(t4) : (s6.el === void 0 && (s6.el = x2.createElement(k2(s6.h, s6.h[0]), this.options)), s6);
-    if (this._$AH?._$AD === i12) this._$AH.p(e7);
+    const { values: e7, _$litType$: s6 } = t4, i11 = typeof s6 == "number" ? this._$AC(t4) : (s6.el === void 0 && (s6.el = x2.createElement(k2(s6.h, s6.h[0]), this.options)), s6);
+    if (this._$AH?._$AD === i11) this._$AH.p(e7);
     else {
-      const n8 = new K(i12, this), o12 = n8.u(this.options);
+      const n8 = new K(i11, this), o12 = n8.u(this.options);
       n8.p(e7), this.T(o12), this._$AH = n8;
     }
   }
@@ -1007,9 +1007,9 @@ var C2 = class _C {
   k(t4) {
     I2(this._$AH) || (this._$AH = [], this._$AR());
     const e7 = this._$AH;
-    let s6, i12 = 0;
-    for (const n8 of t4) i12 === e7.length ? e7.push(s6 = new _C(this.O(b3()), this.O(b3()), this, this.options)) : s6 = e7[i12], s6._$AI(n8), i12++;
-    i12 < e7.length && (this._$AR(s6 && s6._$AB.nextSibling, i12), e7.length = i12);
+    let s6, i11 = 0;
+    for (const n8 of t4) i11 === e7.length ? e7.push(s6 = new _C(this.O(b3()), this.O(b3()), this, this.options)) : s6 = e7[i11], s6._$AI(n8), i11++;
+    i11 < e7.length && (this._$AR(s6 && s6._$AB.nextSibling, i11), e7.length = i11);
   }
   _$AR(t4 = this._$AA.nextSibling, e7) {
     for (this._$AP?.(false, true, e7); t4 !== this._$AB; ) {
@@ -1028,10 +1028,10 @@ var M2 = class {
   get _$AU() {
     return this._$AM._$AU;
   }
-  constructor(t4, e7, s6, i12, n8) {
-    this.type = 1, this._$AH = $2, this._$AN = void 0, this.element = t4, this.name = e7, this._$AM = i12, this.options = n8, s6.length > 2 || s6[0] !== "" || s6[1] !== "" ? (this._$AH = Array(s6.length - 1).fill(new String()), this.strings = s6) : this._$AH = $2;
+  constructor(t4, e7, s6, i11, n8) {
+    this.type = 1, this._$AH = $2, this._$AN = void 0, this.element = t4, this.name = e7, this._$AM = i11, this.options = n8, s6.length > 2 || s6[0] !== "" || s6[1] !== "" ? (this._$AH = Array(s6.length - 1).fill(new String()), this.strings = s6) : this._$AH = $2;
   }
-  _$AI(t4, e7 = this, s6, i12) {
+  _$AI(t4, e7 = this, s6, i11) {
     const n8 = this.strings;
     let o12 = false;
     if (n8 === void 0) t4 = m2(this, t4, e7, 0), o12 = !H2(t4) || t4 !== this._$AH && t4 !== v2, o12 && (this._$AH = t4);
@@ -1040,7 +1040,7 @@ var M2 = class {
       let h6, a6;
       for (t4 = n8[0], h6 = 0; h6 < n8.length - 1; h6++) a6 = m2(this, A2[s6 + h6], e7, h6), a6 === v2 && (a6 = this._$AH[h6]), o12 ||= !H2(a6) || a6 !== this._$AH[h6], a6 === $2 ? t4 = $2 : t4 !== $2 && (t4 += (a6 ?? "") + n8[h6 + 1]), this._$AH[h6] = a6;
     }
-    o12 && !i12 && this.j(t4);
+    o12 && !i11 && this.j(t4);
   }
   j(t4) {
     t4 === $2 ? this.element.removeAttribute(this.name) : this.element.setAttribute(this.name, t4 ?? "");
@@ -1063,13 +1063,13 @@ var X = class extends M2 {
   }
 };
 var Y = class extends M2 {
-  constructor(t4, e7, s6, i12, n8) {
-    super(t4, e7, s6, i12, n8), this.type = 5;
+  constructor(t4, e7, s6, i11, n8) {
+    super(t4, e7, s6, i11, n8), this.type = 5;
   }
   _$AI(t4, e7 = this) {
     if ((t4 = m2(this, t4, e7, 0) ?? $2) === v2) return;
-    const s6 = this._$AH, i12 = t4 === $2 && s6 !== $2 || t4.capture !== s6.capture || t4.once !== s6.once || t4.passive !== s6.passive, n8 = t4 !== $2 && (s6 === $2 || i12);
-    i12 && this.element.removeEventListener(this.name, this, s6), n8 && this.element.addEventListener(this.name, this, t4), this._$AH = t4;
+    const s6 = this._$AH, i11 = t4 === $2 && s6 !== $2 || t4.capture !== s6.capture || t4.once !== s6.once || t4.passive !== s6.passive, n8 = t4 !== $2 && (s6 === $2 || i11);
+    i11 && this.element.removeEventListener(this.name, this, s6), n8 && this.element.addEventListener(this.name, this, t4), this._$AH = t4;
   }
   handleEvent(t4) {
     typeof this._$AH == "function" ? this._$AH.call(this.options?.host ?? this.element, t4) : this._$AH.handleEvent(t4);
@@ -1326,9 +1326,9 @@ customElements.get("ed-icon") === void 0 && customElements.define("ed-icon", C3)
 var v4 = '@charset "UTF-8";:root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-u-is-hidden{display:none!important;visibility:hidden!important}.ed-u-is-vishidden{position:absolute!important;overflow:hidden;width:1px;height:1px;padding:0;border:0;clip:rect(1px,1px,1px,1px)}@media all and (min-width:23.4375rem){.ed-u-hide-sm{display:none!important}}@media all and (min-width:48rem){.ed-u-hide-md{display:none!important}}@media all and (min-width:60rem){.ed-u-hide-lg{display:none!important}}@media all and (min-width:75rem){.ed-u-hide-xl{display:none!important}}@media all and (max-width:23.4375rem){.ed-u-show-sm{display:none!important}}@media all and (max-width:48rem){.ed-u-show-md{display:none!important}}@media all and (max-width:60rem){.ed-u-show-lg{display:none!important}}@media all and (max-width:75rem){.ed-u-show-xl{display:none!important}}.ed-c-button{font-family:var(--ed-theme-typography-button-default-font-family);font-weight:var(--ed-theme-typography-button-default-font-weight);font-size:var(--ed-theme-typography-button-default-font-size);line-height:var(--ed-theme-typography-button-default-line-height);letter-spacing:var(--ed-theme-typography-button-default-letter-spacing);text-transform:var(--ed-theme-typography-button-default-text-transform);display:inline-flex;align-items:center;padding:.75rem 1.75rem;margin:0;background:var(--ed-theme-button-color-background-default);border-width:var(--ed-theme-border-width-md);border-style:solid;border-color:var(--ed-theme-button-color-border-default);border-radius:var(--ed-theme-border-radius-md);color:var(--ed-theme-button-color-content-default);cursor:pointer;white-space:nowrap;transition:all var(--ed-theme-animation-fade-quick) var(--ed-theme-animation-ease)}.ed-c-button:hover,.ed-c-button:focus{color:var(--ed-theme-button-color-content-hover);border-color:var(--ed-theme-button-color-border-hover);background:var(--ed-theme-button-color-background-hover);text-decoration:none}.ed-c-button:focus-visible{outline:var(--ed-theme-border-width-lg) solid var(--ed-theme-focus-ring-color-border-default);outline-offset:var(--ed-theme-offset-focus-ring, .25rem )}.ed-c-button:active{background-color:var(--ed-theme-button-color-background-active);border-color:var(--ed-theme-button-color-border-active);color:var(--ed-theme-button-color-content-active)}a.ed-c-button{text-decoration:none}.ed-c-button:disabled{background-color:var(--ed-theme-button-color-background-disabled);border-color:var(--ed-theme-button-color-border-disabled);color:var(--ed-theme-button-color-content-disabled);cursor:not-allowed}.ed-c-button:disabled:hover,.ed-c-button:disabled:focus,.ed-c-button:disabled:active{background-color:var(--ed-theme-button-color-background-disabled);border-color:var(--ed-theme-button-color-border-disabled);color:var(--ed-theme-button-color-content-disabled)}.ed-c-button--outline{background:transparent;color:var(--ed-theme-button-color-border-default)}.ed-c-button--outline:hover,.ed-c-button--outline:focus{background:transparent;border-color:var(--ed-theme-button-color-border-hover);color:var(--ed-theme-button-color-border-hover)}.ed-c-button--outline:active{background:transparent;border-color:var(--ed-theme-button-color-border-active);color:var(--ed-theme-button-color-border-active)}.ed-c-button--primary.ed-c-button--outline{background:transparent;border-color:var(--ed-theme-button-primary-color-border-default);color:var(--ed-theme-button-primary-color-border-default)}.ed-c-button--primary.ed-c-button--outline:hover,.ed-c-button--primary.ed-c-button--outline:focus{background:transparent;border-color:var(--ed-theme-button-primary-color-border-hover);color:var(--ed-theme-button-primary-color-border-hover)}.ed-c-button--primary.ed-c-button--outline:active{background:transparent;border-color:var(--ed-theme-button-primary-color-border-hover);color:var(--ed-theme-button-primary-color-border-hover)}.ed-c-button--primary{background-color:var(--ed-theme-button-primary-color-background-default);border-color:var(--ed-theme-button-primary-color-border-default);color:var(--ed-theme-button-primary-color-content-default)}.ed-c-button--primary:hover,.ed-c-button--primary:focus{background-color:var(--ed-theme-button-primary-color-background-hover);border-color:var(--ed-theme-button-primary-color-border-hover);color:var(--ed-theme-button-primary-color-content-hover)}.ed-c-button--primary:active{background-color:var(--ed-theme-button-primary-color-background-active);border-color:var(--ed-theme-button-primary-color-border-active);color:var(--ed-theme-button-primary-color-content-active)}.ed-c-button--primary:disabled{background-color:var(--ed-theme-button-primary-color-background-disabled);border-color:var(--ed-theme-button-primary-color-border-disabled);color:var(--ed-theme-button-primary-color-content-disabled)}.ed-c-button--primary:disabled:hover,.ed-c-button--primary:disabled:focus,.ed-c-button--primary:disabled:active{background-color:var(--ed-theme-button-primary-color-background-disabled);border-color:var(--ed-theme-button-primary-color-border-disabled);color:var(--ed-theme-button-primary-color-content-disabled)}.ed-c-button--link{font-family:var(--ed-theme-typography-body-default-font-family);font-weight:var(--ed-theme-typography-body-default-font-weight);font-size:var(--ed-theme-typography-body-default-font-size);line-height:var(--ed-theme-typography-body-default-line-height);letter-spacing:var(--ed-theme-typography-body-default-letter-spacing);text-transform:var(--ed-theme-typography-body-default-text-transform);background-color:transparent;border:none;color:var(--ed-theme-link-color-content-default);padding:0}.ed-c-button--link:hover,.ed-c-button--link:focus{background-color:transparent;border:none;color:var(--ed-theme-link-color-content-hover);text-decoration:underline}.ed-c-button--link:active{background-color:transparent;border:none;color:var(--ed-theme-link-color-content-active)}.ed-c-button--link:visited{color:var(--ed-theme-link-color-content-visited)}.ed-c-button--link:disabled{background-color:transparent;border:none;color:var(--ed-theme-color-content-disabled)}.ed-c-button--link:disabled:hover,.ed-c-button--link:disabled:focus,.ed-c-button--link:disabled:active{background-color:transparent;border:none;color:var(--ed-theme-color-content-disabled)}.ed-c-button--link.ed-c-button--sm{font-family:var(--ed-theme-typography-body-sm-font-family);font-weight:var(--ed-theme-typography-body-sm-font-weight);font-size:var(--ed-theme-typography-body-sm-font-size);line-height:var(--ed-theme-typography-body-sm-line-height);letter-spacing:var(--ed-theme-typography-body-sm-letter-spacing);text-transform:var(--ed-theme-typography-body-sm-text-transform)}.ed-c-button--link.ed-c-button--lg{font-family:var(--ed-theme-typography-body-lg-font-family);font-weight:var(--ed-theme-typography-body-lg-font-weight);font-size:var(--ed-theme-typography-body-lg-font-size);line-height:var(--ed-theme-typography-body-lg-line-height);letter-spacing:var(--ed-theme-typography-body-lg-letter-spacing);text-transform:var(--ed-theme-typography-body-lg-text-transform)}.ed-c-button--bare{padding:0;border:0;background:none;color:var(--ed-theme-color-content-default)}.ed-c-button--bare:hover,.ed-c-button--bare:focus{color:var(--ed-theme-color-content-hover);background:none}.ed-c-button--bare:disabled{color:var(--ed-theme-button-bare-color-content-disabled);background:none;cursor:not-allowed}.ed-c-button--bare:disabled:hover,.ed-c-button--bare:disabled:focus{background:none;color:var(--ed-theme-button-bare-color-content-disabled)}.ed-c-button--inverted:focus-visible{outline:var(--ed-theme-border-width-lg) solid var(--ed-theme-focus-ring-color-border-knockout);outline-offset:var(--ed-theme-offset-focus-ring, .25rem )}.ed-c-button--bare.ed-c-button--inverted{color:var(--ed-theme-color-content-knockout)}.ed-c-button--bare.ed-c-button--inverted:hover,.ed-c-button--bare.ed-c-button--inverted:focus{color:var(--ed-theme-color-content-knockout)}.ed-c-button--bare.ed-c-button--inverted:active{color:var(--ed-theme-color-content-knockout)}.ed-c-button--link.ed-c-button--inverted{color:var(--ed-theme-link-color-content-knockout)}.ed-c-button--link.ed-c-button--inverted:hover,.ed-c-button--link.ed-c-button--inverted:focus{color:var(--ed-theme-link-color-content-knockout-hover)}.ed-c-button--link.ed-c-button--inverted:active{color:var(--ed-theme-link-color-content-knockout-active)}.ed-c-button--link.ed-c-button--inverted:visited{color:var(--ed-theme-link-color-content-knockout-visited)}.ed-c-button--full-width{width:100%;justify-content:center;text-align:center}.ed-c-button--sm{font-family:var(--ed-theme-typography-button-sm-font-family);font-weight:var(--ed-theme-typography-button-sm-font-weight);font-size:var(--ed-theme-typography-button-sm-font-size);line-height:var(--ed-theme-typography-button-sm-line-height);letter-spacing:var(--ed-theme-typography-button-sm-letter-spacing);text-transform:var(--ed-theme-typography-button-sm-text-transform);padding:.5rem 1rem}.ed-c-button--sm.ed-c-button--bare{padding:0}.ed-c-button--lg{font-family:var(--ed-theme-typography-button-lg-font-family);font-weight:var(--ed-theme-typography-button-lg-font-weight);font-size:var(--ed-theme-typography-button-lg-font-size);line-height:var(--ed-theme-typography-button-lg-line-height);letter-spacing:var(--ed-theme-typography-button-lg-letter-spacing);text-transform:var(--ed-theme-typography-button-lg-text-transform)}.ed-c-button--lg.ed-c-button--bare{padding:0}ed-icon{--ed-icon-height: .75rem ;--ed-icon-width: .75rem ;transition:all var(--ed-theme-animation-fade-quick) var(--ed-theme-animation-ease);transform:var(--ed-button-icon-transform, none)}.ed-c-button--sm ed-icon{--ed-icon-height: .5rem ;--ed-icon-width: .5rem }.ed-c-button--lg ed-icon{--ed-icon-height: .875rem ;--ed-icon-width: .875rem }ed-icon+.ed-c-button__text{margin-inline-start:.5rem}.ed-c-button--sm ed-icon+.ed-c-button__text{margin-inline-start:.25rem}.ed-c-button__text:not(.ed-u-is-vishidden)+ed-icon{margin-inline-start:.5rem}.ed-c-button--sm .ed-c-button__text:not(.ed-u-is-vishidden)+ed-icon{margin-inline-start:.25rem}';
 var y4 = Object.defineProperty;
 var o9 = (b6, t4, n8, g6) => {
-  for (var d6 = void 0, i12 = b6.length - 1, u5; i12 >= 0; i12--)
-    (u5 = b6[i12]) && (d6 = u5(t4, n8, d6) || d6);
-  return d6 && y4(t4, n8, d6), d6;
+  for (var d7 = void 0, i11 = b6.length - 1, u5; i11 >= 0; i11--)
+    (u5 = b6[i11]) && (d7 = u5(t4, n8, d7) || d7);
+  return d7 && y4(t4, n8, d7), d7;
 };
 var l5 = class l6 extends a4 {
   constructor() {
@@ -1444,8 +1444,8 @@ customElements.get("ed-button") === void 0 && customElements.define("ed-button",
 var m3 = '@charset "UTF-8";:root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-c-button-group{display:flex;align-items:center}.ed-c-button-group ::slotted(ed-button){margin-inline-end:1rem}.ed-c-button-group ::slotted(ed-button:last-child){margin-inline-end:0}.ed-c-button-group--stacked{flex-direction:column;align-items:initial}.ed-c-button-group--stacked ::slotted(ed-button){margin-block-end:.5rem}.ed-c-button-group--stacked ::slotted(ed-button:last-child){margin-block-end:0}.ed-c-button-group--responsive ::slotted(ed-button){margin-block-end:.5rem;margin-inline-end:0}@media all and (min-width:48rem){.ed-c-button-group--responsive ::slotted(ed-button){margin-inline-end:1rem;margin-block-end:0}}@media all and (max-width:48rem){.ed-c-button-group--responsive{flex-direction:column;align-items:initial}}';
 var c4 = Object.defineProperty;
 var b4 = (o12, t4, r9, p10) => {
-  for (var e7 = void 0, n8 = o12.length - 1, i12; n8 >= 0; n8--)
-    (i12 = o12[n8]) && (e7 = i12(t4, r9, e7) || e7);
+  for (var e7 = void 0, n8 = o12.length - 1, i11; n8 >= 0; n8--)
+    (i11 = o12[n8]) && (e7 = i11(t4, r9, e7) || e7);
   return e7 && c4(t4, r9, e7), e7;
 };
 var s5 = class extends f3 {
@@ -1476,9 +1476,9 @@ customElements.get("ed-button-group") === void 0 && customElements.define("ed-bu
 var c5 = ":root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-c-grid{display:flex;flex-direction:column;flex-wrap:wrap;margin:-.75rem}.ed-c-grid--gap-none{margin:0}.ed-c-grid--gap-sm{margin:-.25rem}.ed-c-grid--gap-lg{margin:-1rem}.ed-c-grid--side-by-side{flex-direction:row}@media all and (min-width:48rem){.ed-c-grid--2up{flex-direction:row}}@media all and (min-width:23.4375rem){.ed-c-grid--2up.ed-c-grid--break-faster{flex-direction:row}}@media all and (min-width:48rem){.ed-c-grid--2up.ed-c-grid--break-slower{flex-direction:column}}@media all and (min-width:87.5rem){.ed-c-grid--2up.ed-c-grid--break-slower{flex-direction:row}}@media all and (min-width:48rem){.ed-c-grid--3up{flex-direction:row}}@media all and (min-width:60rem){.ed-c-grid--1-3up{flex-direction:row}}@media all and (min-width:48rem){.ed-c-grid--1-3up.ed-c-grid--break-faster{flex-direction:row}}@media all and (min-width:60rem){.ed-c-grid--1-3up.ed-c-grid--break-slower{flex-direction:column}}@media all and (min-width:75rem){.ed-c-grid--1-3up.ed-c-grid--break-slower{flex-direction:row}}@media all and (min-width:23.4375rem){.ed-c-grid--1-2-4up{flex-direction:row}}@media all and (min-width:48rem){.ed-c-grid--1-4up{flex-direction:row}}@media all and (min-width:23.4375rem){.ed-c-grid--4up{flex-direction:row}}.ed-c-grid--2-4-6up{flex-direction:row}::slotted(ed-grid-item){display:block;padding:.75rem}.ed-c-grid--gap-none>::slotted(ed-grid-item){padding:0}.ed-c-grid--gap-sm>::slotted(ed-grid-item){padding:.25rem}.ed-c-grid--gap-lg>::slotted(ed-grid-item){padding:1rem}.ed-c-grid--side-by-side>::slotted(ed-grid-item){width:50%}@media all and (min-width:48rem){.ed-c-grid--2up>::slotted(ed-grid-item){width:50%}}@media all and (min-width:23.4375rem){.ed-c-grid--2up.ed-c-grid--break-faster>::slotted(ed-grid-item){width:50%}}@media all and (min-width:48rem){.ed-c-grid--2up.ed-c-grid--break-slower>::slotted(ed-grid-item){width:100%}}@media all and (min-width:87.5rem){.ed-c-grid--2up.ed-c-grid--break-slower>::slotted(ed-grid-item){width:50%}}@media all and (min-width:48rem){.ed-c-grid--3up>::slotted(ed-grid-item){width:50%}}@media all and (min-width:60rem){.ed-c-grid--3up>::slotted(ed-grid-item){width:33.3333%}}@media all and (min-width:60rem){.ed-c-grid--1-3up>::slotted(ed-grid-item){width:33.3333%}}@media all and (min-width:48rem){.ed-c-grid--1-3up.ed-c-grid--break-faster>::slotted(ed-grid-item){width:33.33%}}@media all and (min-width:60rem){.ed-c-grid--1-3up.ed-c-grid--break-slower>::slotted(ed-grid-item){width:100%}}@media all and (min-width:75rem){.ed-c-grid--1-3up.ed-c-grid--break-slower>::slotted(ed-grid-item){width:33.33%}}@media all and (min-width:23.4375rem){.ed-c-grid--1-2-4up>::slotted(ed-grid-item){width:50%}}@media all and (min-width:60rem){.ed-c-grid--1-2-4up>::slotted(ed-grid-item){width:25%}}@media all and (min-width:48rem){.ed-c-grid--1-4up>::slotted(ed-grid-item){width:25%}}@media all and (min-width:23.4375rem){.ed-c-grid--4up>::slotted(ed-grid-item){width:50%}}@media all and (min-width:48rem){.ed-c-grid--4up>::slotted(ed-grid-item){width:33.3333%}}@media all and (min-width:60rem){.ed-c-grid--4up>::slotted(ed-grid-item){width:25%}}.ed-c-grid--2-4-6up>::slotted(ed-grid-item){width:50%}@media all and (min-width:60rem){.ed-c-grid--2-4-6up>::slotted(ed-grid-item){width:25%}}@media all and (min-width:75rem){.ed-c-grid--2-4-6up>::slotted(ed-grid-item){width:16.66%}}";
 var p6 = Object.defineProperty;
 var m4 = (r9, e7, l8, w3) => {
-  for (var d6 = void 0, t4 = r9.length - 1, n8; t4 >= 0; t4--)
-    (n8 = r9[t4]) && (d6 = n8(e7, l8, d6) || d6);
-  return d6 && p6(e7, l8, d6), d6;
+  for (var d7 = void 0, t4 = r9.length - 1, n8; t4 >= 0; t4--)
+    (n8 = r9[t4]) && (d7 = n8(e7, l8, d7) || d7);
+  return d7 && p6(e7, l8, d7), d7;
 };
 var i6 = class extends f3 {
   static get styles() {
@@ -1627,45 +1627,45 @@ h3([
 customElements.get("ed-layout-container") === void 0 && customElements.define("ed-layout-container", i8);
 
 // node_modules/@brad-frost-web/eddie-web-components/components/section/section.js
-var m6 = '@charset "UTF-8";:root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-c-section{margin-block-end:2rem}.ed-c-section__body{padding-block-start:1rem}@media all and (min-width:60rem){.ed-c-section__body{padding-block-start:2rem}}.ed-c-section--align-center .ed-c-section-header{text-align:center}';
-var h4 = Object.defineProperty;
-var p8 = (s6, t4, o12, f6) => {
-  for (var e7 = void 0, n8 = s6.length - 1, r9; n8 >= 0; n8--)
-    (r9 = s6[n8]) && (e7 = r9(t4, o12, e7) || e7);
-  return e7 && h4(t4, o12, e7), e7;
+var h4 = '@charset "UTF-8";:root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-c-section{margin-block-end:2rem}.ed-c-section__body{padding-block-start:1rem}@media all and (min-width:60rem){.ed-c-section__body{padding-block-start:2rem}}.ed-c-section--align-center .ed-c-section-header{text-align:center}';
+var f5 = Object.defineProperty;
+var p8 = (n8, s6, o12, t4) => {
+  for (var e7 = void 0, r9 = n8.length - 1, c7; r9 >= 0; r9--)
+    (c7 = n8[r9]) && (e7 = c7(s6, o12, e7) || e7);
+  return e7 && f5(s6, o12, e7), e7;
 };
-var i9 = class extends f3 {
+var d6 = class extends f3 {
   static get styles() {
-    return r(m6);
+    return r(h4);
   }
   render() {
-    const t4 = this.componentClassNames("ed-c-section", {
+    const s6 = this.componentClassNames("ed-c-section", {
       "ed-c-section--align-center": this.align === "center"
-    });
+    }), o12 = Array.from(this.children).some((t4) => !t4.hasAttribute("slot")) || Array.from(this.childNodes).some((t4) => t4.nodeType === Node.TEXT_NODE && t4.textContent?.trim() !== "");
     return x`
-      <section class="${t4}">
+      <section class="${s6}">
         <header class="ed-c-section-header">
           <slot name="header"></slot>
         </header>
-        <div class="ed-c-section__body">
-          <slot></slot>
-        </div>
+        ${o12 ? x`<div class="ed-c-section__body">
+              <slot></slot>
+            </div>` : x`<slot></slot>`}
       </section>
     `;
   }
 };
 p8([
   n4()
-], i9.prototype, "align");
-customElements.get("ed-section") === void 0 && customElements.define("ed-section", i9);
+], d6.prototype, "align");
+customElements.get("ed-section") === void 0 && customElements.define("ed-section", d6);
 
 // node_modules/@brad-frost-web/eddie-web-components/components/text-passage/text-passage.js
 var g3 = '@charset "UTF-8";:root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}ed-text-passage{font-family:var(--ed-theme-typography-body-default-font-family);font-weight:var(--ed-theme-typography-body-default-font-weight);font-size:var(--ed-theme-typography-body-default-font-size);line-height:var(--ed-theme-typography-body-default-line-height);letter-spacing:var(--ed-theme-typography-body-default-letter-spacing);text-transform:var(--ed-theme-typography-body-default-text-transform)}ed-text-passage h1{font-family:var(--ed-theme-typography-headline-lg-mobile-font-family);font-weight:var(--ed-theme-typography-headline-lg-mobile-font-weight);font-size:var(--ed-theme-typography-headline-lg-mobile-font-size);line-height:var(--ed-theme-typography-headline-lg-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-lg-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-lg-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage h1{font-family:var(--ed-theme-typography-headline-lg-font-family);font-weight:var(--ed-theme-typography-headline-lg-font-weight);font-size:var(--ed-theme-typography-headline-lg-font-size);line-height:var(--ed-theme-typography-headline-lg-line-height);letter-spacing:var(--ed-theme-typography-headline-lg-letter-spacing);text-transform:var(--ed-theme-typography-headline-lg-text-transform)}}ed-text-passage h1{margin-block-end:.75rem}ed-text-passage h2{font-family:var(--ed-theme-typography-headline-default-mobile-font-family);font-weight:var(--ed-theme-typography-headline-default-mobile-font-weight);font-size:var(--ed-theme-typography-headline-default-mobile-font-size);line-height:var(--ed-theme-typography-headline-default-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-default-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-default-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage h2{font-family:var(--ed-theme-typography-headline-default-font-family);font-weight:var(--ed-theme-typography-headline-default-font-weight);font-size:var(--ed-theme-typography-headline-default-font-size);line-height:var(--ed-theme-typography-headline-default-line-height);letter-spacing:var(--ed-theme-typography-headline-default-letter-spacing);text-transform:var(--ed-theme-typography-headline-default-text-transform)}}ed-text-passage h2{margin-block-end:.75rem}ed-text-passage h3{font-family:var(--ed-theme-typography-headline-sm-mobile-font-family);font-weight:var(--ed-theme-typography-headline-sm-mobile-font-weight);font-size:var(--ed-theme-typography-headline-sm-mobile-font-size);line-height:var(--ed-theme-typography-headline-sm-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-sm-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-sm-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage h3{font-family:var(--ed-theme-typography-headline-sm-font-family);font-weight:var(--ed-theme-typography-headline-sm-font-weight);font-size:var(--ed-theme-typography-headline-sm-font-size);line-height:var(--ed-theme-typography-headline-sm-line-height);letter-spacing:var(--ed-theme-typography-headline-sm-letter-spacing);text-transform:var(--ed-theme-typography-headline-sm-text-transform)}}ed-text-passage h3{margin-block-end:.75rem}ed-text-passage h4{font-family:var(--ed-theme-typography-title-lg-mobile-font-family);font-weight:var(--ed-theme-typography-title-lg-mobile-font-weight);font-size:var(--ed-theme-typography-title-lg-mobile-font-size);line-height:var(--ed-theme-typography-title-lg-mobile-line-height);letter-spacing:var(--ed-theme-typography-title-lg-mobile-letter-spacing);text-transform:var(--ed-theme-typography-title-lg-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage h4{font-family:var(--ed-theme-typography-title-lg-font-family);font-weight:var(--ed-theme-typography-title-lg-font-weight);font-size:var(--ed-theme-typography-title-lg-font-size);line-height:var(--ed-theme-typography-title-lg-line-height);letter-spacing:var(--ed-theme-typography-title-lg-letter-spacing);text-transform:var(--ed-theme-typography-title-lg-text-transform)}}ed-text-passage h4{margin-block-end:.75rem}ed-text-passage h5{font-family:var(--ed-theme-typography-title-default-font-family);font-weight:var(--ed-theme-typography-title-default-font-weight);font-size:var(--ed-theme-typography-title-default-font-size);line-height:var(--ed-theme-typography-title-default-line-height);letter-spacing:var(--ed-theme-typography-title-default-letter-spacing);text-transform:var(--ed-theme-typography-title-default-text-transform);margin-block-end:.75rem}ed-text-passage h6{font-family:var(--ed-theme-typography-title-sm-font-family);font-weight:var(--ed-theme-typography-title-sm-font-weight);font-size:var(--ed-theme-typography-title-sm-font-size);line-height:var(--ed-theme-typography-title-sm-line-height);letter-spacing:var(--ed-theme-typography-title-sm-letter-spacing);text-transform:var(--ed-theme-typography-title-sm-text-transform);margin-block-end:.75rem}ed-text-passage ul,ed-text-passage ol{margin-block-start:0}ed-text-passage ul{margin-inline-start:1.25rem;padding-inline-start:0}ed-text-passage ol{margin-inline-start:1.125rem;padding-inline-start:0}ed-text-passage a{color:var(--ed-theme-link-color-content-default);text-decoration:underline}ed-text-passage a:hover{color:var(--ed-theme-link-color-content-hover);background-color:transparent}ed-text-passage a:active{color:var(--ed-theme-link-color-content-active)}ed-text-passage a:visited{color:var(--ed-theme-link-color-content-visited)}ed-text-passage a:focus-visible{outline:var(--ed-theme-border-width-lg) solid var(--ed-theme-focus-ring-color-border-default);outline-offset:var(--ed-theme-offset-focus-ring, .25rem )}ed-text-passage p{margin-block-start:0;margin-block-end:1.5rem}ed-text-passage blockquote{font-style:italic;border-inline-start:var(--ed-theme-border-width-lg) solid var(--ed-theme-color-border-brand);padding-inline-start:1rem;margin-inline-start:0;margin-block-end:1rem}ed-text-passage table{width:100%;border-collapse:collapse;margin-block-end:1.5rem}ed-text-passage th{font-family:var(--ed-theme-typography-label-default-font-family);font-weight:var(--ed-theme-typography-label-default-font-weight);font-size:var(--ed-theme-typography-label-default-font-size);line-height:var(--ed-theme-typography-label-default-line-height);letter-spacing:var(--ed-theme-typography-label-default-letter-spacing);text-transform:var(--ed-theme-typography-label-default-text-transform);padding:.5rem .75rem;text-align:start;border-block-end:var(--ed-theme-border-width-sm) solid var(--ed-theme-color-border-default)}ed-text-passage td{padding:.5rem .75rem;border-block-end:var(--ed-theme-border-width-sm) solid var(--ed-theme-color-border-default)}ed-text-passage :last-child{margin-block-end:0}ed-text-passage[size=sm]{font-family:var(--ed-theme-typography-body-sm-font-family);font-weight:var(--ed-theme-typography-body-sm-font-weight);font-size:var(--ed-theme-typography-body-sm-font-size);line-height:var(--ed-theme-typography-body-sm-line-height);letter-spacing:var(--ed-theme-typography-body-sm-letter-spacing);text-transform:var(--ed-theme-typography-body-sm-text-transform)}ed-text-passage[size=sm] ul{margin-inline-start:1.125rem;padding-inline-start:0}ed-text-passage[size=sm] ol{margin-inline-start:1rem;padding-inline-start:0}ed-text-passage[size=sm] p{margin-block-end:1rem}ed-text-passage[size=sm] h1{font-family:var(--ed-theme-typography-headline-default-mobile-font-family);font-weight:var(--ed-theme-typography-headline-default-mobile-font-weight);font-size:var(--ed-theme-typography-headline-default-mobile-font-size);line-height:var(--ed-theme-typography-headline-default-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-default-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-default-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage[size=sm] h1{font-family:var(--ed-theme-typography-headline-default-font-family);font-weight:var(--ed-theme-typography-headline-default-font-weight);font-size:var(--ed-theme-typography-headline-default-font-size);line-height:var(--ed-theme-typography-headline-default-line-height);letter-spacing:var(--ed-theme-typography-headline-default-letter-spacing);text-transform:var(--ed-theme-typography-headline-default-text-transform)}}ed-text-passage[size=sm] h1{margin-block-end:.75rem}ed-text-passage[size=sm] h2{font-family:var(--ed-theme-typography-headline-sm-mobile-font-family);font-weight:var(--ed-theme-typography-headline-sm-mobile-font-weight);font-size:var(--ed-theme-typography-headline-sm-mobile-font-size);line-height:var(--ed-theme-typography-headline-sm-mobile-line-height);letter-spacing:var(--ed-theme-typography-headline-sm-mobile-letter-spacing);text-transform:var(--ed-theme-typography-headline-sm-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage[size=sm] h2{font-family:var(--ed-theme-typography-headline-sm-font-family);font-weight:var(--ed-theme-typography-headline-sm-font-weight);font-size:var(--ed-theme-typography-headline-sm-font-size);line-height:var(--ed-theme-typography-headline-sm-line-height);letter-spacing:var(--ed-theme-typography-headline-sm-letter-spacing);text-transform:var(--ed-theme-typography-headline-sm-text-transform)}}ed-text-passage[size=sm] h2{margin-block-end:.75rem}ed-text-passage[size=sm] h3{font-family:var(--ed-theme-typography-title-lg-mobile-font-family);font-weight:var(--ed-theme-typography-title-lg-mobile-font-weight);font-size:var(--ed-theme-typography-title-lg-mobile-font-size);line-height:var(--ed-theme-typography-title-lg-mobile-line-height);letter-spacing:var(--ed-theme-typography-title-lg-mobile-letter-spacing);text-transform:var(--ed-theme-typography-title-lg-mobile-text-transform)}@media all and (min-width:48rem){ed-text-passage[size=sm] h3{font-family:var(--ed-theme-typography-title-lg-font-family);font-weight:var(--ed-theme-typography-title-lg-font-weight);font-size:var(--ed-theme-typography-title-lg-font-size);line-height:var(--ed-theme-typography-title-lg-line-height);letter-spacing:var(--ed-theme-typography-title-lg-letter-spacing);text-transform:var(--ed-theme-typography-title-lg-text-transform)}}ed-text-passage[size=sm] h3{margin-block-end:.75rem}ed-text-passage[size=sm] h4{font-family:var(--ed-theme-typography-title-sm-font-family);font-weight:var(--ed-theme-typography-title-sm-font-weight);font-size:var(--ed-theme-typography-title-sm-font-size);line-height:var(--ed-theme-typography-title-sm-line-height);letter-spacing:var(--ed-theme-typography-title-sm-letter-spacing);text-transform:var(--ed-theme-typography-title-sm-text-transform);margin-block-end:.75rem}ed-text-passage[inverted]{color:var(--ed-theme-color-content-knockout)}ed-text-passage[inverted] a{color:var(--ed-theme-link-color-content-knockout);text-decoration:underline}ed-text-passage[inverted] a:hover{color:var(--ed-theme-link-color-content-knockout-hover);background-color:transparent}ed-text-passage[inverted] a:active{color:var(--ed-theme-link-color-content-knockout-active)}ed-text-passage[inverted] a:visited{color:var(--ed-theme-link-color-content-knockout-visited)}ed-text-passage[inverted] a:focus-visible{outline:var(--ed-theme-border-width-lg) solid var(--ed-theme-focus-ring-color-border-knockout);outline-offset:var(--ed-theme-offset-focus-ring, .25rem )}ed-text-passage[inverted] blockquote{border-inline-start-color:var(--ed-theme-color-border-brand-knockout);color:var(--ed-theme-color-content-knockout)}';
 var p9 = ":root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}";
 var y5 = Object.defineProperty;
-var l7 = (i12, e7, t4, f6) => {
-  for (var a6 = void 0, o12 = i12.length - 1, n8; o12 >= 0; o12--)
-    (n8 = i12[o12]) && (a6 = n8(e7, t4, a6) || a6);
+var l7 = (i11, e7, t4, f7) => {
+  for (var a6 = void 0, o12 = i11.length - 1, n8; o12 >= 0; o12--)
+    (n8 = i11[o12]) && (a6 = n8(e7, t4, a6) || a6);
   return a6 && y5(e7, t4, a6), a6;
 };
 var r7 = class extends f3 {
@@ -1715,19 +1715,19 @@ l7([
 customElements.get("ed-text-passage") === void 0 && customElements.define("ed-text-passage", r7);
 
 // node_modules/@brad-frost-web/eddie-recipes/recipes/common/corner-ribbon/corner-ribbon.js
-var m7 = ":root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}:host{display:block;position:absolute;inset-block-start:0;inset-inline-end:0;z-index:1;pointer-events:none}.ed-r-corner-ribbon{display:block;position:relative;inline-size:12rem;block-size:12rem;overflow:hidden}.ed-r-corner-ribbon__strip{font-family:var(--ed-theme-typography-display-default-font-family);font-size:var(--ed-theme-typography-button-default-font-size);font-weight:var(--ed-typography-font-weight-400);line-height:var(--ed-theme-typography-label-sm-line-height);letter-spacing:var(--ed-theme-typography-label-sm-letter-spacing);text-transform:var(--ed-typography-text-transform-uppercase);text-align:center;position:absolute;inset-block-start:3.5rem;inset-inline-end:-4.25rem;inline-size:17rem;padding-block:.75rem;transform:rotate(45deg);background:var(--ed-theme-color-background-brand);color:var(--ed-theme-color-content-default);box-shadow:var(--ed-theme-box-shadow-sm)}";
+var m6 = ":root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}:host{display:block;position:absolute;inset-block-start:0;inset-inline-end:0;z-index:1;pointer-events:none}.ed-r-corner-ribbon{display:block;position:relative;inline-size:15rem;block-size:15rem;overflow:hidden}.ed-r-corner-ribbon__strip{font-family:var(--ed-theme-typography-display-default-font-family);font-size:var(--ed-theme-typography-headline-sm-font-size);font-weight:var(--ed-typography-font-weight-400);line-height:var(--ed-theme-typography-label-sm-line-height);letter-spacing:var(--ed-theme-typography-label-sm-letter-spacing);text-transform:var(--ed-typography-text-transform-uppercase);text-align:center;position:absolute;inset-block-start:4rem;inset-inline-end:-5.5rem;inline-size:22rem;padding-block:.75rem;transform:rotate(45deg);background:var(--ed-theme-button-primary-color-background-default);color:var(--ed-theme-button-primary-color-content-default);box-shadow:var(--ed-theme-box-shadow-sm)}";
 var b5 = Object.defineProperty;
 var h5 = (r9, t4, n8, c7) => {
   for (var e7 = void 0, o12 = r9.length - 1, s6; o12 >= 0; o12--)
     (s6 = r9[o12]) && (e7 = s6(t4, n8, e7) || e7);
   return e7 && b5(t4, n8, e7), e7;
 };
-var i10 = class extends f3 {
+var i9 = class extends f3 {
   constructor() {
     super(...arguments), this.text = "New";
   }
   static get styles() {
-    return r(m7);
+    return r(m6);
   }
   render() {
     const t4 = this.componentClassNames("ed-r-corner-ribbon", {});
@@ -1742,8 +1742,8 @@ var i10 = class extends f3 {
 };
 h5([
   n4()
-], i10.prototype, "text");
-customElements.get("ed-r-corner-ribbon") === void 0 && customElements.define("ed-r-corner-ribbon", i10);
+], i9.prototype, "text");
+customElements.get("ed-r-corner-ribbon") === void 0 && customElements.define("ed-r-corner-ribbon", i9);
 
 // node_modules/@brad-frost-web/eddie-recipes/recipes/common/course-banner/course-banner.js
 var a5 = '@charset "UTF-8";:root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-r-course-banner{display:flex;flex-direction:column;align-items:center;gap:2rem;position:relative}@media all and (min-width:48rem){.ed-r-course-banner{flex-direction:row;justify-content:center;gap:3rem}}.ed-r-course-banner__ring{position:absolute;inset-block-start:50%;inset-inline-start:-10rem;transform:translateY(-50%);border-width:var(--ed-theme-border-width-sm);border-style:solid;border-color:currentColor;border-radius:var(--ed-theme-border-radius-round);pointer-events:none}.ed-r-course-banner__ring:nth-of-type(1){inline-size:27rem;block-size:27rem;opacity:.11}.ed-r-course-banner__ring:nth-of-type(2){inline-size:40rem;block-size:40rem;opacity:.08}.ed-r-course-banner__ring:nth-of-type(3){inline-size:54rem;block-size:54rem;opacity:.05}.ed-r-course-banner__frame{position:absolute;inset:-1.75rem;border-width:var(--ed-theme-border-width-sm);border-style:solid;border-color:currentColor;border-radius:var(--ed-theme-border-radius-sm);opacity:.22;pointer-events:none}.ed-r-course-banner__poster{display:flex;flex-direction:column;align-items:center;gap:.75rem;flex:none;position:relative;inline-size:min(.5rem * 50,44%);text-align:center}.ed-r-course-banner__poster ::slotted([slot=mark]){inline-size:8rem;block-size:auto;margin-block-end:.5rem}.ed-r-course-banner__poster ::slotted([slot=title]){font-family:var(--ed-theme-typography-display-default-font-family);font-weight:var(--ed-typography-font-weight-400);font-size:var(--ed-theme-typography-display-default-font-size);line-height:var(--ed-theme-typography-display-default-line-height);letter-spacing:var(--ed-theme-typography-display-default-letter-spacing);text-transform:var(--ed-typography-text-transform-uppercase)}.ed-r-course-banner__poster ::slotted([slot=byline]){font-family:var(--ed-theme-typography-display-default-font-family);font-weight:var(--ed-typography-font-weight-400);font-size:calc(var(--ed-theme-typography-display-default-font-size) * .4);line-height:var(--ed-theme-typography-display-default-line-height);letter-spacing:var(--ed-theme-typography-display-default-letter-spacing);text-transform:var(--ed-typography-text-transform-uppercase);color:var(--ed-theme-color-content-brand)}.ed-r-course-banner__body{display:flex;flex-direction:column;align-items:flex-start;gap:1rem;position:relative;max-inline-size:27rem}.ed-r-course-banner__benefits{display:flex;flex-direction:column;gap:.375rem;margin:0;padding:0;list-style:none}.ed-r-course-banner__benefits ::slotted(li){font-family:var(--ed-theme-typography-label-sm-font-family);font-weight:var(--ed-theme-typography-label-sm-font-weight);font-size:var(--ed-theme-typography-label-sm-font-size);letter-spacing:var(--ed-theme-typography-label-sm-letter-spacing);text-transform:var(--ed-theme-typography-label-sm-text-transform)}.ed-r-course-banner__benefits ::slotted(li):before{content:"\u25CF";margin-inline-end:.5rem;color:var(--ed-theme-color-content-brand);font-size:.65em;vertical-align:middle}.ed-r-course-banner__actions{margin-block-start:.5rem}';
@@ -1780,21 +1780,21 @@ var o11 = class extends f3 {
 customElements.get("ed-r-course-banner") === void 0 && customElements.define("ed-r-course-banner", o11);
 
 // node_modules/@brad-frost-web/eddie-recipes/recipes/common/media-promo/media-promo.js
-var f5 = ":root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-r-media-promo{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;max-inline-size:35rem;margin-inline:auto}@media all and (min-width:48rem){.ed-r-media-promo{flex-direction:row;align-items:center;gap:2rem}}.ed-r-media-promo__media{flex:none;inline-size:7rem}.ed-r-media-promo__img{display:block;inline-size:100%;block-size:auto;box-shadow:var(--ed-theme-box-shadow-md)}.ed-r-media-promo__body{display:flex;flex-direction:column;align-items:flex-start;gap:.5rem;max-inline-size:24rem}.ed-r-media-promo__actions{margin-block-start:.25rem}";
+var f6 = ":root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-r-media-promo{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;max-inline-size:35rem;margin-inline:auto}@media all and (min-width:48rem){.ed-r-media-promo{flex-direction:row;align-items:center;gap:2rem}}.ed-r-media-promo__media{flex:none;inline-size:7rem}.ed-r-media-promo__img{display:block;inline-size:100%;block-size:auto;box-shadow:var(--ed-theme-box-shadow-md)}.ed-r-media-promo__body{display:flex;flex-direction:column;align-items:flex-start;gap:.5rem;max-inline-size:24rem}.ed-r-media-promo__actions{margin-block-start:.25rem}";
 var g4 = Object.defineProperty;
-var n7 = (o12, i12, t4, _2) => {
+var n7 = (o12, i11, t4, _2) => {
   for (var e7 = void 0, r9 = o12.length - 1, s6; r9 >= 0; r9--)
-    (s6 = o12[r9]) && (e7 = s6(i12, t4, e7) || e7);
-  return e7 && g4(i12, t4, e7), e7;
+    (s6 = o12[r9]) && (e7 = s6(i11, t4, e7) || e7);
+  return e7 && g4(i11, t4, e7), e7;
 };
-var m8 = class extends f3 {
+var m7 = class extends f3 {
   static get styles() {
-    return r(f5);
+    return r(f6);
   }
   render() {
-    const i12 = this.componentClassNames("ed-r-media-promo", {});
+    const i11 = this.componentClassNames("ed-r-media-promo", {});
     return x`
-      <div class="${i12}">
+      <div class="${i11}">
         ${this.imgSrc ? x`<div class="ed-r-media-promo__media">
               <img class="ed-r-media-promo__img" src=${this.imgSrc} alt=${this.imgAlt ?? ""} />
             </div>` : E}
@@ -1810,26 +1810,26 @@ var m8 = class extends f3 {
 };
 n7([
   n4()
-], m8.prototype, "imgSrc");
+], m7.prototype, "imgSrc");
 n7([
   n4()
-], m8.prototype, "imgAlt");
-customElements.get("ed-r-media-promo") === void 0 && customElements.define("ed-r-media-promo", m8);
+], m7.prototype, "imgAlt");
+customElements.get("ed-r-media-promo") === void 0 && customElements.define("ed-r-media-promo", m7);
 
 // node_modules/@brad-frost-web/eddie-recipes/recipes/common/project-card/project-card.js
-var m9 = ":root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-r-project-card{display:flex;flex-direction:column;height:100%;border-width:var(--ed-theme-border-width-sm);border-style:solid;border-color:var(--ed-theme-color-border-subtle);border-radius:var(--ed-theme-border-radius-md);box-shadow:var(--ed-theme-box-shadow-md);background:var(--ed-theme-color-background-default);overflow:hidden}.ed-r-project-card__media{flex:none}.ed-r-project-card__img{display:block;width:100%;height:auto;object-fit:cover}.ed-r-project-card__body{display:flex;flex-direction:column;flex:1 0 auto;padding:1.5rem;gap:.5rem}.ed-r-project-card__title{display:block}.ed-r-project-card__link{color:inherit;text-decoration:none}.ed-r-project-card__link:hover,.ed-r-project-card__link:focus{text-decoration:underline}.ed-r-project-card__description,.ed-r-project-card__banner-link{display:block}.ed-r-project-card__banner-link:focus-visible{outline:var(--ed-theme-border-width-lg) solid var(--ed-theme-focus-ring-color-border-default);outline-offset:var(--ed-theme-offset-focus-ring, .25rem )}";
+var m8 = ":root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-r-project-card{display:flex;flex-direction:column;height:100%;border-width:var(--ed-theme-border-width-sm);border-style:solid;border-color:var(--ed-theme-color-border-subtle);border-radius:var(--ed-theme-border-radius-md);box-shadow:var(--ed-theme-box-shadow-md);background:var(--ed-theme-color-background-default);overflow:hidden}.ed-r-project-card__media{flex:none}.ed-r-project-card__img{display:block;width:100%;height:auto;object-fit:cover}.ed-r-project-card__body{display:flex;flex-direction:column;flex:1 0 auto;padding:1.5rem;gap:.5rem}.ed-r-project-card__title{display:block}.ed-r-project-card__link{color:inherit;text-decoration:none}.ed-r-project-card__link:hover,.ed-r-project-card__link:focus{text-decoration:underline}.ed-r-project-card__description,.ed-r-project-card__banner-link{display:block}.ed-r-project-card__banner-link:focus-visible{outline:var(--ed-theme-border-width-lg) solid var(--ed-theme-focus-ring-color-border-default);outline-offset:var(--ed-theme-offset-focus-ring, .25rem )}";
 var g5 = Object.defineProperty;
-var i11 = (a6, o12, n8, _2) => {
-  for (var d6 = void 0, s6 = a6.length - 1, l8; s6 >= 0; s6--)
-    (l8 = a6[s6]) && (d6 = l8(o12, n8, d6) || d6);
-  return d6 && g5(o12, n8, d6), d6;
+var i10 = (a6, o12, n8, _2) => {
+  for (var d7 = void 0, s6 = a6.length - 1, l8; s6 >= 0; s6--)
+    (l8 = a6[s6]) && (d7 = l8(o12, n8, d7) || d7);
+  return d7 && g5(o12, n8, d7), d7;
 };
 var r8 = class extends f3 {
   constructor() {
     super(...arguments), this.title = "", this.headingTagName = "h3";
   }
   static get styles() {
-    return r(m9);
+    return r(m8);
   }
   render() {
     const o12 = this.componentClassNames("ed-r-project-card", {
@@ -1858,25 +1858,25 @@ var r8 = class extends f3 {
     `;
   }
 };
-i11([
+i10([
   n4()
 ], r8.prototype, "title");
-i11([
+i10([
   n4()
 ], r8.prototype, "description");
-i11([
+i10([
   n4()
 ], r8.prototype, "imgSrc");
-i11([
+i10([
   n4()
 ], r8.prototype, "imgAlt");
-i11([
+i10([
   n4()
 ], r8.prototype, "headingTagName");
-i11([
+i10([
   n4()
 ], r8.prototype, "href");
-i11([
+i10([
   n4()
 ], r8.prototype, "variant");
 customElements.get("ed-r-project-card") === void 0 && customElements.define("ed-r-project-card", r8);
