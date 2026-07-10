@@ -24,7 +24,6 @@
 			<!-- Course band -->
 			<ed-layout-container class="ed-u-margin-block-end-xl">
 				<ed-band variant="brand-knockout" contained padding="roomy">
-					<ed-r-corner-ribbon></ed-r-corner-ribbon>
 					<ed-r-course-banner>
 						<img slot="mark" src="/images/icon-atom-knockout.svg" alt="" width="128" height="128" />
 						<span slot="title">Atomic Design</span>
@@ -52,30 +51,29 @@
 							text="Get Atomic Design Certified"
 						></ed-button>
 					</ed-r-course-banner>
+					<ed-r-corner-ribbon></ed-r-corner-ribbon>
 				</ed-band>
 			</ed-layout-container>
 
 			<!-- Book band -->
 			<ed-layout-container class="ed-u-margin-block-end-xl">
 				<ed-band contained>
-					<ed-feature
-						mediaSize="sm"
-						behavior="reversed"
+					<ed-r-media-promo
 						imgSrc="/images/book-cover.svg"
 						imgAlt="Atomic Design by Brad Frost, book cover"
 					>
-					<ed-heading tagName="h2">Here's the book</ed-heading>
-					<ed-text-passage>
-						<p>
-							The 2015 book that introduced the methodology. Read
-							<em>Atomic Design</em> free online, cover to cover.
-						</p>
-					</ed-text-passage>
-					<ed-button-group>
-						<ed-button variant="primary" appearance="outline" href="https://shop.bradfrost.com" text="Get the ebook"></ed-button>
-						<ed-button appearance="outline" href="/table-of-contents" text="Read for free"></ed-button>
-					</ed-button-group>
-					</ed-feature>
+						<ed-heading tagName="h2">Here's the book</ed-heading>
+						<ed-text-passage>
+							<p>
+								The 2015 book that introduced the methodology. Read
+								<em>Atomic Design</em> free online, cover to cover.
+							</p>
+						</ed-text-passage>
+						<ed-button-group slot="actions">
+							<ed-button variant="primary" appearance="outline" href="https://shop.bradfrost.com" text="Get the ebook"></ed-button>
+							<ed-button appearance="outline" href="/table-of-contents" text="Read for free"></ed-button>
+						</ed-button-group>
+					</ed-r-media-promo>
 				</ed-band>
 			</ed-layout-container>
 
@@ -84,6 +82,7 @@
 				<ed-band contained padding="compact">
 					<ed-section align="center">
 						<ed-heading slot="header" tagName="h2" variant="label-lg">Master design systems with all three courses</ed-heading>
+					<ed-layout-container variant="narrow">
 					<ed-grid variant="3up">
 						<ed-grid-item>
 							<ed-r-project-card
@@ -116,6 +115,7 @@
 							></ed-r-project-card>
 						</ed-grid-item>
 					</ed-grid>
+					</ed-layout-container>
 					</ed-section>
 				</ed-band>
 			</ed-layout-container>
