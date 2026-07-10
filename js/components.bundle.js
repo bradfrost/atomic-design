@@ -1599,12 +1599,12 @@ d5([
 customElements.get("ed-heading") === void 0 && customElements.define("ed-heading", i7);
 
 // node_modules/@brad-frost-web/eddie-web-components/components/layout-container/layout-container.js
-var c6 = '@charset "UTF-8";:root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}.ed-l-layout-container{width:100%;max-width:var(--ed-layout-container-max-width, 70rem);padding-inline-end:1rem;padding-inline-start:1rem;margin:0 auto}.ed-l-layout-container--narrow{max-width:50rem}';
-var u4 = Object.defineProperty;
-var h3 = (r9, e7, o12, p10) => {
-  for (var t4 = void 0, n8 = r9.length - 1, a6; n8 >= 0; n8--)
-    (a6 = r9[n8]) && (t4 = a6(e7, o12, t4) || t4);
-  return t4 && u4(e7, o12, t4), t4;
+var c6 = '@charset "UTF-8";:root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}:host{display:block}.ed-l-layout-container{width:100%;max-width:var(--ed-layout-container-max-width, 70rem);padding-inline-end:1rem;padding-inline-start:1rem;margin:0 auto}.ed-l-layout-container--narrow{max-width:50rem}';
+var h3 = Object.defineProperty;
+var u4 = (r9, e7, n8, p10) => {
+  for (var t4 = void 0, o12 = r9.length - 1, a6; o12 >= 0; o12--)
+    (a6 = r9[o12]) && (t4 = a6(e7, n8, t4) || t4);
+  return t4 && h3(e7, n8, t4), t4;
 };
 var i8 = class extends f3 {
   static get styles() {
@@ -1621,7 +1621,7 @@ var i8 = class extends f3 {
     `;
   }
 };
-h3([
+u4([
   n4()
 ], i8.prototype, "variant");
 customElements.get("ed-layout-container") === void 0 && customElements.define("ed-layout-container", i8);
@@ -1715,7 +1715,7 @@ l7([
 customElements.get("ed-text-passage") === void 0 && customElements.define("ed-text-passage", r7);
 
 // node_modules/@brad-frost-web/eddie-recipes/recipes/common/corner-ribbon/corner-ribbon.js
-var m6 = ":root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}:host{display:block;position:absolute;inset-block-start:0;inset-inline-end:0;z-index:1;pointer-events:none}.ed-r-corner-ribbon{display:block;position:relative;inline-size:15rem;block-size:15rem;overflow:hidden}.ed-r-corner-ribbon__strip{font-family:var(--ed-theme-typography-display-default-font-family);font-size:var(--ed-theme-typography-headline-sm-font-size);font-weight:var(--ed-typography-font-weight-400);line-height:var(--ed-theme-typography-label-sm-line-height);letter-spacing:var(--ed-theme-typography-label-sm-letter-spacing);text-transform:var(--ed-typography-text-transform-uppercase);text-align:center;position:absolute;inset-block-start:4rem;inset-inline-end:-5.5rem;inline-size:22rem;padding-block:.75rem;transform:rotate(45deg);background:var(--ed-theme-button-primary-color-background-default);color:var(--ed-theme-button-primary-color-content-default);box-shadow:var(--ed-theme-box-shadow-sm)}";
+var m6 = ":root,:host{--size-base-unit: .5rem}*,::slotted(*),*:before,*:after{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0}:host{display:block;position:absolute;inset-block-start:0;inset-inline-end:0;z-index:1;pointer-events:none}.ed-r-corner-ribbon{display:block;position:relative;inline-size:9.5rem;block-size:9.5rem;overflow:hidden}.ed-r-corner-ribbon__strip{font-family:var(--ed-theme-typography-display-default-font-family);font-size:var(--ed-theme-typography-headline-sm-font-size);font-weight:var(--ed-typography-font-weight-400);line-height:var(--ed-theme-typography-label-sm-line-height);letter-spacing:var(--ed-theme-typography-label-sm-letter-spacing);text-transform:var(--ed-typography-text-transform-uppercase);text-align:center;position:absolute;inset-block-start:1.75rem;inset-inline-end:-3.5rem;inline-size:14rem;padding-block:.125rem;transform:rotate(45deg);background:var(--ed-theme-button-primary-color-background-default);color:var(--ed-theme-button-primary-color-content-default);box-shadow:var(--ed-theme-box-shadow-sm)}";
 var b5 = Object.defineProperty;
 var h5 = (r9, t4, n8, c7) => {
   for (var e7 = void 0, o12 = r9.length - 1, s6; o12 >= 0; o12--)
