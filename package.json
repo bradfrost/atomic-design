@@ -14,8 +14,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@brad-frost-web/eddie-design-tokens": "*",
-    "@brad-frost-web/eddie-web-components": "*"
+    "@brad-frost-web/eddie-design-tokens": "^0.37.0",
+    "@brad-frost-web/eddie-icons": "^0.37.0",
+    "@brad-frost-web/eddie-recipes": "^0.37.0",
+    "@brad-frost-web/eddie-web-components": "^0.37.0"
   },
   "devDependencies": {
     "@brad-frost-web/bfw-process": "0.13.0",
