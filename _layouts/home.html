@@ -1,36 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	{% include head.html %}
 	<body>
-		<main class="title">
-			<img src="/images/book-cover.svg" alt="Atomic Design by Brad Frost" />
-			<div class="title-col-2">
-				<h1>
-					<cite>Atomic Design</cite> by
-					<a href="http://bradfrost.com" rel="me">Brad Frost</a>
-				</h1>
-				<p>
-					We're tasked with making interfaces for more users in more contexts
-					using more browsers on more devices with more screen sizes and more
-					capabilities than ever before. That's a daunting task indeed.
-					Thankfully, design systems are here to help.
-				</p>
-				<p>
-					<em>Atomic Design</em> details all that goes into creating and
-					maintaining robust design systems, allowing you to roll out higher
-					quality, more consistent UIs faster than ever before. This book
-					introduces a methodology for thinking of our UIs as thoughtful
-					hierarchies, discusses the qualities of effective pattern libraries,
-					and showcases techniques to transform your team's design and
-					development workflow.
-				</p>
-				<div class="btn-group">
-					<a href="http://shop.bradfrost.com" class="btn">Order the e-book</a>
-					<a href="/table-of-contents" class="btn">Read Now</a>
-				</div>
-			</div>
+		<main>
+			<!-- Framing preface -->
+			<ed-layout-container variant="narrow" class="ed-u-margin-block-start-lg ed-u-margin-block-end-lg">
+				<ed-section align="center">
+					<img
+						slot="header"
+						src="/images/five-stages.svg"
+						alt="Atoms, molecules, organisms, templates, pages"
+						width="280"
+					/>
+					<ed-heading slot="header" tagName="h1" variant="title-sm">
+						Atomic design is a methodology for creating successful design systems.
+					</ed-heading>
+				</ed-section>
+			</ed-layout-container>
+
+			<!-- Course band -->
+			<ed-band variant="brand-knockout" class="ed-u-margin-block-end-xl">
+				<ed-layout-container>
+					<ed-feature
+						inverted
+						imgSrc="/images/atomic-design-horizontal-knockout.svg"
+						imgAlt="Atomic Design, certification course by Brad Frost"
+					>
+						<ed-heading tagName="h2" styleModifier="ed-u-is-vishidden">
+							Atomic Design Certification Course
+						</ed-heading>
+						<ed-badge text="New" variant="brand" appearance="solid" size="md"></ed-badge>
+						<ed-text-passage inverted>
+							<p>
+								Master design systems and the atomic design methodology at
+								scale. Five chapters of self-paced video taught by the creator
+								of atomic design and built on 13 years of design system
+								practice.
+							</p>
+							<ul>
+								<li>Video + hands-on exercises</li>
+								<li>Slack community</li>
+								<li>Lifetime access, free updates</li>
+								<li>Certificate of completion</li>
+							</ul>
+						</ed-text-passage>
+						<ed-button
+							variant="primary"
+							size="lg"
+							href="https://atomicdesigncourse.com/"
+							text="Get Atomic Design Certified"
+						></ed-button>
+					</ed-feature>
+				</ed-layout-container>
+			</ed-band>
+
+			<!-- Book band -->
+			<ed-layout-container class="ed-u-margin-block-end-xl">
+				<ed-feature
+					imgSrc="/images/book-cover.svg"
+					imgAlt="Atomic Design by Brad Frost, book cover"
+				>
+					<ed-heading tagName="h2">Here's the book</ed-heading>
+					<ed-text-passage>
+						<p>
+							The 2015 book that introduced the methodology. Read
+							<em>Atomic Design</em> free online, cover to cover.
+						</p>
+					</ed-text-passage>
+					<ed-button-group>
+						<ed-button href="https://shop.bradfrost.com" text="Get the ebook"></ed-button>
+						<ed-button href="/table-of-contents" text="Read for free"></ed-button>
+					</ed-button-group>
+				</ed-feature>
+			</ed-layout-container>
+
+			<!-- Continue the journey -->
+			<ed-layout-container class="ed-u-margin-block-end-xxl">
+				<ed-section align="center">
+					<ed-heading slot="header" tagName="h2">Continue the journey</ed-heading>
+					<ed-grid variant="3up">
+						<ed-grid-item>
+							<ed-r-project-card
+								imgSrc="/images/subatomic-social-card.png"
+								imgAlt="Subatomic course banner"
+								title="Subatomic"
+								description="The complete guide to design tokens."
+								headingTagName="h3"
+								href="https://designtokenscourse.com/"
+							></ed-r-project-card>
+						</ed-grid-item>
+						<ed-grid-item>
+							<ed-r-project-card
+								imgSrc="/images/ai-design-systems-social-card.png"
+								imgAlt="AI and Design Systems course banner"
+								title="AI &amp; Design Systems"
+								description="Learn how to use AI with design systems."
+								headingTagName="h3"
+								href="https://aianddesign.systems/"
+							></ed-r-project-card>
+						</ed-grid-item>
+						<ed-grid-item>
+							<ed-r-project-card
+								imgSrc="/images/mega-bundle.png"
+								imgAlt="Mega Bundle course banner"
+								title="Mega Bundle"
+								description="Level up with the combined powers of Subatomic, Atomic Design, and AI &amp; Design Systems."
+								headingTagName="h3"
+								href="https://shop.bradfrost.com"
+							></ed-r-project-card>
+						</ed-grid-item>
+					</ed-grid>
+				</ed-section>
+			</ed-layout-container>
 		</main>
-		<!-- Bundled web component -->
+		<!-- Bundled web components -->
 		<script type="module" src="/js/components.bundle.js"></script>
 	</body>
 </html>
