@@ -1,0 +1,22 @@
+{
+  "version": "0.4.0",
+  "mode": "full",
+  "owners": [
+    {
+      "name": "Brad Frost",
+      "email": "brad@bradfrost.com"
+    },
+    {
+      "name": "Ian Frost",
+      "email": "ian@bradfrost.com"
+    }
+  ],
+  "projectType": "content-site",
+  "projectName": "atomic-design",
+  "framework": "none",
+  "eddieIntegration": true,
+  "eddieRoot": "/Users/jv/Sites/Eddie/eddie-design-system",
+  "hardGates": {
+    "shipReadiness": true
+  }
+}
