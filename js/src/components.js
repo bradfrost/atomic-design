@@ -12,4 +12,5 @@ import '@brad-frost-web/eddie-web-components/components/text-passage/text-passag
 
 // Eddie recipes
 import '@brad-frost-web/eddie-recipes/recipes/common/corner-ribbon/corner-ribbon.js';
+import '@brad-frost-web/eddie-recipes/recipes/common/course-banner/course-banner.js';
 import '@brad-frost-web/eddie-recipes/recipes/common/project-card/project-card.js';

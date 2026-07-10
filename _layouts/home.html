@@ -23,14 +23,12 @@
 
 			<!-- Course band -->
 			<ed-layout-container class="ed-u-margin-block-end-xl">
-				<ed-band variant="brand-knockout" contained>
+				<ed-band variant="brand-knockout" contained padding="roomy">
 					<ed-r-corner-ribbon></ed-r-corner-ribbon>
-					<ed-feature
-						inverted
-						behavior="reversed"
-						imgSrc="/images/atomic-design-horizontal-knockout.svg"
-						imgAlt="Atomic Design, certification course by Brad Frost"
-					>
+					<ed-r-course-banner>
+						<img slot="mark" src="/images/icon-atom-knockout.svg" alt="" width="128" height="128" />
+						<span slot="title">Atomic Design</span>
+						<span slot="byline">Certification course by Brad Frost</span>
 						<ed-heading tagName="h2" visuallyHidden>
 							Atomic Design Certification Course
 						</ed-heading>
@@ -41,20 +39,19 @@
 								of atomic design and built on 13 years of design system
 								practice.
 							</p>
-							<ul>
-								<li>Video + hands-on exercises</li>
-								<li>Slack community</li>
-								<li>Lifetime access, free updates</li>
-								<li>Certificate of completion</li>
-							</ul>
 						</ed-text-passage>
+						<li slot="benefits">Video + hands-on exercises</li>
+						<li slot="benefits">Slack community</li>
+						<li slot="benefits">Lifetime access, free updates</li>
+						<li slot="benefits">Certificate of completion</li>
 						<ed-button
+							slot="actions"
 							variant="primary"
 							size="lg"
 							href="https://atomicdesigncourse.com/"
 							text="Get Atomic Design Certified"
 						></ed-button>
-					</ed-feature>
+					</ed-r-course-banner>
 				</ed-band>
 			</ed-layout-container>
 
@@ -75,8 +72,8 @@
 						</p>
 					</ed-text-passage>
 					<ed-button-group>
-						<ed-button href="https://shop.bradfrost.com" text="Get the ebook"></ed-button>
-						<ed-button href="/table-of-contents" text="Read for free"></ed-button>
+						<ed-button variant="primary" appearance="outline" href="https://shop.bradfrost.com" text="Get the ebook"></ed-button>
+						<ed-button appearance="outline" href="/table-of-contents" text="Read for free"></ed-button>
 					</ed-button-group>
 					</ed-feature>
 				</ed-band>
@@ -84,7 +81,7 @@
 
 			<!-- Continue the journey -->
 			<ed-layout-container class="ed-u-margin-block-end-xxl">
-				<ed-band contained>
+				<ed-band contained padding="compact">
 					<ed-section align="center">
 						<ed-heading slot="header" tagName="h2" variant="label-lg">Master design systems with all three courses</ed-heading>
 					<ed-grid variant="3up">
