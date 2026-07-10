@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	{% include head.html %}
-	<body>
+	<body style="background: var(--ed-theme-color-background-default); color: var(--ed-theme-color-content-default)">
 		<main>
 			<!-- Framing preface -->
 			<ed-layout-container variant="narrow" class="ed-u-margin-block-start-lg ed-u-margin-block-end-lg">
@@ -12,9 +12,12 @@
 						alt="Atoms, molecules, organisms, templates, pages"
 						width="280"
 					/>
-					<ed-heading slot="header" tagName="h1" variant="title-sm">
-						Atomic design is a methodology for creating successful design systems.
+					<ed-heading slot="header" tagName="h1" visuallyHidden>
+						Atomic Design by Brad Frost
 					</ed-heading>
+					<ed-text-passage slot="header" size="sm">
+						<p><em>Atomic design is a methodology for creating successful design systems.</em></p>
+					</ed-text-passage>
 				</ed-section>
 			</ed-layout-container>
 
@@ -24,10 +27,11 @@
 					<ed-r-corner-ribbon></ed-r-corner-ribbon>
 					<ed-feature
 						inverted
+						behavior="reversed"
 						imgSrc="/images/atomic-design-horizontal-knockout.svg"
 						imgAlt="Atomic Design, certification course by Brad Frost"
 					>
-						<ed-heading tagName="h2" styleModifier="ed-u-is-vishidden">
+						<ed-heading tagName="h2" visuallyHidden>
 							Atomic Design Certification Course
 						</ed-heading>
 						<ed-text-passage inverted>
@@ -58,6 +62,8 @@
 			<ed-layout-container class="ed-u-margin-block-end-xl">
 				<ed-band contained>
 					<ed-feature
+						mediaSize="sm"
+						behavior="reversed"
 						imgSrc="/images/book-cover.svg"
 						imgAlt="Atomic Design by Brad Frost, book cover"
 					>
@@ -80,7 +86,7 @@
 			<ed-layout-container class="ed-u-margin-block-end-xxl">
 				<ed-band contained>
 					<ed-section align="center">
-						<ed-heading slot="header" tagName="h2">Master design systems with all three courses</ed-heading>
+						<ed-heading slot="header" tagName="h2" variant="label-lg">Master design systems with all three courses</ed-heading>
 					<ed-grid variant="3up">
 						<ed-grid-item>
 							<ed-r-project-card
