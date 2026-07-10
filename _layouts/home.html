@@ -19,8 +19,9 @@
 			</ed-layout-container>
 
 			<!-- Course band -->
-			<ed-band variant="brand-knockout" class="ed-u-margin-block-end-xl">
-				<ed-layout-container>
+			<ed-layout-container class="ed-u-margin-block-end-xl">
+				<ed-band variant="brand-knockout" contained>
+					<ed-r-corner-ribbon></ed-r-corner-ribbon>
 					<ed-feature
 						inverted
 						imgSrc="/images/atomic-design-horizontal-knockout.svg"
@@ -29,7 +30,6 @@
 						<ed-heading tagName="h2" styleModifier="ed-u-is-vishidden">
 							Atomic Design Certification Course
 						</ed-heading>
-						<ed-badge text="New" variant="brand" appearance="solid" size="md"></ed-badge>
 						<ed-text-passage inverted>
 							<p>
 								Master design systems and the atomic design methodology at
@@ -51,15 +51,16 @@
 							text="Get Atomic Design Certified"
 						></ed-button>
 					</ed-feature>
-				</ed-layout-container>
-			</ed-band>
+				</ed-band>
+			</ed-layout-container>
 
 			<!-- Book band -->
 			<ed-layout-container class="ed-u-margin-block-end-xl">
-				<ed-feature
-					imgSrc="/images/book-cover.svg"
-					imgAlt="Atomic Design by Brad Frost, book cover"
-				>
+				<ed-band contained>
+					<ed-feature
+						imgSrc="/images/book-cover.svg"
+						imgAlt="Atomic Design by Brad Frost, book cover"
+					>
 					<ed-heading tagName="h2">Here's the book</ed-heading>
 					<ed-text-passage>
 						<p>
@@ -71,13 +72,15 @@
 						<ed-button href="https://shop.bradfrost.com" text="Get the ebook"></ed-button>
 						<ed-button href="/table-of-contents" text="Read for free"></ed-button>
 					</ed-button-group>
-				</ed-feature>
+					</ed-feature>
+				</ed-band>
 			</ed-layout-container>
 
 			<!-- Continue the journey -->
 			<ed-layout-container class="ed-u-margin-block-end-xxl">
-				<ed-section align="center">
-					<ed-heading slot="header" tagName="h2">Master design systems with all three courses</ed-heading>
+				<ed-band contained>
+					<ed-section align="center">
+						<ed-heading slot="header" tagName="h2">Master design systems with all three courses</ed-heading>
 					<ed-grid variant="3up">
 						<ed-grid-item>
 							<ed-r-project-card
@@ -110,7 +113,8 @@
 							></ed-r-project-card>
 						</ed-grid-item>
 					</ed-grid>
-				</ed-section>
+					</ed-section>
+				</ed-band>
 			</ed-layout-container>
 		</main>
 		<!-- Bundled web components -->

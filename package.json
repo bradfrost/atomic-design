@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "Atomic Design book website",
   "scripts": {
-    "build:components": "esbuild js/src/components.js --bundle --format=esm --outfile=js/components.bundle.js",
-    "watch:components": "esbuild js/src/components.js --bundle --format=esm --outfile=js/components.bundle.js --watch",
+    "build:components": "esbuild js/src/components.js --bundle --format=esm --preserve-symlinks --outfile=js/components.bundle.js",
+    "watch:components": "esbuild js/src/components.js --bundle --format=esm --preserve-symlinks --outfile=js/components.bundle.js --watch",
     "build:css": "sass --load-path=node_modules css/style.scss _site/css/style.css --style=compressed",
     "watch:css": "sass --load-path=node_modules css/style.scss _site/css/style.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
