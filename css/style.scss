@@ -3,8 +3,8 @@
 
 @use "@brad-frost-web/eddie-design-tokens/core/scss/typography-usage.scss" as *;
 @use "@brad-frost-web/eddie-design-tokens/core/scss/abstracts/mixins.scss" as *;
-@use "@brad-frost-web/eddie-design-tokens/bfw/css/fonts";
-@use "@brad-frost-web/eddie-design-tokens/bfw/build/css/tokens" as tokens;
+@use "@brad-frost-web/eddie-design-tokens/atomic-design/css/fonts";
+@use "@brad-frost-web/eddie-design-tokens/atomic-design/build/css/tokens" as tokens;
 @use "@brad-frost-web/eddie-design-tokens/core/scss/utilities/index.scss" as *;
 
 /*------------------------------------*\
