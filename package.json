@@ -13,8 +13,8 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@brad-frost-web/eddie-design-tokens": "*",
-		"@brad-frost-web/eddie-web-components": "*"
+		"@brad-frost-web/eddie-design-tokens": "^0.39.0",
+		"@brad-frost-web/eddie-web-components": "^0.39.0"
 	},
 	"devDependencies": {
 		"esbuild": "^0.24.0",
