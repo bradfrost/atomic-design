@@ -1,37 +1,37 @@
-<dialog class="course-modal" id="course-modal" aria-labelledby="course-modal-title">
-	<div class="course-modal__inner">
-		<button class="course-modal__dismiss" type="button" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
+<!-- Engagement-triggered marketing modal on interior (chapter) pages.
+     Uses Eddie's <ed-modal> (see js/src/components.js) to demonstrate adopting
+     the design system. As of Eddie 0.39 <ed-modal> renders a native <dialog>
+     in modal mode, so the close button, backdrop, focus trap, Esc-to-close and
+     focus restore all come from the component/browser; js/course-cta.js only
+     decides when to open it (reader engagement) via the isActive property. -->
+<ed-modal class="course-modal" id="course-modal" dialogLabel="Get Atomic Design Certified">
+	<h2 slot="header" class="course-modal__title">Get Atomic Design Certified!</h2>
 
-		<h2 class="course-modal__title" id="course-modal-title">Get Atomic Design Certified!</h2>
+	<p class="course-modal__lead">
+		You&rsquo;re clearly into this &mdash; you&rsquo;re reading the book. For the
+		<strong>latest thinking and battle-tested best practices</strong>, the
+		Atomic Design Certification Course distills years of hands-on experience
+		building design systems with dozens of organizations. You&rsquo;re here,
+		but the latest and greatest is over here.
+	</p>
 
-		<p class="course-modal__lead">
-			You&rsquo;re clearly into this &mdash; you&rsquo;re reading the book. For the
-			<strong>latest thinking and battle-tested best practices</strong>, the
-			Atomic Design Certification Course distills years of hands-on experience
-			building design systems with dozens of organizations. You&rsquo;re here,
-			but the latest and greatest is over here.
-		</p>
+	<ul class="course-modal__list">
+		<li>Self-paced video course &mdash; 10+ hours of video content</li>
+		<li>A complete sample design system architecture</li>
+		<li>Downloadable resources</li>
+		<li>A community to learn alongside</li>
+	</ul>
 
-		<ul class="course-modal__list">
-			<li>Self-paced video course &mdash; 10+ hours of video content</li>
-			<li>A complete sample design system architecture</li>
-			<li>Downloadable resources</li>
-			<li>A community to learn alongside</li>
-		</ul>
+	<a class="btn course-modal__cta" href="https://atomicdesigncourse.com" rel="external noopener" target="_blank">
+		Learn more and get certified!
+	</a>
 
-		<a class="btn course-modal__cta" href="https://atomicdesigncourse.com" rel="external">
-			Learn more and get certified!
-		</a>
-
-		<p class="course-modal__secondary">
-			Want more? Explore the
-			<a href="https://designtokenscourse.com/" rel="external">Design Tokens</a>
-			and
-			<a href="https://aianddesign.systems/" rel="external">AI &amp; Design Systems</a>
-			courses, or grab the
-			<a href="https://courses.bradfrost.com/order?ct=c915a299-8eb3-413e-8c39-61a0f2fd7b7d" rel="external">Mega Bundle</a>.
-		</p>
-	</div>
-</dialog>
+	<p class="course-modal__secondary">
+		Want more? Explore the
+		<a href="https://designtokenscourse.com/" rel="external noopener" target="_blank">Design Tokens</a>
+		and
+		<a href="https://aianddesign.systems/" rel="external noopener" target="_blank">AI &amp; Design Systems</a>
+		courses, or grab the
+		<a href="https://courses.bradfrost.com/order?ct=c915a299-8eb3-413e-8c39-61a0f2fd7b7d" rel="external noopener" target="_blank">Mega Bundle</a>.
+	</p>
+</ed-modal>

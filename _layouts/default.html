@@ -9,5 +9,7 @@
     </main>
     {% include course-modal.html %}
     {% include footer.html %}
+    <!-- Eddie web components (registers <ed-modal> for the course modal above) -->
+    <script type="module" src="{{ "/js/components.bundle.js" | prepend: site.baseurl }}"></script>
   </body>
 </html>

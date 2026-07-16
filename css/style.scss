@@ -353,9 +353,12 @@ pre {
 		text-decoration: none;
 		transition: color $speed-fast ease-out;
 
+		// Underline only on hover/focus (not by default) so keyboard focus is
+		// clearly visible beyond the color change alone (WCAG 2.1 AA). See #173.
 		&:hover,
 		&:focus {
 			color: $orange;
+			text-decoration: underline;
 		}
 	}
 
@@ -398,15 +401,11 @@ pre {
 			position: absolute;
 			bottom: 0;
 			left: 50%;
-			margin-left: -5.375em;
+			// translateX keeps it centered even as it widens on hover/focus.
+			transform: translateX(-50%);
 			margin-bottom: 0;
 			z-index: 1;
 			transition: all $speed-fast ease-out;
-
-			&:hover,
-			&:focus {
-				padding-bottom: 1.5em;
-			}
 		}
 	}
 
@@ -1061,66 +1060,76 @@ h2 .title-link {
 \*------------------------------------*/
 
 // The fixed .banner is the course footer; its course CTA reuses .btn.
-// These just style the secondary ebook link that sits next to the author.
-.banner-content {
+// "Atomic Design by Brad Frost" sits on the left (h3); the ebook link is
+// pulled to the right (p). Footer links underline on hover/focus only —
+// see the .banner-content a rule in $BANNER STYLES above. (#173)
 
-	.banner-ebook {
-		text-decoration: underline;
-	}
+// Hover/focus reveal on the centered course CTA: it lifts up and shows punchy
+// course details — Brad's "what does 'Get Atomic Design Certified' mean?" idea.
+// Details are collapsed by default and expand above the label (the button is
+// anchored to the banner's bottom edge, so growth pushes it upward).
+.banner-content .banner-cta {
+	display: flex;
+	flex-direction: column; // label on top; the list slides up into view below it
+	align-items: center;
+	overflow: hidden;
 
-	.banner-sep {
-		margin: 0 0.25em;
-		opacity: 0.5;
+	// The CTA is a link, but it should never underline — the slide-up reveal is
+	// the only affordance. Overrides the footer-link underline in $BANNER STYLES.
+	&:hover,
+	&:focus,
+	&:focus-visible {
+		text-decoration: none;
 	}
+}
+
+// The course details list — visually distinct from the button label above it:
+// smaller, lighter, and set off by a hairline rule. Collapsed by default;
+// slides up into view on hover/focus.
+.banner-cta__details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.35em;
+	max-width: 18em;
+	max-height: 0;
+	margin-top: 0;
+	padding-top: 0;
+	border-top: 1px solid transparent;
+	opacity: 0;
+	transform: translateY(0.4em);
+	font-size: 0.72em;
+	line-height: 1.35;
+	text-transform: none;
+	color: $tan;
+	transition: max-height $speed-fast ease-out, opacity $speed-fast ease-out,
+		margin-top $speed-fast ease-out, padding-top $speed-fast ease-out,
+		transform $speed-fast ease-out;
+
+	.banner-cta:hover &,
+	.banner-cta:focus &,
+	.banner-cta:focus-visible & {
+		max-height: 12em;
+		margin-top: 0.7em;
+		padding-top: 0.7em;
+		border-top-color: rgba($tan, 0.25);
+		opacity: 0.92;
+		transform: translateY(0);
+	}
+}
+
+// Prevent a flash of the modal's slotted content before <ed-modal> upgrades
+// (an undefined custom element renders its children inline in the page).
+ed-modal:not(:defined) {
+	display: none;
 }
 
 // Engagement-triggered marketing modal on interior (chapter) pages.
-// Native <dialog> so we get a backdrop, focus trapping and Esc-to-close for
-// free. Centered on the screen; shown once per reader (see js/course-cta.js).
-.course-modal {
-	width: min(34rem, 100%);
-	max-width: calc(100% - 2rem);
-	max-height: calc(100% - 2rem);
-	// The global reset zeroes the UA margin:auto that centers a modal <dialog>.
-	margin: auto;
-	padding: 0;
-	border: 0;
-	border-top: 4px solid $orange;
-	border-radius: 0.5rem;
-	background: $tan-light;
-	color: $brown;
-	box-shadow: 0 16px 48px rgba(0, 0, 0, 0.28);
-
-	// fade + scale in on open; falls back to an instant open where unsupported
-	opacity: 0;
-	transform: scale(0.96);
-	transition: opacity 0.2s ease, transform 0.2s ease;
-
-	&[open] {
-		opacity: 1;
-		transform: scale(1);
-	}
-
-	@starting-style {
-		&[open] {
-			opacity: 0;
-			transform: scale(0.96);
-		}
-	}
-
-	&::backdrop {
-		background: rgba(17, 0, 0, 0.5);
-	}
-}
-
-.course-modal__inner {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 1.25rem;
-	padding: 3rem 2rem 2rem;
-}
-
+// Uses Eddie's <ed-modal>; the window, backdrop and close button come from the
+// component (styled by the Eddie design tokens), so these rules only style the
+// slotted content. The old flex `gap` is gone with the custom wrapper, so the
+// blocks below carry their own top margins. Shown once per reader
+// (see js/course-cta.js).
 .course-modal__title {
 	margin: 0;
 	font-family: $font-primary;
@@ -1132,13 +1141,15 @@ h2 .title-link {
 	margin: 0;
 	font-size: 1.05rem;
 	line-height: 1.5;
+	color: $brown;
 }
 
 .course-modal__list {
-	margin: 0;
+	margin: 1.25rem 0 0;
 	padding-left: 1.25rem;
 	font-size: 0.95rem;
 	line-height: 1.5;
+	color: $brown;
 
 	li + li {
 		margin-top: 0.4rem;
@@ -1146,48 +1157,19 @@ h2 .title-link {
 }
 
 .course-modal__cta {
-	align-self: stretch;
+	display: block;
+	margin: 1.5rem 0 0;
 	text-align: center;
 }
 
 .course-modal__secondary {
-	margin: 0;
+	margin: 1.25rem 0 0;
 	font-size: 0.9rem;
 	line-height: 1.5;
+	color: $brown;
 
 	a {
 		color: $orange;
-	}
-}
-
-.course-modal__dismiss {
-	position: absolute;
-	top: 0.5rem;
-	right: 0.5rem;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	width: 2.5rem;
-	height: 2.5rem;
-	padding: 0;
-	background: transparent;
-	border: 0;
-	color: $brown;
-	font-size: 1.75rem;
-	line-height: 1;
-	cursor: pointer;
-	opacity: 0.7;
-	transition: opacity 0.2s ease;
-
-	&:hover,
-	&:focus {
-		opacity: 1;
-	}
-}
-
-@media (prefers-reduced-motion: reduce) {
-	.course-modal {
-		transition: none;
 	}
 }
 

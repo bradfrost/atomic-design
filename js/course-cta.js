@@ -1,9 +1,14 @@
 // Course marketing modal for the book's interior (chapter) pages.
 //
-// A centered <dialog> shown once per reader — only after they've engaged
-// (scrolled ~50% of the page OR spent ~15s), never on load. Dismissal is
+// A centered modal shown once per reader — only after they've engaged
+// (scrolled ~50% of the page OR spent ~10s), never on load. Dismissal is
 // remembered via localStorage so returning readers aren't nagged twice.
 // (The fixed course banner is always present and needs no script.)
+//
+// The modal is Eddie's <ed-modal> (see _includes/course-modal.html). As of
+// Eddie 0.39 it renders a native <dialog> opened in modal mode, so the browser
+// provides the backdrop, focus trap, Esc-to-close and focus restore. This
+// script only decides *when* to open it (reader engagement) and flips isActive.
 
 (function () {
 	"use strict";
@@ -30,7 +35,7 @@
 
 	function initModal() {
 		var modal = document.getElementById("course-modal");
-		if (!modal || typeof modal.showModal !== "function") return;
+		if (!modal) return;
 		if (stored(MODAL_KEY)) return;
 
 		var opened = false;
@@ -41,7 +46,9 @@
 			opened = true;
 			cleanup();
 			store(MODAL_KEY);
-			modal.showModal();
+			// Native <dialog> (Eddie 0.39) handles backdrop, focus trap,
+			// Esc-to-close and focus restore once it's active.
+			modal.isActive = true;
 		}
 
 		function onScroll() {
@@ -56,23 +63,20 @@
 			if (timer) clearTimeout(timer);
 		}
 
-		window.addEventListener("scroll", onScroll, { passive: true });
-		timer = setTimeout(open, TIME_DELAY);
-		// Handle a page that loads already past the threshold (scroll
-		// restoration on reload, or a deep link into the middle of a chapter).
-		onScroll();
-
-		// Close interactions (Esc is handled natively by <dialog>).
-		var dismiss = modal.querySelector(".course-modal__dismiss");
-		if (dismiss) {
-			dismiss.addEventListener("click", function () {
-				modal.close();
-			});
+		// Only start once the custom element is defined, so modal.isActive exists.
+		function wire() {
+			window.addEventListener("scroll", onScroll, { passive: true });
+			timer = setTimeout(open, TIME_DELAY);
+			// Handle a page that loads already past the threshold (scroll
+			// restoration on reload, or a deep link into the middle of a chapter).
+			onScroll();
 		}
-		// Click on the backdrop (outside the inner panel) closes the modal.
-		modal.addEventListener("click", function (event) {
-			if (event.target === modal) modal.close();
-		});
+
+		if (window.customElements && customElements.whenDefined) {
+			customElements.whenDefined("ed-modal").then(wire);
+		} else {
+			wire();
+		}
 	}
 
 	if (document.readyState === "loading") {
