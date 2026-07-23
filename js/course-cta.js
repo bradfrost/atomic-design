@@ -1,8 +1,9 @@
 // Course marketing modal for the book's interior (chapter) pages.
 //
-// A centered modal shown once per reader — only after they've engaged
-// (scrolled ~50% of the page OR spent ~10s), never on load. Dismissal is
-// remembered via localStorage so returning readers aren't nagged twice.
+// A centered modal shown at most once per week — only after the reader has
+// engaged (scrolled ~50% of the page OR spent ~10s), never on load. The
+// last-shown time is remembered via localStorage; after COOLDOWN_DAYS it may
+// appear once more (1 week per Brad, 2026-07-23 — was: forever).
 // (The fixed course banner is always present and needs no script.)
 //
 // The modal is Eddie's <ed-modal> (see _includes/course-modal.html). As of
@@ -16,10 +17,11 @@
 	var MODAL_KEY = "adc-modal-seen";
 	var SCROLL_THRESHOLD = 0.5; // 50% of the scrollable page
 	var TIME_DELAY = 10000; // 10s fallback
+	var COOLDOWN_DAYS = 7; // may reappear after a week (per Brad)
 
 	function store(key) {
 		try {
-			localStorage.setItem(key, "1");
+			localStorage.setItem(key, String(Date.now()));
 		} catch (e) {
 			/* storage unavailable (private mode) — degrade silently */
 		}
@@ -27,7 +29,13 @@
 
 	function stored(key) {
 		try {
-			return localStorage.getItem(key) === "1";
+			var value = localStorage.getItem(key);
+			if (!value) return false;
+			var shownAt = Number(value);
+			// Legacy "1" values (and anything unparseable) read as ancient —
+			// the cooldown has long passed, so the modal may show once more.
+			if (!isFinite(shownAt)) return false;
+			return Date.now() - shownAt < COOLDOWN_DAYS * 24 * 60 * 60 * 1000;
 		} catch (e) {
 			return false;
 		}

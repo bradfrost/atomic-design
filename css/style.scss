@@ -382,6 +382,13 @@ pre {
 			position: absolute;
 			right: 1em;
 		}
+
+		// Pull the ebook link inward so the CTA→ebook gap matches the
+		// lockup→CTA gap (edge-pinning left it lopsided: 131px vs 51px).
+		// Only once the content box is at its full 40rem width.
+		@media all and (min-width: 40em) {
+			right: 6em;
+		}
 	}
 
 	.btn {
@@ -1098,10 +1105,13 @@ h2 .title-link {
 	border-top: 1px solid transparent;
 	opacity: 0;
 	transform: translateY(0.4em);
-	font-size: 0.72em;
-	line-height: 1.35;
-	text-transform: none;
-	color: $tan;
+	// Same face and weight as the mother tab (inherited — no font-family or
+	// font-weight override) and lowercase with it (no text-transform
+	// override, so the banner's lowercase cascades). Size rides the token
+	// scale so the details stay subordinate to the label without squinting.
+	font-size: var(--ed-theme-typography-body-sm-font-size);
+	line-height: var(--ed-theme-typography-body-sm-line-height);
+	color: var(--ed-theme-color-content-knockout);
 	transition: max-height $speed-fast ease-out, opacity $speed-fast ease-out,
 		margin-top $speed-fast ease-out, padding-top $speed-fast ease-out,
 		transform $speed-fast ease-out;
@@ -1130,46 +1140,73 @@ ed-modal:not(:defined) {
 // slotted content. The old flex `gap` is gone with the custom wrapper, so the
 // blocks below carry their own top margins. Shown once per reader
 // (see js/course-cta.js).
+//
+// Typography, color, and spacing all come from the vendored Eddie tokens
+// (css/eddie-tokens.css) rather than hand-picked values, so the modal rides
+// the system type scale and follows automatically when the tokens are
+// re-vendored on an Eddie upgrade. Only layout concerns stay consumer-side.
+// Title mirrors what a default ed-text-passage gives an h2 (headline-default,
+// mobile tier under the component's own 48rem breakpoint) so the modal reads
+// with the system's own prose hierarchy: display-face headline over calm body.
 .course-modal__title {
 	margin: 0;
-	font-family: $font-primary;
-	text-transform: none;
-	color: $brown;
+	font-family: var(--ed-theme-typography-headline-default-mobile-font-family);
+	font-weight: var(--ed-theme-typography-headline-default-mobile-font-weight);
+	font-size: var(--ed-theme-typography-headline-default-mobile-font-size);
+	line-height: var(--ed-theme-typography-headline-default-mobile-line-height);
+	letter-spacing: var(--ed-theme-typography-headline-default-mobile-letter-spacing);
+	text-transform: var(--ed-theme-typography-headline-default-mobile-text-transform);
+	color: var(--ed-theme-color-content-default);
+
+	@media all and (min-width: 48rem) {
+		font-family: var(--ed-theme-typography-headline-default-font-family);
+		font-weight: var(--ed-theme-typography-headline-default-font-weight);
+		font-size: var(--ed-theme-typography-headline-default-font-size);
+		line-height: var(--ed-theme-typography-headline-default-line-height);
+		letter-spacing: var(--ed-theme-typography-headline-default-letter-spacing);
+		text-transform: var(--ed-theme-typography-headline-default-text-transform);
+	}
 }
 
 .course-modal__lead {
 	margin: 0;
-	font-size: 1.05rem;
-	line-height: 1.5;
-	color: $brown;
+	font-family: var(--ed-theme-typography-body-default-font-family);
+	font-weight: var(--ed-theme-typography-body-default-font-weight);
+	font-size: var(--ed-theme-typography-body-default-font-size);
+	line-height: var(--ed-theme-typography-body-default-line-height);
+	color: var(--ed-theme-color-content-default);
 }
 
 .course-modal__list {
-	margin: 1.25rem 0 0;
-	padding-left: 1.25rem;
-	font-size: 0.95rem;
-	line-height: 1.5;
-	color: $brown;
+	margin: var(--ed-theme-spacing-md) 0 0;
+	padding-left: var(--ed-theme-spacing-lg);
+	font-family: var(--ed-theme-typography-body-default-font-family);
+	font-weight: var(--ed-theme-typography-body-default-font-weight);
+	font-size: var(--ed-theme-typography-body-default-font-size);
+	line-height: var(--ed-theme-typography-body-default-line-height);
+	color: var(--ed-theme-color-content-default);
 
 	li + li {
-		margin-top: 0.4rem;
+		margin-top: var(--ed-theme-spacing-sm);
 	}
 }
 
 .course-modal__cta {
 	display: block;
-	margin: 1.5rem 0 0;
+	margin: var(--ed-theme-spacing-lg) 0 0;
 	text-align: center;
 }
 
 .course-modal__secondary {
-	margin: 1.25rem 0 0;
-	font-size: 0.9rem;
-	line-height: 1.5;
-	color: $brown;
+	margin: var(--ed-theme-spacing-md) 0 0;
+	font-family: var(--ed-theme-typography-body-sm-font-family);
+	font-weight: var(--ed-theme-typography-body-sm-font-weight);
+	font-size: var(--ed-theme-typography-body-sm-font-size);
+	line-height: var(--ed-theme-typography-body-sm-line-height);
+	color: var(--ed-theme-color-content-default);
 
 	a {
-		color: $orange;
+		color: var(--ed-theme-color-content-brand);
 	}
 }
 

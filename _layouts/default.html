@@ -7,7 +7,12 @@
         {% include banner.html %}
 
     </main>
+    {% comment %} Course modal fires on reading pages only (layout: page) —
+         never on navigation moments like the table of contents, where the
+         short page trips the engagement triggers instantly. {% endcomment %}
+    {% if page.layout == 'page' %}
     {% include course-modal.html %}
+    {% endif %}
     {% include footer.html %}
     <!-- Eddie web components (registers <ed-modal> for the course modal above) -->
     <script type="module" src="{{ "/js/components.bundle.js" | prepend: site.baseurl }}"></script>
