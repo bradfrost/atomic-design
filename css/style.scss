@@ -378,7 +378,7 @@ pre {
 		-ms-flex-order: 3;
 		order: 3;
 
-		@media all and (min-width: 30em) {
+		@media all and (min-width: 40em) {
 			position: absolute;
 			right: 1em;
 		}
@@ -403,7 +403,7 @@ pre {
 			color: $white;
 		}
 
-		@media all and (min-width: 30em) {
+		@media all and (min-width: 40em) {
 			border: 0;
 			position: absolute;
 			bottom: 0;
@@ -416,7 +416,7 @@ pre {
 		}
 	}
 
-	@media all and (min-width: 30em) {
+	@media all and (min-width: 40em) {
 		display: -webkit-box;
 		display: -moz-box;
 		display: -ms-flexbox;
