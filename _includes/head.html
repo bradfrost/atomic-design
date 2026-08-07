@@ -12,6 +12,11 @@
 		content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
 	/>
 
+	<!-- Eddie design tokens (--ed-theme-* custom properties) that the Eddie web
+	     components read from :root. Vendored from
+	     node_modules/@brad-frost-web/eddie-design-tokens/bfw/build/css/tokens.css
+	     — re-copy that file to css/eddie-tokens.css when Eddie is upgraded. -->
+	<link rel="stylesheet" href="{{ "/css/eddie-tokens.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ "/css/prism.css" | prepend: site.baseurl }}">
 

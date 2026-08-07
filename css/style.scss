@@ -353,9 +353,12 @@ pre {
 		text-decoration: none;
 		transition: color $speed-fast ease-out;
 
+		// Underline only on hover/focus (not by default) so keyboard focus is
+		// clearly visible beyond the color change alone (WCAG 2.1 AA). See #173.
 		&:hover,
 		&:focus {
 			color: $orange;
+			text-decoration: underline;
 		}
 	}
 
@@ -375,9 +378,16 @@ pre {
 		-ms-flex-order: 3;
 		order: 3;
 
-		@media all and (min-width: 30em) {
+		@media all and (min-width: 40em) {
 			position: absolute;
 			right: 1em;
+		}
+
+		// Pull the ebook link inward so the CTA→ebook gap matches the
+		// lockup→CTA gap (edge-pinning left it lopsided: 131px vs 51px).
+		// Only once the content box is at its full 40rem width.
+		@media all and (min-width: 40em) {
+			right: 6em;
 		}
 	}
 
@@ -393,24 +403,20 @@ pre {
 			color: $white;
 		}
 
-		@media all and (min-width: 30em) {
+		@media all and (min-width: 40em) {
 			border: 0;
 			position: absolute;
 			bottom: 0;
 			left: 50%;
-			margin-left: -5.375em;
+			// translateX keeps it centered even as it widens on hover/focus.
+			transform: translateX(-50%);
 			margin-bottom: 0;
 			z-index: 1;
 			transition: all $speed-fast ease-out;
-
-			&:hover,
-			&:focus {
-				padding-bottom: 1.5em;
-			}
 		}
 	}
 
-	@media all and (min-width: 30em) {
+	@media all and (min-width: 40em) {
 		display: -webkit-box;
 		display: -moz-box;
 		display: -ms-flexbox;
@@ -1055,3 +1061,152 @@ h2 .title-link {
 		}
 	}
 }
+
+/*------------------------------------*\
+    $COURSE CALL-OUT (banner + modal)
+\*------------------------------------*/
+
+// The fixed .banner is the course footer; its course CTA reuses .btn.
+// "Atomic Design by Brad Frost" sits on the left (h3); the ebook link is
+// pulled to the right (p). Footer links underline on hover/focus only —
+// see the .banner-content a rule in $BANNER STYLES above. (#173)
+
+// Hover/focus reveal on the centered course CTA: it lifts up and shows punchy
+// course details — Brad's "what does 'Get Atomic Design Certified' mean?" idea.
+// Details are collapsed by default and expand above the label (the button is
+// anchored to the banner's bottom edge, so growth pushes it upward).
+.banner-content .banner-cta {
+	display: flex;
+	flex-direction: column; // label on top; the list slides up into view below it
+	align-items: center;
+	overflow: hidden;
+
+	// The CTA is a link, but it should never underline — the slide-up reveal is
+	// the only affordance. Overrides the footer-link underline in $BANNER STYLES.
+	&:hover,
+	&:focus,
+	&:focus-visible {
+		text-decoration: none;
+	}
+}
+
+// The course details list — visually distinct from the button label above it:
+// smaller, lighter, and set off by a hairline rule. Collapsed by default;
+// slides up into view on hover/focus.
+.banner-cta__details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.35em;
+	max-width: 18em;
+	max-height: 0;
+	margin-top: 0;
+	padding-top: 0;
+	border-top: 1px solid transparent;
+	opacity: 0;
+	transform: translateY(0.4em);
+	// Same face and weight as the mother tab (inherited — no font-family or
+	// font-weight override) and lowercase with it (no text-transform
+	// override, so the banner's lowercase cascades). Size rides the token
+	// scale so the details stay subordinate to the label without squinting.
+	font-size: var(--ed-theme-typography-body-sm-font-size);
+	line-height: var(--ed-theme-typography-body-sm-line-height);
+	color: var(--ed-theme-color-content-knockout);
+	transition: max-height $speed-fast ease-out, opacity $speed-fast ease-out,
+		margin-top $speed-fast ease-out, padding-top $speed-fast ease-out,
+		transform $speed-fast ease-out;
+
+	.banner-cta:hover &,
+	.banner-cta:focus &,
+	.banner-cta:focus-visible & {
+		max-height: 12em;
+		margin-top: 0.7em;
+		padding-top: 0.7em;
+		border-top-color: rgba($tan, 0.25);
+		opacity: 0.92;
+		transform: translateY(0);
+	}
+}
+
+// Prevent a flash of the modal's slotted content before <ed-modal> upgrades
+// (an undefined custom element renders its children inline in the page).
+ed-modal:not(:defined) {
+	display: none;
+}
+
+// Engagement-triggered marketing modal on interior (chapter) pages.
+// Uses Eddie's <ed-modal>; the window, backdrop and close button come from the
+// component (styled by the Eddie design tokens), so these rules only style the
+// slotted content. The old flex `gap` is gone with the custom wrapper, so the
+// blocks below carry their own top margins. Shown once per reader
+// (see js/course-cta.js).
+//
+// Typography, color, and spacing all come from the vendored Eddie tokens
+// (css/eddie-tokens.css) rather than hand-picked values, so the modal rides
+// the system type scale and follows automatically when the tokens are
+// re-vendored on an Eddie upgrade. Only layout concerns stay consumer-side.
+// Title mirrors what a default ed-text-passage gives an h2 (headline-default,
+// mobile tier under the component's own 48rem breakpoint) so the modal reads
+// with the system's own prose hierarchy: display-face headline over calm body.
+.course-modal__title {
+	margin: 0;
+	font-family: var(--ed-theme-typography-headline-default-mobile-font-family);
+	font-weight: var(--ed-theme-typography-headline-default-mobile-font-weight);
+	font-size: var(--ed-theme-typography-headline-default-mobile-font-size);
+	line-height: var(--ed-theme-typography-headline-default-mobile-line-height);
+	letter-spacing: var(--ed-theme-typography-headline-default-mobile-letter-spacing);
+	text-transform: var(--ed-theme-typography-headline-default-mobile-text-transform);
+	color: var(--ed-theme-color-content-default);
+
+	@media all and (min-width: 48rem) {
+		font-family: var(--ed-theme-typography-headline-default-font-family);
+		font-weight: var(--ed-theme-typography-headline-default-font-weight);
+		font-size: var(--ed-theme-typography-headline-default-font-size);
+		line-height: var(--ed-theme-typography-headline-default-line-height);
+		letter-spacing: var(--ed-theme-typography-headline-default-letter-spacing);
+		text-transform: var(--ed-theme-typography-headline-default-text-transform);
+	}
+}
+
+.course-modal__lead {
+	margin: 0;
+	font-family: var(--ed-theme-typography-body-default-font-family);
+	font-weight: var(--ed-theme-typography-body-default-font-weight);
+	font-size: var(--ed-theme-typography-body-default-font-size);
+	line-height: var(--ed-theme-typography-body-default-line-height);
+	color: var(--ed-theme-color-content-default);
+}
+
+.course-modal__list {
+	margin: var(--ed-theme-spacing-md) 0 0;
+	padding-left: var(--ed-theme-spacing-lg);
+	font-family: var(--ed-theme-typography-body-default-font-family);
+	font-weight: var(--ed-theme-typography-body-default-font-weight);
+	font-size: var(--ed-theme-typography-body-default-font-size);
+	line-height: var(--ed-theme-typography-body-default-line-height);
+	color: var(--ed-theme-color-content-default);
+
+	li + li {
+		margin-top: var(--ed-theme-spacing-sm);
+	}
+}
+
+.course-modal__cta {
+	display: block;
+	margin: var(--ed-theme-spacing-lg) 0 0;
+	text-align: center;
+}
+
+.course-modal__secondary {
+	margin: var(--ed-theme-spacing-md) 0 0;
+	font-family: var(--ed-theme-typography-body-sm-font-family);
+	font-weight: var(--ed-theme-typography-body-sm-font-weight);
+	font-size: var(--ed-theme-typography-body-sm-font-size);
+	line-height: var(--ed-theme-typography-body-sm-line-height);
+	color: var(--ed-theme-color-content-default);
+
+	a {
+		color: var(--ed-theme-color-content-brand);
+	}
+}
+

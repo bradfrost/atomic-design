@@ -1,0 +1,40 @@
+<!-- Engagement-triggered marketing modal on interior (chapter) pages.
+     Uses Eddie's <ed-modal> (see js/src/components.js) to demonstrate adopting
+     the design system. As of Eddie 0.39 <ed-modal> renders a native <dialog>
+     in modal mode, so the close button, backdrop, focus trap, Esc-to-close and
+     focus restore all come from the component/browser; js/course-cta.js only
+     decides when to open it (reader engagement) via the isActive property. -->
+<ed-modal class="course-modal" id="course-modal" dialogLabel="Master design systems!">
+	<h2 slot="header" class="course-modal__title">Master design systems!</h2>
+
+	<p class="course-modal__lead">
+		You&rsquo;re reading the book, so you already get the methodology. The
+		<strong>Atomic Design Certification Course</strong> brings it up to date:
+		five chapters of self-paced video, taught by the creator of atomic design
+		and built on 13 years of design system practice.
+	</p>
+
+	<ul class="course-modal__list">
+		<li>Video + hands-on exercises</li>
+		<li>Slack community</li>
+		<li>Lifetime access, free updates</li>
+		<li>Certificate of completion</li>
+	</ul>
+
+	<ed-button
+		class="course-modal__cta"
+		variant="primary"
+		href="https://atomicdesigncourse.com"
+		target="_blank"
+		text="Get Atomic Design Certified"
+	></ed-button>
+
+	<p class="course-modal__secondary">
+		Continue the journey: explore
+		<a href="https://designtokenscourse.com/" rel="external noopener" target="_blank">Subatomic</a>
+		and
+		<a href="https://aianddesign.systems/" rel="external noopener" target="_blank">AI &amp; Design Systems</a>,
+		or get all three with the
+		<a href="https://courses.bradfrost.com/" rel="external noopener" target="_blank">Mega Bundle</a>.
+	</p>
+</ed-modal>

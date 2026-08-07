@@ -3,6 +3,9 @@
 	"version": "0.1.0",
 	"description": "Atomic Design book website",
 	"scripts": {
+		"start": "npm run build:components && concurrently -k -n esbuild,jekyll -c blue,green \"npm run watch:components\" \"npm run serve\"",
+		"build": "npm run build:components && PATH=\"/opt/homebrew/opt/ruby/bin:$PATH\" bundle exec jekyll build",
+		"serve": "PATH=\"/opt/homebrew/opt/ruby/bin:$PATH\" bundle exec jekyll serve --livereload",
 		"build:components": "esbuild js/src/components.js --bundle --format=esm --outfile=js/components.bundle.js",
 		"watch:components": "esbuild js/src/components.js --bundle --format=esm --outfile=js/components.bundle.js --watch",
 		"build:css": "sass --load-path=node_modules css/style.scss _site/css/style.css --style=compressed",
@@ -13,10 +16,11 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@brad-frost-web/eddie-design-tokens": "*",
-		"@brad-frost-web/eddie-web-components": "*"
+		"@brad-frost-web/eddie-design-tokens": "^0.39.0",
+		"@brad-frost-web/eddie-web-components": "^0.39.0"
 	},
 	"devDependencies": {
+		"concurrently": "^10.0.3",
 		"esbuild": "^0.24.0",
 		"sass": "^1.81.0"
 	}
